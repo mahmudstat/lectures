@@ -1,0 +1,71 @@
+---
+title: "Mathematics (VII)"
+author: Abdullah Al Mahmud
+date: \today
+theme: night
+output: 
+  revealjs::revealjs_presentation:
+    incremental: false
+    reveal_plugins: ["notes", "search", "chalkboard", "menu"]
+    self_contained: false
+    slideNumber: true
+    css: css/styles.css
+    includes:
+      in_header: css/header_7.html
+---
+
+# Chapter 7.2 (Graphs)
+
+## What We Learn from This Plot
+
+
+## Coccept of graph 
+Imagine you are at your home. You came out and went 10m eastward and 5m southward. Where is you current location? 
+
+
+> - This point is called (10,5)
+
+## Know this man? 
+<img src="img/seven/rene-descartes.jpg">
+
+## Quadrants and Axes
+
+<img style="float: left" src="img/seven/graph.png" width ="550">
+
+<div style="display: block">Where would these points be?
+
+Mention that "lengths of the side of the smallest square as unit along both axes." 
+</div>
+
+- (10,2)
+- (-10,2)
+- (10,-5)
+- (-10,-5)
+
+
+## Put on graph paper
+
+<img style="float: left" src="img/seven/graph-paper.png" width="550">
+
+<div style="display: block">
+- A (5,3)
+- B (5,-3)
+- C (-5,3)
+- D (-5,-3)
+</div>
+## Find the geometric shape from this coordinates
+(3,2); (6,2); (6,4); (3,4)
+
+(0,4); (2,2); (4,0)
+
+(2,0); (3,4); (4,0)
+
+Draw these points. What are the shapes?
+
+## Plotting an Equation
+
+y = 3x + 5
+
+If x = 2, 3, 4, 5
+
+$y=3 \times 2 + 5 = 11$...
