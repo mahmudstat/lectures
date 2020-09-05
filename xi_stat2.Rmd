@@ -161,6 +161,22 @@ plot(intervals, cf, type = "b", col = "blue", pch = 20)
 ```
 
 ## Bar vs Pie
-When to use which? 
-How to calculate angles? 
-Can we draw on 180 degrees?
+- When to use which? 
+- How to calculate angles? 
+- Can we draw on 180 degrees?
+
+# Bar or Pie?
+| year | Sales ($) |
+|-|-|
+| 1996 | 76 |
+| 1997 | 58 |
+| 1998 | 95 |
+| 1999 | 85 |
+
+For this?
+
+| Category | Cost(Tk.) |
+|-|-|
+| House rent | 10,000 |
+| Utility Bill | 3,000 |
+| Telecom | 2000 |
