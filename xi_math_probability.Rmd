@@ -48,9 +48,27 @@ There are 15 cricketers in BD preliminary team. We got to <span style="font-styl
 
 > - Where is P used? 
 
-## Problems: Type -01 (Playing Card)
+## Concepts (Playing Card)
+<div class="container">
 
+<div class="col">
 <img src="img/stat/cards.png" width="460">
+
+</div>
+
+<div class="col">
+<br/>
+<br/>
+
+- Ace (A)
+- King (K)
+- Queen (Q)
+- Jack (J)
+- Numbers: 2, 3, 4, 5, 6, 7, 8, 9, 10
+</div>
+
+</div>
+
 
 ## Playing Card (problem #01)
 3 cards are drawn from a pack of 52 cards. 
