@@ -35,5 +35,29 @@ $P (A) = \frac{n(A)}{n(S)}$
 
 Three axioms
 
-0> - $$
+Say, S is sample space and A is an event 
+
+> - $0 \le P (A) \le 1$ <span style="color: red;">(NOT $P(A) \ge 0$)</span>
+> - At least of S will occur. P (S) = 1; Certain event. 
+> - $P(A_1 U A_2 U ... U A_n)=P(A_1) + P(A_2) + ... + P(A_n)$ or  
+> - $$P\left(\bigcup _{i=1}^{\infty }E_{i}\right)=\sum _{i=1}^{\infty }P(E_{i})$$
+
+## Permutaion vs Combination
+
+There are 15 cricketers in BD preliminary team. We got to <span style="font-style:italic; color:blue;">select </span> 11. C or P? 
+
+> - Where is P used? 
+
+## Problems: Type -1
+<small>In a box, there are 5 blue marbles, 7 green marbles, and 8 yellow marbles. If two marbles are randomly selected, what is the probability that both will be green or yellow, if taken
+
+i. with replacement
+
+ii. without replacement
+
+</small>
+
+> - Correct or not: $\frac{^7C_2}{^{20}C_2}+\frac{^8C_2}{^{20}C_2}$
+> - $\frac{^7C_1 \times ^7C_1}{^{20}C_1 \times ^{20}C_1}+\frac{^8C_1 \times ^8C_1}{^{20}C_1 \times ^{20}C_1}$
+> - Without replacement: $\frac{^7C_1 \times ^6C_1}{^{20}C_1 \times ^{20}C_1}+\frac{^8C_1 \times ^7C_1}{^{20}C_1 \times ^{20}C_1}$
 
