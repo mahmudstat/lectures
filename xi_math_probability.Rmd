@@ -48,7 +48,16 @@ There are 15 cricketers in BD preliminary team. We got to <span style="font-styl
 
 > - Where is P used? 
 
-## Problems: Type -1
+## Problems: Type -01 (Playing Card)
+
+<img src="img/stat/cards.png" width="460">
+
+## Playing Card (problem #01)
+3 cards are drawn from a pack of 52 cards. 
+
+
+
+## Problems: Type -#
 <small>In a box, there are 5 blue marbles, 7 green marbles, and 8 yellow marbles. If two marbles are randomly selected, what is the probability that both will be green or yellow, if taken
 
 i. with replacement
