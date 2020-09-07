@@ -28,7 +28,6 @@ output:
 
 $P (A) = \frac{n(A)}{n(S)}$
 
-
 ## Relative frequency
 
 ## Axiomatic
@@ -38,15 +37,40 @@ Three axioms
 Say, S is sample space and A is an event 
 
 > - $0 \le P (A) \le 1$ <span style="color: red;">(NOT $P(A) \ge 0$)</span>
-> - At least of S will occur. P (S) = 1; Certain event. 
+> - At least one of S will occur. P (S) = 1; Certain event. 
 > - $P(A_1 U A_2 U ... U A_n)=P(A_1) + P(A_2) + ... + P(A_n)$ or  
-> - $$P\left(\bigcup _{i=1}^{\infty }E_{i}\right)=\sum _{i=1}^{\infty }P(E_{i})$$
+> - $$P\left(\cup _{i=1}^{\infty }E_{i}\right)=\sum _{i=1}^{\infty }P(E_{i})$$
 
 ## Permutaion vs Combination
 
 There are 15 cricketers in BD preliminary team. We got to <span style="font-style:italic; color:blue;">select </span> 11. C or P? 
 
 > - Where is P used? 
+
+## Types of Problems
+
+- Miscellaneous  
+- Coin
+- Die
+- Playing Card
+- At Once vs One by One 
+- Box
+- Conditional 
+- Set Theoretic 
+- Digit 
+
+
+# Miscellaneous 
+
+## Problem #01
+What is the probability that in a leap year, there are 53 Fridays? 
+
+> - In a leap year, there are 366 days, i.e, 52 weeks and 2 days. In each week is a Fridays, so there are no less than 52 Fridays. The remaining two days could be:
+> - (Sat, Sun); (Sun, Mon); (Mon, Tue); (Tue, Wedn); (Wedn, Thu); (Thu, Fri); (Fri, Sat) = 7
+> - Total possible outcome = 7 and favorable outcomes = 2
+> - $P = \frac{2}{7}$
+
+# Playing Card
 
 ## Concepts (Playing Card)
 <div class="container">
@@ -58,22 +82,28 @@ There are 15 cricketers in BD preliminary team. We got to <span style="font-styl
 
 <div class="col">
 <br/>
-<br/>
+Each rank has 13 cards. 
 
 - Ace (A)
 - King (K)
 - Queen (Q)
 - Jack (J)
 - Numbers: 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+> - 4+9 numbers = 13 cards. 
 </div>
 
 </div>
 
 
-## Playing Card (problem #01)
-3 cards are drawn from a pack of 52 cards. 
+## Problem #01
+3 cards are drawn from a pack of 52 cards. What is the probability that they are all Kings?
 
+There are 4 Kings. We've to draw 3 cards. 
 
+> - $P(K) =\frac{^4C_3}{{^52}C_3}$ 
+
+# Box
 
 ## Problems: Type -#
 <small>In a box, there are 5 blue marbles, 7 green marbles, and 8 yellow marbles. If two marbles are randomly selected, what is the probability that both will be green or yellow, if taken
@@ -88,3 +118,59 @@ ii. without replacement
 > - $\frac{^7C_1 \times ^7C_1}{^{20}C_1 \times ^{20}C_1}+\frac{^8C_1 \times ^8C_1}{^{20}C_1 \times ^{20}C_1}$
 > - Without replacement: $\frac{^7C_1 \times ^6C_1}{^{20}C_1 \times ^{20}C_1}+\frac{^8C_1 \times ^7C_1}{^{20}C_1 \times ^{20}C_1}$
 
+# Conditiona Probability
+
+## Conditional Formula
+
+**Bayes Theorem**
+
+$P(B|A)=\frac{P(A \cap B)}{P(A)}$
+
+## Problem # 01
+
+Probability that it rains today is 40%, that tomorrow is 50%, and that on both days is 30%. If it rains today, what is the probability that it would rain tomorrow? 
+
+> - $P (T) = 0.4, P(M) = 0.5, P(T\cap M)=0.3, P(M|T)=?$
+> - $P(M|T)=\frac{P(T\cap M)}{P(T)}$
+> - $\frac{0.3}{0.4}$
+
+# Set Theoretic
+
+## Concept 
+
+Formulae
+
+<div class="container">
+<div class="col">
+<img src="img/stat/venn.png" width="480">
+</div>
+<div class="col">
+<small>
+Think Why are they so?
+
+- $P(A\cap B)=P(A)\times P(B)$, if A & B are independent. 
+
+> - $P(A\cup B)=P(A)+P(B)-P(A\cap B)$
+> - $P(A\cap \bar B)=P(A)-P(A\cap B)$
+> - $P(A|\bar B)=\frac{P(A \cap \bar B)}{P(\bar B)}=?$
+> - Also recall De Morgan's Laws
+
+</small>
+</div>
+</div>
+
+## Problem # 01
+
+<small>
+The probability of Ronaldo scoring a goal is 0.4 and that of Messi 0.38. What is the probability that-
+
+i. Both Score
+ii. Only Ronaldo scores
+iii. Only Messi scores?
+iv. At least one of them scores
+v. Only one of them scores
+vi. At most one of them scores
+
+</small>
+
+## Problem # 02
