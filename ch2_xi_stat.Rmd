@@ -111,9 +111,24 @@ Geographical
     </table>
     </section>
     
-## Chapter Overview
+# Chapter Overview
 
-> - Inclusive vs exclusive 
+## Histogram
+
+- Inclusive vs exclusive
+
+<div onclick="klikaj('rad1')">What does it tell us</div>
+<div id="rad1" style="visibility: hidden">
+```{r, echo=FALSE, out.width="70%"}
+hist(cars$dist, main = "Histogram of Car Distance", xlab = "Distance",
+     col = c("blue", "grey"))
+```
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
 
 ## Stem and Leaf
 
