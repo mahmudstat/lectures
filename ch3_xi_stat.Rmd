@@ -135,4 +135,39 @@ function klikaj(i) {
 </div>
 </div>
 
+## Shortcut Method for AM
 
+<div class="container">
+<div class="col">
+Calculate the mean in a smart way
+
+```{r, echo=FALSE}
+set.seed(100)
+x <- sample(1000:1050, 6)
+x
+```
+</div>
+<div class="col">
+<div onclick="klikaj('rad4')">How?</div>
+<div id="rad4" style="visibility: hidden">
+<small>Subtract a number from all, say 1020</small>
+```{r, echo=F}
+y <- x-1020
+paste0("y = ", y)
+```
+
+```{r, echo=F}
+paste0("Mean of y is ", mean(y)) 
+paste0("Mean of x is ", mean(y)+1020)
+```
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script> 
+
+</div>
+</div>
+
+## Comparison of Measures
