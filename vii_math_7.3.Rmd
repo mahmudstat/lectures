@@ -14,7 +14,7 @@ output:
       in_header: css/header_7.html
 ---
 
-# Chapter 7.2 (Graphs)
+# Chapter 7.3 (Graphs)
 
 ## What We Learn from This Plot
 
@@ -54,11 +54,10 @@ Mention that "lengths of the side of the smallest square as unit along both axes
 - D (-5,-3)
 </div>
 ## Find the geometric shape from this coordinates
-(3,2); (6,2); (6,4); (3,4)
 
-(0,4); (2,2); (4,0)
-
-(2,0); (3,4); (4,0)
+i. (3,2); (6,2); (6,4); (3,4)
+ii. (0,4); (2,2); (4,0)
+iii. (2,0); (3,4); (4,0)
 
 Draw these points. What are the shapes?
 
@@ -69,3 +68,33 @@ y = 3x + 5
 If x = 2, 3, 4, 5
 
 $y=3 \times 2 + 5 = 11$...
+
+## Solving Equation with Graph
+
+First solve manually 
+
+13. Solve and show solutions using graphs
+
+<div class="container">
+<div class="col">
+- x-4=0
+- 2x+1 = x-3 
+</div>
+<div class="col">
+<img style="float: left" src="img/seven/graph-paper.png" width ="550"> 
+</div>
+</div>
+
+## Exercise 7.3 (14)
+Length of three sides of a triangle are (x+2), (x+4), and (x+6) cm (x>0). Perimeter of the triangle is 18 cm. 
+
+<div class="container">
+<div class="col">
+i. Draw a proportional figure using the conditions. 
+ii. Formulate and solve. 
+iii. Draw the graph of the solution. 
+</div>
+<div class="col">
+<img style="float: left" src="img/seven/graph-paper.png" width ="550"> 
+</div>
+</div>
