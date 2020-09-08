@@ -1,0 +1,41 @@
+---
+title: "Statistics: Chapter 3"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: solarized
+    reveal_plugins: ["notes", "search", "chalkboard", "menu"]
+    self_contained: false
+    css: css/styles.css
+    includes:
+      in_header: css/header_stat.html
+---
+
+# Chapter 03 (Central Tendency)
+
+## What is Central Tendency?
+
+Why needed?
+
+- Summary
+- Comparison
+- A value to represent all
+
+## Criteria for a Good Measure of Central Tendency
+
+- Well-defined
+> - Understandable
+> - Considers all values
+> - Suitable for further analysis
+> - Not affected by sample fluctuation
+
+## Measures 
+
+- Arithmetic Mean (AM)
+- Geometric Mean
+- Harmonic Mean
+- Median
+- Mode
+- Partition Values (Quartiles, Percentiles etc.)
+
