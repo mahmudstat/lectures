@@ -98,3 +98,5 @@ iii. Draw the graph of the solution.
 <img style="float: left" src="img/seven/graph-paper.png" width ="550"> 
 </div>
 </div>
+
+## Exercise 7.3 (15)

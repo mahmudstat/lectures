@@ -120,7 +120,7 @@ Geographical
 <div onclick="klikaj('rad1')">What does it tell us</div>
 <div id="rad1" style="visibility: hidden">
 ```{r, echo=FALSE, out.width="70%"}
-hist(cars$dist, main = "Histogram of Car Distance", xlab = "Distance",
+hist(rnorm(300, 20, 2), main = "A Histogram of Randam Data", xlab = "Intervals",
      col = c("blue", "grey"))
 ```
 </div>
@@ -129,6 +129,16 @@ function klikaj(i) {
     document.getElementById(i).style.visibility='visible';
 }
 </script>
+
+## Histogram (contd.)
+
+Can these intervals be readily used? 
+
+(5-10); (10-15); (15-20)
+
+(5-9); (10-14); (15-20)
+
+If not, what should we do?
 
 ## Stem and Leaf
 
@@ -151,14 +161,6 @@ stem(data)
 | 50-55 | 2 | 44 | 0.04 | 1 |
 |  | n=44 | n=44 |  |  |
     
-## Histogram
-
-Can these intervals be readily used? 
-(5-10); (10-15); (15-20)
-
-(5-9); (10-14); (15-20)
-
-If not, what should we do? 
 
 ## What Ogives tell us
 
@@ -180,7 +182,11 @@ plot(intervals, cf, type = "b", col = "blue", pch = 20)
 - How to calculate angles? 
 - Can we draw on 180 degrees?
 
-# Bar or Pie?
+
+## Choose Diagram
+<div class="container">
+
+<div class="col">
 | year | Sales ($) |
 |-|-|
 | 1996 | 76 |
@@ -188,10 +194,27 @@ plot(intervals, cf, type = "b", col = "blue", pch = 20)
 | 1998 | 95 |
 | 1999 | 85 |
 
-For this?
+```{r, echo=FALSE, out.width="1100%"}
+x <- c(76, 58, 95, 85)
+pie(x, c(1996:1999),
+    col = c('#0292D8', '#F7EA39', '#C4B632'),
+     init.angle = 130, border = NA,
+    main="Is this a suitable choice of diagram")
+```
+</div>
 
+<div class="col">
 | Category | Cost(Tk.) |
 |-|-|
 | House rent | 10,000 |
 | Utility Bill | 3,000 |
-| Telecom | 2000 |
+| Telecom | 2000 | 
+
+```{r, echo = F}
+
+```
+</div>
+
+</div>
+
+## Bar Diagram vs Histogram

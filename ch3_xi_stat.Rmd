@@ -4,8 +4,8 @@ author: Abdullah Al Mahmud
 date: \today
 output: 
   revealjs::revealjs_presentation:
-    theme: solarized
-    reveal_plugins: ["notes", "search", "chalkboard", "menu"]
+    theme: sky
+    reveal_plugins: ["notes", "chalkboard", "menu"]
     self_contained: false
     css: css/styles.css
     includes:
@@ -73,7 +73,66 @@ Find AM: 2, 2, 3, 3, 5, 5, 5, 8, 8, 9
 There are 2 ways. 
 
 $\bar x = \frac{2+2+...+9}{10}$
+<div onclick="klikaj('rad2')">Answer</div>
+<div id="rad2" style="visibility: hidden">
 ```{r, echo=FALSE}
 x <- c(2, 2, 3, 3, 5, 5, 5, 8, 8, 9)
 mean(x)
 ```
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+## Mean Using Frequency
+
+For grouped data
+
+| Working hours<br>(x) | Employee<br>(f) | fx |
+|:-:|:-:|:-:|
+| 2 | 2 | 4 |
+| 3 | 2 | 6 |
+| 5 | 3 | 15 |
+| 8 | 2 | 10 |
+| 9 | 1 | 9 |
+|  | $\sum f =10$ | $\sum fx = 50$ |
+
+$\therefore \bar x = \frac{\sum fx}{\sum f} =\frac{50}{10}=5$
+
+## Freuency vs Weight
+
+<div class="container">
+<div class="col">
+Suppose, different judges give different scores, but not all evaluation has same weight. 
+
+| Judge | Rating<br>(x) | Weight<br>(w) | wx |
+|:-:|:-:|:-:|:-:|
+| 1 | 8 | 2 | 16 |
+| 2 | 7 | 3 | 21 |
+| 3 | 4 | 5 | 20 |
+| 4 | 5 | 1 | 5 |
+| 5 | 7 | 3 | 21 |
+|  |  | $\sum w = 14$ | $\sum wx = 83$ |
+</div>
+<div class="col">
+$\therefore \bar x = \frac{\sum wx}{\sum w}$
+
+
+<div onclick="klikaj('rad3')">Answer</div>
+<div id="rad3" style="visibility: hidden">
+$\frac{83}{14}$
+```{r, echo=FALSE}
+round(83/14, 2)
+```
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
+
+
