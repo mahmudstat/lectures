@@ -25,17 +25,55 @@ Why needed?
 ## Criteria for a Good Measure of Central Tendency
 
 - Well-defined
+
 > - Understandable
 > - Considers all values
 > - Suitable for further analysis
 > - Not affected by sample fluctuation
 
-## Measures 
+## Measures (Averages)
 
 - Arithmetic Mean (AM)
-- Geometric Mean
-- Harmonic Mean
-- Median
+- Geometric Mean (GM)
+- Harmonic Mean (HM)
+- Median 
 - Mode
-- Partition Values (Quartiles, Percentiles etc.)
+- Partition Values (Quartiles, Deciles, Percentiles etc.)
 
+## AM
+
+$AM=\bar x=\frac{\sum x}{n}$
+
+If there are frequencies or weights
+
+$\bar x=\frac{\sum f_i x_i}{\sum f_i} \space or \space \frac{\sum w_i x_i}{w_i=n}$
+
+## Find AM 
+
+```{r, echo=FALSE}
+set.seed(100)
+x <- sample(60,10)
+x
+```
+
+<div onclick="klikaj('rad1')">Answer</div>
+<div id="rad1" style="visibility: hidden">
+```{r, echo = FALSE}
+mean(x)
+```
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+Find AM: 2, 2, 3, 3, 5, 5, 5, 8, 8, 9
+
+There are 2 ways. 
+
+$\bar x = \frac{2+2+...+9}{10}$
+```{r, echo=FALSE}
+x <- c(2, 2, 3, 3, 5, 5, 5, 8, 8, 9)
+mean(x)
+```
