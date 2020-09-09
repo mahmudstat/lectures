@@ -5,7 +5,7 @@ date: \today
 output: 
   revealjs::revealjs_presentation:
     theme: sky
-    reveal_plugins: ["notes", "chalkboard", "menu"]
+    reveal_plugins: ["menu", "chalkboard"]
     self_contained: false
     css: css/styles.css
     includes:
@@ -158,7 +158,7 @@ x
 ```
 </div>
 <div class="col">
-<div onclick="klikaj('rad4')">How?</div>
+<div onclick="klikaj('rad4')"><span>Show</span></div>
 <div id="rad4" style="visibility: hidden">
 <small>Subtract a number from all, say 1020</small>
 ```{r, echo=F}
@@ -196,17 +196,15 @@ Converted Mean = 2
 Original Mean = $2 \times 5 + 1000=1010$
 </div>
 <div class="col">
-<div onclick="klikaj('rad1')"><span style="color: blue;">Show</span></div>
-<div id="rad1" style="visibility: hidden">
+<div onclick="klikaj('rad5')"><span style="color: blue;">Show</span></div>
+<div id="rad5" style="visibility: hidden">
 x = 1005, 1010, 1015 
 
-a = 1000
-
-c = 5 
-
-y = 1, 2, 3
-$\bar x = 2 \times 5 + 1000=1010 = a+\bar y \times c$
-$\bar x = a+\frac{\sum y}{n} \times c$
+> - a = 1000
+> - c = 5 
+> - y = 1, 2, 3
+> - $\bar x = 2 \times 5 + 1000=1010 = a+\bar y \times c$
+> - $\bar x = a+\frac{\sum y}{n} \times c$
 </div>
 <script>
 function klikaj(i) {
@@ -216,17 +214,17 @@ function klikaj(i) {
 </div>
 </div>
 
+## Properties of AM
 
+- $\sum (x_i-\bar x)=0$; can you prove it? 
+
+> - $(x_i-\bar x)^2 \le (x_i-a)^2, \space a \ne \bar x$
+> - Depends on change of origin and scale?
+> - $\bar x + \bar y =\frac{\sum x+\sum y}{n_x+n_y}$
+> - Combined mean: $x_c=\frac{n_1 \bar x_1+n_2 \bar x_2+...+n_k \bar x_k}{n_1+n_2+n_3}$
+> - $AM\ge GM \ge HM$ & $AM \times HM = (GM)^2$
+> - AM of first n natural numbers = $\frac{n+1}{2}$
 
 ## Comparison of Measures
 
-<svg height="500" width="500">
-  <line x1="0" y1="200" x2="200" y2="100" style="stroke:black;
-  stroke-width:2" />  
-  <line x1="0" y1="200" x2="250" y2="200" style="stroke:black;
-  stroke-width:2" />  
-  <line x1="0" y1="200" x2="200" y2="300" style="stroke:black;
-  stroke-width:2" />
-
-</svg>
 

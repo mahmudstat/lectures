@@ -16,6 +16,10 @@ content: url(pcc2.png);
   width: 65px;
 }
 
+span {
+color: blue;
+}
+
 #thanks {
   padding: 100px 0;
   font-size: 80px;
