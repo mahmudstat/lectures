@@ -18,11 +18,21 @@ output:
 
 Why needed?
 
+<div class="container">
+<div class="col">
+```{r, echo=F}
+(h <- head(mtcars[1:5], 8))
+summary(h[1:3])
+```
+</div>
+<div class="col">
 - Summary
 - Comparison
 - A value to represent all
+</div>
+</div>
 
-## Criteria for a Good Measure of Central Tendency
+## Criteria for a Good Measure of Central Tendency{data-transition="convex"}
 
 - Well-defined
 
@@ -56,7 +66,7 @@ x <- sample(60,10)
 x
 ```
 
-<div onclick="klikaj('rad1')">Answer</div>
+<div onclick="klikaj('rad1')"><span style="color: blue;">Answer</span></div>
 <div id="rad1" style="visibility: hidden">
 ```{r, echo = FALSE}
 mean(x)
@@ -73,7 +83,7 @@ Find AM: 2, 2, 3, 3, 5, 5, 5, 8, 8, 9
 There are 2 ways. 
 
 $\bar x = \frac{2+2+...+9}{10}$
-<div onclick="klikaj('rad2')">Answer</div>
+<div onclick="klikaj('rad2')"><span style="color: blue;">Answer</span></div>
 <div id="rad2" style="visibility: hidden">
 ```{r, echo=FALSE}
 x <- c(2, 2, 3, 3, 5, 5, 5, 8, 8, 9)
@@ -114,13 +124,13 @@ Suppose, different judges give different scores, but not all evaluation has same
 | 3 | 4 | 5 | 20 |
 | 4 | 5 | 1 | 5 |
 | 5 | 7 | 3 | 21 |
-|  |  | $\sum w = 14$ | $\sum wx = 83$ |
+|  |  | $\sum w_i = 14$ | $\sum w_ix_i = 83$ |
 </div>
 <div class="col">
-$\therefore \bar x = \frac{\sum wx}{\sum w}$
+$\therefore \bar x = \frac{\sum w_ix_i}{\sum w_i}$
 
 
-<div onclick="klikaj('rad3')">Answer</div>
+<div onclick="klikaj('rad3')"><span style="color: blue;">Answer</span></div>
 <div id="rad3" style="visibility: hidden">
 $\frac{83}{14}$
 ```{r, echo=FALSE}
@@ -153,12 +163,13 @@ x
 <small>Subtract a number from all, say 1020</small>
 ```{r, echo=F}
 y <- x-1020
-paste0("y = ", y)
+print("The new values are")
+y
 ```
 
 ```{r, echo=F}
-paste0("Mean of y is ", mean(y)) 
-paste0("Mean of x is ", mean(y)+1020)
+paste0("Mean of y is ", round(mean(y),2))
+paste0("Mean of x is ", round(mean(y)+1020,2))
 ```
 </div>
 <script>
@@ -170,4 +181,52 @@ function klikaj(i) {
 </div>
 </div>
 
+## Shortcut Method Formula
+
+<div class="container">
+<div class="col">
+Consider the values: 1005, 1010, 1015 
+
+If 1000 is subtracted: 5, 10, 15
+
+If again divided by 5: 1, 2, 3
+
+Converted Mean = 2 
+
+Original Mean = $2 \times 5 + 1000=1010$
+</div>
+<div class="col">
+<div onclick="klikaj('rad1')"><span style="color: blue;">Show</span></div>
+<div id="rad1" style="visibility: hidden">
+x = 1005, 1010, 1015 
+
+a = 1000
+
+c = 5 
+
+y = 1, 2, 3
+$\bar x = 2 \times 5 + 1000=1010 = a+\bar y \times c$
+$\bar x = a+\frac{\sum y}{n} \times c$
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
+
+
+
 ## Comparison of Measures
+
+<svg height="500" width="500">
+  <line x1="0" y1="200" x2="200" y2="100" style="stroke:black;
+  stroke-width:2" />  
+  <line x1="0" y1="200" x2="250" y2="200" style="stroke:black;
+  stroke-width:2" />  
+  <line x1="0" y1="200" x2="200" y2="300" style="stroke:black;
+  stroke-width:2" />
+
+</svg>
+
