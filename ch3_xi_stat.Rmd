@@ -328,6 +328,8 @@ function klikaj(i) {
 
 ## Harmonic Mean
 
+<div class="container">
+<div class="col">
 Formula: Reciprocal of Mean of $\frac{1}{x_i}$
 
 Reciprocal of $\frac{\frac{1}{x_1}+\frac{1}{x_2}+...+\frac{1}{x_n}}{n}$
@@ -346,3 +348,48 @@ function klikaj(i) {
     document.getElementById(i).style.visibility='visible';
 }
 </script>
+</div>
+<div class="col">
+For grouped data
+
+> - $HM=\frac{\sum f}{\sum \frac{f}{x}}$
+> - For wighted data: $\frac{\sum w}{\sum \frac{w}{x}}$
+</div>
+</div>
+
+## Story of oil scam 
+
+## Why and When HM
+
+- When there are rates associated, say speed, and numerator is fixed. 
+- $Speed, v = \frac{S}{t}$; HM if S is fixed
+- Example: A man travels 120 km the first day at 12 kmh, the same distance at 10 kmh on the 2nd day, and at 8 kmh on the 3rd day. Find his average speed. 
+
+## HM Example 2
+
+- A passerby travels 10 kmh at 20 kmh, 5 km at 15 km, and 4 km at 12 kmh. What is the average speed? (Use weighted HM)
+
+- Here, distances are different. Consider them weights. 
+
+> - $HM=\frac{w_1+w_2+w_3}{\frac{w_1}{x_1}+\frac{w_2}{x_2}+\frac{w_3}{x_3}}$
+
+
+```{r, echo=F}
+x <- c(20,15,12)
+w <- c(10,5,4)
+```
+
+> - HM = `r round(sum(w)/sum(w/x),3)`
+
+# Median
+
+## Find medians
+
+`r (x = c(4,5,6,8,9,11,16))`
+
+> - `r median(x)`
+
+> - x = 4,5,6,8,9,11,16, 19 
+
+`r x = c(4,5,6,8,9,11,16, 19)`
+> - `r median(x)`
