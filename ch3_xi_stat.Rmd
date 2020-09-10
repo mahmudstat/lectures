@@ -225,6 +225,124 @@ function klikaj(i) {
 > - $AM\ge GM \ge HM$ & $AM \times HM = (GM)^2$
 > - AM of first n natural numbers = $\frac{n+1}{2}$
 
-## Comparison of Measures
+## (Dis)advantages of AM
+
+> - Well-defined
+> - Less affected by sample fluctuation
+> - Comparison among sets is easy
+> - Uses all values
+> - <span>Suitable for further analysis.<span>
+> - <span style="color:red;">Affected by outliers
+
+## Geometric Mean (GM)
+
+$GM=(x_1 \times x_2 \times ... \times x_n)^{(1/n)}$ or
+$GM=(x_1^{f_1} \times x_2^{f_2} \times ... \times x_n^{f_n})^{(1/\sum f_i)}$
+
+Find GM: 2, 4, 6
+`r x = c(2, 4, 6)`
 
 
+<div onclick="klikaj('rad6')"><span style="color: blue;">Answer</span></div>
+<div id="rad6" style="visibility: hidden">
+`r round(exp(mean(log(x))),2)`
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+Try this one: 20020, 30080, 50086, 40130
+
+## Concept of Logarithm
+<small>
+
+> "An admirable artifice which, by reducing to a few days the labour of many months, doubles the life of the astronomer, and spares him the errors and disgust inseparable from long calculations."
+>
+> --- Pierre-Simon Laplace 
+
+- Log and Antilog
+
+</small>
+
+## GM Easier Formula
+
+x = 20020, 30080, 50086, 40130
+`r x = c(20020, 30080, 50086, 40130)`
+
+> - log x = `r round(log(x),2)`
+> - Mean of logx = $\frac{\sum logx}{n}$
+> - Original Mean = $antilog(\frac{\sum logx}{n})$
+
+<div onclick="klikaj('rad7')"><span style="color: blue;">Answer</span></div>
+<div id="rad7" style="visibility: hidden">
+33168.96
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+## Calculate GM
+
+<div class="container">
+<div class="col">
+| Marks | # Students |
+|:-:|:-:|
+| 10-12 | 4 |
+| 12-14 | 5 |
+| 14-16 | 3 |
+| 16-18 | 5 |
+| 18-20 | 7 |
+| 20-22 | 2 |
+</div>
+<div class="col">
+Make a table using these columns: $x_i, f_i, logx_i, f_ilogx_i$
+
+> - $GM =antilog(\frac{\sum f_i logx_i}{\sum f_i})$
+```{r, echo =F}
+x <- seq(11,21,2)
+f <- c(4,5,3,5,7,2)
+```
+<div onclick="klikaj('rad8')"><span style="color: blue;">Answer</span></div>
+<div id="rad8" style="visibility: hidden">
+`r exp(sum(log(x)*f)/sum(f))`
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
+
+## (Dis)advantages of GM
+
+- Not affected by outliers
+- Less affected by sample fluctuation
+- Suitable for further analysis
+- What if one or some x =0?
+- What if one or some x <0?
+
+## Harmonic Mean
+
+Formula: Reciprocal of Mean of $\frac{1}{x_i}$
+
+Reciprocal of $\frac{\frac{1}{x_1}+\frac{1}{x_2}+...+\frac{1}{x_n}}{n}$
+
+Thus, $HM = \frac{n}{\sum \frac{1}{x_i}}$
+
+Calculate: 2, 4, 8
+
+<div onclick="klikaj('rad9')"><span style="color: blue;">Answer</span></div>
+<div id="rad9" style="visibility: hidden">
+`r x = c(2,4,8)`
+`r round(1/mean(1/x),2)`
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
