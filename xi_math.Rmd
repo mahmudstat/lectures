@@ -1,0 +1,306 @@
+---
+title: "Mathematics"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    reveal_plugins: ["search", "chalkboard", "zoom", "menu"]
+    self_contained: false
+    css: css/styles.css
+    includes:
+      in_header: css/header_stat.html
+---
+
+# Paradox
+
+## Simpson's Paradox
+
+Who is better: Sayem or Siyam?  
+
+| Exam        | Sayem           | Siyam  |
+| ------------- |:-------------:| -----:|
+| Exam-1     | $\frac{63}{90} = 70 \%$| $\frac{8}{10}=80 \%$ |
+| Exam-2     | $\frac{4}{10} = 40 \%$      |   $\frac{45}{90} = 50 \%$ |
+
+## Look again
+
+Who is better: Sayem or Siyam?  
+
+| Exam        | Sayem           | Siyam  |
+| ------------- |:-------------:| -----:|
+| Exam-1     | $\frac{63}{90} = 70 \%$| $\frac{8}{10}=80 \%$ |
+| Exam-2     | $\frac{4}{10} = 40 \%$      |   $\frac{45}{90} = 50 \%$ |
+| Combined   | $\frac{67}{100} = 67 \%$      |   $\frac{53}{100} = 53 \%$ |
+
+## Batting average
+
+| Year        | Jeter           | Justice  |
+| ------------- |:-------------:| -----:|
+| 1995     | $\frac{12}{48} = 0.25$| $\frac{104}{411}=0.253$ |
+| 1996     | $\frac{183}{582} = 0.314$      |   $\frac{45}{140} = 0.270$ |
+
+
+## Take a second look
+
+| Year        | Jeter           | Justice  |
+| ------------- |:-------------:| -----:|
+| 1995     | $\frac{12}{48} = 0.25$| $\frac{104}{411}=0.253$ |
+| 1996     | $\frac{183}{582} = 0.314$      |   $\frac{45}{140} = 0.321$ |
+| Combined     | $\frac{195}{630} = 0.310$      |   $\frac{149}{551} = 0.270$ |
+
+## But NOT SO Straightforward{.big}
+
+### Stone removal from kidney
+
+
+| Stone        | Treatment  A <br>(Open Surgery) | Treatment B <br> (Puncture)  |
+| ------------- |:-------------:| -----:|
+| Small| **Group 1** <br> <br> $\frac{81}{87} = 93 \%$|**Group 2**<br> <br>$\frac{234}{270}=87\%$ |
+| Large     | **Group 3**<br> <br>$\frac{192}{263} = 73\%$|**Group 4**<br> <br>$\frac{55}{80} = 69 \%$ |
+
+## But NOT SO Straightforward{.big}
+
+
+| Stone        | Treatment  A <br>(Open Surgery) | Treatment B <br> (Puncture)  |
+| ------------- |:-------------:| -----:|
+| Small| **Group 1** <br> <br> $\frac{81}{87} = 93 \%$|**Group 2**<br> <br>$\frac{234}{270}=87\%$ |
+| Large     | **Group 3**<br> <br>$\frac{192}{263} = 73\%$|**Group 4**<br> <br>$\frac{55}{80} = 69 \%$ |
+| Both     |$\frac{273}{350} = 78\%$|$\frac{289}{350} = 83 \%$ |
+
+# Imaginary Number
+
+## How many numbers do you know of?
+
+> - Natural Number (N)
+> - Integers (Z)
+> - Rational Numbers
+> - Irrational Number
+
+# Measures of Dispersion
+
+## Absolute measures
+
+- Standard deviation
+
+- Quartile Deviation
+
+- Mean Deviation
+
+- Range
+
+## ***Relative measures***
+
+- Coefficient of Range
+
+- Coefficient of Quartile Deviation
+
+- Coefficient of Mean Deviation
+
+- Coefficient of Variatio
+
+## Variance
+
+$\sigma ^2 = \sum_{i=1}^n \frac{(x_i-\bar x)^2}{n} = \sum \frac{x_i^2}{n}-(\frac{\sum x_i}{n})^2$
+
+$\quad$ =  Mean of square - square of mean
+
+*Standard Deviation* ($\sigma$)
+
+Positive square root of $\sigma^2$
+
+## Table for estimation
+
+| $x$ | $x^2$ |
+|------:|:-----:|
+|   12  |  144  |  
+|  11  |  121 |  
+|  3   |    9 |  
+|$\sum x = 26$ |$\sum x^2 = 274$|
+
+$\therefore$ $\sigma^2 = \frac{274}{3}-(\frac{26}{3})^2 =?$
+```{r, echo=F}
+var(c(12,11,3))
+```
+
+## Example of Variance
+
+Randomly generated dataset
+```{r, echo=F}
+x <- rnorm(13, 10, 3)
+round(x,0)
+```
+
+
+Variance is 
+```{r, echo = F}
+var(x)
+```
+
+Standard deviation is 
+```{r, echo = F}
+sd(x)
+```
+
+## Shifting origin and scale
+
+Say we have values, $x_1, x_2, \cdot \cdot \cdot , x_n$
+
+> - Origin shift: Adding/Subtracting 
+> - $y_1 = x_1-a \space or \space x_1+a$
+> - Scale shift: Multiplying/Division
+> - $y_1 = b \cdot x_1  \space or \space x_1/b$
+> - both: $y_i = \frac{x_i-a}{b}$
+
+## Change of Origin and Scale
+
+Let $u_i=\frac{x_i-a}{c}$
+
+Then what should be the variance of $u_i$?
+
+> - We know $\sigma_x^2 = \sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}$
+
+> - Now, $x_i=cu_i+a$ & $\bar x = c \bar u + a$ 
+
+> - $\therefore \sigma_u^2=?$
+
+
+## Quartiles vs Median
+
+Recall Median?
+
+> - You get median by halving an ordered data set.
+
+> - 5, 9, 4, 3, 8: What is median? 
+
+> - 5, 9, 4, 3, 8, 11: What now? 
+
+> - What do they mean? 
+
+## For odd n (data size)
+
+$Me = \frac{n+1}{2}th \space term$ 
+
+> - 5, 9, 4, 3, 8: What is median? 
+
+## For even n
+$Me = \frac{\frac{n}{2}th \space term + \frac{n+1}{2}th \space term}{2}$
+
+5, 9, 4, 3, 8, 11
+
+> - What does it mean? 
+
+## Graphical determination
+<img src="img/stat/median.png" alt="" width="550"/>
+
+
+## Quartiles
+
+> - You get quartiles by cutting the data set thrice. 
+
+> - Can you guesstimate the formulae? 
+
+> - How many quartiles are there?
+
+## Quartile
+<img src="img/stat/med_quartile.png" alt="" width="600"/>
+
+## First Quartile (odd n)
+
+$Me = \frac{n+1}{2}th \space term$ 
+
+$Q_1 = \frac{n+1}{4}th \space term$ 
+
+$Q_2=?$ 
+
+> - $Q_3=?$
+
+## General Formula (odd n)
+For odd n, 
+$Q_i = \frac{i(n+1)}{4}th \space$
+
+Nothing but the generalized formula of median. 
+
+Guess how? 
+
+> - **For organized (tabulated data)**: $Q_i = L_i + \frac{\frac{n \times i}{4}}{f_m} \times c$
+
+## Example of Quartile
+
+```{r, echo=F}
+sample(30, 7)
+sample(30, 8)
+```
+
+## Decile & Percentile
+
+The data is divided into ten parts. 
+
+$D_i=?$
+
+**Percentile**
+$P_i=?$
+
+## Excercise 
+```{r, echo=F}
+set.seed(3098)
+sort(sample(80, 19))
+```
+
+Find
+
+- $Q_1, Q_2, Q_3$
+
+- $D_2, D_{50}, D_{78}$
+
+- Median
+
+- Quartile Deviation (QD) = $\frac{Q_3-Q_1}{2}$
+
+- Cooefficient of Range (CR) = $\frac{R}{X_H+X_L}$
+
+## Variance vs Coefficient of Variance
+
+Consider two colleges's results
+
+- 600 students earned GPA 5 from VNC
+- 45 students earned GPA 5 from Udayan college. 
+
+> - Which college is better? 
+
+> - Average batting score of Soumya = 35
+> - Average batting score of Mushfiq = 34
+> - Who is better? 
+
+## Coefficient of Variance
+
+$CV = \frac{\sigma}{\bar x} \times 100$
+
+## Estimation
+
+$\sigma _{vnc}=0.5, \bar x_{vnc}=4.8$
+$\sigma _{ud}=0.1, \bar x_{vnc}=4.7$
+
+> - $CV = \frac{\sigma}{\bar x} \times 100$
+
+It's variance, rather than average, which tells us how unpredictable something is.
+
+## Assignment
+
+```{r, echo=F}
+set.seed(892)
+x=sort(sample(80, 19))
+x
+```
+
+Calculate and Interpret
+
+i. variance ($\sigma_x^2 = \sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}$) and standard deviation ($\sigma_x$) 
+
+(hint: To find easily, use $\sigma_x^2$=mean of square - square of mean)
+
+ii. Quartiles ($Q_1, Q_2, and \space Q_3$)
+ii. Deciles ($D_4, D_9$)
+iii. Perctentiles ($P_{67}, P_{90}$)
+iv. Quartile Deviation (QD = $\frac{Q_3-Q_1}{2}$)
+
