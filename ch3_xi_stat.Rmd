@@ -5,7 +5,7 @@ date: \today
 output: 
   revealjs::revealjs_presentation:
     theme: sky
-    reveal_plugins: ["menu", "chalkboard"]
+    reveal_plugins: ["menu", "chalkboard", "zoom"]
     self_contained: false
     css: css/styles.css
     includes:
@@ -385,11 +385,77 @@ w <- c(10,5,4)
 
 ## Find medians
 
-`r (x = c(4,5,6,8,9,11,16))`
+x = 4,5,6,8,9,11,16
 
-> - `r median(x)`
+y = 4,5,6,8,9,11,16,19
 
-> - x = 4,5,6,8,9,11,16, 19 
+`r x = c(4,5,6,8,9,11,16)`
+`r y = c(4,5,6,8,9,11,16,19)`
 
-`r x = c(4,5,6,8,9,11,16, 19)`
-> - `r median(x)`
+> - `r paste0("Median of x is ",  median(x))`
+> - `r paste0("Median of y is ",  median(y))`
+> - Formula for odd n = $\frac{n+1}{2}th \space value$
+> - Formula for even n = $\frac{\frac{n}{2}th+(\frac{n}{2}+1)th}{2}$
+
+## Median from Graph
+
+<div class="container">
+<div class="col">
+| Intervals | cf |
+|-|-|
+| 0-5 | 1 |
+| 5-10 | 2 |
+| 10-15 | 4 |
+| 15-20 | 6 |
+| 20-25 | 7 |
+| 25-30 | 10 |
+</div>
+<div class="col">
+
+```{r, echo=F, fig.show='hide'}
+data <- c(16, 26, 12, 10, 27, 30, 14,  1, 25, 20)
+h <- hist(data)
+intervals <- seq(from = min(h$breaks), to = max(h$breaks), by = h$breaks[2] - h$breaks[1])
+intervals <- c(0, intervals[-1])
+# Cumulative sums
+cf = c(0, cumsum(h$counts))
+```
+
+```{r, echo=F}
+plot(intervals, cf, type = "b", col = "blue", pch = 20)
+```
+</div>
+</div>
+
+## Dis(advantages) of Median
+
+- Unaffected by outliers (extreme values)
+- Graphically estimable
+- Affected by sample fluctuation
+- Not based on all values
+- Not suitable for further mathematical analysis 
+
+## Quartiles, Deciles, and Percentiles
+
+$Q_1= \frac{(n+1)}{4}th \space$
+
+$Q_2, Q_3=?$
+
+Find $Q_1, Q_2, Q_3$ 
+
+
+
+## Averages from Grouped Data
+
+Median: $Me = L + \frac{\frac{n}{2}-F_c}{f_m}\times c$
+
+Mode: $M_o=L+\frac{\Delta_1}{\Delta_1+\Delta_2}\times c$
+
+Quartiles: $Q_i = L + \frac{\frac{in}{4}-F_c}{f}\times c$
+
+Find AM, Me, Mo, Q, and P30
+
+| Age | 20-24 | 25-29 | 30-34 | 35-39 | 40-44 | 45-49 | 50-54 | 55-59 | 60-64 |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| # Employees | 40 | 60 | 200 | 180 | 150 | 110 | 175 | 60 | 25 |
+
