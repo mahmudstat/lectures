@@ -5,7 +5,7 @@ date: \today
 output: 
   revealjs::revealjs_presentation:
     theme: night
-    reveal_plugins: ["notes", "search", "chalkboard"]
+    reveal_plugins: ["menu", "search", "chalkboard"]
     self_contained: false
     css: css/styles.css
     includes:
@@ -40,3 +40,42 @@ $a^2-2ab+b^2-p^2$
 ## Problem # 06
 $8a+ap^3$
 
+## Problem # 10
+
+$x^4-6x^2+1$
+
+## Problem # 16
+
+$x^2+7x-120$
+
+## Problem # 18
+
+$a^2+7ab+12b^2$
+
+## Problem # 21
+
+$(x^2-x)^2+3(x^2-x)-40$
+
+## Problem # 24
+
+$x^2+(3a+4b)x+(2a^2+5ab+3b^2)$
+
+> - $x^2+(3a+4b)x+(2a+3b)(a+b)$
+> - $x^2+(2a+3b)x+(a+b)x+(2a+3b)(a+b)$
+
+## Problem # 26
+
+$x^2-x-(a+1)(a+2)$
+
+> - $x^2-(a+2)x+(a+1)x-(a+1)(a+2)$
+
+## Problem # 33
+
+$2(x+y)^2-3(x+y)-2$
+
+> - $2(x+y)^2-4(x+y)+(x+y)-2$
+
+
+## Problem # 34
+
+$ax^2+(a^2+1)x+a$
