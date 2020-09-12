@@ -4,7 +4,7 @@ author: Abdullah Al Mahmud
 date: \today
 output: 
   revealjs::revealjs_presentation:
-    theme: sky
+    theme: night
     reveal_plugins: ["notes", "search", "chalkboard"]
     self_contained: false
     css: css/styles.css
@@ -28,3 +28,15 @@ a+b=5, a-b=3
 Find $2a^2+2b^2$ and ab; which one is bigger? 
 
 # Chapter 4.3
+
+## Problem # 01
+
+$3x-75x^3$
+
+## Problem # 04
+
+$a^2-2ab+b^2-p^2$
+
+## Problem # 06
+$8a+ap^3$
+
