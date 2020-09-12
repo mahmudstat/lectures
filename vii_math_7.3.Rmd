@@ -77,8 +77,10 @@ First solve manually
 
 <div class="container">
 <div class="col">
-- x-4=0
-- 2x+1 = x-3 
+i. x-4=0
+ii. 2x+1 = x-3 
+
+> - Classwork: 3x+4 = 5x
 </div>
 <div class="col">
 <img style="float: left" src="img/seven/graph-paper.png" width ="550"> 

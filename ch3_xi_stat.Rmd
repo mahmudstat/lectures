@@ -443,7 +443,7 @@ $Q_2, Q_3=?$
 
 Find $Q_1, Q_2, Q_3$ 
 
-
+X = 
 
 ## Averages from Grouped Data
 
