@@ -79,6 +79,16 @@ ii. a prime number or multiple of 5
 iii. a prime number or an odd number
 iv. not a perfect square
 
+## Misc Problem #02
+What is the probability that the product of three positive integers chosen from 1 through 100 is an even number?  
+
+> - Three possible cases
+> - All three are even
+> - Two odd and one even number
+> - Two even and one odd
+> - $P=\frac{^{50}C_3}{^{100}C_3}+...$
+> - `r round(choose(50,3)/choose(100,3)+2*choose(50,1)*choose(50,2)/choose(100,3),2)`
+
 # Playing Card
 
 ## Concepts (Playing Card)
