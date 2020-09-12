@@ -16,6 +16,15 @@ content: url(pcc2.png);
   width: 65px;
 }
 
+body:before {
+content: url(logo2.png);
+  position: fixed;
+  top: 15px;
+  left: 10px;
+  height: 65px;
+  width: 65px;
+}
+
 span {
 color:  #bfff00;
 }
