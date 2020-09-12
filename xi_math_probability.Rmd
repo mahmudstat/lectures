@@ -5,7 +5,7 @@ date: \today
 output: 
   revealjs::revealjs_presentation:
     theme: sky
-    reveal_plugins: ["search", "chalkboard", "zoom", "menu"]
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
     self_contained: false
     css: css/styles.css
     includes:
@@ -62,13 +62,22 @@ There are 15 cricketers in BD preliminary team. We got to <span style="font-styl
 
 # Miscellaneous 
 
-## Problem #01
+## Misc Problem #01
 What is the probability that in a leap year, there are 53 Fridays? 
 
 > - In a leap year, there are 366 days, i.e, 52 weeks and 2 days. In each week is a Fridays, so there are no less than 52 Fridays. The remaining two days could be:
 > - (Sat, Sun); (Sun, Mon); (Mon, Tue); (Tue, Wedn); (Wedn, Thu); (Thu, Fri); (Fri, Sat) = 7
 > - Total possible outcome = 7 and favorable outcomes = 2
 > - $P = \frac{2}{7}$
+
+## Misc Problem #02
+
+Out of the natural numbers 10 through 30, a number is chosen randomly; what is the probability that the number is 
+
+i. a prime number
+ii. a prime number or multiple of 5
+iii. a prime number or an odd number
+iv. not a perfect square
 
 # Playing Card
 
