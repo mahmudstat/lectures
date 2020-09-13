@@ -5,7 +5,7 @@ date: \today
 output: 
   revealjs::revealjs_presentation:
     theme: night
-    reveal_plugins: ["menu", "search", "chalkboard"]
+    reveal_plugins: ["menu", "chalkboard"]
     self_contained: false
     css: css/styles.css
     includes:
@@ -30,6 +30,7 @@ Find $2a^2+2b^2$ and ab; which one is bigger?
 # Chapter 4.3
 
 ## Problem # 01
+Resolve into factors 
 
 $3x-75x^3$
 
@@ -79,3 +80,42 @@ $2(x+y)^2-3(x+y)-2$
 ## Problem # 34
 
 $ax^2+(a^2+1)x+a$
+
+# Chapter 4.4
+
+## Find HCF (# 12)
+
+$36a^2b^2c^4d^5, 54a^5c^2d^4, and \space 90a^4b^3c^2$
+
+## Find HCF (# 16)
+
+$x^2-3x, x^2-9, x^2-4x+3$
+
+## Find HCF (# 18)
+
+$a^2b(a^3-b^3), a^2b^2(a^4+a^2b^2+b^4), (a^3b^2+a^2b^3+ab^4)$
+
+## Find HCF (# 19)
+
+$a^3-3a^2-10a, a^3+6a^2+8a, a^4-5a^3-14a^2$
+
+## Find LCM (# 21)
+
+$5a^2b^3c^2,10ab^2c^3, 15ab^3c$
+
+## Find LCM (# 24)
+
+$x^2+3x+2, x^2-1, x^x+x-2$
+
+## Find LCM (# 26)
+
+$6x^2-x-1, 3x^2+7x+2, 2x^2+3x-2$
+
+## Problem # 28
+
+If $x^2+\frac{1}{x^2}=3$ find 
+
+a. $(x+\frac{1}{x})^2$
+b. $\frac{x^6+1}{x^3}$
+c. $(x^2+\frac{1}{x^2})^3$
+
