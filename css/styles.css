@@ -3,10 +3,9 @@
 
 
 body {
-        background-image: url(bg/bg4.jpg);
+        background-image: url(bg/bg5.jpg);
     }
 
-  
 body:after {
 content: url(pcc2.png);
   position: fixed;
@@ -26,7 +25,7 @@ content: url(logo2.png);
 }
 
 span {
-color:  #bfff00;
+color:  #ffff00;
 }
 
 #thanks {
