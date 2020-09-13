@@ -30,6 +30,8 @@ $P (A) = \frac{n(A)}{n(S)}$
 
 ## Relative frequency
 
+$$\lim_{n(S) \to \infty} \frac{n(A)}{n(S)}$$
+
 ## Axiomatic
 
 Three axioms
