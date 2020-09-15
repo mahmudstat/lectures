@@ -1,0 +1,55 @@
+---
+title: "Data Science with R Outline"
+author: "Abdullah Al Mahmud"
+date: "9/15/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Course Outline
+
+
+Week 01: Data Science and R
+
+- What & Why Data Science? Statistics vs Data Science; Why R? Who Use R? Other Languages; Who Developed R? Install R and Rstudio; Start Writing R Code (Windows, Linux, and Command Line); Effectively Using Rstudio; R Script; R Documentation (Help); Handling Error; R Packages. 
+
+- Week 1 Quiz
+
+Week 02: Getting Familiar with R
+
+- R Mathematical Operations; Variables; Data Types; Comparison Operators; Vector, Matrix, List, and Data Frame; Functions (When and Why); Loops (Alternatives and Comparison with Other Languages). 
+
+- Week 2 Quiz
+
+Week 03: Data Manipulation (Base R and tidyverse)
+
+Concept of Tidy Data; Reading Data from Different Files (Base R, tidyverse, and data.table way); Handling Missing Values; Subsetting/Filtering Data; Selecting Rows and Columns; Transforming Data; Summarizing Data; Relational Data (e.g, Merging Tables).
+
+- Week 3 Quiz
+
+Week 04: Basic Statistics, Charts, and Curves; 
+
+Measures of Central Tendency and Dispersion (Averages, Quartiles, Variance, etc.); Pie Chart; Bar Chart; Histogram; Chart Characteristics (color, title etc.); Boxplot; Line Chart; Scatter Plot; Curves; Love Equation and Curve. 
+
+- Week 4 Quiz
+
+Week 05: Data Visualization with ggplot2
+
+How ggplot2 works; Pie Chart; Bar Chart; Time Series Plots/Line Chart; Doughnut Chart; Density Chart; Violin Chart; Histogram; Boxplot; Scatter Plot; Correlogram; Bubble Chart; Spider/Radar Chart; Wordcloud; Lollipop Chart; Area Chart.
+
+- Week 5 Quiz
+
+Week 06: Modeling with R 
+
+Different Types Regression and Interpretation of Results; Prediction; Test of Hypothesis. 
+
+- Week 6 Quiz
+
+Week 07: Mapping with R
+
+Acquiring Data for Mapping; Retrieving Data from Google Map; Choropleth Map; Different Ways to Make a Choropleth; Plotting Points on Map; Animated Map; Misc. 
+
+- Week 7 Quiz

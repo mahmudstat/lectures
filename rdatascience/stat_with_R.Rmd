@@ -1,0 +1,23 @@
+---
+title: "Data Science with R"
+author: "Abdullah Al Mahmud"
+date: "9/15/2020"
+output: pdf_document
+---
+This document would complies R commands from basic to advanced level, along with relevant outputs, when required.
+
+In R, assignment operator is usually "<-", although "=" is also usable. 
+
+I divide data science in two broad parts:
+
+i. Getting results
+ii. Understanding and Explaining Results
+
+**Assign some value to a variable**
+
+```{r}
+x <- 2
+x
+```
+
+R does not print command to be used explicitly, although _print(x)_, instead of just _x_ in the above would produce the same output. 
