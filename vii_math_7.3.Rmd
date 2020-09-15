@@ -87,6 +87,10 @@ ii. 2x+1 = x-3
 </div>
 </div>
 
+## Solve by Graph
+
+5x+4 = 4x + 7; without solving mathematically
+
 ## Exercise 7.3 (14)
 Length of three sides of a triangle are (x+2), (x+4), and (x+6) cm (x>0). Perimeter of the triangle is 18 cm. 
 
@@ -101,4 +105,12 @@ iii. Draw the graph of the solution.
 </div>
 </div>
 
+
+
 ## Exercise 7.3 (15)
+
+Distance between Dhaka and Aricha is 77 km. A bus starts from Dhaka to Aricha at 30 kmh, and another from Aricha to Dhaka at 40 kmh. The two meet at x km from Dhaka. 
+
+a. How far from Aricha will they meet? Express in terms of x.
+b. Determine x
+c. How much time will each bus take to reach their destinations? 
