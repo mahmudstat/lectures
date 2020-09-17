@@ -262,9 +262,13 @@ Try this one: 20020, 30080, 50086, 40130
 >
 > --- Pierre-Simon Laplace 
 
-- Log and Antilog
-
 </small>
+
+- Log and Antilog
+- $log_24=?$
+- if $log_2x=3$, then x=?
+
+
 
 ## GM Easier Formula
 
@@ -326,6 +330,33 @@ function klikaj(i) {
 - What if one or some x =0?
 - What if one or some x <0?
 
+
+## Story of oil scam 
+<div class="container">
+<div class="col">
+<small>
+S = 150 km
+
+$v_1=\space 10 km/h, v_2=\space 10 km/h, v_3=\space 10 km/h$
+
+What is the average speed? 
+
+> - $AM=\frac{10+15+20}{3}=15 \space km/h$
+> - Think more fundamentally
+> - $\sum S=3\times 150=450$
+> - $t_1=15h, t_2=10h, t_3=7.5h$
+> - $\bar v = \frac{\sum S}{\sum t}=\frac{450}{32.5}=13.84 \lt AM$
+</small>
+</div>
+<div class="col">
+> - $=\frac{450}{15+10+7.5}$
+> - $=\frac{450}{\frac{150}{10}+\frac{150}{15}+\frac{150}{20}}$
+> - $=\frac{450}{150(\frac{1}{10}+\frac{1}{15}+\frac{1}{20})}$
+> - $=\frac{3}{\frac{1}{10}+\frac{1}{15}+\frac{1}{20}}$
+> - $=\frac{3}{\frac{1}{v_1}+\frac{1}{v_2}+\frac{1}{v_3}}$
+</div>
+</div>
+
 ## Harmonic Mean
 
 <div class="container">
@@ -356,8 +387,6 @@ For grouped data
 > - For wighted data: $\frac{\sum w}{\sum \frac{w}{x}}$
 </div>
 </div>
-
-## Story of oil scam 
 
 ## Why and When HM
 
@@ -443,7 +472,15 @@ $Q_2, Q_3=?$
 
 Find $Q_1, Q_2, Q_3$ 
 
-X = 
+X = `r set.seed(100); (x = sort(sample(20,11)))`
+
+> - `r summary(x)`
+> - What are the formulae for Deciles ($D_i$ and $P_i$)
+
+## Find Deciles and Percentiles
+X = `r set.seed(100); (x = sort(sample(20,11)))`
+
+Find $D_3, D_8, P_{17}, P_{56}, P_{93}$
 
 ## Averages from Grouped Data
 
@@ -453,9 +490,24 @@ Mode: $M_o=L+\frac{\Delta_1}{\Delta_1+\Delta_2}\times c$
 
 Quartiles: $Q_i = L + \frac{\frac{in}{4}-F_c}{f}\times c$
 
-Find AM, Me, Mo, Q, and P30
+Find AM, Me, Mo, Q, and $P_{30}$
 
 | Age | 20-24 | 25-29 | 30-34 | 35-39 | 40-44 | 45-49 | 50-54 | 55-59 | 60-64 |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | # Employees | 40 | 60 | 200 | 180 | 150 | 110 | 175 | 60 | 25 |
 
+## Quadratic Mean
+
+$QM=\frac{x_1^2+x_2^2+...+x_n^2}{n}=\sqrt{\frac{\sum x_i^2}{n}}$
+> - For grouped data: ?
+
+## Comparison of Averages
+
+| Property | AM | GM | HM | Median | Mode |
+|-|-|-|-|-|-|
+| Formula | Easy to<br>understand | <strike><br>Easy<br></strike> | <strike><br>Easy<br></strike> | <strike><br>Easy<br></strike> | <strike><br>Easy<br></strike> |
+| Considers<br>values | All | All | All | Middle term(s) | Highest frequency |
+| Computaion | Easy | <strike><br>Easy<br></strike> | <strike><br>Easy<br></strike> | Easy | Easy |
+| Effect of<br>Outliers | Highly affected | Less affected<br>than AM | Less affected<br>than GM | Unaffected | Can be highly<br>affected |
+| Effect of Sampling<br>Flcutuation | Less affected | Less affected | Less affected | Can be highly<br>affected | Can be highly<br>affected |
+| Suitability for <br>further analysis | Possible | Possible | Possible | <strike><br>Possible<br></strike> | <strike><br>Possible<br></strike> |
