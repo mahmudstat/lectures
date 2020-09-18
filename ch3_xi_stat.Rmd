@@ -501,7 +501,7 @@ Find AM, Me, Mo, Q, and $P_{30}$
 $QM=\frac{x_1^2+x_2^2+...+x_n^2}{n}=\sqrt{\frac{\sum x_i^2}{n}}$
 > - For grouped data: ?
 
-## Comparison of Averages
+# Comparison of Averages
 
 | Property | AM | GM | HM | Median | Mode |
 |-|-|-|-|-|-|
@@ -511,3 +511,33 @@ $QM=\frac{x_1^2+x_2^2+...+x_n^2}{n}=\sqrt{\frac{\sum x_i^2}{n}}$
 | Effect of<br>Outliers | Highly affected | Less affected<br>than AM | Less affected<br>than GM | Unaffected | Can be highly<br>affected |
 | Effect of Sampling<br>Flcutuation | Less affected | Less affected | Less affected | Can be highly<br>affected | Can be highly<br>affected |
 | Suitability for <br>further analysis | Possible | Possible | Possible | <strike><br>Possible<br></strike> | <strike><br>Possible<br></strike> |
+
+## When AM = GM = HM
+
+If $x_1=x_2=x_3$; prove it 
+
+# Theorems
+
+## Theorem 01
+$$\sum_{i=0}^n (x_i-\bar x)=0$$
+
+## Theorem 02
+$$\sum_{i=0}^n f_i(x_i-\bar x)=0$$
+## Theorem 03
+
+$$\sum_{i=1}^n (x_i-\bar x)^2 \lt \sum_{i=1}^n (x_i-a)^2; a\ne\bar x$$ 
+
+$$\sum_{i=1}^n f_i(x_i-\bar x)^2 \lt \sum_{i=1}^n f_i(x_i-a)^2; a\ne\bar x$$ 
+
+
+## Theorem 04 (AM~origin & scale)
+
+Prove that AM depends on origin and scale
+Use frequency as well i.e, 
+
+- $$\bar x=\frac {\sum_{i=1}^nx_i}{n}$$ 
+- $$\bar x=\frac {\sum_{i=1}^n f_ix_i}{n}$$ 
+
+## Theorem 07
+
+If the GM of $n_1$ va;ues is $G_1$, and of $n_2$ values is $G_2$, show GM of $n_1+n_2$ values is $G=\sqrt{G_1G_2}$
