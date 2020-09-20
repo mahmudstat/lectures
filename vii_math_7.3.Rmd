@@ -6,7 +6,7 @@ theme: night
 output: 
   revealjs::revealjs_presentation:
     incremental: false
-    reveal_plugins: ["notes", "search", "chalkboard", "menu"]
+    reveal_plugins: ["chalkboard", "menu"]
     self_contained: false
     slideNumber: true
     css: css/styles.css
@@ -114,3 +114,11 @@ Distance between Dhaka and Aricha is 77 km. A bus starts from Dhaka to Aricha at
 a. How far from Aricha will they meet? Express in terms of x.
 b. Determine x
 c. How much time will each bus take to reach their destinations? 
+
+## Extra Exercise 01
+
+Solve
+
+$5x^2+6x+18=4x^2+9$
+
+> - $x^2+5x+6=0$

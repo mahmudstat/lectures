@@ -4,7 +4,7 @@ author: Abdullah Al Mahmud
 date: \today
 output: 
   revealjs::revealjs_presentation:
-    theme: night
+    theme: sky
     reveal_plugins: ["menu", "chalkboard"]
     self_contained: false
     css: css/styles.css
@@ -105,7 +105,7 @@ $5a^2b^3c^2,10ab^2c^3, 15ab^3c$
 
 ## Find LCM (# 24)
 
-$x^2+3x+2, x^2-1, x^x+x-2$
+$x^2+3x+2, x^2-1, x^2+x-2$
 
 ## Find LCM (# 26)
 
@@ -118,4 +118,3 @@ If $x^2+\frac{1}{x^2}=3$ find
 a. $(x+\frac{1}{x})^2$
 b. $\frac{x^6+1}{x^3}$
 c. $(x^2+\frac{1}{x^2})^3$
-

@@ -81,7 +81,7 @@ ii. a prime number or multiple of 5
 iii. a prime number or an odd number
 iv. not a perfect square
 
-## Misc Problem #02
+## Misc Problem #03
 What is the probability that the product of three positive integers chosen from 1 through 100 is an even number?  
 
 > - Three possible cases
@@ -117,12 +117,48 @@ Each rank has 13 cards.
 </div>
 
 
-## Problem #01
+## Card Problem #01
 3 cards are drawn from a pack of 52 cards. What is the probability that they are all Kings?
 
 There are 4 Kings. We've to draw 3 cards. 
 
 > - $P(K) =\frac{^4C_3}{{^52}C_3}$ 
+
+## Card Problem #02
+If a card is drawn from a deck of 52 cards with 4 aces, what is the probability that an ace will not show up? 
+
+Let, P(A) = Ace appears 
+
+> - $1-P(A)$
+> - $1-\frac 1 {13}$
+
+## Card Problem #03
+
+Two cards are drawn with replacement; What is the probability that they are
+
+i. Kings of same color
+ii. Kings of different color
+iii. Not Kings at all
+
+
+> - i. $P(BUR) =P(B)+P(R)$
+> - $\frac{^2C_1 \times ^2C_1}{^{52}C_1\times ^{52}C_1}+\frac{^2C_1 \times ^2C_1}{^{52}C_1\times ^{52}C_1}$ Why not $^{52}C_2$, $^4C_2$
+
+> - ii. $1-P(B \cup R)$
+> - $P(K)= \frac{^4C_1 \times ^4C_1}{^{52}C_1\times ^{52}C_1}$
+
+## Card Problem #04
+
+A card is drawn from a pack of 52 cards. What is the probability that it is
+
+i. an Ace
+ii. A Spade
+iii. A Hearts or a King
+
+> - 
+
+## Card Problem #05
+
 
 # Box
 

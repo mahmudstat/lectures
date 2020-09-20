@@ -4,6 +4,8 @@ author: "Abdullah Al Mahmud"
 date: "9/15/2020"
 output: pdf_document
 ---
+#Introduction
+
 This document would complies R commands from basic to advanced level, along with relevant outputs, when required.
 
 In R, assignment operator is usually "<-", although "=" is also usable. 
