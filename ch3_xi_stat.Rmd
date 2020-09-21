@@ -221,7 +221,7 @@ function klikaj(i) {
 > - $(x_i-\bar x)^2 \le (x_i-a)^2, \space a \ne \bar x$
 > - Depends on change of origin and scale?
 > - $\bar x + \bar y =\frac{\sum x+\sum y}{n_x+n_y}$
-> - Combined mean: $x_c=\frac{n_1 \bar x_1+n_2 \bar x_2+...+n_k \bar x_k}{n_1+n_2+n_3}$
+> - Combined mean: $\bar x_c=\frac{n_1 \bar x_1+n_2 \bar x_2+...+n_k \bar x_k}{n_1+n_2+...+n_k}$
 > - $AM\ge GM \ge HM$ & $AM \times HM = (GM)^2$
 > - AM of first n natural numbers = $\frac{n+1}{2}$
 
@@ -410,7 +410,7 @@ w <- c(10,5,4)
 
 > - HM = `r round(sum(w)/sum(w/x),3)`
 
-# Median
+# Partition Values
 
 ## Find medians
 
@@ -477,6 +477,28 @@ X = `r set.seed(100); (x = sort(sample(20,11)))`
 > - `r summary(x)`
 > - What are the formulae for Deciles ($D_i$ and $P_i$)
 
+## General Formula for Partition Values
+
+<div class="container">
+<div class="col">
+For odd n, 
+
+$A_i= \frac{i \times (n+1)}{k}th \space value$ 
+</div>
+<div class="col">
+For even n, 
+
+$A_i=\frac{\frac{i \times n}{2}th+(\frac{i\times n}{2}+1)th}{2}$
+</div>
+</div>
+
+where, k = no. of partitions
+
+For median, for example, k = 2. 
+
+> - What if we divide the data set into 20 segments? 
+
+
 ## Find Deciles and Percentiles
 X = `r set.seed(100); (x = sort(sample(20,11)))`
 
@@ -484,6 +506,21 @@ Find $D_3, D_8, P_{17}, P_{56}, P_{93}$
 
 ## Averages from Grouped Data
 
+<div class="container">
+<div class="col">
+|  Age  | # Employees | CF |
+|:-----:|:-----------:|----|
+| 20-24 |      40     |    |
+| 25-29 |      60     |    |
+| 30-34 |     200     |    |
+| 35-39 |     180     |    |
+| 40-44 |     150     |    |
+| 45-49 |     110     |    |
+| 50-54 |     175     |    |
+| 55-59 |      60     |    |
+| 60-64 |      25     |    |
+</div>
+<div class="col">
 Median: $Me = L + \frac{\frac{n}{2}-F_c}{f_m}\times c$
 
 Mode: $M_o=L+\frac{\Delta_1}{\Delta_1+\Delta_2}\times c$
@@ -491,15 +528,16 @@ Mode: $M_o=L+\frac{\Delta_1}{\Delta_1+\Delta_2}\times c$
 Quartiles: $Q_i = L + \frac{\frac{in}{4}-F_c}{f}\times c$
 
 Find AM, Me, Mo, Q, and $P_{30}$
-
-| Age | 20-24 | 25-29 | 30-34 | 35-39 | 40-44 | 45-49 | 50-54 | 55-59 | 60-64 |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| # Employees | 40 | 60 | 200 | 180 | 150 | 110 | 175 | 60 | 25 |
+</div>
+</div>
 
 ## Quadratic Mean
 
 $QM=\frac{x_1^2+x_2^2+...+x_n^2}{n}=\sqrt{\frac{\sum x_i^2}{n}}$
-> - For grouped data: ?
+
+> - Also known as Root mean square
+> - More at: https://en.wikipedia.org/wiki/Root_mean_square#Uses
+> - For grouped data? 
 
 # Comparison of Averages
 
@@ -541,3 +579,69 @@ Use frequency as well i.e,
 ## Theorem 07
 
 If the GM of $n_1$ va;ues is $G_1$, and of $n_2$ values is $G_2$, show GM of $n_1+n_2$ values is $G=\sqrt{G_1G_2}$
+
+## Theorem 08
+<small>
+
+<div class="container">
+<div class="col">
+### For two non-zero positive numbers, prove $AM \ge GM \ge HM$
+
+Let, the numbers be a, b
+
+$\therefore AM = \frac{a+b}{2}$ 
+
+$GM = \sqrt{ab}$ 
+
+$HM = \frac{2}{\frac 1 a +\frac 1 b}$ 
+</div>
+
+<div class="col">
+We know, 
+\begin{eqnarray}
+&  &(a-b)^2\ge 0    \nonumber \\
+& \Rightarrow & (a+b)^2-4ab \ge 0    \nonumber \\
+& \Rightarrow & (a+b)^2 \ge 4ab   \nonumber \\
+& \Rightarrow & (a+b) \ge 2 \sqrt{ab}   \nonumber \\
+& \Rightarrow & \frac{a+b} 2 \ge \sqrt{ab}   \nonumber \\
+& \Rightarrow & AM \ge GM   \nonumber \\
+\end{eqnarray}
+</div>
+<div class="col">
+Similarly, 
+\begin{eqnarray}
+&  &(\frac{1}{a}-\frac{1}{b})^2\ge 0    \nonumber \\
+& \Rightarrow & (\frac{1}{a}+\frac{1}{b})^2 -4 \cdot \frac 1 a \cdot \frac 1 b\ge 0    \nonumber \\
+& \Rightarrow & (\frac{1}{a}+\frac{1}{b})^2\ge \frac 4 {ab}   \nonumber \\
+& \Rightarrow & (\frac{1}{a}+\frac{1}{b}) \ge \frac 2 {\sqrt{ab}}  \nonumber \\
+& \Rightarrow & \sqrt{ab}(\frac{1}{a}+\frac{1}{b}) \ge 2   \nonumber \\
+& \Rightarrow & \sqrt{ab} \ge \frac{2}{(\frac{1}{a}+\frac{1}{b})}   \nonumber \\
+& \Rightarrow & GM \ge HM   \nonumber \\
+\end{eqnarray}
+</div>
+</div>
+</small>
+
+## Theorem 09
+
+For two non-zero positive numbers, $AM \times HM =(GM)^2$
+
+## Theorem 10
+Mean and Median of first n natural numbers are $\frac {n+1} 2$ 
+
+## Thorem 11
+
+If $\bar x_1$ and $\bar x_2$ are means of 2 data sets of sizes $n_1$ and $n_2$, respectively, the combined mean is $\bar x_c=\frac{n_1 \bar x_1+n_2 \bar x_2}{n_1+n_2}$
+
+## Theorem 12
+
+If $u=x+y, \bar u=\bar x + \bar y$; if $n_1=n_2=n$
+
+Given $u=x+y$
+
+\begin{eqnarray}
+\bar u &=&  \frac{\sum u}{n}   \nonumber \\
+&=& \frac{\sum (x+y)}{n}   \nonumber \\
+&=& \frac{\sum x}{n}+  \frac{\sum y}{n}   \nonumber \\
+&=& \bar x + \bar y   \nonumber \\
+\end{eqnarray}
