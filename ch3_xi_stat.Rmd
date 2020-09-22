@@ -4,7 +4,7 @@ author: Abdullah Al Mahmud
 date: \today
 output: 
   revealjs::revealjs_presentation:
-    theme: sky
+    theme: night
     reveal_plugins: ["menu", "chalkboard", "zoom"]
     self_contained: false
     css: css/styles.css
@@ -324,11 +324,16 @@ function klikaj(i) {
 
 ## (Dis)advantages of GM
 
-- Not affected by outliers
-- Less affected by sample fluctuation
-- Suitable for further analysis
-- What if one or some x =0?
-- What if one or some x <0?
+- [x] Not affected by outliers
+
+  x = `r (x = c(5,10,15,20,100,1000))`
+  
+  log(x) = `r round(log10(x),2)`
+
+- [x] Less affected by sample fluctuation
+- [x] Suitable for further analysis
+- [ ] <span style="color:ff1a1a;">What if one or some x = 0?</span>
+- [ ] <span style="color:ff1a1a;">What if one or some x < 0? </span>
 
 
 ## Story of oil scam 
@@ -392,11 +397,26 @@ For grouped data
 
 - When there are rates associated, say speed, and numerator is fixed. 
 - $Speed, v = \frac{S}{t}$; HM if S is fixed
-- Example: A man travels 120 km the first day at 12 kmh, the same distance at 10 kmh on the 2nd day, and at 8 kmh on the 3rd day. Find his average speed. 
+- Example: A man travels 120 km the first day at 12 kph, the same distance at 10 kph on the 2nd day, and at 8 kph on the 3rd day. Find his average speed. 
+
+## Wighted AM vs Weighted HM
+
+Suppose, a bus travels 10 km at 10 kph, another 15 km at 20 kph, and another 20 km at 25 kph. What is the average speed. 
+
+HM $\rightarrow$ consider distances as weights
+
+AM $\rightarrow$ consider times as weights
+
+Time, $t=\frac d v=$ `r d = c(10,15,20); v = c(10,20,25); d/v`
+
+
+> - $WHM = \frac{10+15+20}{\frac{10}{10}+\frac{15}{20}+\frac{20}{25}}$=`r round((45)/(1+15/20+20/25),2)`
+> - $WAM = \frac{1\times 10 + 0.75 \times 20 + 0.80 \times 25}{1+0.75+0.80}$ = `r round((10+0.75*20+0.80*25)/2.55,2)`
+> - True mean, $\bar v=\frac{\sum d}{\sum t}=\frac{45}{2.55}=$ `r round(45/2.55,2)`
 
 ## HM Example 2
 
-- A passerby travels 10 kmh at 20 kmh, 5 km at 15 km, and 4 km at 12 kmh. What is the average speed? (Use weighted HM)
+- A passerby travels 10 km at 20 kph, 5 km at 15 kph, and 4 km at 12 kph. What is the average speed? (Use weighted HM)
 
 - Here, distances are different. Consider them weights. 
 

@@ -3,7 +3,7 @@
 
 
 body {
-        background-image: url(bg/bg8.jpg);
+        background-image: url(bg/bg9.jpg);
     }
 
 body:after {
@@ -25,7 +25,7 @@ content: url(logo2.png);
 }
 
 span {
-color:  #c6ff1a;
+color:  #ffffb3;
 }
 
 #thanks {
