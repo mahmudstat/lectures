@@ -447,35 +447,6 @@ y = 4,5,6,8,9,11,16,19
 > - Formula for odd n = $\frac{n+1}{2}th \space value$
 > - Formula for even n = $\frac{\frac{n}{2}th+(\frac{n}{2}+1)th}{2}$
 
-## Median from Graph
-
-<div class="container">
-<div class="col">
-| Intervals | cf |
-|-|-|
-| 0-5 | 1 |
-| 5-10 | 2 |
-| 10-15 | 4 |
-| 15-20 | 6 |
-| 20-25 | 7 |
-| 25-30 | 10 |
-</div>
-<div class="col">
-
-```{r, echo=F, fig.show='hide'}
-data <- c(16, 26, 12, 10, 27, 30, 14,  1, 25, 20)
-h <- hist(data)
-intervals <- seq(from = min(h$breaks), to = max(h$breaks), by = h$breaks[2] - h$breaks[1])
-intervals <- c(0, intervals[-1])
-# Cumulative sums
-cf = c(0, cumsum(h$counts))
-```
-
-```{r, echo=F}
-plot(intervals, cf, type = "b", col = "blue", pch = 20)
-```
-</div>
-</div>
 
 ## Dis(advantages) of Median
 
@@ -509,7 +480,7 @@ $A_i= \frac{i \times (n+1)}{k}th \space value$
 <div class="col">
 For even n, 
 
-$A_i=\frac{\frac{i \times n}{2}th+(\frac{i\times n}{2}+1)th}{2}$
+$A_i=\frac{\frac{i \times n}{k}th+(\frac{i\times n}{k}+1)th}{k}$
 </div>
 </div>
 
@@ -552,9 +523,16 @@ Find AM, Me, Mo, Q, and $P_{30}$
 </div>
 </div>
 
+## Partition Values from Graph
+
+- Draw an Ogive
+- Draw a straight line parallel to X-axis at the point $\frac n 2$ of Y-axis. - Draw a perpendicular on X-axis from the intersection point.
+
+![Graph](img/stat/partition.jpg)
+
 ## Quadratic Mean
 
-$QM=\frac{x_1^2+x_2^2+...+x_n^2}{n}=\sqrt{\frac{\sum x_i^2}{n}}$
+$QM=\sqrt{\frac{x_1^2+x_2^2+...+x_n^2}{n}}=\sqrt{\frac{\sum x_i^2}{n}}$
 
 > - Also known as Root mean square
 > - More at: https://en.wikipedia.org/wiki/Root_mean_square#Uses
@@ -650,7 +628,7 @@ For two non-zero positive numbers, $AM \times HM =(GM)^2$
 ## Theorem 10
 Mean and Median of first n natural numbers are $\frac {n+1} 2$ 
 
-## Thorem 11
+## Theorem 11
 
 If $\bar x_1$ and $\bar x_2$ are means of 2 data sets of sizes $n_1$ and $n_2$, respectively, the combined mean is $\bar x_c=\frac{n_1 \bar x_1+n_2 \bar x_2}{n_1+n_2}$
 
@@ -763,3 +741,5 @@ function klikaj(i) {
     document.getElementById(i).style.visibility='visible';
 }
 </script>
+
+## 
