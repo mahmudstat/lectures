@@ -13,6 +13,7 @@ output:
 ---
 
 # Chapter 03 (Central Tendency)
+`r options(scipen=999)`
 
 ## What is Central Tendency?
 
@@ -665,3 +666,100 @@ Given $u=x+y$
 &=& \frac{\sum x}{n}+  \frac{\sum y}{n}   \nonumber \\
 &=& \bar x + \bar y   \nonumber \\
 \end{eqnarray}
+
+## Theorem 13
+
+For equal number of observations, GM of two variables is equal to the product of their individual means. 
+
+## Theorem 14
+
+$GM=Antilog(\frac{\sum \log x_i}{n})$ or $Antilog(\frac{\sum f_i \log x_i}{\sum f_i})$ 
+
+## Theorem 15
+
+If $y = a + bx, \bar y = a + b \bar x$
+
+## Theorem 16
+
+If $z_i=ax_i+by_i, \bar z=a \bar x + b \bar y$
+
+# Example Problems
+
+## Example Problem 01
+
+AM and GM of two positive numbers are 25 and 15, respectively. Find HM and the numbers. 
+<div class="container">
+<div class="col">
+<div onclick="klikaj('ep1.1')"><span>Solution (i)</span></div>
+<div id="ep1.1" style="visibility: hidden">
+We know, $AM \times HM=(GM)^2$
+
+> - Thus, $HM=$ `r round(15^2/25,2)`
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+<div class="col">
+<div onclick="klikaj('ep1.2')"><span>Solution (ii)</span></div>
+<div id="ep1.2" style="visibility: hidden">
+If the numbers are $a, b; a>b$
+$\frac{a+b}{2}=25$ and $\sqrt{ab}=15$
+
+Thus, $a+b=50$, and $ab=15^2=225$
+
+$\therefore (a-b)^2=(a+b)^2-4ab$
+$\Rightarrow a-b =$ `r round(sqrt(50^2-4*225),2)`
+
+> - Thus, a = 45, b = 5
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
+
+## Example Problem 15
+
+The mean of 200 numbers was 50. Later it was revealed that two observations were incorrectly given as 92 and 8, instead of 192 and 88, respectively. Find the correct mean. 
+
+<div onclick="klikaj('ep15')"><span>Solution</span></div>
+<div id="ep15" style="visibility: hidden">
+$n=200, \bar x = 200$
+
+$\therefore$ Incorrect total, $\sum x = n \times \bar x=$ `r (x=200*50)`
+
+Correct total, $\sum x'=10,000-92-8+192+88=$ `r  (s=x-92-8+192+88)`
+
+Correct mean, $\bar x'=\frac{10180}{200}$ `r round(s/200,2)`
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+
+## Example Problem 22 
+
+If $\sum f_i(x_i-k)=0$, what is the value of `k`?
+
+<div onclick="klikaj('ep22')"><span>Answer</span></div>
+<div id="ep22" style="visibility: hidden">
+Given $\sum f_i(x_i-k)=0$
+
+$\Rightarrow \sum f_i x_i - k \sum f_i =0$
+
+$\Rightarrow k = \frac{\sum f_i x_i}{\sum f_i}$
+
+> - = $\bar x$
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
