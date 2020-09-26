@@ -103,3 +103,14 @@ y <- cos(t)
 plot(x*t,y*t, pch=16, col="blue", main = " Golden angle")
 
 ```
+
+### Folium of Descartes
+
+```{r}
+a <- 1
+p <- seq(-100, 120, length.out = 1000)
+x <- 3*a*p/(1+p^3)
+y <- 3*a*p^2/(1+p^3)
+library(ggplot2)
+plot(x, y, type="l", col="brown")
+```
