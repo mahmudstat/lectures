@@ -1,0 +1,34 @@
+---
+title: "Measures of Dispersion"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    reveal_plugins: ["menu", "chalkboard", "zoom"]
+    self_contained: false
+    css: css/styles.css
+    includes:
+      in_header: css/header_stat.html
+---
+# Concept of dispersion
+
+## What is Dispersion
+
+## Why?
+
+To
+
+- estimate reliability
+- compare variability of several sets of data
+- enable further analysis
+- have a perception of probability
+
+## Criteria of A Good Measure
+
+- Well-defined
+- Easy to understand and compute
+- Based on all observations
+- Suitable for for further mathematical/statistical analysis
+- Less affected by saple fluctuation
+- Unaffected by outliers
