@@ -22,16 +22,33 @@ xlab="x = cost", ylab = "y = sint")
 t <- seq(0,180, 10)*pi/180
 x <- cos(t)
 y <- sin(t)
-plot(x,y, pch=19, xlab = "cosx", ylab = "cosx", type = "b",
+plot(x,y, pch=20, xlab = "cosx", ylab = "cosx", type = "b",
      main = "Trogonometric Circle")
 ```
 
-## Pparabola
+### Plot circle using trigonometric complex equation
+
+```{r}
+f <- function(t) cos(t)+1i*sin(t)
+t <- seq(0,180, 10)*pi/180
+plot(f(t), type="b", pch=20, xlab="Angle", ylab = "cos(x)+isin(x)",
+     main = "Circle Using Trigonometric Complex Equation")
+```
+### Circle using Euler Formula
+
+```{r}
+f <- function(t) exp(1i*t)
+t <- seq(0,180, 10)*pi/180
+plot(f(t), type="b", pch=20, xlab="Angle", ylab = expression(e^{ix}),
+     main = "Circle Using Euler Formula")
+```
+
+## Ellipse
 ```{r}
 t <- seq(0, 2*pi, length.out = 100)
 x <- 3*cos(t)
 y <- 2*sin(t)
-plot(x,y, pch = 18, col = 'blue', ylim=c(-3,3), main = "Parabola",
+plot(x,y, pch = 18, col = 'blue', ylim=c(-3,3), main = "Ellipse",
 xlab="x = 3cost", ylab = "y = 2sint")
 
 #Butterfly curve (transcendental)
