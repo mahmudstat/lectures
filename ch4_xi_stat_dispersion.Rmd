@@ -32,3 +32,14 @@ To
 - Suitable for for further mathematical/statistical analysis
 - Less affected by saple fluctuation
 - Unaffected by outliers
+
+## Chart
+
+```{r, echo = FALSE}
+library(DiagrammeR)
+mermaid("
+graph TB
+Data-->Primary
+Data-->Secondary
+")
+```
