@@ -14,9 +14,20 @@ x <- cos(t)
 y <- sin(t)
 plot(x,y, pch = 18, col = 'blue', main = "Circle",
 xlab="x = cost", ylab = "y = sint")
+```
 
+### Circle using discrete angles
 
-#parabola
+```{r}
+t <- seq(0,180, 10)*pi/180
+x <- cos(t)
+y <- sin(t)
+plot(x,y, pch=19, xlab = "cosx", ylab = "cosx", type = "b",
+     main = "Trogonometric Circle")
+```
+
+## Pparabola
+```{r}
 t <- seq(0, 2*pi, length.out = 100)
 x <- 3*cos(t)
 y <- 2*sin(t)
