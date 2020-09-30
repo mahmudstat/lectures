@@ -219,7 +219,7 @@ function klikaj(i) {
 
 - $\sum (x_i-\bar x)=0$; can you prove it? 
 
-> - $(x_i-\bar x)^2 \le (x_i-a)^2, \space a \ne \bar x$
+> - $\sum (x_i-\bar x)^2 \le \sum (x_i-a)^2, \space a \ne \bar x$
 > - Depends on change of origin and scale?
 > - $\bar x + \bar y =\frac{\sum x+\sum y}{n_x+n_y}$
 > - Combined mean: $\bar x_c=\frac{n_1 \bar x_1+n_2 \bar x_2+...+n_k \bar x_k}{n_1+n_2+...+n_k}$
@@ -343,7 +343,7 @@ function klikaj(i) {
 <small>
 S = 150 km
 
-$v_1=\space 10 km/h, v_2=\space 10 km/h, v_3=\space 10 km/h$
+$v_1=\space 10 km/h, v_2=\space 15 km/h, v_3=\space 20 km/h$
 
 What is the average speed? 
 
