@@ -142,3 +142,11 @@ y <- 3*a*p^2/(1+p^3)
 library(ggplot2)
 plot(x, y, type="l", col="brown")
 ```
+
+### Complex plotting
+```{r}
+x <- sample(10, 20, replace = TRUE)
+y <- sample(5, 20, replace = TRUE)
+par(mfrow=c(1,2))
+plot(x+y*1i, pch=20); plot(x,y, pch=20)
+```
