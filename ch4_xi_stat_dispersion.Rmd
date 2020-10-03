@@ -30,16 +30,40 @@ To
 - Easy to understand and compute
 - Based on all observations
 - Suitable for for further mathematical/statistical analysis
-- Less affected by saple fluctuation
+- Less affected by sample fluctuation
 - Unaffected by outliers
 
-## Chart
+## Types of Measure
 
-```{r, echo = FALSE}
+- Absolute
+- Relative
+
+
+## Absolute Measure
+
+```{r, echo=F}
 library(DiagrammeR)
 mermaid("
-graph TB
-Data-->Primary
-Data-->Secondary
+graph LR
+Absolute-->Range
+Absolute-->Mean_Deviation
+Mean_Deviation-->About_Mean
+Absolute-->Stanard_Deviation
+Absolute-->Quartile_deviation
+Mean_Deviation-->About_Median
+Mean_Deviation-->About_Mode
+")
+```
+
+## Relative Measure
+
+```{r, echo=F}
+mermaid("
+graph LR
+Relative-->Coefficient
+Coefficient-->of_Range
+Coefficient-->of_Mean_Deviation
+Coefficient-->of_Varniation
+Coefficient-->of_Quartile_Deviation
 ")
 ```

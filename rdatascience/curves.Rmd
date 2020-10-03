@@ -150,3 +150,12 @@ y <- sample(5, 20, replace = TRUE)
 par(mfrow=c(1,2))
 plot(x+y*1i, pch=20); plot(x,y, pch=20)
 ```
+
+### Binomial Probability
+
+```{r}
+Value <- c(0:4)
+Freq <- c(5, 8, 3, 4, 2)
+par(mfrow=c(1,2))
+plot(Value, Freq, type="h", lwd=6); plot(Value+Freq*1i, type = "h")
+```

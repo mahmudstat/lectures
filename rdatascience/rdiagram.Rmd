@@ -24,7 +24,7 @@ graph TB
 ```{r}
 mermaid("
 graph TB
-Data-->Primary
-Data-->Secondary
+Dispersion-->Absolute
+Dispersion-->Relative
 ")
 ```
