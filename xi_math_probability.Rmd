@@ -162,7 +162,7 @@ iii. A Hearts or a King
 
 # Box
 
-## Problems: Type -#
+## Box Problem #01
 <small>In a box, there are 5 blue marbles, 7 green marbles, and 8 yellow marbles. If two marbles are randomly selected, what is the probability that both will be green or yellow, if taken
 
 i. with replacement
