@@ -118,3 +118,57 @@ If $x^2+\frac{1}{x^2}=3$ find
 a. $(x+\frac{1}{x})^2$
 b. $\frac{x^6+1}{x^3}$
 c. $(x^2+\frac{1}{x^2})^3$
+
+
+# Chapter 5.1
+
+## Express in LOwest Form #01
+
+$\frac{4x^2y^3z^5}{9x^5y^2z^3}$
+
+## Express in common denominator
+
+$\frac{x-y}{xy}, \frac{y-z}{yz}, \frac{z-x}{zx}$
+
+## ADD
+
+$\frac{a}{bc}, \frac{b}{ca}, \frac{c}{ab}$
+
+## ADD (3.g)
+
+$\frac{1}{x-2}+\frac{1}{x+2}+\frac{4}{x-4}$
+
+> - LCM = $(x-2)(x+2)=(x^2-4$
+
+## Add (3.h)
+
+$\frac{1}{x^-1}+\frac{1}{x^4-1}+\frac{1}{x^8-1}$
+
+> - $x^8-1=(x^4+1)(x^4-1) = (x^4+1)(x^2+1)(x^2-1)$
+> - LCM = $(x^4+1)(x^2+1)(x^2-1)$
+
+## Find Difference (4.b)
+
+$\frac{1}{y(x-y)}-\frac{1}{x(x+y)}$
+
+## Find Difference (4.c)
+
+$\frac{x+1}{1+x+x^2}-\frac{x-1}{1-x+x^2}$
+
+- It is better to write LCM in long form. 
+- LCM = $(1+x+x^2)(1-x+x^2)$
+- Short form: $(1+x^2)^2-x^2$
+
+## Find Difference (4.e)
+
+$\frac{1}{x-y}-\frac{x^2-xy+y^2}{x^3+y^3}$
+
+## Simplify (5.b)
+
+$\frac{x-y}{(x+y)(y+z)}+\frac{y-z}{(y+z)(z+x)}+\frac{z-x}{(z+x)(x+y)}$
+
+## Simplify (5.g)
+
+$\frac{1}{x-1}-\frac{1}{x+1}-\frac{2}{x^2+1}+\frac{4}{x^4+1}$
+
+- LCM in short form: $x^8-1$; guess how?
