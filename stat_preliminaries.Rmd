@@ -175,7 +175,8 @@ function klikaj(i) {
 </div>
 <div class="col">
 ![Histogram Example](img/stat/hist.png)
-Can you interpret it? 
+Write its interpretation in 3-5 sentences.
+
 </div>
 </div>
 

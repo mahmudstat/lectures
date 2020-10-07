@@ -714,7 +714,7 @@ $\therefore$ Incorrect total, $\sum x = n \times \bar x=$ `r (x=200*50)`
 
 Correct total, $\sum x'=10,000-92-8+192+88=$ `r  (s=x-92-8+192+88)`
 
-Correct mean, $\bar x'=\frac{10180}{200}$ `r round(s/200,2)`
+Correct mean, $\bar x'=\frac{10180}{200}=$ `r round(s/200,2)`
 </div>
 <script>
 function klikaj(i) {
@@ -743,4 +743,3 @@ function klikaj(i) {
 }
 </script>
 
-## 
