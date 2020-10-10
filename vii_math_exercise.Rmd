@@ -1,0 +1,32 @@
+---
+title: "VII Math Exercises"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    reveal_plugins: ["menu", "chalkboard", "zoom"]
+    self_contained: false
+    css: css/styles.css
+    includes:
+      in_header: css/header_stat.html
+---
+
+## Determine square
+3x-2y+5z
+
+## Find
+
+If $m^2-2m+1=0$, prove $m^4+\frac 1 {m^4}=2$
+
+> - First, find the value of $m+\frac 1 m$
+> - Squaring on both sides
+> - $m^2+2+\frac 1 {m^2}=4$
+
+> - There is another method
+
+## Simplify
+
+$(2a+1)^2-4a(2a+1)+4a^2$
+
+Solve directly or by assuming something
