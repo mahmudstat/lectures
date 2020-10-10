@@ -388,7 +388,45 @@ ii. without replacement
 > - $\frac{^7C_1 \times ^7C_1}{^{20}C_1 \times ^{20}C_1}+\frac{^8C_1 \times ^8C_1}{^{20}C_1 \times ^{20}C_1}$
 > - Without replacement: $\frac{^7C_1 \times ^6C_1}{^{20}C_1 \times ^{20}C_1}+\frac{^8C_1 \times ^7C_1}{^{20}C_1 \times ^{20}C_1}$
 
-# Conditiona Probability
+## Box Problem #02
+
+<div class="container">
+<div class="col">
+There are some balls in a box as below
+
+| Color  | # Balls |
+|--------|---------|
+| White  | 3       |
+| Black  | 6       |
+| Red    | 7       |
+| Green  | 5       |
+| Yellow | 4       |
+| Violet | 9       |
+| Blue   | 8       |
+</div>
+<div class="col">
+If three balls are drawn at random, what is the probability there are all red or green? 
+
+> - $\frac{^7C_3}{^{42}C_3}+\frac{^5C_3}{^{42}C_3}$
+> - `r round(choose(7,3)/choose(20,3)+choose(5,3)/choose(20,3),3)`
+</div>
+</div>
+
+## Box Problem #02
+
+There are 9 red and 7 white balls in a box. 6 balls are picked randomly. What is the probability that 3 balls are red and 3 balls are white? 
+
+Which one is the answer? 
+
+- [ ] $\frac{^9C_3 \times ^7C_3}{^{16}C_6}$
+- [ ] $\frac{^9C_3}{^{16}C_3} \times \frac{^7C_3}{^{16}C_3}$
+- [ ] $\frac{^9C_3}{^{16}C_6} \times \frac{^7C_3}{^{16}C_6}$
+
+
+> - Whatever we draw together will be in $r$ in $^nC_r$
+> - Answer: $\frac{^9C_3 \times ^7C_3}{^{16}C_6}$=`r round(choose(9,3)*choose(7,3)/choose(16,6),3)`
+
+# Conditional Probability
 
 ## Conditional Formula
 
@@ -396,13 +434,37 @@ ii. without replacement
 
 $P(B|A)=\frac{P(A \cap B)}{P(A)}$
 
-## Problem # 01
+## Conditional Problem # 01
 
 Probability that it rains today is 40%, that tomorrow is 50%, and that on both days is 30%. If it rains today, what is the probability that it would rain tomorrow? 
 
-> - $P (T) = 0.4, P(M) = 0.5, P(T\cap M)=0.3, P(M|T)=?$
+> - $P (T) = 0.4, P(M) = 0.5, P(T\cap M)=0.3$
+> - $P(M|T)=?$
 > - $P(M|T)=\frac{P(T\cap M)}{P(T)}$
 > - $\frac{0.3}{0.4}$
+
+## Conditional Problem # 02
+
+In a college, there are 100 students, of whom 30 play football, 40 play cricket, and 20 play both. A student is selected randomly. If he plays cricket, what is the probability that he plays football? 
+
+<div onclick="klikaj('con2')"><span>Solution</span></div>
+<div id="con2" style="visibility: hidden">
+$P(F)=0.3$
+
+$P(C)=0.4$
+
+$P(F \cap C)=0.2$
+
+$P(F|C)=?$
+
+> - $P(F|C)=\frac{P(F \cap C)}{P(C)}=$ `r round(0.2/0.4,2)` 
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
 
 # Set Theoretic
 
@@ -418,7 +480,7 @@ Formulae
 <small>
 Think Why are they so?
 
-- $P(A\cap B)=P(A)\times P(B)$, if A & B are independent. 
+- $P(A\cap B)=P(A)\times P(B)$, if A & B are independent (prove from Bayes theorem) 
 
 > - $P(A\cup B)=P(A)+P(B)-P(A\cap B)$
 > - $P(A\cap \bar B)=P(A)-P(A\cap B)$
@@ -429,10 +491,12 @@ Think Why are they so?
 </div>
 </div>
 
-## Problem # 01
+## Set Problem # 01
+The probability of Ronaldo scoring a goal is 0.4 and that of Messi 0.38. What is the probability that
+<div class="container">
+<div class="col">
 
 <small>
-The probability of Ronaldo scoring a goal is 0.4 and that of Messi 0.38. What is the probability that-
 
 i. Both Score
 ii. Only Ronaldo scores
@@ -441,6 +505,53 @@ iv. At least one of them scores
 v. Only one of them scores
 vi. At most one of them scores
 
+P(R) = 0.4 and P(M) = 0.38
 </small>
+</div>
+<div class="col">
 
-## Problem # 02
+> - 1. $P(R \cap M)=P(R) \times P(M)$ (since independent)
+> - 2. $P(R \cap M')=?$
+> - 3. $P(R' \cap M)=?$
+> - 4. $P(R \cup M)$
+> - 5. $P(R \cap M')+P(R' \cap M)$
+> - 6. Same to 5
+</div>
+</div>
+
+
+## Set Problem # 02
+
+<div class="container">
+<div class="col">
+$S_1$={1,3,4,7,9,20}
+
+$S_2$={`r 12:18`}
+
+If a number is randomly chosen from each set, what is the probability that a prime number comes from $S_1$ and a multiple of 3 from $S_2$?
+</div>
+<div class="col">
+
+<div onclick="klikaj('s3')"><span>Solution</span></div>
+<div id="s3" style="visibility: hidden">
+Say, P = Prime from $S_1$
+
+M = Multiple of 3 from $S_2$.
+
+$P(P) = \frac 3 7$ and $P(M)=\frac 3 7$
+
+What do we need to find out?
+
+- [ ] $P(P \cup M)$
+- [x] $P(P \cap M)$ 
+
+> - Answer: $P(P \cap M) = P(P) \cdot P(M)$</div>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+</div>
+
