@@ -957,6 +957,9 @@ Second<br>Die
 <li class="fragment"><span class="math inline">\(1-P(B \cup R)\)</span></li>
 </ol></li>
 <li class="fragment"><span class="math inline">\(P(K)= \frac{^4C_1 \times ^4C_1}{^{52}C_1\times ^{52}C_1}\)</span></li>
+<li class="fragment"><ol start="3" type="i">
+<li class="fragment"><span class="math inline">\(1-P(K)\)</span></li>
+</ol></li>
 </ul>
 </section><section id="card-problem-04" class="slide level2">
 <h2>Card Problem #04</h2>
@@ -966,9 +969,6 @@ Second<br>Die
 <li>A Spade</li>
 <li>A Hearts or a King</li>
 </ol>
-<ul>
-<li class="fragment"></li>
-</ul>
 </section><section id="card-problem-05" class="slide level2">
 <h2>Card Problem #05</h2>
 </section></section>
@@ -1041,18 +1041,26 @@ Second<br>Die
 <h2>Box Problem #02</h2>
 <p>There are 9 red and 7 white balls in a box. 6 balls are picked randomly. What is the probability that 3 balls are red and 3 balls are white?</p>
 <p>Which one is the answer?</p>
+<div class="container">
+<div class="col">
 <ul>
 <li><input type="checkbox" disabled="" />
 <span class="math inline">\(\frac{^9C_3 \times ^7C_3}{^{16}C_6}\)</span></li>
 <li><input type="checkbox" disabled="" />
 <span class="math inline">\(\frac{^9C_3}{^{16}C_3} \times \frac{^7C_3}{^{16}C_3}\)</span></li>
 <li><input type="checkbox" disabled="" />
+<span class="math inline">\(\frac{^9C_3}{^{16}C_3} + \frac{^7C_3}{^{16}C_3}\)</span></li>
+<li><input type="checkbox" disabled="" />
 <span class="math inline">\(\frac{^9C_3}{^{16}C_6} \times \frac{^7C_3}{^{16}C_6}\)</span></li>
 </ul>
+</div>
+<div class="col">
 <ul>
 <li class="fragment">Whatever we draw together will be in <span class="math inline">\(r\)</span> in <span class="math inline">\(^nC_r\)</span></li>
 <li class="fragment">Answer: <span class="math inline">\(\frac{^9C_3 \times ^7C_3}{^{16}C_6}\)</span>=0.367</li>
 </ul>
+</div>
+</div>
 </section></section>
 <section><section id="conditional-probability" class="title-slide slide level1"><h1>Conditional Probability</h1></section><section id="conditional-formula" class="slide level2">
 <h2>Conditional Formula</h2>
@@ -1074,19 +1082,35 @@ Second<br>Die
 <span>Solution</span>
 </div>
 <div id="con2" style="visibility: hidden">
+<div class="container">
+<div class="col">
 <p><span class="math inline">\(P(F)=0.3\)</span></p>
 <p><span class="math inline">\(P(C)=0.4\)</span></p>
 <p><span class="math inline">\(P(F \cap C)=0.2\)</span></p>
+</div>
+<div class="col">
 <p><span class="math inline">\(P(F|C)=?\)</span></p>
 <ul>
 <li class="fragment"><span class="math inline">\(P(F|C)=\frac{P(F \cap C)}{P(C)}=\)</span> 0.5</li>
 </ul>
+</div>
+</div>
 </div>
 <script>
 function klikaj(i) {
     document.getElementById(i).style.visibility='visible';
 }
 </script>
+</section><section id="conditional-problem-03" class="slide level2">
+<h2>Conditional Problem # 03</h2>
+<p><span class="math inline">\(S=\)</span> {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}</p>
+<p>If a number is picked randomly and known it an even number, What is the probability that it is more than 6?</p>
+</section><section id="conditional-problem-04" class="slide level2">
+<h2>Conditional Problem # 04</h2>
+<p><small> In a city of 1 million inhabitants let there be 100 terrorists and 999,900 non-terrorists. The city has a facial recognition software. If the camera scans a terrorist, a bell will ring 99% of the time, and it will fail to ring 1% of the time. If the camera scans a non-terrorist, a bell will not ring 99% of the time, but it will ring 1% of the time.</p>
+<p>If the bell rings, what is the probability that a terrorist is caught?</p>
+<p>About 99 of the 100 terrorists will trigger the alarm—and so will about 9,999 of the 999,900 non-terrorists. Therefore, about 10,098 people will trigger the alarm, among which about 99 will be terrorists. So, the probability that a person triggering the alarm actually is a terrorist, is only about 99 in 10,098, which is less than 1%</p>
+<p></small></p>
 </section></section>
 <section><section id="set-theoretic" class="title-slide slide level1"><h1>Set Theoretic</h1></section><section id="concept" class="slide level2">
 <h2>Concept</h2>
