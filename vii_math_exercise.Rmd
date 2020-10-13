@@ -12,6 +12,30 @@ output:
       in_header: css/header_stat.html
 ---
 
+# Chapter 4.1
+
+## Multiply (20)
+
+$x^2+2x-3, x+3$
+
+## Multiply (24)
+
+$y^2-y+1, 1+y+y^2$
+
+## Problem 25
+
+If $A=x^2+xy+y^2$ and $B=x-y$, $AB=?$
+
+## Expand (28)
+
+Expand $x^4-y^4$
+
+## Extra
+
+i. $a^m \cdot a^{-n}=?$
+ii. If a = 3 and m = n = 2, $a^m \cdot (a^n)^m=?$
+iii. $a^m \cdot a^n \cdot a^{mn}=?$
+
 ## Determine square
 3x-2y+5z
 
