@@ -38,32 +38,35 @@ To
 - Absolute
 - Relative
 
+## Measure Classification
 
-## Absolute Measure
+```{r, echo=FALSE}
+DiagrammeR::grViz("digraph {
 
-```{r, echo=F}
-library(DiagrammeR)
-mermaid("
-graph LR
-Absolute-->Range
-Absolute-->Mean_Deviation
-Mean_Deviation-->About_Mean
-Absolute-->Stanard_Deviation
-Absolute-->Quartile_deviation
-Mean_Deviation-->About_Median
-Mean_Deviation-->About_Mode
-")
-```
+graph [layout = dot, rankdir = TB]
 
-## Relative Measure
+node [shape = rectangle, fontcolor = blue, shape = rectangle]
+msr [label = 'Measures of Dispersion']
+abs [label = 'Absolute Measure']
+rel [label = 'Relative Measure']
+md [label =  'Mean \n Deviation']
+rng [label = 'Range']
+sd [label = 'Stanard Deviation']
+qd [label= 'Quartile deviation']
+abt [label= 'About']
+coef [label ='Coefficient of']
+var [label ='Variation']
+med [label ='Median']
+mean [label = 'Mean']
+mod [label ='Mode']
 
-```{r, echo=F}
-mermaid("
-graph LR
-Relative-->Coefficient
-Coefficient-->of_Range
-Coefficient-->of_Mean_Deviation
-Coefficient-->of_Varniation
-Coefficient-->of_Quartile_Deviation
-")
+
+{msr}  -> {abs, rel} 
+abs -> rng
+abs -> {md, sd, qd}
+rel -> coef
+coef -> {rng, md, qd, var}
+md -> abt
+abt -> {mean, med, mod}
+}")
 ```

@@ -453,13 +453,9 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <link href="ch4_xi_stat_dispersion_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
     <link href="ch4_xi_stat_dispersion_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
     <script src="ch4_xi_stat_dispersion_files/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-    <script src="ch4_xi_stat_dispersion_files/d3-3.3.8/d3.min.js"></script>
-    <script src="ch4_xi_stat_dispersion_files/dagre-0.4.0/dagre-d3.min.js"></script>
-    <link href="ch4_xi_stat_dispersion_files/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
-    <script src="ch4_xi_stat_dispersion_files/mermaid-0.3.0/dist/mermaid.slim.min.js"></script>
+    <script src="ch4_xi_stat_dispersion_files/viz-1.8.2/viz.js"></script>
     <link href="ch4_xi_stat_dispersion_files/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
-    <script src="ch4_xi_stat_dispersion_files/chromatography-0.1/chromatography.js"></script>
-    <script src="ch4_xi_stat_dispersion_files/DiagrammeR-binding-1.0.6.1/DiagrammeR.js"></script>
+    <script src="ch4_xi_stat_dispersion_files/grViz-binding-1.0.6.1/grViz.js"></script>
 </head>
 <body>
   <div class="reveal">
@@ -497,14 +493,10 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li>Absolute</li>
 <li>Relative</li>
 </ul>
-</section><section id="absolute-measure" class="slide level2">
-<h2>Absolute Measure</h2>
-<div id="htmlwidget-e94eaa93b85b77300fe4" style="width:768px;height:576px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e94eaa93b85b77300fe4">{"x":{"diagram":"\ngraph LR\nAbsolute-->Range\nAbsolute-->Mean_Deviation\nMean_Deviation-->About_Mean\nAbsolute-->Stanard_Deviation\nAbsolute-->Quartile_deviation\nMean_Deviation-->About_Median\nMean_Deviation-->About_Mode\n"},"evals":[],"jsHooks":[]}</script>
-</section><section id="relative-measure" class="slide level2">
-<h2>Relative Measure</h2>
-<div id="htmlwidget-c37c1f44aadd48124146" style="width:768px;height:576px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c37c1f44aadd48124146">{"x":{"diagram":"\ngraph LR\nRelative-->Coefficient\nCoefficient-->of_Range\nCoefficient-->of_Mean_Deviation\nCoefficient-->of_Varniation\nCoefficient-->of_Quartile_Deviation\n"},"evals":[],"jsHooks":[]}</script>
+</section><section id="measure-classification" class="slide level2">
+<h2>Measure Classification</h2>
+<div id="htmlwidget-68f210c822b048300bfc" style="width:768px;height:576px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-68f210c822b048300bfc">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, fontcolor = blue, shape = rectangle]\nmsr [label = \"Measure\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variation\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmean -> Mean\nmod -> Mode\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </section></section>
     </div>
   </div>
