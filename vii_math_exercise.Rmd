@@ -26,6 +26,17 @@ $y^2-y+1, 1+y+y^2$
 
 If $A=x^2+xy+y^2$ and $B=x-y$, $AB=?$
 
+# Chapter 4.2
+
+## Divide
+
+$2x^2-7xy+6y^2$ by $x-2y$
+
+> - $16x^4+36x^2+81$ by $4x^2-6x+9$
+
+
+# Chapter 5.1
+
 ## Expand (28)
 
 Expand $x^4-y^4$
@@ -55,4 +66,34 @@ $(2a+1)^2-4a(2a+1)+4a^2$
 
 Solve directly or by assuming something
 
-# Chapter 4.1
+# Chapter 5.2
+
+## Determine Square using formula (6)
+
+(10-xy)(10+xy)
+
+## Determine Square using formula (10)
+
+$(a^4+3a^2x^2+9x^4)(9x^4-3a^2x^2+a^4)$
+
+## Determine Square using formula (11)
+
+$(x+a)(x-1)(x^2+1)$
+
+# Chapter 5.3
+
+## Resolve into Factors (2)
+
+$a^2+bc+ca+ab$
+
+## Resolve into Factors (8)
+
+$a^2-(x+y)^2$
+
+## Resolve into Factors (12)
+
+$y^2-6y-91$
+
+## Resolve into Factors (20)
+
+$4x^2+12xy+9y^2-16a^2$
