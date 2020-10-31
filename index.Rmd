@@ -15,3 +15,5 @@ output:
 # Home Page
 
 This websites contains academic presentations made with `R` programming language. 
+
+Gradually, all presentation slides on statistics would me made available here. 
