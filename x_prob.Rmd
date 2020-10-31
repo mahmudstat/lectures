@@ -1,0 +1,338 @@
+---
+title: "Probability"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
+    self_contained: false
+    css: css/styles.css
+    includes:
+      in_header: css/header_stat.html
+---
+
+## Terms
+
+> - Random Experiment
+> - Event
+> - Equally Likely
+> - Mutually Exlusive
+> - Sample Space
+> - Sample Point
+> - Unbiased/fair coin/die
+
+## Example 01
+
+What is the probability, if a fair die is thrown, that an odd number is found? 
+
+<div onclick="klikaj('e1')"><span>Solution</span></div>
+<div id="e1" style="visibility: hidden">
+There are 6 numbers: `r 1:6`
+
+There are 3 odd numbers: `r seq(1,5,2)`
+
+> - $\therefore P = \frac 3 6 = \frac 1 2$
+> - What if the die is unfair?
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+## Example 02
+
+There are 4 red, 6 white balls, and 5 black balls in an urn. If a ball is picked randomly what is the probability that it is red or white?
+
+<div onclick="klikaj('e2')"><span>Solution</span></div>
+<div id="e2" style="visibility: hidden">
+Whenever we have `or`, we have to add probabilities, if mutually exclusive.
+
+> - What if not mutually exclusive?
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+# Coin And Die Problem
+
+## Tossing A Coing Twice
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-rvyq{border-color:inherit;font-style:italic;font-weight:bold;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-c3ow" colspan="2" rowspan="2"></th>
+    <th class="tg-7btt" colspan="2">First Coin</th>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">H</td>
+    <td class="tg-c3ow">T</td>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-7btt" rowspan="2">Second<br>Coin</td>
+    <td class="tg-c3ow">H</td>
+    <td class="tg-rvyq">HH</td>
+    <td class="tg-rvyq">HT</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">T</td>
+    <td class="tg-rvyq">TH</td>
+    <td class="tg-rvyq">TT</td>
+  </tr>
+</tbody>
+</table>
+
+<small>
+***Tossing a coin twice is equivalent to tossing two coins at once***
+
+What is the probability that 
+
+1. The Head appears at the first draw?
+2. At least one Head appears?
+3. Less than two Heads appear?
+4. Only Tails appears?
+
+</small>
+
+## Flipping A Coin Thrice
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-2k8k{border-color:inherit;font-size:13px;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-wrlh{font-size:13px;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-x10j{border-color:inherit;font-size:13px;font-style:italic;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-chpi{font-size:13px;font-style:italic;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-2k8k" colspan="2" rowspan="2"></th>
+    <th class="tg-2k8k" colspan="4">First Two Flips</th>
+  </tr>
+  <tr>
+    <td class="tg-2k8k">HH</td>
+    <td class="tg-2k8k">HT</td>
+    <td class="tg-wrlh">TH</td>
+    <td class="tg-wrlh">TT</td>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-2k8k" rowspan="2">Third Flip</td>
+    <td class="tg-2k8k">H</td>
+    <td class="tg-x10j">HHH</td>
+    <td class="tg-x10j">HHT</td>
+    <td class="tg-chpi">HTH</td>
+    <td class="tg-chpi">HTT</td>
+  </tr>
+  <tr>
+    <td class="tg-2k8k">T</td>
+    <td class="tg-x10j">THH</td>
+    <td class="tg-x10j">THT</td>
+    <td class="tg-chpi">TTH</td>
+    <td class="tg-chpi">TTT</td>
+  </tr>
+</tbody>
+</table>
+
+<small>
+What is the probability that 
+
+1. All three are Heads?
+2. There are more than one Head?
+3. The second draw gives a Head?
+4. The third draw does not give a head?
+5. The first draw gives a Tail but the the Draw does not? 
+6. At most one Head appears? 
+
+</small>
+
+## Flinging Two Dice at Once
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-b2ze{border-color:inherit;font-size:13px;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-lvro{border-color:inherit;font-size:13px;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-2k8k{border-color:inherit;font-size:13px;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-1fmd{border-color:inherit;font-size:13px;font-style:italic;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-x10j{border-color:inherit;font-size:13px;font-style:italic;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-387r{border-color:inherit;font-size:13px;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-lvro" colspan="2" rowspan="2">Tossing Two<br>Dice at Once</th>
+    <th class="tg-2k8k" colspan="6">First Die</th>
+  </tr>
+  <tr>
+    <td class="tg-2k8k">1</td>
+    <td class="tg-2k8k">2</td>
+    <td class="tg-b2ze">3</td>
+    <td class="tg-b2ze">4</td>
+    <td class="tg-1fmd">5</td>
+    <td class="tg-1fmd">6</td>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-2k8k">Second<br>Die</td>
+    <td class="tg-2k8k">1</td>
+    <td class="tg-x10j">1,1</td>
+    <td class="tg-x10j">1,2</td>
+    <td class="tg-1fmd">1,3</td>
+    <td class="tg-1fmd">1,4</td>
+    <td class="tg-1fmd">1,5</td>
+    <td class="tg-1fmd">1,6</td>
+  </tr>
+  <tr>
+    <td class="tg-2k8k"></td>
+    <td class="tg-2k8k">2</td>
+    <td class="tg-x10j">2,1</td>
+    <td class="tg-x10j">2,2</td>
+    <td class="tg-1fmd">2,3</td>
+    <td class="tg-1fmd">2,4</td>
+    <td class="tg-1fmd">2,5</td>
+    <td class="tg-1fmd">2,6</td>
+  </tr>
+  <tr>
+    <td class="tg-387r"></td>
+    <td class="tg-1fmd">3</td>
+    <td class="tg-1fmd">3,1</td>
+    <td class="tg-1fmd">3,2</td>
+    <td class="tg-1fmd">3,3</td>
+    <td class="tg-1fmd">3,4</td>
+    <td class="tg-1fmd">3,5</td>
+    <td class="tg-1fmd">3,6</td>
+  </tr>
+  <tr>
+    <td class="tg-387r"></td>
+    <td class="tg-1fmd">4</td>
+    <td class="tg-1fmd">4,1</td>
+    <td class="tg-1fmd">4,2</td>
+    <td class="tg-1fmd">4,3</td>
+    <td class="tg-1fmd">4,4</td>
+    <td class="tg-1fmd">4,5</td>
+    <td class="tg-1fmd">4,6</td>
+  </tr>
+  <tr>
+    <td class="tg-387r"></td>
+    <td class="tg-1fmd">5</td>
+    <td class="tg-1fmd">5,1</td>
+    <td class="tg-1fmd">5,2</td>
+    <td class="tg-1fmd">5,3</td>
+    <td class="tg-1fmd">5,4</td>
+    <td class="tg-1fmd">5,5</td>
+    <td class="tg-1fmd">5,6</td>
+  </tr>
+  <tr>
+    <td class="tg-387r"></td>
+    <td class="tg-1fmd">6</td>
+    <td class="tg-1fmd">6,1</td>
+    <td class="tg-1fmd">6,2</td>
+    <td class="tg-1fmd">6,3</td>
+    <td class="tg-1fmd">6,4</td>
+    <td class="tg-1fmd">6,5</td>
+    <td class="tg-1fmd">6,6</td>
+  </tr>
+</tbody>
+</table>
+
+
+What is the probability that
+
+1. The first numbers is odd?
+2. The summation of numbers in two draws is a prime number?
+3. Both numbers are same?
+4. The second number is bigger? 
+
+## Example 03
+
+<div class="container">
+<div class="col">
+<small>
+The probability that a person travels from Dhaka to Khulna by bus is $\frac 2 5$, that from Khulna to Rajshahi by train is $\frac 5 8$. 
+
+1. Make a probability tree
+2. Find the probability that he would travel to khulna by bus and to Rajshahi not by bus.
+
+</small>
+
+</div>
+<div class="col">
+
+```{r, echo=FALSE, out.width="125%"}
+DiagrammeR::grViz("digraph {
+
+graph [layout = dot, rankdir = LR]
+
+node [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]
+dh [label = 'Dhaka']
+khb [label = 'Khulna (bus)']
+khnb [label = 'Khulna (not bus)']
+rjt [label = 'Rajshahi (train)']
+rjnt [label = 'Rajshahi (not train)']
+
+dh  -> {khb, khnb}
+khb -> {rjt, rjnt}
+khnb -> {rjt, rjnt}
+}")
+```
+</div>
+</div>
+
+## Addition or Multiplication?
+
+When to add when to multiply?
+
+Usually 
+
+- `and` implies multiplication ($\cap$)
+- `or` implies addition (mutually exclusive) ($\cup$)
+
+## And/Or Example
+
+There are 3 red balls, 2 blue balls and 4 white balls in a box.
+
+<div class="container">
+<div class="col">
+ If a ball is selected at random, what is the probability that it is red <span>or</span> blue? 
+
+> - $P(R \cup B)=P(R)+P(B)$
+</div>
+<div class="col">
+If two balls are drawn without replacement, what is the probability that the first one is red <span>and</span> the second one is white? 
+
+<div onclick="klikaj('andr')"><span>Solution</span></div>
+<div id="andr" style="visibility: hidden">
+$\frac 3 9 \times \frac 4 8$
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
