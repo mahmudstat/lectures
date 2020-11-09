@@ -68,15 +68,15 @@ Solve directly or by assuming something
 
 # Chapter 5.2
 
-## Determine Square using formula (6)
+## Multiply (6)
 
 (10-xy)(10+xy)
 
-## Determine Square using formula (10)
+## Multiply (10)
 
 $(a^4+3a^2x^2+9x^4)(9x^4-3a^2x^2+a^4)$
 
-## Determine Square using formula (11)
+## Multiply (11)
 
 $(x+a)(x-1)(x^2+1)$
 
@@ -97,3 +97,11 @@ $y^2-6y-91$
 ## Resolve into Factors (20)
 
 $4x^2+12xy+9y^2-16a^2$
+
+## Resolve into Factors (Extra 01)
+
+$15x^2-14x-8$
+
+## Resolve into Factors (Extra 02)
+
+$2bd-a^2-c^2+b^2+d^2+2ac$

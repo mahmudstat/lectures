@@ -582,3 +582,22 @@ function klikaj(i) {
 
 </div>
 
+## Set Problem # 03
+
+Cup 01 contains 2 black, 3 red, and 1 pink ball. Cup 2 contains only 1 red ball. A cup is selected randomly. Next, a ball is randomly chosen from that randomly selected cup and placed into the other cup. A ball is then drawn randomly from that second cup. Find the probability that the last ball drawn is a pink one. 
+
+> - 3 possible cases
+
+1. > - 1st cup $\rightarrow$ pink ball $\rightarrow$ pink ball from 2nd cup
+
+2. > - 1st cup $\rightarrow$ non-pink ball $\rightarrow$ pink ball from 2nd cup
+
+3. > - 2nd cup $\rightarrow$ red ball $\rightarrow$ pink ball from 1st (other) cup
+
+
+> - $(\frac 1 2 \times \frac 1 6 \times \frac 1 2 )+ (\frac 1 2 \times \frac 5 6 \times 0) + (\frac 1 2 \times 1 \times \frac 1 7)$
+
+## Set problem # 04
+
+If a senility researcher discovered that in a population of healthy and diseased elderly people, 14% of the people had senile dementia, 63% had arterioplerotic cerebral degeneration, and 11% had both. What is the probability that person who not having arterioplerotic cerebral degeneration has senile dementia?
+

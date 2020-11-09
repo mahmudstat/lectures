@@ -1,5 +1,5 @@
 ---
-title: "Probability"
+title: "Mathematics Lectures"
 author: Abdullah Al Mahmud
 date: \today
 output: 

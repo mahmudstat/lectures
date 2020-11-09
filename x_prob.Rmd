@@ -336,3 +336,15 @@ function klikaj(i) {
 </script>
 </div>
 </div>
+
+## Excercise 11
+
+The employees in a factory can be classified based on works they perform, as mentioned below:
+
+| Classification | # Employees |
+|:--------------:|:-----------:|
+|   Managerial   |     157     |
+|   Inspection   |      52     |
+|   Production   |     1473    |
+|      Other     |     215     |
+

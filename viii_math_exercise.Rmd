@@ -172,3 +172,49 @@ $\frac{x-y}{(x+y)(y+z)}+\frac{y-z}{(y+z)(z+x)}+\frac{z-x}{(z+x)(x+y)}$
 $\frac{1}{x-1}-\frac{1}{x+1}-\frac{2}{x^2+1}+\frac{4}{x^4+1}$
 
 - LCM in short form: $x^8-1$; guess how?
+
+# Chapter 5.2
+
+## Divide 
+
+$\frac{x^2+3x-4}{x^2-7x+12}$ by $\frac{x^2-9}{x^2-16}$
+
+> - Answer: $\frac{(x-a)(x-3)}{(x-4)^2}$ wrong
+
+## Multiply (6.g)
+
+$\frac{x^2-3x+2}{x^2-4x+3}, \frac{x^2-5x+6}{x^2-7x+12}, \frac{x^2-16}{x^2-9}$
+
+> - Answer: $\frac{(x-2)^2(x+4)}{(x-3)^2(x+3)}$
+
+## Multiply (6.i)
+
+$\frac{x^3+y^3}{a^2+ab^2+b^3}, \frac{a^3-b^2}{x^2-xy+y^2}, \frac{ab}{x+y}$
+
+> - Answer: $ab(a-b$
+
+## Divide (7.f)
+
+$\frac{x^3-y^3}{x+y}$ by  $\frac{x^2+xy+y^2}{x^2-y^2}$
+
+> - Answer: $(x-y)^2$
+
+## Simplify (8.c)
+
+$(1-\frac c {a+b})(\frac a {a+b+c}-\frac a {a+b-c})$
+
+> - Answer: $\frac{-2ca}{(a+b)(a+b+c)}$
+
+## Simplify (8.f)
+
+$(\frac{2x+y}{x+y}-1) \div (1-\frac y {x+y})$
+
+> - Answer: 1
+
+## Simplify (8.g)
+
+$(\frac a {a+b}-\frac b {a-b}) \div (\frac a {a-b} - \frac b {a+b})$
+
+> - Answer: 1
+
+
