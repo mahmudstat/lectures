@@ -601,3 +601,12 @@ Cup 01 contains 2 black, 3 red, and 1 pink ball. Cup 2 contains only 1 red ball.
 
 If a senility researcher discovered that in a population of healthy and diseased elderly people, 14% of the people had senile dementia, 63% had arterioplerotic cerebral degeneration, and 11% had both. What is the probability that person who not having arterioplerotic cerebral degeneration has senile dementia?
 
+## Set problem # 05
+
+A candidate applied for three posts in an industry, having 3, 4, and 2 candidates respectively. What is the probability of getting a job by that candidate in at least one post? 
+
+## Set problem # 04
+
+A card is drawn from each of two well-shuffled pack of cards. Find the probability that at least one of them is an ace. 
+
+

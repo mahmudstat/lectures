@@ -218,3 +218,23 @@ $(\frac a {a+b}-\frac b {a-b}) \div (\frac a {a-b} - \frac b {a+b})$
 > - Answer: 1
 
 
+# Creative questions
+
+## Create Question -01
+
+Observe the pair pf equations below:
+
+- $x + ay = b ... (i)$ 
+- $ax-by=c... (ii)$
+
+a. Of which equations is the solution $(b,0)$?
+b. If $a=1, b=2, c = 3$, solve the pair of equations.
+c. Solve the given pair of equations by using eliminations method. 
+
+## Creative -02
+
+5 years ago the ratio of ages of father and son was 7:1 and after 10 years, the ratio would be 5:2
+
+a. Form two equations with two variables. 
+b. Find the present ages of father and son.
+c. Form an equation with one variable and calculate the present age of father and son. 
