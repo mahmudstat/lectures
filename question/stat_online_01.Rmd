@@ -1,0 +1,62 @@
+---
+title: ''
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+\begin{center}
+\begin{large}
+Pabna Cadet College
+\end{large}
+
+Tutorial Examination-02
+
+Subject: Statistics
+
+Class: XI
+\end{center}
+
+Time: 40 minutes
+\hfill
+Full Marks: 20
+
+\textbf{Answer all the questions}
+
+1. State the type of variable (discrete/continuous)
+\hfill 
+4
+a. Radius of screws
+b. Number of accidents in a city
+c. weight of mangoes
+d. speed of a spaceship
+
+
+2. State the type of variable (qualitative/quantitative)
+\hfill 
+4
+a. Name of cadets
+b. Score of GRE exam
+c. Room no.
+d. Distance to galaxies. 
+
+3. State scale of measurement
+\hfill 
+6
+a. Quality of mango
+b. Temperature
+c. Intelligence Quotient
+d. Income level
+e. Result of a coin toss (head/tail)
+f. Velocity of a car
+
+4. Given $f_1=2, f_2=4, f_3=6, x_1=-3, x_2=7, x_3=4$
+Find the values
+\hfill 6
+a. $\sum f_ix_i^2$
+
+b. $\sum f_i(x_i-k)^2$; where k is the last two digits of your cadet number. 
+
+\begin{center}
+---Good Luck---
+\end{center}

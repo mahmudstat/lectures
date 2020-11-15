@@ -1,0 +1,65 @@
+---
+title: ''
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+\begin{center}
+\begin{large}
+Pabna Cadet College
+\end{large}
+
+3rd Tutorial Examination
+
+Subject: Mathematics
+
+Class: VII
+\end{center}
+
+Time: 40 minutes
+\hfill
+Full Marks: 20
+
+\textbf{Answer all the questions}
+
+1. 
+
+Given below are the daily income and expense of ten workers.
+
+| Income(x)        | Expense (y)   | 
+| ------------- |:-------------:| 
+| 120     | 80|
+| 130     | 120     |   
+
+
+From above data, 
+
+i. Find $$\sum_{i=1}^{2}x_iy_i \space and \space (\sum_{i=1}^{2}x_i)(\sum_{i=1}^{2}y_j)$$
+
+ii. Are they equal? 
+iii. Find $$\sum_{i=1}^{2} \sum_{j=1}^{2}x_iy_j$$
+
+Which of (i) is equal to it? 
+
+iv. Find $$\sum_{i=1}^{2} \sum_{j=1}^{2}(x_i-y_j)$$
+
+Solution:
+
+Table for calculation 
+
+| Income(x)        | Expense (y)   | xy |
+| ------------- |:-------------:|:-------------:|
+| 120     | 80| 9600
+| 130     | 120     | 15600 
+
+Solution using R code:
+```{echo=F}
+x <- c(120,130)
+y <- c(80,120)
+df <- expand.grid(x,y)
+```
+
+\begin{center}
+---Good Luck---
+\end{center}

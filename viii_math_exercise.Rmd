@@ -222,7 +222,7 @@ $(\frac a {a+b}-\frac b {a-b}) \div (\frac a {a-b} - \frac b {a+b})$
 
 ## Create Question -01
 
-Observe the pair pf equations below:
+Observe the pair of equations below:
 
 - $x + ay = b ... (i)$ 
 - $ax-by=c... (ii)$

@@ -1,0 +1,128 @@
+---
+title: ''
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+\begin{center}
+\begin{large}
+Pabna Cadet College
+\end{large}
+
+3rd Tutorial Examination
+
+Subject: Mathematics
+
+Class: VII
+\end{center}
+
+Time: 40 minutes
+\hfill
+Full Marks: 20
+
+\textbf{Answer all the questions}
+
+1. A pen is bought at Tk. 5. What should be its selling price to make a profit of 5%?
+i. 8% ii. 7%  iii. 5.25% iv. 5.50%
+
+Answer: iii. 5.25%
+
+2. 0.0019 meter = __cm
+i. 19 ii. 0.19 iii.190 iv. 0.019
+
+Answer: ii. 0.19
+
+3. 12 k.m and 9 cm. = __m. 
+i. 12000.09 cm ii. 120.9 cm iii. 12000.90 cm  iv. 1200.009 cm
+
+Answer: 12000.09 cm 
+
+4. How many sq. meters (approx.) is equal to 1 sq. yard?
+i. 0.64 ii. 0.74 iii. 0.841 iv. 0.84
+
+Answer: iv. 0.84
+
+5. The length and width of a rectangle are 5 meter 4 meter, respectively, what is its area in sq. cm? 
+i. 0.02 ii. 0.2 iii. 0.002 iv. 20
+
+Answer: iii. 0.002
+
+6. 50 kg = how many quintals? 
+i. 0.5  ii. 5  iii. 1 iv. 10
+
+Answer: i. 0.5
+
+7. The buying price of a product is \$5. If it is sold at $4, what is the profit?
+i. No profit ii. $1  iii. -\$1 iv. 2%
+
+Answer: iii. -\$1
+
+8. The purchasing price of a commodity is $X and loss is \$Z. What is the selling price?
+i. X+Z  ii. Z-X iii. X-Z iv. Z
+
+Answer: iii.  X-Z
+
+9. If 1 liter milk is bought at $20 and sold at \$25, what is the percentage of profit? 
+i.  25% ii. 50% iii. 20%  iv. 10% 
+Answer: i.  25%
+
+10. 30% of 80% of 120 is
+
+i. 28.8 ii. 2.88 iii. 28.8% iv. 28.8
+
+Answer: iv. 28.8
+
+11. Which of the following is an equivalent fraction of $\frac{2}{5}$?
+i.  $\frac{4}{16}$ ii.  $\frac{4}{12}$ iii. $\frac{2}{10}$ iv. $\frac{4}{8}$
+
+Answer: i.  $\frac{4}{16}$
+
+12. $\frac{x^3y^2z^2}{x^2y^3z^3}$ expressed in lowest form is
+i.  $\frac{ab}{b^2}$ ii. $\frac{a^b}{ab}$ iii.  $\frac{a^2}{b^2}$ iv. $\frac{a+b}{a-b}$
+
+Answer: iii.  $\frac{a^2}{b^2}$
+
+13. $\frac{x-3}{x+4}$ and $\frac{x^2+2x-15}{x^2+9x+20}$ are two fractions. What is the quotient if first one is divided by the second one?
+i. -1 ii. 1  iii. 0 iv. x+5
+
+Answer: ii. 1
+
+14. Which of the following is expressed in the lowest possible form?
+i. $\frac{z^2+z}{z+1}$  ii. $\frac{x+y}{z^3}$ iii.  $\frac{x^2z^6}{x^5z^3}$ iv. $\frac{p^2-9}{p(p+3)}$
+
+Answer: ii. $\frac{x+y}{z^3}$
+
+15. Which of the following is the expression of the two fractions $\frac{x}{y}$ and $\frac{y}{x}$ in the fraction with same denominator? 
+i. $\frac{x^2}{y^2}, \frac{y^2}{x^2}$ ii. $\frac{xy}{x}, \frac{xy}{y}$ iii. $\frac{x}{y}, \frac{y}{x}$ iv. $\frac{x^2}{xy}, \frac{y^2}{xy}$
+
+Answer: iv. $\frac{x^2}{y^2}, \frac{y^2}{x^2}$
+
+16. In solving equation, an unknown expression is called-
+i. root  ii.  variable iii. solution iv. algorithm
+
+Answer: ii.  variable 
+
+17. Solution of $\frac{x}{3}+\frac{1}{3}=\frac{1}{2}-\frac{x}{2}$ is-
+i. $\frac{1}{5}$ ii.  $\frac{1}{6}$ iii.  $\frac{1}{3}$ iv. $\frac{2}{3}$
+
+Answer: i. $\frac{1}{5}$ 
+
+18. If $\sqrt{x+3}=2$, what is the root of the equation?
+i.  1 ii. 2 iii.  3 iv. 4
+
+Answer: i. 1
+
+19. Algebra owes its origin to which book?
+i. Al Jabr Wal Muqabala ii. Al Mukhtasar AlKitab fi Hisab AlJabr Wal Muqabala iii. Al Mukhtasar Al Jabr Wal Muqabala iv. Al Kitab Al Mukhtasar fi Hisab Al Jabr Wal Muqabala
+
+Answer: iv. Al Kitab Al Mukhtasar fi Hisab Al Jabr Wal Muqabala
+
+20. 2x+1=5x-8 
+5x-8=2x+1; which law has been used here?
+i.  Transposition ii. Cancellation  iii.  Symmetry iv. Cross-addition
+
+Answer: iii.  Symmetry
+\begin{center}
+---Good Luck---
+\end{center}

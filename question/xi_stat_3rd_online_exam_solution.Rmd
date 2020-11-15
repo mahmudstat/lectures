@@ -1,0 +1,131 @@
+---
+title: ''
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+\begin{center}
+\begin{large}
+Pabna Cadet College
+\end{large}
+
+Solution to 3rd Tutorial Examination 
+
+Subject: Mathematics
+
+Class: VII
+\end{center}
+
+Time: 40 minutes
+\hfill
+Full Marks: 20
+
+\textbf{Answer all the questions}
+
+1. 
+
+Given below are the daily income and expense of ten workers.
+
+| Income(x)        | Expense (y)   | 
+| ------------- |:-------------:| 
+| 120     | 80|
+| 130     | 120     |   
+
+
+From above data, 
+
+i. Find $$\sum_{i=1}^{2}x_iy_i \space and \space (\sum_{i=1}^{2}x_i)(\sum_{i=1}^{2}y_j)$$
+
+ii. Are they equal? 
+iii. Find $$\sum_{i=1}^{2} \sum_{j=1}^{2}x_iy_j$$
+
+Which of (i) is equal to it? 
+
+iv. Find $$\sum_{i=1}^{2} \sum_{j=1}^{2}(x_i-y_j)$$
+
+*Solution:*
+
+i. Table for calculation 
+
+
+|   Income (x)  |  Expense (y)  |        xy        |
+|:-------------:|:-------------:|:----------------:|
+|      120      |       80      |       9600       |
+|      130      |      120      |       15600      |
+| $\sum x =250$ | $\sum y =200$ | $\sum xy =25200$ |
+
+Therefore, $$\sum_{i=1}^{2}x_iy_i=25200$$
+
+$$(\sum_{i=1}^{2}x_i)(\sum_{i=1}^{2}y_j)=250 \times 200=50,000$$
+ii. So they are not equal. 
+
+iii. 
+\begin{eqnarray} 
+\sum_{i=1}^{2} \sum_{j=1}^{2}x_iy_j \nonumber \\
+&=&x_1(y_1+y_2)+x_2(y_1+y_2) \nonumber \\
+&=& 120(80+120)+130(80+120) \nonumber \\
+&=& 50,000 \nonumber \\ 
+\end{eqnarray} 
+
+Thus, this equal to the 2nd part of (i).
+
+iv. 
+
+\begin{eqnarray} 
+\sum_{i=1}^{2} \sum_{j=1}^{2}x_iy_j \nonumber \\
+&=&(x_1-y_1+x_1-y_2)+(x_2-y_1+x_2-y_2) \nonumber \\
+&=& (120-80+120-120)+(130-80+130-120) \nonumber \\
+&=& 100 \nonumber \\ 
+\end{eqnarray}
+
+
+*Solution using R code:*
+
+**Download R from here: https://cran.r-project.org/**
+
+```{r}
+# Lines starting with hashes (#) are comments, not executable commands. 
+x <- c(120,130)
+y <- c(80,120)
+df <- expand.grid(x,y)
+df
+# Answer of i
+sum(x*y)
+sum(x)*sum(y)
+# Answer of iii
+sum(df$Var1*df$Var2)
+# Answer of iv
+sum(df$Var1-df$Var2)
+```
+
+## 2.i. Stem and Leaf plot
+
+ **Do not make a table; follow this format**
+ 
+```{r}
+data <- c(16, 26, 12, 10, 27, 30, 14,  1, 25, 20)
+stem(data)
+```
+
+## 2.ii. Ogive
+
+First let's draw a histogram (NOT required; only optional)
+```{r}
+h <- hist(data)
+```
+
+Now the Ogive-
+
+```{r}
+intervals <- seq(from = min(h$breaks), to = max(h$breaks), by = h$breaks[2] - h$breaks[1])
+intervals <- c(0, intervals[-1])
+# Cumulative sums
+cf = c(0, cumsum(h$counts))
+plot(intervals, cf, type = "b", col = "blue", pch = 20)
+grid()
+```
+
+\begin{center}
+---Good Luck---
+\end{center}
