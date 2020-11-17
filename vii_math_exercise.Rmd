@@ -105,3 +105,44 @@ $15x^2-14x-8$
 ## Resolve into Factors (Extra 02)
 
 $2bd-a^2-c^2+b^2+d^2+2ac$
+
+## Creative Questions (01)
+
+*The length of a rectangular garden is three times its breadth. The perimeter of the garden is 96 meter.*
+
+<small>
+
+a. Form the equation, assuming breadth as x.
+b. Find the length and breadth of the garden. 
+c. If the cost of trimming grass is 8 tk. per square meter, how much money will be needed to trim grass of the entire garden? 
+
+</small>
+
+<div onclick="klikaj('cq1')"><span>Answer</span></div>
+<div id="cq1" style="visibility: hidden">
+> - 1. $2(3x+x)=96$
+> - 2. $8x=96 \therefore x = \frac {96} 8 =$ `r 96/8` = (breadth)
+> - 3. Area = `r 12*36`, Cost = `r 12*36*8` tk. 
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+## Creative Questions (02)
+
+*The breadth of a rectangular space is one-forth its length.*
+
+a. If the length is x, express the perimeter of the space in terms of x.
+b. If the perimeter of the garden is 40 meter, what are the length and breadth of the garden?
+c. If the total cost of cleaning the garden is 1500 tk, what will be the cost to clean per square meter of the garden? 
+
+
+## Creative Questions (03)
+
+The summation of three consecutive numbers is 153. 
+
+a. If the lowest number is x, what is the next number?
+b. Form the equation. 
+c. Find the numbers. 
