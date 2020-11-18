@@ -141,6 +141,7 @@ Mo, & \text{for MD about Mode}
 ## Compute MD 
 
 Compute about mean, median and mode 
+
 > - X = `r x`
 
 ## Dis(advantages) of MD
@@ -189,7 +190,7 @@ $\quad$ =$\bar {x^2}-{\bar x}^2$
 > - $\therefore \sigma^2 = \frac{274}{3}-(\frac{26}{3})^2 =$ `r (x=c(3,11,12)); round(var(x),3)`
 > - $\sigma =$ `r round(sd(x),3)`
 
-## Why Variance?
+## Thoughts on Variance?
 
 ### <span style="color: blue;">Think</span>
 

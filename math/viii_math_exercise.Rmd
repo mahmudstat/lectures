@@ -1,5 +1,5 @@
 ---
-title: "Mathematics"
+title: "Mathematics (VII"
 author: Abdullah Al Mahmud
 date: \today
 output: 
@@ -220,7 +220,7 @@ $(\frac a {a+b}-\frac b {a-b}) \div (\frac a {a-b} - \frac b {a+b})$
 
 # Creative questions
 
-## Create Question -01
+## Creative Question -01
 
 Observe the pair of equations below:
 
