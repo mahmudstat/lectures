@@ -1,0 +1,152 @@
+/********** Customise logo, and footer disclaimer **********/
+/* Position the corporate logo in the top right of the page */
+
+
+body {
+        background: linear-gradient(60deg, #a31aff 50%, #4da6ff 50%);
+    }
+
+body:after {
+content: url(pcc2.png);
+  position: fixed;
+  top: 15px;
+  right: 50px;
+  height: 55px;
+  width: 55px;
+}
+
+body:before {
+content: url(logo2.png);
+  position: fixed;
+  top: 15px;
+  left: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+span {
+color:  #ffffb3;
+}
+
+#thanks {
+  padding: 100px 0;
+  font-size: 80px;
+  color: yellow;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.la {
+    text-align: left;
+    list-style-type: upper-roman;
+
+}
+
+.big{
+    font-size: 10px;
+}
+
+.bluetext {
+  color: blue;
+  font-family: "Times New Roman", Times, serif;
+  background-color:  none;
+  /* background-image: linear-gradient(to right, #f5f2f3 , white);*/
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+/* Style/position the footer text */
+#header-footer .slide-footer {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    text-align: center;
+    font-size: 100%;
+}
+
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 220px;
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {abstraction-green-vector-power-wallpaper
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.box  { width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  color: yellow;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px; /* Should be removed. Only for demonstration */
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5 {
+                  text-transform: none;
+		  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+ 
+td, th {
+    border: 1px solid grey;
+}
+
+img {
+  border: 0px solid #ddd;
+}
+
+.nob ul {
+list-style-type: none;
+}
+
+
+
+/* layout ends  */
+
+/* layout ends  */
