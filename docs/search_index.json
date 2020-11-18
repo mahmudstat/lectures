@@ -1,0 +1,5 @@
+[
+["index.html", "Statistics and Mathematics Lectures Preface", " Statistics and Mathematics Lectures Abdullah Al Mahmud 2020-11-18 Preface This websites contains lectures on statistics and mathematics. All the lectures are made using R programming language inside Rstudio IDE. The presentations were made using the revealjs package. This page was generated using the bookdown package. "],
+["how.html", "How to Use", " How to Use Press space to go the next slide. Press up-arrow (\\(\\uparrow\\)) or P to go the previous slide. See more here "],
+["contents.html", "Contents Statistics Mathematics", " Contents Statistics Intermediate First Year Chapter 01: Introduction Chapter 02: Collection, Presentation, and Organization of Data Chapter 03: Measures of Central Tendency Chapter 04: Measures of(https://lecture.statmania.info/stat/) Dispersion Mathematics Probability and Dispersion Dispersion and Probability "]
+]

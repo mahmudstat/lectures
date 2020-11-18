@@ -1,7 +1,7 @@
 --- 
 title: "Statistics and Mathematics Lectures"
 author: "Abdullah Al Mahmud"
-date: "`r Sys.Date()`"
+date: "2020-11-18"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
