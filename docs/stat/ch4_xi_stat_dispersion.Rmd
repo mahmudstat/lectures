@@ -276,6 +276,14 @@ Who is better?
 </div>
 </div>
 
-## Image {data-background=white}
+## Thanks
 
-<img src="../img/stat/venn.png">
+<center>
+
+Visit 
+
+<https://lecture.statmania.info>
+
+to see all lecture slides. 
+
+</center>

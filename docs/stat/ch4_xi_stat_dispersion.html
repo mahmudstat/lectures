@@ -501,8 +501,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul>
 </section><section id="types-of-measure" class="slide level2" data-background="white">
 <h2>Types of Measure</h2>
-<div id="htmlwidget-d8971add2a7a8bd6640a" style="width:768px;height:576px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d8971add2a7a8bd6640a">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variance\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-88fe72803ef8187e0233" style="width:768px;height:576px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-88fe72803ef8187e0233">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variance\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </section><section id="range" class="slide level2">
 <h2>Range</h2>
 <div class="container">
@@ -550,7 +550,10 @@ Mo, &amp; \text{for MD about Mode}
 \end{cases}\]</span>
 </section><section id="compute-md" class="slide level2">
 <h2>Compute MD</h2>
-<p>Compute about mean, median and mode &gt; - X = 14, 10, 2, 25, 21, 9, 19, 27, 16, 13, 12, 7, 20, 18, 17</p>
+<p>Compute about mean, median and mode</p>
+<ul>
+<li class="fragment">X = 14, 10, 2, 25, 21, 9, 19, 27, 16, 13, 12, 7, 20, 18, 17</li>
+</ul>
 </section><section id="disadvantages-of-md" class="slide level2">
 <h2>Dis(advantages) of MD</h2>
 <ul>
@@ -615,8 +618,8 @@ Unaffected by outliers</li>
 <li class="fragment"><span class="math inline">\(\therefore \sigma^2 = \frac{274}{3}-(\frac{26}{3})^2 =\)</span> 24.333</li>
 <li class="fragment"><span class="math inline">\(\sigma =\)</span> 4.933</li>
 </ul>
-</section><section id="why-variance" class="slide level2">
-<h2>Why Variance?</h2>
+</section><section id="thoughts-on-variance" class="slide level2">
+<h2>Thoughts on Variance?</h2>
 <h3 id="think"><span style="color: blue;">Think</span></h3>
 <ul>
 <li>What is the unit of variance</li>
@@ -707,9 +710,13 @@ Can work with open-ended distribution</li>
 <p>Who is better?</p>
 </div>
 </div>
-</section><section id="image" class="slide level2" data-background="white">
-<h2>Image</h2>
-<p><img src="../img/stat/venn.png"></p>
+</section><section id="thanks" class="slide level2">
+<h2>Thanks</h2>
+<center>
+<p>Visit</p>
+<p><a href="https://lecture.statmania.info" class="uri">https://lecture.statmania.info</a></p>
+<p>to see all lecture slides.</p>
+</center>
 </section></section>
     </div>
   </div>
