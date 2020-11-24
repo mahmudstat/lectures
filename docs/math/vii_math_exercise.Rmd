@@ -9,7 +9,7 @@ output:
     self_contained: false
     css: css/styles.css
     includes:
-      in_header: css/header_stat.html
+      in_header: css/header.html
 ---
 
 # Chapter 4.1
@@ -152,7 +152,7 @@ c. Find the numbers.
 The following are temperature of a certain location in November. 
 
 
-`r set.seed(100); sample(27:34, 30, replace = TRUE)`
+`r set.seed(100); sample(28:35, 30, replace = TRUE)`
 
 a. What is data?
 b. Make a frequency distribution (using 6 classes) from this data and interpret.
