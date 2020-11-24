@@ -3,7 +3,7 @@
 
 
 body {
-        background: linear-gradient(50deg, #884dff 50%, #4db8ff 50%);
+        background: linear-gradient(60deg, #4db8ff 20%, #884dff 10%);
     }
 
 body:after {

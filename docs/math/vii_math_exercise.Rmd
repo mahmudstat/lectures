@@ -146,3 +146,17 @@ The summation of three consecutive numbers is 153.
 a. If the lowest number is x, what is the next number?
 b. Form the equation. 
 c. Find the numbers. 
+
+## Statistics
+
+The following are temperature of a certain location in November. 
+
+```{r, echo=FALSE}
+set.seed(100)
+sample(27:34, 30, replace = TRUE)
+```
+a. What is data?
+b. Make a frequency distribution (using 6 classes) from this data and interpret.
+c. Make a histogram and interpret. 
+
+
