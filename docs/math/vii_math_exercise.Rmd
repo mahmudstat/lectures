@@ -151,10 +151,9 @@ c. Find the numbers.
 
 The following are temperature of a certain location in November. 
 
-```{r, echo=FALSE}
-set.seed(100)
-sample(27:34, 30, replace = TRUE)
-```
+
+`r set.seed(100); sample(27:34, 30, replace = TRUE)`
+
 a. What is data?
 b. Make a frequency distribution (using 6 classes) from this data and interpret.
 c. Make a histogram and interpret. 
