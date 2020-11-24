@@ -159,3 +159,14 @@ b. Make a frequency distribution (using 6 classes) from this data and interpret.
 c. Make a histogram and interpret. 
 
 
+## Thanks
+
+<center>
+
+Visit 
+
+<https://lecture.statmania.info>
+
+to see all lecture slides. 
+
+</center>
