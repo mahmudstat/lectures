@@ -1,7 +1,7 @@
 --- 
 title: "Statistics and Mathematics Lectures"
 author: "Abdullah Al Mahmud"
-date: "2020-11-18"
+date: "2020-11-29"
 site: bookdown::bookdown_site
 output: bookdown::gitbook(split_by="section")
 documentclass: book
@@ -50,7 +50,7 @@ See more [here](https://defkey.com/reveal-js-shortcuts)
 
 ### Class Eight {-}
 
-- [Mathematics Exercises](https://lecture.statmania.info/math/x_stat.html)
+- [Mathematics Exercises](https://lecture.statmania.info/math/viii_math_exercise.html)
 
 ### Class Seven {-}
 

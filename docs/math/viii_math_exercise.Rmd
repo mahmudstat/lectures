@@ -1,5 +1,5 @@
 ---
-title: "Mathematics (VII"
+title: "Mathematics Exercises (VIII)"
 author: Abdullah Al Mahmud
 date: \today
 output: 
@@ -241,7 +241,7 @@ c. Form an equation with one variable and calculate the present age of father an
 
 ## Creative -03
 
-Thrice of sum of two numbers is 17 and sum of the first and thrice of the second is 19. 
+There are two numbers. The sum of thrice of the first number and the second number is 17 and sum of the first and thrice of the second number is 19. 
 
 a. Form two equations.
 b. Solve by substitution method.
