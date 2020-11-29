@@ -3,7 +3,8 @@
 
 
 body {
-        background: linear-gradient(60deg, #99ff33 15%, #00b359 50%);
+  background: linear-gradient(45deg, #d9f2e6 10%, #00b386 80%);
+  border-left: 10px solid #990099;
     }
 
 body:after {
@@ -25,7 +26,7 @@ content: url(logo2.png);
 }
 
 span {
-color:  #ffffb3;
+color:  white;
 }
 
 #thanks {

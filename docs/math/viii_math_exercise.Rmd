@@ -11,6 +11,9 @@ output:
     includes:
       in_header: css/header.html
 ---
+
+Press `space` or `n` to go to next slide
+
 # Exercise
 
 $x-\frac{1}{x}=4$, $x^2+\frac{1}{x^2}=?$
