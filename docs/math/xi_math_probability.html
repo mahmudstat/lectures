@@ -1228,13 +1228,66 @@ function klikaj(i) {
 </ul>
 </section><section id="set-problem-04" class="slide level2">
 <h2>Set problem # 04</h2>
-<p>If a senility researcher discovered that in a population of healthy and diseased elderly people, 14% of the people had senile dementia, 63% had arterioplerotic cerebral degeneration, and 11% had both. What is the probability that person who not having arterioplerotic cerebral degeneration has senile dementia?</p>
+<p>If a senility researcher discovered that in a population of healthy and diseased elderly people, 14% of the people had senile dementia, 63% had arterioplerotic cerebral degeneration, and 11% had both. What is the probability that a person not having arterioplerotic cerebral degeneration has senile dementia?</p>
 </section><section id="set-problem-05" class="slide level2">
 <h2>Set problem # 05</h2>
 <p>A candidate applied for three posts in an industry, having 3, 4, and 2 candidates respectively. What is the probability of getting a job by that candidate in at least one post?</p>
-</section><section id="set-problem-04-1" class="slide level2">
-<h2>Set problem # 04</h2>
+<div onclick="klikaj(&#39;set5&#39;)">
+<span>Answer</span>
+</div>
+<div id="set5" style="visibility: hidden">
+<p><small> <span class="math inline">\(P(F)+P(S)+P(T)-P(F\cap S)-P(S\cap T)-P(F\cap T)+P(F\cap S \cap T\)</span> </small></p>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</section><section id="set-problem-06" class="slide level2">
+<h2>Set problem # 06</h2>
 <p>A card is drawn from each of two well-shuffled pack of cards. Find the probability that at least one of them is an ace.</p>
+<div onclick="klikaj(&#39;rad1&#39;)">
+<span>Solution</span>
+</div>
+<div id="rad1" style="visibility: hidden">
+<p><small> Let,</p>
+<p>A = Ace from 1st pack</p>
+<p>B = Ace from 2nd pack</p>
+<p><span class="math inline">\(P(A \cup B)=?\)</span></p>
+<p><span class="math inline">\(P(A) = \frac{^4C_1}{^{52}C_1}\)</span></p>
+<p><span class="math inline">\(P(B) = P(A)\)</span></p>
+<p><span class="math inline">\(P(A\cap B) = P(A) \times P(B)\)</span></p>
+<ul>
+<li class="fragment"><span class="math inline">\(P(A \cup B)=P(A)+P(B) - P(A \cap B)\)</span> </small></li>
+</ul>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</section><section id="set-problem-07" class="slide level2">
+<h2>Set problem # 07</h2>
+<p><span class="math inline">\(P(A\cap B)= \frac 1 3, P(A \cup B) = \frac 5 6, and \space P(A) = \frac 1 2\)</span></p>
+<p>Find <span class="math inline">\(P(B)\)</span> and <span class="math inline">\(P(B^c)\)</span></p>
+</section><section id="set-problem-08" class="slide level2">
+<h2>Set problem # 08</h2>
+<p><span class="math inline">\(P(A)= \frac 1 2, P(B) = \frac 1 5, \text{and} \space P(A|B) = \frac 3 8\)</span></p>
+<p>Find <span class="math inline">\(P(A \cap B), P(B|A)\)</span>, and <span class="math inline">\(P(A \cup B)\)</span></p>
+<div onclick="klikaj(&#39;set8&#39;)">
+<span>Clue</span>
+</div>
+<div id="set8" style="visibility: hidden">
+<p><span class="math inline">\(P(B|A) = \frac {P(A \cap B)}{P(A)}\)</span></p>
+<p><span class="math inline">\(P(A|B) = \frac {P(A \cap B)}{P(B)}\)</span></p>
+<p><span class="math inline">\(P(A \cap B) = P(A|B) \times P(B)\)</span></p>
+<p><span class="math inline">\(\therefore P(B|A) = \frac{P(A|B) \times P(B)}{P(A)}\)</span></p>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
 </section></section>
     </div>
   </div>

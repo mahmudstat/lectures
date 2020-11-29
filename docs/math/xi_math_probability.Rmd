@@ -9,7 +9,7 @@ output:
     self_contained: false
     css: css/styles.css
     includes:
-      in_header: css/header_stat.html
+      in_header: css/header.html
 ---
 
 # Probability
@@ -599,14 +599,82 @@ Cup 01 contains 2 black, 3 red, and 1 pink ball. Cup 2 contains only 1 red ball.
 
 ## Set problem # 04
 
-If a senility researcher discovered that in a population of healthy and diseased elderly people, 14% of the people had senile dementia, 63% had arterioplerotic cerebral degeneration, and 11% had both. What is the probability that person who not having arterioplerotic cerebral degeneration has senile dementia?
+If a senility researcher discovered that in a population of healthy and diseased elderly people, 14% of the people had senile dementia, 63% had arterioplerotic cerebral degeneration, and 11% had both. What is the probability that a person not having arterioplerotic cerebral degeneration has senile dementia?
+
+
 
 ## Set problem # 05
 
 A candidate applied for three posts in an industry, having 3, 4, and 2 candidates respectively. What is the probability of getting a job by that candidate in at least one post? 
 
-## Set problem # 04
+<div onclick="klikaj('set5')"><span>Answer</span></div>
+<div id="set5" style="visibility: hidden">
+<small>
+$P(F)+P(S)+P(T)-P(F\cap S)-P(S\cap T)-P(F\cap T)+P(F\cap S \cap T$
+</small>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+## Set problem # 06
 
 A card is drawn from each of two well-shuffled pack of cards. Find the probability that at least one of them is an ace. 
 
+<div onclick="klikaj('rad1')"><span>Solution</span></div>
+<div id="rad1" style="visibility: hidden">
+<small>
+Let, 
+
+A = Ace from 1st pack 
+
+B = Ace from 2nd pack
+
+$P(A \cup B)=?$
+
+$P(A) = \frac{^4C_1}{^{52}C_1}$
+
+$P(B) = P(A)$
+
+$P(A\cap B) = P(A) \times P(B)$
+
+> - $P(A \cup B)=P(A)+P(B) - P(A \cap B)$ 
+</small>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+## Set problem # 07
+
+$P(A\cap B)= \frac 1 3, P(A \cup B) = \frac 5 6, and \space P(A) = \frac 1 2$
+
+Find $P(B)$ and $P(B^c)$
+
+## Set problem # 08
+
+$P(A)= \frac 1 2, P(B) = \frac 1 5, \text{and} \space P(A|B) = \frac 3 8$
+
+Find $P(A \cap B), P(B|A)$, and $P(A \cup B)$
+
+<div onclick="klikaj('set8')"><span>Clue</span></div>
+<div id="set8" style="visibility: hidden">
+$P(B|A) = \frac {P(A \cap B)}{P(A)}$
+
+$P(A|B) = \frac {P(A \cap B)}{P(B)}$
+
+$P(A \cap B) = P(A|B) \times P(B)$
+
+$\therefore P(B|A) = \frac{P(A|B) \times P(B)}{P(A)}$
+
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
 

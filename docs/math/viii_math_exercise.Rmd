@@ -9,7 +9,7 @@ output:
     self_contained: false
     css: css/styles.css
     includes:
-      in_header: css/header_stat.html
+      in_header: css/header.html
 ---
 # Exercise
 
@@ -238,3 +238,11 @@ c. Solve the given pair of equations by using eliminations method.
 a. Form two equations with two variables. 
 b. Find the present ages of father and son.
 c. Form an equation with one variable and calculate the present age of father and son. 
+
+## Creative -03
+
+Thrice of sum of two numbers is 17 and sum of the first and thrice of the second is 19. 
+
+a. Form two equations.
+b. Solve by substitution method.
+c. Solve by means of graph (without using (2)).
