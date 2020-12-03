@@ -1,0 +1,53 @@
+---
+title: ''
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+\begin{center}
+\begin{large}
+Pabna Cadet College
+\end{large}
+
+Term End Examination
+
+Subject: Statistics
+
+Class: XI
+\end{center}
+
+Time: 1 hour
+\hfill
+Full Marks: 30
+
+\textbf{Answer all the questions}
+
+**1. The distances to the ten nearest stars, excluding the sun, from the earth are (in light years) 4.24, 5.96, 6.50, 7.26, 7.85, 8.31, 8.66, 8.79, 9.70, and 10.29.**
+
+a. What do you mean by sample?
+b. Determine the sum of squares of the distances.
+c. Sum of square and square of sum are unequal: prove empirically from the stem.
+d. After calculating the arithmetic mean (ordinary average), it is found that all the values should have been 1.2 higher. How would you calculate the corrected average? What is this an application of? 
+
+**2. Price of Hilsha fish (in tk.) for 20 successive days are:**
+
+*755, 1035, 844, 880, 641, 742, 784, 897, 931, 1020, 753, 958, 879, 995, 736, 
+849, 962, 654, 930, 790*
+
+a. Define quantitative data.
+b. Construct a frequency distribution from the data, along with cumulative frequency percentage frequency. 
+b. Sketch an ogive from the data. 
+b. Explain how frequencies, cumulative frequencies, percentage frequencies, and an ogive provide unique information about the data. 
+
+**3. Practical**
+
+**A bus travels 10 km at 10 kph, another 15 km at 20 kph, and another 20 km at 25 kph.**
+
+a. Find the average speed of the bus using fundamental formula of velocity.
+b. Prove that average speeds estimated using weighted arithmetic mean and weighted harmonic mean are both equal to that found in (a). 
+
+
+\begin{center}
+---Good Luck---
+\end{center}
