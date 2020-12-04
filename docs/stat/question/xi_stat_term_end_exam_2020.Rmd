@@ -21,6 +21,147 @@ Time: 1 hour
 \hfill
 Full Marks: 30
 
+**Part 01: MCQ**
+
+1.Which of the following is a qualitative variable?
+
+i.  Price ii. Weight  iii. Income  iv. Courage
+
+**Answer:** iv. Courage
+
+2.  Which one is the representation of sum of square?
+
+i.  $\sum x^2$ ii. $(\sum x)^2$ iii. $(\sum x^2)^2$ iv. $\prod x^2$ 
+
+**Answer:** i.  $\sum x^2$
+
+3. If $x_1=2, x_2 = 3,$ and $x_3 = 1$, 
+
+$$\sum_{i=1}^2 x_i = ?$$
+
+i. 5 ii.  6 iii. 7  iv. 8
+
+**Answer:** i. 5
+
+4.  Which of the following is a discrete variable?
+
+i. Weight in cm ii. Amount honey in gm iii. merit iv. size of laptop
+
+**Answer:**  iv. size of laptop
+
+5.  $x_1=4, x_2=-3, x_3 = 7$, and $x_4=12$; what is the value of $\sum_{i=1}^4 (x_i-4)^2$?
+
+
+i. 26 ii. 106 iii.  126 iv. 216
+
+**Answer:** iii.  126
+
+6. Example of a qualitative variable-
+
+a. I know a lot of people
+b. Name of cadets
+c. Price of house
+
+i. a & b ii.  b & c iii.  a & c iv. a, b, & c 
+
+**Answer:** i. a & b
+
+7. Consider the table below
+
+| x | 3 | 4 |
+|---|---|---|
+| y | 2 | 5 |
+
+What is the value of $\sum \sum xy$?
+
+i. 26 ii. 49 iii. 30  iv. 55
+
+**Answer:** ii. 49
+
+8. How many types of data are there in terms of source of data?
+
+i.  2 ii. 3 iii.  4 iv. 6 
+
+**Answer:** i.  2
+
+9.  What is the formula for determining angles for drawing a pie chart?
+
+i. $\theta = \frac N {f_i} \times 360$  ii. $\theta = \frac {f_i} N \times 360$  iii. $\theta = \frac N {360} \times f_i$ iv. $\theta = \frac N {f_i} \times 100$
+
+**Answer:** ii. $\theta = \frac {f_i} N \times 360$ 
+
+10.  In constructing a frequency distribution, usually how many classes should be formed?
+
+i. 5 - 10 ii. 5 - 15 iii. 10 - 20 iv. 5 - 25
+
+**Answer:** iv. 5-25
+
+11.  For determining number of classes, which formula is suggested by H. G. Sturges?
+
+i. $k = 1 + 4.22 \log_{10}N$ ii. $k = 1 + 3.22 \log_{10}N$ iii. $k = 1 + 4.32 \log_{10}N$  iv. $k = 1.3 + 3 \log_{10}N$
+
+**Answer:** ii. $k = 1 + 3.22 \log_{10}N$
+
+12.  Which method is the best for presenting a continuous frequency distribution on a graph?
+
+i. Frequency Curve ii. Histogram iii. Frequency Polygon iv. Ogive
+
+**Answer:** ii. Histogram
+
+
+13.  Which one is a source of secondary data?
+
+i. Newspaper ii. Direct Interviewer iii. Telephone Interview iv. Observation
+
+**Answer:** i. Newspaper
+
+14. When should we a bar chart instead of a pie chart?
+
+i. When there are large number of categories ii. When the data are discrete iii. When the data are continuous iv. When there are small number of categories
+
+**Answer:** i. When there are large number of categories
+
+15.  Arithmetic mean of first n natural numbers-
+
+i. $\frac {n^2-1}{2}$ ii. $\frac {n+1} 2$ iii.  $\frac {n(n+1)}{2}$ iv. $\frac {n-1} 2$ 
+
+**Answer:**  ii. $\frac {n+1} 2$
+
+16.  When are AM, GM, and HM all equal?
+
+If the quantities 
+
+i. follow an arithmetic progression ii. follow an arithmetic progression iii. are equal iv. are distinct
+
+**Answer:** iii. are equal
+
+
+17.  The best measure of central tendency is-
+
+i. Arithmetic Mean ii.  Geometric Mean iii. Median iv. Mode
+
+**Answer:** i. Arithmetic Mean 
+
+18.  Which relationship is correct?
+
+i. $AM \times HM = GM^2$ ii. $AM \times GM = HM^2$ iii. $GM \times HM = AM^2$ iv. i. $AM \times HM = 2GM^2$
+
+**Answer:** i. $AM \times HM = GM^2$
+
+19.  Which of the following measure always gives a value from within data?
+
+i. Arithmetic Mean ii. Geometric Mean iii. Median  iv. Mode
+
+**Answer:** Mode
+
+20.  Which inequality is never possible? ($Q$ implies Quartile and $P$ implies Percentile)
+
+i. $Q_2 > Q_1$ ii.  $Q_3 > Median$ iii. $P_{60} < Median$ iv. $\text{Arithmetic Mean} < Q_1$
+
+**Answer:** iii. $P_{60} < Median$
+
+Part 02: Creative
+
 \textbf{Answer all the questions}
 
 **1. The distances to the ten nearest stars, excluding the sun, from the earth are (in light years) 4.24, 5.96, 6.50, 7.26, 7.85, 8.31, 8.66, 8.79, 9.70, and 10.29.**
@@ -36,7 +177,7 @@ d. After calculating the arithmetic mean (ordinary average), it is found that al
 849, 962, 654, 930, 790*
 
 a. Define quantitative data.
-b. Construct a frequency distribution from the data, along with cumulative frequency percentage frequency. 
+b. Construct a frequency distribution from the data, along with cumulative frequency and percentage frequency. 
 b. Sketch an ogive from the data. 
 b. Explain how frequencies, cumulative frequencies, percentage frequencies, and an ogive provide unique information about the data. 
 
