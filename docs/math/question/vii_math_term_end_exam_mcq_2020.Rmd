@@ -140,7 +140,7 @@ i. 39%   ii. 22%  iii. 40%  iv. Cannot be determined from the given data
 
 **Creative Questions**
 
-Three friends Saleh, Tahmid, and Rasel collect 10710 tk. for a program. Rasel gives half of Saleh's amount, while Tahmid gives $\frac 5 3$ part of Rasel. 
+1. Three friends Saleh, Tahmid, and Rasel collect 10710 tk. for a program. Rasel gives half of Saleh's amount, while Tahmid gives $\frac 5 3$ part of Rasel. 
 
 a. $\space$ Determine the simple ratio of their amount.
 c. $\space$ How many tk. did Rasel and Tahmid contribute?
@@ -168,6 +168,53 @@ $\qquad$ Tahmid would get back = `r 5/14*rem`
 
 $\qquad$ Saleh would get back = `r 6/14*rem`
 
+2. *The breadth of a rectangular space is one-forth its length.*
+
+a. If the length is x, express the perimeter of the space in terms of x.
+b. If the perimeter of the garden is 40 meter, what are the length and breadth of the garden?
+c. If the total cost of cleaning the garden is 1500 tk, what will be the cost to clean per square meter of the garden?
+
+**Solution**
+
+a. Let, length is x
+
+$\qquad$ $\therefore$ breadth = $\frac x 4$
+
+$\qquad$ $\therefore$ perimeter = $2(x+\frac x 4) = \frac {10x} 4$
+
+b. $\frac {10x} 4 = 40$
+
+$\qquad$ $\therefore$ $length, x=16$ and width = $\frac {16} 4 = 4$
+
+c. Total Area = $16 \times 4 =$ `r (ar=16*4)`
+
+$\qquad$ Cost per square meter = $\frac {1500}{`r ar`}$ = `r 1500/ar`
+
+3. Observe the figure
+
+```{r cq3, echo=FALSE, fig.align = 'center', out.width = '80%'}
+knitr:: include_graphics("img/geometry_cq.png")
+```
+
+a. Show the matching angles.
+b. Determine the ratio of the matching sides.
+c. Show that $\triangle ABC$ and $\triangle CXY$ are similar. 
+
+**Solution**
+
+a. Matching angles of $\angle ABC$, $\angle ACB$, and $\angle BAC$ are $\angle CXY$, $\angle XCY$, and $\angle CYX$. 
+
+b. CX:BC = 5:10 = 1:2
+
+$\qquad$ CY:AC = 13:26 = 1:2
+
+c. In the $\triangle ABC$ and $\triangle CXY$,
+
+$\qquad$ $\angle ABC = \angle CYX = 90^o$  (one right angle)
+
+$\qquad$ Again, from (b),  CX:BC = 1:2 = CY:AC
+
+$\qquad$ $\therefore \triangle ABC$ and $\triangle CXY$ are similar. 
 
 \begin{center}
 ---Good Luck---
