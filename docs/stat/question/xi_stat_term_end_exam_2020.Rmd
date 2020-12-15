@@ -188,6 +188,120 @@ b. Explain how frequencies, cumulative frequencies, percentage frequencies, and 
 a. Find the average speed of the bus using fundamental formula of velocity.
 b. Prove that average speeds estimated using weighted arithmetic mean and weighted harmonic mean are both equal to that found in (a). 
 
+**Solution** [^1]
+
+### Creative - 01
+
+a. *Sample*: Any (not necessarily representative) subset of population. 
+b. **Sum of squares of distances**
+
+$\quad$ X = `r (x=c(4.24, 5.96, 6.50, 7.26, 7.85, 8.31, 8.66, 8.79, 9.70, 10.29))`
+
+$\quad$ $\sum_{i=1}^{10}X_i^2=$ `r sum(x^2)`
+
+c. Square of sum, $(\sum_{i=1}^{10} X_i)^2$ = `r sum(x)^2`
+
+$\therefore$ they are not equal. 
+
+d. Arithmetic Mean, AM = $\frac{\sum_{i=1}^{10}X_i}{10}=$ `r mean(x)`
+
+$\quad$ Corrected AM, AM' = AM + 1.2 = `r mean(x) + 1.2`
+
+### Creative - 02
+
+a. *Quantitative data*: Data that can be quantified, i.e., can be expressed numerically. 
+
+b. Frequency distribution [^2]
+
+$\quad$ X = `r (x=c(755, 1035, 844, 880, 641, 742, 784, 897, 931, 1020, 753, 958, 879, 995, 736, 849, 962, 654, 930, 790))`
+
+$\quad$ Range = `r range(x)[2]-range(x)[1]`
+
+$\quad$ Using 5 number of classes. 
+
+```{r, echo = FALSE, results = 'hide'}
+x=c(755, 1035, 844, 880, 641, 742, 784, 897, 931, 1020, 753, 958, 879, 995, 736, 849, 962, 654, 930, 790)
+breaks = seq(min(x), max(x), length.out = 6)
+cut <- cut(x, breaks, right=FALSE)
+```
+
+```{r, echo = FALSE, comment=NA}
+options(scipen=999)
+dist <- as.data.frame(table(cut))
+dist$Cumulative_Frequency <- cumsum(dist$Freq)
+dist$Relative_Frequency <- round(dist$Freq/sum(dist$Freq),2)
+dist$pct <- paste0(round(100*dist$Freq/sum(dist$Freq),2), "%")
+colnames(dist) <- c("Class Interval", "Frequency", "Cumulative Frequency", "Relative Frequency", "Percentage Frequency")
+```
+
+```{r fd, echo=F}
+knitr::kable(dist[,c(1,2,3,5)], caption = 'Frequency Distribution')
+```
+
+c. **Ogive** [^3]
+
+```{r, echo=F, fig.show='hide'}
+h <- hist(x)
+```
+
+```{r, echo=F}
+intervals <- seq(from = min(h$breaks), to = max(h$breaks), by = h$breaks[2] - h$breaks[1])
+intervals <- c(0, intervals[-1])
+# Cumulative sums
+cf = c(0, cumsum(h$counts))
+```
+
+```{r, echo = F, fig.cap='Ogive of Price of Hilsha fish'}
+plot(intervals, cf, type = "l", pch = 20, 
+     xlab = "Intervals", ylab = "Cumulative Frequency")
+```
+
+d. **Explanation** [^4]
+
+**Frequency**: 
+
+i. Price of most fishes lies between 720 and 799 tk. 
+ii. There are two fishes whose prices are between 641 and 720 tk. 
+
+**Cumulative Frequency**:
+
+$\quad$ There 15 fishes whose prices are 956 tk. or less. 
+
+**Percentage Frequency**
+
+$\quad$ Prices of 26.32% fishes are between 877 tk. and 956 tk. [^4]
+
+### Practical
+
+a. **Velocity using fundamental formula of velocity**
+
+```{r, echo = F, results="hide"}
+(v=c(10,20, 25)); (s=c(10,15,20)); (t=s/v)
+```
+
+  Average Velocity = $\bar V = \frac{\text{Total Distance}}{\text{Total Time}}=\frac{10+15+20}{\frac{10}{10}+\frac{15}{20}+\frac{20}{25}}$ = `r (round(sum(s)/sum(t),2))`
+
+b. **WHM and WAM**
+
+HM $\rightarrow$ consider distances as weights
+
+AM $\rightarrow$ consider times as weights
+
+Time, $t=\frac d v=$ `r d = c(10,15,20); v = c(10,20,25); d/v`
+
+
+- $WHM = \frac{10+15+20}{\frac{10}{10}+\frac{15}{20}+\frac{20}{25}}$=`r round((45)/(1+15/20+20/25),2)`
+- $WAM = \frac{1\times 10 + 0.75 \times 20 + 0.80 \times 25}{1+0.75+0.80}$ = `r round((10+0.75*20+0.80*25)/2.55,2)`
+
+$\therefore$ all are equal to one another. 
+
+[^1]: Calculation were performed within the document using `R` programming language inside Rmarkdown. 
+
+[^2]: This can be accomplished in many ways, depending on number of classes or length of class intervals. 
+
+[^3]: Could have many different looks.
+
+[^4]: Does not cover all possible explanations. 
 
 \begin{center}
 ---Good Luck---
