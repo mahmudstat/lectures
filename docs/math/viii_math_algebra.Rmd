@@ -1,0 +1,69 @@
+---
+title: "Mathematics (VIII)"
+author: Abdullah Al Mahmud
+date: \today
+theme: blood
+output: 
+  revealjs::revealjs_presentation:
+    incremental: false
+    reveal_plugins: ["chalkboard", "menu"]
+    self_contained: false
+    slideNumber: true
+    css: css/styles.css
+    includes:
+      in_header: css/header.html
+---
+
+# Chapter 04: Algebraic Formula & Application
+
+## Keep in Mind!
+
+- Read The Text Book Thoroughly
+- Read Concepts Carefully
+- Think Why Formulae Are Such
+- DO NOT MEMORIZE Formulae
+
+## Formulae
+
+### ~~MEMORIZE~~ FEEL
+
+
+
+<div class="container">
+<div class="col">
+#### Can you translate them into English?
+
+- $(a+b)^2 = a^2+2ab+b^2$
+- $(a-b)^2 = a^2-2ab+b^2$
+- $a^2-b^2=(a+b)(a-b)$
+</div>
+<div class="col">
+#### Corollary
+<small>
+
+- $a^2+b^2= ?$ 
+- $a^2+b^2= ?$ (in another form)
+- $(a+b)^2 = ?$ (in terms of) $(a-b)^2$
+- $(a-b)^2 = ?$ (in terms of) $(a+b)^2$
+- $(a+b)^2+(a-b)^2 = ?$
+- $(a+b)^2+(a-b)^2 = ?$
+- $ab=?$
+
+</small>
+</div>
+</div>
+
+## Relationship between (a+b)^2^ and (a-b)^2^
+
+\begin{eqnarray} 
+(a+b)^2 &=& a^2+2ab+b^2     \nonumber \\
+&=& a^2-2ab+b^2 + 2ab + 2ab \nonumber \\
+&=& (a-b)^2 +4ab   \nonumber \\
+\end{eqnarray}
+
+>- Find (a-b)^2^ similarly
+
+## Find Squares
+
+> - (2x+y)
+> - (5m-3p)

@@ -19,7 +19,7 @@ Class: XI
 
 Time: 1 hour
 \hfill
-Full Marks: 30
+Full Marks: 50
 
 **Part 01: MCQ**
 
@@ -207,6 +207,8 @@ d. Arithmetic Mean, AM = $\frac{\sum_{i=1}^{10}X_i}{10}=$ `r mean(x)`
 
 $\quad$ Corrected AM, AM' = AM + 1.2 = `r mean(x) + 1.2`
 
+$\quad$ This is an application of *change of origin*.
+
 ### Creative - 02
 
 a. *Quantitative data*: Data that can be quantified, i.e., can be expressed numerically. 
@@ -217,7 +219,7 @@ $\quad$ X = `r (x=c(755, 1035, 844, 880, 641, 742, 784, 897, 931, 1020, 753, 958
 
 $\quad$ Range = `r range(x)[2]-range(x)[1]`
 
-$\quad$ Using 5 number of classes. 
+$\quad$ Using 5 as number of classes. 
 
 ```{r, echo = FALSE, results = 'hide'}
 x=c(755, 1035, 844, 880, 641, 742, 784, 897, 931, 1020, 753, 958, 879, 995, 736, 849, 962, 654, 930, 790)
@@ -271,7 +273,7 @@ $\quad$ There 15 fishes whose prices are 956 tk. or less.
 
 $\quad$ Prices of 26.32% fishes are between 877 tk. and 956 tk. [^4]
 
-### Practical
+### Solution to Practical
 
 a. **Velocity using fundamental formula of velocity**
 

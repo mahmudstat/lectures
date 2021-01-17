@@ -4,7 +4,6 @@
 
 body {
   background: linear-gradient(45deg, #d9f2e6 10%, #00b386 80%);
-  border-left: 10px solid #990099;
     }
 
 body:after {
