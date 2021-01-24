@@ -1,0 +1,51 @@
+---
+title: "Mathematics (XI): Permutation & Combination"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
+    self_contained: false
+    css: css/styles.css
+    includes:
+      in_header: css/header.html
+---
+
+## Permutation
+
+In how many ways can we arrange 3 letters A, B, C?
+
+- ABC
+- ACB
+- BAC
+- BCA
+- CAB
+- CBA
+
+> - That is, 6 ways. In short $3!=3 \times 2 \times 1 = 6$
+
+## Arranging Subset
+
+In how many ways can we arrange 2 letters from A, B, C?
+
+- AB
+- BA
+- AC
+- CA
+- BC
+- CB
+
+> - Again 6 ways, but we get it using $^3P_2 = \frac{3!}{(3-2)!}=\frac {6}{1!}=6$
+
+## What is 0!
+
+Why is $3!\ne 3 \times 2 \times 1 \times 0$?
+
+## Rule of Counting
+
+## Example
+
+1.a. In how many ways can you select a team of 15 cricketers from a team of 23 cricketers and then from them a final team of 11 cricketers? 
+
+1.b. Afterwards, if you arrange the cricketers in the field, in how many ways can you do the entire process? 
