@@ -44,8 +44,40 @@ Why is $3!\ne 3 \times 2 \times 1 \times 0$?
 
 ## Rule of Counting
 
+How the counting rule works? 
+
+```{r crule, echo=FALSE, fig.cap = "Counting Rule", fig.align = 'center', out.width = '80%'}
+knitr:: include_graphics("img/counting_rule.png")
+```
+
+How many possible routes, from A to B, are there?
+
 ## Example
 
 1.a. In how many ways can you select a team of 15 cricketers from a team of 23 cricketers and then from them a final team of 11 cricketers? 
 
 1.b. Afterwards, if you arrange the cricketers in the field, in how many ways can you do the entire process? 
+
+# Exercises
+
+## 1(a)
+
+Find the value of n
+
+$^{n-1}P_3:^{n+1}P_3=5:12$
+
+## 1(b)
+
+Find the value of n
+
+$4 \times ^nP_3 = 5 \times ^{n-1} P_3$
+
+
+## 1(c)
+
+How many different arrangements can you make by using any 3 items from n different items, without using the general formula and without using an item more than once? What if you can use one item multiple times?
+
+
+![](img/positions.png)
+
+
