@@ -80,4 +80,7 @@ How many different arrangements can you make by using any 3 items from n differe
 
 ![](img/positions.png)
 
+## 2
+
+How many arrangements can be made using the letters from the word COURAGE? What if the arrangements must contain a vowel in the beginning?
 
