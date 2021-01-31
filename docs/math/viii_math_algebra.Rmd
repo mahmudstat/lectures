@@ -67,3 +67,52 @@ output:
 
 > - (2x+y)
 > - (5m-3p)
+> - ax+b+2
+
+## 2(a)
+
+Simplify
+
+$(x+y)^2+2(x+y)(x-y)+(x-y)^2$
+
+
+## 2(d)
+
+Simplify
+
+$(8x+y)^2 - (16x+2y)(5x+y) + (5x+y)^2$
+
+> - $(8x+y)^2 - 2(8x+y)(5x+y) + (5x+y)^2$
+
+## 3(a)
+
+Find product using formula
+
+(x+7)(x-7)
+
+## 3(b)
+
+Find product using formula
+
+(5x+13)(5x-13)
+
+## 3(i)
+
+(ax-by+cz)(ax+by-cz)
+
+> - {ax-(by-cz)}{ax+(by-cz)}
+> - $(ax)^2-(by-cz)^2=a^2x^2-b^2y^2+2bycz-c^2z^2$
+
+## Application of $x^2+x(a+b)+ab$
+
+
+
+\begin{eqnarray} 
+Expression (x+3)(x+4)     \nonumber \\
+&=& \\
+\end{eqnarray}
+
+## 3(l)
+
+Formula: (x+a)(x+b) = x^2+x(a+b)+ab
+

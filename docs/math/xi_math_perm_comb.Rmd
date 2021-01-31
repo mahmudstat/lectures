@@ -80,7 +80,58 @@ How many different arrangements can you make by using any 3 items from n differe
 
 ![](img/positions.png)
 
-## 2
+## 2(a)
+
+How many words can be formed using the letters of the word **EQUATION**?
+
+> - Answer = 8! = `r factorial(8)`
+
+## 2(c)
+
+Find the n(arrangements) of
+
+i. committee
+ii. infinitesimal
+iii. proportion
+
+## Extra 01
 
 How many arrangements can be made using the letters from the word COURAGE? What if the arrangements must contain a vowel in the beginning?
 
+## Extra Problem 02
+
+How many arrangements are possible using the words
+
+- **EYE**
+- **CARAVAN**?
+
+
+## 3(a)
+
+There are (p+q) items, of which p items are homogeneous and q items are heterogeneous?
+
+## 2(j)
+
+There are 10 letters, of which some are homogeneous while others are heterogeneous. The letters can be arranged in 30240 ways. How many homogeneous letters are there?
+
+Let, $m = \text{number of heterogeneous items}$
+ 
+> -  n(arrangements) = 30240 = $\frac {10!}{m!}$
+> - $m! = \frac{10!}{30240}=`r factorial(10)/30240`$
+> - m = 5
+
+## 2(k)
+
+A library has 8 copies of one book, 3 copies of another two books each, 5 copies of another two books each and single copy of 10 books. In how many ways can they be arranged?
+
+Total books = $1 \times 8+2(3 \times 2)+2(5 \times 2) + 8 \times 1$ = `r (a=8+2*3*2+2*5*2+8)`
+
+> - n(arrangements) = $\frac{`r a`}{8!(3!)^2(5!)^2}$
+
+## 2(l)
+
+A man has one white, two red, and three green flags; how many different signals can he produce, each containing five flags and one above another?
+
+Flags: W = 2, R = 2, G = 3, Total = 7
+
+> - $\frac{^7P_5}{2!3!}$=`r choose(7,5)/(factorial(3)*factorial(2))`
