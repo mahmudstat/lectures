@@ -88,7 +88,7 @@ How many words can be formed using the letters of the word **EQUATION**?
 
 ## 2(c)
 
-Find the n(arrangements) of
+Find the n(arrangements) of the words
 
 i. committee
 ii. infinitesimal
@@ -96,7 +96,9 @@ iii. proportion
 
 ## Extra 01
 
-How many arrangements can be made using the letters from the word COURAGE? What if the arrangements must contain a vowel in the beginning?
+How many arrangements can be made using the letters from the word COURAGE? What if the arrangements must contain a vowel in the beginning? 
+
+> - $4 \times 6!$
 
 ## Extra Problem 02
 
@@ -108,13 +110,13 @@ How many arrangements are possible using the words
 
 ## 3(a)
 
-There are (p+q) items, of which p items are homogeneous and q items are heterogeneous?
+There are (p+q) items, of which p items are homogeneous and q items are heterogeneous. How many arrangements are possible?
 
 ## 2(j)
 
 There are 10 letters, of which some are homogeneous while others are heterogeneous. The letters can be arranged in 30240 ways. How many homogeneous letters are there?
 
-Let, $m = \text{number of heterogeneous items}$
+Let, $m = \text{number of homogeneous items}$
  
 > -  n(arrangements) = 30240 = $\frac {10!}{m!}$
 > - $m! = \frac{10!}{30240}=`r factorial(10)/30240`$
@@ -124,7 +126,7 @@ Let, $m = \text{number of heterogeneous items}$
 
 A library has 8 copies of one book, 3 copies of another two books each, 5 copies of another two books each and single copy of 10 books. In how many ways can they be arranged?
 
-Total books = $1 \times 8+2(3 \times 2)+2(5 \times 2) + 8 \times 1$ = `r (a=8+2*3*2+2*5*2+8)`
+Total books = $1 \times 8+3 \times 2+5 \times 2 + 8 \times 1 + 10$ = `r (a=8+2*3+5*2+8+10)`
 
 > - n(arrangements) = $\frac{`r a`}{8!(3!)^2(5!)^2}$
 
@@ -134,4 +136,124 @@ A man has one white, two red, and three green flags; how many different signals 
 
 Flags: W = 2, R = 2, G = 3, Total = 7
 
-> - $\frac{^7P_5}{2!3!}$=`r choose(7,5)/(factorial(3)*factorial(2))`
+<div onclick="klikaj('flag1')"><span>Answer</span></div>
+<div id="flag1" style="visibility: hidden">
+<div class="container">
+<div class="col">
+![](img/flag.png)
+</div>
+<div class="col">
+Total arrangements = `r 12+12+4+4+6` 
+</div>
+</div>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+## 2 (m)
+
+A man has one white, two red, and three green flags. How many different signals can he make, if he uses five flags, one above another?
+
+## 3(a)
+
+How many different arragnements can be made using the letters of the word ENGINEERING? In how many of them do the three E's stand together? In how many do the E's stand first? 
+
+<div class="container">
+<div class="col">
+<div onclick="klikaj('3a1')"><span>i</span></div>
+<div id="3a1" style="visibility: hidden">
+Answer:
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+<div class="col">
+<div onclick="klikaj('3a2')"><span>ii</span></div>
+<div id="3a2" style="visibility: hidden">
+Consider E's to be a single word
+$\frac{9!}{3!2!2!}=$ `r factorial(9)/(3*2*2*2)`
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+<div class="col">
+<div onclick="klikaj('3a3')"><span>iii</span></div>
+<div id="3a3" style="visibility: hidden">
+<small>
+They stand still; don't get shuffled at all. 
+
+Answer $=\frac{8!}{3!2!2!}=$ `r factorial(8)/(3*2*2*2)`
+
+What if in last position or in middle?
+</small>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script> 
+</div>
+</div>
+
+## 3(b)
+
+In how many ways can the letters of the word CHITTAGONG be arranged, so that all vowels are together?
+
+> - Vowels are like one single letter
+> - They can switch places between themselves
+> - Answer = $\frac{8!}{2!2!} \times 3!=$ `r factorial(8)*6/4`
+> - What about TECHNOLOGY, DEPRESSION?
+
+## 3(e)
+
+In how many ways may 7 green, 4 blue, and 2 red counters be arranged in a row? How many arrangements will have two red counters side by side?
+
+<div class="container">
+<div class="col">
+<div onclick="klikaj('3e1')"><span>i</span></div>
+<div id="3e1" style="visibility: hidden">
+As usually  = `r factorial(13)/(factorial(7)*factorial(4)*factorial(2))`
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+<div class="col">
+<div onclick="klikaj('3e2')"><span>ii</span></div>
+<div id="3e2" style="visibility: hidden">
+> - Consider reds to be one
+> - `r factorial(12)/(factorial(7)*factorial(4))`
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
+
+## 3(f)
+
+Five Math books, three Physics books, and two Statistics books are to be arranged in a shelf. In how many ways can they be arranged, if books on same subject are put together?
+
+> - They are like 3 books.
+> - Books on individual subjects can still be arranged among themselves.
+> - $3!5!3!2!=$ `r factorial(3)*factorial(5)*factorial(3)*factorial(2)`
+
+## 4 (a)
+
+Arrange the letters of the word ARRANGE so that two R's are not together.
+
+> - n(total arrangements) - n(arrangements with T's together)
+> - $\frac{7!}{2!2!}-\frac{6!}{2!}=$ `r factorial(7)/4-factorial(6)/2`

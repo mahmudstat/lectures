@@ -527,7 +527,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul>
 </section><section id="c-1" class="slide level2">
 <h2>2(c)</h2>
-<p>Find the n(arrangements) of</p>
+<p>Find the n(arrangements) of the words</p>
 <ol type="i">
 <li>committee</li>
 <li>infinitesimal</li>
@@ -536,6 +536,9 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </section><section id="extra-01" class="slide level2">
 <h2>Extra 01</h2>
 <p>How many arrangements can be made using the letters from the word COURAGE? What if the arrangements must contain a vowel in the beginning?</p>
+<ul>
+<li class="fragment"><span class="math inline">\(4 \times 6!\)</span></li>
+</ul>
 </section><section id="extra-problem-02" class="slide level2">
 <h2>Extra Problem 02</h2>
 <p>How many arrangements are possible using the words</p>
@@ -545,11 +548,11 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul>
 </section><section id="a-2" class="slide level2">
 <h2>3(a)</h2>
-<p>There are (p+q) items, of which p items are homogeneous and q items are heterogeneous?</p>
+<p>There are (p+q) items, of which p items are homogeneous and q items are heterogeneous. How many arrangements are possible?</p>
 </section><section id="j" class="slide level2">
 <h2>2(j)</h2>
 <p>There are 10 letters, of which some are homogeneous while others are heterogeneous. The letters can be arranged in 30240 ways. How many homogeneous letters are there?</p>
-<p>Let, <span class="math inline">\(m = \text{number of heterogeneous items}\)</span></p>
+<p>Let, <span class="math inline">\(m = \text{number of homogeneous items}\)</span></p>
 <ul>
 <li class="fragment">n(arrangements) = 30240 = <span class="math inline">\(\frac {10!}{m!}\)</span></li>
 <li class="fragment"><span class="math inline">\(m! = \frac{10!}{30240}=120\)</span></li>
@@ -558,14 +561,139 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </section><section id="k" class="slide level2">
 <h2>2(k)</h2>
 <p>A library has 8 copies of one book, 3 copies of another two books each, 5 copies of another two books each and single copy of 10 books. In how many ways can they be arranged?</p>
-<p>Total books = <span class="math inline">\(1 \times 8+2(3 \times 2)+2(5 \times 2) + 8 \times 1\)</span> = 48</p>
+<p>Total books = <span class="math inline">\(1 \times 8+3 \times 2+5 \times 2 + 8 \times 1 + 10\)</span> = 42</p>
 <ul>
-<li class="fragment">n(arrangements) = <span class="math inline">\(\frac{48}{8!(3!)^2(5!)^2}\)</span></li>
+<li class="fragment">n(arrangements) = <span class="math inline">\(\frac{42}{8!(3!)^2(5!)^2}\)</span></li>
 </ul>
 </section><section id="l" class="slide level2">
 <h2>2(l)</h2>
 <p>A man has one white, two red, and three green flags; how many different signals can he produce, each containing five flags and one above another?</p>
-<p>Flags: W = 2, R = 2, G = 3, Total = 7 &gt; - <span class="math inline">\(\frac{^7P_5}{2!3!}\)</span>=1.75</p>
+<p>Flags: W = 2, R = 2, G = 3, Total = 7</p>
+<div onclick="klikaj(&#39;flag1&#39;)">
+<span>Answer</span>
+</div>
+<div id="flag1" style="visibility: hidden">
+<div class="container">
+<div class="col">
+<p><img data-src="img/flag.PNG" /></p>
+</div>
+<div class="col">
+<p>Total arrangements = 38</p>
+</div>
+</div>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</section><section id="m" class="slide level2">
+<h2>2 (m)</h2>
+<p>A man has one white, two red, and three green flags. How many different signals can he make, if he uses five flags, one above another?</p>
+</section><section id="a-3" class="slide level2">
+<h2>3(a)</h2>
+<p>How many different arragnements can be made using the letters of the word ENGINEERING? In how many of them do the three E’s stand together? In how many do the E’s stand first?</p>
+<div class="container">
+<div class="col">
+<div onclick="klikaj(&#39;3a1&#39;)">
+<span>i</span>
+</div>
+<div id="3a1" style="visibility: hidden">
+<p>Answer:</p>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+<div class="col">
+<div onclick="klikaj(&#39;3a2&#39;)">
+<span>ii</span>
+</div>
+<div id="3a2" style="visibility: hidden">
+<p>Consider E’s to be a single word <span class="math inline">\(\frac{9!}{3!2!2!}=\)</span> 1.51210^{4}</p>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+<div class="col">
+<div onclick="klikaj(&#39;3a3&#39;)">
+<span>iii</span>
+</div>
+<div id="3a3" style="visibility: hidden">
+<p><small> They stand still; don’t get shuffled at all.</p>
+<p>Answer <span class="math inline">\(=\frac{8!}{3!2!2!}=\)</span> 1680</p>
+<p>What if in last position or in middle? </small></p>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
+</section><section id="b-1" class="slide level2">
+<h2>3(b)</h2>
+<p>In how many ways can the letters of the word CHITTAGONG be arranged, so that all vowels are together?</p>
+<ul>
+<li class="fragment">Vowels are like one single letter</li>
+<li class="fragment">They can switch places between themselves</li>
+<li class="fragment">Answer = <span class="math inline">\(\frac{8!}{2!2!} \times 3!=\)</span> 6.04810^{4}</li>
+<li class="fragment">What about TECHNOLOGY, DEPRESSION?</li>
+</ul>
+</section><section id="e" class="slide level2">
+<h2>3(e)</h2>
+<p>In how many ways may 7 green, 4 blue, and 2 red counters be arranged in a row? How many arrangements will have two red counters side by side?</p>
+<div class="container">
+<div class="col">
+<div onclick="klikaj(&#39;3e1&#39;)">
+<span>i</span>
+</div>
+<div id="3e1" style="visibility: hidden">
+<p>As usually = 2.57410^{4}</p>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+<div class="col">
+<div onclick="klikaj(&#39;3e2&#39;)">
+<span>ii</span>
+</div>
+<div id="3e2" style="visibility: hidden">
+<ul>
+<li class="fragment">Consider reds to be one</li>
+<li class="fragment">3960</li>
+</ul>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
+</section><section id="f" class="slide level2">
+<h2>3(f)</h2>
+<p>Five Math books, three Physics books, and two Statistics books are to be arranged in a shelf. In how many ways can they be arranged, if books on same subject are put together?</p>
+<ul>
+<li class="fragment">They are like 3 books.</li>
+<li class="fragment">Books on individual subjects can still be arranged among themselves.</li>
+<li class="fragment"><span class="math inline">\(3!5!3!2!=\)</span> 8640</li>
+</ul>
+</section><section id="a-4" class="slide level2">
+<h2>4 (a)</h2>
+<p>Arrange the letters of the word ARRANGE so that two R’s are not together.</p>
+<ul>
+<li class="fragment">n(total arrangements) - n(arrangements with T’s together)</li>
+<li class="fragment"><span class="math inline">\(\frac{7!}{2!2!}-\frac{6!}{2!}=\)</span> 900</li>
+</ul>
 </section></section>
     </div>
   </div>
