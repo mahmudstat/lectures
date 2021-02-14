@@ -116,3 +116,124 @@ Expression (x+3)(x+4)     \nonumber \\
 
 Formula: (x+a)(x+b) = x^2+x(a+b)+ab
 
+## Find Value (5)
+
+If $x-\frac 1 x=3$, $x^2+\frac 1 {x^2}=?$
+
+<div class="container">
+<div class="col">
+<div onclick="klikaj('51')"><span>Solution 01</span></div>
+<div id="51" style="visibility: hidden">
+$x^2+\frac 1 {x^2}=(x-\frac 1 x)^2 + 2 \cdot x \cdot \frac 1 x$
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+<div class="col">
+<div onclick="klikaj('52')"><span>Alternative</span></div>
+<div id="52" style="visibility: hidden">
+Given 
+
+$x-\frac 1 x = 3$
+
+$x^2-2 \cdot x \cdot \frac 1 x + \frac 1 {x^2}$
+
+$\therefore x^2+\frac 1 {x^2} = 9+2 = 11$
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
+
+## Find Value (6)
+
+$a+\frac 1 a =4, a^4+\frac 1 {a^4}=?$
+
+<div class="container">
+<div class="col">
+<div onclick="klikaj('61')"><span>Answer</span></div>
+<div id="61" style="visibility: hidden">
+?
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+<div class="col">
+<div onclick="klikaj('62')"><span>Answer</span></div>
+<div id="62" style="visibility: hidden">
+?
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
+
+## Find Value (7)
+
+If m = 6 and n = 7
+
+$16(m^2+n^2)^2+56(m^2+n^2)(3m^2-2n^2)+49(3m^2-2n^2)^2$
+
+## Find Value (8)
+
+$a-\frac 1 a=m$ 
+
+Show $a^4+\frac 1 {a^4}=m^4+4m^2+2$
+
+## Express as difference of squares (13a)
+
+i. (5 p - 3q)( p + 7q)
+ii. (5x - 13)(5x + 13)
+
+<div class="container">
+<div class="col">
+<div onclick="klikaj('13a1')"><span>Solution</span></div>
+<div id="13a1" style="visibility: hidden">
+<small>
+Let 
+
+a = 5p-3q and b = p+7q
+
+
+\begin{eqnarray} 
+ab &=&(\frac{a+b}2)^2-(\frac{a-b}2)^2     \nonumber \\
+ &=& (\frac{5p-3q+p+7q}2)^2-(\frac{5p-3q-p-7q}2)^2 \nonumber \\
+&=&  (\frac{6p+4q}2)^2-(\frac{4p-10q}2)^2   \nonumber \\
+&=& (3p+2q)^2-(2p-5q)^2   \nonumber \\
+\end{eqnarray}
+</small>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+<div class="col">
+Solution (ii)
+
+> - $(5x)^2-(13)^2$
+</div>
+</div>
+
+## Find Value (9)
+
+$x-\frac 1 x=4$; Prove $x^2+(\frac 1 x)^2=18$
+
+\begin{eqnarray} 
+x-\frac 1 x=4      \nonumber \\
+&\Rightarrow& x^2-2 + \frac 1 {x^2} = 16 \nonumber \\
+&\Rightarrow& x^2+   \frac 1 {x^2} =16+2=18 \nonumber \\
+\end{eqnarray}
