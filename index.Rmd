@@ -22,11 +22,9 @@ This websites contains lectures on statistics and mathematics. All the lectures 
 
 See more [here](https://defkey.com/reveal-js-shortcuts)
 
-# Contents {-}
+# Statistics {- #stat}
 
-## Statistics {- #stat}
-
-### First Part {-}
+## First Part {-}
 
 - [Chapter 01: Introduction](https://lecture.statmania.info/stat/ch1_xi_stat.html)
 - [Chapter 02: Collection, Presentation, and Organization of Data](https://lecture.statmania.info/stat/ch2_xi_stat.html)
@@ -37,11 +35,12 @@ See more [here](https://defkey.com/reveal-js-shortcuts)
 
 - [Elementary Statistics](https://lecture.statmania.info/stat/stat_preliminaries.html)
 
-## Mathematics {-}
+# Mathematics {-}
 
 ### Higher Secondary {-}
  
 - [Dispersion and Probability](https://lecture.statmania.info/math/xi_math_probability.html)
+- [Permutation and Combination](https://lecture.statmania.info/math/xi_math_perm_comb.html)
 
 ### Class IX-X {-}
 
@@ -51,6 +50,7 @@ See more [here](https://defkey.com/reveal-js-shortcuts)
 ### Class Eight {-}
 
 - [Mathematics Exercises](https://lecture.statmania.info/math/viii_math_exercise.html)
+- [Algebra](https://lecture.statmania.info/math/viii_math_algebra.html)
 
 ### Class Seven {-}
 
