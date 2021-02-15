@@ -123,7 +123,7 @@ $X=$ `r set.seed(300);(x=sample(30,15))`
 <div class="col">
 Ungrouped Data
 
-$MD(k)=\frac{\sum_{i=1}^n |x_i-k|} n$
+$MD(k)=\frac{\sum_{i=1}^n |x_i-k|} n$, not $MD(k)=\frac{|\sum_{i=1}^n(x_i-k)|} n$; Beware!
 
 </div>
 <div class="col">
@@ -340,6 +340,100 @@ $\therefore$ SD is least (i.e., 0) when all values are equal.
 
 Who is better?
 
+# Theorems
+
+## $\sigma$ Origin-Scale
+
+<small>
+
+<div class="container">
+<div class="col">
+$\sigma_x^2=\frac{\sum(x_i-\bar x)^2}{n}$
+
+Let, $d_i=\frac{x_i-a}{c}$ (a = origin, c = scale)
+
+\begin{eqnarray} 
+&\Rightarrow& x_i=a+cd_i     \nonumber \\
+&\Rightarrow& \bar x = a + c \bar d \nonumber \\
+\end{eqnarray}
+</div>
+<div class="col">
+\begin{eqnarray} 
+\sigma_x^2&=&\frac{\sum(x_i-\bar x)^2}{n}     \nonumber \\
+&=&  \frac{\sum(a+cd_i-a-c \bar d)^2}{n}   \nonumber \\
+&=&  \frac{\sum(cd_i-c \bar d)^2}{n}   \nonumber \\
+&=&  \frac{c^2\sum(d_i-\bar d)^2}{n}   \nonumber \\
+&=&  |c| \frac{\sum(d_i-\bar d)^2}{n}   \nonumber \\
+&=&  |c| \sigma_d   \nonumber \\
+\end{eqnarray}
+
+$\therefore \sigma_x=|c| \sigma_d$ 
+</div>
+</div>
+
+- Similar procedure and outcome for standard deviation
+
+</small>
+
+## MD, SD and Range 
+
+<small>
+ 
+<div class="container">
+<div class="col">
+$MD=SD=\frac R 2$ for $x_1\ne x_2$ (two unequal observations)
+
+$\bar x = \frac {x_1+x_2} 2$ and $R=|x_1-x_2|$
+</div>
+<div class="col">
+Mean Deviation, 
+
+\begin{eqnarray} 
+MD &=& \frac{\sum_{i=1}^2 |x_i-\bar x|}{2}     \nonumber \\
+MD &=& \frac{\sum_{i=1}^2 |x_1-\bar x|+|x_2-\bar x|}{2}     \nonumber \\
+&=& \frac{|x_1-\frac{x_1+x_2} 2|+|x_2-\frac{x_1+x_2} 2|}{2} \nonumber \\
+&=& \frac{2|\frac{x_1-x_2}{2}|}{2}    \nonumber \\
+&=& |x_1-x_2| \nonumber \\
+&=& \frac R 2 \nonumber \\
+\end{eqnarray} 
+</div>
+</div>
+
+Similar process for SD; Start from SD formula
+</small>
+
+## SD and Range
+
+<small>
+For two unequal observations, $SD=\frac R 2$
+
+\begin{eqnarray} 
+SD&=&\sqrt{\frac{\sum_{i=1}^2 (x_i-\bar x)^2}{2}}     \nonumber \\
+&=&  \sqrt{\frac{(x_1-\bar x)^2+(x_2-\bar x)^2}{2}}  \nonumber \\
+&=&\sqrt{\frac{(x_1-\frac{x_1+x_2} 2)^2+(x_2-\frac{x_1+x_2} 2)^2}{2}} \nonumber \\
+&=&\sqrt{\frac{(\frac{x_1-x_2}{2})^2+(\frac{x_2-x_1}{2})^2}{2}}\nonumber \\
+&=&\sqrt{\frac{2 (\frac{x_1-x_2}{2})^2}{2}}\nonumber \\
+&=&\sqrt{\frac{(x_1-x_2)^2} 2}=\frac{|x_1-x_2|}{2} = \frac R 2 \nonumber \\
+\end{eqnarray}
+
+</small>
+
+## Variance of First n Natural Numbers
+
+<small>
+
+\begin{eqnarray} 
+\sigma^2 &=&  \frac{\sum x_i^2}{n} - (\frac{\sum x_i}{n})^2    \nonumber \\
+&=& \frac{1^2+2^2+3^2+ \cdots + n^2}{n}  - (\frac{1+2+3+ \cdots + n}{n})^2 \nonumber \\
+&=& \frac{\frac{n(n+1)(2n+1)}{6}}{n} - (\frac{\frac{n(n+1)}{2}}{n})^2 \nonumber \\
+&=&   \frac{(n+1)(2n+1)}{6} - (\frac{n+1}{2})^2 \nonumber \\
+&=& \frac{n+1}{2} (\frac{2n+1}{3}-\frac {n+1}{2})   \nonumber \\
+&=& \frac{n+1}{2} (\frac{4n+2-3n-3}{6}) =  \frac{n+1}{2}(\frac{n-1}{6}) = \frac{n^2-1}{12}  \nonumber \\
+\end{eqnarray}
+
+</small>
+
+## 
 
 ## Thanks
 

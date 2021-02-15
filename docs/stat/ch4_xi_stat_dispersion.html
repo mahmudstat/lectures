@@ -501,8 +501,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul>
 </section><section id="types-of-measure" class="slide level2" data-background="white">
 <h2>Types of Measure</h2>
-<div id="htmlwidget-b6c1c31bee0f5583dfe1" style="width:768px;height:576px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b6c1c31bee0f5583dfe1">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variance\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-89179318fb60138f8178" style="width:768px;height:576px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-89179318fb60138f8178">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variance\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </section><section id="range" class="slide level2">
 <h2>Range</h2>
 <div class="container">
@@ -536,7 +536,7 @@ Simple &amp; quick</li>
 <div class="container">
 <div class="col">
 <p>Ungrouped Data</p>
-<p><span class="math inline">\(MD(k)=\frac{\sum_{i=1}^n |x_i-k|} n\)</span></p>
+<p><span class="math inline">\(MD(k)=\frac{\sum_{i=1}^n |x_i-k|} n\)</span>, not <span class="math inline">\(MD(k)=\frac{|\sum_{i=1}^n(x_i-k)|} n\)</span>; Beware!</p>
 </div>
 <div class="col">
 <p>Grouped Data <span class="math inline">\(MD(k)=\frac{\sum_{i=1}^n f_i|x_i-k|} n\)</span></p>
@@ -789,6 +789,80 @@ Can work with open-ended distribution</li>
 </tbody>
 </table>
 <p>Who is better?</p>
+</section></section>
+<section><section id="theorems" class="title-slide slide level1"><h1>Theorems</h1></section><section id="sigma-origin-scale" class="slide level2">
+<h2><span class="math inline">\(\sigma\)</span> Origin-Scale</h2>
+<p><small></p>
+<div class="container">
+<div class="col">
+<p><span class="math inline">\(\sigma_x^2=\frac{\sum(x_i-\bar x)^2}{n}\)</span></p>
+<p>Let, <span class="math inline">\(d_i=\frac{x_i-a}{c}\)</span> (a = origin, c = scale)</p>
+<p><span class="math display">\[\begin{eqnarray} 
+&amp;\Rightarrow&amp; x_i=a+cd_i     \nonumber \\
+&amp;\Rightarrow&amp; \bar x = a + c \bar d \nonumber \\
+\end{eqnarray}\]</span></p>
+</div>
+<div class="col">
+<p><span class="math display">\[\begin{eqnarray} 
+\sigma_x^2&amp;=&amp;\frac{\sum(x_i-\bar x)^2}{n}     \nonumber \\
+&amp;=&amp;  \frac{\sum(a+cd_i-a-c \bar d)^2}{n}   \nonumber \\
+&amp;=&amp;  \frac{\sum(cd_i-c \bar d)^2}{n}   \nonumber \\
+&amp;=&amp;  \frac{c^2\sum(d_i-\bar d)^2}{n}   \nonumber \\
+&amp;=&amp;  |c| \frac{\sum(d_i-\bar d)^2}{n}   \nonumber \\
+&amp;=&amp;  |c| \sigma_d   \nonumber \\
+\end{eqnarray}\]</span></p>
+<p><span class="math inline">\(\therefore \sigma_x=|c| \sigma_d\)</span></p>
+</div>
+</div>
+<ul>
+<li>Similar procedure and outcome for standard deviation</li>
+</ul>
+<p></small></p>
+</section><section id="md-sd-and-range" class="slide level2">
+<h2>MD, SD and Range</h2>
+<p><small></p>
+<div class="container">
+<div class="col">
+<p><span class="math inline">\(MD=SD=\frac R 2\)</span> for <span class="math inline">\(x_1\ne x_2\)</span> (two unequal observations)</p>
+<p><span class="math inline">\(\bar x = \frac {x_1+x_2} 2\)</span> and <span class="math inline">\(R=|x_1-x_2|\)</span></p>
+</div>
+<div class="col">
+<p>Mean Deviation,</p>
+<p><span class="math display">\[\begin{eqnarray} 
+MD &amp;=&amp; \frac{\sum_{i=1}^2 |x_i-\bar x|}{2}     \nonumber \\
+MD &amp;=&amp; \frac{\sum_{i=1}^2 |x_1-\bar x|+|x_2-\bar x|}{2}     \nonumber \\
+&amp;=&amp; \frac{|x_1-\frac{x_1+x_2} 2|+|x_2-\frac{x_1+x_2} 2|}{2} \nonumber \\
+&amp;=&amp; \frac{2|\frac{x_1-x_2}{2}|}{2}    \nonumber \\
+&amp;=&amp; |x_1-x_2| \nonumber \\
+&amp;=&amp; \frac R 2 \nonumber \\
+\end{eqnarray}\]</span></p>
+</div>
+</div>
+<p>Similar process for SD; Start from SD formula </small></p>
+</section><section id="sd-and-range" class="slide level2">
+<h2>SD and Range</h2>
+<p><small> For two unequal observations, <span class="math inline">\(SD=\frac R 2\)</span></p>
+<p><span class="math display">\[\begin{eqnarray} 
+SD&amp;=&amp;\sqrt{\frac{\sum_{i=1}^2 (x_i-\bar x)^2}{2}}     \nonumber \\
+&amp;=&amp;  \sqrt{\frac{(x_1-\bar x)^2+(x_2-\bar x)^2}{2}}  \nonumber \\
+&amp;=&amp;\sqrt{\frac{(x_1-\frac{x_1+x_2} 2)^2+(x_2-\frac{x_1+x_2} 2)^2}{2}} \nonumber \\
+&amp;=&amp;\sqrt{\frac{(\frac{x_1-x_2}{2})^2+(\frac{x_2-x_1}{2})^2}{2}}\nonumber \\
+&amp;=&amp;\sqrt{\frac{2 (\frac{x_1-x_2}{2})^2}{2}}\nonumber \\
+&amp;=&amp;\sqrt{\frac{(x_1-x_2)^2} 2}=\frac{|x_1-x_2|}{2} = \frac R 2 \nonumber \\
+\end{eqnarray}\]</span></p>
+<p></small></p>
+</section><section id="variance-of-first-n-natural-numbers" class="slide level2">
+<h2>Variance of First n Natural Numbers</h2>
+<p><small></p>
+<p><span class="math display">\[\begin{eqnarray} 
+\sigma^2 &amp;=&amp;  \frac{\sum x_i^2}{n} - (\frac{\sum x_i}{n})^2    \nonumber \\
+&amp;=&amp; \frac{1^2+2^2+3^2+ \cdots + n^2}{n}  - (\frac{1+2+3+ \cdots + n}{n})^2 \nonumber \\
+&amp;=&amp; \frac{\frac{n(n+1)(2n+1)}{6}}{n} - (\frac{\frac{n(n+1)}{2}}{n})^2 \nonumber \\
+&amp;=&amp;   \frac{(n+1)(2n+1)}{6} - (\frac{n+1}{2})^2 \nonumber \\
+&amp;=&amp; \frac{n+1}{2} (\frac{2n+1}{3}-\frac {n+1}{2})   \nonumber \\
+&amp;=&amp; \frac{n+1}{2} (\frac{4n+2-3n-3}{6}) =  \frac{n+1}{2}(\frac{n-1}{6}) = \frac{n^2-1}{12}  \nonumber \\
+\end{eqnarray}\]</span></p>
+<p></small></p>
 </section><section id="thanks" class="slide level2">
 <h2>Thanks</h2>
 <center>
