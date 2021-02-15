@@ -276,6 +276,71 @@ Who is better?
 </div>
 </div>
 
+## Use of CV
+
+- For estimating skewness, correlation etc.
+- A measure of consistency/performance
+
+## Properties of SD
+
+> - Depends on scale, but not on origin (prove)
+> - For two unequal observations, $SD=\frac R 2$; where $R = Range$
+> - $MD \le SD$
+> - For n positive observations, $\bar X \sqrt{n-1}\ge \sigma$
+> - For the first n natural numbers, $\sigma = \sqrt{\frac{n^2-1}{12}}$
+> - For two positive observations, $AM>SD$
+> - For n number of unequal values, $\sigma \lt R$
+> - $SD \lt \text{Root Mean Square Deviation}$
+
+## Is $\sigma^2$ alwyas $\gt \sigma$
+
+Exceptions
+
+We know, $\sigma=\sqrt \sigma^2$ (N:B: $-2=-\sqrt 4; -2\ne \sqrt 4$)
+
+> - If $\sigma^2=1, \sigma =1$
+> - If $\sigma^2 \lt 1, \sigma ^2 < \sigma$
+> - Example: $\sigma^2=0.05, \sigma = \sqrt{0.05} = `r sqrt(0.05)`$
+ 
+## CV is a Pure Number
+
+- No Unit
+- Absolute number
+
+## Minimum Value of $\sigma$
+
+<small>
+
+$\sigma \ge 0$
+
+$\therefore$ Least value of $\sigma$ is 0. 
+
+$\Rightarrow  \frac{\sum(x_i-\bar x)^2}{n} = 0$ 
+
+$\Rightarrow  \sum(x_i-\bar x)^2 = 0$  
+
+$\Rightarrow  (x_1-\bar x)^2 + (x_2-\bar x)^2 + \cdots + (x_n-\bar x)^2= 0$
+
+$\therefore (x_1-\bar x)^2 =0, (x_2-\bar x)^2=0,  (x_n-\bar x)^2=0$
+
+$\Rightarrow x_1=\bar x, x_2=\bar x, x_n=\bar x$
+
+$\Rightarrow x_1=x_2= \cdots =x_n$
+
+$\therefore$ SD is least (i.e., 0) when all values are equal.
+
+</small>
+
+## Comparison with Mean 
+
+| Subject   | Bangla | English | Mathematics | Statistics | Average |
+|-----------|--------|---------|-------------|------------|---------|
+| Student X | 70     | 70      | 80          | 72         | 72.5    |
+| Student Y | 98     | 96      | 48          | 50         | 72.5    |
+
+Who is better?
+
+
 ## Thanks
 
 <center>

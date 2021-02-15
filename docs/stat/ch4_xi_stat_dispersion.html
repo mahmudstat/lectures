@@ -501,8 +501,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul>
 </section><section id="types-of-measure" class="slide level2" data-background="white">
 <h2>Types of Measure</h2>
-<div id="htmlwidget-d3467f8cfa5bd7b52550" style="width:768px;height:576px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-d3467f8cfa5bd7b52550">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variance\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-b6c1c31bee0f5583dfe1" style="width:768px;height:576px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b6c1c31bee0f5583dfe1">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variance\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </section><section id="range" class="slide level2">
 <h2>Range</h2>
 <div class="container">
@@ -710,6 +710,85 @@ Can work with open-ended distribution</li>
 <p>Who is better?</p>
 </div>
 </div>
+</section><section id="use-of-cv" class="slide level2">
+<h2>Use of CV</h2>
+<ul>
+<li>For estimating skewness, correlation etc.</li>
+<li>A measure of consistency/performance</li>
+</ul>
+</section><section id="properties-of-sd" class="slide level2">
+<h2>Properties of SD</h2>
+<ul>
+<li class="fragment">Depends on scale, but not on origin (prove)</li>
+<li class="fragment">For two unequal observations, <span class="math inline">\(SD=\frac R 2\)</span>; where <span class="math inline">\(R = Range\)</span></li>
+<li class="fragment"><span class="math inline">\(MD \le SD\)</span></li>
+<li class="fragment">For n positive observations, <span class="math inline">\(\bar X \sqrt{n-1}\ge \sigma\)</span></li>
+<li class="fragment">For the first n natural numbers, <span class="math inline">\(\sigma = \sqrt{\frac{n^2-1}{12}}\)</span></li>
+<li class="fragment">For two positive observations, <span class="math inline">\(AM&gt;SD\)</span></li>
+<li class="fragment">For n number of unequal values, <span class="math inline">\(\sigma \lt R\)</span></li>
+<li class="fragment"><span class="math inline">\(SD \lt \text{Root Mean Square Deviation}\)</span></li>
+</ul>
+</section><section id="is-sigma2-alwyas-gt-sigma" class="slide level2">
+<h2>Is <span class="math inline">\(\sigma^2\)</span> alwyas <span class="math inline">\(\gt \sigma\)</span></h2>
+<p>Exceptions</p>
+<p>We know, <span class="math inline">\(\sigma=\sqrt \sigma^2\)</span> (N:B: <span class="math inline">\(-2=-\sqrt 4; -2\ne \sqrt 4\)</span>)</p>
+<ul>
+<li class="fragment">If <span class="math inline">\(\sigma^2=1, \sigma =1\)</span></li>
+<li class="fragment">If <span class="math inline">\(\sigma^2 \lt 1, \sigma ^2 &lt; \sigma\)</span></li>
+<li class="fragment">Example: <span class="math inline">\(\sigma^2=0.05, \sigma = \sqrt{0.05} = 0.2236068\)</span></li>
+</ul>
+</section><section id="cv-is-a-pure-number" class="slide level2">
+<h2>CV is a Pure Number</h2>
+<ul>
+<li>No Unit</li>
+<li>Absolute number</li>
+</ul>
+</section><section id="minimum-value-of-sigma" class="slide level2">
+<h2>Minimum Value of <span class="math inline">\(\sigma\)</span></h2>
+<p><small></p>
+<p><span class="math inline">\(\sigma \ge 0\)</span></p>
+<p><span class="math inline">\(\therefore\)</span> Least value of <span class="math inline">\(\sigma\)</span> is 0.</p>
+<p><span class="math inline">\(\Rightarrow \frac{\sum(x_i-\bar x)^2}{n} = 0\)</span></p>
+<p><span class="math inline">\(\Rightarrow \sum(x_i-\bar x)^2 = 0\)</span></p>
+<p><span class="math inline">\(\Rightarrow (x_1-\bar x)^2 + (x_2-\bar x)^2 + \cdots + (x_n-\bar x)^2= 0\)</span></p>
+<p><span class="math inline">\(\therefore (x_1-\bar x)^2 =0, (x_2-\bar x)^2=0, (x_n-\bar x)^2=0\)</span></p>
+<p><span class="math inline">\(\Rightarrow x_1=\bar x, x_2=\bar x, x_n=\bar x\)</span></p>
+<p><span class="math inline">\(\Rightarrow x_1=x_2= \cdots =x_n\)</span></p>
+<p><span class="math inline">\(\therefore\)</span> SD is least (i.e., 0) when all values are equal.</p>
+<p></small></p>
+</section><section id="comparison-with-mean" class="slide level2">
+<h2>Comparison with Mean</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Subject</th>
+<th>Bangla</th>
+<th>English</th>
+<th>Mathematics</th>
+<th>Statistics</th>
+<th>Average</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Student X</td>
+<td>70</td>
+<td>70</td>
+<td>80</td>
+<td>72</td>
+<td>72.5</td>
+</tr>
+<tr class="even">
+<td>Student Y</td>
+<td>98</td>
+<td>96</td>
+<td>48</td>
+<td>50</td>
+<td>72.5</td>
+</tr>
+</tbody>
+</table>
+<p>Who is better?</p>
 </section><section id="thanks" class="slide level2">
 <h2>Thanks</h2>
 <center>
