@@ -501,8 +501,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul>
 </section><section id="types-of-measure" class="slide level2" data-background="white">
 <h2>Types of Measure</h2>
-<div id="htmlwidget-89179318fb60138f8178" style="width:768px;height:576px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-89179318fb60138f8178">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variance\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-1bbcc3e914fe8a933ad3" style="width:768px;height:576px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1bbcc3e914fe8a933ad3">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variance\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </section><section id="range" class="slide level2">
 <h2>Range</h2>
 <div class="container">
@@ -863,6 +863,46 @@ SD&amp;=&amp;\sqrt{\frac{\sum_{i=1}^2 (x_i-\bar x)^2}{2}}     \nonumber \\
 &amp;=&amp; \frac{n+1}{2} (\frac{4n+2-3n-3}{6}) =  \frac{n+1}{2}(\frac{n-1}{6}) = \frac{n^2-1}{12}  \nonumber \\
 \end{eqnarray}\]</span></p>
 <p></small></p>
+</section><section id="mean-sd-and-cv" class="slide level2">
+<h2>Mean, SD, and CV</h2>
+<p><span class="math inline">\(\bar X \sqrt{n-1}\ge \sigma\)</span> or <span class="math inline">\(CV \lt 100 \sqrt{n-1}\)</span></p>
+</section><section id="problem-01" class="slide level2">
+<h2>Problem 01</h2>
+<p>Tow numbers are 10 and 20; Determine Range and CV</p>
+<div onclick="klikaj(&#39;p1&#39;)">
+<span>Answer</span>
+</div>
+<div id="p1" style="visibility: hidden">
+<p>Range, <span class="math inline">\(R = 20-10=10\)</span></p>
+<ul>
+<li class="fragment"><span class="math inline">\(\sigma = \frac R 2 = \frac{10} 2 = 5\)</span></li>
+</ul>
+<ul>
+<li class="fragment"><span class="math inline">\(CV = \frac{\sigma}{\bar x} \times 100 = \frac{5}{15} \times 100 = 33.33 \%\)</span></li>
+</ul>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</section><section id="find-sd-md-3" class="slide level2">
+<h2>Find SD &amp; MD (3)</h2>
+<p>Find SD and MD of three observations: -3, 0, 3</p>
+<div onclick="klikaj(&#39;3&#39;)">
+<span>Solution</span>
+</div>
+<div id="3" style="visibility: hidden">
+<p><span class="math display">\[\begin{eqnarray} 
+\sigma&amp;=&amp;\sqrt{\text{Mean of Square - Square of Mean}} \nonumber \\
+&amp;=&amp; \sqrt{\frac{9+9}{3}-0}=\sqrt{6}=2.45      \nonumber \\
+\end{eqnarray}\]</span></p>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
 </section><section id="thanks" class="slide level2">
 <h2>Thanks</h2>
 <center>

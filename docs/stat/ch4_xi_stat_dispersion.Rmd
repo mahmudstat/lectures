@@ -433,7 +433,45 @@ SD&=&\sqrt{\frac{\sum_{i=1}^2 (x_i-\bar x)^2}{2}}     \nonumber \\
 
 </small>
 
-## 
+## Mean, SD, and CV
+
+$\bar X \sqrt{n-1}\ge \sigma$ or $CV \lt 100 \sqrt{n-1}$
+
+## Problem 01
+
+Tow numbers are 10 and 20; Determine Range and CV
+
+<div onclick="klikaj('p1')"><span>Answer</span></div>
+<div id="p1" style="visibility: hidden">
+Range, $R = 20-10=10$
+
+> - $\sigma = \frac R 2 = \frac{10} 2 = 5$
+
+> - $CV = \frac{\sigma}{\bar x} \times 100 = \frac{5}{15} \times 100 = `r round(5/15*100,2)` \%$
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+## Find SD & MD (3)
+
+Find SD and MD of three observations: -3, 0, 3 
+
+<div onclick="klikaj('3')"><span>Solution</span></div>
+<div id="3" style="visibility: hidden">
+
+\begin{eqnarray} 
+\sigma&=&\sqrt{\text{Mean of Square - Square of Mean}} \nonumber \\
+&=& \sqrt{\frac{9+9}{3}-0}=\sqrt{6}=`r round(sqrt(6),2)`      \nonumber \\
+\end{eqnarray}
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
 
 ## Thanks
 
