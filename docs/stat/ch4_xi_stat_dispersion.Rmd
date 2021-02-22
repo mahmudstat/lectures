@@ -342,7 +342,7 @@ Who is better?
 
 # Theorems
 
-## $\sigma$ Origin-Scale
+## $\sigma^2$ Origin-Scale
 
 <small>
 
@@ -363,11 +363,10 @@ Let, $d_i=\frac{x_i-a}{c}$ (a = origin, c = scale)
 &=&  \frac{\sum(a+cd_i-a-c \bar d)^2}{n}   \nonumber \\
 &=&  \frac{\sum(cd_i-c \bar d)^2}{n}   \nonumber \\
 &=&  \frac{c^2\sum(d_i-\bar d)^2}{n}   \nonumber \\
-&=&  |c| \frac{\sum(d_i-\bar d)^2}{n}   \nonumber \\
-&=&  |c| \sigma_d   \nonumber \\
+&=&  c^2 \sigma_d^2  \nonumber \\
 \end{eqnarray}
 
-$\therefore \sigma_x=|c| \sigma_d$ 
+$\therefore \sigma_x^2=c^2 \sigma_d^2$ 
 </div>
 </div>
 
@@ -468,6 +467,70 @@ Find SD and MD of three observations: -3, 0, 3
 \end{eqnarray}
 </div>
 <script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+## More
+
+## Missing Numbers for Mean and SD (11)
+
+The mean and SD of 5 observations are 4.4 and $\sqrt{8.24}$, respectively. If three of the five observations are 1, 2, and 6, find the other two.
+
+<div class="container">
+<div class="col">
+<div onclick="klikaj('11a')"><span>Solution</span></div>
+<div id="11a" style="visibility: hidden">
+$\frac{9+x_1+x_2}{5}=4.4$
+
+$\therefore x_1+x_2=13$
+
+Again, $\frac{1^2+2^2+6^2+x_1^2+2^2}{5}-4.4^2=8.24$
+
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+<div class="col">
+<div onclick="klikaj('11b')"><span>More</span></div>
+<div id="11b" style="visibility: hidden">
+$\Rightarrow x_1^2+x_2^2=138-41=97$
+
+$\Rightarrow (13-x_2)^2+x_2^2=97$
+
+$\Rightarrow 169-26x_2+2x_2^2=97$
+
+$\Rightarrow x_2^2-13x_2-36=0$
+
+$\therefore x_2=9,4; x_1=4,9$
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
+
+## Converting Series of Natural Numbers
+
+$scale, c=\text{Common Difference}$
+
+$origin, a = \text{Firts observation - c}$
+
+<div onclick="klikaj('orsc')"><span>Example</span></div>
+<div id="orsc" style="visibility: hidden">
+$X = 27, 33, 39, \cdots, 111$
+
+$c=33-27 = 6, a = 27-6=21$
+
+$Y = \frac{X-21}{6} = \frac{27-21}{6}=1, 2, 3, \cdots, \frac{111-21}{6}=15$
+</div>
+<script> 
 function klikaj(i) {
     document.getElementById(i).style.visibility='visible';
 }

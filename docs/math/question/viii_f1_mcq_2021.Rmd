@@ -1,0 +1,128 @@
+---
+title: ''
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+
+\begin{center}
+\begin{large}
+Pabna Cadet College
+\end{large}
+
+First Fortnightly Exam - 2021
+
+Subject: Mathematics
+
+Class: VIII
+\end{center}
+
+Time: 20 minutes
+\hfill
+Full Marks: 20
+
+\textbf{Answer all the questions}
+
+
+1. The profit of a principal in 12 years is half of the principal; what is the rate of profit?
+
+i. 4.17%  ii. 4.13%%  iii. 0.0417%  iv. 5.17%
+
+2. A product is bought at 70 tk. and sold at 65 tk.; what is percentage of loss? 
+
+i. 6.17%  ii. 7.14%  iii. 7.24%  iv. 4.27%
+
+3. A shopkeeper sells a sack of rice at 3500 taka and thereby makes a profit of 268 taka; what is the purchasing price? 
+
+i.  3233 ii. 3223  iii. 2332  iv.  3332
+
+4. What is the simple profit of tk. 2000 in 4 years at simple profit of 5% per annum?
+
+i. 300  ii.  400 iii. 350  iv.  320
+
+Answer the questions (5-7) based on the following information
+
+At the same rate, taka 200 will be double as profit-principal in 6 years and triple in n years. 
+
+5. How much will the profit increase in 6 years? 
+
+i. 100  ii. 150 iii.  200 iv. 220
+
+6. What will be the profit in n years? 
+
+i.  400 ii. 300  iii. 200  iv.  600
+
+7. What is the value of n?
+
+i. 8  ii. 10  iii.  12 iv. 6  
+
+8. The length of a side of a square is 8 meters; what is the length of diagonal (in m)?
+
+i.  8.2 ii.  $8 \sqrt2$ iii.  11.31 iv. both iii and iv
+
+9. The unit to measure the volume of liquid is-
+
+i. Gram  ii. Liter  iii. Meter  iv. Decimeter
+
+10. 12 km = --- mile
+
+i. 7.45  ii. 4.57  iii. 7.54  iv.  5.47
+
+11. 1 metric ton = how many kg?
+
+i. 10  ii.  100 iii.  1000 iv. 10,000 
+
+12. At what temperature is the weight of 1 cubic centimeter of pure water is 1 gram?
+
+i. $4^o C$  ii. $4^o F$  iii. $4^o K$  iv.  $100^o C$
+
+13. 2 nautical miles = --- feet.
+
+i. 21152 ii. 11252  iii. 12252  iv.  12152
+
+Answer questions 14-16 based on the following.
+
+The length and breadth of a rectangular garden are 25m and 20m, respectively, with a 2m wide road surrounding it. 
+
+14. What is area of the garden? 
+
+i. 500 sq.m.  ii. 500 sq.cm  iii. 500 m  iv.  300 sq.m
+
+15. What of is the area of the total plot (sq.m.)? 
+
+i. 600  ii. 594  iii. 696  iv.  694
+
+16. What is the area of the road (sq. meter)?
+
+i. 136  ii.  96 iii.  180 iv.  196
+
+17. If a + b = 5 and ab = 10, $a^2+b^2=?$
+
+i.  10 ii. 45  iii. 5  iv.  50
+
+18. If $a^2-1=5a$, what is the value of $a^2+\frac 1 {a^2}?$
+
+i. 27  ii. 23  iii. 21  iv.  25
+
+19. $(a+b-c)^2=$ ---
+
+i.  $a^2+b^2+c^2-2ab-2ac-2bc$ ii. $a^2+b^2-c^2+2ab+2ac+2bc$  
+
+iii. $a^2+b^2+c^2+2ab-2ac-2bc$  iv.  $a^2+b^2-c^2+2ab-2ac-2bc$
+
+20. a+b=4 and a-b=2; ab=?
+
+i. 3  ii. 10  iii.  16 iv.  20
+ 
+
+**Answers**
+
+| Question | 1  | 2  | 3 | 4  | 5  | 6  | 7 | 8   | 9 | 10 | 11  | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
+|----------|----|----|---|----|----|----|---|-----|---|----|-----|----|----|----|----|----|----|----|----|----|
+| Answer   | i | ii | iv | ii | iii | i | iii | iv | ii | i  | ii | i  | iv | i | iii | iv | iii | i | iii | i  |
+
+
+\begin{center}
+---Good Luck---
+\end{center}

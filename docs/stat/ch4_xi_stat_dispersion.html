@@ -501,8 +501,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul>
 </section><section id="types-of-measure" class="slide level2" data-background="white">
 <h2>Types of Measure</h2>
-<div id="htmlwidget-1bbcc3e914fe8a933ad3" style="width:768px;height:576px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1bbcc3e914fe8a933ad3">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variance\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-291c5c5a984b9a079f25" style="width:768px;height:576px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-291c5c5a984b9a079f25">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variance\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </section><section id="range" class="slide level2">
 <h2>Range</h2>
 <div class="container">
@@ -790,8 +790,8 @@ Can work with open-ended distribution</li>
 </table>
 <p>Who is better?</p>
 </section></section>
-<section><section id="theorems" class="title-slide slide level1"><h1>Theorems</h1></section><section id="sigma-origin-scale" class="slide level2">
-<h2><span class="math inline">\(\sigma\)</span> Origin-Scale</h2>
+<section><section id="theorems" class="title-slide slide level1"><h1>Theorems</h1></section><section id="sigma2-origin-scale" class="slide level2">
+<h2><span class="math inline">\(\sigma^2\)</span> Origin-Scale</h2>
 <p><small></p>
 <div class="container">
 <div class="col">
@@ -808,10 +808,9 @@ Can work with open-ended distribution</li>
 &amp;=&amp;  \frac{\sum(a+cd_i-a-c \bar d)^2}{n}   \nonumber \\
 &amp;=&amp;  \frac{\sum(cd_i-c \bar d)^2}{n}   \nonumber \\
 &amp;=&amp;  \frac{c^2\sum(d_i-\bar d)^2}{n}   \nonumber \\
-&amp;=&amp;  |c| \frac{\sum(d_i-\bar d)^2}{n}   \nonumber \\
-&amp;=&amp;  |c| \sigma_d   \nonumber \\
+&amp;=&amp;  c^2 \sigma_d^2  \nonumber \\
 \end{eqnarray}\]</span></p>
-<p><span class="math inline">\(\therefore \sigma_x=|c| \sigma_d\)</span></p>
+<p><span class="math inline">\(\therefore \sigma_x^2=c^2 \sigma_d^2\)</span></p>
 </div>
 </div>
 <ul>
@@ -897,6 +896,62 @@ function klikaj(i) {
 \sigma&amp;=&amp;\sqrt{\text{Mean of Square - Square of Mean}} \nonumber \\
 &amp;=&amp; \sqrt{\frac{9+9}{3}-0}=\sqrt{6}=2.45      \nonumber \\
 \end{eqnarray}\]</span></p>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</section><section id="more" class="slide level2">
+<h2>More</h2>
+</section><section id="missing-numbers-for-mean-and-sd-11" class="slide level2">
+<h2>Missing Numbers for Mean and SD (11)</h2>
+<p>The mean and SD of 5 observations are 4.4 and <span class="math inline">\(\sqrt{8.24}\)</span>, respectively. If three of the five observations are 1, 2, and 6, find the other two.</p>
+<div class="container">
+<div class="col">
+<div onclick="klikaj(&#39;11a&#39;)">
+<span>Solution</span>
+</div>
+<div id="11a" style="visibility: hidden">
+<p><span class="math inline">\(\frac{9+x_1+x_2}{5}=4.4\)</span></p>
+<p><span class="math inline">\(\therefore x_1+x_2=13\)</span></p>
+<p>Again, <span class="math inline">\(\frac{1^2+2^2+6^2+x_1^2+2^2}{5}-4.4^2=8.24\)</span></p>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+<div class="col">
+<div onclick="klikaj(&#39;11b&#39;)">
+<span>More</span>
+</div>
+<div id="11b" style="visibility: hidden">
+<p><span class="math inline">\(\Rightarrow x_1^2+x_2^2=138-41=97\)</span></p>
+<p><span class="math inline">\(\Rightarrow (13-x_2)^2+x_2^2=97\)</span></p>
+<p><span class="math inline">\(\Rightarrow 169-26x_2+2x_2^2=97\)</span></p>
+<p><span class="math inline">\(\Rightarrow x_2^2-13x_2-36=0\)</span></p>
+<p><span class="math inline">\(\therefore x_2=9,4; x_1=4,9\)</span></p>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
+</section><section id="converting-series-of-natural-numbers" class="slide level2">
+<h2>Converting Series of Natural Numbers</h2>
+<p><span class="math inline">\(scale, c=\text{Common Difference}\)</span></p>
+<p><span class="math inline">\(origin, a = \text{Firts observation - c}\)</span></p>
+<div onclick="klikaj(&#39;orsc&#39;)">
+<span>Example</span>
+</div>
+<div id="orsc" style="visibility: hidden">
+<p><span class="math inline">\(X = 27, 33, 39, \cdots, 111\)</span></p>
+<p><span class="math inline">\(c=33-27 = 6, a = 27-6=21\)</span></p>
+<p><span class="math inline">\(Y = \frac{X-21}{6} = 1, 2, 3, \cdots, \frac{111-21}{6}, 15\)</span></p>
 </div>
 <script>
 function klikaj(i) {
