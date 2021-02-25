@@ -1,8 +1,8 @@
 ---
 title: ''
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
   word_document: default
 ---
 \begin{center}
@@ -10,7 +10,7 @@ output:
 Pabna Cadet College
 \end{large}
 
-First Fortnightly Examination - 2021
+First Fortnightly Examination - 2021 Solution
 
 Subject: Statistics
 
@@ -67,7 +67,7 @@ Combined Variance,
 \sigma_c^2&=&\frac{n_1(\sigma^2+d_1^2)+n_2(\sigma^2+d_2^2)}{n_1+n_2}      \nonumber \\
 &=& \frac{51(4+4.08)+52(25+3.92)}{51+52} \nonumber \\
 \therefore \sigma_c^2&=& 18.6     \nonumber \\
- \sigma_c&=& 4.31    \nonumber \\
+ \sigma_c&=& 4.31    
 \end{eqnarray}
 
 $\therefore$ Combined standard deviation, $\sigma_c =  4.31$
@@ -99,7 +99,7 @@ c. Standard Deviation of -3, 0, 3
 
 \begin{eqnarray} 
 \sigma^2 &=&  \frac{\sum x_i^2}{n}  - (\frac{\sum x_i}{n})^2  \nonumber \\
-&=& \frac{9+9}{3} - 0\\
+&=& \frac{9+9}{3} - 0 \nonumber \\
 &=& 6    \nonumber \\
 \therefore \sigma &=& 2.45    \nonumber \\
 \end{eqnarray}
