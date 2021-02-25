@@ -29,14 +29,16 @@ cv1 <- function(x) paste0(sd(x)/mean(x)*100, "%")
 cv2 <- function(mean, sd) paste0(round(sd/mean*100,2), "%")
 
 # Combined Mean and variance
+# Put values of n, m, and v as vectors
 
-cmv <- function(n1, n2, m1, m2, v1, v2){
-  mc <- (n1*m1+n2*m2)/(n1+n2)
-  d1 <- m1-mc
-  d2 <- m2-mc
-  comv <- (n1*(v1^2+d1^2)+n2*(v2^2+d2^2))/(n1+n2)
+cmv <- function(n, m, v){
+  mc <- sum(n*m)/sum(n)
+  d <- m-mc
+  comv <- sum(n*(v+d^2))/sum(n)
   comsd <- sqrt(comv)
+  cocv <- comsd/mc*100
   list("Combined Mean" = mc, "Combined Variance" = comv,
-       "Combined SD" = comsd)
+       "Combined SD" = comsd, "Combined CV" = cocv)
 }
+
 

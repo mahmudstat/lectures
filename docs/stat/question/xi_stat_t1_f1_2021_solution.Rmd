@@ -1,8 +1,8 @@
 ---
 title: ''
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
   word_document: default
 ---
 \begin{center}
@@ -44,7 +44,79 @@ d. Find the C.V. of the series: $1, 3, 5, \cdots , (2n-1)$ \hfill 5
 
 ### Solution
 
+1. 
+a. A measure of dispersion is a measures how values of a dataset vary within themselves. 
+b. When all observations are same. [See more](https://lecture.statmania.info/stat/ch4_xi_stat_dispersion.html#/minimum-value-of-sigma)
+c. Combined Standard Deviation
 
+$n_1=51, n_2=52$
+  
+$\bar X1=82, \bar X_2=86$
+  
+$\sigma_1=2, \sigma_2=5$
+  
+Combined Mean, $\bar X_c = \frac{51 \times 82+52 \times 86}{51+51} = 84.02$
+
+$d_1=\bar X_1-\bar X_c=-2.02$
+$d_2=\bar X_2-\bar X_c=1.98$
+
+Combined Variance, 
+
+
+\begin{eqnarray} 
+\sigma_c^2&=&\frac{n_1(\sigma^2+d_1^2)+n_2(\sigma^2+d_2^2)}{n_1+n_2}      \nonumber \\
+&=& \frac{51(4+4.08)+52(25+3.92)}{51+52} \nonumber \\
+\therefore \sigma_c^2&=& 18.6     \nonumber \\
+ \sigma_c&=& 4.31    \nonumber \\
+\end{eqnarray}
+
+$\therefore$ Combined standard deviation, $\sigma_c =  4.31$
+
+d. Performance
+
+$CV_{XI}=\frac{2}{82}\times 100 = 2.43%$
+
+$CV_{XII}=\frac{5}{86}\times 100 = 5.81%$
+
+$\therefore$ Class XI is better. 
+
+2. 
+a. cm (N:B: unit of $\sigma^2$ is $cm^2$)
+b. CV
+
+\begin{eqnarray} 
+\sigma^2 &=&  \frac{1400}{100} - (\frac{110}{10})^2    \nonumber \\
+&=& 140-121 \nonumber \\
+&=& 19    \nonumber \\
+\therefore \sigma &=& 4.36    \nonumber \\
+\end{eqnarray}
+
+$\bar X = 11$
+
+$\therefore CV = \frac{4.36}{11} \times 100=39.64\%$
+
+c. Standard Deviation of -3, 0, 3
+
+\begin{eqnarray} 
+\sigma^2 &=&  \frac{\sum x_i^2}{n}  - (\frac{\sum x_i}{n})^2  \nonumber \\
+&=& \frac{9+9}{3} - 0\\
+&=& 6    \nonumber \\
+\therefore \sigma &=& 2.45    \nonumber \\
+\end{eqnarray}
+
+d. CV of the series $1, 3, 5, \cdots , (2n-1)$ 
+
+\begin{eqnarray} 
+\sigma^2 &=&  \frac{\sum x_i^2}{n}  - (\frac{\sum x_i}{n})^2      \nonumber \\
+&=& \frac{\frac {1}{3} n(4n^2-1)}{n} - (\frac{n^2}{n})^2 \nonumber \\
+&=& \frac{1}{3} (4n^2-1) - n^2   \nonumber \\
+&=& \frac{4n^2-1-3n^2}{3}    \nonumber \\
+&=& \frac{n^2-1}{3}    \nonumber \\
+\therefore \sigma &=& \sqrt{\frac{n^2-1}{3}}  \nonumber \\
+\bar X &=& \frac{\sum x}{n} = \frac{n^2}{n} = n  \nonumber \\
+\therefore CV &=& \frac{\sigma}{\bar X} \times 100 \frac{\sqrt{\frac{n^2-1}{3}}}{n} \times 100 \nonumber \\
+&=& \sqrt{\frac{n^2-1}{3n^2}} \times 100  \nonumber \\
+\end{eqnarray}
 
 \begin{center}
 ---Good Luck---
