@@ -1,0 +1,29 @@
+# Statistics {- #pres}
+
+## First Paper
+
+### Preliminary Concepts
+
+### Collection, Presentation, and Organization of Data
+
+### Measures of Central Tendency
+
+### Measures of Dispersion
+
+### Moments, Skewness, and Kurtosis
+
+#### Central Moments
+
+Central Moments: $\mu_r=\frac{\sum(x_i-\bar x)^r}{n}$
+
+- $\mu_1=\frac{\sum(x_i-\bar x)}{n}=\frac{\sum x_i}{n}-\frac{n \bar x}{n}=\frac{n \bar x}{n}-\frac{n \bar x}{n}=0$
+
+- $\mu_2=\frac{\sum(x_i-\bar x)^2}{n}=\sigma^2$
+- $\mu_3=\frac{\sum(x_i-\bar x)^3}{n}$
+- $\mu_4=\frac{\sum(x_i-\bar x)^4}{n}$
+- For grouped data: $\mu_r=\frac{\sum f_i(x_i-\bar x)^3}{n}$
+
+
+#### Raw Moments
+
+ $\mu_r=\frac{\sum(x_i-a)^r}{n}$; a is arbitrary number
