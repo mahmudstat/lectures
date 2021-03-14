@@ -2,7 +2,7 @@
 title: "Mathematics (VIII)"
 author: Abdullah Al Mahmud
 date: \today
-theme: blood
+theme: sky
 output: 
   revealjs::revealjs_presentation:
     incremental: false
@@ -237,3 +237,107 @@ x-\frac 1 x=4      \nonumber \\
 &\Rightarrow& x^2-2 + \frac 1 {x^2} = 16 \nonumber \\
 &\Rightarrow& x^2+   \frac 1 {x^2} =16+2=18 \nonumber \\
 \end{eqnarray}
+
+# Chapter 4.2 
+
+## Formulae
+
+<div class="container">
+<div class="col">
+a. $(a+b)^3=a^3+3a^2b+3ab^2+b^3$
+a. $(a-b)^3=a^3-3a^2b+3ab^2-b^3$
+c. $a^3+b^3=?$ (Find from above)
+c. $a^3-b^3=?$ (Find from above)
+</div>
+
+<div class="col">
+
+<small>
+
+> - $a^3+b^3=(a+b)^3-3ab(a+b)$ (Rearrange)
+> - $a^3-b^3=(a-b)^3+3ab(a+b)$ (Rearrange)
+
+</small>
+</div>
+</div>
+
+
+## Find Cubes
+
+<div class="container">
+<div class="col">
+a. 2a+5b 
+c. $a^2b^2-c^2d^2$
+d. $(2m+3n-5p)^2$
+</div>
+<div class="col">
+> - 1.$8a^3+6a^2b+150ab^2+125b^3$
+</div>
+</div>
+
+## Simplify
+
+<small>
+
+
+
+<div class="container">
+<div class="col">
+a. $(3x+y)^3+3(3x+y)^2(3x-y)+3(3x+y)(3x-y)^2+(3x-y)^3$
+b. $(6m+2)^3-3(6m+2)^2(6m-4)+3(6m+2)(6m-4)^2+(6m-4)^3$
+</div>
+<div class="col">
+> - 1. $216x^3$
+> - 2. 216
+</div>
+</div>
+</small>
+
+## Find Value(s)
+
+<small>
+
+<div class="container">
+<div class="col">
+a. If a+b=8 and ab=15, $a^3+b^3=?$
+b. 2x+3y=13 and xy=6, $8x^3+27y^3$
+c. $x-2y=3, x^3-8y^3-18xy=?$ 
+d. $4x-3=5, 64x^3-27-180x=?$
+e. $x=5, x^3-12x+48x-64=?$
+f. $x+\frac 1 x = 4, x^3+\frac 1 {x^3}=?$
+g. $a^2-a-5=0, a^3-\frac 1 {a^3}=?$
+
+</div>
+
+<div class="col">
+> - $216x^3$
+> - $793$
+> - $27$
+> - $125$
+> - $1$
+> - $4^3-3 \times 4 = 64-12 = 52$
+> - $a-\frac 1 a = 5, \therefore Answer=5^3+3 \times 5=140$
+
+</div>
+</div>
+
+</small>
+
+## Find Products Using Formula
+
+<div class="container">
+<div class="col">
+a. $(a^2+b^2)(a^4-a^2b^2+b^4)$
+b. $(ax-by)(a^2x^2+abxy+b^2y^2)$
+c. $(x^2+a)(x^4-ax^2+a^2)$
+d. $(x+a)(x^2-ax+a^2)(x-a)(x^2+ax+a^2)$
+</div>
+
+<div class="col">
+> - $a^6+b^6$
+> - $a^3x^3-b^3y^3$
+> - $x^6+a^3$
+> - $x^6-a^6$
+
+</div>
+</div>

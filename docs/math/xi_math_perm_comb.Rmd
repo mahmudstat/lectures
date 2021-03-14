@@ -257,3 +257,77 @@ Arrange the letters of the word ARRANGE so that two R's are not together.
 
 > - n(total arrangements) - n(arrangements with T's together)
 > - $\frac{7!}{2!2!}-\frac{6!}{2!}=$ `r factorial(7)/4-factorial(6)/2`
+
+## ENGINEERING (E's together, first)
+
+In how may are E's together? In how many are they at the beginning?
+
+Total letters: 11, N=3, G=2, I=2, E=3
+
+<div class="container">
+<div class="col">
+Together
+
+Consider 3 E's one single letter
+
+> - $\frac{9!}{3!2!2!}$
+</div>
+<div class="col">
+Beginning
+
+Placing 3 E's at the beginning, we have 8 remaining positions.
+
+<table style="border: 1px solid">
+<tr>
+<td height="30px">E</td>
+<td height="30px">E</td>
+<td height="30px">E</td>
+<td height="30px">Other Letters</td>
+</table>
+
+
+</div>
+</div>
+
+## Balls Apart
+
+There are 7 red and 2 white balls. Arrange by keeping white balls apart.
+
+## Without Changing Position
+
+<div class="container">
+<div class="col">
+- Without changing order $\rightarrow$  Consider them homogeneous
+- Without changing position $\rightarrow$ Arrange other letters
+</div>
+<div class="col">
+i. PERMUTAION, without changing positions of vowels
+ii. DIRECTOR, without changing order of vowels
+iii. DIRECTOR, without changing positions of vowels
+iv. DIRECTOR, without changing relative positions of vowels & consonants
+</div>
+</div>
+
+## Specific Word at First/Last
+
+a. MILLENNIUM: M at first & last
+b. IMMEDIATE: T first & A last
+c. DAUGHTER: starts with D
+d. DAUGHTER: starts with D but does not end with R 
+
+## Even/Odd positions
+
+a. POSTAGE: vowels at even positions
+b. ARTICLE: vowels at odd positions
+
+## Specific items apart/first/last
+
+a. Arrange n books keeping two specific books apart. 
+b. Arrange n items where two specific items are not at first or last. 
+
+<table style="border: 1px solid">
+<tr>
+<td height="30px"></td>
+<td height="30px">(n-2)</td>
+<td height="30px"></td>
+</table>
