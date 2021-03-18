@@ -315,19 +315,126 @@ b. IMMEDIATE: T first & A last
 c. DAUGHTER: starts with D
 d. DAUGHTER: starts with D but does not end with R 
 
-## Even/Odd positions
+## Even/Odd/middle positions
+
+<small>
+
+<div class="container">
+<div class="col">
+Questions
 
 a. POSTAGE: vowels at even positions
 b. ARTICLE: vowels at odd positions
+c. SECOND: Use 1 vowel and 2 consonants & vowel in middle. □ □ □
+d. Make 3-letters words from 7 consonants and 3 vowels so vowels are in middle.
+e. CAMBRIDGE: Use 5 letters including all vowels.
+f. EQUATION: 4-letters words keeping Q excluding N.
+</div>
+<div class="col">
+Answers
 
-## Specific items apart/first/last
+> - 3!4! 
+> - $^4P_3 \times 4!=576$
+> - $^2P_1 \times \space ^4P_2$
+> - $^3P_1 \times \space ^7P_2=126$
+> - $^5P_3 \times \space ^6P_2$
+> - $^4P_1 \times \space ^6P_3$
+</div>
+</div>
 
+</small>
+
+## Digit Problems
+
+<small>
+<div class="container">
+<div class="col">
+a. Use $3,4,5,6,7,8$ to make digits between 5,000 & 6,000.
+</div>
+<div class="col">
+> - 4-digits and starts with 5 $\rightarrow \space ^5P_3$
+</div>
+</div>
+</small>
+
+## Summation
+
+<small>
+
+<div class="container">
+<div class="col">
+a. Find summation of 3-digits numbers made using 1, 2, & 3. 
+</div>
+<div class="col">
+> - 2!(1+2+3)(1+10+100) 
+</div>
+</div>
+</small>
+
+## Specific Items Apart/First/Last
+<small>
+
+<div class="container">
+<div class="col">
+a. Arrange 5 items out of 10, always keeping 2 specific items. 
+a. Make 5-letters words from English alphabet always keeping A & L
 a. Arrange n books keeping two specific books apart. 
 b. Arrange n items where two specific items are not at first or last. 
+c. Arrange r items from n items so two specific items are neither at first nor at last. 
 
+</br>
 <table style="border: 1px solid">
 <tr>
 <td height="30px"></td>
 <td height="30px">(n-2)</td>
 <td height="30px"></td>
 </table>
+
+ 
+</div>
+<div class="col">
+> - $^5P_2 \times \space ^8P_3$
+> - $^5P_2 \times \space ^{24}P_3$
+> - n!-2!(n-1)! = (n-1)!(n-2)
+> - $^{n-2}P_2 \times \space (n-2)!$
+> - $^{n-2}P_2 \times \space ^{n-2}P_{r-2}$
+</div>
+</div>
+
+</small>
+
+## Arranging in Seats 
+
+<small>
+<div class="container">
+<div class="col">
+
+a. Arrange 10 BSC and  14 ISC students so no two BSC students are together.
+b. Arrange p +ve and q $-ve$ signs ($p\lt q$) so $-ve$ signs are apart.
+c. Arrange a 15-members committee in 15 seats, keeping the chief guest in middle. 
+
+</div>
+<div class="col">
+> - $^{15}P_{10} \times \space 14!$
+> - $\frac{^{q+1}P_p}{p!}$
+> - □ $\cdot$ □ $\rightarrow$ (7+7)!
+</div>
+</div>
+</small>
+
+## Circular Combination
+<small>
+
+<div class="container">
+<div class="col">
+a. Arrange 8 dancers in circular fashion. 
+b. Use 8 pearls in a band to make a necklace. 
+a. Arrange 8 science and 7 arts students circularly so no two arts students are together.
+</div>
+<div class="col">
+> - 7!
+> - $\frac{(8-1)!}{2}$
+> - $^8P_7 \times \space 7!$
+</div>
+</div>
+</small>
