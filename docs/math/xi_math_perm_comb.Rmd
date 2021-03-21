@@ -350,9 +350,13 @@ Answers
 <div class="container">
 <div class="col">
 a. Use $3,4,5,6,7,8$ to make digits between 5,000 & 6,000.
+a. 2, 3, 4, 5, 6, 7: 6-digit numbers not divisible by 5
+b. 5, 6, 7, 8, 0: Five digit numbers divisible by 4.
 </div>
 <div class="col">
 > - 4-digits and starts with 5 $\rightarrow \space ^5P_3$
+> - □ □ □ □ □ $\rightarrow 5!  \times \space ^5P_1$
+> - Last two: 56,68, 76 and 60, 20, 
 </div>
 </div>
 </small>
