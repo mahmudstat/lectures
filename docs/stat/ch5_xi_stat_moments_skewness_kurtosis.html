@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Abdullah Al Mahmud" />
-  <title>Skewness &amp; Kurtosis</title>
+  <title>Moments, Skewness &amp; Kurtosis</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -458,18 +458,74 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <div class="slides">
 
 <section>
-    <h1 class="title">Skewness &amp; Kurtosis</h1>
+    <h1 class="title">Moments, Skewness &amp; Kurtosis</h1>
     <h2 class="author">Abdullah Al Mahmud</h2>
 </section>
 
-<section id="moments" class="title-slide slide level1"><h1>Moments</h1><p>Central Moments: <span class="math inline">\(\mu_r=\frac{\sum(x_i-\bar x)^r}{n}\)</span></p>
+<section><section id="moments" class="title-slide slide level1"><h1>Moments</h1></section><section id="central-moments" class="slide level2">
+<h2>Central Moments</h2>
+<p>Central Moments: <span class="math inline">\(\mu_r=\frac{\sum(x_i-\bar x)^r}{n}\)</span></p>
 <ul>
 <li class="fragment"><span class="math inline">\(\mu_1=\frac{\sum(x_i-\bar x)}{n}=\frac{\sum x_i}{n}-\frac{n \bar x}{n}=\frac{n \bar x}{n}-\frac{n \bar x}{n}=0\)</span></li>
 </ul>
 <ul>
 <li class="fragment"><span class="math inline">\(\mu_2=\frac{\sum(x_i-\bar x)^2}{n}=\sigma^2\)</span></li>
 <li class="fragment"><span class="math inline">\(\mu_3=\frac{\sum(x_i-\bar x)^3}{n}\)</span></li>
-</ul></section>
+<li class="fragment"><span class="math inline">\(\mu_4=\frac{\sum(x_i-\bar x)^4}{n}\)</span></li>
+<li class="fragment">For grouped data: <span class="math inline">\(\mu_r=\frac{\sum f_i(x_i-\bar x)^3}{n}\)</span></li>
+</ul>
+</section><section id="raw-moments" class="slide level2">
+<h2>Raw Moments</h2>
+<p><span class="math inline">\(\mu_r&#39;=\frac{\sum(x_i-a)^r}{n}\)</span>; a is arbitrary number</p>
+<p><span class="math inline">\(\mu_1&#39;=\frac{\sum(x_i-a)}{n}=\frac{\sum x_i}{n}-\frac{na}{n}=\bar x-a\)</span></p>
+</section><section id="raw-central-moments-relationship" class="slide level2">
+<h2>Raw &amp; Central Moments: Relationship</h2>
+<ul>
+<li><span class="math inline">\(\mu_2 = \mu_2&#39;-\mu_1&#39;^2\)</span></li>
+<li><span class="math inline">\(\mu_3 = \mu_3&#39;-3\mu_2&#39;\mu_1&#39;+2\mu_1&#39;^3\)</span></li>
+<li><span class="math inline">\(\mu_4 = \mu_4&#39;-4\mu_3&#39;\mu_1&#39; + 6 \mu_2&#39;\mu_1&#39;^2-3\mu_1&#39;^4\)</span></li>
+</ul>
+<p>How to Remember??</p>
+<p><span class="math inline">\(\downarrow\)</span></p>
+</section><section id="how-to-remember" class="slide level2">
+<h2>How to Remember</h2>
+<p><small></p>
+<div class="container">
+<div class="col">
+<p><span class="math inline">\((a-b)^3=a^3-3a^2b+3ab^2-b^3\)</span></p>
+<p><span class="math inline">\((a-b)^4=a^4-4a^3b+6a^2b^2-4ab^3+b^4\)</span> (Pascal triangle can be used)</p>
+<p><span class="math inline">\(a^r=\mu_r&#39;\)</span></p>
+<p><span class="math inline">\(b^r=\mu_1&#39;^r\)</span></p>
+</div>
+<div class="col">
+<p>Now,</p>
+<p><span class="math inline">\(\mu_3 = \mu_3&#39;-3\mu_2&#39;\mu_1&#39;+2\mu_1&#39;^3\)</span></p>
+<ul>
+<li>Remove the penultimate term and let coefficient of it is k</li>
+<li>Use (-k) as the coefficient of the last term.</li>
+</ul>
+</div>
+</div>
+<p></small></p>
+</section><section id="skewness" class="slide level2">
+<h2>Skewness</h2>
+<p>Lack of symmetry</p>
+<p><img data-src="img/skewness.jpg" /></p>
+</section><section id="kurtosis" class="slide level2">
+<h2>Kurtosis</h2>
+<p><img data-src="img/kurtosis.jpg" /></p>
+</section><section id="measures-of-skewness" class="slide level2">
+<h2>Measures of SKewness</h2>
+<ol type="1">
+<li>Pearson’s Coefficient: <span class="math inline">\(SK_P=\frac{Mean-Mode}{\sigma}=\frac{3(Mean-Median)}{\sigma} ;(-3,3)\)</span></li>
+</ol>
+<p>(<span class="math inline">\(Mode=3Me-2\bar X\)</span>)</p>
+<ol start="2" type="1">
+<li>Bowley’s Coefficient: <span class="math inline">\(SK_B=\frac{Q_3+Q_1-2Me}{Q_3-Q_1}; (-1,1)\)</span></li>
+<li>Kelly’s Coefficient: <span class="math inline">\(SK_k=\frac{D_1+D_9-2Me}{D_9-D1}\)</span></li>
+<li>Method of Moments: <span class="math inline">\(\beta_1=\frac{\mu_3^2}{\mu_2^3}\)</span></li>
+</ol>
+</section></section>
     </div>
   </div>
 

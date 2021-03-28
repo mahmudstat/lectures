@@ -352,14 +352,14 @@ Answers
 a. Use $3,4,5,6,7,8$ to make digits between 5,000 & 6,000.
 a. 2, 3, 4, 5, 6, 7: 6-digit numbers not divisible by 5
 b. 5, 6, 7, 8, 0: Five digit numbers divisible by 4.
-c. Make 7-digit numbers using 3, 4, 5, 53, 4, 5, 6, keeping odd digits at odd positions, without using digits more than its frequency.
+c. Make 7-digit numbers using 3, 4, 5, 5, 3, 4, 5, 6, keeping odd digits at odd positions, without using digits more than its frequency.
 c. Use `r 1:9` to make numbers with even digits at beginning and end, using each digit only one. 
 c. Form numbers with 0, 3, 5, 6, 8 greater than 4000, without repeating any digit.
 </div>
 
 <div class="col">
 > - 4-digits and starts with 5 $\rightarrow 1 \times \space ^5P_3$
-> - □ □ □ □ □ □ $\rightarrow 5!  \times \space ^5P_1$
+> - □ □ □ □ □ □ $\rightarrow 5!  \times \space ^5P_1$ or 6!-5!
 > - Last two: 56,68, 76 and 60, 08, 80  $\rightarrow 3! \times ^3P_1 + ^2P_1 \times 2! \times ^3P_1=18+12=30$ 
 > - Odd positions = 4, even = 3; </br> there are repetitions. $\rightarrow \frac {4!}{2!2!} \times \frac{3!}{2!}=18$
 > - $^4P_1 \times ^3P_1 \times 7! = 60480$ or $^4P_2 \times 7!$
@@ -374,11 +374,14 @@ c. Form numbers with 0, 3, 5, 6, 8 greater than 4000, without repeating any digi
 <small>
 <div class="container">
 <div class="col">
-a. Make valid odd numbers using 6, 5, 2, 3, 0
-b. Make even numbers 
+a. Make meaningful odd numbers using the digits 6, 5, 2, 3, 0 once in each number.
+b. Make meaningful even numbers using 5, 3, 2, 6, 0.
+c. Use 1, 2, 3, 4 to make 3 or less-digit numbers by using digits more than once/any no. of times 
 </div>
 <div class="col">
 > - $^2P_1 \times ^3P_1 \times 3!=36$ 
+> - 2 at end, 6 at end, 0 at end $\rightarrow 2 (1 \times 4!-3!)+4!$
+> - 1-digit + 2-digit+3-digit (□ □ □) $\rightarrow ^4P_1+4 \times 4 + 4^3$
 </div>
 </div>
 </small>
