@@ -74,18 +74,56 @@ $\mu_3 = \mu_3'-3\mu_2'\mu_1'+2\mu_1'^3$
 
 Lack of symmetry
 
-![](img/skewness.jpg)
+<img src="img/skewness.jpg" style="width:84%">
+
+
+- -Ve Skew $\rightarrow \bar X \lt Me \lt Mode$
+- +Ve Skew $\rightarrow \bar X \gt Me \gt Mode$
+- No Skew $\rightarrow \bar X = Me = Mode$
 
 ## Kurtosis
 
-![](img/kurtosis.jpg)
+<img src="img/kurtosis.jpg" style="width:50%">
+
+Normal distribution $\rightarrow$ 
+
+- Most students get average marks 
+- Higher and lower marks are obtained by lesser number of students
+
 
 ## Measures of SKewness
 
-1. Pearson's Coefficient: $SK_P=\frac{Mean-Mode}{\sigma}=\frac{3(Mean-Median)}{\sigma} ;(-3,3)$
+<div class="container">
+<div class="col">
+<small>
+
+- Pearson's Coefficient: $SK_P=\frac{Mean-Mode}{\sigma}=\frac{3(Mean-Median)}{\sigma} ;(-3,3)$
 
   ($Mode=3Me-2\bar X$)
   
-2.  Bowley's Coefficient: $SK_B=\frac{Q_3+Q_1-2Me}{Q_3-Q_1}; (-1,1)$
-3. Kelly's Coefficient: $SK_k=\frac{D_1+D_9-2Me}{D_9-D1}$
-4. Method of Moments: $\beta_1=\frac{\mu_3^2}{\mu_2^3}$
+> -  Bowley's Coefficient: $SK_B=\frac{Q_3+Q_1-2Me}{Q_3-Q_1}; (-1,1)$
+> -  Kelly's Coefficient: $SK_k=\frac{D_1+D_9-2Me}{D_9-D1}$
+> - Method of Moments: $\beta_1=\frac{\mu_3^2}{\mu_2^3}$
+
+</small>
+</div>
+<div class="col">
+Estimate Skewness
+
+`r set.seed(100); (x=sort(sample(100,8)))`
+</div>
+</div> 
+
+## Measures of Kurtosis
+
+- Pearsons's Coefficient of Moments, $\beta_2 = \frac{\mu_4}{\mu_2^2}$
+- Percentile Coefficient, $K=\frac{\frac 1 2 (Q_3-Q_1)}{P_{90}-P_{10}}$
+
+$\gamma_2=\beta_2-3$
+
+$\gamma_2=0 \space or \space \beta_2=3) \rightarrow$ Mesokurtik
+$\gamma_2\gt0 \space or \space \beta_2 \gt 3) \rightarrow$ Leptokurtik
+$\gamma_2\lt0 \space or \space \beta_2\lt3) \rightarrow$ Platykurtik
+
+`r set.seed (10); sample(10,4)` $\rightarrow$ Find kurtosis
+

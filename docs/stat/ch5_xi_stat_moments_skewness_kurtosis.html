@@ -510,21 +510,50 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </section><section id="skewness" class="slide level2">
 <h2>Skewness</h2>
 <p>Lack of symmetry</p>
-<p><img data-src="img/skewness.jpg" /></p>
+<p><img src="img/skewness.jpg" style="width:84%"></p>
+<ul>
+<li>-Ve Skew <span class="math inline">\(\rightarrow \bar X \lt Me \lt Mode\)</span></li>
+<li>+Ve Skew <span class="math inline">\(\rightarrow \bar X \gt Me \gt Mode\)</span></li>
+<li>No Skew <span class="math inline">\(\rightarrow \bar X = Me = Mode\)</span></li>
+</ul>
 </section><section id="kurtosis" class="slide level2">
 <h2>Kurtosis</h2>
-<p><img data-src="img/kurtosis.jpg" /></p>
+<p><img src="img/kurtosis.jpg" style="width:50%"></p>
+<p>Normal distribution <span class="math inline">\(\rightarrow\)</span></p>
+<ul>
+<li>Most students get average marks</li>
+<li>Higher and lower marks are obtained by lesser number of students</li>
+</ul>
 </section><section id="measures-of-skewness" class="slide level2">
 <h2>Measures of SKewness</h2>
-<ol type="1">
-<li>Pearson’s Coefficient: <span class="math inline">\(SK_P=\frac{Mean-Mode}{\sigma}=\frac{3(Mean-Median)}{\sigma} ;(-3,3)\)</span></li>
-</ol>
-<p>(<span class="math inline">\(Mode=3Me-2\bar X\)</span>)</p>
-<ol start="2" type="1">
-<li>Bowley’s Coefficient: <span class="math inline">\(SK_B=\frac{Q_3+Q_1-2Me}{Q_3-Q_1}; (-1,1)\)</span></li>
-<li>Kelly’s Coefficient: <span class="math inline">\(SK_k=\frac{D_1+D_9-2Me}{D_9-D1}\)</span></li>
-<li>Method of Moments: <span class="math inline">\(\beta_1=\frac{\mu_3^2}{\mu_2^3}\)</span></li>
-</ol>
+<div class="container">
+<div class="col">
+<p><small></p>
+<ul>
+<li><p>Pearson’s Coefficient: <span class="math inline">\(SK_P=\frac{Mean-Mode}{\sigma}=\frac{3(Mean-Median)}{\sigma} ;(-3,3)\)</span></p>
+<p>(<span class="math inline">\(Mode=3Me-2\bar X\)</span>)</p></li>
+</ul>
+<ul>
+<li class="fragment">Bowley’s Coefficient: <span class="math inline">\(SK_B=\frac{Q_3+Q_1-2Me}{Q_3-Q_1}; (-1,1)\)</span></li>
+<li class="fragment">Kelly’s Coefficient: <span class="math inline">\(SK_k=\frac{D_1+D_9-2Me}{D_9-D1}\)</span></li>
+<li class="fragment">Method of Moments: <span class="math inline">\(\beta_1=\frac{\mu_3^2}{\mu_2^3}\)</span></li>
+</ul>
+<p></small></p>
+</div>
+<div class="col">
+<p>Estimate Skewness</p>
+<p>4, 23, 55, 70, 74, 78, 86, 89</p>
+</div>
+</div>
+</section><section id="measures-of-kurtosis" class="slide level2">
+<h2>Measures of Kurtosis</h2>
+<ul>
+<li>Pearsons’s Coefficient of Moments, <span class="math inline">\(\beta_2 = \frac{\mu_4}{\mu_2^2}\)</span></li>
+<li>Percentile Coefficient, <span class="math inline">\(K=\frac{\frac 1 2 (Q_3-Q_1)}{P_{90}-P_{10}}\)</span></li>
+</ul>
+<p><span class="math inline">\(\gamma_2=\beta_2-3\)</span></p>
+<p><span class="math inline">\(\gamma_2=0 \space or \space \beta_2=3) \rightarrow\)</span> Mesokurtik <span class="math inline">\(\gamma_2\gt0 \space or \space \beta_2 \gt 3) \rightarrow\)</span> Leptokurtik <span class="math inline">\(\gamma_2\lt0 \space or \space \beta_2\lt3) \rightarrow\)</span> Platykurtik</p>
+<p>9, 7, 8, 6 <span class="math inline">\(\rightarrow\)</span> Find kurtosis</p>
 </section></section>
     </div>
   </div>
