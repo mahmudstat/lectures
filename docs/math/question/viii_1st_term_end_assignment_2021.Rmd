@@ -1,0 +1,26 @@
+---
+title: "Mathematics (VIII)"
+author: "Pabna Cadet College"
+date: "4/1/2021"
+output: pdf_document
+---
+
+Answer all the question and upload before 0900 hrs tomorrow (02/04/2021)
+
+1. Mr. Jalal, a fruitseller, buys equal number of watermelons at 2000 taka per 16 pcs and 25 pcs, respectively, and sells all at taka 2000 per 20 pcs. 
+
+a. What are the buying prices of two types of watermelons?
+b. What will be the loss or profit in percentage?
+c. What will be the loss or profit if 2nd type of fruits are sold at 2000 taka per 12 pcs.?
+
+2. If $a^2-3a+1=0$
+
+a. Find the value of $a+ \frac 1 a$
+b. Prove $a^4+\frac {1}{a^4}=47$
+c. Determine $\frac{a^6+1}{a^3}$
+
+3. Jayed bought 3 pencils and 2 pens at 60 taka, while Rakib bought 2 pencils and 3 pens at taka 50. 
+
+a. Form two equations, assuming price of pencil x and that of pen y.
+b. Find x and y using substitution method
+c. Find x and y using elimination method
