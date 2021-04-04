@@ -370,6 +370,7 @@ d. m = 2; $27m^3+54m^2+36m+8=?$
 e. a = -3, b = 2; Find $8a^3+36a^2b+54ab^2+27b^3$
 f. $a^2+b^2=c^2; a^6+b^6+3a^2b^2c^2=?$
 g. $a^2-a-6=0, a^3+\frac 1 {a^3}=?$
+
 </div>
 <div class="col">
 > - $3^3 - 3 \times 2 \times 3 = 9$
@@ -380,6 +381,7 @@ g. $a^2-a-6=0, a^3+\frac 1 {a^3}=?$
 > - $c^6$
 > - $a^2-a-6=0 \Rightarrow a^2-3a+2a-6=0 \Rightarrow a=3,-2$ 
   $\Rightarrow a+\frac 1 a = 3 + \frac 1 3 = \frac {10} 3$ or $\cdots$
+ 
   
 </div>
 </div>
@@ -401,6 +403,8 @@ g. $a^2-a-6=0, a^3+\frac 1 {a^3}=?$
 7. $(x^2-x)^2+3(x^2-x)-40$
 8. $x^2+(3a+4b)x+(2a^2+5ab+3b^2)$
 9. $x^2-x-(a+1)(a+2)$
+10. $ax^2+(a^2+1)x+a$
+11. $a^3-3a^2b+3ab^2-2b^3$
 </div>
 <div class="col">
 
@@ -413,7 +417,49 @@ g. $a^2-a-6=0, a^3+\frac 1 {a^3}=?$
 > - 7. Assume $(x^2-x)^2=a$ or continue directly.
 > - 8. $x^2+(3a+4b)x+(2a+3b)(a+b)$
 > - 9. $x^2-(a+2)x+(a+1)x-(a+1)(a+2)$ or let a+1=p
+> - 10. $ax^2+a^2x+x+a \rightarrow ax(x+a)+1(x+a) \rightarrow ()()$ 
+> - 11. $a^3-3a^2b+3ab^2-b^3-b^3 \rightarrow (a-b)^3-b^3 \rightarrow \cdots (a-2b)(a^2-ab+b^2)$
   
 </div>
 </div>
+</small>
+
+# Chapter 4.3: LCM & HCF
+
+## What LCM & HCF they Mean
+
+<small>
+<div class="container">
+<div class="col">
+LCM = Lowest Common **Multiple**
+
+Numbers: 12, 18
+
+**Multiples of 12:** 12, 24, <u>36</u>, 48, 60
+
+**Multiples of 18:** 18, <u>36</u>, 54, 72, 90
+
+Lowest Common Multiple, LCM = 36
+
+12 = $2 \times 2 \times 3$
+
+18 = $2 \times 3 \times 3$
+
+LCM = $2 \times 2 \times 3 \times 3 = 36$
+
+</div>
+<div class="col">
+
+<div onclick="klikaj('hcf')"><span>HCF</span></div>
+<div id="hcf" style="visibility: hidden">
+Highest Common Factor/Divisor
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
+
 </small>
