@@ -386,6 +386,12 @@ c. Use 1, 2, 3, 4 to make 3 or less-digit numbers by using digits more than once
 </div>
 </small>
 
+## Summation Basics
+
+$123 = 3 \times 1 + 2 \times 10 + 1 \times 100$ 
+
+- [x] Value of a number depends on digits it consists of
+
 
 ## Summation
 
@@ -394,9 +400,15 @@ c. Use 1, 2, 3, 4 to make 3 or less-digit numbers by using digits more than once
 <div class="container">
 <div class="col">
 a. Find summation of 3-digits numbers made using 1, 2, & 3. 
+b. Find summation of all possible numbers above 100,00, made using the digits 0, 2, 4, 6, 8. 
+b. Sum of all possible numbers using 1, 2, 3, 4
+c. Make the general formula to find sum of all possible numbers
 </div>
 <div class="col">
 > - 2!(1+2+3)(1+10+100) 
+> - 4!(0+2+4+6+8)(1+10+100+1000+10000)-3!(2+4+6+8)(1+10+100+1000)
+> - 3! (1+2+3+4)(1111)
+> - $(n-1)! \times D \times \sum_{i=0}^n 10^i$; (D = Sum of digits, n = no. of digits in the numbers made)
 </div>
 </div>
 </small>

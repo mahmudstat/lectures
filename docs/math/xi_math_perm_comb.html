@@ -792,7 +792,7 @@ Other Letters
 <li>Use <span class="math inline">\(3,4,5,6,7,8\)</span> to make digits between 5,000 &amp; 6,000.</li>
 <li>2, 3, 4, 5, 6, 7: 6-digit numbers not divisible by 5</li>
 <li>5, 6, 7, 8, 0: Five digit numbers divisible by 4.</li>
-<li>Make 7-digit numbers using 3, 4, 5, 53, 4, 5, 6, keeping odd digits at odd positions, without using digits more than its frequency.</li>
+<li>Make 7-digit numbers using 3, 4, 5, 5, 3, 4, 5, 6, keeping odd digits at odd positions, without using digits more than its frequency.</li>
 <li>Use 1, 2, 3, 4, 5, 6, 7, 8, 9 to make numbers with even digits at beginning and end, using each digit only one.</li>
 <li>Form numbers with 0, 3, 5, 6, 8 greater than 4000, without repeating any digit.</li>
 </ol>
@@ -829,6 +829,13 @@ Other Letters
 </div>
 </div>
 <p></small></p>
+</section><section id="summation-basics" class="slide level2">
+<h2>Summation Basics</h2>
+<p><span class="math inline">\(123 = 3 \times 1 + 2 \times 10 + 1 \times 100\)</span></p>
+<ul>
+<li><input type="checkbox" disabled="" checked="" />
+Value of a number depends on digits it consists of</li>
+</ul>
 </section><section id="summation" class="slide level2">
 <h2>Summation</h2>
 <p><small></p>
@@ -836,11 +843,17 @@ Other Letters
 <div class="col">
 <ol type="a">
 <li>Find summation of 3-digits numbers made using 1, 2, &amp; 3.</li>
+<li>Find summation of all possible numbers above 100,00, made using the digits 0, 2, 4, 6, 8.</li>
+<li>Sum of all possible numbers using 1, 2, 3, 4</li>
+<li>Make the general formula to find sum of all possible numbers</li>
 </ol>
 </div>
 <div class="col">
 <ul>
 <li class="fragment">2!(1+2+3)(1+10+100)</li>
+<li class="fragment">4!(0+2+4+6+8)(1+10+100+1000+10000)-3!(2+4+6+8)(1+10+100+1000)</li>
+<li class="fragment">3! (1+2+3+4)(1111)</li>
+<li class="fragment"><span class="math inline">\((n-1)! \times D \times \sum_{i=0}^n 10^i\)</span>; (D = Sum of digits, n = no. of digits in the numbers made)</li>
 </ul>
 </div>
 </div>
