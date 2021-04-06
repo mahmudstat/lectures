@@ -1,0 +1,49 @@
+---
+title: ''
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+\begin{center}
+\begin{large}
+Pabna Cadet College
+\end{large}
+
+Year-Final Assignment - 2021
+
+Subject: Statistics
+
+Class: XI
+\end{center}
+
+Time: -
+\hfill
+Full Marks: 30
+
+Answer all the question.
+
+1. Temperatures of two cold regions for five days are as below:
+
+    City A: 2, 1, -1, 0, 3
+
+    City B: 3, 0, -2, 2, 3
+
+a. What is standard deviation?
+b. Is standard deviation of a set of negative values negative? Justify mathematically.
+c. Find Mean Deviation about mean of the values of city A.
+d. Which city has more consistent weather? Verify statistically. 
+
+2. The first four moments about 3 of a distribution are -1, 5, -10, and 120. 
+
+a. What are moments used for?
+b. Can the second central moment be greater than the third central moment?
+c. Find the second and third moments about arithmetic mean of the distribution.
+d. Find skewness and kurtosis and comment on the values. 
+
+3. The arithmetic and geometric means of the first and third quartiles of a distribution are 10 and 8, respectively. The second quartile is 10. 
+
+a. What is the formula suggested by Pearson to find skewness?
+b. Which moments are useful in measuring central tendency and dispersion? 
+c. Find skewness from the stem using a suitable formula.
+d. Which method of finding skewness od you think is the best and why?
