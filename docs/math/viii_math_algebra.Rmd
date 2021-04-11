@@ -453,6 +453,19 @@ LCM = $2 \times 2 \times 3 \times 3 = 36$
 <div onclick="klikaj('hcf')"><span>HCF</span></div>
 <div id="hcf" style="visibility: hidden">
 Highest Common Factor/Divisor
+
+Numbers: 12, 18
+
+Factors of 12: 2, 3, 4, 6, 12
+
+Factors of 18: 2, 3, 6, 9, 18
+
+Common Factors: 2, 3, 6
+
+Highest Common Factor = 6
+
+From prime factors, take only that which are common in each number.
+
 </div>
 <script>
 function klikaj(i) {
@@ -462,4 +475,27 @@ function klikaj(i) {
 </div>
 </div>
 
+</small>
+
+## Find LCM & HCF
+
+<small>
+<div class="container">
+<div class="col">
+1. 9abc, 12abc, 15abc
+2. $20x^3y^2a^3b^4, 15x^4y^3a^4b^3, 35x^2y^4a^3b^2$
+3. $x^2-3x, x^2-9, x^2-4x+3$
+4. Can HCF be greater LCM?
+5. $a^2b(a^3-b^3), a^2b^2(a^4+a^2b^2+b^4), a^3b^2+a^2b^3+ab^4$
+6. $a^3-1, a^3+1, a^4+a^2+1$
+</div>
+<div class="col">
+> - 1. 180abc  ,3abc
+> - 2. $420a^4b^4x^4y^4, 5a^2b^2x^2y^2$
+> - 3. x(x-3), (x+3)(x-3), (x-2)(x-3)
+> - 4. Clue: can factor of a number be greater than itslef? </br>Can a multiple be smaller? </br> What about (0,9)
+> - 5. $Factors: a^2(a-b)(a^2+ab+b^2),$ </br>$a^2b^2(a^2+ab+b^2)(a^2-ab+b^2), ab^2(a^2+ab+b^2)$
+> - 6 Factors: $(a-1)(a^2+a+1), (a+1)(a^2-a+1)$</br>  $(a^2+a+1)(a^2-a+1)$
+</div>
+</div>
 </small>

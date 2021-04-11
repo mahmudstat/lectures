@@ -831,29 +831,66 @@ Other Letters
 <p></small></p>
 </section><section id="summation-basics" class="slide level2">
 <h2>Summation Basics</h2>
+<p><small></p>
+<div class="container">
+<div class="col">
 <p><span class="math inline">\(123 = 3 \times 1 + 2 \times 10 + 1 \times 100\)</span></p>
 <ul>
 <li><input type="checkbox" disabled="" checked="" />
 Value of a number depends on digits it consists of</li>
 </ul>
-</section><section id="summation" class="slide level2">
-<h2>Summation</h2>
+</div>
+<div class="col">
+<p>Arrangements of 1, 2, 3</p>
+<p>123</p>
+<p>132</p>
+<p>231</p>
+<p>213</p>
+<p>312</p>
+<p>321</p>
+<p>In all places, each digit is repeated twice (2!)</p>
+<p>Sum = 2!(1+2+3)1+2!(1+2+3)10+2!(1+2+3)100 = 2!(1+2+3)(1+10+100)</p>
+</div>
+</div>
+<p></small></p>
+</section><section id="sum-average" class="slide level2">
+<h2>Sum-Average</h2>
 <p><small></p>
 <div class="container">
 <div class="col">
-<ol type="a">
-<li>Find summation of 3-digits numbers made using 1, 2, &amp; 3.</li>
+<ol type="1">
+<li>Find summation of 3-digits numbers made using 1, 2, &amp; 3 and 4-digits numbers using 1, 2, 3, 4.</li>
 <li>Find summation of all possible numbers above 100,00, made using the digits 0, 2, 4, 6, 8.</li>
-<li>Sum of all possible numbers using 1, 2, 3, 4</li>
+<li>Sum of all possible numbers using 1, 2, 3, 4, each just once.</li>
 <li>Make the general formula to find sum of all possible numbers</li>
+<li>Average of 9-digit numbers made using 5 five times and 4 four times.</li>
+<li>Find sum of numbers greater than 10,000, using 1, 3, 5, 7, 9</li>
+<li>Find sum of all possible numbers, using 1, 3, 5, 7, 9</li>
 </ol>
 </div>
 <div class="col">
 <ul>
-<li class="fragment">2!(1+2+3)(1+10+100)</li>
+<li class="fragment"><ol type="1">
+<li class="fragment">2!(1+2+3)(1+10+100) &amp; 3!(1+2+3)1111</li>
+</ol></li>
+<li class="fragment"><ol start="2" type="1">
 <li class="fragment">4!(0+2+4+6+8)(1+10+100+1000+10000)-3!(2+4+6+8)(1+10+100+1000)</li>
-<li class="fragment">3! (1+2+3+4)(1111)</li>
+</ol></li>
+<li class="fragment"><ol start="3" type="1">
+<li class="fragment"><span class="math inline">\(3! (1+2+3+4)(1111)+^3P_2 \times 10 \times 111+ ^3P_1 \times 10 \times 11 + 10\)</span></li>
+</ol></li>
+<li class="fragment"><ol start="4" type="1">
 <li class="fragment"><span class="math inline">\((n-1)! \times D \times \sum_{i=0}^n 10^i\)</span>; (D = Sum of digits, n = no. of digits in the numbers made)</li>
+</ol></li>
+<li class="fragment"><ol start="5" type="1">
+<li class="fragment"><span class="math inline">\(n=\frac{9!}{5!4!}, \bar X=\frac{}{n}\)</span></li>
+</ol></li>
+<li class="fragment"><ol start="6" type="1">
+<li class="fragment">All 5-digit numbers: 4!(1+3+5+7+9)11111=6666600</li>
+</ol></li>
+<li class="fragment"><ol start="7" type="1">
+<li class="fragment">1, 2, 3, o4 4 digit numbers: 4!(1+3+5+7+9)11111+…</li>
+</ol></li>
 </ul>
 </div>
 </div>
