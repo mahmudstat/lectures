@@ -485,17 +485,47 @@ function klikaj(i) {
 1. 9abc, 12abc, 15abc
 2. $20x^3y^2a^3b^4, 15x^4y^3a^4b^3, 35x^2y^4a^3b^2$
 3. $x^2-3x, x^2-9, x^2-4x+3$
-4. Can HCF be greater LCM?
+4. Can HCF be greater than LCM?
 5. $a^2b(a^3-b^3), a^2b^2(a^4+a^2b^2+b^4), a^3b^2+a^2b^3+ab^4$
 6. $a^3-1, a^3+1, a^4+a^2+1$
 </div>
 <div class="col">
 > - 1. 180abc  ,3abc
 > - 2. $420a^4b^4x^4y^4, 5a^2b^2x^2y^2$
-> - 3. x(x-3), (x+3)(x-3), (x-2)(x-3)
-> - 4. Clue: can factor of a number be greater than itslef? </br>Can a multiple be smaller? </br> What about (0,9)
+> - 3. x(x-3), (x+3)(x-3), (x-1)(x-3)
+> - 4. Clue: can factor of a number be greater than itself? </br>Can a multiple be smaller? </br> What about (0,9)
 > - 5. $Factors: a^2(a-b)(a^2+ab+b^2),$ </br>$a^2b^2(a^2+ab+b^2)(a^2-ab+b^2), ab^2(a^2+ab+b^2)$
 > - 6 Factors: $(a-1)(a^2+a+1), (a+1)(a^2-a+1)$</br>  $(a^2+a+1)(a^2-a+1)$
 </div>
 </div>
+</small>
+
+## Can HCF be > LCM
+
+<small>
+
+Consider 0, 9
+
+Factors
+
+$0 \rightarrow 0, 1, 2, 3, \cdots$ since $0 \times 1 = 0, 0 \times 2 =0$
+
+$\therefore$ all numbers are factors of 0.
+
+$9 \rightarrow 1, 3, 9$
+
+Multiples
+
+We get multiples by multiplying the numbers by $1, 2, 3, \cdots$
+
+$0 \rightarrow 0, 0, 0 , \cdots$ 
+
+$\therefore$ only 0 is the mutliple of 0. 
+
+$0=9 \rightarrow 9, 18, 27 , \cdots, 0$ (0 is a multiple of any number)
+
+HCF = 9
+
+LCM = 0
+
 </small>
