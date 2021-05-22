@@ -512,3 +512,5 @@ a. Arrange 8 science and 7 arts students circularly so no two arts students are 
 </div>
 </div>
 </small>
+
+<img src="img/necklace.png">
