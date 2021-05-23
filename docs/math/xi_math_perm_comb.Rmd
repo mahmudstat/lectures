@@ -477,21 +477,30 @@ c. Arrange r items from n items so two specific items are neither at first nor a
 
 </small>
 
-## Arranging in Seats 
+## Arranging in Seats/Positions
 
 <small>
 <div class="container">
 <div class="col">
 
-a. Arrange 10 BSC and  14 ISC students so no two BSC students are together.
-b. Arrange p +ve and q $-ve$ signs ($p\lt q$) so $-ve$ signs are apart.
-c. Arrange a 15-members committee in 15 seats, keeping the chief guest in middle. 
+1. Arrange 10 BSC and  14 ISC students so no two BSC students are together.
+2. Arrange p +ve and q $-ve$ signs ($p\lt q$) so $-ve$ signs are apart.
+3. Arrange a 15-members committee in 15 seats, keeping the chief guest in middle. 
+4. Arrange x boys and y girls (x>y), keeping no two girls together.
+5. IDENTITY: I's and T's together
+6. Arrange 6 exam scripts so that the best and worst scripts are not together.
+7. Arrange 11 objects (5 black, 6 white) so that a black item is in middle.
+
 
 </div>
 <div class="col">
-> - $^{15}P_{10} \times \space 14!$
-> - $\frac{^{q+1}P_p}{p!}$
-> - □ $\cdot$ □ $\rightarrow$ (7+7)!
+> - 1. $^{15}P_{10} \times \space 14!$
+> - 2. $\frac{^{q+1}P_p}{p!}$
+> - 3. □ $\cdot$ □ $\rightarrow$ (7+7)!
+> - 4. $^{(x+1)}P_y \cdot x!$
+> - 5. 6!
+> - 6. 6! - 5!2!
+> - 7. □ □ □ $^5P_1 \cdot ^{10}P_2$
 </div>
 </div>
 </small>
@@ -513,4 +522,11 @@ a. Arrange 8 science and 7 arts students circularly so no two arts students are 
 </div>
 </small>
 
+<div class="container">
+<div class="col">
 <img src="img/necklace.png">
+</div>
+<div class="col">
+<img src="img/necklace2.png">
+</div>
+</div>

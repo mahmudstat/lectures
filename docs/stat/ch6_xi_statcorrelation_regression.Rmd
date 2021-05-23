@@ -1,0 +1,31 @@
+---
+title: "Correlation And Regression"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    reveal_plugins: ["menu", "chalkboard", "zoom"]
+    self_contained: false
+    reveal_options:
+      slideNumber: true
+      previewLinks: true
+    css: css/styles.css
+    includes:
+      in_header: css/header.html
+---
+
+## Scatter Plot
+
+![Scatter Plot Types](img/scatter_plot.jpg)
+
+## Sequence
+
+Scatter Plot $\rightarrow$ Correlation $\Rightarrow$ Regression
+
+
+## Correlation
+
+Linear relationship between two variables
+
+Corrleation, $r = \frac{\sum (x_i - \bar x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i - \bar x)^2}{n}\frac{\sum(y_i - \bar y)^2}{n}}}$
