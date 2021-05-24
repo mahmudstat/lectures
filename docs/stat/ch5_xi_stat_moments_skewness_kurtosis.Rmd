@@ -74,7 +74,7 @@ $\mu_3 = \mu_3'-3\mu_2'\mu_1'+2\mu_1'^3$
 
 From $\mu_r'(a)$ to $\mu_r'(k)$
 
-Assume, $a^r = \mu_r'(a)$ $b = a - k$ 
+Assume, $a^r = \mu_r'(a)$, $b = a - k$ 
 
 <small>
 <div class="container">
@@ -170,6 +170,8 @@ $\gamma_2\lt0 \space or \space \beta_2\lt3) \rightarrow$ Platykurtik
 
 ## Problems
 
-1. $\bar X = 65, Me = 70, SK_p = -0.5$; Mod = ? CV = ?
+1. $\bar X = 65, Me = 70, SK_P = -0.5$; Mod = ? CV = ?
 2. GM & HM of quartiles of a symmetrical distribution are 8 and 6.4, respectively. Find median.
-
+3. Mean, SK(P), coefficient of skewness and CV of distribution are 50, 0.4, and 40%, respectively. Find SD, mode, & median. 
+4. Variance of a mesokurtik distribution is 4. Find $\mu_4$.
+5. First three moments about 2 are 1, 16, and -40. Find them about 0.

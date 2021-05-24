@@ -1,0 +1,8 @@
+Can HCF be greater?
+
+Jahin answered almost correctly, when values are equal. 
+Mahmud tried but gave incorrect examples.
+Sabbir: HCF can only be greater than LCM while the digits are decimal number.
+Sanbir: Yes. Did not explain
+
+All else: NO

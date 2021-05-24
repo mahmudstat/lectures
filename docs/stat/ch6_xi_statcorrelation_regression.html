@@ -468,7 +468,146 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </section>
 <section id="sequence" class="slide level2">
 <h2>Sequence</h2>
-<p>Scatter Plot <span class="math inline">\(\rightarrow\)</span> Correlation <span class="math inline">\(\Rightarrow\)</span> Regression</p>
+<p>Scatter Plot <span class="math inline">\(\rightarrow\)</span> Correlation <span class="math inline">\(\rightarrow\)</span> Regression</p>
+<table>
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 22%" />
+<col style="width: 41%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Scatter Plot</th>
+<th>Correlation</th>
+<th>Regression</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Preliminary idea about relationship</td>
+<td>Measures linear relationship</td>
+<td>Measures Influence</td>
+</tr>
+<tr class="even">
+<td>Either variable can be independent (usually)</td>
+<td>Does not clarify dependency</td>
+<td>Predicts dependent variable based on independent one.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="correlation" class="slide level2">
+<h2>Correlation</h2>
+<p>Linear relationship between two variables</p>
+<p>Corrleation, <span class="math inline">\(r = \frac{\sum (x_i - \bar x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i - \bar x)^2}{n}\frac{\sum(y_i - \bar y)^2}{n}}}\)</span></p>
+<ul>
+<li class="fragment"><span class="math inline">\(r = \frac{Cov(x,y)}{\sigma_x \sigma_y}\)</span></li>
+</ul>
+<ul>
+<li class="fragment"><span class="math inline">\(-1 \le r \le 1\)</span></li>
+</ul>
+</section>
+<section id="scatter-plot-and-correlation" class="slide level2">
+<h2>Scatter Plot And Correlation</h2>
+<p><img data-src="img/scatter_corr.png" alt="Correlation from Scatter Plot" /></p>
+<p><span class="math inline">\(r^2=R^2 \rightarrow\)</span> Coefficient of determination</p>
+<p><span class="math inline">\(R^2 = 80% \rightarrow\)</span> 80% of total variation in Y (say, brightness of stars) can be explained by X (say, distance).</p>
+</section>
+<section id="features-of-r" class="slide level2">
+<h2>Features of r</h2>
+<ul>
+<li class="fragment">Independent of origin and scale</li>
+<li class="fragment"><span class="math inline">\(-1 \le r \le 1\)</span></li>
+<li class="fragment"><span class="math inline">\(r = \sqrt{b_{yx} \cdot b_{xy}}\)</span> (Concerning GM of regression coeff)</li>
+<li class="fragment"><span class="math inline">\(\frac{b_{yx}+b_{xy}}{2} \ge r\)</span> (About AM)</li>
+<li class="fragment"><span class="math inline">\(r = 0 \rightarrow\)</span> no linear relationship</li>
+</ul>
+</section>
+<section id="rank-correlation" class="slide level2">
+<h2>Rank Correlation</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Competitor</th>
+<th style="text-align: right;">Judge_1</th>
+<th style="text-align: right;">Judge_2</th>
+<th style="text-align: right;">rank_1</th>
+<th style="text-align: right;">rank_2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">10</td>
+</tr>
+</tbody>
+</table>
 </section>
     </div>
   </div>

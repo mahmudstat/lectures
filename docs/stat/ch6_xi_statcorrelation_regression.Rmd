@@ -21,11 +21,55 @@ output:
 
 ## Sequence
 
-Scatter Plot $\rightarrow$ Correlation $\Rightarrow$ Regression
+Scatter Plot $\rightarrow$ Correlation $\rightarrow$ Regression
 
+| Scatter Plot                                  | Correlation                  | Regression                                            |
+|-----------------------------------------------|------------------------------|-------------------------------------------------------|
+| Preliminary idea  about relationship          | Measures linear relationship | Measures Influence                                    |
+| Either variable can be  independent (usually) | Does not clarify dependency  | Predicts dependent variable based on independent one. |
 
 ## Correlation
 
 Linear relationship between two variables
 
 Corrleation, $r = \frac{\sum (x_i - \bar x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i - \bar x)^2}{n}\frac{\sum(y_i - \bar y)^2}{n}}}$
+
+> - $r = \frac{Cov(x,y)}{\sigma_x \sigma_y}$
+
+> - $-1 \le r \le 1$
+
+## Scatter Plot And Correlation
+
+![Correlation from Scatter Plot](img/scatter_corr.png)
+
+$r^2=R^2 \rightarrow$ Coefficient of determination
+
+$R^2 = 80% \rightarrow$ 80% of total variation in Y (say, brightness of stars) can be explained by X (say, distance).
+
+## Features of r
+
+> - Independent of origin and scale
+> - $-1 \le r \le 1$
+> - $r = \sqrt{b_{yx} \cdot b_{xy}}$ (Concerning GM of regression coeff)
+> - $\frac{b_{yx}+b_{xy}}{2} \ge r$ (About AM)
+> - $r = 0 \rightarrow$ no linear relationship
+
+## Rank Correlation
+
+```{r, echo=FALSE}
+set.seed(10)
+rank <- data.frame(Competitor = 1:10,
+                   Judge_1 = sample(10:20, 10))
+rank$Judge_2 <- sample(8:20, 10)
+rank$rank_1 <- rank(-rank$Judge_1)
+rank$rank_2 <- rank(-rank$Judge_2)
+knitr:: kable(
+  head(rank, 10, booktabs = TRUE)
+)
+```
+
+Coefficient, $\rho = 1- \frac{6 \sum d_i^2}{n(n^2-1)}$
+
+
+## Purity of Coefficients
+
