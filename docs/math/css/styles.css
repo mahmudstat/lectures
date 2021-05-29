@@ -3,7 +3,7 @@
 
 
 body {
-  background: linear-gradient(15deg, blue 10%, DodgerBlue 40%);
+  background: linear-gradient(90deg, #b3ffb3 10%, #ccffcc 10%);
     }
 
 body:after {
@@ -25,7 +25,7 @@ content: url(logo2.png);
 }
 
 span {
-color:  white;
+color:  #d11aff;
 }
 
 #thanks {

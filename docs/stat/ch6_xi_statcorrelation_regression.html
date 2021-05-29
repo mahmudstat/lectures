@@ -462,9 +462,14 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <h2 class="author">Abdullah Al Mahmud</h2>
 </section>
 
+<section id="why-this-chapter-is-important" class="slide level2">
+<h2>Why This Chapter is Important</h2>
+<p>We knew the universe is expanding from the knowledge of this chapter!</p>
+<p><img class="plain" src="img/hubble_scatter.PNG" width="400"></p>
+</section>
 <section id="scatter-plot" class="slide level2">
 <h2>Scatter Plot</h2>
-<p><img data-src="img/scatter_plot.jpg" alt="Scatter Plot Types" /></p>
+<p><img class="plain" src="img/scatter_plot.jpg" width="650"></p>
 </section>
 <section id="sequence" class="slide level2">
 <h2>Sequence</h2>
@@ -499,19 +504,25 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section id="correlation" class="slide level2">
 <h2>Correlation</h2>
 <p>Linear relationship between two variables</p>
-<p>Corrleation, <span class="math inline">\(r = \frac{\sum (x_i - \bar x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i - \bar x)^2}{n}\frac{\sum(y_i - \bar y)^2}{n}}}\)</span></p>
+<p>Corrleation, <span class="math inline">\(r = \frac{\sum (x_i - \bar x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i - \bar x)^2}{n}\frac{\sum(y_i - \bar y)^2}{n}}}; -1 \le r \le 1\)</span></p>
 <ul>
 <li class="fragment"><span class="math inline">\(r = \frac{Cov(x,y)}{\sigma_x \sigma_y}\)</span></li>
 </ul>
 <ul>
-<li class="fragment"><span class="math inline">\(-1 \le r \le 1\)</span></li>
+<li class="fragment">Compare with <span class="math display">\[\sigma ^2 = \sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}\]</span></li>
 </ul>
 </section>
 <section id="scatter-plot-and-correlation" class="slide level2">
 <h2>Scatter Plot And Correlation</h2>
-<p><img data-src="img/scatter_corr.png" alt="Correlation from Scatter Plot" /></p>
+<div class="container">
+<div class="col">
+<p><img  class="plain" src="img/scatter_corr.png" width="400"></p>
+</div>
+<div class="col">
 <p><span class="math inline">\(r^2=R^2 \rightarrow\)</span> Coefficient of determination</p>
-<p><span class="math inline">\(R^2 = 80% \rightarrow\)</span> 80% of total variation in Y (say, brightness of stars) can be explained by X (say, distance).</p>
+<p><span class="math inline">\(R^2 = 80\% \rightarrow\)</span> 80% of total variation in Y (say, brightness of stars) can be explained by X (say, distance).</p>
+</div>
+</div>
 </section>
 <section id="features-of-r" class="slide level2">
 <h2>Features of r</h2>
@@ -608,6 +619,18 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </tr>
 </tbody>
 </table>
+<p>Coefficient, <span class="math inline">\(\rho = 1- \frac{6 \sum d_i^2}{n(n^2-1)}\)</span></p>
+</section>
+<section id="purity-of-coefficients" class="slide level2">
+<h2>Purity of Coefficients</h2>
+<ul>
+<li>r</li>
+<li><span class="math inline">\(\rho\)</span></li>
+<li>b or <span class="math inline">\(\beta\)</span></li>
+</ul>
+</section>
+<section id="linear-equation-straight-lines" class="slide level2">
+<h2>Linear Equation/ Straight Lines</h2>
 </section>
     </div>
   </div>

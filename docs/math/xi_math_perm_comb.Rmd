@@ -530,3 +530,74 @@ a. Arrange 8 science and 7 arts students circularly so no two arts students are 
 <img src="img/necklace2.png">
 </div>
 </div>
+
+# Combination
+
+## Concept
+
+A, B, C
+
+In how many ways can we select 2?
+
+> - AB, AC, BC
+> - When making teams $AB \equiv BA$
+
+## Formulae And Notation
+
+<div class="container">
+<div class="col">
+Formulae (Don't Memorize!)
+
+> - $^nC_r = {n! \over r!(n-r)!}$
+> - $^nC_r \times ^nP_r = ^nP_r = ^nP_r \times r!$ (Permutation-combination relationship)
+> - $^{n+1}C_r = ^nC_r + ^nC_{r-1}$
+> - $^nC_r=?$ (from above, expanding twice up to n-2)
+> - $^nC_r = ^nC_{n-r}$
+</div>
+<div class="col">
+Notation
+
+- $^nC_r \equiv$ $n \choose r$
+- Select 5 people from 6 $\rightarrow ^6C_5 =$ $6 \choose 5$
+
+</div>
+</div>
+
+
+
+## Expaniosn of $^nC_r$
+
+\begin{eqnarray} 
+^{n+1}C_r &=& ^nC_r + ^nC_{r-1}      \nonumber \\
+\Rightarrow ^nC_r &=& ^{n-1}C_r + ^{n-1}C_{r-1} \nonumber \\
+\Rightarrow  ^{n+1}C_r &=&  ^{n-1}C_r + ^{n-1}C_{r-1} + ^{n-1}C_{r-1} + ^{n-1}C_{r-2} \nonumber \\
+\Rightarrow  ^{n+1}C_r &=&   ^{n-1}C_r + 2^{n-1}C_{r-1} + ^{n-1}C_{r-2}  \nonumber \\
+\end{eqnarray}
+
+> - Similarly, $^nC_r = ^{n-2}C_r + 2^{n-2}C_{r-1} + ^{n-2}C_{r-2}$
+
+## Theoretical Problems
+
+<div class="container">
+<div class="col">
+1. Prove $^{n+1}C_r = ^nC_r + ^nC_{r-1}$
+2. $^nP_3 + ^nC_3 = 70; n=?$
+3. Arrange 11 players from 15 players.
+
+</div>
+<div class="col">
+> - 2. n = 5
+> - 3. $^{15}C{11} \times 11! = ^{15}P_{11}$
+</div>
+</div>
+
+## Having Some Homogeneous Items
+
+If out of n items, p items are homogeneous, then taking r items ($r \ge p$)
+
+Number of selection options, 
+
+$$N = \sum_{i=0}^p {n-p}C_{r-i}$$
+
+1. Combine THESIS taking 4 letters 
+2. 

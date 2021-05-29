@@ -1001,6 +1001,77 @@ Value of a number depends on digits it consists of</li>
 </div>
 </div>
 </section></section>
+<section><section id="combination" class="title-slide slide level1"><h1>Combination</h1></section><section id="concept" class="slide level2">
+<h2>Concept</h2>
+<p>A, B, C</p>
+<p>In how many ways can we select 2?</p>
+<ul>
+<li class="fragment">AB, AC, BC</li>
+<li class="fragment">When making teams <span class="math inline">\(AB \equiv BA\)</span></li>
+</ul>
+</section><section id="formulae-and-notation" class="slide level2">
+<h2>Formulae And Notation</h2>
+<div class="container">
+<div class="col">
+<p>Formulae (Don’t Memorize!)</p>
+<ul>
+<li class="fragment"><span class="math inline">\(^nC_r = {n! \over r!(n-r)!}\)</span></li>
+<li class="fragment"><span class="math inline">\(^nC_r \times ^nP_r = ^nP_r = ^nP_r \times r!\)</span> (Permutation-combination relationship)</li>
+<li class="fragment"><span class="math inline">\(^{n+1}C_r = ^nC_r + ^nC_{r-1}\)</span></li>
+<li class="fragment"><span class="math inline">\(^nC_r=?\)</span> (from above, expanding twice up to n-2)</li>
+<li class="fragment"><span class="math inline">\(^nC_r = ^nC_{n-r}\)</span></li>
+</ul>
+</div>
+<div class="col">
+<p>Notation</p>
+<ul>
+<li><span class="math inline">\(^nC_r \equiv\)</span> <span class="math inline">\(n \choose r\)</span></li>
+<li>Select 5 people from 6 <span class="math inline">\(\rightarrow ^6C_5 =\)</span> <span class="math inline">\(6 \choose 5\)</span></li>
+</ul>
+</div>
+</div>
+</section><section id="expaniosn-of-nc_r" class="slide level2">
+<h2>Expaniosn of <span class="math inline">\(^nC_r\)</span></h2>
+<p><span class="math display">\[\begin{eqnarray} 
+^{n+1}C_r &amp;=&amp; ^nC_r + ^nC_{r-1}      \nonumber \\
+\Rightarrow ^nC_r &amp;=&amp; ^{n-1}C_r + ^{n-1}C_{r-1} \nonumber \\
+\Rightarrow  ^{n+1}C_r &amp;=&amp;  ^{n-1}C_r + ^{n-1}C_{r-1} + ^{n-1}C_{r-1} + ^{n-1}C_{r-2} \nonumber \\
+\Rightarrow  ^{n+1}C_r &amp;=&amp;   ^{n-1}C_r + 2^{n-1}C_{r-1} + ^{n-1}C_{r-2}  \nonumber \\
+\end{eqnarray}\]</span></p>
+<ul>
+<li class="fragment">Similarly, <span class="math inline">\(^nC_r = ^{n-2}C_r + 2^{n-2}C_{r-1} + ^{n-2}C_{r-2}\)</span></li>
+</ul>
+</section><section id="theoretical-problems" class="slide level2">
+<h2>Theoretical Problems</h2>
+<div class="container">
+<div class="col">
+<ol type="1">
+<li>Prove <span class="math inline">\(^{n+1}C_r = ^nC_r + ^nC_{r-1}\)</span></li>
+<li><span class="math inline">\(^nP_3 + ^nC_3 = 70; n=?\)</span></li>
+<li>Arrange 11 players from 15 players.</li>
+</ol>
+</div>
+<div class="col">
+<ul>
+<li class="fragment"><ol start="2" type="1">
+<li class="fragment">n = 5</li>
+</ol></li>
+<li class="fragment"><ol start="3" type="1">
+<li class="fragment"><span class="math inline">\(^{15}C{11} \times 11! = ^{15}P_{11}\)</span></li>
+</ol></li>
+</ul>
+</div>
+</div>
+</section><section id="having-some-homogeneous-items" class="slide level2">
+<h2>Having Some Homogeneous Items</h2>
+<p>If out of n items, p items are homogeneous, then taking r items (<span class="math inline">\(r \ge p\)</span>)</p>
+<p>Number of selection options,</p>
+<p><span class="math display">\[N = \sum_{i=0}^p {n-p}C_{r-i}\]</span></p>
+<ol type="1">
+<li>Combine THESIS taking 4 letters</li>
+<li></li>
+</ol>
+</section></section>
     </div>
   </div>
 

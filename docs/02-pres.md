@@ -11,10 +11,12 @@ See more [here](https://defkey.com/reveal-js-shortcuts)
 
 ### First Part {-}
 
-- [Chapter 01: Introduction](https://lecture.statmania.info/stat/ch1_xi_stat.html)
-- [Chapter 02: Collection, Presentation, and Organization of Data](https://lecture.statmania.info/stat/ch2_xi_stat.html)
-- [Chapter 03: Measures of Central Tendency](https://lecture.statmania.info/stat/ch3_xi_stat.html)
-- [Chapter 04: Measures of Dispersion](https://lecture.statmania.info/stat/ch4_xi_stat_dispersion.html)
+- Chapter 01: [Introduction](https://lecture.statmania.info/stat/ch1_xi_stat.html)
+- Chapter 02: [Collection, Presentation, and Organization of Data](https://lecture.statmania.info/stat/ch2_xi_stat.html)
+- Chapter 03: [Measures of Central Tendency](https://lecture.statmania.info/stat/ch3_xi_stat.html)
+- Chapter 04: [Measures of Dispersion](https://lecture.statmania.info/stat/ch4_xi_stat_dispersion.html)
+- Chapter 05: [Moments, Skewness, and Kurtosis](https://lecture.statmania.info/stat/ch5_xi_stat_moments_skewness_kurtosis.html)
+- Chapter 06: [Correlation and Regression](https://lecture.statmania.info/stat/ch6_xi_statcorrelation_regression.html)
 
 ### Elementary Statistics {-}
 

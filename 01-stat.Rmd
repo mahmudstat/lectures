@@ -1,6 +1,6 @@
-# Statistics {- #pres}
+# Statistics {- #stat}
 
-## First Paper
+## Basic Statistics 
 
 ### Preliminary Concepts
 
@@ -27,3 +27,5 @@ Central Moments: $\mu_r=\frac{\sum(x_i-\bar x)^r}{n}$
 #### Raw Moments
 
  $\mu_r=\frac{\sum(x_i-a)^r}{n}$; a is arbitrary number
+
+## Probability

@@ -15,9 +15,15 @@ output:
       in_header: css/header.html
 ---
 
+## Why This Chapter is Important
+
+We knew the universe is expanding from the knowledge of this chapter! 
+
+<img class="plain" src="img/hubble_scatter.png" width="400"> 
+
 ## Scatter Plot
 
-![Scatter Plot Types](img/scatter_plot.jpg)
+<img class="plain" src="img/scatter_plot.jpg" width="650"> 
 
 ## Sequence
 
@@ -32,19 +38,24 @@ Scatter Plot $\rightarrow$ Correlation $\rightarrow$ Regression
 
 Linear relationship between two variables
 
-Corrleation, $r = \frac{\sum (x_i - \bar x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i - \bar x)^2}{n}\frac{\sum(y_i - \bar y)^2}{n}}}$
+Corrleation, $r = \frac{\sum (x_i - \bar x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i - \bar x)^2}{n}\frac{\sum(y_i - \bar y)^2}{n}}}; -1 \le r \le 1$
 
 > - $r = \frac{Cov(x,y)}{\sigma_x \sigma_y}$
 
-> - $-1 \le r \le 1$
+> - Compare with $$\sigma ^2 = \sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}$$
 
 ## Scatter Plot And Correlation
 
-![Correlation from Scatter Plot](img/scatter_corr.png)
-
+<div class="container">
+<div class="col">
+<img  class="plain" src="img/scatter_corr.png" width="400">
+</div>
+<div class="col">
 $r^2=R^2 \rightarrow$ Coefficient of determination
 
-$R^2 = 80% \rightarrow$ 80% of total variation in Y (say, brightness of stars) can be explained by X (say, distance).
+$R^2 = 80\% \rightarrow$ 80% of total variation in Y (say, brightness of stars) can be explained by X (say, distance).
+</div>
+</div>
 
 ## Features of r
 
@@ -70,6 +81,16 @@ knitr:: kable(
 
 Coefficient, $\rho = 1- \frac{6 \sum d_i^2}{n(n^2-1)}$
 
+## Linear Equation/ Straight Lines
+
+$Y = c + mx;$ m is slope c is intercept
+
+$m = \frac{dy}{dx} = tan \theta=$ Change in y due to change in x. 
+
+Bread without sour or wheat! 
 
 ## Purity of Coefficients
 
+- $r = \frac{\sum (x_i - \bar x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i - \bar x)^2}{n}\frac{\sum(y_i - \bar y)^2}{n}}}$
+- $\rho = 1- \frac{6 \sum d_i^2}{n(n^2-1)}$
+- b or $\beta$
