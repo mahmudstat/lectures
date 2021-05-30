@@ -17,9 +17,19 @@ output:
 
 ## Why This Chapter is Important
 
+<div class="container">
+<div class="col">
 We knew the universe is expanding from the knowledge of this chapter! 
 
-<img class="plain" src="img/hubble_scatter.png" width="400"> 
+<img class="plain" src="img/hubble_scatter.png" width="480">
+</div>
+<div class="col">
+We learn in this chapter
+
+- How to make bread without wheat/flour
+- 
+</div>
+</div>
 
 ## Scatter Plot
 

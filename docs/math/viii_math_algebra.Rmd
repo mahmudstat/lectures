@@ -559,11 +559,51 @@ LCM = 0
 <div class="container">
 <div class="col">
 1. $\frac{x-y}{xy}, \frac{y-z}{yz}, \frac{z-x}{zx}$
-2. $$
+2. ${a-b} \over {a+2b}$, ${2a+b} \over {a^2-4b^2}$
 </div>
 <div class="col">
 > - 1. $\frac{xz-yz}{xyz}, \frac{xy-xz}{xyz}, \frac{yz-xy}{xyz}$
-> - 2. 
+> - 2. ${(a-b)(a-2b)} \over {a^2-4b^2}$, ${2a+b} \over a^2-4b^2$
 </div>
 </div>
 
+Divide each denominator by LCM and multiply the quotient with each term.
+
+## Add 
+
+<div class="container">
+<div class="col">
+1. $\frac 2 {x^2y-xy^2}, \frac 3 {xy(x^2-y^2)}, \frac 1 {x^2-y^2}$
+2. $\frac 1 {x^2-1}+\frac 1 {x^4-1}+ \frac 1 {x^8-1}$
+</div>
+<div class="col">
+> - 1. $\frac{2x+xy+2y+3}{xy(x-y)(x+y)}$
+> - 2. $\frac{x^6+2x^4+x^2+6}{x^8-1}$
+</div>
+</div>
+
+## Subtract
+
+<div class="container">
+<div class="col">
+1. $\frac x {(x-y)^2}-\frac{x+y}{x^2-y^2}$
+2. $\frac 1 {x-y} - \frac{x^2-xy+y^2}{x^3+y^3}$
+</div>
+<div class="col">
+> - 1. $\frac y {(x-y)^2}$
+> - $\frac{2y}{x^2-y^2}$
+</div>
+</div>
+
+## Simplify 
+
+<div class="container">
+<div class="col">
+1. $\frac 1 {1-a+a^2}-\frac 1 {1+a+a^2}-\frac 1 {1+a^2+a^4}$
+2. $\frac 1 {x-y} - \frac 2 {2x+y} + \frac 1 {x+y} - \frac 2 {2x-y}$
+</div>
+<div class="col">
+> - 1. 0
+> - 2. ${6xy^2} \over {(x^2-y^2)(4x^2-y2)}$
+</div>
+</div>

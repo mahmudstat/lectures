@@ -549,7 +549,7 @@ In how many ways can we select 2?
 Formulae (Don't Memorize!)
 
 > - $^nC_r = {n! \over r!(n-r)!}$
-> - $^nC_r \times ^nP_r = ^nP_r = ^nP_r \times r!$ (Permutation-combination relationship)
+> - $^nC_r \times ^rP_r = ^nP_r = ^nP_r \times r!$ (Permutation-combination relationship)
 > - $^{n+1}C_r = ^nC_r + ^nC_{r-1}$
 > - $^nC_r=?$ (from above, expanding twice up to n-2)
 > - $^nC_r = ^nC_{n-r}$
@@ -582,6 +582,7 @@ Notation
 <div class="col">
 1. Prove $^{n+1}C_r = ^nC_r + ^nC_{r-1}$
 2. $^nP_3 + ^nC_3 = 70; n=?$
+3. Prove $^nC_r = ^nC_{n-r}$
 3. Arrange 11 players from 15 players.
 
 </div>
@@ -597,7 +598,32 @@ If out of n items, p items are homogeneous, then taking r items ($r \ge p$)
 
 Number of selection options, 
 
-$$N = \sum_{i=0}^p {n-p}C_{r-i}$$
+$N=\sum_{i=0}^p$ $^{n-p}C_{r-i}$
 
-1. Combine THESIS taking 4 letters 
-2. 
+Example: Combine THESIS taking 4 letters 
+
+
+<div class="container">
+<div class="col">
+Method 1
+
+> - n = 6, p = 2, r = 4
+</div>
+<div class="col">
+Method 2 
+
+> - Taking two S's + All different letters
+> - $^4C_2 + ^5C_4 = 11$
+</div>
+</div>
+
+## Committee
+
+<div class="container">
+<div class="col">
+1. Form 11-member committe from two groups of 6 & 8 players keeping at least 4 members from 6-members team. How many ways?
+</div>
+<div class="col">
+
+</div>
+</div>

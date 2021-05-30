@@ -1048,6 +1048,7 @@ Value of a number depends on digits it consists of</li>
 <ol type="1">
 <li>Prove <span class="math inline">\(^{n+1}C_r = ^nC_r + ^nC_{r-1}\)</span></li>
 <li><span class="math inline">\(^nP_3 + ^nC_3 = 70; n=?\)</span></li>
+<li>Prove <span class="math inline">\(^nC_r = ^nC_{n-r}\)</span></li>
 <li>Arrange 11 players from 15 players.</li>
 </ol>
 </div>
@@ -1066,11 +1067,35 @@ Value of a number depends on digits it consists of</li>
 <h2>Having Some Homogeneous Items</h2>
 <p>If out of n items, p items are homogeneous, then taking r items (<span class="math inline">\(r \ge p\)</span>)</p>
 <p>Number of selection options,</p>
-<p><span class="math display">\[N = \sum_{i=0}^p {n-p}C_{r-i}\]</span></p>
+<p><span class="math inline">\(N=\sum_{i=0}^p\)</span> <span class="math inline">\(^{n-p}C_{r-i}\)</span></p>
+<p>Example: Combine THESIS taking 4 letters</p>
+<div class="container">
+<div class="col">
+<p>Method 1</p>
+<ul>
+<li class="fragment">n = 6, p = 2, r = 4</li>
+</ul>
+</div>
+<div class="col">
+<p>Method 2</p>
+<ul>
+<li class="fragment">Taking two S’s + All different letters</li>
+<li class="fragment"><span class="math inline">\(^4C_2 + ^5C_4 = 11\)</span></li>
+</ul>
+</div>
+</div>
+</section><section id="committee" class="slide level2">
+<h2>Committee</h2>
+<div class="container">
+<div class="col">
 <ol type="1">
-<li>Combine THESIS taking 4 letters</li>
-<li></li>
+<li>Form 11-member committe from two groups of 6 &amp; 8 players keeping at least 4 members from 6-members team. How many ways?</li>
 </ol>
+</div>
+<div class="col">
+
+</div>
+</div>
 </section></section>
     </div>
   </div>
