@@ -7,7 +7,7 @@
 
 See more [here](https://defkey.com/reveal-js-shortcuts)
 
-## Statistics {- #stat}
+## Statistics {- #stat_pres}
 
 ### First Part {-}
 

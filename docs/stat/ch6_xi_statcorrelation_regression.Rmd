@@ -67,6 +67,21 @@ $R^2 = 80\% \rightarrow$ 80% of total variation in Y (say, brightness of stars) 
 </div>
 </div>
 
+## r: Estimating Mechanism
+
+Make a table with columns for
+
+- $(x_i-\bar x)$ 
+- $(y_i-\bar y)$
+- $(x_i-\bar x)(y_i-\bar y)$
+- $(x_i-\bar x)^2$
+- $(y_i-\bar y)^2$
+
+Then sum them and put in the formula
+
+## Example of r
+
+
 ## Features of r
 
 > - Independent of origin and scale
