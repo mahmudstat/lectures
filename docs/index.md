@@ -19,5 +19,8 @@ description: "Lectures on Statistics And Mathematics"
 
 # About {-}
 
-This websites contains lectures on statistics and mathematics. All the lectures are made using R programming language inside Rstudio IDE. The presentations were made using the revealjs package. This page was generated using the bookdown package. 
+This websites contains lectures on statistics and mathematics. These are chiefly meant for being used as reference materials, for finding the techniques and/or formulae easily as you need them. Over the time, however, the topics would be elaborated. 
 
+All the lectures are made using R programming language inside Rstudio IDE. The presentations were made using the revealjs package. This site was generated using the bookdown package. 
+
+You can learn more about me [here](www.thinkermahmud.com) and about my writing on statistics, data science, and linux [here](www.statmania.info).

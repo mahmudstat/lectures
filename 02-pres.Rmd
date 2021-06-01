@@ -61,4 +61,4 @@ I am very passionate about teaching, writing, programming, and data analysis, an
 
 **Learning** is by far my best hobby. In my free time, I love to roam around, connect with people, and watch sky.
 
-**Learn more about me at my website (<https://mahmud.statmania.info>)**
+**Learn more about me at my website (<https://www.thinkermahmud.com>)**
