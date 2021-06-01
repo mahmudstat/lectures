@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Probability | Statistics and Mathematics Lectures</title>
+  <meta name="description" content="Lectures on Statistics And Mathematics" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Probability | Statistics and Mathematics Lectures" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Lectures on Statistics And Mathematics" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Probability | Statistics and Mathematics Lectures" />
+  
+  <meta name="twitter:description" content="Lectures on Statistics And Mathematics" />
+  
+
+<meta name="author" content="Abdullah Al Mahmud" />
+
+
+<meta name="date" content="2021-06-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="correlation-regression.html"/>
+<link rel="next" href="pres.html"/>
+<script src="assets/jquery-2.2.3/jquery.min.js"></script>
+<link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="assets/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Statistics and Mathematics Lectures</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a></li>
+<li class="chapter" data-level="1" data-path="stat.html"><a href="stat.html"><i class="fa fa-check"></i><b>1</b> Statistics</a><ul>
+<li class="chapter" data-level="1.1" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html"><i class="fa fa-check"></i><b>1.1</b> Preliminary Concepts</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#statistics-what-how"><i class="fa fa-check"></i><b>1.1.1</b> Statistics: What &amp; How</a></li>
+<li class="chapter" data-level="1.1.2" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#topics"><i class="fa fa-check"></i><b>1.1.2</b> Topics</a></li>
+<li class="chapter" data-level="1.1.3" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#what-is-statistics"><i class="fa fa-check"></i><b>1.1.3</b> What is statistics?</a></li>
+<li class="chapter" data-level="1.1.4" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#how-statistics-works"><i class="fa fa-check"></i><b>1.1.4</b> How Statistics works?</a></li>
+<li class="chapter" data-level="1.1.5" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#probability-and-statistics"><i class="fa fa-check"></i><b>1.1.5</b> Probability and Statistics</a></li>
+<li class="chapter" data-level="1.1.6" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#application-of-statistics"><i class="fa fa-check"></i><b>1.1.6</b> Application of Statistics</a></li>
+<li class="chapter" data-level="1.1.7" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#examples"><i class="fa fa-check"></i><b>1.1.7</b> Examples</a></li>
+<li class="chapter" data-level="1.1.8" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#chapter-overview"><i class="fa fa-check"></i><b>1.1.8</b> Chapter Overview</a></li>
+<li class="chapter" data-level="1.1.9" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#definition"><i class="fa fa-check"></i><b>1.1.9</b> Definition</a></li>
+<li class="chapter" data-level="1.1.10" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#mechanism"><i class="fa fa-check"></i><b>1.1.10</b> Mechanism</a></li>
+<li class="chapter" data-level="1.1.11" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#population-and-sample"><i class="fa fa-check"></i><b>1.1.11</b> Population and Sample</a></li>
+<li class="chapter" data-level="1.1.12" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#variable-and-constant"><i class="fa fa-check"></i><b>1.1.12</b> Variable and Constant</a></li>
+<li class="chapter" data-level="1.1.13" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#bluetext"><i class="fa fa-check"></i><b>1.1.13</b> Types of Variable</a></li>
+<li class="chapter" data-level="1.1.14" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#univariate-multivariate"><i class="fa fa-check"></i><b>1.1.14</b> Univariate, Multivariate</a></li>
+<li class="chapter" data-level="1.1.15" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#scale-of-measurement"><i class="fa fa-check"></i><b>1.1.15</b> Scale of Measurement</a></li>
+<li class="chapter" data-level="1.1.16" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#examples-1"><i class="fa fa-check"></i><b>1.1.16</b> Examples</a></li>
+<li class="chapter" data-level="1.1.17" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#another-example"><i class="fa fa-check"></i><b>1.1.17</b> Another Example</a></li>
+<li class="chapter" data-level="1.1.18" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#operation-with-scales"><i class="fa fa-check"></i><b>1.1.18</b> Operation with scales</a></li>
+<li class="chapter" data-level="1.1.19" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#shifting-origin-and-scale"><i class="fa fa-check"></i><b>1.1.19</b> Shifting origin and scale</a></li>
+<li class="chapter" data-level="1.1.20" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#use-of-summation-sign"><i class="fa fa-check"></i><b>1.1.20</b> Use of Summation sign</a></li>
+<li class="chapter" data-level="1.1.21" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-01"><i class="fa fa-check"></i><b>1.1.21</b> Theorem 01</a></li>
+<li class="chapter" data-level="1.1.22" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-02"><i class="fa fa-check"></i><b>1.1.22</b> Theorem 02</a></li>
+<li class="chapter" data-level="1.1.23" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#quick-tips"><i class="fa fa-check"></i><b>1.1.23</b> Quick tips</a></li>
+<li class="chapter" data-level="1.1.24" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-03"><i class="fa fa-check"></i><b>1.1.24</b> Theorem 03</a></li>
+<li class="chapter" data-level="1.1.25" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-04"><i class="fa fa-check"></i><b>1.1.25</b> Theorem 04</a></li>
+<li class="chapter" data-level="1.1.26" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-05"><i class="fa fa-check"></i><b>1.1.26</b> Theorem 05</a></li>
+<li class="chapter" data-level="1.1.27" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-06"><i class="fa fa-check"></i><b>1.1.27</b> Theorem 06</a></li>
+<li class="chapter" data-level="1.1.28" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#quick-tip"><i class="fa fa-check"></i><b>1.1.28</b> Quick Tip</a></li>
+<li class="chapter" data-level="1.1.29" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-07"><i class="fa fa-check"></i><b>1.1.29</b> Theorem 07</a></li>
+<li class="chapter" data-level="1.1.30" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-08"><i class="fa fa-check"></i><b>1.1.30</b> Theorem 08</a></li>
+<li class="chapter" data-level="1.1.31" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-09"><i class="fa fa-check"></i><b>1.1.31</b> Theorem 09</a></li>
+<li class="chapter" data-level="1.1.32" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#example"><i class="fa fa-check"></i><b>1.1.32</b> Example</a></li>
+<li class="chapter" data-level="1.1.33" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#textbook-exercise--01"><i class="fa fa-check"></i><b>1.1.33</b> Textbook Exercise -01</a></li>
+<li class="chapter" data-level="1.1.34" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#exercise-01"><i class="fa fa-check"></i><b>1.1.34</b> Exercise-01</a></li>
+<li class="chapter" data-level="1.1.35" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#exercise--01"><i class="fa fa-check"></i><b>1.1.35</b> Exercise -01</a></li>
+<li class="chapter" data-level="1.1.36" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#exercise--01-1"><i class="fa fa-check"></i><b>1.1.36</b> Exercise -01</a></li>
+<li class="chapter" data-level="1.1.37" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#creative-question"><i class="fa fa-check"></i><b>1.1.37</b> Creative Question</a></li>
+<li class="chapter" data-level="1.1.38" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#creative-question--07"><i class="fa fa-check"></i><b>1.1.38</b> Creative Question -07</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html"><i class="fa fa-check"></i><b>1.2</b> Collection, Presentation, and Organization of Data</a></li>
+<li class="chapter" data-level="1.3" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html"><i class="fa fa-check"></i><b>1.3</b> Measures of Central Tendency</a></li>
+<li class="chapter" data-level="1.4" data-path="measures-of-dispersion.html"><a href="measures-of-dispersion.html"><i class="fa fa-check"></i><b>1.4</b> Measures of Dispersion</a></li>
+<li class="chapter" data-level="1.5" data-path="moments-skewness-and-kurtosis.html"><a href="moments-skewness-and-kurtosis.html"><i class="fa fa-check"></i><b>1.5</b> Moments, Skewness, and Kurtosis</a><ul>
+<li class="chapter" data-level="1.5.1" data-path="moments-skewness-and-kurtosis.html"><a href="moments-skewness-and-kurtosis.html#central-moments"><i class="fa fa-check"></i><b>1.5.1</b> Central Moments</a></li>
+<li class="chapter" data-level="1.5.2" data-path="moments-skewness-and-kurtosis.html"><a href="moments-skewness-and-kurtosis.html#raw-moments"><i class="fa fa-check"></i><b>1.5.2</b> Raw Moments</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="correlation-regression.html"><a href="correlation-regression.html"><i class="fa fa-check"></i><b>1.6</b> Correlation &amp; Regression</a><ul>
+<li class="chapter" data-level="1.6.1" data-path="correlation-regression.html"><a href="correlation-regression.html#why-this-chapter-is-important"><i class="fa fa-check"></i><b>1.6.1</b> Why This Chapter is Important</a></li>
+<li class="chapter" data-level="1.6.2" data-path="correlation-regression.html"><a href="correlation-regression.html#scatter-plot"><i class="fa fa-check"></i><b>1.6.2</b> Scatter Plot</a></li>
+<li class="chapter" data-level="1.6.3" data-path="correlation-regression.html"><a href="correlation-regression.html#sequence"><i class="fa fa-check"></i><b>1.6.3</b> Sequence</a></li>
+<li class="chapter" data-level="1.6.4" data-path="correlation-regression.html"><a href="correlation-regression.html#correlation"><i class="fa fa-check"></i><b>1.6.4</b> Correlation</a></li>
+<li class="chapter" data-level="1.6.5" data-path="correlation-regression.html"><a href="correlation-regression.html#scatter-plot-and-correlation"><i class="fa fa-check"></i><b>1.6.5</b> Scatter Plot And Correlation</a></li>
+<li class="chapter" data-level="1.6.6" data-path="correlation-regression.html"><a href="correlation-regression.html#r-estimating-mechanism"><i class="fa fa-check"></i><b>1.6.6</b> r: Estimating Mechanism</a></li>
+<li class="chapter" data-level="1.6.7" data-path="correlation-regression.html"><a href="correlation-regression.html#example-of-r"><i class="fa fa-check"></i><b>1.6.7</b> Example of r</a></li>
+<li class="chapter" data-level="1.6.8" data-path="correlation-regression.html"><a href="correlation-regression.html#features-of-r"><i class="fa fa-check"></i><b>1.6.8</b> Features of r</a></li>
+<li class="chapter" data-level="1.6.9" data-path="correlation-regression.html"><a href="correlation-regression.html#rank-correlation"><i class="fa fa-check"></i><b>1.6.9</b> Rank Correlation</a></li>
+<li class="chapter" data-level="1.6.10" data-path="correlation-regression.html"><a href="correlation-regression.html#linear-equation-straight-lines"><i class="fa fa-check"></i><b>1.6.10</b> Linear Equation/ Straight Lines</a></li>
+<li class="chapter" data-level="1.6.11" data-path="correlation-regression.html"><a href="correlation-regression.html#purity-of-coefficients"><i class="fa fa-check"></i><b>1.6.11</b> Purity of Coefficients</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="prob.html"><a href="prob.html"><i class="fa fa-check"></i><b>2</b> Probability</a></li>
+<li class="chapter" data-level="" data-path="pres.html"><a href="pres.html"><i class="fa fa-check"></i>Presentations</a><ul>
+<li class="chapter" data-level="" data-path="how.html"><a href="how.html"><i class="fa fa-check"></i>How to Use</a></li>
+<li class="chapter" data-level="" data-path="stat-pres.html"><a href="stat-pres.html"><i class="fa fa-check"></i>Statistics</a><ul>
+<li class="chapter" data-level="" data-path="stat-pres.html"><a href="stat-pres.html#first-part"><i class="fa fa-check"></i>First Part</a></li>
+<li class="chapter" data-level="" data-path="stat-pres.html"><a href="stat-pres.html#elementary-statistics"><i class="fa fa-check"></i>Elementary Statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="math.html"><a href="math.html"><i class="fa fa-check"></i>Mathematics</a><ul>
+<li class="chapter" data-level="" data-path="math.html"><a href="math.html#higher-secondary"><i class="fa fa-check"></i>Higher Secondary</a></li>
+<li class="chapter" data-level="" data-path="math.html"><a href="math.html#class-ix-x"><i class="fa fa-check"></i>Class IX-X</a></li>
+<li class="chapter" data-level="" data-path="math.html"><a href="math.html#class-eight"><i class="fa fa-check"></i>Class Eight</a></li>
+<li class="chapter" data-level="" data-path="math.html"><a href="math.html#class-seven"><i class="fa fa-check"></i>Class Seven</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-me.html"><a href="about-me.html"><i class="fa fa-check"></i>About me</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Statistics and Mathematics Lectures</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="prob" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Probability</h1>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="correlation-regression.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="pres.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="assets/gitbook-2.6.7/js/app.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
+<script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="assets/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/mahmudstat/lectures/edit/master/01-stat.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["lecture.pdf", "lecture.epub"],
+"toc": {
+"collapse": "subsection"
+},
+"toolbar": {
+"position": "static"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

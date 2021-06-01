@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1.1 Preliminary Concepts | Statistics and Mathematics Lectures</title>
+  <meta name="description" content="Lectures on Statistics And Mathematics" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1.1 Preliminary Concepts | Statistics and Mathematics Lectures" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Lectures on Statistics And Mathematics" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1.1 Preliminary Concepts | Statistics and Mathematics Lectures" />
+  
+  <meta name="twitter:description" content="Lectures on Statistics And Mathematics" />
+  
+
+<meta name="author" content="Abdullah Al Mahmud" />
+
+
+<meta name="date" content="2021-06-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="stat.html"/>
+<link rel="next" href="collection-presentation-and-organization-of-data.html"/>
+<script src="assets/jquery-2.2.3/jquery.min.js"></script>
+<link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="assets/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Statistics and Mathematics Lectures</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a></li>
+<li class="chapter" data-level="1" data-path="stat.html"><a href="stat.html"><i class="fa fa-check"></i><b>1</b> Statistics</a><ul>
+<li class="chapter" data-level="1.1" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html"><i class="fa fa-check"></i><b>1.1</b> Preliminary Concepts</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#statistics-what-how"><i class="fa fa-check"></i><b>1.1.1</b> Statistics: What &amp; How</a></li>
+<li class="chapter" data-level="1.1.2" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#topics"><i class="fa fa-check"></i><b>1.1.2</b> Topics</a></li>
+<li class="chapter" data-level="1.1.3" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#what-is-statistics"><i class="fa fa-check"></i><b>1.1.3</b> What is statistics?</a></li>
+<li class="chapter" data-level="1.1.4" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#how-statistics-works"><i class="fa fa-check"></i><b>1.1.4</b> How Statistics works?</a></li>
+<li class="chapter" data-level="1.1.5" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#probability-and-statistics"><i class="fa fa-check"></i><b>1.1.5</b> Probability and Statistics</a></li>
+<li class="chapter" data-level="1.1.6" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#application-of-statistics"><i class="fa fa-check"></i><b>1.1.6</b> Application of Statistics</a></li>
+<li class="chapter" data-level="1.1.7" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#examples"><i class="fa fa-check"></i><b>1.1.7</b> Examples</a></li>
+<li class="chapter" data-level="1.1.8" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#chapter-overview"><i class="fa fa-check"></i><b>1.1.8</b> Chapter Overview</a></li>
+<li class="chapter" data-level="1.1.9" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#definition"><i class="fa fa-check"></i><b>1.1.9</b> Definition</a></li>
+<li class="chapter" data-level="1.1.10" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#mechanism"><i class="fa fa-check"></i><b>1.1.10</b> Mechanism</a></li>
+<li class="chapter" data-level="1.1.11" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#population-and-sample"><i class="fa fa-check"></i><b>1.1.11</b> Population and Sample</a></li>
+<li class="chapter" data-level="1.1.12" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#variable-and-constant"><i class="fa fa-check"></i><b>1.1.12</b> Variable and Constant</a></li>
+<li class="chapter" data-level="1.1.13" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#bluetext"><i class="fa fa-check"></i><b>1.1.13</b> Types of Variable</a></li>
+<li class="chapter" data-level="1.1.14" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#univariate-multivariate"><i class="fa fa-check"></i><b>1.1.14</b> Univariate, Multivariate</a></li>
+<li class="chapter" data-level="1.1.15" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#scale-of-measurement"><i class="fa fa-check"></i><b>1.1.15</b> Scale of Measurement</a></li>
+<li class="chapter" data-level="1.1.16" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#examples-1"><i class="fa fa-check"></i><b>1.1.16</b> Examples</a></li>
+<li class="chapter" data-level="1.1.17" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#another-example"><i class="fa fa-check"></i><b>1.1.17</b> Another Example</a></li>
+<li class="chapter" data-level="1.1.18" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#operation-with-scales"><i class="fa fa-check"></i><b>1.1.18</b> Operation with scales</a></li>
+<li class="chapter" data-level="1.1.19" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#shifting-origin-and-scale"><i class="fa fa-check"></i><b>1.1.19</b> Shifting origin and scale</a></li>
+<li class="chapter" data-level="1.1.20" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#use-of-summation-sign"><i class="fa fa-check"></i><b>1.1.20</b> Use of Summation sign</a></li>
+<li class="chapter" data-level="1.1.21" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-01"><i class="fa fa-check"></i><b>1.1.21</b> Theorem 01</a></li>
+<li class="chapter" data-level="1.1.22" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-02"><i class="fa fa-check"></i><b>1.1.22</b> Theorem 02</a></li>
+<li class="chapter" data-level="1.1.23" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#quick-tips"><i class="fa fa-check"></i><b>1.1.23</b> Quick tips</a></li>
+<li class="chapter" data-level="1.1.24" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-03"><i class="fa fa-check"></i><b>1.1.24</b> Theorem 03</a></li>
+<li class="chapter" data-level="1.1.25" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-04"><i class="fa fa-check"></i><b>1.1.25</b> Theorem 04</a></li>
+<li class="chapter" data-level="1.1.26" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-05"><i class="fa fa-check"></i><b>1.1.26</b> Theorem 05</a></li>
+<li class="chapter" data-level="1.1.27" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-06"><i class="fa fa-check"></i><b>1.1.27</b> Theorem 06</a></li>
+<li class="chapter" data-level="1.1.28" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#quick-tip"><i class="fa fa-check"></i><b>1.1.28</b> Quick Tip</a></li>
+<li class="chapter" data-level="1.1.29" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-07"><i class="fa fa-check"></i><b>1.1.29</b> Theorem 07</a></li>
+<li class="chapter" data-level="1.1.30" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-08"><i class="fa fa-check"></i><b>1.1.30</b> Theorem 08</a></li>
+<li class="chapter" data-level="1.1.31" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-09"><i class="fa fa-check"></i><b>1.1.31</b> Theorem 09</a></li>
+<li class="chapter" data-level="1.1.32" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#example"><i class="fa fa-check"></i><b>1.1.32</b> Example</a></li>
+<li class="chapter" data-level="1.1.33" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#textbook-exercise--01"><i class="fa fa-check"></i><b>1.1.33</b> Textbook Exercise -01</a></li>
+<li class="chapter" data-level="1.1.34" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#exercise-01"><i class="fa fa-check"></i><b>1.1.34</b> Exercise-01</a></li>
+<li class="chapter" data-level="1.1.35" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#exercise--01"><i class="fa fa-check"></i><b>1.1.35</b> Exercise -01</a></li>
+<li class="chapter" data-level="1.1.36" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#exercise--01-1"><i class="fa fa-check"></i><b>1.1.36</b> Exercise -01</a></li>
+<li class="chapter" data-level="1.1.37" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#creative-question"><i class="fa fa-check"></i><b>1.1.37</b> Creative Question</a></li>
+<li class="chapter" data-level="1.1.38" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#creative-question--07"><i class="fa fa-check"></i><b>1.1.38</b> Creative Question -07</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html"><i class="fa fa-check"></i><b>1.2</b> Collection, Presentation, and Organization of Data</a></li>
+<li class="chapter" data-level="1.3" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html"><i class="fa fa-check"></i><b>1.3</b> Measures of Central Tendency</a></li>
+<li class="chapter" data-level="1.4" data-path="measures-of-dispersion.html"><a href="measures-of-dispersion.html"><i class="fa fa-check"></i><b>1.4</b> Measures of Dispersion</a></li>
+<li class="chapter" data-level="1.5" data-path="moments-skewness-and-kurtosis.html"><a href="moments-skewness-and-kurtosis.html"><i class="fa fa-check"></i><b>1.5</b> Moments, Skewness, and Kurtosis</a><ul>
+<li class="chapter" data-level="1.5.1" data-path="moments-skewness-and-kurtosis.html"><a href="moments-skewness-and-kurtosis.html#central-moments"><i class="fa fa-check"></i><b>1.5.1</b> Central Moments</a></li>
+<li class="chapter" data-level="1.5.2" data-path="moments-skewness-and-kurtosis.html"><a href="moments-skewness-and-kurtosis.html#raw-moments"><i class="fa fa-check"></i><b>1.5.2</b> Raw Moments</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="correlation-regression.html"><a href="correlation-regression.html"><i class="fa fa-check"></i><b>1.6</b> Correlation &amp; Regression</a><ul>
+<li class="chapter" data-level="1.6.1" data-path="correlation-regression.html"><a href="correlation-regression.html#why-this-chapter-is-important"><i class="fa fa-check"></i><b>1.6.1</b> Why This Chapter is Important</a></li>
+<li class="chapter" data-level="1.6.2" data-path="correlation-regression.html"><a href="correlation-regression.html#scatter-plot"><i class="fa fa-check"></i><b>1.6.2</b> Scatter Plot</a></li>
+<li class="chapter" data-level="1.6.3" data-path="correlation-regression.html"><a href="correlation-regression.html#sequence"><i class="fa fa-check"></i><b>1.6.3</b> Sequence</a></li>
+<li class="chapter" data-level="1.6.4" data-path="correlation-regression.html"><a href="correlation-regression.html#correlation"><i class="fa fa-check"></i><b>1.6.4</b> Correlation</a></li>
+<li class="chapter" data-level="1.6.5" data-path="correlation-regression.html"><a href="correlation-regression.html#scatter-plot-and-correlation"><i class="fa fa-check"></i><b>1.6.5</b> Scatter Plot And Correlation</a></li>
+<li class="chapter" data-level="1.6.6" data-path="correlation-regression.html"><a href="correlation-regression.html#r-estimating-mechanism"><i class="fa fa-check"></i><b>1.6.6</b> r: Estimating Mechanism</a></li>
+<li class="chapter" data-level="1.6.7" data-path="correlation-regression.html"><a href="correlation-regression.html#example-of-r"><i class="fa fa-check"></i><b>1.6.7</b> Example of r</a></li>
+<li class="chapter" data-level="1.6.8" data-path="correlation-regression.html"><a href="correlation-regression.html#features-of-r"><i class="fa fa-check"></i><b>1.6.8</b> Features of r</a></li>
+<li class="chapter" data-level="1.6.9" data-path="correlation-regression.html"><a href="correlation-regression.html#rank-correlation"><i class="fa fa-check"></i><b>1.6.9</b> Rank Correlation</a></li>
+<li class="chapter" data-level="1.6.10" data-path="correlation-regression.html"><a href="correlation-regression.html#linear-equation-straight-lines"><i class="fa fa-check"></i><b>1.6.10</b> Linear Equation/ Straight Lines</a></li>
+<li class="chapter" data-level="1.6.11" data-path="correlation-regression.html"><a href="correlation-regression.html#purity-of-coefficients"><i class="fa fa-check"></i><b>1.6.11</b> Purity of Coefficients</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="prob.html"><a href="prob.html"><i class="fa fa-check"></i><b>2</b> Probability</a></li>
+<li class="chapter" data-level="" data-path="pres.html"><a href="pres.html"><i class="fa fa-check"></i>Presentations</a><ul>
+<li class="chapter" data-level="" data-path="how.html"><a href="how.html"><i class="fa fa-check"></i>How to Use</a></li>
+<li class="chapter" data-level="" data-path="stat-pres.html"><a href="stat-pres.html"><i class="fa fa-check"></i>Statistics</a><ul>
+<li class="chapter" data-level="" data-path="stat-pres.html"><a href="stat-pres.html#first-part"><i class="fa fa-check"></i>First Part</a></li>
+<li class="chapter" data-level="" data-path="stat-pres.html"><a href="stat-pres.html#elementary-statistics"><i class="fa fa-check"></i>Elementary Statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="math.html"><a href="math.html"><i class="fa fa-check"></i>Mathematics</a><ul>
+<li class="chapter" data-level="" data-path="math.html"><a href="math.html#higher-secondary"><i class="fa fa-check"></i>Higher Secondary</a></li>
+<li class="chapter" data-level="" data-path="math.html"><a href="math.html#class-ix-x"><i class="fa fa-check"></i>Class IX-X</a></li>
+<li class="chapter" data-level="" data-path="math.html"><a href="math.html#class-eight"><i class="fa fa-check"></i>Class Eight</a></li>
+<li class="chapter" data-level="" data-path="math.html"><a href="math.html#class-seven"><i class="fa fa-check"></i>Class Seven</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-me.html"><a href="about-me.html"><i class="fa fa-check"></i>About me</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Statistics and Mathematics Lectures</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="preliminary-concepts" class="section level2">
+<h2><span class="header-section-number">1.1</span> Preliminary Concepts</h2>
+<div id="statistics-what-how" class="section level3">
+<h3><span class="header-section-number">1.1.1</span> Statistics: What &amp; How</h3>
+<p><img src="img/stat.jpg"/></p>
+</div>
+<div id="topics" class="section level3">
+<h3><span class="header-section-number">1.1.2</span> Topics</h3>
+<ul>
+<li>What is statistics?</li>
+<li>How Statistics works?</li>
+<li>Probability and Statistics</li>
+<li>Application of Statistics</li>
+<li>Example Problem</li>
+</ul>
+</div>
+<div id="what-is-statistics" class="section level3">
+<h3><span class="header-section-number">1.1.3</span> What is statistics?</h3>
+<p>Three Meanings</p>
+<ul>
+<li>Plural of statistic</li>
+<li>Table of data</li>
+<li>Methodology</li>
+</ul>
+</div>
+<div id="how-statistics-works" class="section level3">
+<h3><span class="header-section-number">1.1.4</span> How Statistics works?</h3>
+<p>Takes a sample from a population.</p>
+<p><img src="img/Simple_random_sampling.png" alt="drawing" width="450"/></p>
+<p>There are many sampling techniques.</p>
+</div>
+<div id="probability-and-statistics" class="section level3">
+<h3><span class="header-section-number">1.1.5</span> Probability and Statistics</h3>
+</div>
+<div id="application-of-statistics" class="section level3">
+<h3><span class="header-section-number">1.1.6</span> Application of Statistics</h3>
+<p><img src = "img/2250-02.jpg" width="650"/></p>
+</div>
+<div id="examples" class="section level3 la">
+<h3><span class="header-section-number">1.1.7</span> Examples</h3>
+<ul>
+<li><p>Identification of unwanted spam messages in e-mail</p></li>
+<li><p>Segmentation of customer behavior for targeted advertising</p></li>
+<li><p>Forecasts of weather behavior and long-term climate changes</p></li>
+<li><p>Prediction of popular election outcomes</p></li>
+<li><p>Development of algorithms for auto-piloting drones and self-driving cars</p></li>
+<li><p>Optimization of energy use in homes and office buildings</p></li>
+<li><p>Projection of areas where criminal activity is most likely</p></li>
+<li><p>Discovery of genetic sequences linked to diseases</p></li>
+</ul>
+</div>
+<div id="chapter-overview" class="section level3">
+<h3><span class="header-section-number">1.1.8</span> Chapter Overview</h3>
+<ul>
+<li>Definition</li>
+<li>Population and sample</li>
+<li>Variable and its types</li>
+<li>Scale of measurement</li>
+<li>Use of summation sign</li>
+<li>Main Discussion</li>
+</ul>
+</div>
+<div id="definition" class="section level3">
+<h3><span class="header-section-number">1.1.9</span> Definition</h3>
+<p><strong>Coxton and Crowden</strong></p>
+<p><em>Statistics may be defined as the science of collection, presentation, analysis and interpretation of numerical data.</em></p>
+</div>
+<div id="mechanism" class="section level3">
+<h3><span class="header-section-number">1.1.10</span> Mechanism</h3>
+<ul>
+<li>Data Collection</li>
+<li>Organization</li>
+<li>Analysis</li>
+<li>Interpretation</li>
+<li>Presentation</li>
+</ul>
+</div>
+<div id="population-and-sample" class="section level3">
+<h3><span class="header-section-number">1.1.11</span> Population and Sample</h3>
+<p><strong>Population: A set of similar items or events which is of interest</strong>
+<strong>Sample: Any subset of population</strong></p>
+<p><img src="img/Simple_random_sampling.png" alt="drawing" width="400"/></p>
+<ul>
+<li>Finite</li>
+<li>Infinite</li>
+</ul>
+</div>
+<div id="variable-and-constant" class="section level3">
+<h3><span class="header-section-number">1.1.12</span> Variable and Constant</h3>
+<ul>
+<li>Variable</li>
+<li>Random Variable</li>
+<li>Constant</li>
+</ul>
+<p><strong>Examples</strong></p>
+<ul>
+<li>Income of a regular employee</li>
+<li>Income of a freelancer</li>
+<li>Any unchanging number, e.g, <span class="math inline">\(\pi\)</span><br />
+</li>
+<li>Result of a die throw</li>
+<li>Father’s name</li>
+<li>Mark of a subject</li>
+<li>GPA of a student</li>
+</ul>
+</div>
+<div id="bluetext" class="section level3">
+<h3><span class="header-section-number">1.1.13</span> Types of Variable</h3>
+<blockquote>
+<ul>
+<li>Qualitative</li>
+<li>Quantitative</li>
+<li>Discrete: Limited and pre-specified</li>
+<li>Continuous: Can take on any values between any two given number</li>
+</ul>
+</blockquote>
+</div>
+<div id="univariate-multivariate" class="section level3">
+<h3><span class="header-section-number">1.1.14</span> Univariate, Multivariate</h3>
+</div>
+<div id="scale-of-measurement" class="section level3">
+<h3><span class="header-section-number">1.1.15</span> Scale of Measurement</h3>
+<p>Describes nature of information within the values.</p>
+<ul>
+<li>Nominal: Name of Insignificant number, e.g., color, Street no.,</li>
+<li>Ordinal: Order matters, e.g., rating</li>
+<li>Interval: Zero may not be zero, like temperature</li>
+<li>Ratio: Zero is 0; most variables fall in this category</li>
+</ul>
+</div>
+<div id="examples-1" class="section level3">
+<h3><span class="header-section-number">1.1.16</span> Examples</h3>
+<ul>
+<li>Gender</li>
+<li>Religion</li>
+<li>Temperature</li>
+<li>Income group (Lower class, Low, Middle, High)</li>
+<li>Income</li>
+<li>Distance of stars</li>
+<li>Radius of screws</li>
+<li>Diameter of trees</li>
+<li>Room no.</li>
+</ul>
+</div>
+<div id="another-example" class="section level3">
+<h3><span class="header-section-number">1.1.17</span> Another Example</h3>
+<p>Match as per suitable scale</p>
+<table>
+<thead>
+<tr class="header">
+<th>Movie Rating</th>
+<th align="right">Scale</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Poor, bad, good, excellent</td>
+<td align="right">ratio</td>
+</tr>
+<tr class="even">
+<td><strong>In a scale of -10 to 10:</strong> -10, -2, 0, 5, 10</td>
+<td align="right">interval</td>
+</tr>
+<tr class="odd">
+<td>Awesome, Amazing, Mind-blowing, Stunning</td>
+<td align="right">nominal</td>
+</tr>
+<tr class="even">
+<td><strong>In a scale of 0 to 10:</strong> 0, 5, 8, 10</td>
+<td align="right">ordinal</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="operation-with-scales" class="section level3">
+<h3><span class="header-section-number">1.1.18</span> Operation with scales</h3>
+<p><img src="img/scale.png" alt="drawing" width="600"/></p>
+</div>
+<div id="shifting-origin-and-scale" class="section level3">
+<h3><span class="header-section-number">1.1.19</span> Shifting origin and scale</h3>
+<p>Say we have values, <span class="math inline">\(x_1, x_2, \cdot \cdot \cdot , x_n\)</span></p>
+<ul>
+<li>Origin shift: Adding/Subtracting</li>
+<li><span class="math inline">\(y_1 = x_1-a \space or \space x_1+a\)</span></li>
+<li>Scale shift: Multiplying/Division</li>
+<li><span class="math inline">\(y_1 = b \cdot x_1 \space or \space x_1/b\)</span></li>
+<li>both: <span class="math inline">\(y_i = \frac{x_i-a}{b}\)</span></li>
+</ul>
+</div>
+<div id="use-of-summation-sign" class="section level3">
+<h3><span class="header-section-number">1.1.20</span> Use of Summation sign</h3>
+<p><span class="math display">\[x_1 + x_2 + x_3 + x_4 = \sum_{i=1}^4 x_i\]</span></p>
+<p><span class="math display">\[x_1 + x_2 + ... x_n = \sum_{i=1}^n x_i\]</span></p>
+<p><span class="math display">\[x_1 + x_2 + ... x_{10} = ?\]</span></p>
+</div>
+<div id="theorem-01" class="section level3">
+<h3><span class="header-section-number">1.1.21</span> Theorem 01</h3>
+<p><span class="math display">\[\sum_{i=1}^n bx_i=b \sum_{i=1}^n x_i\]</span></p>
+</div>
+<div id="theorem-02" class="section level3">
+<h3><span class="header-section-number">1.1.22</span> Theorem 02</h3>
+<p><span class="math display">\[\sum_{i=1}^n (ax_i-b)=a \sum_{i=1}^n x_i-nb\]</span></p>
+</div>
+<div id="quick-tips" class="section level3">
+<h3><span class="header-section-number">1.1.23</span> Quick tips</h3>
+<ul>
+<li><span class="math inline">\(\sum_{i=1}^n a = na\)</span></li>
+<li>Can you prove it?</li>
+</ul>
+</div>
+<div id="theorem-03" class="section level3">
+<h3><span class="header-section-number">1.1.24</span> Theorem 03</h3>
+<p><span class="math display">\[\sum_{i=1}^n (ax_i^2-bx_i+c)=a\sum_{i=1}^n x_i^2-b\sum_{i=1}^n x_i + nc\]</span></p>
+</div>
+<div id="theorem-04" class="section level3">
+<h3><span class="header-section-number">1.1.25</span> Theorem 04</h3>
+<p><span class="math display">\[\sum_{i=1}^n (ax_i-by_i)=a\sum_{i=1}^n x_i - b \sum_{i=1}^n y_i\]</span></p>
+</div>
+<div id="theorem-05" class="section level3">
+<h3><span class="header-section-number">1.1.26</span> Theorem 05</h3>
+<p><span class="math display">\[\sum_{i=1}^n (ax_i-b)^2=a^2 \sum_{i=1}^n x_i^2 - 2ab \sum_{i=1}^n x_i + nb^2\]</span></p>
+</div>
+<div id="theorem-06" class="section level3">
+<h3><span class="header-section-number">1.1.27</span> Theorem 06</h3>
+<p><span class="math display">\[(\sum_{i=1}^n x_i)^2=\sum_{i=1}^n x_i^2 + \sum_{i \ne j}^n\sum x_ix_j\]</span></p>
+</div>
+<div id="quick-tip" class="section level3">
+<h3><span class="header-section-number">1.1.28</span> Quick Tip</h3>
+<p><span class="math display">\[\prod_{i=1}^k x_i = x_1 \times x_2 \times \cdot \cdot \cdot \times x_n\]</span></p>
+</div>
+<div id="theorem-07" class="section level3">
+<h3><span class="header-section-number">1.1.29</span> Theorem 07</h3>
+<p><span class="math display">\[\prod_{i=1}^k x_iy_i = (\prod_{i=1}^k x_i)(\prod_{i=1}^k y_i)\]</span></p>
+</div>
+<div id="theorem-08" class="section level3">
+<h3><span class="header-section-number">1.1.30</span> Theorem 08</h3>
+<p><span class="math display">\[\sum_{i=1}^m \sum_{i=1}^n (x_i+y_j)=n\sum_{i=1}^m x_i + m \sum_{i=1}^n y_j\]</span></p>
+</div>
+<div id="theorem-09" class="section level3">
+<h3><span class="header-section-number">1.1.31</span> Theorem 09</h3>
+<p>m<span class="math inline">\(\sum_{i=1}^m \sum_{i=1}^n (x_iy_j)=(\sum_{i=1}^n x_i) (\sum_{i=1}^n y_j)\)</span></p>
+</div>
+<div id="example" class="section level3">
+<h3><span class="header-section-number">1.1.32</span> Example</h3>
+<p>Given</p>
+<p><span class="math inline">\(f_1=2, f_2 = 4, f_3 = 6\)</span></p>
+<p><span class="math inline">\(x_1 = -3, x_2 =7, x_3 = 4\)</span></p>
+<p>Find the values of</p>
+<ol style="list-style-type: lower-roman">
+<li><span class="math inline">\(\sum f_ix_i\)</span></li>
+<li><span class="math inline">\(\sum f_ix_i^2\)</span></li>
+<li><span class="math inline">\(\sum f_i(x_i-5)^2\)</span></li>
+</ol>
+</div>
+<div id="textbook-exercise--01" class="section level3">
+<h3><span class="header-section-number">1.1.33</span> Textbook Exercise -01</h3>
+<ol start="13" style="list-style-type: decimal">
+<li>Find the value of <span class="math inline">\(\sum_{i=1}^{10} (x_i-4)\)</span></li>
+</ol>
+<p>where <span class="math inline">\(\sum_{i=1}^{10} x_i = 20\)</span></p>
+</div>
+<div id="exercise-01" class="section level3">
+<h3><span class="header-section-number">1.1.34</span> Exercise-01</h3>
+<ul>
+<li><ol start="7" style="list-style-type: decimal">
+<li>Discrete vs continuous variable</li>
+</ol></li>
+<li><ol start="10" style="list-style-type: decimal">
+<li>Prove
+<span class="math display">\[\sum_{i=1}^k abx_i = ab \sum_{i=1}^k x_i\]</span></li>
+</ol></li>
+</ul>
+</div>
+<div id="exercise--01" class="section level3">
+<h3><span class="header-section-number">1.1.35</span> Exercise -01</h3>
+<p>Prove
+<span class="math display">\[\prod_{i=1}^n c =c^n\]</span></p>
+</div>
+<div id="exercise--01-1" class="section level3">
+<h3><span class="header-section-number">1.1.36</span> Exercise -01</h3>
+<ol start="13" style="list-style-type: decimal">
+<li>Find the value of
+<span class="math display">\[\sum_{i=1}^{10} (x_i-4)\]</span>
+where
+<span class="math display">\[\sum_{i=1}^{10}=20\]</span></li>
+</ol>
+</div>
+<div id="creative-question" class="section level3">
+<h3><span class="header-section-number">1.1.37</span> Creative Question</h3>
+<p><small>
+Given below are the daily income and expense of ten workers.</p>
+<section>
+<table>
+<thead>
+<tr>
+<th>
+Income (x)
+</th>
+<th>
+120
+</th>
+<th>
+130
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Expense (y)
+</td>
+<td>
+80
+</td>
+<td>
+120
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<p>From above data, prove</p>
+<ul>
+<li><span class="math display">\[\sum_{i=1}^{2}x_iy_i \ne (\sum_{i=1}^{2}x_i)(\sum_{i=1}^{2}y_j)\]</span>
+<br/></li>
+<li><span class="math display">\[\sum_{i=1}^{2} \sum_{j=1}^{2}x_iy_j=(\sum_{i=1}^{2}x_i)(\sum_{j=1}^{2}y_j)\]</span>
+<br/></li>
+<li><span class="math display">\[\sum_{i=1}^{2} \sum_{j=1}^{2}(x_i-y_j)=2 \times \sum_{i=1}^{2}x_i- 2 \times \sum_{j=1}^{2}y_j\]</span></li>
+</ul>
+<p></small></p>
+</div>
+<div id="creative-question--07" class="section level3">
+<h3><span class="header-section-number">1.1.38</span> Creative Question -07</h3>
+<p><small>
+Given below are the daily income and expense of ten workers.</p>
+<section>
+<table>
+<thead>
+<tr>
+<th>
+Income (x)
+</th>
+<th>
+120
+</th>
+<th>
+130
+</th>
+<th>
+88
+</th>
+<th>
+150
+</th>
+<th>
+175
+</th>
+<th>
+144
+</th>
+<th>
+180
+</th>
+<th>
+200
+</th>
+<th>
+160
+</th>
+<th>
+155
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Expense (y)
+</td>
+<td>
+80
+</td>
+<td>
+120
+</td>
+<td>
+70
+</td>
+<td>
+100
+</td>
+<td>
+160
+</td>
+<td>
+114
+</td>
+<td>
+170
+</td>
+<td>
+195
+</td>
+<td>
+140
+</td>
+<td>
+131
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<ol style="list-style-type: lower-alpha">
+<li>What do you mean by bivariate data?</li>
+<li>From above data, prove</li>
+</ol>
+<p><span class="math display">\[\sum_{i=1}^{10} \sum_{j=1}^{10}x_iy_j=(\sum_{i=1}^{10}x_i)(\sum_{j=1}^{10}y_j)\]</span>
+c. <span class="math display">\[\sum_{i=1}^{10} \sum_{j=1}^{10}(x_i-y_j)=10 \times \sum_{i=1}^{10}x_i- 10 \times \sum_{j=1}^{10}y_j\]</span>
+d. Prove <span class="math display">\[\sum_{i=1}^{10}x_iy_i \ne (\sum_{i=1}^{10}x_i)(\sum_{i=1}^{10}y_j)\]</span>
+</small></p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="stat.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="collection-presentation-and-organization-of-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="assets/gitbook-2.6.7/js/app.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
+<script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="assets/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/mahmudstat/lectures/edit/master/01-stat.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["lecture.pdf", "lecture.epub"],
+"toc": {
+"collapse": "subsection"
+},
+"toolbar": {
+"position": "static"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
