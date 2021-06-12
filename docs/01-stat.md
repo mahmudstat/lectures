@@ -522,6 +522,764 @@ stem(data)
 
 ## Measures of Central Tendency
 
+### What is Central Tendency?
+
+
+
+Why needed?
+
+<div class="container">
+<div class="col">
+
+```
+##                    mpg cyl  disp  hp drat
+## Mazda RX4         21.0   6 160.0 110 3.90
+## Mazda RX4 Wag     21.0   6 160.0 110 3.90
+## Datsun 710        22.8   4 108.0  93 3.85
+## Hornet 4 Drive    21.4   6 258.0 110 3.08
+## Hornet Sportabout 18.7   8 360.0 175 3.15
+## Valiant           18.1   6 225.0 105 2.76
+## Duster 360        14.3   8 360.0 245 3.21
+## Merc 240D         24.4   4 146.7  62 3.69
+```
+
+```
+##       mpg             cyl           disp      
+##  Min.   :14.30   Min.   :4.0   Min.   :108.0  
+##  1st Qu.:18.55   1st Qu.:5.5   1st Qu.:156.7  
+##  Median :21.00   Median :6.0   Median :192.5  
+##  Mean   :20.21   Mean   :6.0   Mean   :222.2  
+##  3rd Qu.:21.75   3rd Qu.:6.5   3rd Qu.:283.5  
+##  Max.   :24.40   Max.   :8.0   Max.   :360.0
+```
+</div>
+<div class="col">
+- Summary
+- Comparison
+- A value to represent all
+</div>
+</div>
+
+### Criteria for a Good Measure of Central Tendency{data-transition="convex"}
+
+- Well-defined
+
+> - Understandable
+> - Considers all values
+> - Suitable for further analysis
+> - Not affected by sample fluctuation
+
+### Measures (Averages)
+
+- Arithmetic Mean (AM)
+- Geometric Mean (GM)
+- Harmonic Mean (HM)
+- Median 
+- Mode
+- Partition Values (Quartiles, Deciles, Percentiles etc.)
+
+### AM
+
+$AM=\bar x=\frac{\sum x}{n}$
+
+If there are frequencies or weights
+
+$\bar x=\frac{\sum f_i x_i}{\sum f_i} \space or \space \frac{\sum w_i x_i}{w_i=n}$
+
+### Find AM 
+
+
+```
+##  [1] 10 55 38 48 51 25 14 44 23 22
+```
+
+<div onclick="klikaj('rad1')"><span style="color: blue;">Answer (click to see)</span></div>
+<div id="rad1" style="visibility: hidden">
+
+```
+## [1] 33
+```
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+Find AM: 2, 2, 3, 3, 5, 5, 5, 8, 8, 9
+
+There are 2 ways. 
+
+$\bar x = \frac{2+2+...+9}{10}$
+<div onclick="klikaj('rad2')"><span style="color: blue;">Answer (click to see)</span></div>
+<div id="rad2" style="visibility: hidden">
+
+```
+## [1] 5
+```
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+### Mean Using Frequency
+
+For grouped data
+
+| Working hours<br>(x) | Employee<br>(f) | fx |
+|:-:|:-:|:-:|
+| 2 | 2 | 4 |
+| 3 | 2 | 6 |
+| 5 | 3 | 15 |
+| 8 | 2 | 10 |
+| 9 | 1 | 9 |
+|  | $\sum f =10$ | $\sum fx = 50$ |
+
+$\therefore \bar x = \frac{\sum fx}{\sum f} =\frac{50}{10}=5$
+
+### Freuency vs Weight
+
+<div class="container">
+<div class="col">
+Suppose, different judges give different scores, but not all evaluation has same weight. 
+
+| Judge | Rating<br>(x) | Weight<br>(w) | wx |
+|:-:|:-:|:-:|:-:|
+| 1 | 8 | 2 | 16 |
+| 2 | 7 | 3 | 21 |
+| 3 | 4 | 5 | 20 |
+| 4 | 5 | 1 | 5 |
+| 5 | 7 | 3 | 21 |
+|  |  | $\sum w_i = 14$ | $\sum w_ix_i = 83$ |
+</div>
+<div class="col">
+$\therefore \bar x = \frac{\sum w_ix_i}{\sum w_i}$
+
+
+<div onclick="klikaj('rad3')"><span style="color: blue;">Answer (click to see)</span></div>
+<div id="rad3" style="visibility: hidden">
+$\frac{83}{14}$
+
+```
+## [1] 5.93
+```
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
+
+### Shortcut Method for AM
+
+<div class="container">
+<div class="col">
+Calculate the mean in a smart way
+
+
+```
+## [1] 1009 1037 1047 1024 1013 1043
+```
+</div>
+<div class="col">
+<div onclick="klikaj('rad4')"><span>Show (click to see)</span></div>
+<div id="rad4" style="visibility: hidden">
+<small>Subtract a number from all, say 1020</small>
+
+```
+## [1] "The new values are"
+```
+
+```
+## [1] -11  17  27   4  -7  23
+```
+
+
+```
+## [1] "Mean of y is 8.83"
+```
+
+```
+## [1] "Mean of x is 1028.83"
+```
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script> 
+
+</div>
+</div>
+
+### Shortcut Method Formula
+
+<div class="container">
+<div class="col">
+Consider the values: 1005, 1010, 1015 
+
+If 1000 is subtracted: 5, 10, 15
+
+If again divided by 5: 1, 2, 3
+
+Converted Mean = 2 
+
+Original Mean = $2 \times 5 + 1000=1010$
+</div>
+<div class="col">
+<div onclick="klikaj('rad5')"><span style="color: blue;">Show (click to see)</span></div>
+<div id="rad5" style="visibility: hidden">
+x = 1005, 1010, 1015 
+
+> - a = 1000
+> - c = 5 
+> - y = 1, 2, 3
+> - $\bar x = 2 \times 5 + 1000=1010 = a+\bar y \times c$
+> - $\bar x = a+\frac{\sum y}{n} \times c$
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
+
+### Properties of AM
+
+- $\sum (x_i-\bar x)=0$; can you prove it? 
+
+> - $\sum (x_i-\bar x)^2 \le \sum (x_i-a)^2, \space a \ne \bar x$
+> - Depends on change of origin and scale?
+> - $\bar x + \bar y =\frac{\sum x+\sum y}{n_x+n_y}$
+> - Combined mean: $\bar x_c=\frac{n_1 \bar x_1+n_2 \bar x_2+...+n_k \bar x_k}{n_1+n_2+...+n_k}$
+> - $AM\ge GM \ge HM$ & $AM \times HM = (GM)^2$
+> - AM of first n natural numbers = $\frac{n+1}{2}$
+
+### (Dis)advantages of AM
+
+> - Well-defined
+> - Less affected by sample fluctuation
+> - Comparison among sets is easy
+> - Uses all values
+> - <span>Suitable for further analysis.<span>
+> - <span style="color:red;">Affected by outliers
+
+### Geometric Mean (GM)
+
+$GM=(x_1 \times x_2 \times ... \times x_n)^{(1/n)}$ or
+$GM=(x_1^{f_1} \times x_2^{f_2} \times ... \times x_n^{f_n})^{(1/\sum f_i)}$
+
+Find GM: 2, 4, 6
+
+
+
+<div onclick="klikaj('rad6')"><span style="color: blue;">Answer (click to see)</span></div>
+<div id="rad6" style="visibility: hidden">
+3.63
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+Try this one: 20020, 30080, 50086, 40130
+
+### Concept of Logarithm
+
+<small>
+
+> "An admirable artifice which, by reducing to a few days the labour of many months, doubles the life of the astronomer, and spares him the errors and disgust inseparable from long calculations."
+>
+> --- Pierre-Simon Laplace 
+
+</small>
+
+- Log and Antilog
+- $log_24=?$
+- if $log_2x=3$, then x=?
+
+
+
+### GM Easier Formula
+
+x = 20020, 30080, 50086, 40130
+
+
+> - log x = 9.9, 10.31, 10.82, 10.6
+> - Mean of logx = $\frac{\sum logx}{n}$
+> - Original Mean = $antilog(\frac{\sum logx}{n})$
+
+<div onclick="klikaj('rad7')"><span style="color: blue;">Answer (click to see)</span></div>
+<div id="rad7" style="visibility: hidden">
+33168.96
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+### Calculate GM
+
+<div class="container">
+<div class="col">
+| Marks | # Students |
+|:-:|:-:|
+| 10-12 | 4 |
+| 12-14 | 5 |
+| 14-16 | 3 |
+| 16-18 | 5 |
+| 18-20 | 7 |
+| 20-22 | 2 |
+</div>
+<div class="col">
+Make a table using these columns: $x_i, f_i, logx_i, f_ilogx_i$
+
+> - $GM =antilog(\frac{\sum f_i logx_i}{\sum f_i})$
+
+<div onclick="klikaj('rad8')"><span style="color: blue;">Answer (click to see)</span></div>
+<div id="rad8" style="visibility: hidden">
+15.5865773
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
+
+### (Dis)advantages of GM
+
+- [x] Not affected by outliers
+
+  x = 5, 10, 15, 20, 100, 1000
+  
+  log(x) = 0.7, 1, 1.18, 1.3, 2, 3
+
+- [x] Less affected by sample fluctuation
+- [x] Suitable for further analysis
+- [ ] <span style="color:ff1a1a;">What if one or some x = 0?</span>
+- [ ] <span style="color:ff1a1a;">What if one or some x < 0? </span>
+
+
+### Story of Oil Scam 
+
+<div class="container">
+<div class="col">
+
+S = 150 km
+
+$v_1=\space 10 km/h, v_2=\space 15 km/h, v_3=\space 20 km/h$
+
+What is the average speed? 
+
+> - $AM=\frac{10+15+20}{3}=15 \space km/h$
+> - Think more fundamentally
+> - $\sum S=3\times 150=450$
+> - $t_1=15h, t_2=10h, t_3=7.5h$
+> - $\bar v = \frac{\sum S}{\sum t}=\frac{450}{32.5}=13.84 \lt AM$
+
+
+</div>
+<div class="col">
+> - $=\frac{450}{15+10+7.5}$
+> - $=\frac{450}{\frac{150}{10}+\frac{150}{15}+\frac{150}{20}}$
+> - $=\frac{450}{150(\frac{1}{10}+\frac{1}{15}+\frac{1}{20})}$
+> - $=\frac{3}{\frac{1}{10}+\frac{1}{15}+\frac{1}{20}}$
+> - $=\frac{3}{\frac{1}{v_1}+\frac{1}{v_2}+\frac{1}{v_3}}$
+</div>
+</div>
+
+### Harmonic Mean
+
+<div class="container">
+<div class="col">
+Formula: Reciprocal of Mean of $\frac{1}{x_i}$
+
+Reciprocal of $\frac{\frac{1}{x_1}+\frac{1}{x_2}+...+\frac{1}{x_n}}{n}$
+
+Thus, $HM = \frac{n}{\sum \frac{1}{x_i}}$
+
+Calculate: 2, 4, 8
+
+<div onclick="klikaj('rad9')"><span style="color: blue;">Answer (click to see)</span></div>
+<div id="rad9" style="visibility: hidden">
+
+3.43
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+<div class="col">
+For grouped data
+
+> - $HM=\frac{\sum f}{\sum \frac{f}{x}}$
+> - For wighted data: $\frac{\sum w}{\sum \frac{w}{x}}$
+</div>
+</div>
+
+### Why and When HM
+
+- When there are rates associated, say speed, and numerator is fixed. 
+- $Speed, v = \frac{S}{t}$; HM if S is fixed
+- Example: A man travels 120 km the first day at 12 kph, the same distance at 10 kph on the 2nd day, and at 8 kph on the 3rd day. Find his average speed. 
+
+### Wighted AM vs Weighted HM
+
+Suppose, a bus travels 10 km at 10 kph, another 15 km at 20 kph, and another 20 km at 25 kph. What is the average speed. 
+
+HM $\rightarrow$ consider distances as weights
+
+AM $\rightarrow$ consider times as weights
+
+Time, $t=\frac d v=$ 1, 0.75, 0.8
+
+
+> - $WHM = \frac{10+15+20}{\frac{10}{10}+\frac{15}{20}+\frac{20}{25}}$=17.65
+> - $WAM = \frac{1\times 10 + 0.75 \times 20 + 0.80 \times 25}{1+0.75+0.80}$ = 17.65
+> - True mean, $\bar v=\frac{\sum d}{\sum t}=\frac{45}{2.55}=$ 17.65
+
+### HM Example 2
+
+- A passerby travels 10 km at 20 kph, 5 km at 15 kph, and 4 km at 12 kph. What is the average speed? (Use weighted HM)
+
+- Here, distances are different. Consider them weights. 
+
+> - $HM=\frac{w_1+w_2+w_3}{\frac{w_1}{x_1}+\frac{w_2}{x_2}+\frac{w_3}{x_3}}$
+
+
+
+
+> - HM = 16.286
+
+### Quadratic Mean
+
+$QM=\sqrt{\frac{x_1^2+x_2^2+...+x_n^2}{n}}=\sqrt{\frac{\sum x_i^2}{n}}$
+
+> - Also known as Root mean square
+> - More at: https://en.wikipedia.org/wiki/Root_mean_square#Uses
+> - For grouped data? 
+
+### Partition Values
+
+### Find medians
+
+x = 4,5,6,8,9,11,16
+
+y = 4,5,6,8,9,11,16,19
+
+
+
+
+> - Median of x is 8
+> - Median of y is 8.5
+> - Formula for odd n = $\frac{n+1}{2}th \space value$
+> - Formula for even n = $\frac{\frac{n}{2}th+(\frac{n}{2}+1)th}{2}$
+
+
+### Dis(advantages) of Median
+
+- Unaffected by outliers (extreme values)
+- Graphically estimable
+- Affected by sample fluctuation
+- Not based on all values
+- Not suitable for further mathematical analysis 
+
+### Quartiles, Deciles, and Percentiles
+
+$Q_1= \frac{(n+1)}{4}th \space$
+
+$Q_2, Q_3=?$
+
+Find $Q_1, Q_2, Q_3$ 
+
+X = 4, 6, 7, 10, 12, 13, 14, 15, 16, 17, 19
+
+> - 4, 8.5, 13, 12.0909091, 15.5, 19
+> - What are the formulae for Deciles ($D_i$ and $P_i$)
+
+### General Formula for Partition Values
+
+<div class="container">
+<div class="col">
+For odd n, 
+
+$A_i= \frac{i \times (n+1)}{k}th \space value$ 
+</div>
+<div class="col">
+For even n, 
+
+$A_i=\frac{\frac{i \times n}{k}th+(\frac{i\times n}{k}+1)th}{k}$
+</div>
+</div>
+
+where, k = no. of partitions
+
+For median, for example, k = 2. 
+
+> - What if we divide the data set into 20 segments? 
+
+
+### Find Deciles and Percentiles
+
+X = 4, 6, 7, 10, 12, 13, 14, 15, 16, 17, 19
+
+Find $D_3, D_8, P_{17}, P_{56}, P_{93}$
+
+### Averages from Grouped Data
+
+<div class="container">
+<div class="col">
+|  Age  | # Employees | CF |
+|:-----:|:-----------:|----|
+| 20-24 |      40     |    |
+| 25-29 |      60     |    |
+| 30-34 |     200     |    |
+| 35-39 |     180     |    |
+| 40-44 |     150     |    |
+| 45-49 |     110     |    |
+| 50-54 |     175     |    |
+| 55-59 |      60     |    |
+| 60-64 |      25     |    |
+</div>
+<div class="col">
+Median: $Me = L + \frac{\frac{n}{2}-F_c}{f_m}\times c$
+
+Mode: $M_o=L+\frac{\Delta_1}{\Delta_1+\Delta_2}\times c$
+
+Quartiles: $Q_i = L + \frac{\frac{in}{4}-F_c}{f}\times c$
+
+Find AM, Me, Mo, Q, and $P_{30}$
+</div>
+</div>
+
+### Partition Values from Graph
+
+- Draw an Ogive
+- Draw a straight line parallel to X-axis at the point $\frac n 2$ of Y-axis. - Draw a perpendicular on X-axis from the intersection point.
+
+![Graph](img/stat/partition.jpg)
+
+
+### Comparison of Averages
+
+| Property | AM | GM | HM | Median | Mode |
+|-|-|-|-|-|-|
+| Formula | Easy to<br>understand | <strike><br>Easy<br></strike> | <strike><br>Easy<br></strike> | <strike><br>Easy<br></strike> | <strike><br>Easy<br></strike> |
+| Considers<br>values | All | All | All | Middle term(s) | Highest frequency |
+| Computaion | Easy | <strike><br>Easy<br></strike> | <strike><br>Easy<br></strike> | Easy | Easy |
+| Effect of<br>Outliers | Highly affected | Less affected<br>than AM | Less affected<br>than GM | Unaffected | Can be highly<br>affected |
+| Effect of Sampling<br>Flcutuation | Less affected | Less affected | Less affected | Can be highly<br>affected | Can be highly<br>affected |
+| Suitability for <br>further analysis | Possible | Possible | Possible | <strike><br>Possible<br></strike> | <strike><br>Possible<br></strike> |
+
+### When AM = GM = HM
+
+If $x_1=x_2=x_3$; prove it 
+
+### Theorems
+
+### Theorem 01
+
+$$\sum_{i=0}^n (x_i-\bar x)=0$$
+
+### Theorem 02
+
+$$\sum_{i=0}^n f_i(x_i-\bar x)=0$$
+
+### Theorem 03
+
+$$\sum_{i=1}^n (x_i-\bar x)^2 \lt \sum_{i=1}^n (x_i-a)^2; a\ne\bar x$$ 
+
+$$\sum_{i=1}^n f_i(x_i-\bar x)^2 \lt \sum_{i=1}^n f_i(x_i-a)^2; a\ne\bar x$$ 
+
+
+### Theorem 04 (AM~origin & scale)
+
+Prove that AM depends on origin and scale
+Use frequency as well i.e, 
+
+- $$\bar x=\frac {\sum_{i=1}^nx_i}{n}$$ 
+- $$\bar x=\frac {\sum_{i=1}^n f_ix_i}{n}$$ 
+
+### Theorem 07
+
+If the GM of $n_1$ va;ues is $G_1$, and of $n_2$ values is $G_2$, show GM of $n_1+n_2$ values is $G=\sqrt{G_1G_2}$
+
+### Theorem 08
+<small>
+
+<div class="container">
+<div class="col">
+
+### For two non-zero positive numbers, prove $AM \ge GM \ge HM$
+
+Let, the numbers be a, b
+
+$\therefore AM = \frac{a+b}{2}$ 
+
+$GM = \sqrt{ab}$ 
+
+$HM = \frac{2}{\frac 1 a +\frac 1 b}$ 
+</div>
+
+<div class="col">
+We know, 
+\begin{eqnarray}
+&  &(a-b)^2\ge 0    \nonumber \\
+& \Rightarrow & (a+b)^2-4ab \ge 0    \nonumber \\
+& \Rightarrow & (a+b)^2 \ge 4ab   \nonumber \\
+& \Rightarrow & (a+b) \ge 2 \sqrt{ab}   \nonumber \\
+& \Rightarrow & \frac{a+b} 2 \ge \sqrt{ab}   \nonumber \\
+& \Rightarrow & AM \ge GM   \nonumber \\
+\end{eqnarray}
+</div>
+<div class="col">
+Similarly, 
+\begin{eqnarray}
+&  &(\frac{1}{a}-\frac{1}{b})^2\ge 0    \nonumber \\
+& \Rightarrow & (\frac{1}{a}+\frac{1}{b})^2 -4 \cdot \frac 1 a \cdot \frac 1 b\ge 0    \nonumber \\
+& \Rightarrow & (\frac{1}{a}+\frac{1}{b})^2\ge \frac 4 {ab}   \nonumber \\
+& \Rightarrow & (\frac{1}{a}+\frac{1}{b}) \ge \frac 2 {\sqrt{ab}}  \nonumber \\
+& \Rightarrow & \sqrt{ab}(\frac{1}{a}+\frac{1}{b}) \ge 2   \nonumber \\
+& \Rightarrow & \sqrt{ab} \ge \frac{2}{(\frac{1}{a}+\frac{1}{b})}   \nonumber \\
+& \Rightarrow & GM \ge HM   \nonumber \\
+\end{eqnarray}
+</div>
+</div>
+</small>
+
+### Theorem 09
+
+For two non-zero positive numbers, $AM \times HM =(GM)^2$
+
+### Theorem 10
+Mean and Median of first n natural numbers are $\frac {n+1} 2$ 
+
+### Theorem 11
+
+If $\bar x_1$ and $\bar x_2$ are means of 2 data sets of sizes $n_1$ and $n_2$, respectively, the combined mean is $\bar x_c=\frac{n_1 \bar x_1+n_2 \bar x_2}{n_1+n_2}$
+
+### Theorem 12
+
+If $u=x+y, \bar u=\bar x + \bar y$; if $n_1=n_2=n$
+
+Given $u=x+y$
+
+\begin{eqnarray}
+\bar u &=&  \frac{\sum u}{n}   \nonumber \\
+&=& \frac{\sum (x+y)}{n}   \nonumber \\
+&=& \frac{\sum x}{n}+  \frac{\sum y}{n}   \nonumber \\
+&=& \bar x + \bar y   \nonumber \\
+\end{eqnarray}
+
+### Theorem 13
+
+For equal number of observations, GM of two variables is equal to the product of their individual means. 
+
+### Theorem 14
+
+$GM=Antilog(\frac{\sum \log x_i}{n})$ or $Antilog(\frac{\sum f_i \log x_i}{\sum f_i})$ 
+
+### Theorem 15
+
+If $y = a + bx, \bar y = a + b \bar x$
+
+### Theorem 16
+
+If $z_i=ax_i+by_i, \bar z=a \bar x + b \bar y$
+
+### Example Problems
+
+### Example Problem 01
+
+AM and GM of two positive numbers are 25 and 15, respectively. Find HM and the numbers. 
+<div class="container">
+<div class="col">
+<div onclick="klikaj('ep1.1')"><span>Solution (i) (click to see)</span></div>
+<div id="ep1.1" style="visibility: hidden">
+We know, $AM \times HM=(GM)^2$
+
+> - Thus, $HM=$ 9
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+<div class="col">
+<div onclick="klikaj('ep1.2')"><span>Solution (ii) (click to see)</span></div>
+<div id="ep1.2" style="visibility: hidden">
+If the numbers are $a, b; a>b$
+$\frac{a+b}{2}=25$ and $\sqrt{ab}=15$
+
+Thus, $a+b=50$, and $ab=15^2=225$
+
+$\therefore (a-b)^2=(a+b)^2-4ab$
+$\Rightarrow a-b =$ 40
+
+> - Thus, a = 45, b = 5
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
+
+### Example Problem 15
+
+The mean of 200 numbers was 50. Later it was revealed that two observations were incorrectly given as 92 and 8, instead of 192 and 88, respectively. Find the correct mean. 
+
+<div onclick="klikaj('ep15')"><span>Solution(click to see)</span></div>
+<div id="ep15" style="visibility: hidden">
+$n=200, \bar x = 200$
+
+$\therefore$ Incorrect total, $\sum x = n \times \bar x=$ 10000
+
+Correct total, $\sum x'=10,000-92-8+192+88=$ 10180
+
+Correct mean, $\bar x'=\frac{10180}{200}=$ 50.9
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+
+### Example Problem 22 
+
+If $\sum f_i(x_i-k)=0$, what is the value of `k`?
+
+<div onclick="klikaj('ep22')"><span>Answer (click to see)</span></div>
+<div id="ep22" style="visibility: hidden">
+Given $\sum f_i(x_i-k)=0$
+
+$\Rightarrow \sum f_i x_i - k \sum f_i =0$
+
+$\Rightarrow k = \frac{\sum f_i x_i}{\sum f_i}$
+
+> - = $\bar x$
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+
 ## Measures of Dispersion
 
 ## Moments, Skewness, and Kurtosis

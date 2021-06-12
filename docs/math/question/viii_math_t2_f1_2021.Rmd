@@ -1,0 +1,49 @@
+---
+title: ''
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+\begin{center}
+\begin{large}
+Pabna Cadet College
+\end{large}
+
+Fortnightly Examination - 2021
+
+Second Term Phase One
+
+Subject: Mathematics
+
+Class: VIII
+\end{center}
+
+Time: 40 minutes
+\hfill
+Full Marks: 20
+
+Answer all the question.
+
+1. **Length, width, and depth of a pond are 32m, 20m, and 3m, respectively. A machine is pumping water out of the pond at the rate 0.1 $m^3$ per second.**
+
+a. What is the assumed shape of the pond from the given stem? Find the volume of the pond. \hfill	2
+b. How much time is required to drain the pond completely? \hfill4
+c. What would the answer of (b) be, if the pond were cylindrical in shape, with diameter equal to length in stem? 	**([You can use the formula in this link: click to see)](https://lecture.statmania.info/math/resources/formulae.html)** \hfill 4
+
+2. **Universal set U = {1, 2, 3, 4, 5, 6, 7} and its three subsets are-**
+
+$A=\{ X \in N: x < 7$ and x is an odd number}
+
+$B=\{ X \in N: x < 7$ and x is an even number}
+
+$C=\{ X \in N: x \le 7$ and x is a prime number}
+
+a. Express the sets A and B in set-builder form  \hfill 2
+b. Find $(A \cup B) \cap (A \cup C)$  \hfill 4
+c. Think of a set used in real world and write it in tabular and set-builder form. \hfill 4
+
+
+\begin{center}
+---Good Luck---
+\end{center}

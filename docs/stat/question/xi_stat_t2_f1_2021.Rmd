@@ -1,0 +1,62 @@
+---
+title: ''
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+\begin{center}
+\begin{large}
+Pabna Cadet College
+\end{large}
+
+Fortnightly Examination - 2021
+
+Second Term Phase One
+
+Subject: Statistics
+
+Class: XI
+\end{center}
+
+Time: 40 minutes
+\hfill
+Full Marks: 20
+
+Answer all the question.
+
+1. **Following are the information of some objects of solar system (distances are in astronomical unit-AU).** 
+
+```{r, echo=FALSE}
+data <- data.frame(Name = c("2020Fy30", "2020FY31", "Eris", "2015TH", "2014 UZ", "Gonggong", "2015FG", "2014FC", "2006QH", "Sedna"),
+                   Perihelion = c(35.6, 39.5, 38.3, 28.9, 38.3, 28.9, 38.3, 33.7, 36.2, 40.4),
+                   Aphelion = c(107.7, 102.4, 97.5, 136.4, 177, 101.2, 92.1, 92.1, 104.4, 96.7))
+
+knitr::kable(data, booktabs = TRUE,
+  caption = "")
+```
+
+a. What is correlation? \hfill 1
+b. Is the regression coefficient unit-free? Show mathematically.\hfill 2
+c. Find the correlation between aphelion and perihelion and explain. \hfill 3
+d. Find the influence of aphelion on perihelion and explain. How realistic is the relationship? \hfill 4
+
+2. **Answer in short.**
+
+a. Write three uses of regression analysis \hfill 2
+b. When do you use rank correlation? \hfill 2
+c. Give two sets of examples each with two variables where in one set the variables depend on each other, and in the other one specific variable affects the other.
+
+3. **Consider the following two models**
+
+|                 Model                 |      Fitted Model      | $R^2$ |
+|:-------------------------------------:|:----------------------:|:-----:|
+| $Y = \alpha _1 + \beta _1 X + \epsilon$ | $\hat Y = 2.4 + 3.6 X$ |  85%  |
+| $Y = \alpha _2 + \beta _2 X + \epsilon$ |  $\hat Y = 2.8 + 4.9X$  |  76%  |
+
+a. Which model performed better and why? \hfill 2
+b. What do you understand from the values of $\beta_1$ and $\beta_2$? \hfill 2
+
+\begin{center}
+---Good Luck---
+\end{center}

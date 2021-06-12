@@ -1,0 +1,26 @@
+---
+title: "Mathematical Formulae"
+author: "Abdullah Al Mahmud"
+date: "6/13/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This is a dynamic page, which would be, Allah-willing, updated from time to time. 
+
+## Formulae of Solids
+
+### Cylinder volume
+
+Volume, $V = \pi r^2h$; where
+
+$\pi = 3.1416$ (approximately)
+
+r = radius of the base of the cylinder
+
+h = height of the cylinder
+
+[See examples here](https://www.bing.com/images/search?q=Cylinder+Volume+Equation&form=RESTAB&first=1&tsc=ImageHoverTitle)

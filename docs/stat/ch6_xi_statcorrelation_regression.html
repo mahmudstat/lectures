@@ -653,6 +653,90 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <p><span class="math inline">\(m = \frac{dy}{dx} = tan \theta=\)</span> Change in y due to change in x.</p>
 <p>Bread without sour or wheat!</p>
 </section>
+<section id="regression-coefficient" class="slide level2">
+<h2>Regression Coefficient</h2>
+<p><span class="math inline">\(b_{yx} = \frac{\sum(x_i-\bar x)(y_i-\bar y)}{\sum(x_i-\bar x)^2} = \frac{Cov(x,y)}{\sigma_x^2}\)</span></p>
+<p>SImpler, <span class="math inline">\(b_{yx} = \frac{\sum xy- \frac{\sum x \sum y}{n}}{\sum x^2 - \frac{(\sum x)^2}{n}}\)</span></p>
+<p><span class="math inline">\(b_{xy}=?\)</span></p>
+</section>
+<section id="example" class="slide level2">
+<h2>Example</h2>
+<div class="container">
+<div class="col">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">price</th>
+<th style="text-align: right;">demand</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">17</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col">
+<ul>
+<li>Make a scatter plot and explain</li>
+<li>Find correlation and regression coefficient (r, a, &amp; b) and explain</li>
+</ul>
+<ul>
+<li class="fragment">Correlation, r = -0.063452</li>
+<li class="fragment">Regression (a, b): 13.26, -0.09</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="properties-of-b" class="slide level2">
+<h2>Properties of b</h2>
+<ul>
+<li class="fragment">independent of origin and scale</li>
+<li class="fragment"><span class="math inline">\(r = \sqrt{b_{yx} \cdot b_{xy}}\)</span></li>
+<li class="fragment"><span class="math inline">\(\frac{b_{yx}+b_{xy}}{2} \ge r\)</span></li>
+<li class="fragment">If <span class="math inline">\(b_{yx} &gt; 1, b_{xy} &lt; 1\)</span></li>
+<li class="fragment">If regression lines coincide, r = 1</li>
+<li class="fragment">If <span class="math inline">\(\theta = 90^o, r = 0\)</span></li>
+</ul>
+</section>
 <section id="purity-of-coefficients" class="slide level2">
 <h2>Purity of Coefficients</h2>
 <ul>

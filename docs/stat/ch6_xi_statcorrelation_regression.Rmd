@@ -113,8 +113,53 @@ $m = \frac{dy}{dx} = tan \theta=$ Change in y due to change in x.
 
 Bread without sour or wheat! 
 
+## Regression Coefficient
+
+$b_{yx} = \frac{\sum(x_i-\bar x)(y_i-\bar y)}{\sum(x_i-\bar x)^2} = \frac{Cov(x,y)}{\sigma_x^2}$
+
+SImpler, $b_{yx} = \frac{\sum xy- \frac{\sum x \sum y}{n}}{\sum x^2 - \frac{(\sum x)^2}{n}}$
+
+$b_{xy}=?$
+
+## Example
+
+<div class="container">
+<div class="col">
+
+```{r, echo=F}
+set.seed(10)
+price <- sample(20,10)
+demand <- sample(20,10)
+data <- data.frame(price, demand)
+knitr:: kable(
+  data)
+corr <- cor(price,demand)
+model <- lm(demand~price)
+```
+
+</div>
+<div class="col">
+- Make a scatter plot and explain
+- Find correlation and regression coefficient (r, a, & b) and explain
+
+> - Correlation, r = `r round(corr,2)` 
+> - Regression (a, b): `r round(model$coefficients,2)`
+</div>
+</div>
+
+## Properties of b
+
+> - independent of origin and scale
+> - $r = \sqrt{b_{yx} \cdot b_{xy}}$
+> - $\frac{b_{yx}+b_{xy}}{2} \ge r$
+> - If $b_{yx} > 1, b_{xy} < 1$
+> - If regression lines coincide, r = 1
+> - If $\theta = 90^o, r = 0$
+
 ## Purity of Coefficients
 
 - $r = \frac{\sum (x_i - \bar x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i - \bar x)^2}{n}\frac{\sum(y_i - \bar y)^2}{n}}}$
 - $\rho = 1- \frac{6 \sum d_i^2}{n(n^2-1)}$
 - b or $\beta$
+
+
