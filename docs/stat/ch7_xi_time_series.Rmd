@@ -1,0 +1,83 @@
+---
+title: "Time Series"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    reveal_plugins: ["menu", "chalkboard", "zoom"]
+    self_contained: false
+    reveal_options:
+      slideNumber: true
+      previewLinks: true
+    css: css/styles.css
+    includes:
+      in_header: css/header.html
+---
+
+# Time Series
+
+## What is Time Series Data?
+
+<div class="container">
+<div class="col">
+Data arranged chronologically
+
+$Y_t = f(t); t = t_1, t_2, t_3, \cdots, t_n$
+</div>
+<div class="col">
+Example
+
+```{r, echo=FALSE}
+set.seed(10)
+ts <- data.frame(Year = 2001:2005,
+                 Production = sample(20,5))
+knitr::kable(ts)
+``` 
+</div>
+</div>
+
+## Components of Time Series
+
+Four Components
+
+> -  Trend (increase/decrease)
+> - Seasonal variation
+> - Cyclic variation
+> - Irregular/Random variation
+
+## Uses
+
+> - Analyze past behavior
+> - Forecasting
+> - Comparison by time/place
+> - Segregation of components
+> - Performance measure
+
+## Symbols
+
+$Y_t =$ Values of series at time t
+
+$T_t =$ Trend
+
+$S_t =$ Seasonal 
+
+$C_t =$ Cyclic
+
+$R_t =$ Random/irregular
+
+## Models
+
+<div class="container">
+<div class="col">
+Additive Model
+
+$Y_t = T_t + S_t + C_t + R_t$
+
+In the long run, $\sum R_t = 0$
+</div>
+<div class="col">
+Multiplicative
+</div>
+</div>
+

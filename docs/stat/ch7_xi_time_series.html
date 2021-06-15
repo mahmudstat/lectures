@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Abdullah Al Mahmud" />
-  <title>Correlation And Regression</title>
+  <title>Time Series</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="ch6_xi_statcorrelation_regression_files/reveal.js-3.3.0.1/css/reveal.css"/>
+  <link rel="stylesheet" href="ch7_xi_time_series_files/reveal.js-3.3.0.1/css/reveal.css"/>
 
 
 
-<link rel="stylesheet" href="ch6_xi_statcorrelation_regression_files/reveal.js-3.3.0.1/css/theme/sky.css" id="theme">
+<link rel="stylesheet" href="ch7_xi_time_series_files/reveal.js-3.3.0.1/css/theme/sky.css" id="theme">
 
 
   <!-- some tweaks to reveal css -->
@@ -450,293 +450,102 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <div id="header-footer">
       <p class="slide-footer"> PCC | Mahmud | Statistics| statmania.info </p>
     </div>
-    <link href="ch6_xi_statcorrelation_regression_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-    <link href="ch6_xi_statcorrelation_regression_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+    <link href="ch7_xi_time_series_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="ch7_xi_time_series_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
 
 <section>
-    <h1 class="title">Correlation And Regression</h1>
+    <h1 class="title">Time Series</h1>
     <h2 class="author">Abdullah Al Mahmud</h2>
 </section>
 
-<section><section id="correlation-regression" class="title-slide slide level1"><h1>Correlation-Regression</h1></section><section id="why-this-chapter-is-important" class="slide level2">
-<h2>Why This Chapter is Important</h2>
+<section><section id="time-series" class="title-slide slide level1"><h1>Time Series</h1></section><section id="what-is-time-series-data" class="slide level2">
+<h2>What is Time Series Data?</h2>
 <div class="container">
 <div class="col">
-<p>We knew the universe is expanding from the knowledge of this chapter!</p>
-<p><img class="plain" src="img/hubble_scatter.PNG" width="480"></p>
+<p>Data arranged chronologically</p>
+<p><span class="math inline">\(Y_t = f(t); t = t_1, t_2, t_3, \cdots, t_n\)</span></p>
 </div>
 <div class="col">
-<p>We learn in this chapter</p>
-<ul>
-<li>How to make bread without wheat/flour</li>
-<li></li>
-</ul>
-</div>
-</div>
-</section><section id="scatter-plot" class="slide level2">
-<h2>Scatter Plot</h2>
-<p><img class="plain" src="img/scatter_plot.jpg" width="650"></p>
-</section><section id="sequence" class="slide level2">
-<h2>Sequence</h2>
-<p>Scatter Plot <span class="math inline">\(\rightarrow\)</span> Correlation <span class="math inline">\(\rightarrow\)</span> Regression</p>
+<p>Example</p>
 <table>
-<colgroup>
-<col style="width: 35%" />
-<col style="width: 22%" />
-<col style="width: 41%" />
-</colgroup>
 <thead>
 <tr class="header">
-<th>Scatter Plot</th>
-<th>Correlation</th>
-<th>Regression</th>
+<th style="text-align: right;">Year</th>
+<th style="text-align: right;">Production</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Preliminary idea about relationship</td>
-<td>Measures linear relationship</td>
-<td>Measures Influence</td>
-</tr>
-<tr class="even">
-<td>Either variable can be independent (usually)</td>
-<td>Does not clarify dependency</td>
-<td>Predicts dependent variable based on independent one.</td>
-</tr>
-</tbody>
-</table>
-</section><section id="correlation" class="slide level2">
-<h2>Correlation</h2>
-<p>Linear relationship between two variables</p>
-<p>Corrleation, <span class="math inline">\(r = \frac{\sum (x_i - \bar x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i - \bar x)^2}{n}\frac{\sum(y_i - \bar y)^2}{n}}}; -1 \le r \le 1\)</span></p>
-<ul>
-<li class="fragment"><span class="math inline">\(r = \frac{Cov(x,y)}{\sigma_x \sigma_y}\)</span></li>
-</ul>
-<ul>
-<li class="fragment">Compare with <span class="math display">\[\sigma ^2 = \sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}\]</span></li>
-</ul>
-</section><section id="scatter-plot-and-correlation" class="slide level2">
-<h2>Scatter Plot And Correlation</h2>
-<div class="container">
-<div class="col">
-<p><img  class="plain" src="img/scatter_corr.png" width="400"></p>
-</div>
-<div class="col">
-<p><span class="math inline">\(r^2=R^2 \rightarrow\)</span> Coefficient of determination</p>
-<p><span class="math inline">\(R^2 = 80\% \rightarrow\)</span> 80% of total variation in Y (say, brightness of stars) can be explained by X (say, distance).</p>
-</div>
-</div>
-</section><section id="r-estimating-mechanism" class="slide level2">
-<h2>r: Estimating Mechanism</h2>
-<p>Make a table with columns for</p>
-<ul>
-<li><span class="math inline">\((x_i-\bar x)\)</span></li>
-<li><span class="math inline">\((y_i-\bar y)\)</span></li>
-<li><span class="math inline">\((x_i-\bar x)(y_i-\bar y)\)</span></li>
-<li><span class="math inline">\((x_i-\bar x)^2\)</span></li>
-<li><span class="math inline">\((y_i-\bar y)^2\)</span></li>
-</ul>
-<p>Then sum them and put in the formula</p>
-</section><section id="example-of-r" class="slide level2">
-<h2>Example of r</h2>
-</section><section id="features-of-r" class="slide level2">
-<h2>Features of r</h2>
-<ul>
-<li class="fragment">Independent of origin and scale</li>
-<li class="fragment"><span class="math inline">\(-1 \le r \le 1\)</span></li>
-<li class="fragment"><span class="math inline">\(r = \sqrt{b_{yx} \cdot b_{xy}}\)</span> (Concerning GM of regression coeff)</li>
-<li class="fragment"><span class="math inline">\(\frac{b_{yx}+b_{xy}}{2} \ge r\)</span> (About AM)</li>
-<li class="fragment"><span class="math inline">\(r = 0 \rightarrow\)</span> no linear relationship</li>
-</ul>
-</section><section id="rank-correlation" class="slide level2">
-<h2>Rank Correlation</h2>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: right;">Competitor</th>
-<th style="text-align: right;">Judge_1</th>
-<th style="text-align: right;">Judge_2</th>
-<th style="text-align: right;">rank_1</th>
-<th style="text-align: right;">rank_2</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">20</td>
-<td style="text-align: right;">15</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">18</td>
-<td style="text-align: right;">20</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">5</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">17</td>
-<td style="text-align: right;">13</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">6</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">15</td>
-<td style="text-align: right;">18</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">8</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">7</td>
+<td style="text-align: right;">2001</td>
 <td style="text-align: right;">11</td>
-<td style="text-align: right;">17</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">3</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">2</td>
+<td style="text-align: right;">2002</td>
 <td style="text-align: right;">9</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">7</td>
+<td style="text-align: right;">2003</td>
+<td style="text-align: right;">10</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">13</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">10</td>
+<td style="text-align: right;">2004</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2005</td>
+<td style="text-align: right;">12</td>
 </tr>
 </tbody>
 </table>
-<p>Coefficient, <span class="math inline">\(\rho = 1- \frac{6 \sum d_i^2}{n(n^2-1)}\)</span></p>
-</section><section id="linear-equation-straight-lines" class="slide level2">
-<h2>Linear Equation/ Straight Lines</h2>
-<p><span class="math inline">\(Y = c + mx;\)</span> m is slope c is intercept</p>
-<p><span class="math inline">\(m = \frac{dy}{dx} = tan \theta=\)</span> Change in y due to change in x.</p>
-<p>Bread without sour or wheat!</p>
-</section><section id="regression-coefficient" class="slide level2">
-<h2>Regression Coefficient</h2>
-<p><span class="math inline">\(b_{yx} = \frac{\sum(x_i-\bar x)(y_i-\bar y)}{\sum(x_i-\bar x)^2} = \frac{Cov(x,y)}{\sigma_x^2}\)</span></p>
-<p>SImpler, <span class="math inline">\(b_{yx} = \frac{\sum xy- \frac{\sum x \sum y}{n}}{\sum x^2 - \frac{(\sum x)^2}{n}}\)</span></p>
-<p><span class="math inline">\(b_{xy}=?\)</span></p>
-</section><section id="example" class="slide level2">
-<h2>Example</h2>
+</div>
+</div>
+</section><section id="components-of-time-series" class="slide level2">
+<h2>Components of Time Series</h2>
+<p>Four Components</p>
+<ul>
+<li class="fragment">Trend (increase/decrease)</li>
+<li class="fragment">Seasonal variation</li>
+<li class="fragment">Cyclic variation</li>
+<li class="fragment">Irregular/Random variation</li>
+</ul>
+</section><section id="uses" class="slide level2">
+<h2>Uses</h2>
+<ul>
+<li class="fragment">Analyze past behavior</li>
+<li class="fragment">Forecasting</li>
+<li class="fragment">Comparison by time/place</li>
+<li class="fragment">Segregation of components</li>
+<li class="fragment">Performance measure</li>
+</ul>
+</section><section id="symbols" class="slide level2">
+<h2>Symbols</h2>
+<p><span class="math inline">\(Y_t =\)</span> Values of series at time t</p>
+<p><span class="math inline">\(T_t =\)</span> Trend</p>
+<p><span class="math inline">\(S_t =\)</span> Seasonal</p>
+<p><span class="math inline">\(C_t =\)</span> Cyclic</p>
+<p><span class="math inline">\(R_t =\)</span> Random/irregular</p>
+</section><section id="models" class="slide level2">
+<h2>Models</h2>
 <div class="container">
 <div class="col">
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: right;">price</th>
-<th style="text-align: right;">demand</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">11</td>
-<td style="text-align: right;">15</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">20</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">10</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">7</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">18</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">8</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">13</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">15</td>
-<td style="text-align: right;">14</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">17</td>
-</tr>
-</tbody>
-</table>
+<p>Additive Model</p>
+<p><span class="math inline">\(Y_t = T_t + S_t + C_t + R_t\)</span></p>
+<p>In the long run, <span class="math inline">\(\sum R_t = 0\)</span></p>
 </div>
 <div class="col">
-<ul>
-<li>Make a scatter plot and explain</li>
-<li>Find correlation and regression coefficient (r, a, &amp; b) and explain</li>
-</ul>
-<ul>
-<li class="fragment">Correlation, r = -0.06</li>
-<li class="fragment">Regression (a, b): 13.26, -0.09</li>
-</ul>
+<p>Multiplicative</p>
 </div>
 </div>
-</section><section id="properties-of-b" class="slide level2">
-<h2>Properties of b</h2>
-<ul>
-<li class="fragment">independent of origin and scale</li>
-<li class="fragment"><span class="math inline">\(r = \sqrt{b_{yx} \cdot b_{xy}}\)</span></li>
-<li class="fragment"><span class="math inline">\(\frac{b_{yx}+b_{xy}}{2} \ge r\)</span></li>
-<li class="fragment">If <span class="math inline">\(b_{yx} &gt; 1, b_{xy} &lt; 1\)</span></li>
-<li class="fragment">If regression lines coincide, r = 1</li>
-<li class="fragment">If <span class="math inline">\(\theta = 90^o, r = 0\)</span></li>
-</ul>
-</section><section id="purity-of-coefficients" class="slide level2">
-<h2>Purity of Coefficients</h2>
-<ul>
-<li><span class="math inline">\(r = \frac{\sum (x_i - \bar x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i - \bar x)^2}{n}\frac{\sum(y_i - \bar y)^2}{n}}}\)</span></li>
-<li><span class="math inline">\(\rho = 1- \frac{6 \sum d_i^2}{n(n^2-1)}\)</span></li>
-<li>b or <span class="math inline">\(\beta\)</span></li>
-</ul>
 </section></section>
     </div>
   </div>
 
-  <script src="ch6_xi_statcorrelation_regression_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
-  <script src="ch6_xi_statcorrelation_regression_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+  <script src="ch7_xi_time_series_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="ch7_xi_time_series_files/reveal.js-3.3.0.1/js/reveal.js"></script>
 
   <script>
 
@@ -777,9 +586,9 @@ document.getElementsByTagName('head')[0].appendChild(style);
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: 'ch6_xi_statcorrelation_regression_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
-          { src: 'ch6_xi_statcorrelation_regression_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
-          { src: 'ch6_xi_statcorrelation_regression_files/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
+          { src: 'ch7_xi_time_series_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 'ch7_xi_time_series_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+          { src: 'ch7_xi_time_series_files/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
         ]
       });
     </script>

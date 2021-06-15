@@ -3,3 +3,5 @@
 rdatascience
 .Rproj.user
 *.bmp
+*.log
+*.tex
