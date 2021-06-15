@@ -532,12 +532,209 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <h2>Models</h2>
 <div class="container">
 <div class="col">
-<p>Additive Model</p>
+<p><strong>Additive Model</strong></p>
 <p><span class="math inline">\(Y_t = T_t + S_t + C_t + R_t\)</span></p>
-<p>In the long run, <span class="math inline">\(\sum R_t = 0\)</span></p>
+<ul>
+<li><span class="math inline">\(C_t\)</span> and <span class="math inline">\(S_t\)</span> can be <span class="math inline">\(\pm\)</span>ve</li>
+<li><span class="math inline">\(R_t\)</span> can also be <span class="math inline">\(\pm\)</span>ve, but in the long run, <span class="math inline">\(\sum R_t = 0\)</span></li>
+</ul>
 </div>
 <div class="col">
-<p>Multiplicative</p>
+<p><strong>Multiplicative Model</strong></p>
+<ul>
+<li class="fragment"><span class="math inline">\(Y_t = T_t \times S_t \times C_t \times R_t\)</span></li>
+<li class="fragment"><span class="math inline">\(S_t, C_t, R_t\)</span> refer to deviation from unit</li>
+<li class="fragment"><span class="math inline">\(S_t\)</span> equals unity in 1 year, <span class="math inline">\(C_t\)</span> in a cycle, and GM of <span class="math inline">\(R_t\)</span> is unity (1).</li>
+</ul>
+</div>
+</div>
+</section><section id="comparison-of-models" class="slide level2">
+<h2>Comparison of Models</h2>
+<ul>
+<li>Components in additive models are independent.</li>
+<li>In multiplicative models, components are interwined.</li>
+</ul>
+</section></section>
+<section><section id="measuring-trend" class="title-slide slide level1"><h1>Measuring Trend</h1></section><section id="graphicalfree-hand-method" class="slide level2">
+<h2>Graphical/Free-hand Method</h2>
+<div class="container">
+<div class="col">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Year</th>
+<th style="text-align: right;">Production</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">2001</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2003</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2004</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2005</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2001</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2003</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2004</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2005</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col">
+<p><img src="ch7_xi_time_series_files/figure-revealjs/unnamed-chunk-3-1.png" width="768" /></p>
+</div>
+</div>
+</section><section id="sem-average" class="slide level2">
+<h2>Sem-average</h2>
+<div class="container">
+<div class="col">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Year</th>
+<th style="text-align: right;">Production</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">2001</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2003</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2004</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2005</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2001</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2003</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2004</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2005</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col">
+<p><strong>Steps</strong></p>
+<ol type="1">
+<li>Separate the data into two equal parts (if odd-numbered, omit middle-most)</li>
+<li>Estimate averages of each group</li>
+<li>Put these two values on the scatter plot and extend</li>
+</ol>
+</div>
+</div>
+</section><section id="moving-average" class="slide level2">
+<h2>Moving Average</h2>
+<div class="container">
+<div class="col">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Year</th>
+<th style="text-align: right;">Production</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">2001</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2003</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2004</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2005</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2001</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2002</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2003</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2004</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2005</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col">
+<p>Content 2</p>
 </div>
 </div>
 </section></section>

@@ -31,8 +31,9 @@ Example
 ```{r, echo=FALSE}
 set.seed(10)
 ts <- data.frame(Year = 2001:2005,
-                 Production = sample(20,5))
-knitr::kable(ts)
+                 Production = sample(20,10))
+knitr::kable(head(ts, 5, booktabs = TRUE)
+             )
 ``` 
 </div>
 </div>
@@ -70,14 +71,72 @@ $R_t =$ Random/irregular
 
 <div class="container">
 <div class="col">
-Additive Model
+**Additive Model**
 
 $Y_t = T_t + S_t + C_t + R_t$
 
-In the long run, $\sum R_t = 0$
+- $C_t$ and $S_t$ can be $\pm$ve
+- $R_t$ can also be $\pm$ve, but in the long run, $\sum R_t = 0$
 </div>
 <div class="col">
-Multiplicative
+**Multiplicative Model**
+
+> - $Y_t = T_t \times S_t \times C_t \times R_t$
+> - $S_t, C_t, R_t$ refer to deviation from unit
+> - $S_t$ equals unity in 1 year, $C_t$ in a cycle, and GM of $R_t$ is unity (1). 
 </div>
 </div>
 
+## Comparison of Models
+
+- Components in additive models are independent. 
+- In multiplicative models, components are interwined.
+
+# Measuring Trend
+
+## Graphical/Free-hand Method
+
+<div class="container">
+<div class="col">
+
+```{r, echo=FALSE}
+knitr::kable(ts)
+```
+
+</div>
+<div class="col">
+```{r, echo=FALSE}
+plot(ts, pch=19)
+```
+</div>
+</div>
+
+## Sem-average
+
+<div class="container">
+<div class="col">
+```{r, echo=FALSE}
+knitr::kable(ts)
+```
+</div>
+<div class="col">
+**Steps**
+
+1. Separate the data into two equal parts (if odd-numbered, omit middle-most)
+2. Estimate averages of each group
+3. Put these two values on the scatter plot and extend
+</div>
+</div>
+
+## Moving Average
+
+<div class="container">
+<div class="col">
+```{r, echo=FALSE}
+knitr::kable(ts)
+```
+</div>
+<div class="col">
+
+</div>
+</div>
