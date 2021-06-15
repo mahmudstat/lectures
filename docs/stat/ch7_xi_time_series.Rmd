@@ -130,11 +130,19 @@ knitr::kable(ts)
 
 ## Moving Average
 
+| Year | Production |   3-Yearly Moving  Average  |
+|:----:|:----------:|:---------------------------:|
+| 2001 |     412    |              NA             |
+| 2002 |     438    | ${412+438+446}\over{3}=432$ |
+| 2003 |     446    |  $\frac{438+446+454}3=446$  |
+| 2004 |     454    |             457             |
+| 2005 |     470    |             469             |
+| 2006 |     483    |  $\frac{470+483+490}3=481$  |
+| 2007 |     490    |              NA             |
+
 <div class="container">
 <div class="col">
-```{r, echo=FALSE}
-knitr::kable(ts)
-```
+
 </div>
 <div class="col">
 

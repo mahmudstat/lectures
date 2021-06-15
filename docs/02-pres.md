@@ -17,6 +17,7 @@ See more [here](https://defkey.com/reveal-js-shortcuts)
 - Chapter 04: [Measures of Dispersion](https://lecture.statmania.info/stat/ch4_xi_stat_dispersion.html)
 - Chapter 05: [Moments, Skewness, and Kurtosis](https://lecture.statmania.info/stat/ch5_xi_stat_moments_skewness_kurtosis.html)
 - Chapter 06: [Correlation and Regression](https://lecture.statmania.info/stat/ch6_xi_statcorrelation_regression.html)
+- Chapter 07: [Time Series](https://lecture.statmania.info/stat/ch7_xi_time_series.html)
 
 ### Elementary Statistics {-}
 
