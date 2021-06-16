@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="prob.html"/>
-<link rel="next" href="dependency-and-mutual-exclusivity.html"/>
+<link rel="next" href="pres.html"/>
 <script src="assets/jquery-2.2.3/jquery.min.js"></script>
 <link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -273,15 +273,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1.1" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#important-concepts"><i class="fa fa-check"></i><b>2.1.1</b> Important concepts</a></li>
 <li class="chapter" data-level="2.1.2" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#three-definitions"><i class="fa fa-check"></i><b>2.1.2</b> Three Definitions</a></li>
 <li class="chapter" data-level="2.1.3" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#permutaion-vs-combination"><i class="fa fa-check"></i><b>2.1.3</b> Permutaion vs Combination</a></li>
-</ul></li>
-<li class="chapter" data-level="2.2" data-path="dependency-and-mutual-exclusivity.html"><a href="dependency-and-mutual-exclusivity.html"><i class="fa fa-check"></i><b>2.2</b> Dependency and Mutual Exclusivity</a><ul>
-<li class="chapter" data-level="2.2.1" data-path="dependency-and-mutual-exclusivity.html"><a href="dependency-and-mutual-exclusivity.html#types-of-problems"><i class="fa fa-check"></i><b>2.2.1</b> Types of Problems</a></li>
-<li class="chapter" data-level="2.2.2" data-path="dependency-and-mutual-exclusivity.html"><a href="dependency-and-mutual-exclusivity.html#miscellaneous"><i class="fa fa-check"></i><b>2.2.2</b> Miscellaneous</a></li>
-<li class="chapter" data-level="2.2.3" data-path="dependency-and-mutual-exclusivity.html"><a href="dependency-and-mutual-exclusivity.html#coin-and-die-problem"><i class="fa fa-check"></i><b>2.2.3</b> Coin And Die Problem</a></li>
-<li class="chapter" data-level="2.2.4" data-path="dependency-and-mutual-exclusivity.html"><a href="dependency-and-mutual-exclusivity.html#playing-card"><i class="fa fa-check"></i><b>2.2.4</b> Playing Card</a></li>
-<li class="chapter" data-level="2.2.5" data-path="dependency-and-mutual-exclusivity.html"><a href="dependency-and-mutual-exclusivity.html#box"><i class="fa fa-check"></i><b>2.2.5</b> Box</a></li>
-<li class="chapter" data-level="2.2.6" data-path="dependency-and-mutual-exclusivity.html"><a href="dependency-and-mutual-exclusivity.html#conditional-probability"><i class="fa fa-check"></i><b>2.2.6</b> Conditional Probability</a></li>
-<li class="chapter" data-level="2.2.7" data-path="dependency-and-mutual-exclusivity.html"><a href="dependency-and-mutual-exclusivity.html#set-theoretic"><i class="fa fa-check"></i><b>2.2.7</b> Set Theoretic</a></li>
+<li class="chapter" data-level="2.1.4" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#dependency-and-mutual-exclusivity"><i class="fa fa-check"></i><b>2.1.4</b> Dependency and Mutual Exclusivity</a></li>
+<li class="chapter" data-level="2.1.5" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#types-of-problems"><i class="fa fa-check"></i><b>2.1.5</b> Types of Problems</a></li>
+<li class="chapter" data-level="2.1.6" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#miscellaneous"><i class="fa fa-check"></i><b>2.1.6</b> Miscellaneous</a></li>
+<li class="chapter" data-level="2.1.7" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#coin-and-die-problem"><i class="fa fa-check"></i><b>2.1.7</b> Coin And Die Problem</a></li>
+<li class="chapter" data-level="2.1.8" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#playing-card"><i class="fa fa-check"></i><b>2.1.8</b> Playing Card</a></li>
+<li class="chapter" data-level="2.1.9" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#box"><i class="fa fa-check"></i><b>2.1.9</b> Box</a></li>
+<li class="chapter" data-level="2.1.10" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#conditional-probability"><i class="fa fa-check"></i><b>2.1.10</b> Conditional Probability</a></li>
+<li class="chapter" data-level="2.1.11" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#set-theoretic"><i class="fa fa-check"></i><b>2.1.11</b> Set Theoretic</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="pres.html"><a href="pres.html"><i class="fa fa-check"></i>Presentations</a><ul>
@@ -365,14 +364,949 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 </blockquote>
 </div>
+<div id="dependency-and-mutual-exclusivity" class="section level3">
+<h3><span class="header-section-number">2.1.4</span> Dependency and Mutual Exclusivity</h3>
+<p>If two events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> do not affect each other, they are called independent events.</p>
+<p>Let,</p>
+<p>Event <span class="math inline">\(A\)</span> = Head appears when a coin is tossed</p>
+<p>Event <span class="math inline">\(B\)</span> = Head appears when the coin is tossed again</p>
+<p>These two events are independent, assuming the first toss does not alter the properties of the coin.</p>
+<p>Consider another set of two events:</p>
+<p><span class="math inline">\(A\)</span> = An ace appears when a card is drawn from a deck of 52 cards</p>
+<p><span class="math inline">\(B\)</span> = An ace appears if another card is drawn from the same deck, without putting the first card back.</p>
+<p>In this case the <span class="math inline">\(P(B)\)</span> will depend on <strong>A</strong>.</p>
+<p>Clearly, <span class="math inline">\(P(A) = \frac 1 {52}\)</span>, but <span class="math inline">\(P(B) = \frac 1 {51}\)</span></p>
+<p>If event <span class="math inline">\(A\)</span> did not happen, <span class="math inline">\(P(B)\)</span> would be <span class="math inline">\(\frac 1 {52}\)</span>, so it turns out <span class="math inline">\(B\)</span> depends on <span class="math inline">\(A\)</span>.</p>
+<p>Theoretically speaking, dependent events are described the Bayes Theorem. If the event A depends on B, the the probability that A would happen if B happens is:</p>
+<p><span class="math inline">\(P(A|B) = \frac{P(A \cap B)}{P(B)}\)</span></p>
+<p><span class="math inline">\(\Rightarrow P(A \cap B) = P(A|B) \times P(B)\)</span></p>
+<p>Now, if A does not really depend on B, then <span class="math inline">\(P(A|B) = P(A)\)</span>, i.e. <span class="math inline">\(A\)</span> does not really care about <span class="math inline">\(B\)</span>.</p>
+<p>Thus, if A and B are independent, <span class="math inline">\(P(A \cap B) = P(A) \times P(B)\)</span></p>
+<p>Now, two events are called <strong>mutually exclusive</strong> when occurrence of one prevents other from happening.</p>
+<p>If a die is thrown once one of 1-6 will face up. If 1 appears, 2, or any other number from the rest cannot appear. Thus, Getting these numbers are mutually exclusive or disjoint events. Mutually exclusive sets do not have any common elements between themselves.</p>
+<p>Now, merging the concepts of dependency and mutual exclusivity is tricky.</p>
+<p><strong>Events cannot be independent and mutually exclusive simultaneously</strong>, although the opposite seems intuitive.</p>
+<p>Common sense tells us <em>events which are mutually exclusive should be independent</em>, <strong>but common sense is mistaken here.</strong></p>
+<p>Consider throwing a die.</p>
+<p><span class="math inline">\(S = \{1, 2, 3, 4, 5, 6\}\)</span></p>
+<p>Let, <span class="math inline">\(A = \{1, 3, 5\}\)</span> and <span class="math inline">\(B = \{2, 4, 6\}\)</span></p>
+<p>There are no common elements, so events A and B are disjoint or mutually exclusive.</p>
+<p>It might seem, since the sets A and B have no common elemts, they are independent.</p>
+<p>Let us check mathematically:</p>
+<p>From the given information, <span class="math inline">\(P(A)= \frac 1 2, P(B) = \frac 1 2\)</span></p>
+<p><span class="math inline">\(P(A \cap B) = 0\)</span> (since there are no common elements)</p>
+<p>Mathematically,</p>
+<p><span class="math inline">\(P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac 0 {\frac 1 2} = 0\)</span></p>
+<p>And <span class="math inline">\(P(A) \cdot P(B) = \frac 1 2 \cdot \frac 1 2 = \frac 1 4\)</span></p>
+<p><span class="math inline">\(\therefore P(A \cap B) \ne P(A) \cdot P(B)\)</span>, which proves event <span class="math inline">\(A\)</span> and event <span class="math inline">\(B\)</span> are not independent, a result which is counterintuitive. Upon second thought, however, it becomes intuitive. First note that <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> both belong to <span class="math inline">\(S\)</span>. That they disjoint means one cannot happen if the other happens, which means one is preventing another from happening, a behavior which can explained as dependency: one event care about the other, i.e, if one happens, another refrains from happening.</p>
+<p>Now, let us see another example, where we have two non mutually exclusive sets.</p>
+<p>Let, <span class="math inline">\(A = \{1, 3, 5\}\)</span> and <span class="math inline">\(B = \{1, 3, 4, 6\}\)</span> (observe that there are some common elements)</p>
+<p><span class="math inline">\(P(A) = \frac 1 2, P(B) = \frac 4 6 = \frac 2 3\)</span></p>
+<p><span class="math inline">\(P(A \cap B) = \frac 2 6 = \frac 1 3\)</span>, and <span class="math inline">\(P(A) \cdot P(B) = \frac 1 2 \cdot \frac 2 3 = \frac 1 3\)</span></p>
+<p><span class="math inline">\(\therefore P(A \cap B) = P(A) \cdot P(B)\)</span>, which proves A and B are independent.</p>
+<p>Using Bayes theorem,</p>
+<p><span class="math inline">\(P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac{\frac 1 3}{\frac 2 3} = \frac 1 2 = P(A)\)</span></p>
+<p><span class="math inline">\(\therefore P(A|B) = P(A)\)</span>, which means <span class="math inline">\(A\)</span> does not what happens to <span class="math inline">\(B\)</span>.</p>
+<p>Thus, if A and B have common elements, they may be independent of each other. But are they always? No, because it may happen that <span class="math inline">\(P(A \cap B) \ne P(A) \cdot P(B)\)</span>, in which case they are dependent events.</p>
+<p>So we have three possible cases when we combine depend with disjointness:</p>
+<ol style="list-style-type: decimal">
+<li>If two events have no common sample points (elements) (mutually exclusive or disjoint), they are always dependent events.</li>
+<li>If two sets have some common sample points, they may be dependent or independent.
+<ol style="list-style-type: lower-alpha">
+<li>Independet if <span class="math inline">\(P(A \cap B) = P(A) \cdot P(B)\)</span></li>
+<li>Dependet if <span class="math inline">\(P(A \cap B) \ne P(A) \cdot P(B)\)</span></li>
+</ol></li>
+</ol>
+<p>Now, let us prove the relationship theoretically.</p>
+<p>Let <span class="math inline">\(P(A) \ne 0, P(B\ne 0\)</span></p>
+<p>If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent, <span class="math inline">\(P(A \cap B) = P(A) \cdot P(B)\)</span></p>
+<p>Since <span class="math inline">\(P(A)\)</span> and <span class="math inline">\(P(B)\)</span> are both non-zero numbers, <span class="math inline">\(P(A) \cdot P(B) \ne 0\)</span></p>
+<p><span class="math inline">\(\therefore P(A \cap B) \ne 0\)</span> , i.e, there are some common elements between the sets.</p>
+<p>Thus, independent events cannot be mutually exclusive, i.e, they would always have common elements.</p>
+<p>Finally, in general, we can say: <strong>Mutually exclsuive events are dependent events, while non mutually exclusive events may or may not be dependent.</strong></p>
+<p>In other word, <strong><em>all mutually exclsuive events are dependent events, but not all dependent events are mutually exclusive.</em></strong></p>
 </div>
+<div id="types-of-problems" class="section level3">
+<h3><span class="header-section-number">2.1.5</span> Types of Problems</h3>
+<ul>
+<li>Miscellaneous<br />
+</li>
+<li>Coin</li>
+<li>Die</li>
+<li>Playing Card</li>
+<li>At Once vs One by One</li>
+<li>Box</li>
+<li>Conditional</li>
+<li>Set Theoretic</li>
+<li>Digit</li>
+</ul>
+</div>
+<div id="miscellaneous" class="section level3">
+<h3><span class="header-section-number">2.1.6</span> Miscellaneous</h3>
+<div id="misc-problem-01" class="section level4">
+<h4><span class="header-section-number">2.1.6.1</span> Misc Problem #01</h4>
+<p>What is the probability that in a leap year, there are 53 Fridays?</p>
+<blockquote>
+<ul>
+<li>In a leap year, there are 366 days, i.e, 52 weeks and 2 days. In each week is a Fridays, so there are no less than 52 Fridays. The remaining two days could be:</li>
+<li>(Sat, Sun); (Sun, Mon); (Mon, Tue); (Tue, Wedn); (Wedn, Thu); (Thu, Fri); (Fri, Sat) = 7</li>
+<li>Total possible outcome = 7 and favorable outcomes = 2</li>
+<li><span class="math inline">\(P = \frac{2}{7}\)</span></li>
+</ul>
+</blockquote>
+</div>
+<div id="misc-problem-02" class="section level4">
+<h4><span class="header-section-number">2.1.6.2</span> Misc Problem #02</h4>
+<p>Out of the natural numbers 10 through 30, a number is chosen randomly; what is the probability that the number is</p>
+<ol style="list-style-type: lower-roman">
+<li>a prime number</li>
+<li>a prime number or multiple of 5</li>
+<li>a prime number or an odd number</li>
+<li>not a perfect square</li>
+</ol>
+</div>
+<div id="misc-problem-03" class="section level4">
+<h4><span class="header-section-number">2.1.6.3</span> Misc Problem #03</h4>
+<p>What is the probability that the product of three positive integers chosen from 1 through 100 is an even number?</p>
+<blockquote>
+<ul>
+<li>Three possible cases</li>
+<li>All three are even</li>
+<li>Two odd and one even number</li>
+<li>Two even and one odd</li>
+<li><span class="math inline">\(P=\frac{^{50}C_3}{^{100}C_3}+...\)</span></li>
+<li>0.88</li>
+</ul>
+</blockquote>
+</div>
+</div>
+<div id="coin-and-die-problem" class="section level3">
+<h3><span class="header-section-number">2.1.7</span> Coin And Die Problem</h3>
+<div id="tossing-a-coing-twice" class="section level4">
+<h4><span class="header-section-number">2.1.7.1</span> Tossing A Coing Twice</h4>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-rvyq{border-color:inherit;font-style:italic;font-weight:bold;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+<tr>
+<th class="tg-c3ow" colspan="2" rowspan="2">
+</th>
+<th class="tg-7btt" colspan="2">
+First Coin
+</th>
+</tr>
+<tr>
+<td class="tg-c3ow">
+H
+</td>
+<td class="tg-c3ow">
+T
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tg-7btt" rowspan="2">
+Second<br>Coin
+</td>
+<td class="tg-c3ow">
+H
+</td>
+<td class="tg-rvyq">
+HH
+</td>
+<td class="tg-rvyq">
+HT
+</td>
+</tr>
+<tr>
+<td class="tg-c3ow">
+T
+</td>
+<td class="tg-rvyq">
+TH
+</td>
+<td class="tg-rvyq">
+TT
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>Tossing a coin twice is equivalent to tossing two coins at once</em></strong></p>
+<p>What is the probability that</p>
+<ol style="list-style-type: decimal">
+<li>The Head appears at the first draw?</li>
+<li>At least one Head appears?</li>
+<li>Less than two Heads appear?</li>
+<li>Only Tails appears?</li>
+</ol>
+</div>
+<div id="flipping-a-coin-thrice" class="section level4">
+<h4><span class="header-section-number">2.1.7.2</span> Flipping A Coin Thrice</h4>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-2k8k{border-color:inherit;font-size:13px;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-wrlh{font-size:13px;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-x10j{border-color:inherit;font-size:13px;font-style:italic;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-chpi{font-size:13px;font-style:italic;font-weight:bold;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+<tr>
+<th class="tg-2k8k" colspan="2" rowspan="2">
+</th>
+<th class="tg-2k8k" colspan="4">
+First Two Flips
+</th>
+</tr>
+<tr>
+<td class="tg-2k8k">
+HH
+</td>
+<td class="tg-2k8k">
+HT
+</td>
+<td class="tg-wrlh">
+TH
+</td>
+<td class="tg-wrlh">
+TT
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tg-2k8k" rowspan="2">
+Third Flip
+</td>
+<td class="tg-2k8k">
+H
+</td>
+<td class="tg-x10j">
+HHH
+</td>
+<td class="tg-x10j">
+HHT
+</td>
+<td class="tg-chpi">
+HTH
+</td>
+<td class="tg-chpi">
+HTT
+</td>
+</tr>
+<tr>
+<td class="tg-2k8k">
+T
+</td>
+<td class="tg-x10j">
+THH
+</td>
+<td class="tg-x10j">
+THT
+</td>
+<td class="tg-chpi">
+TTH
+</td>
+<td class="tg-chpi">
+TTT
+</td>
+</tr>
+</tbody>
+</table>
+<p>What is the probability that</p>
+<ol style="list-style-type: decimal">
+<li>All three are Heads?</li>
+<li>There are more than one Head?</li>
+<li>The second draw gives a Head?</li>
+<li>The third draw does not give a head?</li>
+<li>The first draw gives a Tail but the the Draw does not?</li>
+<li>At most one Head appears?</li>
+</ol>
+</div>
+<div id="flinging-two-dice-at-once" class="section level4">
+<h4><span class="header-section-number">2.1.7.3</span> Flinging Two Dice at Once</h4>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-b2ze{border-color:inherit;font-size:13px;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-lvro{border-color:inherit;font-size:13px;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-2k8k{border-color:inherit;font-size:13px;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-1fmd{border-color:inherit;font-size:13px;font-style:italic;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-x10j{border-color:inherit;font-size:13px;font-style:italic;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-387r{border-color:inherit;font-size:13px;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+<tr>
+<th class="tg-lvro" colspan="2" rowspan="2">
+Tossing Two<br>Dice at Once
+</th>
+<th class="tg-2k8k" colspan="6">
+First Die
+</th>
+</tr>
+<tr>
+<td class="tg-2k8k">
+1
+</td>
+<td class="tg-2k8k">
+2
+</td>
+<td class="tg-b2ze">
+3
+</td>
+<td class="tg-b2ze">
+4
+</td>
+<td class="tg-1fmd">
+5
+</td>
+<td class="tg-1fmd">
+6
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tg-2k8k">
+Second<br>Die
+</td>
+<td class="tg-2k8k">
+1
+</td>
+<td class="tg-x10j">
+1,1
+</td>
+<td class="tg-x10j">
+1,2
+</td>
+<td class="tg-1fmd">
+1,3
+</td>
+<td class="tg-1fmd">
+1,4
+</td>
+<td class="tg-1fmd">
+1,5
+</td>
+<td class="tg-1fmd">
+1,6
+</td>
+</tr>
+<tr>
+<td class="tg-2k8k">
+</td>
+<td class="tg-2k8k">
+2
+</td>
+<td class="tg-x10j">
+2,1
+</td>
+<td class="tg-x10j">
+2,2
+</td>
+<td class="tg-1fmd">
+2,3
+</td>
+<td class="tg-1fmd">
+2,4
+</td>
+<td class="tg-1fmd">
+2,5
+</td>
+<td class="tg-1fmd">
+2,6
+</td>
+</tr>
+<tr>
+<td class="tg-387r">
+</td>
+<td class="tg-1fmd">
+3
+</td>
+<td class="tg-1fmd">
+3,1
+</td>
+<td class="tg-1fmd">
+3,2
+</td>
+<td class="tg-1fmd">
+3,3
+</td>
+<td class="tg-1fmd">
+3,4
+</td>
+<td class="tg-1fmd">
+3,5
+</td>
+<td class="tg-1fmd">
+3,6
+</td>
+</tr>
+<tr>
+<td class="tg-387r">
+</td>
+<td class="tg-1fmd">
+4
+</td>
+<td class="tg-1fmd">
+4,1
+</td>
+<td class="tg-1fmd">
+4,2
+</td>
+<td class="tg-1fmd">
+4,3
+</td>
+<td class="tg-1fmd">
+4,4
+</td>
+<td class="tg-1fmd">
+4,5
+</td>
+<td class="tg-1fmd">
+4,6
+</td>
+</tr>
+<tr>
+<td class="tg-387r">
+</td>
+<td class="tg-1fmd">
+5
+</td>
+<td class="tg-1fmd">
+5,1
+</td>
+<td class="tg-1fmd">
+5,2
+</td>
+<td class="tg-1fmd">
+5,3
+</td>
+<td class="tg-1fmd">
+5,4
+</td>
+<td class="tg-1fmd">
+5,5
+</td>
+<td class="tg-1fmd">
+5,6
+</td>
+</tr>
+<tr>
+<td class="tg-387r">
+</td>
+<td class="tg-1fmd">
+6
+</td>
+<td class="tg-1fmd">
+6,1
+</td>
+<td class="tg-1fmd">
+6,2
+</td>
+<td class="tg-1fmd">
+6,3
+</td>
+<td class="tg-1fmd">
+6,4
+</td>
+<td class="tg-1fmd">
+6,5
+</td>
+<td class="tg-1fmd">
+6,6
+</td>
+</tr>
+</tbody>
+</table>
+<p>What is the probability that</p>
+<ol style="list-style-type: decimal">
+<li>The first numbers is odd?</li>
+<li>The summation of numbers in two draws is a prime number?</li>
+<li>Both numbers are same?</li>
+<li>The second number is bigger?</li>
+</ol>
+</div>
+</div>
+<div id="playing-card" class="section level3">
+<h3><span class="header-section-number">2.1.8</span> Playing Card</h3>
+<div id="concepts-playing-card" class="section level4">
+<h4><span class="header-section-number">2.1.8.1</span> Concepts (Playing Card)</h4>
+<div class="container">
+<div class="col">
+<p><img src="img/stat/cards.png" width="460"></p>
+</div>
+<div class="col">
+<p><br/>
+Each rank has 13 cards.</p>
+<ul>
+<li>Ace (A)</li>
+<li>King (K)</li>
+<li>Queen (Q)</li>
+<li>Jack (J)</li>
+<li>Numbers: 2, 3, 4, 5, 6, 7, 8, 9, 10</li>
+</ul>
+<blockquote>
+<ul>
+<li>4+9 numbers = 13 cards.</li>
+</ul>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="card-problem-01" class="section level4">
+<h4><span class="header-section-number">2.1.8.2</span> Card Problem #01</h4>
+<p>3 cards are drawn from a pack of 52 cards. What is the probability that they are all Kings?</p>
+<p>There are 4 Kings. We’ve to draw 3 cards.</p>
+<blockquote>
+<ul>
+<li><span class="math inline">\(P(K) =\frac{^4C_3}{{^52}C_3}\)</span></li>
+</ul>
+</blockquote>
+</div>
+<div id="card-problem-02" class="section level4">
+<h4><span class="header-section-number">2.1.8.3</span> Card Problem #02</h4>
+<p>If a card is drawn from a deck of 52 cards with 4 aces, what is the probability that an ace will not show up?</p>
+<p>Let, P(A) = Ace appears</p>
+<blockquote>
+<ul>
+<li><span class="math inline">\(1-P(A)\)</span></li>
+<li><span class="math inline">\(1-\frac 1 {13}\)</span></li>
+</ul>
+</blockquote>
+</div>
+<div id="card-problem-03" class="section level4">
+<h4><span class="header-section-number">2.1.8.4</span> Card Problem #03</h4>
+<p>Two cards are drawn with replacement; What is the probability that they are</p>
+<ol style="list-style-type: lower-roman">
+<li>Kings of same color</li>
+<li>Kings of different color</li>
+<li>Not Kings at all</li>
+</ol>
+<blockquote>
+<ul>
+<li><ol style="list-style-type: lower-roman">
+<li><span class="math inline">\(P(BUR) =P(B)+P(R)\)</span></li>
+</ol></li>
+<li><span class="math inline">\(\frac{^2C_1 \times ^2C_1}{^{52}C_1\times ^{52}C_1}+\frac{^2C_1 \times ^2C_1}{^{52}C_1\times ^{52}C_1}\)</span> Why not <span class="math inline">\(^{52}C_2\)</span>, <span class="math inline">\(^4C_2\)</span></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><ol start="2" style="list-style-type: lower-roman">
+<li><span class="math inline">\(1-P(B \cup R)\)</span></li>
+</ol></li>
+<li><span class="math inline">\(P(K)= \frac{^4C_1 \times ^4C_1}{^{52}C_1\times ^{52}C_1}\)</span></li>
+<li><ol start="3" style="list-style-type: lower-roman">
+<li><span class="math inline">\(1-P(K)\)</span></li>
+</ol></li>
+</ul>
+</blockquote>
+</div>
+<div id="card-problem-04" class="section level4">
+<h4><span class="header-section-number">2.1.8.5</span> Card Problem #04</h4>
+<p>A card is drawn from a pack of 52 cards. What is the probability that it is</p>
+<ol style="list-style-type: lower-roman">
+<li>an Ace</li>
+<li>A Spade</li>
+<li>A Hearts or a King</li>
+</ol>
+</div>
+<div id="card-problem-05" class="section level4">
+<h4><span class="header-section-number">2.1.8.6</span> Card Problem #05</h4>
+</div>
+</div>
+<div id="box" class="section level3">
+<h3><span class="header-section-number">2.1.9</span> Box</h3>
+<div id="box-problem-01" class="section level4">
+<h4><span class="header-section-number">2.1.9.1</span> Box Problem #01</h4>
+<p>In a box, there are 5 blue marbles, 7 green marbles, and 8 yellow marbles. If two marbles are randomly selected, what is the probability that both will be green or yellow, if taken</p>
+<ol style="list-style-type: lower-roman">
+<li><p>with replacement</p></li>
+<li><p>without replacement</p></li>
+</ol>
+<blockquote>
+<ul>
+<li>Correct or not: <span class="math inline">\(\frac{^7C_2}{^{20}C_2}+\frac{^8C_2}{^{20}C_2}\)</span></li>
+<li><span class="math inline">\(\frac{^7C_1 \times ^7C_1}{^{20}C_1 \times ^{20}C_1}+\frac{^8C_1 \times ^8C_1}{^{20}C_1 \times ^{20}C_1}\)</span></li>
+<li>Without replacement: <span class="math inline">\(\frac{^7C_1 \times ^6C_1}{^{20}C_1 \times ^{20}C_1}+\frac{^8C_1 \times ^7C_1}{^{20}C_1 \times ^{20}C_1}\)</span></li>
+</ul>
+</blockquote>
+</div>
+<div id="box-problem-02" class="section level4">
+<h4><span class="header-section-number">2.1.9.2</span> Box Problem #02</h4>
+<div class="container">
+<div class="col">
+<p>There are some balls in a box as below</p>
+<table>
+<thead>
+<tr class="header">
+<th>Color</th>
+<th># Balls</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>White</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Black</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>Red</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>Green</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>Yellow</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>Violet</td>
+<td>9</td>
+</tr>
+<tr class="odd">
+<td>Blue</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col">
+<p>If three balls are drawn at random, what is the probability there are all red or green?</p>
+<blockquote>
+<ul>
+<li><span class="math inline">\(\frac{^7C_3}{^{42}C_3}+\frac{^5C_3}{^{42}C_3}\)</span></li>
+<li>0.039</li>
+</ul>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="box-problem-02-1" class="section level4">
+<h4><span class="header-section-number">2.1.9.3</span> Box Problem #02</h4>
+<p>There are 9 red and 7 white balls in a box. 6 balls are picked randomly. What is the probability that 3 balls are red and 3 balls are white?</p>
+<p>Which one is the answer?</p>
+<div class="container">
+<div class="col">
+<ul>
+<li><input type="checkbox" disabled="" />
+<span class="math inline">\(\frac{^9C_3 \times ^7C_3}{^{16}C_6}\)</span></li>
+<li><input type="checkbox" disabled="" />
+<span class="math inline">\(\frac{^9C_3}{^{16}C_3} \times \frac{^7C_3}{^{16}C_3}\)</span></li>
+<li><input type="checkbox" disabled="" />
+<span class="math inline">\(\frac{^9C_3}{^{16}C_3} + \frac{^7C_3}{^{16}C_3}\)</span></li>
+<li><input type="checkbox" disabled="" />
+<span class="math inline">\(\frac{^9C_3}{^{16}C_6} \times \frac{^7C_3}{^{16}C_6}\)</span></li>
+</ul>
+</div>
+<div class="col">
+<blockquote>
+<ul>
+<li>Whatever we draw together will be in <span class="math inline">\(r\)</span> in <span class="math inline">\(^nC_r\)</span></li>
+<li>Answer: <span class="math inline">\(\frac{^9C_3 \times ^7C_3}{^{16}C_6}\)</span>=0.367</li>
+</ul>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<div id="conditional-probability" class="section level3">
+<h3><span class="header-section-number">2.1.10</span> Conditional Probability</h3>
+<div id="conditional-formula" class="section level4">
+<h4><span class="header-section-number">2.1.10.1</span> Conditional Formula</h4>
+<p><strong>Bayes Theorem</strong></p>
+<p><span class="math inline">\(P(B|A)=\frac{P(A \cap B)}{P(A)}\)</span></p>
+</div>
+<div id="conditional-problem-01" class="section level4">
+<h4><span class="header-section-number">2.1.10.2</span> Conditional Problem # 01</h4>
+<p>Probability that it rains today is 40%, that tomorrow is 50%, and that on both days is 30%. If it rains today, what is the probability that it would rain tomorrow?</p>
+<blockquote>
+<ul>
+<li><span class="math inline">\(P (T) = 0.4, P(M) = 0.5, P(T\cap M)=0.3\)</span></li>
+<li><span class="math inline">\(P(M|T)=?\)</span></li>
+<li><span class="math inline">\(P(M|T)=\frac{P(T\cap M)}{P(T)}\)</span></li>
+<li><span class="math inline">\(\frac{0.3}{0.4}\)</span></li>
+</ul>
+</blockquote>
+</div>
+<div id="conditional-problem-02" class="section level4">
+<h4><span class="header-section-number">2.1.10.3</span> Conditional Problem # 02</h4>
+<p>In a college, there are 100 students, of whom 30 play football, 40 play cricket, and 20 play both. A student is selected randomly. If he plays cricket, what is the probability that he plays football?</p>
+<div onclick="klikaj(&#39;con2&#39;)">
+Solution (<span style="color:red">click to see</span>)
+</div>
+<div id="con2" style="visibility: hidden">
+<div class="container">
+<div class="col">
+<p><span class="math inline">\(P(F)=0.3\)</span></p>
+<p><span class="math inline">\(P(C)=0.4\)</span></p>
+<p><span class="math inline">\(P(F \cap C)=0.2\)</span></p>
+</div>
+<div class="col">
+<p><span class="math inline">\(P(F|C)=?\)</span></p>
+<blockquote>
+<ul>
+<li><span class="math inline">\(P(F|C)=\frac{P(F \cap C)}{P(C)}=\)</span> 0.5</li>
+</ul>
+</blockquote>
+</div>
+</div>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+<div id="conditional-problem-03" class="section level4">
+<h4><span class="header-section-number">2.1.10.4</span> Conditional Problem # 03</h4>
+<p><span class="math inline">\(S=\)</span> {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}</p>
+<p>If a number is picked randomly and known it an even number, What is the probability that it is more than 6?</p>
+</div>
+<div id="conditional-problem-04" class="section level4">
+<h4><span class="header-section-number">2.1.10.5</span> Conditional Problem # 04</h4>
+<p>In a city of 1 million inhabitants let there be 100 terrorists and 999,900 non-terrorists. The city has a facial recognition software. If the camera scans a terrorist, a bell will ring 99% of the time, and it will fail to ring 1% of the time. If the camera scans a non-terrorist, a bell will not ring 99% of the time, but it will ring 1% of the time.</p>
+<p>If the bell rings, what is the probability that a terrorist is caught?</p>
+<p>About 99 of the 100 terrorists will trigger the alarm—and so will about 9,999 of the 999,900 non-terrorists. Therefore, about 10,098 people will trigger the alarm, among which about 99 will be terrorists. So, the probability that a person triggering the alarm actually is a terrorist, is only about 99 in 10,098, which is less than 1%</p>
+</div>
+</div>
+<div id="set-theoretic" class="section level3">
+<h3><span class="header-section-number">2.1.11</span> Set Theoretic</h3>
+<div id="concept" class="section level4">
+<h4><span class="header-section-number">2.1.11.1</span> Concept</h4>
+<p>Formulae</p>
+<div class="container">
+<div class="col">
+<p><img src="img/stat/venn.png" width="480"></p>
+</div>
+<div class="col">
+<p>Think Why are they so?</p>
+<ul>
+<li><span class="math inline">\(P(A\cap B)=P(A)\times P(B)\)</span>, if A &amp; B are independent (prove from Bayes theorem)</li>
+</ul>
+<blockquote>
+<ul>
+<li><span class="math inline">\(P(A\cup B)=P(A)+P(B)-P(A\cap B)\)</span></li>
+<li><span class="math inline">\(P(A\cap \bar B)=P(A)-P(A\cap B)\)</span></li>
+<li><span class="math inline">\(P(A|\bar B)=\frac{P(A \cap \bar B)}{P(\bar B)}=?\)</span></li>
+<li>Also recall De Morgan’s Laws</li>
+</ul>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="set-problem-01" class="section level4">
+<h4><span class="header-section-number">2.1.11.2</span> Set Problem # 01</h4>
+The probability of Ronaldo scoring a goal is 0.4 and that of Messi 0.38. What is the probability that
+<div class="container">
+<div class="col">
+<ol style="list-style-type: lower-roman">
+<li>Both Score</li>
+<li>Only Ronaldo scores</li>
+<li>Only Messi scores?</li>
+<li>At least one of them scores</li>
+<li>Only one of them scores</li>
+<li>At most one of them scores</li>
+</ol>
+<p>P(R) = 0.4 and P(M) = 0.38</p>
+</div>
+<div class="col">
+<blockquote>
+<ul>
+<li><ol style="list-style-type: decimal">
+<li><span class="math inline">\(P(R \cap M)=P(R) \times P(M)\)</span> (since independent)</li>
+</ol></li>
+<li><ol start="2" style="list-style-type: decimal">
+<li><span class="math inline">\(P(R \cap M&#39;)=?\)</span></li>
+</ol></li>
+<li><ol start="3" style="list-style-type: decimal">
+<li><span class="math inline">\(P(R&#39; \cap M)=?\)</span></li>
+</ol></li>
+<li><ol start="4" style="list-style-type: decimal">
+<li><span class="math inline">\(P(R \cup M)\)</span></li>
+</ol></li>
+<li><ol start="5" style="list-style-type: decimal">
+<li><span class="math inline">\(P(R \cap M&#39;)+P(R&#39; \cap M)\)</span></li>
+</ol></li>
+<li><ol start="6" style="list-style-type: decimal">
+<li>Same to 5</li>
+</ol></li>
+</ul>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="set-problem-02" class="section level4">
+<h4><span class="header-section-number">2.1.11.3</span> Set Problem # 02</h4>
+<div class="container">
+<div class="col">
+<p><span class="math inline">\(S_1\)</span>={1,3,4,7,9,20}</p>
+<p><span class="math inline">\(S_2\)</span>={12, 13, 14, 15, 16, 17, 18}</p>
+<p>If a number is randomly chosen from each set, what is the probability that a prime number comes from <span class="math inline">\(S_1\)</span> and a multiple of 3 from <span class="math inline">\(S_2\)</span>?</p>
+</div>
+<div class="col">
+<div onclick="klikaj(&#39;s3&#39;)">
+Solution (<span style="color:red">click to see</span>)
+</div>
+<div id="s3" style="visibility: hidden">
+<p>Say, P = Prime from <span class="math inline">\(S_1\)</span></p>
+<p>M = Multiple of 3 from <span class="math inline">\(S_2\)</span>.</p>
+<p><span class="math inline">\(P(P) = \frac 3 7\)</span> and <span class="math inline">\(P(M)=\frac 3 7\)</span></p>
+<p>What do we need to find out?</p>
+<ul>
+<li><input type="checkbox" disabled="" />
+<span class="math inline">\(P(P \cup M)\)</span></li>
+<li><input type="checkbox" disabled="" checked="" />
+<span class="math inline">\(P(P \cap M)\)</span></li>
+</ul>
+<blockquote>
+<ul>
+<li>Answer: <span class="math inline">\(P(P \cap M) = P(P) \cdot P(M)\)</span>
+</div></li>
+</ul>
+</blockquote>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+</div>
+<div id="set-problem-03" class="section level4">
+<h4><span class="header-section-number">2.1.11.4</span> Set Problem # 03</h4>
+<p>Cup 01 contains 2 black, 3 red, and 1 pink ball. Cup 2 contains only 1 red ball. A cup is selected randomly. Next, a ball is randomly chosen from that randomly selected cup and placed into the other cup. A ball is then drawn randomly from that second cup. Find the probability that the last ball drawn is a pink one.</p>
+<blockquote>
+<ul>
+<li>3 possible cases</li>
+</ul>
+</blockquote>
+<ol style="list-style-type: decimal">
+<li><blockquote>
+<ul>
+<li>1st cup <span class="math inline">\(\rightarrow\)</span> pink ball <span class="math inline">\(\rightarrow\)</span> pink ball from 2nd cup</li>
+</ul>
+</blockquote></li>
+<li><blockquote>
+<ul>
+<li>1st cup <span class="math inline">\(\rightarrow\)</span> non-pink ball <span class="math inline">\(\rightarrow\)</span> pink ball from 2nd cup</li>
+</ul>
+</blockquote></li>
+<li><blockquote>
+<ul>
+<li>2nd cup <span class="math inline">\(\rightarrow\)</span> red ball <span class="math inline">\(\rightarrow\)</span> pink ball from 1st (other) cup</li>
+</ul>
+</blockquote></li>
+</ol>
+<blockquote>
+<ul>
+<li><span class="math inline">\((\frac 1 2 \times \frac 1 6 \times \frac 1 2 )+ (\frac 1 2 \times \frac 5 6 \times 0) + (\frac 1 2 \times 1 \times \frac 1 7)\)</span></li>
+</ul>
+</blockquote>
+</div>
+<div id="set-problem-04" class="section level4">
+<h4><span class="header-section-number">2.1.11.5</span> Set problem # 04</h4>
+<p>If a senility researcher discovered that in a population of healthy and diseased elderly people, 14% of the people had senile dementia, 63% had arterioplerotic cerebral degeneration, and 11% had both. What is the probability that a person not having arterioplerotic cerebral degeneration has senile dementia?</p>
+</div>
+<div id="set-problem-05" class="section level4">
+<h4><span class="header-section-number">2.1.11.6</span> Set problem # 05</h4>
+<p>A candidate applied for three posts in an industry, having 3, 4, and 2 candidates respectively. What is the probability of getting a job by that candidate in at least one post?</p>
+<div onclick="klikaj(&#39;set5&#39;)">
+<span>Answer</span>
+</div>
+<div id="set5" style="visibility: hidden">
+<p><span class="math inline">\(P(F)+P(S)+P(T)-P(F\cap S)-P(S\cap T)-P(F\cap T)+P(F\cap S \cap T\)</span></p>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+<div id="set-problem-06" class="section level4">
+<h4><span class="header-section-number">2.1.11.7</span> Set problem # 06</h4>
+<p>A card is drawn from each of two well-shuffled pack of cards. Find the probability that at least one of them is an ace.</p>
+<div onclick="klikaj(&#39;rad1&#39;)">
+<span>Solution(<span style="color:red">click to see</span>)</span>
+</div>
+<div id="rad1" style="visibility: hidden">
+<p>Let,</p>
+<p>A = Ace from 1st pack</p>
+<p>B = Ace from 2nd pack</p>
+<p><span class="math inline">\(P(A \cup B)=?\)</span></p>
+<p><span class="math inline">\(P(A) = \frac{^4C_1}{^{52}C_1}\)</span></p>
+<p><span class="math inline">\(P(B) = P(A)\)</span></p>
+<p><span class="math inline">\(P(A\cap B) = P(A) \times P(B)\)</span></p>
+<blockquote>
+<ul>
+<li><span class="math inline">\(P(A \cup B)=P(A)+P(B) - P(A \cap B)\)</span></li>
+</ul>
+</blockquote>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+</div>
+<div id="set-problem-07" class="section level4">
+<h4><span class="header-section-number">2.1.11.8</span> Set problem # 07</h4>
+<p><span class="math inline">\(P(A\cap B)= \frac 1 3, P(A \cup B) = \frac 5 6, and \space P(A) = \frac 1 2\)</span></p>
+<p>Find <span class="math inline">\(P(B)\)</span> and <span class="math inline">\(P(B^c)\)</span></p>
+</div>
+<div id="set-problem-08" class="section level4">
+<h4><span class="header-section-number">2.1.11.9</span> Set problem # 08</h4>
+<p><span class="math inline">\(P(A)= \frac 1 2, P(B) = \frac 1 5, \text{and} \space P(A|B) = \frac 3 8\)</span></p>
+<p>Find <span class="math inline">\(P(A \cap B), P(B|A)\)</span>, and <span class="math inline">\(P(A \cup B)\)</span></p>
+<div onclick="klikaj(&#39;set8&#39;)">
+<span style="color:red"> See a clue</span>
+</div>
+<div id="set8" style="visibility: hidden">
+<p><span class="math inline">\(P(B|A) = \frac {P(A \cap B)}{P(A)}\)</span></p>
+<p><span class="math inline">\(P(A|B) = \frac {P(A \cap B)}{P(B)}\)</span></p>
+<p><span class="math inline">\(P(A \cap B) = P(A|B) \times P(B)\)</span></p>
+<p><span class="math inline">\(\therefore P(B|A) = \frac{P(A|B) \times P(B)}{P(A)}\)</span></p>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+</div>
+</div>
+</div>
+<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
 <a href="prob.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="dependency-and-mutual-exclusivity.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="pres.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="assets/gitbook-2.6.7/js/app.min.js"></script>

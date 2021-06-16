@@ -37,11 +37,11 @@ There are 15 cricketers in BD preliminary team. We got to <span style="font-styl
 
 > - Where is P used? 
 
-## Dependency and Mutual Exclusivity
+### Dependency and Mutual Exclusivity
 
-If two events A and B do not affect each other, they are called independent events. 
+If two events $A$ and $B$ do not affect each other, they are called independent events. 
 
-Let 
+Let, 
 
 Event $A$ = Head appears when a coin is tossed
 
