@@ -119,7 +119,7 @@ What is the probability that the product of three positive integers chosen from 
 </tbody>
 </table>
 
-<small>
+
 ***Tossing a coin twice is equivalent to tossing two coins at once***
 
 What is the probability that 
@@ -129,7 +129,7 @@ What is the probability that
 3. Less than two Heads appear?
 4. Only Tails appears?
 
-</small>
+
 
 #### Flipping A Coin Thrice
 
@@ -176,7 +176,7 @@ What is the probability that
 </tbody>
 </table>
 
-<small>
+
 What is the probability that 
 
 1. All three are Heads?
@@ -186,7 +186,7 @@ What is the probability that
 5. The first draw gives a Tail but the the Draw does not? 
 6. At most one Head appears? 
 
-</small>
+
 
 #### Flinging Two Dice at Once
 
@@ -282,7 +282,7 @@ What is the probability that
 </tbody>
 </table>
 
-<small>
+
 What is the probability that
 
 1. The first numbers is odd?
@@ -290,7 +290,7 @@ What is the probability that
 3. Both numbers are same?
 4. The second number is bigger? 
 
-</small>
+
 
 ### Playing Card
 
@@ -367,13 +367,13 @@ iii. A Hearts or a King
 
 #### Box Problem #01
 
-<small>In a box, there are 5 blue marbles, 7 green marbles, and 8 yellow marbles. If two marbles are randomly selected, what is the probability that both will be green or yellow, if taken
+In a box, there are 5 blue marbles, 7 green marbles, and 8 yellow marbles. If two marbles are randomly selected, what is the probability that both will be green or yellow, if taken
 
 i. with replacement
 
 ii. without replacement
 
-</small>
+
 
 > - Correct or not: $\frac{^7C_2}{^{20}C_2}+\frac{^8C_2}{^{20}C_2}$
 > - $\frac{^7C_1 \times ^7C_1}{^{20}C_1 \times ^{20}C_1}+\frac{^8C_1 \times ^8C_1}{^{20}C_1 \times ^{20}C_1}$
@@ -444,7 +444,7 @@ Probability that it rains today is 40%, that tomorrow is 50%, and that on both d
 
 In a college, there are 100 students, of whom 30 play football, 40 play cricket, and 20 play both. A student is selected randomly. If he plays cricket, what is the probability that he plays football? 
 
-<div onclick="klikaj('con2')"><span>Solution (click to see)</span></div>
+<div onclick="klikaj('con2')">Solution (<span style="color:red">click to see</span>)</div>
 <div id="con2" style="visibility: hidden">
 <div class="container">
 <div class="col">
@@ -475,14 +475,14 @@ If a number is picked randomly and known it an even number, What is the probabil
 
 #### Conditional Problem # 04
 
-<small>
+
 In a city of 1 million inhabitants let there be 100 terrorists and 999,900 non-terrorists. The city has a facial recognition software. If the camera scans a terrorist, a bell will ring 99% of the time, and it will fail to ring 1% of the time. If the camera scans a non-terrorist, a bell will not ring 99% of the time, but it will ring 1% of the time.
 
 If the bell rings, what is the probability that a terrorist is caught? 
 
 About 99 of the 100 terrorists will trigger the alarm—and so will about 9,999 of the 999,900 non-terrorists. Therefore, about 10,098 people will trigger the alarm, among which about 99 will be terrorists. So, the probability that a person triggering the alarm actually is a terrorist, is only about 99 in 10,098, which is less than 1%
 
-</small>
+
 
 ### Set Theoretic
 
@@ -495,7 +495,7 @@ Formulae
 <img src="img/stat/venn.png" width="480">
 </div>
 <div class="col">
-<small>
+
 Think Why are they so?
 
 - $P(A\cap B)=P(A)\times P(B)$, if A & B are independent (prove from Bayes theorem) 
@@ -505,7 +505,7 @@ Think Why are they so?
 > - $P(A|\bar B)=\frac{P(A \cap \bar B)}{P(\bar B)}=?$
 > - Also recall De Morgan's Laws
 
-</small>
+
 </div>
 </div>
 
@@ -515,7 +515,7 @@ The probability of Ronaldo scoring a goal is 0.4 and that of Messi 0.38. What is
 <div class="container">
 <div class="col">
 
-<small>
+
 
 i. Both Score
 ii. Only Ronaldo scores
@@ -525,7 +525,7 @@ v. Only one of them scores
 vi. At most one of them scores
 
 P(R) = 0.4 and P(M) = 0.38
-</small>
+
 </div>
 <div class="col">
 
@@ -551,7 +551,7 @@ If a number is randomly chosen from each set, what is the probability that a pri
 </div>
 <div class="col">
 
-<div onclick="klikaj('s3')"><span>Solution</span></div>
+<div onclick="klikaj('s3')">Solution (<span style="color:red">click to see</span>)</div>
 <div id="s3" style="visibility: hidden">
 Say, P = Prime from $S_1$
 
@@ -601,9 +601,9 @@ A candidate applied for three posts in an industry, having 3, 4, and 2 candidate
 
 <div onclick="klikaj('set5')"><span>Answer</span></div>
 <div id="set5" style="visibility: hidden">
-<small>
+
 $P(F)+P(S)+P(T)-P(F\cap S)-P(S\cap T)-P(F\cap T)+P(F\cap S \cap T$
-</small>
+
 </div>
 <script>
 function klikaj(i) {
@@ -615,9 +615,9 @@ function klikaj(i) {
 
 A card is drawn from each of two well-shuffled pack of cards. Find the probability that at least one of them is an ace. 
 
-<div onclick="klikaj('rad1')"><span>Solution</span></div>
+<div onclick="klikaj('rad1')"><span>Solution(<span style="color:red">click to see</span>)</span></div>
 <div id="rad1" style="visibility: hidden">
-<small>
+
 Let, 
 
 A = Ace from 1st pack 
@@ -633,7 +633,7 @@ $P(B) = P(A)$
 $P(A\cap B) = P(A) \times P(B)$
 
 > - $P(A \cup B)=P(A)+P(B) - P(A \cap B)$ 
-</small>
+
 </div>
 <script>
 function klikaj(i) {
@@ -653,7 +653,7 @@ $P(A)= \frac 1 2, P(B) = \frac 1 5, \text{and} \space P(A|B) = \frac 3 8$
 
 Find $P(A \cap B), P(B|A)$, and $P(A \cup B)$
 
-<div onclick="klikaj('set8')"><span>Clue</span></div>
+<div onclick="klikaj('set8')"><span style="color:red"> See a clue</span></div>
 <div id="set8" style="visibility: hidden">
 $P(B|A) = \frac {P(A \cap B)}{P(A)}$
 

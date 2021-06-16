@@ -134,7 +134,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Statistics and Mathematics Lectures</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a><ul>
+<li class="chapter" data-level="" data-path="about-me.html"><a href="about-me.html"><i class="fa fa-check"></i>About me</a></li>
+</ul></li>
 <li class="chapter" data-level="1" data-path="stat.html"><a href="stat.html"><i class="fa fa-check"></i><b>1</b> Statistics</a><ul>
 <li class="chapter" data-level="1.1" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html"><i class="fa fa-check"></i><b>1.1</b> Preliminary Concepts</a><ul>
 <li class="chapter" data-level="1.1.1" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#statistics-what-how"><i class="fa fa-check"></i><b>1.1.1</b> Statistics: What &amp; How</a></li>
@@ -293,7 +295,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="math.html"><a href="math.html#class-seven"><i class="fa fa-check"></i>Class Seven</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="about-me.html"><a href="about-me.html"><i class="fa fa-check"></i>About me</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -476,8 +477,7 @@ TT
 </tr>
 </tbody>
 </table>
-<p><small>
-<strong><em>Tossing a coin twice is equivalent to tossing two coins at once</em></strong></p>
+<p><strong><em>Tossing a coin twice is equivalent to tossing two coins at once</em></strong></p>
 <p>What is the probability that</p>
 <ol style="list-style-type: decimal">
 <li>The Head appears at the first draw?</li>
@@ -485,7 +485,6 @@ TT
 <li>Less than two Heads appear?</li>
 <li>Only Tails appears?</li>
 </ol>
-<p></small></p>
 </div>
 <div id="flipping-a-coin-thrice" class="section level4">
 <h4><span class="header-section-number">2.1.6.2</span> Flipping A Coin Thrice</h4>
@@ -564,8 +563,7 @@ TTT
 </tr>
 </tbody>
 </table>
-<p><small>
-What is the probability that</p>
+<p>What is the probability that</p>
 <ol style="list-style-type: decimal">
 <li>All three are Heads?</li>
 <li>There are more than one Head?</li>
@@ -574,7 +572,6 @@ What is the probability that</p>
 <li>The first draw gives a Tail but the the Draw does not?</li>
 <li>At most one Head appears?</li>
 </ol>
-<p></small></p>
 </div>
 <div id="flinging-two-dice-at-once" class="section level4">
 <h4><span class="header-section-number">2.1.6.3</span> Flinging Two Dice at Once</h4>
@@ -776,15 +773,13 @@ Second<br>Die
 </tr>
 </tbody>
 </table>
-<p><small>
-What is the probability that</p>
+<p>What is the probability that</p>
 <ol style="list-style-type: decimal">
 <li>The first numbers is odd?</li>
 <li>The summation of numbers in two draws is a prime number?</li>
 <li>Both numbers are same?</li>
 <li>The second number is bigger?</li>
 </ol>
-<p></small></p>
 </div>
 </div>
 <div id="playing-card" class="section level3">
@@ -879,12 +874,11 @@ Each rank has 13 cards.</p>
 <h3><span class="header-section-number">2.1.8</span> Box</h3>
 <div id="box-problem-01" class="section level4">
 <h4><span class="header-section-number">2.1.8.1</span> Box Problem #01</h4>
-<p><small>In a box, there are 5 blue marbles, 7 green marbles, and 8 yellow marbles. If two marbles are randomly selected, what is the probability that both will be green or yellow, if taken</p>
+<p>In a box, there are 5 blue marbles, 7 green marbles, and 8 yellow marbles. If two marbles are randomly selected, what is the probability that both will be green or yellow, if taken</p>
 <ol style="list-style-type: lower-roman">
 <li><p>with replacement</p></li>
 <li><p>without replacement</p></li>
 </ol>
-<p></small></p>
 <blockquote>
 <ul>
 <li>Correct or not: <span class="math inline">\(\frac{^7C_2}{^{20}C_2}+\frac{^8C_2}{^{20}C_2}\)</span></li>
@@ -999,7 +993,7 @@ Each rank has 13 cards.</p>
 <h4><span class="header-section-number">2.1.9.3</span> Conditional Problem # 02</h4>
 <p>In a college, there are 100 students, of whom 30 play football, 40 play cricket, and 20 play both. A student is selected randomly. If he plays cricket, what is the probability that he plays football?</p>
 <div onclick="klikaj(&#39;con2&#39;)">
-<span>Solution</span>
+Solution (<span style="color:red">click to see</span>)
 </div>
 <div id="con2" style="visibility: hidden">
 <div class="container">
@@ -1031,11 +1025,9 @@ function klikaj(i) {
 </div>
 <div id="conditional-problem-04" class="section level4">
 <h4><span class="header-section-number">2.1.9.5</span> Conditional Problem # 04</h4>
-<p><small>
-In a city of 1 million inhabitants let there be 100 terrorists and 999,900 non-terrorists. The city has a facial recognition software. If the camera scans a terrorist, a bell will ring 99% of the time, and it will fail to ring 1% of the time. If the camera scans a non-terrorist, a bell will not ring 99% of the time, but it will ring 1% of the time.</p>
+<p>In a city of 1 million inhabitants let there be 100 terrorists and 999,900 non-terrorists. The city has a facial recognition software. If the camera scans a terrorist, a bell will ring 99% of the time, and it will fail to ring 1% of the time. If the camera scans a non-terrorist, a bell will not ring 99% of the time, but it will ring 1% of the time.</p>
 <p>If the bell rings, what is the probability that a terrorist is caught?</p>
 <p>About 99 of the 100 terrorists will trigger the alarm—and so will about 9,999 of the 999,900 non-terrorists. Therefore, about 10,098 people will trigger the alarm, among which about 99 will be terrorists. So, the probability that a person triggering the alarm actually is a terrorist, is only about 99 in 10,098, which is less than 1%</p>
-<p></small></p>
 </div>
 </div>
 <div id="set-theoretic" class="section level3">
@@ -1048,8 +1040,7 @@ In a city of 1 million inhabitants let there be 100 terrorists and 999,900 non-t
 <p><img src="img/stat/venn.png" width="480"></p>
 </div>
 <div class="col">
-<p><small>
-Think Why are they so?</p>
+<p>Think Why are they so?</p>
 <ul>
 <li><span class="math inline">\(P(A\cap B)=P(A)\times P(B)\)</span>, if A &amp; B are independent (prove from Bayes theorem)</li>
 </ul>
@@ -1061,7 +1052,6 @@ Think Why are they so?</p>
 <li>Also recall De Morgan’s Laws</li>
 </ul>
 </blockquote>
-<p></small></p>
 </div>
 </div>
 </div>
@@ -1070,7 +1060,6 @@ Think Why are they so?</p>
 The probability of Ronaldo scoring a goal is 0.4 and that of Messi 0.38. What is the probability that
 <div class="container">
 <div class="col">
-<p><small></p>
 <ol style="list-style-type: lower-roman">
 <li>Both Score</li>
 <li>Only Ronaldo scores</li>
@@ -1079,8 +1068,7 @@ The probability of Ronaldo scoring a goal is 0.4 and that of Messi 0.38. What is
 <li>Only one of them scores</li>
 <li>At most one of them scores</li>
 </ol>
-<p>P(R) = 0.4 and P(M) = 0.38
-</small></p>
+<p>P(R) = 0.4 and P(M) = 0.38</p>
 </div>
 <div class="col">
 <blockquote>
@@ -1118,7 +1106,7 @@ The probability of Ronaldo scoring a goal is 0.4 and that of Messi 0.38. What is
 </div>
 <div class="col">
 <div onclick="klikaj(&#39;s3&#39;)">
-<span>Solution</span>
+Solution (<span style="color:red">click to see</span>)
 </div>
 <div id="s3" style="visibility: hidden">
 <p>Say, P = Prime from <span class="math inline">\(S_1\)</span></p>
@@ -1187,9 +1175,7 @@ function klikaj(i) {
 <span>Answer</span>
 </div>
 <div id="set5" style="visibility: hidden">
-<p><small>
-<span class="math inline">\(P(F)+P(S)+P(T)-P(F\cap S)-P(S\cap T)-P(F\cap T)+P(F\cap S \cap T\)</span>
-</small></p>
+<p><span class="math inline">\(P(F)+P(S)+P(T)-P(F\cap S)-P(S\cap T)-P(F\cap T)+P(F\cap S \cap T\)</span></p>
 </div>
 <script>
 function klikaj(i) {
@@ -1201,11 +1187,10 @@ function klikaj(i) {
 <h4><span class="header-section-number">2.1.10.7</span> Set problem # 06</h4>
 <p>A card is drawn from each of two well-shuffled pack of cards. Find the probability that at least one of them is an ace.</p>
 <div onclick="klikaj(&#39;rad1&#39;)">
-<span>Solution</span>
+<span>Solution(<span style="color:red">click to see</span>)</span>
 </div>
 <div id="rad1" style="visibility: hidden">
-<p><small>
-Let,</p>
+<p>Let,</p>
 <p>A = Ace from 1st pack</p>
 <p>B = Ace from 2nd pack</p>
 <p><span class="math inline">\(P(A \cup B)=?\)</span></p>
@@ -1214,8 +1199,7 @@ Let,</p>
 <p><span class="math inline">\(P(A\cap B) = P(A) \times P(B)\)</span></p>
 <blockquote>
 <ul>
-<li><span class="math inline">\(P(A \cup B)=P(A)+P(B) - P(A \cap B)\)</span>
-</small></li>
+<li><span class="math inline">\(P(A \cup B)=P(A)+P(B) - P(A \cap B)\)</span></li>
 </ul>
 </blockquote>
 </div>
@@ -1235,7 +1219,7 @@ function klikaj(i) {
 <p><span class="math inline">\(P(A)= \frac 1 2, P(B) = \frac 1 5, \text{and} \space P(A|B) = \frac 3 8\)</span></p>
 <p>Find <span class="math inline">\(P(A \cap B), P(B|A)\)</span>, and <span class="math inline">\(P(A \cup B)\)</span></p>
 <div onclick="klikaj(&#39;set8&#39;)">
-<span>Clue</span>
+<span style="color:red"> See a clue</span>
 </div>
 <div id="set8" style="visibility: hidden">
 <p><span class="math inline">\(P(B|A) = \frac {P(A \cap B)}{P(A)}\)</span></p>
