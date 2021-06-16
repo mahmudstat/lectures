@@ -367,7 +367,7 @@ d. Prove $$\sum_{i=1}^{10}x_iy_i \ne (\sum_{i=1}^{10}x_i)(\sum_{i=1}^{10}y_j)$$
 
 ### Tabluation
 
-![](img//stat/table.jpg)
+![](img/stat/table.jpg)
 
 ### Data Classification
 
@@ -1298,7 +1298,7 @@ Central Moments: $\mu_r=\frac{\sum(x_i-\bar x)^r}{n}$
 <div class="col">
 We knew the universe is expanding from the knowledge of this chapter! 
 
-<img class="plain" src="img/hubble_scatter.png" width="480">
+<img class="plain" src="stat/img/hubble_scatter.png" width="480">
 </div>
 <div class="col">
 We learn in this chapter
@@ -1310,7 +1310,7 @@ We learn in this chapter
 
 ### Scatter Plot
 
-<img class="plain" src="img/scatter_plot.jpg" width="650"> 
+<img class="plain" src="stat/img/scatter_plot.jpg" width="650"> 
 
 ### Sequence
 
@@ -1335,7 +1335,7 @@ Corrleation, $r = \frac{\sum (x_i - \bar x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i 
 
 <div class="container">
 <div class="col">
-<img  class="plain" src="img/scatter_corr.png" width="400">
+<img  class="plain" src="stat/img/scatter_corr.png" width="400">
 </div>
 <div class="col">
 $r^2=R^2 \rightarrow$ Coefficient of determination
@@ -1396,5 +1396,3 @@ Bread without sour or wheat!
 - $r = \frac{\sum (x_i - \bar x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i - \bar x)^2}{n}\frac{\sum(y_i - \bar y)^2}{n}}}$
 - $\rho = 1- \frac{6 \sum d_i^2}{n(n^2-1)}$
 - b or $\beta$
-
-# Probability {#prob}
