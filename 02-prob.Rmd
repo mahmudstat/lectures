@@ -37,49 +37,114 @@ There are 15 cricketers in BD preliminary team. We got to <span style="font-styl
 
 > - Where is P used? 
 
-## Dependency and mutually exclusiveness
+## Dependency and Mutual Exclusivity
 
-I two events A and B do not affect each other, they are called independent events. 
+If two events $A$ and $B$ do not affect each other, they are called independent events. 
 
-Let 
+Let, 
 
-Event A = Head appears when a coin is tossed
-Event B = Head appears when the coin is tossed again
+Event $A$ = Head appears when a coin is tossed
+
+Event $B$ = Head appears when the coin is tossed again
 
 These two events are independent, assuming the first toss does not alter the properties of the coin. 
 
 Consider another set of two events:
 
-A = An ace appears when a card drawn from a deck of 52 cards
-B = An ace appears if another card is drawn from the same deck, without putting the first card back. 
+$A$ = An ace appears when a card is drawn from a deck of 52 cards
 
-In this case the P(B) will depend on A. 
+$B$ = An ace appears if another card is drawn from the same deck, without putting the first card back. 
+
+In this case the $P(B)$ will depend on **A**. 
 
 Clearly, $P(A) = \frac 1 {52}$, but $P(B) = \frac 1 {51}$
 
-If event A did not happend, P(B) would be $\frac 1 {52}$, so it turns out B depends on A. 
+If event $A$ did not happen, $P(B)$ would be $\frac 1 {52}$, so it turns out $B$ depends on $A$. 
 
-Now, two events are called mutually exclusive when occurrence of one prevents other from happening. 
+Theoretically speaking, dependent events are described the Bayes Theorem. If the event A depends on B, the the probability that A would happen if B happens is:
 
-If a die is thrown once one of 1-6 will face up. If 1 appears, 2, or any other number from the rest cannot appear. Thus, Getting these numbers are mutually exclusive or disjoint. Mutually exclusive sets do not have any common elements. 
+$P(A|B) = \frac{P(A \cap B)}{P(B)}$
 
-Now, merging the concepts of dependency and mutually exclusiveness is tricky. 
+$\Rightarrow P(A \cap B) = P(A|B) \times P(B)$
+
+Now, if A does not really depend on B, then $P(A|B) = P(A)$, i.e. $A$ does not really care about $B$. 
+
+Thus, if A and B are independent, $P(A \cap B) = P(A) \times P(B)$
+
+Now, two events are called **mutually exclusive** when occurrence of one prevents other from happening. 
+
+If a die is thrown once one of 1-6 will face up. If 1 appears, 2, or any other number from the rest cannot appear. Thus, Getting these numbers are mutually exclusive or disjoint events. Mutually exclusive sets do not have any common elements between themselves. 
+
+Now, merging the concepts of dependency and mutual exclusivity is tricky. 
 
 **Events cannot be independent and mutually exclusive simultaneously**, although the opposite seems intuitive. 
 
-Common sense tells us events which are mutually exclusive should be independent, but common sense is mistaken here. 
+Common sense tells us *events which are mutually exclusive should be independent*, **but common sense is mistaken here.** 
 
 Consider throwing a die. 
 
-S = {1, 2, 3, 4, 5, 6}
+$S = \{1, 2, 3, 4, 5, 6\}$
 
-Let, A = {1, 3, 5} and B = {2, 4, 6}
+Let, $A = \{1, 3, 5\}$ and $B = \{2, 4, 6\}$
 
 There are no common elements, so events A and B are disjoint or mutually exclusive. 
 
-Now, let us prove it theoretically. 
+It might seem, since the sets A and B have no common elemts, they are independent. 
 
+Let us check mathematically:
 
+From the given information, $P(A)= \frac 1 2, P(B) = \frac 1 2$
+
+$P(A \cap B) = 0$ (since there are no common elements) 
+
+Mathematically,
+
+$P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac 0 {\frac 1 2} = 0$
+
+And $P(A) \cdot P(B) = \frac 1 2 \cdot \frac 1 2 = \frac 1 4$
+
+$\therefore P(A \cap B) \ne P(A) \cdot P(B)$, which proves event $A$ and event $B$ are not independent, a result which is counterintuitive. Upon second thought, however, it becomes intuitive. First note that $A$ and $B$ both belong to $S$. That they disjoint means one cannot happen if the other happens, which means one is preventing another from happening, a behavior which can explained as dependency: one event care about the other, i.e, if one happens, another refrains from happening. 
+
+Now, let us see another example, where we have two non mutually exclusive sets. 
+
+Let, $A = \{1, 3, 5\}$ and $B = \{1, 3, 4, 6\}$ (observe that there are some common elements) 
+
+$P(A) = \frac 1 2, P(B) = \frac 4 6 = \frac 2 3$
+
+$P(A \cap B) = \frac 2 6 = \frac 1 3$, and $P(A) \cdot P(B) = \frac 1 2 \cdot \frac 2 3 = \frac 1 3$
+
+$\therefore P(A \cap B) = P(A) \cdot P(B)$, which proves A and B are independent. 
+
+Using Bayes theorem, 
+
+$P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac{\frac 1 3}{\frac 2 3} = \frac 1 2 = P(A)$
+
+$\therefore P(A|B) = P(A)$, which means $A$ does not what happens to $B$. 
+
+Thus, if A and B have common elements, they may be independent of each other. But are they always? No, because it may happen that $P(A \cap B) \ne P(A) \cdot P(B)$, in which case they are dependent events.
+
+So we have three possible cases when we combine depend with disjointness:
+
+1. If two events have no common sample points (elements) (mutually exclusive or disjoint), they are always dependent events. 
+2. If two sets have some common sample points, they may be dependent or independent. 
+	a. Independet if $P(A \cap B) = P(A) \cdot P(B)$
+	b. Dependet if $P(A \cap B) \ne P(A) \cdot P(B)$
+
+Now, let us prove the relationship theoretically. 
+
+Let $P(A) \ne 0, P(B\ne 0$ 
+
+If $A$ and $B$ are independent, $P(A \cap B) = P(A) \cdot P(B)$
+
+Since $P(A)$ and $P(B)$ are both non-zero numbers, $P(A) \cdot P(B) \ne 0$
+
+$\therefore P(A \cap B) \ne 0$ , i.e, there are some common elements between the sets. 
+
+Thus, independent events cannot be mutually exclusive, i.e, they would always have common elements. 
+
+Finally, in general, we can say: **Mutually exclsuive events are dependent events, while non mutually exclusive events may or may not be dependent.** 
+
+In other word, ***all mutually exclsuive events are dependent events, but not all dependent events are mutually exclusive.*** 
 
 ### Types of Problems
 
