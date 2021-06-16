@@ -37,6 +37,50 @@ There are 15 cricketers in BD preliminary team. We got to <span style="font-styl
 
 > - Where is P used? 
 
+## Dependency and mutually exclusiveness
+
+I two events A and B do not affect each other, they are called independent events. 
+
+Let 
+
+Event A = Head appears when a coin is tossed
+Event B = Head appears when the coin is tossed again
+
+These two events are independent, assuming the first toss does not alter the properties of the coin. 
+
+Consider another set of two events:
+
+A = An ace appears when a card drawn from a deck of 52 cards
+B = An ace appears if another card is drawn from the same deck, without putting the first card back. 
+
+In this case the P(B) will depend on A. 
+
+Clearly, $P(A) = \frac 1 {52}$, but $P(B) = \frac 1 {51}$
+
+If event A did not happend, P(B) would be $\frac 1 {52}$, so it turns out B depends on A. 
+
+Now, two events are called mutually exclusive when occurrence of one prevents other from happening. 
+
+If a die is thrown once one of 1-6 will face up. If 1 appears, 2, or any other number from the rest cannot appear. Thus, Getting these numbers are mutually exclusive or disjoint. Mutually exclusive sets do not have any common elements. 
+
+Now, merging the concepts of dependency and mutually exclusiveness is tricky. 
+
+**Events cannot be independent and mutually exclusive simultaneously**, although the opposite seems intuitive. 
+
+Common sense tells us events which are mutually exclusive should be independent, but common sense is mistaken here. 
+
+Consider throwing a die. 
+
+S = {1, 2, 3, 4, 5, 6}
+
+Let, A = {1, 3, 5} and B = {2, 4, 6}
+
+There are no common elements, so events A and B are disjoint or mutually exclusive. 
+
+Now, let us prove it theoretically. 
+
+
+
 ### Types of Problems
 
 - Miscellaneous  
