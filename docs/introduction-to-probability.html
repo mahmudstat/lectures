@@ -24,7 +24,7 @@
 <meta name="author" content="Abdullah Al Mahmud" />
 
 
-<meta name="date" content="2021-06-16" />
+<meta name="date" content="2021-06-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -367,23 +367,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="dependency-and-mutual-exclusivity" class="section level3">
 <h3><span class="header-section-number">2.1.4</span> Dependency and Mutual Exclusivity</h3>
 <p>If two events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> do not affect each other, they are called independent events.</p>
-<p>Let,</p>
-<p>Event <span class="math inline">\(A\)</span> = Head appears when a coin is tossed</p>
-<p>Event <span class="math inline">\(B\)</span> = Head appears when the coin is tossed again</p>
+<p>Let the events,</p>
+<p><span class="math inline">\(A\)</span> = Head appears when a coin is tossed</p>
+<p><span class="math inline">\(B\)</span> = Head appears when the coin is tossed again</p>
 <p>These two events are independent, assuming the first toss does not alter the properties of the coin.</p>
 <p>Consider another set of two events:</p>
 <p><span class="math inline">\(A\)</span> = An ace appears when a card is drawn from a deck of 52 cards</p>
 <p><span class="math inline">\(B\)</span> = An ace appears if another card is drawn from the same deck, without putting the first card back.</p>
-<p>In this case the <span class="math inline">\(P(B)\)</span> will depend on <strong>A</strong>.</p>
-<p>Clearly, <span class="math inline">\(P(A) = \frac 1 {52}\)</span>, but <span class="math inline">\(P(B) = \frac 1 {51}\)</span></p>
-<p>If event <span class="math inline">\(A\)</span> did not happen, <span class="math inline">\(P(B)\)</span> would be <span class="math inline">\(\frac 1 {52}\)</span>, so it turns out <span class="math inline">\(B\)</span> depends on <span class="math inline">\(A\)</span>.</p>
-<p>Theoretically speaking, dependent events are described the Bayes Theorem. If the event A depends on B, the the probability that A would happen if B happens is:</p>
+<p>In this case the <span class="math inline">\(P(B)\)</span> will depend on <span class="math inline">\(A\)</span>.</p>
+<p>Clearly, <span class="math inline">\(P(A) = \frac 4 {52}\)</span>, but <span class="math inline">\(P(B) = \frac 4 {51}\)</span></p>
+<p>If event <span class="math inline">\(B\)</span> did not depend event <span class="math inline">\(A\)</span>, <span class="math inline">\(P(B)\)</span> too would be <span class="math inline">\(\frac 4 {52}\)</span>, so it turns out <span class="math inline">\(B\)</span> depends on <span class="math inline">\(A\)</span>.</p>
+<p>Theoretically speaking, dependent events are described the Bayes' Theorem. If the event A depends on B, the the probability that A would happen if B happens is:</p>
 <p><span class="math inline">\(P(A|B) = \frac{P(A \cap B)}{P(B)}\)</span></p>
 <p><span class="math inline">\(\Rightarrow P(A \cap B) = P(A|B) \times P(B)\)</span></p>
-<p>Now, if A does not really depend on B, then <span class="math inline">\(P(A|B) = P(A)\)</span>, i.e. <span class="math inline">\(A\)</span> does not really care about <span class="math inline">\(B\)</span>.</p>
+<p>Now, if A does not really depend on B, then <span class="math inline">\(P(A|B) = P(A)\)</span>, i.e., <span class="math inline">\(A\)</span> does not really care about <span class="math inline">\(B\)</span>.</p>
 <p>Thus, if A and B are independent, <span class="math inline">\(P(A \cap B) = P(A) \times P(B)\)</span></p>
-<p>Now, two events are called <strong>mutually exclusive</strong> when occurrence of one prevents other from happening.</p>
-<p>If a die is thrown once one of 1-6 will face up. If 1 appears, 2, or any other number from the rest cannot appear. Thus, Getting these numbers are mutually exclusive or disjoint events. Mutually exclusive sets do not have any common elements between themselves.</p>
+<p>Now, two events are called <strong>mutually exclusive</strong> when occurrence of one prevents other from happening, i.e,, they cannot occur simultaneously.</p>
+<p>If a die is thrown once, one of 1-6 will face up. If 1 appears, 2, or any other number from the rest cannot appear. Thus, Getting these numbers are mutually exclusive or disjoint events. Mutually exclusive sets do not have any common elements between themselves.</p>
 <p>Now, merging the concepts of dependency and mutual exclusivity is tricky.</p>
 <p><strong>Events cannot be independent and mutually exclusive simultaneously</strong>, although the opposite seems intuitive.</p>
 <p>Common sense tells us <em>events which are mutually exclusive should be independent</em>, <strong>but common sense is mistaken here.</strong></p>
@@ -391,14 +391,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><span class="math inline">\(S = \{1, 2, 3, 4, 5, 6\}\)</span></p>
 <p>Let, <span class="math inline">\(A = \{1, 3, 5\}\)</span> and <span class="math inline">\(B = \{2, 4, 6\}\)</span></p>
 <p>There are no common elements, so events A and B are disjoint or mutually exclusive.</p>
-<p>It might seem, since the sets A and B have no common elemts, they are independent.</p>
+<p>It might seem, since the sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> have no common elemts, they are independent.</p>
 <p>Let us check mathematically:</p>
 <p>From the given information, <span class="math inline">\(P(A)= \frac 1 2, P(B) = \frac 1 2\)</span></p>
 <p><span class="math inline">\(P(A \cap B) = 0\)</span> (since there are no common elements)</p>
+<p>And <span class="math inline">\(P(A) \cdot P(B) = \frac 1 2 \cdot \frac 1 2 = \frac 1 4\)</span></p>
+<p><span class="math inline">\(\therefore P(A \cap B) \ne P(A) \cdot P(B)\)</span>, which proves event <span class="math inline">\(A\)</span> and event <span class="math inline">\(B\)</span> are not independent, a result which is counterintuitive. Upon second thought, however, it becomes intuitive. First note that <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> both belong to <span class="math inline">\(S\)</span>. That they are disjoint means one cannot happen if the other happens, which means one is preventing another from happening, a behavior which can explained as dependency: one event cares about the other, i.e., if one happens, another refrains from happening.</p>
 <p>Mathematically,</p>
 <p><span class="math inline">\(P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac 0 {\frac 1 2} = 0\)</span></p>
-<p>And <span class="math inline">\(P(A) \cdot P(B) = \frac 1 2 \cdot \frac 1 2 = \frac 1 4\)</span></p>
-<p><span class="math inline">\(\therefore P(A \cap B) \ne P(A) \cdot P(B)\)</span>, which proves event <span class="math inline">\(A\)</span> and event <span class="math inline">\(B\)</span> are not independent, a result which is counterintuitive. Upon second thought, however, it becomes intuitive. First note that <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> both belong to <span class="math inline">\(S\)</span>. That they disjoint means one cannot happen if the other happens, which means one is preventing another from happening, a behavior which can explained as dependency: one event care about the other, i.e, if one happens, another refrains from happening.</p>
+<p>In summary, reducing the probability of another event to zero is also a kind of influence, i.e.,</p>
 <p>Now, let us see another example, where we have two non mutually exclusive sets.</p>
 <p>Let, <span class="math inline">\(A = \{1, 3, 5\}\)</span> and <span class="math inline">\(B = \{1, 3, 4, 6\}\)</span> (observe that there are some common elements)</p>
 <p><span class="math inline">\(P(A) = \frac 1 2, P(B) = \frac 4 6 = \frac 2 3\)</span></p>
@@ -421,8 +422,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Let <span class="math inline">\(P(A) \ne 0, P(B\ne 0\)</span></p>
 <p>If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent, <span class="math inline">\(P(A \cap B) = P(A) \cdot P(B)\)</span></p>
 <p>Since <span class="math inline">\(P(A)\)</span> and <span class="math inline">\(P(B)\)</span> are both non-zero numbers, <span class="math inline">\(P(A) \cdot P(B) \ne 0\)</span></p>
-<p><span class="math inline">\(\therefore P(A \cap B) \ne 0\)</span> , i.e, there are some common elements between the sets.</p>
-<p>Thus, independent events cannot be mutually exclusive, i.e, they would always have common elements.</p>
+<p><span class="math inline">\(\therefore P(A \cap B) \ne 0\)</span> , i.e., there are some common elements between the sets.</p>
+<p>Thus, independent events cannot be mutually exclusive, i.e., they would always have common elements.</p>
 <p>Finally, in general, we can say: <strong>Mutually exclsuive events are dependent events, while non mutually exclusive events may or may not be dependent.</strong></p>
 <p>In other word, <strong><em>all mutually exclsuive events are dependent events, but not all dependent events are mutually exclusive.</em></strong></p>
 </div>
@@ -448,7 +449,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>What is the probability that in a leap year, there are 53 Fridays?</p>
 <blockquote>
 <ul>
-<li>In a leap year, there are 366 days, i.e, 52 weeks and 2 days. In each week is a Fridays, so there are no less than 52 Fridays. The remaining two days could be:</li>
+<li>In a leap year, there are 366 days, i.e., 52 weeks and 2 days. In each week is a Fridays, so there are no less than 52 Fridays. The remaining two days could be:</li>
 <li>(Sat, Sun); (Sun, Mon); (Mon, Tue); (Tue, Wedn); (Wedn, Thu); (Thu, Fri); (Fri, Sat) = 7</li>
 <li>Total possible outcome = 7 and favorable outcomes = 2</li>
 <li><span class="math inline">\(P = \frac{2}{7}\)</span></li>

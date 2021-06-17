@@ -41,11 +41,11 @@ There are 15 cricketers in BD preliminary team. We got to <span style="font-styl
 
 If two events $A$ and $B$ do not affect each other, they are called independent events. 
 
-Let, 
+Let the events,
 
-Event $A$ = Head appears when a coin is tossed
+$A$ = Head appears when a coin is tossed
 
-Event $B$ = Head appears when the coin is tossed again
+$B$ = Head appears when the coin is tossed again
 
 These two events are independent, assuming the first toss does not alter the properties of the coin. 
 
@@ -55,25 +55,25 @@ $A$ = An ace appears when a card is drawn from a deck of 52 cards
 
 $B$ = An ace appears if another card is drawn from the same deck, without putting the first card back. 
 
-In this case the $P(B)$ will depend on **A**. 
+In this case the $P(B)$ will depend on $A$. 
 
-Clearly, $P(A) = \frac 1 {52}$, but $P(B) = \frac 1 {51}$
+Clearly, $P(A) = \frac 4 {52}$, but $P(B) = \frac 4 {51}$
 
-If event $A$ did not happen, $P(B)$ would be $\frac 1 {52}$, so it turns out $B$ depends on $A$. 
+If event $B$ did not depend event $A$, $P(B)$ too would be $\frac 4 {52}$, so it turns out $B$ depends on $A$. 
 
-Theoretically speaking, dependent events are described the Bayes Theorem. If the event A depends on B, the the probability that A would happen if B happens is:
+Theoretically speaking, dependent events are described the Bayes\' Theorem. If the event A depends on B, the the probability that A would happen if B happens is:
 
 $P(A|B) = \frac{P(A \cap B)}{P(B)}$
 
 $\Rightarrow P(A \cap B) = P(A|B) \times P(B)$
 
-Now, if A does not really depend on B, then $P(A|B) = P(A)$, i.e. $A$ does not really care about $B$. 
+Now, if A does not really depend on B, then $P(A|B) = P(A)$, i.e., $A$ does not really care about $B$. 
 
 Thus, if A and B are independent, $P(A \cap B) = P(A) \times P(B)$
 
-Now, two events are called **mutually exclusive** when occurrence of one prevents other from happening. 
+Now, two events are called **mutually exclusive** when occurrence of one prevents other from happening, i.e,, they cannot occur simultaneously.  
 
-If a die is thrown once one of 1-6 will face up. If 1 appears, 2, or any other number from the rest cannot appear. Thus, Getting these numbers are mutually exclusive or disjoint events. Mutually exclusive sets do not have any common elements between themselves. 
+If a die is thrown once, one of 1-6 will face up. If 1 appears, 2, or any other number from the rest cannot appear. Thus, Getting these numbers are mutually exclusive or disjoint events. Mutually exclusive sets do not have any common elements between themselves. 
 
 Now, merging the concepts of dependency and mutual exclusivity is tricky. 
 
@@ -89,7 +89,7 @@ Let, $A = \{1, 3, 5\}$ and $B = \{2, 4, 6\}$
 
 There are no common elements, so events A and B are disjoint or mutually exclusive. 
 
-It might seem, since the sets A and B have no common elemts, they are independent. 
+It might seem, since the sets $A$ and $B$ have no common elemts, they are independent. 
 
 Let us check mathematically:
 
@@ -97,13 +97,15 @@ From the given information, $P(A)= \frac 1 2, P(B) = \frac 1 2$
 
 $P(A \cap B) = 0$ (since there are no common elements) 
 
+And $P(A) \cdot P(B) = \frac 1 2 \cdot \frac 1 2 = \frac 1 4$
+
+$\therefore P(A \cap B) \ne P(A) \cdot P(B)$, which proves event $A$ and event $B$ are not independent, a result which is counterintuitive. Upon second thought, however, it becomes intuitive. First note that $A$ and $B$ both belong to $S$. That they are disjoint means one cannot happen if the other happens, which means one is preventing another from happening, a behavior which can explained as dependency: one event cares about the other, i.e., if one happens, another refrains from happening. 
+
 Mathematically,
 
 $P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac 0 {\frac 1 2} = 0$
 
-And $P(A) \cdot P(B) = \frac 1 2 \cdot \frac 1 2 = \frac 1 4$
-
-$\therefore P(A \cap B) \ne P(A) \cdot P(B)$, which proves event $A$ and event $B$ are not independent, a result which is counterintuitive. Upon second thought, however, it becomes intuitive. First note that $A$ and $B$ both belong to $S$. That they disjoint means one cannot happen if the other happens, which means one is preventing another from happening, a behavior which can explained as dependency: one event care about the other, i.e, if one happens, another refrains from happening. 
+In summary, reducing the probability of another event to zero is also a kind of influence, i.e., 
 
 Now, let us see another example, where we have two non mutually exclusive sets. 
 
@@ -138,9 +140,9 @@ If $A$ and $B$ are independent, $P(A \cap B) = P(A) \cdot P(B)$
 
 Since $P(A)$ and $P(B)$ are both non-zero numbers, $P(A) \cdot P(B) \ne 0$
 
-$\therefore P(A \cap B) \ne 0$ , i.e, there are some common elements between the sets. 
+$\therefore P(A \cap B) \ne 0$ , i.e., there are some common elements between the sets. 
 
-Thus, independent events cannot be mutually exclusive, i.e, they would always have common elements. 
+Thus, independent events cannot be mutually exclusive, i.e., they would always have common elements. 
 
 Finally, in general, we can say: **Mutually exclsuive events are dependent events, while non mutually exclusive events may or may not be dependent.** 
 
@@ -164,7 +166,7 @@ In other word, ***all mutually exclsuive events are dependent events, but not al
 
 What is the probability that in a leap year, there are 53 Fridays? 
 
-> - In a leap year, there are 366 days, i.e, 52 weeks and 2 days. In each week is a Fridays, so there are no less than 52 Fridays. The remaining two days could be:
+> - In a leap year, there are 366 days, i.e., 52 weeks and 2 days. In each week is a Fridays, so there are no less than 52 Fridays. The remaining two days could be:
 > - (Sat, Sun); (Sun, Mon); (Mon, Tue); (Tue, Wedn); (Wedn, Thu); (Thu, Fri); (Fri, Sat) = 7
 > - Total possible outcome = 7 and favorable outcomes = 2
 > - $P = \frac{2}{7}$
