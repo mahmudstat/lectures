@@ -592,9 +592,9 @@ Notation
 </div>
 </div>
 
-## Having Some Homogeneous Items
+## Repeated Items
 
-If out of n items, p items are homogeneous, then taking r items ($r \ge p$)
+If out of n items, p items are homogeneous (repeated), then taking r items ($r \ge p$)
 
 Number of selection options, 
 
@@ -617,13 +617,86 @@ Method 2
 </div>
 </div>
 
-## Committee
+## Repeated Items (Ctd.)
 
 <div class="container">
 <div class="col">
+1. Professor: make words with 4 letters
+</div>
+<div class="col">
+> - 1. 
+</div>
+</div>
+
+## Conditional Capacity
+
+<small>
+<div class="container">
+<div class="col">
 1. Form 11-member committe from two groups of 6 & 8 players keeping at least 4 members from 6-members team. How many ways?
+2. Allocate 9 people in 2 cars, whose capacity are 7 & 4.
 </div>
 <div class="col">
 
+| 6-members | 8-members | Total (11) |      Combination     |
+|:---------:|:---------:|:----------:|:--------------------:|
+|     4     |     7     |     11     | $^6C_4 \times ^*C_7$ |
+|     5     |     6     |     11     |                      |
+|     6     |     5     |     11     |                      |
+
+</div>
+</div>
+
+</small>
+
+## Always In(Ex)cluding
+
+> - Combine r items from n, always including p $\rightarrow ^{n-p}C_{r-p}$
+> - Combine r items from n, always excluding p $\rightarrow ^{n-p}C_{r}$
+> - Explain logically
+
+## Always In(Ex)cluding Problems
+
+<div class="container">
+<div class="col">
+Select 5 books from so 2 books are 
+
+1. always present
+2. never present
+</div>
+<div class="col">
+> - 1. ${12-2}C_{5-2} = ^{10}C_3 = 120$
+> - 2. ${12-2}C_5 = ^{10}C_5 = 252$
+</div>
+</div>
+
+## At least one
+
+Out of n items, take at least one item each time.
+<div class="container">
+<div class="col">
+
+> -  □ □ □ $\cdots$ □ Each item can or cannot be taken (having 2 options). 
+> - $\rightarrow 2^n - 1$ (1 $\leftarrow$ no items included)
+</div>
+<div class="col">
+Alternative
+
+> - ${n \choose 1} + {n \choose 2} + {n \choose 3} + \cdots + {n \choose n}$
+> - $\{1 + ^nC_1 \cdot 1 + ^nC_2 \} \cdot 1^2+ \cdots 1^n \} -1$
+> - $(1+1)^n-1$
+> - $2^n - 1$
+
+</div>
+</div>
+
+## At least one (Problems)
+
+<div class="container">
+<div class="col">
+1. Make words with vowels
+</div>
+<div class="col">
+Content 2 
 </div>
 </div>

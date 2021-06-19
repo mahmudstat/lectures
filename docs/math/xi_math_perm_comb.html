@@ -1016,7 +1016,7 @@ Value of a number depends on digits it consists of</li>
 <p>Formulae (Don’t Memorize!)</p>
 <ul>
 <li class="fragment"><span class="math inline">\(^nC_r = {n! \over r!(n-r)!}\)</span></li>
-<li class="fragment"><span class="math inline">\(^nC_r \times ^nP_r = ^nP_r = ^nP_r \times r!\)</span> (Permutation-combination relationship)</li>
+<li class="fragment"><span class="math inline">\(^nC_r \times ^rP_r = ^nP_r = ^nP_r \times r!\)</span> (Permutation-combination relationship)</li>
 <li class="fragment"><span class="math inline">\(^{n+1}C_r = ^nC_r + ^nC_{r-1}\)</span></li>
 <li class="fragment"><span class="math inline">\(^nC_r=?\)</span> (from above, expanding twice up to n-2)</li>
 <li class="fragment"><span class="math inline">\(^nC_r = ^nC_{n-r}\)</span></li>
@@ -1063,9 +1063,9 @@ Value of a number depends on digits it consists of</li>
 </ul>
 </div>
 </div>
-</section><section id="having-some-homogeneous-items" class="slide level2">
-<h2>Having Some Homogeneous Items</h2>
-<p>If out of n items, p items are homogeneous, then taking r items (<span class="math inline">\(r \ge p\)</span>)</p>
+</section><section id="repeated-items" class="slide level2">
+<h2>Repeated Items</h2>
+<p>If out of n items, p items are homogeneous (repeated), then taking r items (<span class="math inline">\(r \ge p\)</span>)</p>
 <p>Number of selection options,</p>
 <p><span class="math inline">\(N=\sum_{i=0}^p\)</span> <span class="math inline">\(^{n-p}C_{r-i}\)</span></p>
 <p>Example: Combine THESIS taking 4 letters</p>
@@ -1084,16 +1084,124 @@ Value of a number depends on digits it consists of</li>
 </ul>
 </div>
 </div>
-</section><section id="committee" class="slide level2">
-<h2>Committee</h2>
+</section><section id="repeated-items-ctd." class="slide level2">
+<h2>Repeated Items (Ctd.)</h2>
+<div class="container">
+<div class="col">
+<ol type="1">
+<li>Professor: make words with 4 letters</li>
+</ol>
+</div>
+<div class="col">
+<ul>
+<li class="fragment"><ol type="1">
+<li class="fragment"></li>
+</ol></li>
+</ul>
+</div>
+</div>
+</section><section id="conditional-capacity" class="slide level2">
+<h2>Conditional Capacity</h2>
+<small>
 <div class="container">
 <div class="col">
 <ol type="1">
 <li>Form 11-member committe from two groups of 6 &amp; 8 players keeping at least 4 members from 6-members team. How many ways?</li>
+<li>Allocate 9 people in 2 cars, whose capacity are 7 &amp; 4.</li>
 </ol>
 </div>
 <div class="col">
-
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">6-members</th>
+<th style="text-align: center;">8-members</th>
+<th style="text-align: center;">Total (11)</th>
+<th style="text-align: center;">Combination</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;"><span class="math inline">\(^6C_4 \times ^*C_7\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></small></p>
+</section><section id="always-inexcluding" class="slide level2">
+<h2>Always In(Ex)cluding</h2>
+<ul>
+<li class="fragment">Combine r items from n, always including p <span class="math inline">\(\rightarrow ^{n-p}C_{r-p}\)</span></li>
+<li class="fragment">Combine r items from n, always excluding p <span class="math inline">\(\rightarrow ^{n-p}C_{r}\)</span></li>
+<li class="fragment">Explain logically</li>
+</ul>
+</section><section id="always-inexcluding-problems" class="slide level2">
+<h2>Always In(Ex)cluding Problems</h2>
+<div class="container">
+<div class="col">
+<p>Select 5 books from so 2 books are</p>
+<ol type="1">
+<li>always present</li>
+<li>never present</li>
+</ol>
+</div>
+<div class="col">
+<ul>
+<li class="fragment"><ol type="1">
+<li class="fragment"><span class="math inline">\({12-2}C_{5-2} = ^{10}C_3 = 120\)</span></li>
+</ol></li>
+<li class="fragment"><ol start="2" type="1">
+<li class="fragment"><span class="math inline">\({12-2}C_5 = ^{10}C_5 = 252\)</span></li>
+</ol></li>
+</ul>
+</div>
+</div>
+</section><section id="at-least-one" class="slide level2">
+<h2>At least one</h2>
+Out of n items, take at least one item each time.
+<div class="container">
+<div class="col">
+<ul>
+<li class="fragment">□ □ □ <span class="math inline">\(\cdots\)</span> □ Each item can or cannot be taken (having 2 options).</li>
+<li class="fragment"><span class="math inline">\(\rightarrow 2^n - 1\)</span> (1 <span class="math inline">\(\leftarrow\)</span> no items included)</li>
+</ul>
+</div>
+<div class="col">
+<p>Alternative</p>
+<ul>
+<li class="fragment"><span class="math inline">\({n \choose 1} + {n \choose 2} + {n \choose 3} + \cdots + {n \choose n}\)</span></li>
+<li class="fragment"><span class="math inline">\(\{1 + ^nC_1 \cdot 1 + ^nC_2 \} \cdot 1^2+ \cdots 1^n \} -1\)</span></li>
+<li class="fragment"><span class="math inline">\((1+1)^n-1\)</span></li>
+<li class="fragment"><span class="math inline">\(2^n - 1\)</span></li>
+</ul>
+</div>
+</div>
+</section><section id="at-least-one-problems" class="slide level2">
+<h2>At least one (Problems)</h2>
+<div class="container">
+<div class="col">
+<ol type="1">
+<li>Make words with vowels</li>
+</ol>
+</div>
+<div class="col">
+<p>Content 2</p>
 </div>
 </div>
 </section></section>
