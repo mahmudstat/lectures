@@ -624,7 +624,8 @@ Method 2
 1. Professor: make words with 4 letters
 </div>
 <div class="col">
-> - 1. 
+> - 1. all different + 2 same, 2 diff + two of 1 kind + another 2 of another kind 
+> - $^6C_4 + ^3C_1 \times ^5C_2 + ^3C_2 = 48$
 </div>
 </div>
 
@@ -665,8 +666,8 @@ Select 5 books from so 2 books are
 2. never present
 </div>
 <div class="col">
-> - 1. ${12-2}C_{5-2} = ^{10}C_3 = 120$
-> - 2. ${12-2}C_5 = ^{10}C_5 = 252$
+> - 1. $^{12-2}C_{5-2} = ^{10}C_3 = 120$
+> - 2. $^{12-2}C_5 = ^{10}C_5 = 252$
 </div>
 </div>
 

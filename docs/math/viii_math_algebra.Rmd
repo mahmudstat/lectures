@@ -1,18 +1,17 @@
 ---
-title: "Mathematics (VIII)"
+title: "Mathematics--Algebra (VIII)"
 author: Abdullah Al Mahmud
 date: \today
-theme: sky
 output: 
   revealjs::revealjs_presentation:
-    incremental: false
-    reveal_plugins: ["chalkboard", "menu"]
+    theme: sky
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
     self_contained: false
-    slideNumber: true
     css: css/styles.css
     includes:
       in_header: css/header.html
 ---
+
 
 # Chapter 04: Algebraic Formula & Application
 
@@ -605,5 +604,58 @@ Divide each denominator by LCM and multiply the quotient with each term.
 <div class="col">
 > - 1. 0
 > - 2. ${6xy^2} \over {(x^2-y^2)(4x^2-y2)}$
+</div>
+</div>
+
+## Arranging Soldier Problem
+
+Arrange 10 soldiers in 5 rows so that each row contains 4 soldiers. 
+
+<div onclick="klikaj('5.1extra')"><span>Solution (Click to see)</span></div>
+<div id="5.1extra" style="visibility: hidden">
+![](img/seven/soldier_problem.PNG)
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+# Chapter 5.2
+
+## Multiply
+
+<div class="container">
+<div class="col">
+1. $\frac{x-1}{x+1}, \frac{(x-1)^2}{x^2+x}, \frac{x^2}{x^2-4x+5}$
+2. $\frac{1-b^2}{1+x}, \frac{1-x^2}{b+b^2}, 1+\frac{1-x}{x}$
+</div>
+<div class="col">
+> - 1. $\frac{x(x-1)^3}{(x+1)^2(x^2-4x+5)}$
+> - 2. $\frac{(1-b)(1-x)}{bx}$
+</div>
+</div>
+
+## Divide
+
+<div class="container">
+<div class="col">
+1. $\frac{x^2-7x+12}{x^2-4}, \frac{x^2-16}{x^2-3x+2}$
+</div>
+<div class="col">
+> - 1. $\frac{(x-3)(x-1)}{(x+2)(x+4)}$
+</div>
+</div>
+
+## Simplify
+
+<div class="container">
+<div class="col">
+1. $(\frac a b + \frac b a + 1) \div (\frac{a^2}{b^2}+\frac a b + 1)$
+2. $(\frac 1 x + \frac 1 y) \times (\frac 1 x - \frac 1 y)$
+</div>
+<div class="col">
+> - 1. $\frac b a$
+> - 2. $\frac{y^2-x^2}{x^2y^2}$
 </div>
 </div>
