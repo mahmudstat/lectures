@@ -9,7 +9,7 @@ output:
     self_contained: false
     css: css/styles.css
     includes:
-      in_header: css/header_stat.html
+      in_header: css/header.html
 ---
 
 ## Terms
@@ -17,7 +17,7 @@ output:
 > - Random Experiment
 > - Event
 > - Equally Likely
-> - Mutually Exlusive
+> - Mutually Exclusive
 > - Sample Space
 > - Sample Point
 > - Unbiased/fair coin/die
@@ -316,6 +316,8 @@ Usually
 
 There are 3 red balls, 2 blue balls and 4 white balls in a box.
 
+- package technique
+
 <div class="container">
 <div class="col">
  If a ball is selected at random, what is the probability that it is red <span>or</span> blue? 
@@ -337,6 +339,8 @@ function klikaj(i) {
 </div>
 </div>
 
+
+
 ## Excercise 11
 
 The employees in a factory can be classified based on works they perform, as mentioned below:
@@ -348,3 +352,18 @@ The employees in a factory can be classified based on works they perform, as men
 |   Production   |     1473    |
 |      Other     |     215     |
 
+## Probability Function
+
+Given, $P(x) = \frac{2x+k}{56}; x = -3, -2, -1, 0, 1, 2, 3$
+
+a. k = ?
+b. Find probability of each value of x
+c. Find $P(-2 \le x \le 2)$
+
+Clue: If $S=\{H,T\}, P(H) + P(T) = 1$, 
+
+i.e. $\sum$ P(All possible values) = 1
+
+## Analytic Problem
+
+Arrange 10 soldiers in 5 rows with 4 in each row.

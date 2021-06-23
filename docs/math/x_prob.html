@@ -472,7 +472,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li class="fragment">Random Experiment</li>
 <li class="fragment">Event</li>
 <li class="fragment">Equally Likely</li>
-<li class="fragment">Mutually Exlusive</li>
+<li class="fragment">Mutually Exclusive</li>
 <li class="fragment">Sample Space</li>
 <li class="fragment">Sample Point</li>
 <li class="fragment">Unbiased/fair coin/die</li>
@@ -889,8 +889,8 @@ Second<br>Die
 <p></small></p>
 </div>
 <div class="col">
-<div id="htmlwidget-2fe16de37acb935007b5" style="width:125%;height:576px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-2fe16de37acb935007b5">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = LR]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\ndh [label = \"Dhaka\"]\nkhb [label = \"Khulna (bus)\"]\nkhnb [label = \"Khulna (not bus)\"]\nrjt [label = \"Rajshahi (train)\"]\nrjnt [label = \"Rajshahi (not train)\"]\n\ndh  -> {khb, khnb}\nkhb -> {rjt, rjnt}\nkhnb -> {rjt, rjnt}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5f78b42746acc569ca44" style="width:125%;height:576px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5f78b42746acc569ca44">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = LR]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\ndh [label = \"Dhaka\"]\nkhb [label = \"Khulna (bus)\"]\nkhnb [label = \"Khulna (not bus)\"]\nrjt [label = \"Rajshahi (train)\"]\nrjnt [label = \"Rajshahi (not train)\"]\n\ndh  -> {khb, khnb}\nkhb -> {rjt, rjnt}\nkhnb -> {rjt, rjnt}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section><section id="addition-or-multiplication" class="slide level2">
@@ -904,6 +904,9 @@ Second<br>Die
 </section><section id="andor-example" class="slide level2">
 <h2>And/Or Example</h2>
 <p>There are 3 red balls, 2 blue balls and 4 white balls in a box.</p>
+<ul>
+<li>package technique</li>
+</ul>
 <div class="container">
 <div class="col">
 <p>If a ball is selected at random, what is the probability that it is red <span>or</span> blue?</p>
@@ -955,6 +958,19 @@ function klikaj(i) {
 </tr>
 </tbody>
 </table>
+</section><section id="probability-function" class="slide level2">
+<h2>Probability Function</h2>
+<p>Given, <span class="math inline">\(P(x) = \frac{2x+k}{56}; x = -3, -2, -1, 0, 1, 2, 3\)</span></p>
+<ol type="a">
+<li>k = ?</li>
+<li>Find probability of each value of x</li>
+<li>Find <span class="math inline">\(P(-2 \le x \le 2)\)</span></li>
+</ol>
+<p>Clue: If <span class="math inline">\(S=\{H,T\}, P(H) + P(T) = 1\)</span>,</p>
+<p>i.e. <span class="math inline">\(\sum\)</span> P(All possible values) = 1</p>
+</section><section id="analytic-problem" class="slide level2">
+<h2>Analytic Problem</h2>
+<p>Arrange 10 soldiers in 5 rows with 4 in each row.</p>
 </section></section>
     </div>
   </div>
