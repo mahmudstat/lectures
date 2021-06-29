@@ -10,25 +10,29 @@ output:
 ## Keywords
 
 Autocorrelation
-: relationship of the observations between the different points in time
+: Relationship of the observations between the different points in time
 
 Baseline survey
-: a survey which measures key conditions (indicators) before a project begins against which change and progress can be assessed.
+: A survey which measures key conditions (indicators) before a project begins against which change and progress can be assessed.
 
 Collinearity
-: a linear association between two explanatory variables.
+: A linear association between two explanatory variables.
 
 Confounder
-: a variable that influences both the dependent variable and independent variable
+: A variable that influences both the dependent variable and independent variable
+
+Dummy variable trap
+: A scenario in which the independent variables are multicollinear - a scenario in which two or more variables are highly correlated; in simple terms one variable can be predicted from the others.
+
 
 Multicollinearity
-: a situation in which more than two explanatory variables in a multiple regression model are highly linearly related
+: A situation in which more than two explanatory variables in a multiple regression model are highly linearly related
 
 Power
 : The chance that the study will be able to demonstrate a significant difference or effect if it is present.
 
 Orthogonal
-: (of an experiment) having variates which can be treated as statistically independent.
+: (of an experiment) Having variates which can be treated as statistically independent.
 
 Selection Bias
 : Any difference between groups can be attributed to both the impact of a program or pre-existing difference (the "selection bias").
