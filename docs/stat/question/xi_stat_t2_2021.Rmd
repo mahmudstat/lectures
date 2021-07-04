@@ -74,13 +74,12 @@ b. Frequency curve
 c. Bar diagram
 d. Historigram *** 
 
-8. Consider the following table
+8. Which diagram is suitable for displaying the data? 
 
 |      District     | Rajshahi | Chapainawabganj | Rangpur | Pabna | Natore |
 |:-----------------:|:--------:|:---------------:|:-------:|:-----:|:------:|
 | Mango  Production |    750   |       800       |   500   |  450  |   380  |
 
-Which diagram is suitable for displaying data? 
 
 i. Histogram
 ii. Pie chart
@@ -88,7 +87,7 @@ iii. Bar chart
 
 a. i 
 b. i & ii
-c. ii & iii
+c. ii & iii *** 
 d. i, ii, & iii
 
 9. Which of the following is NOT an attribute of a good classification?
@@ -184,138 +183,157 @@ b. $\frac{b_{yx} + b_{xy}}{2} \ge r$
 c. $\frac{b_{yx} + b_{xy}}{2} = r$
 d. $\frac{b_{yx} \times b_{xy}}{2} \ge r$
 
-22. $\beta = 0.25$; What is not a correct interpretation? 
+22. $\beta = 0.25$; What is not a correct interpretation? (2 marks)
 
 a. $\beta$ is equivalent to slope of a straight line
 b. $\beta$ represents average increase in dependent variable due to independent variable.
 c. If independent variable increases 1 unit, dependent variable increase 0.25 units, on average. 
 d. The relationship between dependent and independent variable is weak ***
 
-23. 
+23. Range of regression coefficient is - 
 
-a.
-b.
-c.
-d.
+a. $(-1, 1)$
+b. $(-\infty, +\infty)$ *** 
+c. $(0, \infty)$
+d. $[0, \infty)$
 
-24. 
+24. What is the value of r in the equation 4x + 3y = 60
 
-a.
-b.
-c.
-d.
+a. 1 *** 
+b. -1
+c. 0
+d. 0.75
 
-25. 
+25. If $b_{yx} = -2$ and $_{xy} = -0.4, r =$
 
-a.
-b.
-c.
-d.
+a. -2.4
+b. 2.4 
+c. -0.89
+d. 0.89 *** 
 
-26. 
+26. Which graph shows the highest linear association?
 
-a.
-b.
-c.
-d.
+![](img/scatter_plot.jpg) 
 
-27. 
+a. a 
+b. b 
+c. c *** 
+d. d
 
-a.
-b.
-c.
-d.
+Answer questions 27-28 according to the following information.
 
-28. 
+ax + by + c = 0, where a and b are non-zero values. 
 
-a.
-b.
-c.
-d.
+27. If a = 2 and b = 15, r = ? 
 
-29. 
+a. -1 *** 
+b. -0.8
+c. 0 
+d. 1
 
-a.
-b.
-c.
-d.
+28. If a = 20 and b = - 6, r = ? 
 
-30. 
+a. -1
+b. 1 ***
+c. 0 
+d. 3.33
 
-a.
-b.
-c.
-d.
+29. Which is true? (2 marks)
 
-31. 
+a. Correlation can assess linear and non-linear relationships.
+b. Regression analysis cannot make predictions. 
+c. Regression coefficient may or may not be unit-free. *** 
+d. Correlation coefficient depends on origin and scale. 
 
-a.
-b.
-c.
-d.
+30. The correct formula to measure rank correlation 
 
-32. 
+a. $\rho = 1 - \frac{6 \Sigma d_i^2}{n(n^2-1)}$ ***
+b. $\rho = 1 - \frac{6 \Sigma d_i^2}{(n^2-1)}$
+c. $\rho = 1 - \frac{6 \Sigma d_i^2}{n(n^2+1)}$
+d. $\rho = 1 - \frac{\Sigma d_i^2}{n(n^2-1)}$
 
-a.
-b.
-c.
-d.
+31. If there is an unpredictable/sudden effect in a time series data, it is called- 
 
-33. 
+a. Trend
+b. Seasonal variation
+c. Cyclic variation
+d. Random variation ***
 
-a.
-b.
-c.
-d.
+32. Which one is the correct additive model? 
 
-34. 
+a. $Y_t = T_t + S_t + C_t$
+b. $Y_t = T_t + S_t + C_t + R_t$ ***
+c. $Y_t = T_t + S_t + C_t - R_t$
+d. $Y_t = T_t - S_t + C_t - R_t$
 
-a.
-b.
-c.
-d.
+33. The curve shows examples of- (2 marks)
 
-35. 
+a. Trend *** 
+b. Seasonal variation
+c. Cyclic variation
+d. Irregular variation
 
-a.
-b.
-c.
-d.
+34. Which is not true of graphical method to find trend? (2 marks)
 
-36. 
+a. Easy and simple
+b. Flexible for linear and non-linear trend
+c. Subjective (depends on personal judgment)
+d. Always measurable *** 
 
-a.
-b.
-c.
-d.
+35. As far as semi-average method of finding trend is concerned, when number of observations is odd, which is true? 
 
-37. 
+a. Middle-most value is omitted. *** 
+b. Middle-most value is divided into two parts and each part is added to semi-totals.
+c. Middle-most value is added to both semi-totals.
+d. None of the above
 
-a.
-b.
-c.
-d.
+Answer the question 36-38 according to the following table
 
-38. 
+|          Year         | 1992 | 1993 | 1994 | 1995 | 1996 | 1997 | 1998 | 1999 | 2000 |
+|:---------------------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| Production (in m ton) |  6.0 |  6.5 |  7.0 |  7.2 |  7.3 |  7.0 |  8.0 |  8.2 |  8.4 |
 
-a.
-b.
-c.
-d.
+36. What is first semi-average?
 
-39. 
+a. 6.665
+b. 6.675 ***
+c. 6.776 
+d. 6.566
 
-a.
-b.
-c.
-d.
+37. What is second semi-average?
 
-40. 
+a. 7.912
+b. 7.925
+c. 7.900 ***
+d. 7.907
 
-a.
-b.
-c.
-d.
+38. If two semi-averages are plotted on a graph paper, how many original points fall on the trend line? (2 marks)
+
+a. 1 *** 
+b. 2 
+c. 3 
+d. 4
+
+39. Which applies to the method of moving average? 
+
+a. Simplicity
+b. Flexibility
+c. Biasness in non-linear trend
+d. Suitable for future prediction *** 
+
+40. In the question 36, what is the first 3-yearly moving average? 
+
+a. 6.67
+b. 6
+c. 6.5 *** 
+d. 6.95
 
 
+MCQ Answers
+---
 
+|  1 	|  2 	|  3 	|  4 	|  5 	|  6 	|  7 	|  8 	|  9 	| 10 	| 11 	| 12 	| 13 	| 14 	| 15 	| 16 	| 17 	| 18 	| 19 	| 20 	|
+|:--:	|:--:	|:--:	|:--:	|:--:	|:--:	|:--:	|:--:	|:--:	|:--:	|:--:	|:--:	|:--:	|:--:	|:--:	|:--:	|:--:	|:--:	|:--:	|:--:	|
+|  d 	|  a 	|  a 	|  c 	|  b 	|  d 	|  d 	|  c 	|  d 	|  c 	|  d 	|  b 	|  c 	|  a 	|  d 	|  b 	|  a 	|  c 	|  d 	|  a 	|
+| 21 	| 22 	| 23 	| 24 	| 25 	| 26 	| 27 	| 28 	| 29 	| 30 	| 31 	| 32 	| 33 	| 34 	| 35 	| 36 	| 37 	| 38 	| 39 	| 40 	|
+|  a 	|  d 	|  b 	|  a 	|  d 	|  c 	|  a 	|  b 	|  c 	|  a 	|  d 	|  b 	|  a 	|  d 	|  a 	|  b 	|  c 	|  a 	|  d 	|  c 	|
