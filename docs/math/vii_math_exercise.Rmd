@@ -147,7 +147,7 @@ a. If the lowest number is x, what is the next number?
 b. Form the equation. 
 c. Find the numbers. 
 
-## Statistics
+# Statistics
 
 The following are temperature of a certain location in November. 
 

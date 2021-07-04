@@ -21,6 +21,9 @@ Collinearity
 Confounder
 : A variable that influences both the dependent variable and independent variable
 
+Data
+: Information expressed using numbers, characters, or symbols on which operations can be performed, which may be stored and transmitted. 
+
 Dummy variable trap
 : A scenario in which the independent variables are multicollinear - a scenario in which two or more variables are highly correlated; in simple terms one variable can be predicted from the others.
 
