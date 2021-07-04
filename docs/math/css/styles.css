@@ -28,6 +28,16 @@ span {
 color:  #d11aff;
 }
 
+.sol:hover>p{
+        display: block;
+        padding-left: 30px;
+}
+.sol p {
+  display: none;
+  padding-left: 30px;
+  font-weight: bold;
+      }
+
 #thanks {
   padding: 100px 0;
   font-size: 80px;

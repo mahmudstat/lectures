@@ -66,4 +66,10 @@ function klikaj(i) {
 </div>
 
 
+## Test question/answer
 
+What is 1+1?
+
+<div class="sol">Answer
+<p>2</p>
+</div>
