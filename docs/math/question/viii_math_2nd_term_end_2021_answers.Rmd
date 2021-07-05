@@ -221,9 +221,9 @@ iv. y = 4x + 1
 27. Length of a rectangular house is 4m grater than its width. If the perimeter is 32m, what is the area? (2 marks) 
 
 i. 66
-ii. 60 *** 
+ii. 60  
 iii. 160 
-iv. 192 
+iv. 192 ***
 
 28. A product is sold at 7200 BDT, with a 20% profit. What is purchase price? (2 marks) 
 

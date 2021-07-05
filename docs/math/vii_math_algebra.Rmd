@@ -37,14 +37,26 @@ function klikaj(i) {
 }
 </script>
 
-# Chapter 4.1 (Multiplication & Division of Algebraic Expressions)
+# Chapter 4.1 
+
+Chapter name: Multiplication of Algebraic Expressions
+
+#### Topics
+
+> - Multiplication Law
+> - Exponential Law
+> - Multiplication of Signs
+> - Multiplication of Monomial and Polynomial
+> - Exercises
 
 ## Laws of Multiplication
 
-> - Cumulative law: $a \times b = b \times a \space  e.g., 2 \times 3 = 3 \times 2$
+> - Cumulative law: $a \times b = b \times a \space ,  e.g., 2 \times 3 = 3 \times 2$
 > - Associative law: $(a \times b) \times c  = a \times (b \times c), e.g., (2 \times 3) \times 4  = 2 \times (3 \times 4)$
-> - Exponential law: $a \times a \times a = a^3, a^2 \times a^4 = a^6, a^m \times a^n = a^{m+n}, (a^m)^n = a^{mn}$
+> - Exponential law: $a \times a \times a = a^3, a^2 \times a^4 = a^6$
+> - $a^m \times a^n = a^{m+n}, (a^m)^n = a^{mn}$
 > - Distributive law: 2(a+b) = 2a + 2b
+> - <span style="color:red;">Caution:</span> $2^3 \ne 2 \times 3 = 6$, but $2^3 = 2 \times 2 \times 2$
 
 ## Sign Laws
 
@@ -66,10 +78,20 @@ function klikaj(i) {
 </div>
 
 
-## Test question/answer
+## Problems
 
-What is 1+1?
+<div class="container">
+<div class="col">
+Multiply 
 
-<div class="sol">Answer
-<p>2</p>
+1. $5a^2x^2$ with $3ax^5y$
+2. $2x+3y$ with $5xy$
+3. $x^2+2xy+y^2$ with $x+y$
+4. $x^2+xy+y^2$ with $x^2-xy+y^2$
+5. $y^2-y+1$ with $1+y+y^2$
+6. 
+</div>
+<div class="col">
+> - 1. $15a^3x^7y$ 
+</div>
 </div>

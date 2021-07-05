@@ -1,7 +1,7 @@
 --- 
 title: "Statistics and Mathematics Lectures"
 author: "Abdullah Al Mahmud"
-date: "2021-06-17"
+date: "2021-07-05"
 site: bookdown::bookdown_site
 output:
   bookdown::gitbook:

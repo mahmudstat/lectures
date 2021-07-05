@@ -26,17 +26,17 @@ Answer all the questions.
 Creative Questions
 ---
 
-1. A researcher has determined the first four central moments about 3, and the values are -1, 5, 20, and 90. 
+1. **A researcher has determined the first four central moments about 3, and the values are -1, 5, 20, and 90.**
 
 a. Write one use of moments. \hfill 1
 b. Find the relationship between first raw moment and arithmetic mean. \hfill 2
 c. Find the second and third central moments using information from the stem. \hfill 3 
 
-    **You are free to use techniques from [this link-click to open](https://lecture.statmania.info/stat/ch5_xi_stat_moments_skewness_kurtosis.html#/changing-origin-of-moments)**
+    [*You are free to use techniques from [**this link-click to open**](https://lecture.statmania.info/stat/ch5_xi_stat_moments_skewness_kurtosis.html#/changing-origin-of-moments)*]
 
-d. Estimate the skewness of the distribution and explain. 
+d. Estimate the skewness of the distribution and explain. \hfill 4
 
-2. Height and Weight of 10 people are:
+2. **Height and Weight of 10 people are:** 
 
 ```{r, echo=FALSE}
 reg = data.frame(
@@ -49,12 +49,29 @@ reg, booktabs = TRUE,
   caption = "Height and weight of 10 random people")
 ```
 
-a. Which variable should be the dependent?
+a. Which variable should be the dependent one?
 b. Is the regression coefficient always unit-free? Briefly explain.
-c. Fit a regression line from the above data (i.e., find regression coefficients and write the fitted model)
-d. If the regression model is $Y = \alpha + \beta X + \epsilon$, what is the value of $\alpha$ and why? 
+c. Fit a regression line from the above data (i.e., find the regression coefficients and write the fitted model)
+d. If the regression model with the above data is $Y = \alpha + \beta X + \epsilon$, what is the value of $\alpha$? Explain
 
-3. 
+3. Export amount of a product followed the pattern:
+
+```{r, echo = FALSE}
+ts = data.frame(
+  year = c(2001:2010),
+  amount = c(112, 115, 120, 125, 132, 144, 150, 160, 162, 165)
+)
+
+knitr::kable(
+ts, booktabs = TRUE,
+  caption = "Time-series data")
+```
+
+a. What is time series data?
+b. What does a negative trend imply?
+c. From the stem, find the trend using semi-average method.
+d. Does moving average method look better for finding trend of this data? Explain. 
+
 
 MCQ
 ---
@@ -149,7 +166,7 @@ d. Mean > Median > Mode
 a. 1 
 b. 0
 c. -1
-d. Median
+d. Infinity
 
 13. The first raw moment about 2 is 6. What is value of the arithmetic mean? (2 marks)
 
@@ -163,7 +180,7 @@ d. 2
 a. $SK_p = \frac{\bar X - Mo}{\sigma}$
 b. $SK_p = \frac{Q_3 + Q_1 - 2Me}{Q_3 - Q_1}$
 c. $SK_p = \frac{D_9 + D_1 - 2Me}{D_9 - D_1)}$
-d. $Sk_p = \frac{\bar X - \sigma}{Mo}$ 
+d. $SK_p = \frac{\bar X - \sigma}{Mo}$ 
 
 15. What is value of $\beta_1$ for a symmetrical distribution? 
 
@@ -208,7 +225,7 @@ knitr:: include_graphics("img/sym.jpg")
 
 a. Most values have small frequencies
 b. Most numbers lie around the average value
-c. A representation of symmetric distribution
+c. A representation of a symmetric distribution
 d. Few values have small frequencies
 
 21. What is the correct relationship?
@@ -218,14 +235,14 @@ b. $\frac{b_{yx} + b_{xy}}{2} \ge r$
 c. $\frac{b_{yx} + b_{xy}}{2} = r$
 d. $\frac{b_{yx} \times b_{xy}}{2} \ge r$
 
-22. $\beta = 0.25$; What is not a correct interpretation? (2 marks)
+22. Regression coefficient, $\beta = 0.25$; What is not a correct interpretation? (2 marks)
 
 a. $\beta$ is equivalent to slope of a straight line
 b. $\beta$ represents average increase in dependent variable due to independent variable.
 c. If independent variable increases 1 unit, dependent variable increase 0.25 units, on average. 
 d. The relationship between dependent and independent variable is weak
 
-23. Range of regression coefficient is - 
+23. Range of regression coefficient lies between -  
 
 a. $(-1, 1)$
 b. $(-\infty, +\infty)$
@@ -248,7 +265,7 @@ d. 0.89
 
 26. Which graph shows the highest linear association?
 
-```{r scat, echo=FALSE, fig.cap = "Cover", fig.align = 'center', out.width = '30%'}
+```{r scat, echo=FALSE, fig.cap = "Sactter Plots", fig.align = 'center', out.width = '30%'}
 knitr:: include_graphics("img/scatter_plot.jpg")
 ```
 
@@ -328,7 +345,7 @@ b. Middle-most value is divided into two parts and each part is added to semi-to
 c. Middle-most value is added to both semi-totals.
 d. None of the above
 
-Answer the question 36-38 according to the following table
+Answer the questions 36-38 according to the following table
 
 |          Year         | 1992 | 1993 | 1994 | 1995 | 1996 | 1997 | 1998 | 1999 | 2000 |
 |:---------------------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|

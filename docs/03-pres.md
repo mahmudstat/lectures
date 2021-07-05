@@ -42,5 +42,6 @@ See more [here](https://defkey.com/reveal-js-shortcuts)
 
 ### Class Seven {-}
 
+- [Algebra All Chapters](https://lecture.statmania.info/math/vii_math_algebra.html)
 - [Mathematics Exercises](https://lecture.statmania.info/math/vii_math_exercise.html)
 - [Chapter 7.3](https://lecture.statmania.info/math/vii_math_7.3.html)
