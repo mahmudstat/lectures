@@ -1,13 +1,15 @@
-# Presentations {- #pres}
+# (PART) Presentations {-}
 
-## How to Use {- #how}
+# Presentations {- #pres} 
+
+### How to Use {- #how}
 
 - Press `space` to go the next slide.
 - Press up-arrow ($\uparrow$) or `P` to go the previous slide.
 
 See more [here](https://defkey.com/reveal-js-shortcuts)
 
-## Statistics {- #stat_pres}
+### Statistics {- #stat_pres}
 
 ### First Part {-}
 
@@ -23,7 +25,7 @@ See more [here](https://defkey.com/reveal-js-shortcuts)
 
 - [Elementary Statistics](https://lecture.statmania.info/stat/stat_preliminaries.html)
 
-## Mathematics {- #math}
+### Mathematics {- #math}
 
 ### Higher Secondary {-}
  

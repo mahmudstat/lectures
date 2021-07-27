@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2.1 Introduction to Probability | Statistics and Mathematics Lectures</title>
+  <title>Chapter 9 Introduction to Probability | Statistics and Mathematics Lectures</title>
   <meta name="description" content="Lectures on Statistics And Mathematics" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2.1 Introduction to Probability | Statistics and Mathematics Lectures" />
+  <meta property="og:title" content="Chapter 9 Introduction to Probability | Statistics and Mathematics Lectures" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2.1 Introduction to Probability | Statistics and Mathematics Lectures" />
+  <meta name="twitter:title" content="Chapter 9 Introduction to Probability | Statistics and Mathematics Lectures" />
   
   <meta name="twitter:description" content="Lectures on Statistics And Mathematics" />
   
@@ -24,15 +24,15 @@
 <meta name="author" content="Abdullah Al Mahmud" />
 
 
-<meta name="date" content="2021-07-05" />
+<meta name="date" content="2021-07-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="prob.html"/>
-<link rel="next" href="pres.html"/>
+<link rel="prev" href="moving-average.html"/>
+<link rel="next" href="important-concepts.html"/>
 <script src="assets/jquery-2.2.3/jquery.min.js"></script>
 <link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -137,164 +137,214 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a><ul>
 <li class="chapter" data-level="" data-path="about-me.html"><a href="about-me.html"><i class="fa fa-check"></i>About me</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="stat.html"><a href="stat.html"><i class="fa fa-check"></i><b>1</b> Statistics</a><ul>
-<li class="chapter" data-level="1.1" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html"><i class="fa fa-check"></i><b>1.1</b> Preliminary Concepts</a><ul>
-<li class="chapter" data-level="1.1.1" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#statistics-what-how"><i class="fa fa-check"></i><b>1.1.1</b> Statistics: What &amp; How</a></li>
-<li class="chapter" data-level="1.1.2" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#topics"><i class="fa fa-check"></i><b>1.1.2</b> Topics</a></li>
-<li class="chapter" data-level="1.1.3" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#what-is-statistics"><i class="fa fa-check"></i><b>1.1.3</b> What is statistics?</a></li>
-<li class="chapter" data-level="1.1.4" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#how-statistics-works"><i class="fa fa-check"></i><b>1.1.4</b> How Statistics works?</a></li>
-<li class="chapter" data-level="1.1.5" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#probability-and-statistics"><i class="fa fa-check"></i><b>1.1.5</b> Probability and Statistics</a></li>
-<li class="chapter" data-level="1.1.6" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#application-of-statistics"><i class="fa fa-check"></i><b>1.1.6</b> Application of Statistics</a></li>
-<li class="chapter" data-level="1.1.7" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#examples"><i class="fa fa-check"></i><b>1.1.7</b> Examples</a></li>
-<li class="chapter" data-level="1.1.8" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#chapter-overview"><i class="fa fa-check"></i><b>1.1.8</b> Chapter Overview</a></li>
-<li class="chapter" data-level="1.1.9" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#definition"><i class="fa fa-check"></i><b>1.1.9</b> Definition</a></li>
-<li class="chapter" data-level="1.1.10" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#mechanism"><i class="fa fa-check"></i><b>1.1.10</b> Mechanism</a></li>
-<li class="chapter" data-level="1.1.11" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#population-and-sample"><i class="fa fa-check"></i><b>1.1.11</b> Population and Sample</a></li>
-<li class="chapter" data-level="1.1.12" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#variable-and-constant"><i class="fa fa-check"></i><b>1.1.12</b> Variable and Constant</a></li>
-<li class="chapter" data-level="1.1.13" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#bluetext"><i class="fa fa-check"></i><b>1.1.13</b> Types of Variable</a></li>
-<li class="chapter" data-level="1.1.14" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#univariate-multivariate"><i class="fa fa-check"></i><b>1.1.14</b> Univariate, Multivariate</a></li>
-<li class="chapter" data-level="1.1.15" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#scale-of-measurement"><i class="fa fa-check"></i><b>1.1.15</b> Scale of Measurement</a></li>
-<li class="chapter" data-level="1.1.16" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#examples-1"><i class="fa fa-check"></i><b>1.1.16</b> Examples</a></li>
-<li class="chapter" data-level="1.1.17" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#another-example"><i class="fa fa-check"></i><b>1.1.17</b> Another Example</a></li>
-<li class="chapter" data-level="1.1.18" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#operation-with-scales"><i class="fa fa-check"></i><b>1.1.18</b> Operation with scales</a></li>
-<li class="chapter" data-level="1.1.19" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#shifting-origin-and-scale"><i class="fa fa-check"></i><b>1.1.19</b> Shifting origin and scale</a></li>
-<li class="chapter" data-level="1.1.20" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#use-of-summation-sign"><i class="fa fa-check"></i><b>1.1.20</b> Use of Summation sign</a></li>
-<li class="chapter" data-level="1.1.21" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-01"><i class="fa fa-check"></i><b>1.1.21</b> Theorem 01</a></li>
-<li class="chapter" data-level="1.1.22" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-02"><i class="fa fa-check"></i><b>1.1.22</b> Theorem 02</a></li>
-<li class="chapter" data-level="1.1.23" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#quick-tips"><i class="fa fa-check"></i><b>1.1.23</b> Quick tips</a></li>
-<li class="chapter" data-level="1.1.24" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-03"><i class="fa fa-check"></i><b>1.1.24</b> Theorem 03</a></li>
-<li class="chapter" data-level="1.1.25" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-04"><i class="fa fa-check"></i><b>1.1.25</b> Theorem 04</a></li>
-<li class="chapter" data-level="1.1.26" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-05"><i class="fa fa-check"></i><b>1.1.26</b> Theorem 05</a></li>
-<li class="chapter" data-level="1.1.27" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-06"><i class="fa fa-check"></i><b>1.1.27</b> Theorem 06</a></li>
-<li class="chapter" data-level="1.1.28" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#quick-tip"><i class="fa fa-check"></i><b>1.1.28</b> Quick Tip</a></li>
-<li class="chapter" data-level="1.1.29" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-07"><i class="fa fa-check"></i><b>1.1.29</b> Theorem 07</a></li>
-<li class="chapter" data-level="1.1.30" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-08"><i class="fa fa-check"></i><b>1.1.30</b> Theorem 08</a></li>
-<li class="chapter" data-level="1.1.31" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#theorem-09"><i class="fa fa-check"></i><b>1.1.31</b> Theorem 09</a></li>
-<li class="chapter" data-level="1.1.32" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#example"><i class="fa fa-check"></i><b>1.1.32</b> Example</a></li>
-<li class="chapter" data-level="1.1.33" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#textbook-exercise--01"><i class="fa fa-check"></i><b>1.1.33</b> Textbook Exercise -01</a></li>
-<li class="chapter" data-level="1.1.34" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#exercise-01"><i class="fa fa-check"></i><b>1.1.34</b> Exercise-01</a></li>
-<li class="chapter" data-level="1.1.35" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#exercise--01"><i class="fa fa-check"></i><b>1.1.35</b> Exercise -01</a></li>
-<li class="chapter" data-level="1.1.36" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#exercise--01-1"><i class="fa fa-check"></i><b>1.1.36</b> Exercise -01</a></li>
-<li class="chapter" data-level="1.1.37" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#creative-question"><i class="fa fa-check"></i><b>1.1.37</b> Creative Question</a></li>
-<li class="chapter" data-level="1.1.38" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html#creative-question--07"><i class="fa fa-check"></i><b>1.1.38</b> Creative Question -07</a></li>
+<li class="part"><span><b>I Statistics</b></span></li>
+<li class="chapter" data-level="1" data-path="preliminary-concepts.html"><a href="preliminary-concepts.html"><i class="fa fa-check"></i><b>1</b> Preliminary Concepts</a><ul>
+<li class="chapter" data-level="1.1" data-path="statistics-what-how.html"><a href="statistics-what-how.html"><i class="fa fa-check"></i><b>1.1</b> Statistics: What &amp; How</a></li>
+<li class="chapter" data-level="1.2" data-path="topics.html"><a href="topics.html"><i class="fa fa-check"></i><b>1.2</b> Topics</a></li>
+<li class="chapter" data-level="1.3" data-path="what-is-statistics.html"><a href="what-is-statistics.html"><i class="fa fa-check"></i><b>1.3</b> What is statistics?</a></li>
+<li class="chapter" data-level="1.4" data-path="how-statistics-works.html"><a href="how-statistics-works.html"><i class="fa fa-check"></i><b>1.4</b> How Statistics works?</a></li>
+<li class="chapter" data-level="1.5" data-path="probability-and-statistics.html"><a href="probability-and-statistics.html"><i class="fa fa-check"></i><b>1.5</b> Probability and Statistics</a></li>
+<li class="chapter" data-level="1.6" data-path="application-of-statistics.html"><a href="application-of-statistics.html"><i class="fa fa-check"></i><b>1.6</b> Application of Statistics</a></li>
+<li class="chapter" data-level="1.7" data-path="examples.html"><a href="examples.html"><i class="fa fa-check"></i><b>1.7</b> Examples</a></li>
+<li class="chapter" data-level="1.8" data-path="chapter-overview.html"><a href="chapter-overview.html"><i class="fa fa-check"></i><b>1.8</b> Chapter Overview</a></li>
+<li class="chapter" data-level="1.9" data-path="definition.html"><a href="definition.html"><i class="fa fa-check"></i><b>1.9</b> Definition</a></li>
+<li class="chapter" data-level="1.10" data-path="mechanism.html"><a href="mechanism.html"><i class="fa fa-check"></i><b>1.10</b> Mechanism</a></li>
+<li class="chapter" data-level="1.11" data-path="population-and-sample.html"><a href="population-and-sample.html"><i class="fa fa-check"></i><b>1.11</b> Population and Sample</a></li>
+<li class="chapter" data-level="1.12" data-path="variable-and-constant.html"><a href="variable-and-constant.html"><i class="fa fa-check"></i><b>1.12</b> Variable and Constant</a></li>
+<li class="chapter" data-level="1.13" data-path="bluetext.html"><a href="bluetext.html"><i class="fa fa-check"></i><b>1.13</b> Types of Variable</a></li>
+<li class="chapter" data-level="1.14" data-path="univariate-multivariate.html"><a href="univariate-multivariate.html"><i class="fa fa-check"></i><b>1.14</b> Univariate, Multivariate</a></li>
+<li class="chapter" data-level="1.15" data-path="scale-of-measurement.html"><a href="scale-of-measurement.html"><i class="fa fa-check"></i><b>1.15</b> Scale of Measurement</a></li>
+<li class="chapter" data-level="1.16" data-path="examples-1.html"><a href="examples-1.html"><i class="fa fa-check"></i><b>1.16</b> Examples</a></li>
+<li class="chapter" data-level="1.17" data-path="another-example.html"><a href="another-example.html"><i class="fa fa-check"></i><b>1.17</b> Another Example</a></li>
+<li class="chapter" data-level="1.18" data-path="operation-with-scales.html"><a href="operation-with-scales.html"><i class="fa fa-check"></i><b>1.18</b> Operation with scales</a></li>
+<li class="chapter" data-level="1.19" data-path="shifting-origin-and-scale.html"><a href="shifting-origin-and-scale.html"><i class="fa fa-check"></i><b>1.19</b> Shifting origin and scale</a></li>
+<li class="chapter" data-level="1.20" data-path="use-of-summation-sign.html"><a href="use-of-summation-sign.html"><i class="fa fa-check"></i><b>1.20</b> Use of Summation sign</a></li>
+<li class="chapter" data-level="1.21" data-path="theorems.html"><a href="theorems.html"><i class="fa fa-check"></i><b>1.21</b> Theorems</a></li>
+<li class="chapter" data-level="1.22" data-path="quick-tips.html"><a href="quick-tips.html"><i class="fa fa-check"></i><b>1.22</b> Quick tips</a></li>
+<li class="chapter" data-level="1.23" data-path="example.html"><a href="example.html"><i class="fa fa-check"></i><b>1.23</b> Example</a></li>
+<li class="chapter" data-level="1.24" data-path="textbook-exercise-01.html"><a href="textbook-exercise-01.html"><i class="fa fa-check"></i><b>1.24</b> Textbook Exercise -01</a></li>
+<li class="chapter" data-level="1.25" data-path="exercises.html"><a href="exercises.html"><i class="fa fa-check"></i><b>1.25</b> Exercises</a></li>
+<li class="chapter" data-level="1.26" data-path="creative-questions.html"><a href="creative-questions.html"><i class="fa fa-check"></i><b>1.26</b> Creative Questions</a></li>
 </ul></li>
-<li class="chapter" data-level="1.2" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html"><i class="fa fa-check"></i><b>1.2</b> Collection, Presentation, and Organization of Data</a><ul>
-<li class="chapter" data-level="1.2.1" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html#types-of-data"><i class="fa fa-check"></i><b>1.2.1</b> Types of Data</a></li>
-<li class="chapter" data-level="1.2.2" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html#sources-of-data"><i class="fa fa-check"></i><b>1.2.2</b> Sources of Data</a></li>
-<li class="chapter" data-level="1.2.3" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html#method-of-data-collection"><i class="fa fa-check"></i><b>1.2.3</b> Method of Data Collection</a></li>
-<li class="chapter" data-level="1.2.4" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html#sources-of-secondary-data"><i class="fa fa-check"></i><b>1.2.4</b> Sources of Secondary Data</a></li>
-<li class="chapter" data-level="1.2.5" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html#disadvantages-of-secondary-data"><i class="fa fa-check"></i><b>1.2.5</b> Disadvantages of Secondary Data</a></li>
-<li class="chapter" data-level="1.2.6" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html#tabluation"><i class="fa fa-check"></i><b>1.2.6</b> Tabluation</a></li>
-<li class="chapter" data-level="1.2.7" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html#data-classification"><i class="fa fa-check"></i><b>1.2.7</b> Data Classification</a></li>
-<li class="chapter" data-level="1.2.8" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html#example-1"><i class="fa fa-check"></i><b>1.2.8</b> Example</a></li>
-<li class="chapter" data-level="1.2.9" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html#histogram"><i class="fa fa-check"></i><b>1.2.9</b> Histogram</a></li>
-<li class="chapter" data-level="1.2.10" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html#histogram-intervals"><i class="fa fa-check"></i><b>1.2.10</b> Histogram Intervals</a></li>
-<li class="chapter" data-level="1.2.11" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html#stem-and-leaf"><i class="fa fa-check"></i><b>1.2.11</b> Stem and Leaf</a></li>
-<li class="chapter" data-level="1.2.12" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html#how-to-interpret-cf-and-rf"><i class="fa fa-check"></i><b>1.2.12</b> How to interpret cf and rf</a></li>
-<li class="chapter" data-level="1.2.13" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html#what-ogives-tell-us"><i class="fa fa-check"></i><b>1.2.13</b> What Ogives tell us</a></li>
-<li class="chapter" data-level="1.2.14" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html#bar-vs-pie"><i class="fa fa-check"></i><b>1.2.14</b> Bar vs Pie</a></li>
-<li class="chapter" data-level="1.2.15" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html#choose-diagram"><i class="fa fa-check"></i><b>1.2.15</b> Choose Diagram</a></li>
-<li class="chapter" data-level="1.2.16" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html#bar-diagram-vs-histogram"><i class="fa fa-check"></i><b>1.2.16</b> Bar Diagram vs Histogram</a></li>
+<li class="chapter" data-level="2" data-path="collection-presentation-and-organization-of-data.html"><a href="collection-presentation-and-organization-of-data.html"><i class="fa fa-check"></i><b>2</b> Collection, Presentation, and Organization of Data</a><ul>
+<li class="chapter" data-level="2.1" data-path="types-of-data.html"><a href="types-of-data.html"><i class="fa fa-check"></i><b>2.1</b> Types of Data</a></li>
+<li class="chapter" data-level="2.2" data-path="sources-of-data.html"><a href="sources-of-data.html"><i class="fa fa-check"></i><b>2.2</b> Sources of Data</a></li>
+<li class="chapter" data-level="2.3" data-path="method-of-data-collection.html"><a href="method-of-data-collection.html"><i class="fa fa-check"></i><b>2.3</b> Method of Data Collection</a></li>
+<li class="chapter" data-level="2.4" data-path="sources-of-secondary-data.html"><a href="sources-of-secondary-data.html"><i class="fa fa-check"></i><b>2.4</b> Sources of Secondary Data</a></li>
+<li class="chapter" data-level="2.5" data-path="disadvantages-of-secondary-data.html"><a href="disadvantages-of-secondary-data.html"><i class="fa fa-check"></i><b>2.5</b> Disadvantages of Secondary Data</a></li>
+<li class="chapter" data-level="2.6" data-path="tabluation.html"><a href="tabluation.html"><i class="fa fa-check"></i><b>2.6</b> Tabluation</a></li>
+<li class="chapter" data-level="2.7" data-path="data-classification.html"><a href="data-classification.html"><i class="fa fa-check"></i><b>2.7</b> Data Classification</a></li>
+<li class="chapter" data-level="2.8" data-path="example-1.html"><a href="example-1.html"><i class="fa fa-check"></i><b>2.8</b> Example</a></li>
+<li class="chapter" data-level="2.9" data-path="histogram.html"><a href="histogram.html"><i class="fa fa-check"></i><b>2.9</b> Histogram</a></li>
+<li class="chapter" data-level="2.10" data-path="histogram-intervals.html"><a href="histogram-intervals.html"><i class="fa fa-check"></i><b>2.10</b> Histogram Intervals</a></li>
+<li class="chapter" data-level="2.11" data-path="stem-and-leaf.html"><a href="stem-and-leaf.html"><i class="fa fa-check"></i><b>2.11</b> Stem and Leaf</a></li>
+<li class="chapter" data-level="2.12" data-path="how-to-interpret-cf-and-rf.html"><a href="how-to-interpret-cf-and-rf.html"><i class="fa fa-check"></i><b>2.12</b> How to interpret cf and rf</a></li>
+<li class="chapter" data-level="2.13" data-path="what-ogives-tell-us.html"><a href="what-ogives-tell-us.html"><i class="fa fa-check"></i><b>2.13</b> What Ogives tell us</a></li>
+<li class="chapter" data-level="2.14" data-path="bar-vs-pie.html"><a href="bar-vs-pie.html"><i class="fa fa-check"></i><b>2.14</b> Bar vs Pie</a></li>
+<li class="chapter" data-level="2.15" data-path="choose-diagram.html"><a href="choose-diagram.html"><i class="fa fa-check"></i><b>2.15</b> Choose Diagram</a></li>
+<li class="chapter" data-level="2.16" data-path="bar-diagram-vs-histogram.html"><a href="bar-diagram-vs-histogram.html"><i class="fa fa-check"></i><b>2.16</b> Bar Diagram vs Histogram</a></li>
 </ul></li>
-<li class="chapter" data-level="1.3" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html"><i class="fa fa-check"></i><b>1.3</b> Measures of Central Tendency</a><ul>
-<li class="chapter" data-level="1.3.1" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#what-is-central-tendency"><i class="fa fa-check"></i><b>1.3.1</b> What is Central Tendency?</a></li>
-<li class="chapter" data-level="1.3.2" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#criteria-for-a-good-measure-of-central-tendency"><i class="fa fa-check"></i><b>1.3.2</b> Criteria for a Good Measure of Central Tendency</a></li>
-<li class="chapter" data-level="1.3.3" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#measures-averages"><i class="fa fa-check"></i><b>1.3.3</b> Measures (Averages)</a></li>
-<li class="chapter" data-level="1.3.4" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#am"><i class="fa fa-check"></i><b>1.3.4</b> AM</a></li>
-<li class="chapter" data-level="1.3.5" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#find-am"><i class="fa fa-check"></i><b>1.3.5</b> Find AM</a></li>
-<li class="chapter" data-level="1.3.6" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#mean-using-frequency"><i class="fa fa-check"></i><b>1.3.6</b> Mean Using Frequency</a></li>
-<li class="chapter" data-level="1.3.7" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#freuency-vs-weight"><i class="fa fa-check"></i><b>1.3.7</b> Freuency vs Weight</a></li>
-<li class="chapter" data-level="1.3.8" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#shortcut-method-for-am"><i class="fa fa-check"></i><b>1.3.8</b> Shortcut Method for AM</a></li>
-<li class="chapter" data-level="1.3.9" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#shortcut-method-formula"><i class="fa fa-check"></i><b>1.3.9</b> Shortcut Method Formula</a></li>
-<li class="chapter" data-level="1.3.10" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#properties-of-am"><i class="fa fa-check"></i><b>1.3.10</b> Properties of AM</a></li>
-<li class="chapter" data-level="1.3.11" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#disadvantages-of-am"><i class="fa fa-check"></i><b>1.3.11</b> (Dis)advantages of AM</a></li>
-<li class="chapter" data-level="1.3.12" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#geometric-mean-gm"><i class="fa fa-check"></i><b>1.3.12</b> Geometric Mean (GM)</a></li>
-<li class="chapter" data-level="1.3.13" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#concept-of-logarithm"><i class="fa fa-check"></i><b>1.3.13</b> Concept of Logarithm</a></li>
-<li class="chapter" data-level="1.3.14" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#gm-easier-formula"><i class="fa fa-check"></i><b>1.3.14</b> GM Easier Formula</a></li>
-<li class="chapter" data-level="1.3.15" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#calculate-gm"><i class="fa fa-check"></i><b>1.3.15</b> Calculate GM</a></li>
-<li class="chapter" data-level="1.3.16" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#disadvantages-of-gm"><i class="fa fa-check"></i><b>1.3.16</b> (Dis)advantages of GM</a></li>
-<li class="chapter" data-level="1.3.17" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#story-of-oil-scam"><i class="fa fa-check"></i><b>1.3.17</b> Story of Oil Scam</a></li>
-<li class="chapter" data-level="1.3.18" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#harmonic-mean"><i class="fa fa-check"></i><b>1.3.18</b> Harmonic Mean</a></li>
-<li class="chapter" data-level="1.3.19" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#why-and-when-hm"><i class="fa fa-check"></i><b>1.3.19</b> Why and When HM</a></li>
-<li class="chapter" data-level="1.3.20" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#wighted-am-vs-weighted-hm"><i class="fa fa-check"></i><b>1.3.20</b> Wighted AM vs Weighted HM</a></li>
-<li class="chapter" data-level="1.3.21" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#hm-example-2"><i class="fa fa-check"></i><b>1.3.21</b> HM Example 2</a></li>
-<li class="chapter" data-level="1.3.22" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#quadratic-mean"><i class="fa fa-check"></i><b>1.3.22</b> Quadratic Mean</a></li>
-<li class="chapter" data-level="1.3.23" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#partition-values"><i class="fa fa-check"></i><b>1.3.23</b> Partition Values</a></li>
-<li class="chapter" data-level="1.3.24" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#find-medians"><i class="fa fa-check"></i><b>1.3.24</b> Find medians</a></li>
-<li class="chapter" data-level="1.3.25" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#disadvantages-of-median"><i class="fa fa-check"></i><b>1.3.25</b> Dis(advantages) of Median</a></li>
-<li class="chapter" data-level="1.3.26" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#quartiles-deciles-and-percentiles"><i class="fa fa-check"></i><b>1.3.26</b> Quartiles, Deciles, and Percentiles</a></li>
-<li class="chapter" data-level="1.3.27" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#general-formula-for-partition-values"><i class="fa fa-check"></i><b>1.3.27</b> General Formula for Partition Values</a></li>
-<li class="chapter" data-level="1.3.28" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#find-deciles-and-percentiles"><i class="fa fa-check"></i><b>1.3.28</b> Find Deciles and Percentiles</a></li>
-<li class="chapter" data-level="1.3.29" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#averages-from-grouped-data"><i class="fa fa-check"></i><b>1.3.29</b> Averages from Grouped Data</a></li>
-<li class="chapter" data-level="1.3.30" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#partition-values-from-graph"><i class="fa fa-check"></i><b>1.3.30</b> Partition Values from Graph</a></li>
-<li class="chapter" data-level="1.3.31" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#comparison-of-averages"><i class="fa fa-check"></i><b>1.3.31</b> Comparison of Averages</a></li>
-<li class="chapter" data-level="1.3.32" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#when-am-gm-hm"><i class="fa fa-check"></i><b>1.3.32</b> When AM = GM = HM</a></li>
-<li class="chapter" data-level="1.3.33" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#theorems"><i class="fa fa-check"></i><b>1.3.33</b> Theorems</a></li>
-<li class="chapter" data-level="1.3.34" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#theorem-01-1"><i class="fa fa-check"></i><b>1.3.34</b> Theorem 01</a></li>
-<li class="chapter" data-level="1.3.35" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#theorem-02-1"><i class="fa fa-check"></i><b>1.3.35</b> Theorem 02</a></li>
-<li class="chapter" data-level="1.3.36" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#theorem-03-1"><i class="fa fa-check"></i><b>1.3.36</b> Theorem 03</a></li>
-<li class="chapter" data-level="1.3.37" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#theorem-04-amorigin-scale"><i class="fa fa-check"></i><b>1.3.37</b> Theorem 04 (AM~origin &amp; scale)</a></li>
-<li class="chapter" data-level="1.3.38" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#theorem-07-1"><i class="fa fa-check"></i><b>1.3.38</b> Theorem 07</a></li>
-<li class="chapter" data-level="1.3.39" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#theorem-08-1"><i class="fa fa-check"></i><b>1.3.39</b> Theorem 08</a></li>
-<li class="chapter" data-level="1.3.40" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#theorem-09-1"><i class="fa fa-check"></i><b>1.3.40</b> Theorem 09</a></li>
-<li class="chapter" data-level="1.3.41" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#theorem-10"><i class="fa fa-check"></i><b>1.3.41</b> Theorem 10</a></li>
-<li class="chapter" data-level="1.3.42" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#theorem-11"><i class="fa fa-check"></i><b>1.3.42</b> Theorem 11</a></li>
-<li class="chapter" data-level="1.3.43" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#theorem-12"><i class="fa fa-check"></i><b>1.3.43</b> Theorem 12</a></li>
-<li class="chapter" data-level="1.3.44" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#theorem-13"><i class="fa fa-check"></i><b>1.3.44</b> Theorem 13</a></li>
-<li class="chapter" data-level="1.3.45" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#theorem-14"><i class="fa fa-check"></i><b>1.3.45</b> Theorem 14</a></li>
-<li class="chapter" data-level="1.3.46" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#theorem-15"><i class="fa fa-check"></i><b>1.3.46</b> Theorem 15</a></li>
-<li class="chapter" data-level="1.3.47" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#theorem-16"><i class="fa fa-check"></i><b>1.3.47</b> Theorem 16</a></li>
-<li class="chapter" data-level="1.3.48" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#example-problems"><i class="fa fa-check"></i><b>1.3.48</b> Example Problems</a></li>
-<li class="chapter" data-level="1.3.49" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#example-problem-01"><i class="fa fa-check"></i><b>1.3.49</b> Example Problem 01</a></li>
-<li class="chapter" data-level="1.3.50" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#example-problem-15"><i class="fa fa-check"></i><b>1.3.50</b> Example Problem 15</a></li>
-<li class="chapter" data-level="1.3.51" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html#example-problem-22"><i class="fa fa-check"></i><b>1.3.51</b> Example Problem 22</a></li>
+<li class="chapter" data-level="3" data-path="measures-of-central-tendency.html"><a href="measures-of-central-tendency.html"><i class="fa fa-check"></i><b>3</b> Measures of Central Tendency</a><ul>
+<li class="chapter" data-level="3.1" data-path="what-is-central-tendency.html"><a href="what-is-central-tendency.html"><i class="fa fa-check"></i><b>3.1</b> What is Central Tendency?</a></li>
+<li class="chapter" data-level="3.2" data-path="criteria-for-a-good-measure-of-central-tendency.html"><a href="criteria-for-a-good-measure-of-central-tendency.html"><i class="fa fa-check"></i><b>3.2</b> Criteria for a Good Measure of Central Tendency</a></li>
+<li class="chapter" data-level="3.3" data-path="measures-averages.html"><a href="measures-averages.html"><i class="fa fa-check"></i><b>3.3</b> Measures (Averages)</a></li>
+<li class="chapter" data-level="3.4" data-path="am.html"><a href="am.html"><i class="fa fa-check"></i><b>3.4</b> AM</a></li>
+<li class="chapter" data-level="3.5" data-path="find-am.html"><a href="find-am.html"><i class="fa fa-check"></i><b>3.5</b> Find AM</a></li>
+<li class="chapter" data-level="3.6" data-path="mean-using-frequency.html"><a href="mean-using-frequency.html"><i class="fa fa-check"></i><b>3.6</b> Mean Using Frequency</a></li>
+<li class="chapter" data-level="3.7" data-path="freuency-vs-weight.html"><a href="freuency-vs-weight.html"><i class="fa fa-check"></i><b>3.7</b> Freuency vs Weight</a></li>
+<li class="chapter" data-level="3.8" data-path="shortcut-method-for-am.html"><a href="shortcut-method-for-am.html"><i class="fa fa-check"></i><b>3.8</b> Shortcut Method for AM</a></li>
+<li class="chapter" data-level="3.9" data-path="shortcut-method-formula.html"><a href="shortcut-method-formula.html"><i class="fa fa-check"></i><b>3.9</b> Shortcut Method Formula</a></li>
+<li class="chapter" data-level="3.10" data-path="properties-of-am.html"><a href="properties-of-am.html"><i class="fa fa-check"></i><b>3.10</b> Properties of AM</a></li>
+<li class="chapter" data-level="3.11" data-path="disadvantages-of-am.html"><a href="disadvantages-of-am.html"><i class="fa fa-check"></i><b>3.11</b> (Dis)advantages of AM</a></li>
+<li class="chapter" data-level="3.12" data-path="geometric-mean-gm.html"><a href="geometric-mean-gm.html"><i class="fa fa-check"></i><b>3.12</b> Geometric Mean (GM)</a></li>
+<li class="chapter" data-level="3.13" data-path="concept-of-logarithm.html"><a href="concept-of-logarithm.html"><i class="fa fa-check"></i><b>3.13</b> Concept of Logarithm</a></li>
+<li class="chapter" data-level="3.14" data-path="gm-easier-formula.html"><a href="gm-easier-formula.html"><i class="fa fa-check"></i><b>3.14</b> GM Easier Formula</a></li>
+<li class="chapter" data-level="3.15" data-path="calculate-gm.html"><a href="calculate-gm.html"><i class="fa fa-check"></i><b>3.15</b> Calculate GM</a></li>
+<li class="chapter" data-level="3.16" data-path="disadvantages-of-gm.html"><a href="disadvantages-of-gm.html"><i class="fa fa-check"></i><b>3.16</b> (Dis)advantages of GM</a></li>
+<li class="chapter" data-level="3.17" data-path="story-of-oil-scam.html"><a href="story-of-oil-scam.html"><i class="fa fa-check"></i><b>3.17</b> Story of Oil Scam</a></li>
+<li class="chapter" data-level="3.18" data-path="harmonic-mean.html"><a href="harmonic-mean.html"><i class="fa fa-check"></i><b>3.18</b> Harmonic Mean</a></li>
+<li class="chapter" data-level="3.19" data-path="why-and-when-hm.html"><a href="why-and-when-hm.html"><i class="fa fa-check"></i><b>3.19</b> Why and When HM</a></li>
+<li class="chapter" data-level="3.20" data-path="wighted-am-vs-weighted-hm.html"><a href="wighted-am-vs-weighted-hm.html"><i class="fa fa-check"></i><b>3.20</b> Wighted AM vs Weighted HM</a></li>
+<li class="chapter" data-level="3.21" data-path="hm-example-2.html"><a href="hm-example-2.html"><i class="fa fa-check"></i><b>3.21</b> HM Example 2</a></li>
+<li class="chapter" data-level="3.22" data-path="quadratic-mean.html"><a href="quadratic-mean.html"><i class="fa fa-check"></i><b>3.22</b> Quadratic Mean</a></li>
+<li class="chapter" data-level="3.23" data-path="partition-values.html"><a href="partition-values.html"><i class="fa fa-check"></i><b>3.23</b> Partition Values</a></li>
+<li class="chapter" data-level="3.24" data-path="find-medians.html"><a href="find-medians.html"><i class="fa fa-check"></i><b>3.24</b> Find medians</a></li>
+<li class="chapter" data-level="3.25" data-path="disadvantages-of-median.html"><a href="disadvantages-of-median.html"><i class="fa fa-check"></i><b>3.25</b> Dis(advantages) of Median</a></li>
+<li class="chapter" data-level="3.26" data-path="quartiles-deciles-and-percentiles.html"><a href="quartiles-deciles-and-percentiles.html"><i class="fa fa-check"></i><b>3.26</b> Quartiles, Deciles, and Percentiles</a></li>
+<li class="chapter" data-level="3.27" data-path="general-formula-for-partition-values.html"><a href="general-formula-for-partition-values.html"><i class="fa fa-check"></i><b>3.27</b> General Formula for Partition Values</a></li>
+<li class="chapter" data-level="3.28" data-path="find-deciles-and-percentiles.html"><a href="find-deciles-and-percentiles.html"><i class="fa fa-check"></i><b>3.28</b> Find Deciles and Percentiles</a></li>
+<li class="chapter" data-level="3.29" data-path="averages-from-grouped-data.html"><a href="averages-from-grouped-data.html"><i class="fa fa-check"></i><b>3.29</b> Averages from Grouped Data</a></li>
+<li class="chapter" data-level="3.30" data-path="partition-values-from-graph.html"><a href="partition-values-from-graph.html"><i class="fa fa-check"></i><b>3.30</b> Partition Values from Graph</a></li>
+<li class="chapter" data-level="3.31" data-path="comparison-of-averages.html"><a href="comparison-of-averages.html"><i class="fa fa-check"></i><b>3.31</b> Comparison of Averages</a></li>
+<li class="chapter" data-level="3.32" data-path="when-am-gm-hm.html"><a href="when-am-gm-hm.html"><i class="fa fa-check"></i><b>3.32</b> When AM = GM = HM</a></li>
+<li class="chapter" data-level="3.33" data-path="theorems-1.html"><a href="theorems-1.html"><i class="fa fa-check"></i><b>3.33</b> Theorems</a></li>
+<li class="chapter" data-level="3.34" data-path="example-problems.html"><a href="example-problems.html"><i class="fa fa-check"></i><b>3.34</b> Example Problems</a></li>
 </ul></li>
-<li class="chapter" data-level="1.4" data-path="measures-of-dispersion.html"><a href="measures-of-dispersion.html"><i class="fa fa-check"></i><b>1.4</b> Measures of Dispersion</a></li>
-<li class="chapter" data-level="1.5" data-path="moments-skewness-and-kurtosis.html"><a href="moments-skewness-and-kurtosis.html"><i class="fa fa-check"></i><b>1.5</b> Moments, Skewness, and Kurtosis</a><ul>
-<li class="chapter" data-level="1.5.1" data-path="moments-skewness-and-kurtosis.html"><a href="moments-skewness-and-kurtosis.html#central-moments"><i class="fa fa-check"></i><b>1.5.1</b> Central Moments</a></li>
-<li class="chapter" data-level="1.5.2" data-path="moments-skewness-and-kurtosis.html"><a href="moments-skewness-and-kurtosis.html#raw-moments"><i class="fa fa-check"></i><b>1.5.2</b> Raw Moments</a></li>
+<li class="chapter" data-level="4" data-path="measures-of-dispersion.html"><a href="measures-of-dispersion.html"><i class="fa fa-check"></i><b>4</b> Measures of Dispersion</a></li>
+<li class="chapter" data-level="5" data-path="moments-skewness-and-kurtosis.html"><a href="moments-skewness-and-kurtosis.html"><i class="fa fa-check"></i><b>5</b> Moments, Skewness, and Kurtosis</a><ul>
+<li class="chapter" data-level="5.1" data-path="central-moments.html"><a href="central-moments.html"><i class="fa fa-check"></i><b>5.1</b> Central Moments</a></li>
+<li class="chapter" data-level="5.2" data-path="raw-moments.html"><a href="raw-moments.html"><i class="fa fa-check"></i><b>5.2</b> Raw Moments</a></li>
 </ul></li>
-<li class="chapter" data-level="1.6" data-path="correlation-regression.html"><a href="correlation-regression.html"><i class="fa fa-check"></i><b>1.6</b> Correlation &amp; Regression</a><ul>
-<li class="chapter" data-level="1.6.1" data-path="correlation-regression.html"><a href="correlation-regression.html#why-this-chapter-is-important"><i class="fa fa-check"></i><b>1.6.1</b> Why This Chapter is Important</a></li>
-<li class="chapter" data-level="1.6.2" data-path="correlation-regression.html"><a href="correlation-regression.html#scatter-plot"><i class="fa fa-check"></i><b>1.6.2</b> Scatter Plot</a></li>
-<li class="chapter" data-level="1.6.3" data-path="correlation-regression.html"><a href="correlation-regression.html#sequence"><i class="fa fa-check"></i><b>1.6.3</b> Sequence</a></li>
-<li class="chapter" data-level="1.6.4" data-path="correlation-regression.html"><a href="correlation-regression.html#correlation"><i class="fa fa-check"></i><b>1.6.4</b> Correlation</a></li>
-<li class="chapter" data-level="1.6.5" data-path="correlation-regression.html"><a href="correlation-regression.html#scatter-plot-and-correlation"><i class="fa fa-check"></i><b>1.6.5</b> Scatter Plot And Correlation</a></li>
-<li class="chapter" data-level="1.6.6" data-path="correlation-regression.html"><a href="correlation-regression.html#r-estimating-mechanism"><i class="fa fa-check"></i><b>1.6.6</b> r: Estimating Mechanism</a></li>
-<li class="chapter" data-level="1.6.7" data-path="correlation-regression.html"><a href="correlation-regression.html#example-of-r"><i class="fa fa-check"></i><b>1.6.7</b> Example of r</a></li>
-<li class="chapter" data-level="1.6.8" data-path="correlation-regression.html"><a href="correlation-regression.html#features-of-r"><i class="fa fa-check"></i><b>1.6.8</b> Features of r</a></li>
-<li class="chapter" data-level="1.6.9" data-path="correlation-regression.html"><a href="correlation-regression.html#rank-correlation"><i class="fa fa-check"></i><b>1.6.9</b> Rank Correlation</a></li>
-<li class="chapter" data-level="1.6.10" data-path="correlation-regression.html"><a href="correlation-regression.html#linear-equation-straight-lines"><i class="fa fa-check"></i><b>1.6.10</b> Linear Equation/ Straight Lines</a></li>
-<li class="chapter" data-level="1.6.11" data-path="correlation-regression.html"><a href="correlation-regression.html#purity-of-coefficients"><i class="fa fa-check"></i><b>1.6.11</b> Purity of Coefficients</a></li>
+<li class="chapter" data-level="6" data-path="correlation-regression.html"><a href="correlation-regression.html"><i class="fa fa-check"></i><b>6</b> Correlation &amp; Regression</a><ul>
+<li class="chapter" data-level="6.1" data-path="why-this-chapter-is-important.html"><a href="why-this-chapter-is-important.html"><i class="fa fa-check"></i><b>6.1</b> Why This Chapter is Important</a></li>
+<li class="chapter" data-level="6.2" data-path="scatter-plot.html"><a href="scatter-plot.html"><i class="fa fa-check"></i><b>6.2</b> Scatter Plot</a></li>
+<li class="chapter" data-level="6.3" data-path="sequence.html"><a href="sequence.html"><i class="fa fa-check"></i><b>6.3</b> Sequence</a></li>
+<li class="chapter" data-level="6.4" data-path="correlation.html"><a href="correlation.html"><i class="fa fa-check"></i><b>6.4</b> Correlation</a></li>
+<li class="chapter" data-level="6.5" data-path="scatter-plot-and-correlation.html"><a href="scatter-plot-and-correlation.html"><i class="fa fa-check"></i><b>6.5</b> Scatter Plot And Correlation</a></li>
+<li class="chapter" data-level="6.6" data-path="r-estimating-mechanism.html"><a href="r-estimating-mechanism.html"><i class="fa fa-check"></i><b>6.6</b> r: Estimating Mechanism</a></li>
+<li class="chapter" data-level="6.7" data-path="example-of-r.html"><a href="example-of-r.html"><i class="fa fa-check"></i><b>6.7</b> Example of r</a></li>
+<li class="chapter" data-level="6.8" data-path="features-of-r.html"><a href="features-of-r.html"><i class="fa fa-check"></i><b>6.8</b> Features of r</a></li>
+<li class="chapter" data-level="6.9" data-path="rank-correlation.html"><a href="rank-correlation.html"><i class="fa fa-check"></i><b>6.9</b> Rank Correlation</a></li>
+<li class="chapter" data-level="6.10" data-path="linear-equation-straight-lines.html"><a href="linear-equation-straight-lines.html"><i class="fa fa-check"></i><b>6.10</b> Linear Equation/ Straight Lines</a></li>
+<li class="chapter" data-level="6.11" data-path="purity-of-coefficients.html"><a href="purity-of-coefficients.html"><i class="fa fa-check"></i><b>6.11</b> Purity of Coefficients</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>7</b> Time Series</a><ul>
+<li class="chapter" data-level="7.1" data-path="what-is-time-series-data.html"><a href="what-is-time-series-data.html"><i class="fa fa-check"></i><b>7.1</b> What is Time Series Data?</a></li>
+<li class="chapter" data-level="7.2" data-path="components-of-time-series.html"><a href="components-of-time-series.html"><i class="fa fa-check"></i><b>7.2</b> Components of Time Series</a></li>
+<li class="chapter" data-level="7.3" data-path="uses.html"><a href="uses.html"><i class="fa fa-check"></i><b>7.3</b> Uses</a></li>
+<li class="chapter" data-level="7.4" data-path="symbols.html"><a href="symbols.html"><i class="fa fa-check"></i><b>7.4</b> Symbols</a></li>
+<li class="chapter" data-level="7.5" data-path="models.html"><a href="models.html"><i class="fa fa-check"></i><b>7.5</b> Models</a></li>
+<li class="chapter" data-level="7.6" data-path="comparison-of-models.html"><a href="comparison-of-models.html"><i class="fa fa-check"></i><b>7.6</b> Comparison of Models</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="measuring-trend.html"><a href="measuring-trend.html"><i class="fa fa-check"></i><b>8</b> Measuring Trend</a><ul>
+<li class="chapter" data-level="8.1" data-path="graphicalfree-hand-method.html"><a href="graphicalfree-hand-method.html"><i class="fa fa-check"></i><b>8.1</b> Graphical/Free-hand Method</a></li>
+<li class="chapter" data-level="8.2" data-path="sem-average.html"><a href="sem-average.html"><i class="fa fa-check"></i><b>8.2</b> Sem-average</a></li>
+<li class="chapter" data-level="8.3" data-path="moving-average.html"><a href="moving-average.html"><i class="fa fa-check"></i><b>8.3</b> Moving Average</a></li>
+</ul></li>
+<li class="part"><span><b>II Probability</b></span></li>
+<li class="chapter" data-level="9" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html"><i class="fa fa-check"></i><b>9</b> Introduction to Probability</a><ul>
+<li class="chapter" data-level="9.1" data-path="important-concepts.html"><a href="important-concepts.html"><i class="fa fa-check"></i><b>9.1</b> Important concepts</a></li>
+<li class="chapter" data-level="9.2" data-path="three-definitions.html"><a href="three-definitions.html"><i class="fa fa-check"></i><b>9.2</b> Three Definitions</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="three-definitions.html"><a href="three-definitions.html#classical"><i class="fa fa-check"></i><b>9.2.1</b> Classical</a></li>
+<li class="chapter" data-level="9.2.2" data-path="three-definitions.html"><a href="three-definitions.html#relative-frequency"><i class="fa fa-check"></i><b>9.2.2</b> Relative frequency</a></li>
+<li class="chapter" data-level="9.2.3" data-path="three-definitions.html"><a href="three-definitions.html#axiomatic"><i class="fa fa-check"></i><b>9.2.3</b> Axiomatic</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="permutaion-vs-combination.html"><a href="permutaion-vs-combination.html"><i class="fa fa-check"></i><b>9.3</b> Permutaion vs Combination</a></li>
+<li class="chapter" data-level="9.4" data-path="dependency-and-mutual-exclusivity.html"><a href="dependency-and-mutual-exclusivity.html"><i class="fa fa-check"></i><b>9.4</b> Dependency and Mutual Exclusivity</a></li>
+<li class="chapter" data-level="9.5" data-path="types-of-problems.html"><a href="types-of-problems.html"><i class="fa fa-check"></i><b>9.5</b> Types of Problems</a></li>
+<li class="chapter" data-level="9.6" data-path="miscellaneous.html"><a href="miscellaneous.html"><i class="fa fa-check"></i><b>9.6</b> Miscellaneous</a><ul>
+<li class="chapter" data-level="9.6.1" data-path="miscellaneous.html"><a href="miscellaneous.html#misc-problem-01"><i class="fa fa-check"></i><b>9.6.1</b> Misc Problem #01</a></li>
+<li class="chapter" data-level="9.6.2" data-path="miscellaneous.html"><a href="miscellaneous.html#misc-problem-02"><i class="fa fa-check"></i><b>9.6.2</b> Misc Problem #02</a></li>
+<li class="chapter" data-level="9.6.3" data-path="miscellaneous.html"><a href="miscellaneous.html#misc-problem-03"><i class="fa fa-check"></i><b>9.6.3</b> Misc Problem #03</a></li>
+</ul></li>
+<li class="chapter" data-level="9.7" data-path="coin-and-die-problem.html"><a href="coin-and-die-problem.html"><i class="fa fa-check"></i><b>9.7</b> Coin And Die Problem</a><ul>
+<li class="chapter" data-level="9.7.1" data-path="coin-and-die-problem.html"><a href="coin-and-die-problem.html#tossing-a-coing-twice"><i class="fa fa-check"></i><b>9.7.1</b> Tossing A Coing Twice</a></li>
+<li class="chapter" data-level="9.7.2" data-path="coin-and-die-problem.html"><a href="coin-and-die-problem.html#flipping-a-coin-thrice"><i class="fa fa-check"></i><b>9.7.2</b> Flipping A Coin Thrice</a></li>
+<li class="chapter" data-level="9.7.3" data-path="coin-and-die-problem.html"><a href="coin-and-die-problem.html#flinging-two-dice-at-once"><i class="fa fa-check"></i><b>9.7.3</b> Flinging Two Dice at Once</a></li>
+</ul></li>
+<li class="chapter" data-level="9.8" data-path="playing-card.html"><a href="playing-card.html"><i class="fa fa-check"></i><b>9.8</b> Playing Card</a><ul>
+<li class="chapter" data-level="9.8.1" data-path="playing-card.html"><a href="playing-card.html#concepts-playing-card"><i class="fa fa-check"></i><b>9.8.1</b> Concepts (Playing Card)</a></li>
+<li class="chapter" data-level="9.8.2" data-path="playing-card.html"><a href="playing-card.html#card-problem-01"><i class="fa fa-check"></i><b>9.8.2</b> Card Problem #01</a></li>
+<li class="chapter" data-level="9.8.3" data-path="playing-card.html"><a href="playing-card.html#card-problem-02"><i class="fa fa-check"></i><b>9.8.3</b> Card Problem #02</a></li>
+<li class="chapter" data-level="9.8.4" data-path="playing-card.html"><a href="playing-card.html#card-problem-03"><i class="fa fa-check"></i><b>9.8.4</b> Card Problem #03</a></li>
+<li class="chapter" data-level="9.8.5" data-path="playing-card.html"><a href="playing-card.html#card-problem-04"><i class="fa fa-check"></i><b>9.8.5</b> Card Problem #04</a></li>
+<li class="chapter" data-level="9.8.6" data-path="playing-card.html"><a href="playing-card.html#card-problem-05"><i class="fa fa-check"></i><b>9.8.6</b> Card Problem #05</a></li>
+</ul></li>
+<li class="chapter" data-level="9.9" data-path="box.html"><a href="box.html"><i class="fa fa-check"></i><b>9.9</b> Box</a><ul>
+<li class="chapter" data-level="9.9.1" data-path="box.html"><a href="box.html#box-problem-01"><i class="fa fa-check"></i><b>9.9.1</b> Box Problem #01</a></li>
+<li class="chapter" data-level="9.9.2" data-path="box.html"><a href="box.html#box-problem-02"><i class="fa fa-check"></i><b>9.9.2</b> Box Problem #02</a></li>
+<li class="chapter" data-level="9.9.3" data-path="box.html"><a href="box.html#box-problem-02-1"><i class="fa fa-check"></i><b>9.9.3</b> Box Problem #02</a></li>
+</ul></li>
+<li class="chapter" data-level="9.10" data-path="conditional-probability.html"><a href="conditional-probability.html"><i class="fa fa-check"></i><b>9.10</b> Conditional Probability</a><ul>
+<li class="chapter" data-level="9.10.1" data-path="conditional-probability.html"><a href="conditional-probability.html#conditional-formula"><i class="fa fa-check"></i><b>9.10.1</b> Conditional Formula</a></li>
+<li class="chapter" data-level="9.10.2" data-path="conditional-probability.html"><a href="conditional-probability.html#conditional-problem-01"><i class="fa fa-check"></i><b>9.10.2</b> Conditional Problem # 01</a></li>
+<li class="chapter" data-level="9.10.3" data-path="conditional-probability.html"><a href="conditional-probability.html#conditional-problem-02"><i class="fa fa-check"></i><b>9.10.3</b> Conditional Problem # 02</a></li>
+<li class="chapter" data-level="9.10.4" data-path="conditional-probability.html"><a href="conditional-probability.html#conditional-problem-03"><i class="fa fa-check"></i><b>9.10.4</b> Conditional Problem # 03</a></li>
+<li class="chapter" data-level="9.10.5" data-path="conditional-probability.html"><a href="conditional-probability.html#conditional-problem-04"><i class="fa fa-check"></i><b>9.10.5</b> Conditional Problem # 04</a></li>
+</ul></li>
+<li class="chapter" data-level="9.11" data-path="set-theoretic.html"><a href="set-theoretic.html"><i class="fa fa-check"></i><b>9.11</b> Set Theoretic</a><ul>
+<li class="chapter" data-level="9.11.1" data-path="set-theoretic.html"><a href="set-theoretic.html#concept"><i class="fa fa-check"></i><b>9.11.1</b> Concept</a></li>
+<li class="chapter" data-level="9.11.2" data-path="set-theoretic.html"><a href="set-theoretic.html#set-problem-01"><i class="fa fa-check"></i><b>9.11.2</b> Set Problem # 01</a></li>
+<li class="chapter" data-level="9.11.3" data-path="set-theoretic.html"><a href="set-theoretic.html#set-problem-02"><i class="fa fa-check"></i><b>9.11.3</b> Set Problem # 02</a></li>
+<li class="chapter" data-level="9.11.4" data-path="set-theoretic.html"><a href="set-theoretic.html#set-problem-03"><i class="fa fa-check"></i><b>9.11.4</b> Set Problem # 03</a></li>
+<li class="chapter" data-level="9.11.5" data-path="set-theoretic.html"><a href="set-theoretic.html#set-problem-04"><i class="fa fa-check"></i><b>9.11.5</b> Set problem # 04</a></li>
+<li class="chapter" data-level="9.11.6" data-path="set-theoretic.html"><a href="set-theoretic.html#set-problem-05"><i class="fa fa-check"></i><b>9.11.6</b> Set problem # 05</a></li>
+<li class="chapter" data-level="9.11.7" data-path="set-theoretic.html"><a href="set-theoretic.html#set-problem-06"><i class="fa fa-check"></i><b>9.11.7</b> Set problem # 06</a></li>
+<li class="chapter" data-level="9.11.8" data-path="set-theoretic.html"><a href="set-theoretic.html#set-problem-07"><i class="fa fa-check"></i><b>9.11.8</b> Set problem # 07</a></li>
+<li class="chapter" data-level="9.11.9" data-path="set-theoretic.html"><a href="set-theoretic.html#set-problem-08"><i class="fa fa-check"></i><b>9.11.9</b> Set problem # 08</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="prob.html"><a href="prob.html"><i class="fa fa-check"></i><b>2</b> Probability</a><ul>
-<li class="chapter" data-level="2.1" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html"><i class="fa fa-check"></i><b>2.1</b> Introduction to Probability</a><ul>
-<li class="chapter" data-level="2.1.1" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#important-concepts"><i class="fa fa-check"></i><b>2.1.1</b> Important concepts</a></li>
-<li class="chapter" data-level="2.1.2" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#three-definitions"><i class="fa fa-check"></i><b>2.1.2</b> Three Definitions</a></li>
-<li class="chapter" data-level="2.1.3" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#permutaion-vs-combination"><i class="fa fa-check"></i><b>2.1.3</b> Permutaion vs Combination</a></li>
-<li class="chapter" data-level="2.1.4" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#dependency-and-mutual-exclusivity"><i class="fa fa-check"></i><b>2.1.4</b> Dependency and Mutual Exclusivity</a></li>
-<li class="chapter" data-level="2.1.5" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#types-of-problems"><i class="fa fa-check"></i><b>2.1.5</b> Types of Problems</a></li>
-<li class="chapter" data-level="2.1.6" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#miscellaneous"><i class="fa fa-check"></i><b>2.1.6</b> Miscellaneous</a></li>
-<li class="chapter" data-level="2.1.7" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#coin-and-die-problem"><i class="fa fa-check"></i><b>2.1.7</b> Coin And Die Problem</a></li>
-<li class="chapter" data-level="2.1.8" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#playing-card"><i class="fa fa-check"></i><b>2.1.8</b> Playing Card</a></li>
-<li class="chapter" data-level="2.1.9" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#box"><i class="fa fa-check"></i><b>2.1.9</b> Box</a></li>
-<li class="chapter" data-level="2.1.10" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#conditional-probability"><i class="fa fa-check"></i><b>2.1.10</b> Conditional Probability</a></li>
-<li class="chapter" data-level="2.1.11" data-path="introduction-to-probability.html"><a href="introduction-to-probability.html#set-theoretic"><i class="fa fa-check"></i><b>2.1.11</b> Set Theoretic</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="permutation.html"><a href="permutation.html"><i class="fa fa-check"></i><b>A</b> Permutation</a><ul>
+<li class="chapter" data-level="A.1" data-path="arranging-subset.html"><a href="arranging-subset.html"><i class="fa fa-check"></i><b>A.1</b> Arranging Subset</a></li>
+<li class="chapter" data-level="A.2" data-path="what-is-0.html"><a href="what-is-0.html"><i class="fa fa-check"></i><b>A.2</b> What is 0!</a></li>
+<li class="chapter" data-level="A.3" data-path="rule-of-counting.html"><a href="rule-of-counting.html"><i class="fa fa-check"></i><b>A.3</b> Rule of Counting</a></li>
+<li class="chapter" data-level="A.4" data-path="example-of-counting-rule.html"><a href="example-of-counting-rule.html"><i class="fa fa-check"></i><b>A.4</b> Example of counting rule</a></li>
+<li class="chapter" data-level="A.5" data-path="exercises-of-permutation.html"><a href="exercises-of-permutation.html"><i class="fa fa-check"></i><b>A.5</b> Exercises of permutation</a></li>
+<li class="chapter" data-level="A.6" data-path="without-changing-position.html"><a href="without-changing-position.html"><i class="fa fa-check"></i><b>A.6</b> Without Changing Position</a></li>
+<li class="chapter" data-level="A.7" data-path="specific-word-at-firstlast.html"><a href="specific-word-at-firstlast.html"><i class="fa fa-check"></i><b>A.7</b> Specific Word at First/Last</a></li>
+<li class="chapter" data-level="A.8" data-path="evenoddmiddle-positions.html"><a href="evenoddmiddle-positions.html"><i class="fa fa-check"></i><b>A.8</b> Even/Odd/middle positions</a></li>
+<li class="chapter" data-level="A.9" data-path="digit-problems.html"><a href="digit-problems.html"><i class="fa fa-check"></i><b>A.9</b> Digit Problems</a></li>
+<li class="chapter" data-level="A.10" data-path="summation-basics.html"><a href="summation-basics.html"><i class="fa fa-check"></i><b>A.10</b> Summation Basics</a></li>
+<li class="chapter" data-level="A.11" data-path="sum-average.html"><a href="sum-average.html"><i class="fa fa-check"></i><b>A.11</b> Sum-Average</a></li>
+<li class="chapter" data-level="A.12" data-path="specific-items-apartfirstlast.html"><a href="specific-items-apartfirstlast.html"><i class="fa fa-check"></i><b>A.12</b> Specific Items Apart/First/Last</a></li>
+<li class="chapter" data-level="A.13" data-path="arranging-in-seatspositions.html"><a href="arranging-in-seatspositions.html"><i class="fa fa-check"></i><b>A.13</b> Arranging in Seats/Positions</a></li>
+<li class="chapter" data-level="A.14" data-path="circular-combination.html"><a href="circular-combination.html"><i class="fa fa-check"></i><b>A.14</b> Circular Combination</a></li>
 </ul></li>
+<li class="chapter" data-level="B" data-path="combination.html"><a href="combination.html"><i class="fa fa-check"></i><b>B</b> Combination</a><ul>
+<li class="chapter" data-level="B.1" data-path="concept-1.html"><a href="concept-1.html"><i class="fa fa-check"></i><b>B.1</b> Concept</a></li>
+<li class="chapter" data-level="B.2" data-path="formulae-and-notation.html"><a href="formulae-and-notation.html"><i class="fa fa-check"></i><b>B.2</b> Formulae And Notation</a></li>
+<li class="chapter" data-level="B.3" data-path="expaniosn-of-nc-r.html"><a href="expaniosn-of-nc-r.html"><i class="fa fa-check"></i><b>B.3</b> Expaniosn of <span class="math inline">\(^nC_r\)</span></a></li>
+<li class="chapter" data-level="B.4" data-path="theoretical-problems.html"><a href="theoretical-problems.html"><i class="fa fa-check"></i><b>B.4</b> Theoretical Problems</a></li>
+<li class="chapter" data-level="B.5" data-path="repeated-items.html"><a href="repeated-items.html"><i class="fa fa-check"></i><b>B.5</b> Repeated Items</a></li>
+<li class="chapter" data-level="B.6" data-path="repeated-items-ctd-.html"><a href="repeated-items-ctd-.html"><i class="fa fa-check"></i><b>B.6</b> Repeated Items (Ctd.)</a></li>
+<li class="chapter" data-level="B.7" data-path="conditional-capacity.html"><a href="conditional-capacity.html"><i class="fa fa-check"></i><b>B.7</b> Conditional Capacity</a></li>
+<li class="chapter" data-level="B.8" data-path="always-inexcluding.html"><a href="always-inexcluding.html"><i class="fa fa-check"></i><b>B.8</b> Always In(Ex)cluding</a></li>
+<li class="chapter" data-level="B.9" data-path="always-inexcluding-problems.html"><a href="always-inexcluding-problems.html"><i class="fa fa-check"></i><b>B.9</b> Always In(Ex)cluding Problems</a></li>
+<li class="chapter" data-level="B.10" data-path="at-least-one.html"><a href="at-least-one.html"><i class="fa fa-check"></i><b>B.10</b> At least one</a></li>
+<li class="chapter" data-level="B.11" data-path="at-least-one-problems.html"><a href="at-least-one-problems.html"><i class="fa fa-check"></i><b>B.11</b> At least one (Problems)</a></li>
 </ul></li>
+<li class="part"><span><b>III Presentations</b></span></li>
 <li class="chapter" data-level="" data-path="pres.html"><a href="pres.html"><i class="fa fa-check"></i>Presentations</a><ul>
-<li class="chapter" data-level="" data-path="how.html"><a href="how.html"><i class="fa fa-check"></i>How to Use</a></li>
-<li class="chapter" data-level="" data-path="stat-pres.html"><a href="stat-pres.html"><i class="fa fa-check"></i>Statistics</a><ul>
-<li class="chapter" data-level="" data-path="stat-pres.html"><a href="stat-pres.html#first-part"><i class="fa fa-check"></i>First Part</a></li>
-<li class="chapter" data-level="" data-path="stat-pres.html"><a href="stat-pres.html#elementary-statistics"><i class="fa fa-check"></i>Elementary Statistics</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="math.html"><a href="math.html"><i class="fa fa-check"></i>Mathematics</a><ul>
-<li class="chapter" data-level="" data-path="math.html"><a href="math.html#higher-secondary"><i class="fa fa-check"></i>Higher Secondary</a></li>
-<li class="chapter" data-level="" data-path="math.html"><a href="math.html#class-ix-x"><i class="fa fa-check"></i>Class IX-X</a></li>
-<li class="chapter" data-level="" data-path="math.html"><a href="math.html#class-eight"><i class="fa fa-check"></i>Class Eight</a></li>
-<li class="chapter" data-level="" data-path="math.html"><a href="math.html#class-seven"><i class="fa fa-check"></i>Class Seven</a></li>
-</ul></li>
+<li class="chapter" data-level="" data-path="pres.html"><a href="pres.html#how"><i class="fa fa-check"></i>How to Use</a></li>
+<li class="chapter" data-level="" data-path="pres.html"><a href="pres.html#stat_pres"><i class="fa fa-check"></i>Statistics</a></li>
+<li class="chapter" data-level="" data-path="pres.html"><a href="pres.html#first-part"><i class="fa fa-check"></i>First Part</a></li>
+<li class="chapter" data-level="" data-path="pres.html"><a href="pres.html#elementary-statistics"><i class="fa fa-check"></i>Elementary Statistics</a></li>
+<li class="chapter" data-level="" data-path="pres.html"><a href="pres.html#math"><i class="fa fa-check"></i>Mathematics</a></li>
+<li class="chapter" data-level="" data-path="pres.html"><a href="pres.html#higher-secondary"><i class="fa fa-check"></i>Higher Secondary</a></li>
+<li class="chapter" data-level="" data-path="pres.html"><a href="pres.html#class-ix-x"><i class="fa fa-check"></i>Class IX-X</a></li>
+<li class="chapter" data-level="" data-path="pres.html"><a href="pres.html#class-eight"><i class="fa fa-check"></i>Class Eight</a></li>
+<li class="chapter" data-level="" data-path="pres.html"><a href="pres.html#class-seven"><i class="fa fa-check"></i>Class Seven</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -316,998 +366,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="introduction-to-probability" class="section level2">
-<h2><span class="header-section-number">2.1</span> Introduction to Probability</h2>
-<div id="important-concepts" class="section level3">
-<h3><span class="header-section-number">2.1.1</span> Important concepts</h3>
-<blockquote>
-<ul>
-<li>Trial</li>
-<li>Experiment</li>
-<li>Random experiment</li>
-<li>Sample space</li>
-<li>event</li>
-</ul>
-</blockquote>
+<div id="introduction-to-probability" class="section level1">
+<h1><span class="header-section-number">Chapter 9</span> Introduction to Probability</h1>
 </div>
-<div id="three-definitions" class="section level3">
-<h3><span class="header-section-number">2.1.2</span> Three Definitions</h3>
-<div id="classical" class="section level4">
-<h4><span class="header-section-number">2.1.2.1</span> Classical</h4>
-<p><span class="math inline">\(P (A) = \frac{n(A)}{n(S)}\)</span></p>
-</div>
-<div id="relative-frequency" class="section level4">
-<h4><span class="header-section-number">2.1.2.2</span> Relative frequency</h4>
-<p><span class="math display">\[\lim_{n(S) \to \infty} \frac{n(A)}{n(S)}\]</span></p>
-</div>
-<div id="axiomatic" class="section level4">
-<h4><span class="header-section-number">2.1.2.3</span> Axiomatic</h4>
-<p>Three axioms</p>
-<p>Say, S is sample space and A is an event</p>
-<blockquote>
-<ul>
-<li><span class="math inline">\(0 \le P (A) \le 1\)</span> <span style="color: red;">(NOT <span class="math inline">\(P(A) \ge 0\)</span>)</span></li>
-<li>At least one of S will occur. P (S) = 1; Certain event.</li>
-<li><span class="math inline">\(P(A_1 U A_2 U ... U A_n)=P(A_1) + P(A_2) + ... + P(A_n)\)</span> or<br />
-</li>
-<li><span class="math display">\[P\left(\cup _{i=1}^{\infty }E_{i}\right)=\sum _{i=1}^{\infty }P(E_{i})\]</span></li>
-</ul>
-</blockquote>
-</div>
-</div>
-<div id="permutaion-vs-combination" class="section level3">
-<h3><span class="header-section-number">2.1.3</span> Permutaion vs Combination</h3>
-<p>There are 15 cricketers in BD preliminary team. We got to <span style="font-style:italic; color:blue;">select </span> 11. C or P?</p>
-<blockquote>
-<ul>
-<li>Where is P used?</li>
-</ul>
-</blockquote>
-</div>
-<div id="dependency-and-mutual-exclusivity" class="section level3">
-<h3><span class="header-section-number">2.1.4</span> Dependency and Mutual Exclusivity</h3>
-<p>If two events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> do not affect each other, they are called independent events.</p>
-<p>Let the events,</p>
-<p><span class="math inline">\(A\)</span> = Head appears when a coin is tossed</p>
-<p><span class="math inline">\(B\)</span> = Head appears when the coin is tossed again</p>
-<p>These two events are independent, assuming the first toss does not alter the properties of the coin.</p>
-<p>Consider another set of two events:</p>
-<p><span class="math inline">\(A\)</span> = An ace appears when a card is drawn from a deck of 52 cards</p>
-<p><span class="math inline">\(B\)</span> = An ace appears if another card is drawn from the same deck, without putting the first card back.</p>
-<p>In this case the <span class="math inline">\(P(B)\)</span> will depend on <span class="math inline">\(A\)</span>.</p>
-<p>Clearly, <span class="math inline">\(P(A) = \frac 4 {52}\)</span>, but <span class="math inline">\(P(B) = \frac 4 {51}\)</span></p>
-<p>If event <span class="math inline">\(B\)</span> did not depend event <span class="math inline">\(A\)</span>, <span class="math inline">\(P(B)\)</span> too would be <span class="math inline">\(\frac 4 {52}\)</span>, so it turns out <span class="math inline">\(B\)</span> depends on <span class="math inline">\(A\)</span>.</p>
-<p>Theoretically speaking, dependent events are described the Bayes' Theorem. If the event A depends on B, the the probability that A would happen if B happens is:</p>
-<p><span class="math inline">\(P(A|B) = \frac{P(A \cap B)}{P(B)}\)</span></p>
-<p><span class="math inline">\(\Rightarrow P(A \cap B) = P(A|B) \times P(B)\)</span></p>
-<p>Now, if A does not really depend on B, then <span class="math inline">\(P(A|B) = P(A)\)</span>, i.e., <span class="math inline">\(A\)</span> does not really care about <span class="math inline">\(B\)</span>.</p>
-<p>Thus, if A and B are independent, <span class="math inline">\(P(A \cap B) = P(A) \times P(B)\)</span></p>
-<p>Now, two events are called <strong>mutually exclusive</strong> when occurrence of one prevents other from happening, i.e,, they cannot occur simultaneously.</p>
-<p>If a die is thrown once, one of 1-6 will face up. If 1 appears, 2, or any other number from the rest cannot appear. Thus, Getting these numbers are mutually exclusive or disjoint events. Mutually exclusive sets do not have any common elements between themselves.</p>
-<p>Now, merging the concepts of dependency and mutual exclusivity is tricky.</p>
-<p><strong>Events cannot be independent and mutually exclusive simultaneously</strong>, although the opposite seems intuitive.</p>
-<p>Common sense tells us <em>events which are mutually exclusive should be independent</em>, <strong>but common sense is mistaken here.</strong></p>
-<p>Consider throwing a die.</p>
-<p><span class="math inline">\(S = \{1, 2, 3, 4, 5, 6\}\)</span></p>
-<p>Let, <span class="math inline">\(A = \{1, 3, 5\}\)</span> and <span class="math inline">\(B = \{2, 4, 6\}\)</span></p>
-<p>There are no common elements, so events A and B are disjoint or mutually exclusive.</p>
-<p>It might seem, since the sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> have no common elemts, they are independent.</p>
-<p>Let us check mathematically:</p>
-<p>From the given information, <span class="math inline">\(P(A)= \frac 1 2, P(B) = \frac 1 2\)</span></p>
-<p><span class="math inline">\(P(A \cap B) = 0\)</span> (since there are no common elements)</p>
-<p>And <span class="math inline">\(P(A) \cdot P(B) = \frac 1 2 \cdot \frac 1 2 = \frac 1 4\)</span></p>
-<p><span class="math inline">\(\therefore P(A \cap B) \ne P(A) \cdot P(B)\)</span>, which proves event <span class="math inline">\(A\)</span> and event <span class="math inline">\(B\)</span> are not independent, a result which is counterintuitive. Upon second thought, however, it becomes intuitive. First note that <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> both belong to <span class="math inline">\(S\)</span>. That they are disjoint means one cannot happen if the other happens, which means one is preventing another from happening, a behavior which can explained as dependency: one event cares about the other, i.e., if one happens, another refrains from happening.</p>
-<p>Mathematically,</p>
-<p><span class="math inline">\(P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac 0 {\frac 1 2} = 0\)</span></p>
-<p>In summary, reducing the probability of another event to zero is also a kind of influence, i.e.,</p>
-<p>Now, let us see another example, where we have two non mutually exclusive sets.</p>
-<p>Let, <span class="math inline">\(A = \{1, 3, 5\}\)</span> and <span class="math inline">\(B = \{1, 3, 4, 6\}\)</span> (observe that there are some common elements)</p>
-<p><span class="math inline">\(P(A) = \frac 1 2, P(B) = \frac 4 6 = \frac 2 3\)</span></p>
-<p><span class="math inline">\(P(A \cap B) = \frac 2 6 = \frac 1 3\)</span>, and <span class="math inline">\(P(A) \cdot P(B) = \frac 1 2 \cdot \frac 2 3 = \frac 1 3\)</span></p>
-<p><span class="math inline">\(\therefore P(A \cap B) = P(A) \cdot P(B)\)</span>, which proves A and B are independent.</p>
-<p>Using Bayes theorem,</p>
-<p><span class="math inline">\(P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac{\frac 1 3}{\frac 2 3} = \frac 1 2 = P(A)\)</span></p>
-<p><span class="math inline">\(\therefore P(A|B) = P(A)\)</span>, which means <span class="math inline">\(A\)</span> does not what happens to <span class="math inline">\(B\)</span>.</p>
-<p>Thus, if A and B have common elements, they may be independent of each other. But are they always? No, because it may happen that <span class="math inline">\(P(A \cap B) \ne P(A) \cdot P(B)\)</span>, in which case they are dependent events.</p>
-<p>So we have three possible cases when we combine depend with disjointness:</p>
-<ol style="list-style-type: decimal">
-<li>If two events have no common sample points (elements) (mutually exclusive or disjoint), they are always dependent events.</li>
-<li>If two sets have some common sample points, they may be dependent or independent.
-<ol style="list-style-type: lower-alpha">
-<li>Independet if <span class="math inline">\(P(A \cap B) = P(A) \cdot P(B)\)</span></li>
-<li>Dependet if <span class="math inline">\(P(A \cap B) \ne P(A) \cdot P(B)\)</span></li>
-</ol></li>
-</ol>
-<p>Now, let us prove the relationship theoretically.</p>
-<p>Let <span class="math inline">\(P(A) \ne 0, P(B\ne 0\)</span></p>
-<p>If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent, <span class="math inline">\(P(A \cap B) = P(A) \cdot P(B)\)</span></p>
-<p>Since <span class="math inline">\(P(A)\)</span> and <span class="math inline">\(P(B)\)</span> are both non-zero numbers, <span class="math inline">\(P(A) \cdot P(B) \ne 0\)</span></p>
-<p><span class="math inline">\(\therefore P(A \cap B) \ne 0\)</span> , i.e., there are some common elements between the sets.</p>
-<p>Thus, independent events cannot be mutually exclusive, i.e., they would always have common elements.</p>
-<p>Finally, in general, we can say: <strong>Mutually exclsuive events are dependent events, while non mutually exclusive events may or may not be dependent.</strong></p>
-<p>In other word, <strong><em>all mutually exclsuive events are dependent events, but not all dependent events are mutually exclusive.</em></strong></p>
-</div>
-<div id="types-of-problems" class="section level3">
-<h3><span class="header-section-number">2.1.5</span> Types of Problems</h3>
-<ul>
-<li>Miscellaneous<br />
-</li>
-<li>Coin</li>
-<li>Die</li>
-<li>Playing Card</li>
-<li>At Once vs One by One</li>
-<li>Box</li>
-<li>Conditional</li>
-<li>Set Theoretic</li>
-<li>Digit</li>
-</ul>
-</div>
-<div id="miscellaneous" class="section level3">
-<h3><span class="header-section-number">2.1.6</span> Miscellaneous</h3>
-<div id="misc-problem-01" class="section level4">
-<h4><span class="header-section-number">2.1.6.1</span> Misc Problem #01</h4>
-<p>What is the probability that in a leap year, there are 53 Fridays?</p>
-<blockquote>
-<ul>
-<li>In a leap year, there are 366 days, i.e., 52 weeks and 2 days. In each week is a Fridays, so there are no less than 52 Fridays. The remaining two days could be:</li>
-<li>(Sat, Sun); (Sun, Mon); (Mon, Tue); (Tue, Wedn); (Wedn, Thu); (Thu, Fri); (Fri, Sat) = 7</li>
-<li>Total possible outcome = 7 and favorable outcomes = 2</li>
-<li><span class="math inline">\(P = \frac{2}{7}\)</span></li>
-</ul>
-</blockquote>
-</div>
-<div id="misc-problem-02" class="section level4">
-<h4><span class="header-section-number">2.1.6.2</span> Misc Problem #02</h4>
-<p>Out of the natural numbers 10 through 30, a number is chosen randomly; what is the probability that the number is</p>
-<ol style="list-style-type: lower-roman">
-<li>a prime number</li>
-<li>a prime number or multiple of 5</li>
-<li>a prime number or an odd number</li>
-<li>not a perfect square</li>
-</ol>
-</div>
-<div id="misc-problem-03" class="section level4">
-<h4><span class="header-section-number">2.1.6.3</span> Misc Problem #03</h4>
-<p>What is the probability that the product of three positive integers chosen from 1 through 100 is an even number?</p>
-<blockquote>
-<ul>
-<li>Three possible cases</li>
-<li>All three are even</li>
-<li>Two odd and one even number</li>
-<li>Two even and one odd</li>
-<li><span class="math inline">\(P=\frac{^{50}C_3}{^{100}C_3}+...\)</span></li>
-<li>0.88</li>
-</ul>
-</blockquote>
-</div>
-</div>
-<div id="coin-and-die-problem" class="section level3">
-<h3><span class="header-section-number">2.1.7</span> Coin And Die Problem</h3>
-<div id="tossing-a-coing-twice" class="section level4">
-<h4><span class="header-section-number">2.1.7.1</span> Tossing A Coing Twice</h4>
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
-.tg .tg-rvyq{border-color:inherit;font-style:italic;font-weight:bold;text-align:center;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-<tr>
-<th class="tg-c3ow" colspan="2" rowspan="2">
-</th>
-<th class="tg-7btt" colspan="2">
-First Coin
-</th>
-</tr>
-<tr>
-<td class="tg-c3ow">
-H
-</td>
-<td class="tg-c3ow">
-T
-</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tg-7btt" rowspan="2">
-Second<br>Coin
-</td>
-<td class="tg-c3ow">
-H
-</td>
-<td class="tg-rvyq">
-HH
-</td>
-<td class="tg-rvyq">
-HT
-</td>
-</tr>
-<tr>
-<td class="tg-c3ow">
-T
-</td>
-<td class="tg-rvyq">
-TH
-</td>
-<td class="tg-rvyq">
-TT
-</td>
-</tr>
-</tbody>
-</table>
-<p><strong><em>Tossing a coin twice is equivalent to tossing two coins at once</em></strong></p>
-<p>What is the probability that</p>
-<ol style="list-style-type: decimal">
-<li>The Head appears at the first draw?</li>
-<li>At least one Head appears?</li>
-<li>Less than two Heads appear?</li>
-<li>Only Tails appears?</li>
-</ol>
-</div>
-<div id="flipping-a-coin-thrice" class="section level4">
-<h4><span class="header-section-number">2.1.7.2</span> Flipping A Coin Thrice</h4>
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-2k8k{border-color:inherit;font-size:13px;font-weight:bold;text-align:center;vertical-align:top}
-.tg .tg-wrlh{font-size:13px;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-x10j{border-color:inherit;font-size:13px;font-style:italic;font-weight:bold;text-align:center;vertical-align:top}
-.tg .tg-chpi{font-size:13px;font-style:italic;font-weight:bold;text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-<tr>
-<th class="tg-2k8k" colspan="2" rowspan="2">
-</th>
-<th class="tg-2k8k" colspan="4">
-First Two Flips
-</th>
-</tr>
-<tr>
-<td class="tg-2k8k">
-HH
-</td>
-<td class="tg-2k8k">
-HT
-</td>
-<td class="tg-wrlh">
-TH
-</td>
-<td class="tg-wrlh">
-TT
-</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tg-2k8k" rowspan="2">
-Third Flip
-</td>
-<td class="tg-2k8k">
-H
-</td>
-<td class="tg-x10j">
-HHH
-</td>
-<td class="tg-x10j">
-HHT
-</td>
-<td class="tg-chpi">
-HTH
-</td>
-<td class="tg-chpi">
-HTT
-</td>
-</tr>
-<tr>
-<td class="tg-2k8k">
-T
-</td>
-<td class="tg-x10j">
-THH
-</td>
-<td class="tg-x10j">
-THT
-</td>
-<td class="tg-chpi">
-TTH
-</td>
-<td class="tg-chpi">
-TTT
-</td>
-</tr>
-</tbody>
-</table>
-<p>What is the probability that</p>
-<ol style="list-style-type: decimal">
-<li>All three are Heads?</li>
-<li>There are more than one Head?</li>
-<li>The second draw gives a Head?</li>
-<li>The third draw does not give a head?</li>
-<li>The first draw gives a Tail but the the Draw does not?</li>
-<li>At most one Head appears?</li>
-</ol>
-</div>
-<div id="flinging-two-dice-at-once" class="section level4">
-<h4><span class="header-section-number">2.1.7.3</span> Flinging Two Dice at Once</h4>
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-b2ze{border-color:inherit;font-size:13px;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-lvro{border-color:inherit;font-size:13px;font-weight:bold;text-align:center;vertical-align:middle}
-.tg .tg-2k8k{border-color:inherit;font-size:13px;font-weight:bold;text-align:center;vertical-align:top}
-.tg .tg-1fmd{border-color:inherit;font-size:13px;font-style:italic;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-x10j{border-color:inherit;font-size:13px;font-style:italic;font-weight:bold;text-align:center;vertical-align:top}
-.tg .tg-387r{border-color:inherit;font-size:13px;text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-<tr>
-<th class="tg-lvro" colspan="2" rowspan="2">
-Tossing Two<br>Dice at Once
-</th>
-<th class="tg-2k8k" colspan="6">
-First Die
-</th>
-</tr>
-<tr>
-<td class="tg-2k8k">
-1
-</td>
-<td class="tg-2k8k">
-2
-</td>
-<td class="tg-b2ze">
-3
-</td>
-<td class="tg-b2ze">
-4
-</td>
-<td class="tg-1fmd">
-5
-</td>
-<td class="tg-1fmd">
-6
-</td>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tg-2k8k">
-Second<br>Die
-</td>
-<td class="tg-2k8k">
-1
-</td>
-<td class="tg-x10j">
-1,1
-</td>
-<td class="tg-x10j">
-1,2
-</td>
-<td class="tg-1fmd">
-1,3
-</td>
-<td class="tg-1fmd">
-1,4
-</td>
-<td class="tg-1fmd">
-1,5
-</td>
-<td class="tg-1fmd">
-1,6
-</td>
-</tr>
-<tr>
-<td class="tg-2k8k">
-</td>
-<td class="tg-2k8k">
-2
-</td>
-<td class="tg-x10j">
-2,1
-</td>
-<td class="tg-x10j">
-2,2
-</td>
-<td class="tg-1fmd">
-2,3
-</td>
-<td class="tg-1fmd">
-2,4
-</td>
-<td class="tg-1fmd">
-2,5
-</td>
-<td class="tg-1fmd">
-2,6
-</td>
-</tr>
-<tr>
-<td class="tg-387r">
-</td>
-<td class="tg-1fmd">
-3
-</td>
-<td class="tg-1fmd">
-3,1
-</td>
-<td class="tg-1fmd">
-3,2
-</td>
-<td class="tg-1fmd">
-3,3
-</td>
-<td class="tg-1fmd">
-3,4
-</td>
-<td class="tg-1fmd">
-3,5
-</td>
-<td class="tg-1fmd">
-3,6
-</td>
-</tr>
-<tr>
-<td class="tg-387r">
-</td>
-<td class="tg-1fmd">
-4
-</td>
-<td class="tg-1fmd">
-4,1
-</td>
-<td class="tg-1fmd">
-4,2
-</td>
-<td class="tg-1fmd">
-4,3
-</td>
-<td class="tg-1fmd">
-4,4
-</td>
-<td class="tg-1fmd">
-4,5
-</td>
-<td class="tg-1fmd">
-4,6
-</td>
-</tr>
-<tr>
-<td class="tg-387r">
-</td>
-<td class="tg-1fmd">
-5
-</td>
-<td class="tg-1fmd">
-5,1
-</td>
-<td class="tg-1fmd">
-5,2
-</td>
-<td class="tg-1fmd">
-5,3
-</td>
-<td class="tg-1fmd">
-5,4
-</td>
-<td class="tg-1fmd">
-5,5
-</td>
-<td class="tg-1fmd">
-5,6
-</td>
-</tr>
-<tr>
-<td class="tg-387r">
-</td>
-<td class="tg-1fmd">
-6
-</td>
-<td class="tg-1fmd">
-6,1
-</td>
-<td class="tg-1fmd">
-6,2
-</td>
-<td class="tg-1fmd">
-6,3
-</td>
-<td class="tg-1fmd">
-6,4
-</td>
-<td class="tg-1fmd">
-6,5
-</td>
-<td class="tg-1fmd">
-6,6
-</td>
-</tr>
-</tbody>
-</table>
-<p>What is the probability that</p>
-<ol style="list-style-type: decimal">
-<li>The first numbers is odd?</li>
-<li>The summation of numbers in two draws is a prime number?</li>
-<li>Both numbers are same?</li>
-<li>The second number is bigger?</li>
-</ol>
-</div>
-</div>
-<div id="playing-card" class="section level3">
-<h3><span class="header-section-number">2.1.8</span> Playing Card</h3>
-<div id="concepts-playing-card" class="section level4">
-<h4><span class="header-section-number">2.1.8.1</span> Concepts (Playing Card)</h4>
-<div class="container">
-<div class="col">
-<p><img src="img/stat/cards.png" width="460"></p>
-</div>
-<div class="col">
-<p><br/>
-Each rank has 13 cards.</p>
-<ul>
-<li>Ace (A)</li>
-<li>King (K)</li>
-<li>Queen (Q)</li>
-<li>Jack (J)</li>
-<li>Numbers: 2, 3, 4, 5, 6, 7, 8, 9, 10</li>
-</ul>
-<blockquote>
-<ul>
-<li>4+9 numbers = 13 cards.</li>
-</ul>
-</blockquote>
-</div>
-</div>
-</div>
-<div id="card-problem-01" class="section level4">
-<h4><span class="header-section-number">2.1.8.2</span> Card Problem #01</h4>
-<p>3 cards are drawn from a pack of 52 cards. What is the probability that they are all Kings?</p>
-<p>There are 4 Kings. We’ve to draw 3 cards.</p>
-<blockquote>
-<ul>
-<li><span class="math inline">\(P(K) =\frac{^4C_3}{{^52}C_3}\)</span></li>
-</ul>
-</blockquote>
-</div>
-<div id="card-problem-02" class="section level4">
-<h4><span class="header-section-number">2.1.8.3</span> Card Problem #02</h4>
-<p>If a card is drawn from a deck of 52 cards with 4 aces, what is the probability that an ace will not show up?</p>
-<p>Let, P(A) = Ace appears</p>
-<blockquote>
-<ul>
-<li><span class="math inline">\(1-P(A)\)</span></li>
-<li><span class="math inline">\(1-\frac 1 {13}\)</span></li>
-</ul>
-</blockquote>
-</div>
-<div id="card-problem-03" class="section level4">
-<h4><span class="header-section-number">2.1.8.4</span> Card Problem #03</h4>
-<p>Two cards are drawn with replacement; What is the probability that they are</p>
-<ol style="list-style-type: lower-roman">
-<li>Kings of same color</li>
-<li>Kings of different color</li>
-<li>Not Kings at all</li>
-</ol>
-<blockquote>
-<ul>
-<li><ol style="list-style-type: lower-roman">
-<li><span class="math inline">\(P(BUR) =P(B)+P(R)\)</span></li>
-</ol></li>
-<li><span class="math inline">\(\frac{^2C_1 \times ^2C_1}{^{52}C_1\times ^{52}C_1}+\frac{^2C_1 \times ^2C_1}{^{52}C_1\times ^{52}C_1}\)</span> Why not <span class="math inline">\(^{52}C_2\)</span>, <span class="math inline">\(^4C_2\)</span></li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li><ol start="2" style="list-style-type: lower-roman">
-<li><span class="math inline">\(1-P(B \cup R)\)</span></li>
-</ol></li>
-<li><span class="math inline">\(P(K)= \frac{^4C_1 \times ^4C_1}{^{52}C_1\times ^{52}C_1}\)</span></li>
-<li><ol start="3" style="list-style-type: lower-roman">
-<li><span class="math inline">\(1-P(K)\)</span></li>
-</ol></li>
-</ul>
-</blockquote>
-</div>
-<div id="card-problem-04" class="section level4">
-<h4><span class="header-section-number">2.1.8.5</span> Card Problem #04</h4>
-<p>A card is drawn from a pack of 52 cards. What is the probability that it is</p>
-<ol style="list-style-type: lower-roman">
-<li>an Ace</li>
-<li>A Spade</li>
-<li>A Hearts or a King</li>
-</ol>
-</div>
-<div id="card-problem-05" class="section level4">
-<h4><span class="header-section-number">2.1.8.6</span> Card Problem #05</h4>
-</div>
-</div>
-<div id="box" class="section level3">
-<h3><span class="header-section-number">2.1.9</span> Box</h3>
-<div id="box-problem-01" class="section level4">
-<h4><span class="header-section-number">2.1.9.1</span> Box Problem #01</h4>
-<p>In a box, there are 5 blue marbles, 7 green marbles, and 8 yellow marbles. If two marbles are randomly selected, what is the probability that both will be green or yellow, if taken</p>
-<ol style="list-style-type: lower-roman">
-<li><p>with replacement</p></li>
-<li><p>without replacement</p></li>
-</ol>
-<blockquote>
-<ul>
-<li>Correct or not: <span class="math inline">\(\frac{^7C_2}{^{20}C_2}+\frac{^8C_2}{^{20}C_2}\)</span></li>
-<li><span class="math inline">\(\frac{^7C_1 \times ^7C_1}{^{20}C_1 \times ^{20}C_1}+\frac{^8C_1 \times ^8C_1}{^{20}C_1 \times ^{20}C_1}\)</span></li>
-<li>Without replacement: <span class="math inline">\(\frac{^7C_1 \times ^6C_1}{^{20}C_1 \times ^{20}C_1}+\frac{^8C_1 \times ^7C_1}{^{20}C_1 \times ^{20}C_1}\)</span></li>
-</ul>
-</blockquote>
-</div>
-<div id="box-problem-02" class="section level4">
-<h4><span class="header-section-number">2.1.9.2</span> Box Problem #02</h4>
-<div class="container">
-<div class="col">
-<p>There are some balls in a box as below</p>
-<table>
-<thead>
-<tr class="header">
-<th>Color</th>
-<th># Balls</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>White</td>
-<td>3</td>
-</tr>
-<tr class="even">
-<td>Black</td>
-<td>6</td>
-</tr>
-<tr class="odd">
-<td>Red</td>
-<td>7</td>
-</tr>
-<tr class="even">
-<td>Green</td>
-<td>5</td>
-</tr>
-<tr class="odd">
-<td>Yellow</td>
-<td>4</td>
-</tr>
-<tr class="even">
-<td>Violet</td>
-<td>9</td>
-</tr>
-<tr class="odd">
-<td>Blue</td>
-<td>8</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="col">
-<p>If three balls are drawn at random, what is the probability there are all red or green?</p>
-<blockquote>
-<ul>
-<li><span class="math inline">\(\frac{^7C_3}{^{42}C_3}+\frac{^5C_3}{^{42}C_3}\)</span></li>
-<li>0.039</li>
-</ul>
-</blockquote>
-</div>
-</div>
-</div>
-<div id="box-problem-02-1" class="section level4">
-<h4><span class="header-section-number">2.1.9.3</span> Box Problem #02</h4>
-<p>There are 9 red and 7 white balls in a box. 6 balls are picked randomly. What is the probability that 3 balls are red and 3 balls are white?</p>
-<p>Which one is the answer?</p>
-<div class="container">
-<div class="col">
-<ul>
-<li><input type="checkbox" disabled="" />
-<span class="math inline">\(\frac{^9C_3 \times ^7C_3}{^{16}C_6}\)</span></li>
-<li><input type="checkbox" disabled="" />
-<span class="math inline">\(\frac{^9C_3}{^{16}C_3} \times \frac{^7C_3}{^{16}C_3}\)</span></li>
-<li><input type="checkbox" disabled="" />
-<span class="math inline">\(\frac{^9C_3}{^{16}C_3} + \frac{^7C_3}{^{16}C_3}\)</span></li>
-<li><input type="checkbox" disabled="" />
-<span class="math inline">\(\frac{^9C_3}{^{16}C_6} \times \frac{^7C_3}{^{16}C_6}\)</span></li>
-</ul>
-</div>
-<div class="col">
-<blockquote>
-<ul>
-<li>Whatever we draw together will be in <span class="math inline">\(r\)</span> in <span class="math inline">\(^nC_r\)</span></li>
-<li>Answer: <span class="math inline">\(\frac{^9C_3 \times ^7C_3}{^{16}C_6}\)</span>=0.367</li>
-</ul>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<div id="conditional-probability" class="section level3">
-<h3><span class="header-section-number">2.1.10</span> Conditional Probability</h3>
-<div id="conditional-formula" class="section level4">
-<h4><span class="header-section-number">2.1.10.1</span> Conditional Formula</h4>
-<p><strong>Bayes Theorem</strong></p>
-<p><span class="math inline">\(P(B|A)=\frac{P(A \cap B)}{P(A)}\)</span></p>
-</div>
-<div id="conditional-problem-01" class="section level4">
-<h4><span class="header-section-number">2.1.10.2</span> Conditional Problem # 01</h4>
-<p>Probability that it rains today is 40%, that tomorrow is 50%, and that on both days is 30%. If it rains today, what is the probability that it would rain tomorrow?</p>
-<blockquote>
-<ul>
-<li><span class="math inline">\(P (T) = 0.4, P(M) = 0.5, P(T\cap M)=0.3\)</span></li>
-<li><span class="math inline">\(P(M|T)=?\)</span></li>
-<li><span class="math inline">\(P(M|T)=\frac{P(T\cap M)}{P(T)}\)</span></li>
-<li><span class="math inline">\(\frac{0.3}{0.4}\)</span></li>
-</ul>
-</blockquote>
-</div>
-<div id="conditional-problem-02" class="section level4">
-<h4><span class="header-section-number">2.1.10.3</span> Conditional Problem # 02</h4>
-<p>In a college, there are 100 students, of whom 30 play football, 40 play cricket, and 20 play both. A student is selected randomly. If he plays cricket, what is the probability that he plays football?</p>
-<div onclick="klikaj(&#39;con2&#39;)">
-Solution (<span style="color:red">click to see</span>)
-</div>
-<div id="con2" style="visibility: hidden">
-<div class="container">
-<div class="col">
-<p><span class="math inline">\(P(F)=0.3\)</span></p>
-<p><span class="math inline">\(P(C)=0.4\)</span></p>
-<p><span class="math inline">\(P(F \cap C)=0.2\)</span></p>
-</div>
-<div class="col">
-<p><span class="math inline">\(P(F|C)=?\)</span></p>
-<blockquote>
-<ul>
-<li><span class="math inline">\(P(F|C)=\frac{P(F \cap C)}{P(C)}=\)</span> 0.5</li>
-</ul>
-</blockquote>
-</div>
-</div>
-</div>
-<script>
-function klikaj(i) {
-    document.getElementById(i).style.visibility='visible';
-}
-</script>
-</div>
-<div id="conditional-problem-03" class="section level4">
-<h4><span class="header-section-number">2.1.10.4</span> Conditional Problem # 03</h4>
-<p><span class="math inline">\(S=\)</span> {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}</p>
-<p>If a number is picked randomly and known it an even number, What is the probability that it is more than 6?</p>
-</div>
-<div id="conditional-problem-04" class="section level4">
-<h4><span class="header-section-number">2.1.10.5</span> Conditional Problem # 04</h4>
-<p>In a city of 1 million inhabitants let there be 100 terrorists and 999,900 non-terrorists. The city has a facial recognition software. If the camera scans a terrorist, a bell will ring 99% of the time, and it will fail to ring 1% of the time. If the camera scans a non-terrorist, a bell will not ring 99% of the time, but it will ring 1% of the time.</p>
-<p>If the bell rings, what is the probability that a terrorist is caught?</p>
-<p>About 99 of the 100 terrorists will trigger the alarm—and so will about 9,999 of the 999,900 non-terrorists. Therefore, about 10,098 people will trigger the alarm, among which about 99 will be terrorists. So, the probability that a person triggering the alarm actually is a terrorist, is only about 99 in 10,098, which is less than 1%</p>
-</div>
-</div>
-<div id="set-theoretic" class="section level3">
-<h3><span class="header-section-number">2.1.11</span> Set Theoretic</h3>
-<div id="concept" class="section level4">
-<h4><span class="header-section-number">2.1.11.1</span> Concept</h4>
-<p>Formulae</p>
-<div class="container">
-<div class="col">
-<p><img src="img/stat/venn.png" width="480"></p>
-</div>
-<div class="col">
-<p>Think Why are they so?</p>
-<ul>
-<li><span class="math inline">\(P(A\cap B)=P(A)\times P(B)\)</span>, if A &amp; B are independent (prove from Bayes theorem)</li>
-</ul>
-<blockquote>
-<ul>
-<li><span class="math inline">\(P(A\cup B)=P(A)+P(B)-P(A\cap B)\)</span></li>
-<li><span class="math inline">\(P(A\cap \bar B)=P(A)-P(A\cap B)\)</span></li>
-<li><span class="math inline">\(P(A|\bar B)=\frac{P(A \cap \bar B)}{P(\bar B)}=?\)</span></li>
-<li>Also recall De Morgan’s Laws</li>
-</ul>
-</blockquote>
-</div>
-</div>
-</div>
-<div id="set-problem-01" class="section level4">
-<h4><span class="header-section-number">2.1.11.2</span> Set Problem # 01</h4>
-The probability of Ronaldo scoring a goal is 0.4 and that of Messi 0.38. What is the probability that
-<div class="container">
-<div class="col">
-<ol style="list-style-type: lower-roman">
-<li>Both Score</li>
-<li>Only Ronaldo scores</li>
-<li>Only Messi scores?</li>
-<li>At least one of them scores</li>
-<li>Only one of them scores</li>
-<li>At most one of them scores</li>
-</ol>
-<p>P(R) = 0.4 and P(M) = 0.38</p>
-</div>
-<div class="col">
-<blockquote>
-<ul>
-<li><ol style="list-style-type: decimal">
-<li><span class="math inline">\(P(R \cap M)=P(R) \times P(M)\)</span> (since independent)</li>
-</ol></li>
-<li><ol start="2" style="list-style-type: decimal">
-<li><span class="math inline">\(P(R \cap M&#39;)=?\)</span></li>
-</ol></li>
-<li><ol start="3" style="list-style-type: decimal">
-<li><span class="math inline">\(P(R&#39; \cap M)=?\)</span></li>
-</ol></li>
-<li><ol start="4" style="list-style-type: decimal">
-<li><span class="math inline">\(P(R \cup M)\)</span></li>
-</ol></li>
-<li><ol start="5" style="list-style-type: decimal">
-<li><span class="math inline">\(P(R \cap M&#39;)+P(R&#39; \cap M)\)</span></li>
-</ol></li>
-<li><ol start="6" style="list-style-type: decimal">
-<li>Same to 5</li>
-</ol></li>
-</ul>
-</blockquote>
-</div>
-</div>
-</div>
-<div id="set-problem-02" class="section level4">
-<h4><span class="header-section-number">2.1.11.3</span> Set Problem # 02</h4>
-<div class="container">
-<div class="col">
-<p><span class="math inline">\(S_1\)</span>={1,3,4,7,9,20}</p>
-<p><span class="math inline">\(S_2\)</span>={12, 13, 14, 15, 16, 17, 18}</p>
-<p>If a number is randomly chosen from each set, what is the probability that a prime number comes from <span class="math inline">\(S_1\)</span> and a multiple of 3 from <span class="math inline">\(S_2\)</span>?</p>
-</div>
-<div class="col">
-<div onclick="klikaj(&#39;s3&#39;)">
-Solution (<span style="color:red">click to see</span>)
-</div>
-<div id="s3" style="visibility: hidden">
-<p>Say, P = Prime from <span class="math inline">\(S_1\)</span></p>
-<p>M = Multiple of 3 from <span class="math inline">\(S_2\)</span>.</p>
-<p><span class="math inline">\(P(P) = \frac 3 7\)</span> and <span class="math inline">\(P(M)=\frac 3 7\)</span></p>
-<p>What do we need to find out?</p>
-<ul>
-<li><input type="checkbox" disabled="" />
-<span class="math inline">\(P(P \cup M)\)</span></li>
-<li><input type="checkbox" disabled="" checked="" />
-<span class="math inline">\(P(P \cap M)\)</span></li>
-</ul>
-<blockquote>
-<ul>
-<li>Answer: <span class="math inline">\(P(P \cap M) = P(P) \cdot P(M)\)</span>
-</div></li>
-</ul>
-</blockquote>
-</div>
-<script>
-function klikaj(i) {
-    document.getElementById(i).style.visibility='visible';
-}
-</script>
-</div>
-</div>
-<div id="set-problem-03" class="section level4">
-<h4><span class="header-section-number">2.1.11.4</span> Set Problem # 03</h4>
-<p>Cup 01 contains 2 black, 3 red, and 1 pink ball. Cup 2 contains only 1 red ball. A cup is selected randomly. Next, a ball is randomly chosen from that randomly selected cup and placed into the other cup. A ball is then drawn randomly from that second cup. Find the probability that the last ball drawn is a pink one.</p>
-<blockquote>
-<ul>
-<li>3 possible cases</li>
-</ul>
-</blockquote>
-<ol style="list-style-type: decimal">
-<li><blockquote>
-<ul>
-<li>1st cup <span class="math inline">\(\rightarrow\)</span> pink ball <span class="math inline">\(\rightarrow\)</span> pink ball from 2nd cup</li>
-</ul>
-</blockquote></li>
-<li><blockquote>
-<ul>
-<li>1st cup <span class="math inline">\(\rightarrow\)</span> non-pink ball <span class="math inline">\(\rightarrow\)</span> pink ball from 2nd cup</li>
-</ul>
-</blockquote></li>
-<li><blockquote>
-<ul>
-<li>2nd cup <span class="math inline">\(\rightarrow\)</span> red ball <span class="math inline">\(\rightarrow\)</span> pink ball from 1st (other) cup</li>
-</ul>
-</blockquote></li>
-</ol>
-<blockquote>
-<ul>
-<li><span class="math inline">\((\frac 1 2 \times \frac 1 6 \times \frac 1 2 )+ (\frac 1 2 \times \frac 5 6 \times 0) + (\frac 1 2 \times 1 \times \frac 1 7)\)</span></li>
-</ul>
-</blockquote>
-</div>
-<div id="set-problem-04" class="section level4">
-<h4><span class="header-section-number">2.1.11.5</span> Set problem # 04</h4>
-<p>If a senility researcher discovered that in a population of healthy and diseased elderly people, 14% of the people had senile dementia, 63% had arterioplerotic cerebral degeneration, and 11% had both. What is the probability that a person not having arterioplerotic cerebral degeneration has senile dementia?</p>
-</div>
-<div id="set-problem-05" class="section level4">
-<h4><span class="header-section-number">2.1.11.6</span> Set problem # 05</h4>
-<p>A candidate applied for three posts in an industry, having 3, 4, and 2 candidates respectively. What is the probability of getting a job by that candidate in at least one post?</p>
-<div onclick="klikaj(&#39;set5&#39;)">
-<span>Answer</span>
-</div>
-<div id="set5" style="visibility: hidden">
-<p><span class="math inline">\(P(F)+P(S)+P(T)-P(F\cap S)-P(S\cap T)-P(F\cap T)+P(F\cap S \cap T\)</span></p>
-</div>
-<script>
-function klikaj(i) {
-    document.getElementById(i).style.visibility='visible';
-}
-</script>
-</div>
-<div id="set-problem-06" class="section level4">
-<h4><span class="header-section-number">2.1.11.7</span> Set problem # 06</h4>
-<p>A card is drawn from each of two well-shuffled pack of cards. Find the probability that at least one of them is an ace.</p>
-<div onclick="klikaj(&#39;rad1&#39;)">
-<span>Solution(<span style="color:red">click to see</span>)</span>
-</div>
-<div id="rad1" style="visibility: hidden">
-<p>Let,</p>
-<p>A = Ace from 1st pack</p>
-<p>B = Ace from 2nd pack</p>
-<p><span class="math inline">\(P(A \cup B)=?\)</span></p>
-<p><span class="math inline">\(P(A) = \frac{^4C_1}{^{52}C_1}\)</span></p>
-<p><span class="math inline">\(P(B) = P(A)\)</span></p>
-<p><span class="math inline">\(P(A\cap B) = P(A) \times P(B)\)</span></p>
-<blockquote>
-<ul>
-<li><span class="math inline">\(P(A \cup B)=P(A)+P(B) - P(A \cap B)\)</span></li>
-</ul>
-</blockquote>
-</div>
-<script>
-function klikaj(i) {
-    document.getElementById(i).style.visibility='visible';
-}
-</script>
-</div>
-<div id="set-problem-07" class="section level4">
-<h4><span class="header-section-number">2.1.11.8</span> Set problem # 07</h4>
-<p><span class="math inline">\(P(A\cap B)= \frac 1 3, P(A \cup B) = \frac 5 6, and \space P(A) = \frac 1 2\)</span></p>
-<p>Find <span class="math inline">\(P(B)\)</span> and <span class="math inline">\(P(B^c)\)</span></p>
-</div>
-<div id="set-problem-08" class="section level4">
-<h4><span class="header-section-number">2.1.11.9</span> Set problem # 08</h4>
-<p><span class="math inline">\(P(A)= \frac 1 2, P(B) = \frac 1 5, \text{and} \space P(A|B) = \frac 3 8\)</span></p>
-<p>Find <span class="math inline">\(P(A \cap B), P(B|A)\)</span>, and <span class="math inline">\(P(A \cup B)\)</span></p>
-<div onclick="klikaj(&#39;set8&#39;)">
-<span style="color:red"> See a clue</span>
-</div>
-<div id="set8" style="visibility: hidden">
-<p><span class="math inline">\(P(B|A) = \frac {P(A \cap B)}{P(A)}\)</span></p>
-<p><span class="math inline">\(P(A|B) = \frac {P(A \cap B)}{P(B)}\)</span></p>
-<p><span class="math inline">\(P(A \cap B) = P(A|B) \times P(B)\)</span></p>
-<p><span class="math inline">\(\therefore P(B|A) = \frac{P(A|B) \times P(B)}{P(A)}\)</span></p>
-</div>
-<script>
-function klikaj(i) {
-    document.getElementById(i).style.visibility='visible';
-}
-</script>
-
-</div>
-</div>
-</div>
-<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="prob.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="pres.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="moving-average.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="important-concepts.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="assets/gitbook-2.6.7/js/app.min.js"></script>

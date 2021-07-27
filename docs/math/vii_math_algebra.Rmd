@@ -89,9 +89,14 @@ Multiply
 3. $x^2+2xy+y^2$ with $x+y$
 4. $x^2+xy+y^2$ with $x^2-xy+y^2$
 5. $y^2-y+1$ with $1+y+y^2$
-6. 
+6. $2^{-3}x^5y^3$ with $2^3 x^{-4}y^{-1}$
 </div>
 <div class="col">
-> - 1. $15a^3x^7y$ 
+> - 1. $15a^3x^7y$
+> - 6. $xy^2$
 </div>
 </div>
+
+## Camel Problem
+
+Distribute 35 camels among 3 brothers so the eldest brother gets half, second brother gets one-third, and the youngest brother gets one-ninth. 

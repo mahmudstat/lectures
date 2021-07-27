@@ -1,12 +1,12 @@
-# Statistics {#stat}
+# (PART) Statistics {-} 
 
-## Preliminary Concepts 
+# Preliminary Concepts 
 
-### Statistics: What & How
+## Statistics: What & How
 
 <img src="img/stat.jpg"/>
 
-### Topics
+## Topics
 
 - What is statistics?
 - How Statistics works?
@@ -14,7 +14,7 @@
 - Application of Statistics
 - Example Problem
 
-### What is statistics?
+## What is statistics?
 
 Three Meanings
 
@@ -22,7 +22,7 @@ Three Meanings
 - Table of data
 - Methodology
 
-### How Statistics works?
+## How Statistics works?
 
 Takes a sample from a population. 
 
@@ -32,13 +32,13 @@ Takes a sample from a population.
 
 There are many sampling techniques.  
 
-### Probability and Statistics
+## Probability and Statistics
 
-### Application of Statistics
+## Application of Statistics
 
 <img src = "img/2250-02.jpg" width="650"/>
 
-### Examples{.la}
+## Examples{.la}
 - Identification of unwanted spam messages in e-mail
 
 - Segmentation of customer behavior for targeted advertising
@@ -55,7 +55,7 @@ There are many sampling techniques.
 
 - Discovery of genetic sequences linked to diseases
 
-### Chapter Overview
+## Chapter Overview
 - Definition
 - Population and sample
 - Variable and its types
@@ -63,21 +63,21 @@ There are many sampling techniques.
 - Use of summation sign
 - Main Discussion
 
-### Definition
+## Definition
 
 **Coxton and Crowden** 
 
 *Statistics may be defined as the science of collection, presentation, analysis and interpretation of numerical data.*
 
 
-### Mechanism
+## Mechanism
 - Data Collection
 - Organization
 - Analysis
 - Interpretation
 - Presentation
 
-### Population and Sample
+## Population and Sample
 
 **Population: A set of similar items or events which is of interest**
 **Sample: Any subset of population**
@@ -88,7 +88,7 @@ There are many sampling techniques.
 - Finite
 - Infinite
 
-### Variable and Constant
+## Variable and Constant
 
 - Variable
 - Random Variable
@@ -104,16 +104,16 @@ There are many sampling techniques.
 - Mark of a subject
 - GPA of a student
 
-### Types of Variable{#bluetext}
+## Types of Variable{#bluetext}
 
 - Qualitative
 - Quantitative
 - Discrete: Limited and pre-specified 
 - Continuous: Can take on any values between any two given number
 
-### Univariate, Multivariate
+## Univariate, Multivariate
 
-### Scale of Measurement
+## Scale of Measurement
 
 Describes nature of information within the values. 
 
@@ -122,7 +122,7 @@ Describes nature of information within the values.
 - Interval: Zero may not be zero, like temperature
 - Ratio: Zero is 0; most variables fall in this category
 
-### Examples
+## Examples
 
 - Gender
 - Religion
@@ -134,7 +134,7 @@ Describes nature of information within the values.
 - Diameter of trees
 - Room no. 
 
-### Another Example
+## Another Example
 
 Match as per suitable scale
 
@@ -145,10 +145,10 @@ Match as per suitable scale
 | Awesome, Amazing, Mind-blowing, Stunning | nominal |
 | **In a scale of 0 to 10:** 0, 5, 8, 10 | ordinal      | 
 
-### Operation with scales
+## Operation with scales
 <img src="img/scale.png" alt="drawing" width="600"/>
 
-### Shifting origin and scale
+## Shifting origin and scale
 
 Say we have values, $x_1, x_2, \cdot \cdot \cdot , x_n$
 
@@ -158,7 +158,7 @@ Say we have values, $x_1, x_2, \cdot \cdot \cdot , x_n$
 - $y_1 = b \cdot x_1  \space or \space x_1/b$
 - both: $y_i = \frac{x_i-a}{b}$
 
-### Use of Summation sign
+## Use of Summation sign
 
 $$x_1 + x_2 + x_3 + x_4 = \sum_{i=1}^4 x_i$$
 
@@ -168,51 +168,25 @@ $$x_1 + x_2 + ... x_n = \sum_{i=1}^n x_i$$
 $$x_1 + x_2 + ... x_{10} = ?$$
 
 
-### Theorem 01
+## Theorems
 
-$$\sum_{i=1}^n bx_i=b \sum_{i=1}^n x_i$$
+1. $$\sum_{i=1}^n bx_i=b \sum_{i=1}^n x_i$$
+2. $$\sum_{i=1}^n (ax_i-b)=a \sum_{i=1}^n x_i-nb$$
+3. $$\sum_{i=1}^n (ax_i^2-bx_i+c)=a\sum_{i=1}^n x_i^2-b\sum_{i=1}^n x_i + nc$$
+4. $$\sum_{i=1}^n (ax_i-by_i)=a\sum_{i=1}^n x_i - b \sum_{i=1}^n y_i$$
+5. $$\sum_{i=1}^n (ax_i-b)^2=a^2 \sum_{i=1}^n x_i^2 - 2ab \sum_{i=1}^n x_i + nb^2$$
+6. $$(\sum_{i=1}^n x_i)^2=\sum_{i=1}^n x_i^2 + \sum_{i \ne j}^n\sum x_ix_j$$
+7. $$\prod_{i=1}^k x_iy_i = (\prod_{i=1}^k x_i)(\prod_{i=1}^k y_i)$$
+8. $$\sum_{i=1}^m \sum_{i=1}^n (x_i+y_j)=n\sum_{i=1}^m x_i + m \sum_{i=1}^n y_j$$
+9. m$\sum_{i=1}^m \sum_{i=1}^n (x_iy_j)=(\sum_{i=1}^n x_i) (\sum_{i=1}^n y_j)$
 
-
-### Theorem 02
-$$\sum_{i=1}^n (ax_i-b)=a \sum_{i=1}^n x_i-nb$$
-
-### Quick tips
+## Quick tips
 
 - $\sum_{i=1}^n a = na$
 - Can you prove it? 
+- $$\prod_{i=1}^k x_i = x_1 \times x_2 \times \cdot \cdot \cdot \times x_n$$
 
-### Theorem 03
-
-$$\sum_{i=1}^n (ax_i^2-bx_i+c)=a\sum_{i=1}^n x_i^2-b\sum_{i=1}^n x_i + nc$$
-
-### Theorem 04
-
-$$\sum_{i=1}^n (ax_i-by_i)=a\sum_{i=1}^n x_i - b \sum_{i=1}^n y_i$$
-
-### Theorem 05
-
-$$\sum_{i=1}^n (ax_i-b)^2=a^2 \sum_{i=1}^n x_i^2 - 2ab \sum_{i=1}^n x_i + nb^2$$
-
-### Theorem 06
-
-$$(\sum_{i=1}^n x_i)^2=\sum_{i=1}^n x_i^2 + \sum_{i \ne j}^n\sum x_ix_j$$
-
-### Quick Tip
-
-$$\prod_{i=1}^k x_i = x_1 \times x_2 \times \cdot \cdot \cdot \times x_n$$
-
-### Theorem 07
-
-$$\prod_{i=1}^k x_iy_i = (\prod_{i=1}^k x_i)(\prod_{i=1}^k y_i)$$
-
-### Theorem 08
-$$\sum_{i=1}^m \sum_{i=1}^n (x_i+y_j)=n\sum_{i=1}^m x_i + m \sum_{i=1}^n y_j$$
-
-
-### Theorem 09
-m$\sum_{i=1}^m \sum_{i=1}^n (x_iy_j)=(\sum_{i=1}^n x_i) (\sum_{i=1}^n y_j)$
-
-### Example
+## Example
 
 Given 
 
@@ -226,30 +200,34 @@ i. $\sum f_ix_i$
 ii. $\sum f_ix_i^2$
 iii. $\sum f_i(x_i-5)^2$
 
-### Textbook Exercise -01
+## Textbook Exercise -01
 
 13. Find the value of $\sum_{i=1}^{10} (x_i-4)$
 
 where $\sum_{i=1}^{10} x_i = 20$
 
 
-### Exercise-01
+## Exercises
 
-- 7. Discrete vs continuous variable
-- 10. Prove 
-$$\sum_{i=1}^k abx_i = ab \sum_{i=1}^k x_i$$
+Discrete vs continuous variable
 
-### Exercise -01
 Prove 
+
+$$\sum_{i=1}^k abx_i = ab \sum_{i=1}^k x_i$$
+ 
+Prove 
+
 $$\prod_{i=1}^n c =c^n$$
 
-### Exercise -01
-13. Find the value of 
+Find the value of 
+
 $$\sum_{i=1}^{10} (x_i-4)$$
+
 where
+
 $$\sum_{i=1}^{10}=20$$
 
-### Creative Question
+## Creative Questions
 
 Given below are the daily income and expense of ten workers.
 
@@ -279,7 +257,7 @@ From above data, prove
 - $$\sum_{i=1}^{2} \sum_{j=1}^{2}(x_i-y_j)=2 \times \sum_{i=1}^{2}x_i- 2 \times \sum_{j=1}^{2}y_j$$
 
 
-### Creative Question -07
+**Question 02**
 
 Given below are the daily income and expense of ten workers.
 
@@ -324,14 +302,14 @@ c. $$\sum_{i=1}^{10} \sum_{j=1}^{10}(x_i-y_j)=10 \times \sum_{i=1}^{10}x_i- 10 \
 d. Prove $$\sum_{i=1}^{10}x_iy_i \ne (\sum_{i=1}^{10}x_i)(\sum_{i=1}^{10}y_j)$$
 
 
-## Collection, Presentation, and Organization of Data
+# Collection, Presentation, and Organization of Data
 
-### Types of Data
+## Types of Data
 
 - Qualitative
 - Quantitative
 
-### Sources of Data
+## Sources of Data
 
 - Primary: Obtained directly (not collected from someone else)
 
@@ -344,7 +322,7 @@ d. Prove $$\sum_{i=1}^{10}x_iy_i \ne (\sum_{i=1}^{10}x_i)(\sum_{i=1}^{10}y_j)$$
 - A researcher makes use of the data generated by the one in example 2
 
 
-### Method of Data Collection
+## Method of Data Collection
 
 - Direct personal Inquiry
 - Indirect oral inquiry
@@ -353,30 +331,30 @@ d. Prove $$\sum_{i=1}^{10}x_iy_i \ne (\sum_{i=1}^{10}x_i)(\sum_{i=1}^{10}y_j)$$
 
 - <div class ="bluetext">Each method has its own advantages and disadvantages;</div>
 
-### Sources of Secondary Data
+## Sources of Secondary Data
 
 - Published: Scientific Journals, Newspapers etc.
 - Unpublished: BBS, WHO, IMF, FAO, ICDDR,B
 
-### Disadvantages of Secondary Data
+## Disadvantages of Secondary Data
 
 - Purpose might be different
 - Suitability
 - Reliability
 - Unit 
 
-### Tabluation
+## Tabluation
 
 ![](img/stat/table.jpg)
 
-### Data Classification
+## Data Classification
 
 - Geographical
 - Chronological
 - Quantitative
 - Qualitative
 
-### Example
+## Example
 
 <section>
 Geographical
@@ -429,7 +407,7 @@ Geographical
     </table>
     </section>
 
-### Histogram
+## Histogram
 
 - Inclusive vs exclusive
 
@@ -439,7 +417,7 @@ hist(rnorm(300, 20, 2), main = "A Histogram of Randam Data", xlab = "Intervals",
      col = c("blue", "grey"))
 ```
 
-### Histogram Intervals
+## Histogram Intervals
 
 Can these intervals be readily used? 
 
@@ -449,7 +427,7 @@ Can these intervals be readily used?
 
 If not, what should we do?
 
-### Stem and Leaf
+## Stem and Leaf
 
 - key in stem and leaf plot 
 - How to interpret stem and leaf plot 
@@ -459,7 +437,7 @@ data <- c(16, 26, 12, 10, 27, 30, 14,  1, 25, 20)
 stem(data)
 ```
 
-### How to interpret cf and rf
+## How to interpret cf and rf
 
 | Class | Frequency | Cumulative <br><br>Frequency (cf) | Relative <br><br>Frequency (rf) | Cumulative <br><br>Relative <br><br>Frequency (crf) |
 |:-:|:-:|:-:|:-:|:-:|
@@ -471,7 +449,7 @@ stem(data)
 |  | n=44 | n=44 |  |  |
     
 
-### What Ogives tell us
+## What Ogives tell us
 
 ```{r, echo=F, fig.show='hide'}
 data <- c(16, 26, 12, 10, 27, 30, 14,  1, 25, 20)
@@ -481,18 +459,18 @@ h <- hist(data)
 ```{r, echo=F}
 intervals <- seq(from = min(h$breaks), to = max(h$breaks), by = h$breaks[2] - h$breaks[1])
 intervals <- c(0, intervals[-1])
-### Cumulative sums
+## Cumulative sums
 cf = c(0, cumsum(h$counts))
 plot(intervals, cf, type = "b", col = "blue", pch = 20)
 ```
 
-### Bar vs Pie
+## Bar vs Pie
 - When to use which? 
 - How to calculate angles? 
 - Can we draw on 180 degrees?
 
 
-### Choose Diagram
+## Choose Diagram
 <div class="container">
 
 <div class="col">
@@ -526,12 +504,12 @@ pie(x, c(1996:1999),
 
 </div>
 
-### Bar Diagram vs Histogram
+## Bar Diagram vs Histogram
 
 
-## Measures of Central Tendency
+# Measures of Central Tendency
 
-### What is Central Tendency?
+## What is Central Tendency?
 
 `r options(scipen=999)`
 
@@ -551,7 +529,7 @@ summary(h[1:3])
 </div>
 </div>
 
-### Criteria for a Good Measure of Central Tendency{data-transition="convex"}
+## Criteria for a Good Measure of Central Tendency{data-transition="convex"}
 
 - Well-defined
 
@@ -560,7 +538,7 @@ summary(h[1:3])
 > - Suitable for further analysis
 > - Not affected by sample fluctuation
 
-### Measures (Averages)
+## Measures (Averages)
 
 - Arithmetic Mean (AM)
 - Geometric Mean (GM)
@@ -569,7 +547,7 @@ summary(h[1:3])
 - Mode
 - Partition Values (Quartiles, Deciles, Percentiles etc.)
 
-### AM
+## AM
 
 $AM=\bar x=\frac{\sum x}{n}$
 
@@ -577,7 +555,7 @@ If there are frequencies or weights
 
 $\bar x=\frac{\sum f_i x_i}{\sum f_i} \space or \space \frac{\sum w_i x_i}{w_i=n}$
 
-### Find AM 
+## Find AM 
 
 ```{r, echo=FALSE}
 set.seed(100)
@@ -615,7 +593,7 @@ function klikaj(i) {
 }
 </script>
 
-### Mean Using Frequency
+## Mean Using Frequency
 
 For grouped data
 
@@ -630,7 +608,7 @@ For grouped data
 
 $\therefore \bar x = \frac{\sum fx}{\sum f} =\frac{50}{10}=5$
 
-### Freuency vs Weight
+## Freuency vs Weight
 
 <div class="container">
 <div class="col">
@@ -664,7 +642,7 @@ function klikaj(i) {
 </div>
 </div>
 
-### Shortcut Method for AM
+## Shortcut Method for AM
 
 <div class="container">
 <div class="col">
@@ -700,7 +678,7 @@ function klikaj(i) {
 </div>
 </div>
 
-### Shortcut Method Formula
+## Shortcut Method Formula
 
 <div class="container">
 <div class="col">
@@ -733,7 +711,7 @@ function klikaj(i) {
 </div>
 </div>
 
-### Properties of AM
+## Properties of AM
 
 - $\sum (x_i-\bar x)=0$; can you prove it? 
 
@@ -744,7 +722,7 @@ function klikaj(i) {
 > - $AM\ge GM \ge HM$ & $AM \times HM = (GM)^2$
 > - AM of first n natural numbers = $\frac{n+1}{2}$
 
-### (Dis)advantages of AM
+## (Dis)advantages of AM
 
 > - Well-defined
 > - Less affected by sample fluctuation
@@ -753,7 +731,7 @@ function klikaj(i) {
 > - <span>Suitable for further analysis.<span>
 > - <span style="color:red;">Affected by outliers
 
-### Geometric Mean (GM)
+## Geometric Mean (GM)
 
 $GM=(x_1 \times x_2 \times ... \times x_n)^{(1/n)}$ or
 $GM=(x_1^{f_1} \times x_2^{f_2} \times ... \times x_n^{f_n})^{(1/\sum f_i)}$
@@ -774,7 +752,7 @@ function klikaj(i) {
 
 Try this one: 20020, 30080, 50086, 40130
 
-### Concept of Logarithm
+## Concept of Logarithm
 
 <small>
 
@@ -790,7 +768,7 @@ Try this one: 20020, 30080, 50086, 40130
 
 
 
-### GM Easier Formula
+## GM Easier Formula
 
 x = 20020, 30080, 50086, 40130
 `r x = c(20020, 30080, 50086, 40130)`
@@ -809,7 +787,7 @@ function klikaj(i) {
 }
 </script>
 
-### Calculate GM
+## Calculate GM
 
 <div class="container">
 <div class="col">
@@ -842,7 +820,7 @@ function klikaj(i) {
 </div>
 </div>
 
-### (Dis)advantages of GM
+## (Dis)advantages of GM
 
 - [x] Not affected by outliers
 
@@ -856,7 +834,7 @@ function klikaj(i) {
 - [ ] <span style="color:ff1a1a;">What if one or some x < 0? </span>
 
 
-### Story of Oil Scam 
+## Story of Oil Scam 
 
 <div class="container">
 <div class="col">
@@ -884,7 +862,7 @@ What is the average speed?
 </div>
 </div>
 
-### Harmonic Mean
+## Harmonic Mean
 
 <div class="container">
 <div class="col">
@@ -915,13 +893,13 @@ For grouped data
 </div>
 </div>
 
-### Why and When HM
+## Why and When HM
 
 - When there are rates associated, say speed, and numerator is fixed. 
 - $Speed, v = \frac{S}{t}$; HM if S is fixed
 - Example: A man travels 120 km the first day at 12 kph, the same distance at 10 kph on the 2nd day, and at 8 kph on the 3rd day. Find his average speed. 
 
-### Wighted AM vs Weighted HM
+## Wighted AM vs Weighted HM
 
 Suppose, a bus travels 10 km at 10 kph, another 15 km at 20 kph, and another 20 km at 25 kph. What is the average speed. 
 
@@ -936,7 +914,7 @@ Time, $t=\frac d v=$ `r d = c(10,15,20); v = c(10,20,25); d/v`
 > - $WAM = \frac{1\times 10 + 0.75 \times 20 + 0.80 \times 25}{1+0.75+0.80}$ = `r round((10+0.75*20+0.80*25)/2.55,2)`
 > - True mean, $\bar v=\frac{\sum d}{\sum t}=\frac{45}{2.55}=$ `r round(45/2.55,2)`
 
-### HM Example 2
+## HM Example 2
 
 - A passerby travels 10 km at 20 kph, 5 km at 15 kph, and 4 km at 12 kph. What is the average speed? (Use weighted HM)
 
@@ -952,7 +930,7 @@ w <- c(10,5,4)
 
 > - HM = `r round(sum(w)/sum(w/x),3)`
 
-### Quadratic Mean
+## Quadratic Mean
 
 $QM=\sqrt{\frac{x_1^2+x_2^2+...+x_n^2}{n}}=\sqrt{\frac{\sum x_i^2}{n}}$
 
@@ -960,9 +938,9 @@ $QM=\sqrt{\frac{x_1^2+x_2^2+...+x_n^2}{n}}=\sqrt{\frac{\sum x_i^2}{n}}$
 > - More at: https://en.wikipedia.org/wiki/Root_mean_square#Uses
 > - For grouped data? 
 
-### Partition Values
+## Partition Values
 
-### Find medians
+## Find medians
 
 x = 4,5,6,8,9,11,16
 
@@ -977,7 +955,7 @@ y = 4,5,6,8,9,11,16,19
 > - Formula for even n = $\frac{\frac{n}{2}th+(\frac{n}{2}+1)th}{2}$
 
 
-### Dis(advantages) of Median
+## Dis(advantages) of Median
 
 - Unaffected by outliers (extreme values)
 - Graphically estimable
@@ -985,7 +963,7 @@ y = 4,5,6,8,9,11,16,19
 - Not based on all values
 - Not suitable for further mathematical analysis 
 
-### Quartiles, Deciles, and Percentiles
+## Quartiles, Deciles, and Percentiles
 
 $Q_1= \frac{(n+1)}{4}th \space$
 
@@ -998,7 +976,7 @@ X = `r set.seed(100); (x = sort(sample(20,11)))`
 > - `r summary(x)`
 > - What are the formulae for Deciles ($D_i$ and $P_i$)
 
-### General Formula for Partition Values
+## General Formula for Partition Values
 
 <div class="container">
 <div class="col">
@@ -1020,13 +998,13 @@ For median, for example, k = 2.
 > - What if we divide the data set into 20 segments? 
 
 
-### Find Deciles and Percentiles
+## Find Deciles and Percentiles
 
 X = `r set.seed(100); (x = sort(sample(20,11)))`
 
 Find $D_3, D_8, P_{17}, P_{56}, P_{93}$
 
-### Averages from Grouped Data
+## Averages from Grouped Data
 
 <div class="container">
 <div class="col">
@@ -1053,7 +1031,7 @@ Find AM, Me, Mo, Q, and $P_{30}$
 </div>
 </div>
 
-### Partition Values from Graph
+## Partition Values from Graph
 
 - Draw an Ogive
 - Draw a straight line parallel to X-axis at the point $\frac n 2$ of Y-axis. - Draw a perpendicular on X-axis from the intersection point.
@@ -1061,7 +1039,7 @@ Find AM, Me, Mo, Q, and $P_{30}$
 ![Graph](img/stat/partition.jpg)
 
 
-### Comparison of Averages
+## Comparison of Averages
 
 | Property | AM | GM | HM | Median | Mode |
 |-|-|-|-|-|-|
@@ -1072,125 +1050,90 @@ Find AM, Me, Mo, Q, and $P_{30}$
 | Effect of Sampling<br>Flcutuation | Less affected | Less affected | Less affected | Can be highly<br>affected | Can be highly<br>affected |
 | Suitability for <br>further analysis | Possible | Possible | Possible | <strike><br>Possible<br></strike> | <strike><br>Possible<br></strike> |
 
-### When AM = GM = HM
+## When AM = GM = HM
 
 If $x_1=x_2=x_3$; prove it 
 
-### Theorems
+## Theorems
 
-### Theorem 01
+1. $$\sum_{i=0}^n (x_i-\bar x)=0$$
+2. $$\sum_{i=0}^n f_i(x_i-\bar x)=0$$
+3. $$\sum_{i=1}^n (x_i-\bar x)^2 \lt \sum_{i=1}^n (x_i-a)^2; a\ne\bar x$$ 
+4. $$\sum_{i=1}^n f_i(x_i-\bar x)^2 \lt \sum_{i=1}^n f_i(x_i-a)^2; a\ne\bar x$$ 
+5. (AM~origin & scale)
 
-$$\sum_{i=0}^n (x_i-\bar x)=0$$
+	Prove that AM depends on origin and scale
+	Use frequency as well i.e, 
 
-### Theorem 02
-
-$$\sum_{i=0}^n f_i(x_i-\bar x)=0$$
-
-### Theorem 03
-
-$$\sum_{i=1}^n (x_i-\bar x)^2 \lt \sum_{i=1}^n (x_i-a)^2; a\ne\bar x$$ 
-
-$$\sum_{i=1}^n f_i(x_i-\bar x)^2 \lt \sum_{i=1}^n f_i(x_i-a)^2; a\ne\bar x$$ 
+	- $$\bar x=\frac {\sum_{i=1}^nx_i}{n}$$ 
+	- $$\bar x=\frac {\sum_{i=1}^n f_ix_i}{n}$$ 
 
 
-### Theorem 04 (AM~origin & scale)
 
-Prove that AM depends on origin and scale
-Use frequency as well i.e, 
+6. If the GM of $n_1$ va;ues is $G_1$, and of $n_2$ values is $G_2$, show GM of $n_1+n_2$ values is $G=\sqrt{G_1G_2}$
+7. For two non-zero positive numbers, prove $AM \ge GM \ge HM$
 
-- $$\bar x=\frac {\sum_{i=1}^nx_i}{n}$$ 
-- $$\bar x=\frac {\sum_{i=1}^n f_ix_i}{n}$$ 
+	<small>
 
-### Theorem 07
+	<div class="container">
+	<div class="col">
 
-If the GM of $n_1$ va;ues is $G_1$, and of $n_2$ values is $G_2$, show GM of $n_1+n_2$ values is $G=\sqrt{G_1G_2}$
+	Let, the numbers be a, b
 
-### Theorem 08
-<small>
+	$\therefore AM = \frac{a+b}{2}$ 
 
-<div class="container">
-<div class="col">
+	$GM = \sqrt{ab}$ 
 
-### For two non-zero positive numbers, prove $AM \ge GM \ge HM$
+	$HM = \frac{2}{\frac 1 a +\frac 1 b}$ 
+	</div>
 
-Let, the numbers be a, b
+	<div class="col">
+	We know, 
+	\begin{eqnarray}
+	&  &(a-b)^2\ge 0    \nonumber \\
+	& \Rightarrow & (a+b)^2-4ab \ge 0    \nonumber \\
+	& \Rightarrow & (a+b)^2 \ge 4ab   \nonumber \\
+	& \Rightarrow & (a+b) \ge 2 \sqrt{ab}   \nonumber \\
+	& \Rightarrow & \frac{a+b} 2 \ge \sqrt{ab}   \nonumber \\
+	& \Rightarrow & AM \ge GM   \nonumber \\
+	\end{eqnarray}
+	</div>
+	<div class="col">
+	Similarly, 
+	\begin{eqnarray}
+	&  &(\frac{1}{a}-\frac{1}{b})^2\ge 0    \nonumber \\
+	& \Rightarrow & (\frac{1}{a}+\frac{1}{b})^2 -4 \cdot \frac 1 a \cdot \frac 1 b\ge 0    \nonumber \\
+	& \Rightarrow & (\frac{1}{a}+\frac{1}{b})^2\ge \frac 4 {ab}   \nonumber \\
+	& \Rightarrow & (\frac{1}{a}+\frac{1}{b}) \ge \frac 2 {\sqrt{ab}}  \nonumber \\
+	& \Rightarrow & \sqrt{ab}(\frac{1}{a}+\frac{1}{b}) \ge 2   \nonumber \\
+	& \Rightarrow & \sqrt{ab} \ge \frac{2}{(\frac{1}{a}+\frac{1}{b})}   \nonumber \\
+	& \Rightarrow & GM \ge HM   \nonumber \\
+	\end{eqnarray}
+	</div>
+	</div>
+	</small>
 
-$\therefore AM = \frac{a+b}{2}$ 
+	
+8. For two non-zero positive numbers, $AM \times HM =(GM)^2$
+9. Mean and Median of first n natural numbers are $\frac {n+1} 2$ 
+10. If $\bar x_1$ and $\bar x_2$ are means of 2 data sets of sizes $n_1$ and $n_2$, respectively, the combined mean is $\bar x_c=\frac{n_1 \bar x_1+n_2 \bar x_2}{n_1+n_2}$
+11. If $u=x+y, \bar u=\bar x + \bar y$; if $n_1=n_2=n$
 
-$GM = \sqrt{ab}$ 
+	Given $u=x+y$
 
-$HM = \frac{2}{\frac 1 a +\frac 1 b}$ 
-</div>
+	\begin{eqnarray}
+	\bar u &=&  \frac{\sum u}{n}   \nonumber \\
+	&=& \frac{\sum (x+y)}{n}   \nonumber \\
+	&=& \frac{\sum x}{n}+  \frac{\sum y}{n}   \nonumber \\
+	&=& \bar x + \bar y   \nonumber \\
+	\end{eqnarray}
 
-<div class="col">
-We know, 
-\begin{eqnarray}
-&  &(a-b)^2\ge 0    \nonumber \\
-& \Rightarrow & (a+b)^2-4ab \ge 0    \nonumber \\
-& \Rightarrow & (a+b)^2 \ge 4ab   \nonumber \\
-& \Rightarrow & (a+b) \ge 2 \sqrt{ab}   \nonumber \\
-& \Rightarrow & \frac{a+b} 2 \ge \sqrt{ab}   \nonumber \\
-& \Rightarrow & AM \ge GM   \nonumber \\
-\end{eqnarray}
-</div>
-<div class="col">
-Similarly, 
-\begin{eqnarray}
-&  &(\frac{1}{a}-\frac{1}{b})^2\ge 0    \nonumber \\
-& \Rightarrow & (\frac{1}{a}+\frac{1}{b})^2 -4 \cdot \frac 1 a \cdot \frac 1 b\ge 0    \nonumber \\
-& \Rightarrow & (\frac{1}{a}+\frac{1}{b})^2\ge \frac 4 {ab}   \nonumber \\
-& \Rightarrow & (\frac{1}{a}+\frac{1}{b}) \ge \frac 2 {\sqrt{ab}}  \nonumber \\
-& \Rightarrow & \sqrt{ab}(\frac{1}{a}+\frac{1}{b}) \ge 2   \nonumber \\
-& \Rightarrow & \sqrt{ab} \ge \frac{2}{(\frac{1}{a}+\frac{1}{b})}   \nonumber \\
-& \Rightarrow & GM \ge HM   \nonumber \\
-\end{eqnarray}
-</div>
-</div>
-</small>
+12. For equal number of observations, GM of two variables is equal to the product of their individual means. 
+13. $GM=Antilog(\frac{\sum \log x_i}{n})$ or $Antilog(\frac{\sum f_i \log x_i}{\sum f_i})$ 
+14.If $y = a + bx, \bar y = a + b \bar x$
+15. If $z_i=ax_i+by_i, \bar z=a \bar x + b \bar y$
 
-### Theorem 09
-
-For two non-zero positive numbers, $AM \times HM =(GM)^2$
-
-### Theorem 10
-Mean and Median of first n natural numbers are $\frac {n+1} 2$ 
-
-### Theorem 11
-
-If $\bar x_1$ and $\bar x_2$ are means of 2 data sets of sizes $n_1$ and $n_2$, respectively, the combined mean is $\bar x_c=\frac{n_1 \bar x_1+n_2 \bar x_2}{n_1+n_2}$
-
-### Theorem 12
-
-If $u=x+y, \bar u=\bar x + \bar y$; if $n_1=n_2=n$
-
-Given $u=x+y$
-
-\begin{eqnarray}
-\bar u &=&  \frac{\sum u}{n}   \nonumber \\
-&=& \frac{\sum (x+y)}{n}   \nonumber \\
-&=& \frac{\sum x}{n}+  \frac{\sum y}{n}   \nonumber \\
-&=& \bar x + \bar y   \nonumber \\
-\end{eqnarray}
-
-### Theorem 13
-
-For equal number of observations, GM of two variables is equal to the product of their individual means. 
-
-### Theorem 14
-
-$GM=Antilog(\frac{\sum \log x_i}{n})$ or $Antilog(\frac{\sum f_i \log x_i}{\sum f_i})$ 
-
-### Theorem 15
-
-If $y = a + bx, \bar y = a + b \bar x$
-
-### Theorem 16
-
-If $z_i=ax_i+by_i, \bar z=a \bar x + b \bar y$
-
-### Example Problems
-
-### Example Problem 01
+## Example Problems
 
 AM and GM of two positive numbers are 25 and 15, respectively. Find HM and the numbers. 
 <div class="container">
@@ -1228,7 +1171,7 @@ function klikaj(i) {
 </div>
 </div>
 
-### Example Problem 15
+** Example Problem 15**
 
 The mean of 200 numbers was 50. Later it was revealed that two observations were incorrectly given as 92 and 8, instead of 192 and 88, respectively. Find the correct mean. 
 
@@ -1249,7 +1192,7 @@ function klikaj(i) {
 </script>
 
 
-### Example Problem 22 
+** Example Problem** 
 
 If $\sum f_i(x_i-k)=0$, what is the value of `k`?
 
@@ -1270,11 +1213,11 @@ function klikaj(i) {
 </script>
 
 
-## Measures of Dispersion
+# Measures of Dispersion 
 
-## Moments, Skewness, and Kurtosis
+# Moments, Skewness, and Kurtosis
 
-### Central Moments
+## Central Moments
 
 Central Moments: $\mu_r=\frac{\sum(x_i-\bar x)^r}{n}$
 
@@ -1286,13 +1229,13 @@ Central Moments: $\mu_r=\frac{\sum(x_i-\bar x)^r}{n}$
 - For grouped data: $\mu_r=\frac{\sum f_i(x_i-\bar x)^3}{n}$
 
 
-### Raw Moments
+## Raw Moments
 
  $\mu_r=\frac{\sum(x_i-a)^r}{n}$; a is arbitrary number
  
-## Correlation & Regression
+# Correlation & Regression
 
-### Why This Chapter is Important
+## Why This Chapter is Important
 
 <div class="container">
 <div class="col">
@@ -1308,11 +1251,11 @@ We learn in this chapter
 </div>
 </div>
 
-### Scatter Plot
+## Scatter Plot
 
 <img class="plain" src="stat/img/scatter_plot.jpg" width="650"> 
 
-### Sequence
+## Sequence
 
 Scatter Plot $\rightarrow$ Correlation $\rightarrow$ Regression
 
@@ -1321,7 +1264,7 @@ Scatter Plot $\rightarrow$ Correlation $\rightarrow$ Regression
 | Preliminary idea  about relationship          | Measures linear relationship | Measures Influence                                    |
 | Either variable can be  independent (usually) | Does not clarify dependency  | Predicts dependent variable based on independent one. |
 
-### Correlation
+## Correlation
 
 Linear relationship between two variables
 
@@ -1331,7 +1274,7 @@ Corrleation, $r = \frac{\sum (x_i - \bar x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i 
 
 - Compare with $$\sigma ^2 = \sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}$$
 
-### Scatter Plot And Correlation
+## Scatter Plot And Correlation
 
 <div class="container">
 <div class="col">
@@ -1344,7 +1287,7 @@ $R^2 = 80\% \rightarrow$ 80% of total variation in Y (say, brightness of stars) 
 </div>
 </div>
 
-### r: Estimating Mechanism
+## r: Estimating Mechanism
 
 Make a table with columns for
 
@@ -1356,10 +1299,10 @@ Make a table with columns for
 
 Then sum them and put in the formula
 
-### Example of r
+## Example of r
 
 
-### Features of r
+## Features of r
 
 - Independent of origin and scale
 - $-1 \le r \le 1$
@@ -1367,7 +1310,7 @@ Then sum them and put in the formula
 - $\frac{b_{yx}+b_{xy}}{2} \ge r$ (About AM)
 - $r = 0 \rightarrow$ no linear relationship
 
-### Rank Correlation
+## Rank Correlation
 
 ```{r, echo=FALSE}
 set.seed(10)
@@ -1383,7 +1326,7 @@ knitr:: kable(
 
 Coefficient, $\rho = 1- \frac{6 \sum d_i^2}{n(n^2-1)}$
 
-### Linear Equation/ Straight Lines
+## Linear Equation/ Straight Lines
 
 $Y = c + mx;$ m is slope c is intercept
 
@@ -1391,8 +1334,144 @@ $m = \frac{dy}{dx} = tan \theta=$ Change in y due to change in x.
 
 Bread without sour or wheat! 
 
-### Purity of Coefficients
+## Purity of Coefficients
 
 - $r = \frac{\sum (x_i - \bar x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i - \bar x)^2}{n}\frac{\sum(y_i - \bar y)^2}{n}}}$
 - $\rho = 1- \frac{6 \sum d_i^2}{n(n^2-1)}$
 - b or $\beta$
+
+To be continued ...
+
+# Time Series
+
+## What is Time Series Data?
+
+<div class="container">
+<div class="col">
+Data arranged chronologically
+
+$Y_t = f(t); t = t_1, t_2, t_3, \cdots, t_n$
+</div>
+<div class="col">
+Example
+
+```{r, echo=FALSE}
+set.seed(10)
+ts <- data.frame(Year = 2001:2005,
+                 Production = sample(20,10))
+knitr::kable(head(ts, 5, booktabs = TRUE)
+             )
+``` 
+</div>
+</div>
+
+## Components of Time Series
+
+Four Components
+
+> -  Trend (increase/decrease)
+> - Seasonal variation
+> - Cyclic variation
+> - Irregular/Random variation
+
+## Uses
+
+> - Analyze past behavior
+> - Forecasting
+> - Comparison by time/place
+> - Segregation of components
+> - Performance measure
+
+## Symbols
+
+$Y_t =$ Values of series at time t
+
+$T_t =$ Trend
+
+$S_t =$ Seasonal 
+
+$C_t =$ Cyclic
+
+$R_t =$ Random/irregular
+
+## Models
+
+<div class="container">
+<div class="col">
+**Additive Model**
+
+$Y_t = T_t + S_t + C_t + R_t$
+
+- $C_t$ and $S_t$ can be $\pm$ve
+- $R_t$ can also be $\pm$ve, but in the long run, $\sum R_t = 0$
+</div>
+<div class="col">
+**Multiplicative Model**
+
+> - $Y_t = T_t \times S_t \times C_t \times R_t$
+> - $S_t, C_t, R_t$ refer to deviation from unit
+> - $S_t$ equals unity in 1 year, $C_t$ in a cycle, and GM of $R_t$ is unity (1). 
+</div>
+</div>
+
+## Comparison of Models
+
+- Components in additive models are independent. 
+- In multiplicative models, components are interwined.
+
+# Measuring Trend
+
+## Graphical/Free-hand Method
+
+<div class="container">
+<div class="col">
+
+```{r, echo=FALSE}
+knitr::kable(ts)
+```
+
+</div>
+<div class="col">
+```{r, echo=FALSE}
+plot(ts, pch=19)
+```
+</div>
+</div>
+
+## Sem-average
+
+<div class="container">
+<div class="col">
+```{r, echo=FALSE}
+knitr::kable(ts)
+```
+</div>
+<div class="col">
+**Steps**
+
+1. Separate the data into two equal parts (if odd-numbered, omit middle-most)
+2. Estimate averages of each group
+3. Put these two values on the scatter plot and extend
+</div>
+</div>
+
+## Moving Average
+
+| Year | Production |   3-Yearly Moving  Average  |
+|:----:|:----------:|:---------------------------:|
+| 2001 |     412    |              NA             |
+| 2002 |     438    | ${412+438+446}\over{3}=432$ |
+| 2003 |     446    |  $\frac{438+446+454}3=446$  |
+| 2004 |     454    |             457             |
+| 2005 |     470    |             469             |
+| 2006 |     483    |  $\frac{470+483+490}3=481$  |
+| 2007 |     490    |              NA             |
+
+<div class="container">
+<div class="col">
+
+</div>
+<div class="col">
+
+</div>
+</div>

@@ -660,7 +660,7 @@ Method 2
 
 <div class="container">
 <div class="col">
-Select 5 books from so 2 books are 
+Select 5 books from 12 so 2 books are 
 
 1. always present
 2. never present
@@ -696,8 +696,13 @@ Alternative
 <div class="container">
 <div class="col">
 1. Make words with vowels
+2. Invite at least 1 from 6 friends. 
 </div>
 <div class="col">
-Content 2 
+> - 1. $2^5-1 = 31$
+> - 2. $2^6-1$
 </div>
 </div>
+
+## Groups
+
