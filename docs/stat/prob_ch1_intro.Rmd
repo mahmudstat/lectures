@@ -1,5 +1,5 @@
 ---
-title: "Mathematics"
+title: "Probability"
 author: Abdullah Al Mahmud
 date: \today
 output: 
@@ -11,8 +11,6 @@ output:
     includes:
       in_header: css/header.html
 ---
-
-# Probability
 
 ## Important concepts
 
@@ -86,7 +84,7 @@ $P(B|A) = \frac{P(A \cap B)}{P(A)}=\frac{P(A|B) \cdot P(B)}{P(A)}$
 
 ## $P(A \cup B)$
 
-$P(A \cup B = P(A) - P(A \cap B)$ why?
+$P(A \cap B') = P(A) - P(A \cap B)$ why?
 
 > - $A = (A \cap \bar B) \cup (A \cap B)$
 > - $P(A) = P(A \cap \bar B) + P(A \cap B)$
