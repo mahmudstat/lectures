@@ -1,7 +1,7 @@
 --- 
 title: "Statistics and Mathematics Lectures"
 author: "Abdullah Al Mahmud"
-date: "2021-07-27"
+date: "2021-08-04"
 site: bookdown::bookdown_site
 output:
   bookdown::gitbook:
@@ -24,6 +24,8 @@ This websites contains lectures on statistics and mathematics. These are chiefly
 - See the lecture presentations [here](#pres)  
 
 All the lectures are made using R programming language inside Rstudio IDE. The presentations were made using the revealjs package. This site was generated using the bookdown package. 
+
+**If you find any msitakes or any suggestions, [please let me know](https://www.thinkermahmud.com/)
 
 You can learn more about me [here](www.thinkermahmud.com) and about my writings on statistics, data science, and linux [here](www.statmania.info).
 

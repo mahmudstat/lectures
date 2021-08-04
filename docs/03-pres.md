@@ -11,7 +11,7 @@ See more [here](https://defkey.com/reveal-js-shortcuts)
 
 ### Statistics {- #stat_pres}
 
-### First Part {-}
+**First Part: Statistics**
 
 - Chapter 01: [Introduction](https://lecture.statmania.info/stat/ch1_xi_stat.html)
 - Chapter 02: [Collection, Presentation, and Organization of Data](https://lecture.statmania.info/stat/ch2_xi_stat.html)
@@ -21,28 +21,32 @@ See more [here](https://defkey.com/reveal-js-shortcuts)
 - Chapter 06: [Correlation and Regression](https://lecture.statmania.info/stat/ch6_xi_statcorrelation_regression.html)
 - Chapter 07: [Time Series](https://lecture.statmania.info/stat/ch7_xi_time_series.html)
 
-### Elementary Statistics {-}
+**Second Part: Probability**
+
+- Chapter 01: [Introduction to probability](https://lecture.statmania.info/stat/prob_ch1_intro.html#/)
+
+**Elementary Statistics**
 
 - [Elementary Statistics](https://lecture.statmania.info/stat/stat_preliminaries.html)
 
 ### Mathematics {- #math}
 
-### Higher Secondary {-}
+**Higher Secondary**
  
 - [Dispersion and Probability](https://lecture.statmania.info/math/xi_math_probability.html)
 - [Permutation and Combination](https://lecture.statmania.info/math/xi_math_perm_comb.html)
 
-### Class IX-X {-}
+**Class IX-X**
 
 - [Statistics](https://lecture.statmania.info/math/x_stat.html)
 - [Probability](https://lecture.statmania.info/math/x_prob.html)
 
-### Class Eight {-}
+**Class Eight**
 
 - [Mathematics Exercises](https://lecture.statmania.info/math/viii_math_exercise.html)
 - [Algebra](https://lecture.statmania.info/math/viii_math_algebra.html)
 
-### Class Seven {-}
+**Class Seven**
 
 - [Algebra All Chapters](https://lecture.statmania.info/math/vii_math_algebra.html)
 - [Mathematics Exercises](https://lecture.statmania.info/math/vii_math_exercise.html)

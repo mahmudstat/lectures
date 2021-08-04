@@ -114,6 +114,13 @@ Check if $P(A \cap B) = P(A) \cdot P(B)$
 </div>
 </div>
 
+## Some theorems
+
+> - $P(A) + P(\bar A) =1$ (prove)
+> - $\sum_{i=1}^k P(A_i) = 1$
+> - $P(\bar A\cap \bar B) = P(\overline{A \cup B}) = 1- P(A \cup B)$ (Venn)
+> - If A & B are independent, are $\bar A$ & $\bar B$ independent? (Prove by an example)
+
 
 ## Types of Problems
 
@@ -155,7 +162,7 @@ What is the probability that the product of three positive integers chosen from 
 > - All three are even
 > - Two odd and one even number
 > - Two even and one odd
-> - $P=\frac{^{50}C_3}{^{100}C_3}+...$
+> - $P=\frac{^{50}C_3}{^{100}C_3}+2 \times \frac{^{50}C_2 \times ^{50}C_1}{^{100}C_3}$
 > - `r round(choose(50,3)/choose(100,3)+2*choose(50,1)*choose(50,2)/choose(100,3),2)`
 
 # Coin And Die Problem
@@ -209,6 +216,10 @@ What is the probability that
 4. Only Tails appears?
 
 </small>
+
+## Probability Tree
+
+A coin is tossed thrice
 
 ## Flipping A Coin Thrice
 
@@ -364,12 +375,17 @@ What is the probability that
 <small>
 What is the probability that
 
-1. The first numbers is odd?
-2. The summation of numbers in two draws is a prime number?
-3. Both numbers are same?
-4. The second number is bigger? 
-
+> - 1. The first numbers is odd?
+> - 2. The summation of numbers in two draws is a prime number?
+> - 3. Both numbers are same?
+> - 4. The second number is bigger? 
+> - 5. Total of the numbers is 8
+> - 6. Sum of numbers > 5
 </small>
+
+## Coin & Die
+
+Make a sample space of throwing a die and two coins simultaneously
 
 # Playing Card
 

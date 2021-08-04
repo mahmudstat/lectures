@@ -120,6 +120,28 @@ Divide the first expression by the second one
 </div>
 </div>
 
+## Div 
+
+<div class="container">
+<div class="col">
+<u>Questions</u>
+
+<div onclick="klikaj('rad1')">1.<span> $30a^4x^3, -6a^2x$</span></div>
+<div onclick="klikaj('rad2')">2.<span>$36x^4y^3+9x^5y^2, 9xy$</span></div>
+</div>
+<div class="col">
+<u>Answers</u>
+
+<div id="rad1" style="visibility: hidden">
+1. $-5a^2x^2$
+</div>
+<div id="rad2" style="visibility: hidden">
+2. $4x^3y^2+x^4y$
+</div>
+</div>
+</div>
+
+
 # 4.3: Simplification
 
 ## Rule of PEMDAS/BEDMAS/BODMAS

@@ -1432,7 +1432,7 @@ $Y_t = T_t + S_t + C_t + R_t$
 - Components in additive models are independent. 
 - In multiplicative models, components are interwined.
 
-# Measuring Trend
+## Measuring Trend
 
 ## Graphical/Free-hand Method
 
