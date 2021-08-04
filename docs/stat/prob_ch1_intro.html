@@ -452,6 +452,10 @@ document.getElementsByTagName('head')[0].appendChild(style);
     </div>
     <link href="prob_ch1_intro_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
     <link href="prob_ch1_intro_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+    <script src="prob_ch1_intro_files/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+    <script src="prob_ch1_intro_files/viz-1.8.2/viz.js"></script>
+    <link href="prob_ch1_intro_files/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+    <script src="prob_ch1_intro_files/grViz-binding-1.0.6.1/grViz.js"></script>
 </head>
 <body>
   <div class="reveal">
@@ -670,6 +674,10 @@ TT
 <li>Only Tails appears?</li>
 </ol>
 <p></small></p>
+</section><section id="probability-tree" class="slide level2">
+<h2>Probability Tree</h2>
+<p>A coin and a die are thrown</p>
+<p><img class="plain" src="img/coin_die.png" width="650"></p>
 </section><section id="flipping-a-coin-thrice" class="slide level2">
 <h2>Flipping A Coin Thrice</h2>
 <style type="text/css">
@@ -958,13 +966,31 @@ Second<br>Die
 </tbody>
 </table>
 <p><small> What is the probability that</p>
-<ol type="1">
-<li>The first numbers is odd?</li>
-<li>The summation of numbers in two draws is a prime number?</li>
-<li>Both numbers are same?</li>
-<li>The second number is bigger?</li>
-</ol>
-<p></small></p>
+<ul>
+<li class="fragment"><ol type="1">
+<li class="fragment">The first numbers is odd?</li>
+</ol></li>
+<li class="fragment"><ol start="2" type="1">
+<li class="fragment">The summation of numbers in two draws is a prime number?</li>
+</ol></li>
+<li class="fragment"><ol start="3" type="1">
+<li class="fragment">Both numbers are same?</li>
+</ol></li>
+<li class="fragment"><ol start="4" type="1">
+<li class="fragment">The second number is bigger?</li>
+</ol></li>
+<li class="fragment"><ol start="5" type="1">
+<li class="fragment">Total of the numbers is 8</li>
+</ol></li>
+<li class="fragment"><ol start="6" type="1">
+<li class="fragment">Sum of numbers &gt; 5 </small></li>
+</ol></li>
+</ul>
+</section><section id="coin-die" class="slide level2" data-background="white">
+<h2>Coin &amp; Die</h2>
+<p>Make a sample space of throwing a die and two coins simultaneously</p>
+<div id="htmlwidget-fdd221aed40b0298ba36" style="width:768px;height:576px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-fdd221aed40b0298ba36">{"x":{"diagram":"digraph {\n\n graph [layout = dot, rankdir = TB]\n\n node [shape = circle, style = filled, fillcolor = grey, fontcolor = black, fontsize = 13]\n\n{Toss}  -> {H,T} \nH -> {H1,H2,H3,H4,H5,H6}\nT -> {T1,T2,T3,T4,T5,T6}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </section></section>
 <section><section id="playing-card" class="title-slide slide level1"><h1>Playing Card</h1></section><section id="concepts-playing-card" class="slide level2">
 <h2>Concepts (Playing Card)</h2>

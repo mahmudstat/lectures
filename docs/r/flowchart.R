@@ -2,7 +2,7 @@ DiagrammeR::grViz("digraph {
 
 graph [layout = dot, rankdir = LR]
 
-node [shape = rectangle, style = filled, fillcolor = blue, fontcolor = white]
+node [shape = circle, style = filled, fillcolor = magenta, fontcolor = white]
 
 start [label = 'Start']
 a [label = 'A']
@@ -53,3 +53,64 @@ b [label = 'B']
 {start}  -> {a, b}
 }"), 
             include_mathjax = TRUE)
+
+## Simple
+
+ DiagrammeR("
+ graph LR
+ A-->B
+ A-->C
+ C-->E
+ B-->D
+ C-->D
+ D-->F
+ E-->F
+ ")
+
+## Custom
+
+ DiagrammeR("
+ graph LR
+ A-->B
+ A-->C
+ C-->D
+ C-->E
+ B-->D
+ B-->E
+")
+
+## Tree
+ 
+DiagrammeR::grViz("digraph {
+
+graph [layout = dot, rankdir = LR]
+
+node [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]
+toss [label = 'Toss']
+h [label = 'H']
+t [label = 'T']
+f1 [label = '1']
+f2 [label =  '2']
+f3 [label = '3']
+f4 [label = '4']
+f5 [label= '5']
+f6 [label= '6']
+
+{toss}  -> {h, t} 
+h -> {f1, f2, f3, f4, f5, f6}
+t -> {f1, f2, f3, f4, f5, f6}
+}")
+
+## The above simpler
+
+DiagrammeR::grViz("digraph {
+
+ graph [layout = dot, rankdir = TB]
+
+ node [shape = circle, style = filled, fillcolor = grey, 
+ fontcolor = black, fontsize = 16]
+
+{Coin}  -> {H,T} 
+H -> {H1,H2,H3,H4,H5,H6}
+T -> {T1,T2,T3,T4,T5,T6}
+}")

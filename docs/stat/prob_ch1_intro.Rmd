@@ -219,7 +219,9 @@ What is the probability that
 
 ## Probability Tree
 
-A coin is tossed thrice
+A coin and a die are thrown
+
+<img class="plain" src="img/coin_die.png" width="650">
 
 ## Flipping A Coin Thrice
 
@@ -382,10 +384,6 @@ What is the probability that
 > - 5. Total of the numbers is 8
 > - 6. Sum of numbers > 5
 </small>
-
-## Coin & Die
-
-Make a sample space of throwing a die and two coins simultaneously
 
 # Playing Card
 
