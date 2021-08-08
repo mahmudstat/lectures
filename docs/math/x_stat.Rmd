@@ -9,8 +9,10 @@ output:
     self_contained: false
     css: css/styles.css
     includes:
-      in_header: css/header_stat.html
+      in_header: css/header.html
 ---
+
+# Concept
 
 Statistics has three meanings:
 

@@ -717,6 +717,18 @@ c. Solve by means of graph (without using (2)).
 </div>
 </div>
 
+## Number-digit 
+
+If 7 is added to the sum of digits of a two-digit number, the sum is thrice the digit in tens place. But if 18 is subtracted from the number, the digits switch places. Determine the number. 
+
+> - x = ones place digit, y = tens place digit
+> - Number: $x + 10y \space [\because 21 = 1 + 2\times 10$]
+> - $x+y+7=3y \rightarrow x-2y=-7$
+> - $x+10y-18=y+10x \Rightarrow -9x +10y = 18$ 
+> - $y-x = 2$
+> - (3,5)
+
+
 # Statistics
 
 ## What is Statistics
@@ -736,9 +748,11 @@ iii. Method of analyzing and predicting data
 
 ## Data 
 
-Data: Information expressed in numbers (usually)
+Data: Information expressed in numbers (usually) (NOT a GOOD Definition)
 
-`r set.seed(100);  sample(30,15) `
+> - The quantities, characters, or symbols on which operations can be performed by a computer
+> - Factual information used as a basis for reasoning, discussion, or calculation (~ Merriam-Webster)
+> - Example: `r set.seed(100);  sample(30,15) `
 
 ## Types of Data
 
@@ -881,7 +895,7 @@ function klikaj(i) {
 | 90-100 | 2 |
 </div>
 <div class="col">
-![Histogram Example](img/stat/hist.png)
+![Histogram Example](../stat/img/stat/hist.png)
 Write its interpretation in 3-5 sentences.
 
 </div>
@@ -908,3 +922,5 @@ Write its interpretation in 3-5 sentences.
 Histogram 
 </div>
 </div>
+
+[See more advanced topics](x_stat.html)
