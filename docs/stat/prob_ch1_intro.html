@@ -452,10 +452,6 @@ document.getElementsByTagName('head')[0].appendChild(style);
     </div>
     <link href="prob_ch1_intro_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
     <link href="prob_ch1_intro_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-    <script src="prob_ch1_intro_files/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-    <script src="prob_ch1_intro_files/viz-1.8.2/viz.js"></script>
-    <link href="prob_ch1_intro_files/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
-    <script src="prob_ch1_intro_files/grViz-binding-1.0.6.1/grViz.js"></script>
 </head>
 <body>
   <div class="reveal">
@@ -983,20 +979,39 @@ Second<br>Die
 <li class="fragment">Total of the numbers is 8</li>
 </ol></li>
 <li class="fragment"><ol start="6" type="1">
-<li class="fragment">Sum of numbers &gt; 5 </small></li>
+<li class="fragment">Sum of numbers is greater than 5</li>
 </ol></li>
 </ul>
-</section><section id="coin-die" class="slide level2" data-background="white">
-<h2>Coin &amp; Die</h2>
-<p>Make a sample space of throwing a die and two coins simultaneously</p>
-<div id="htmlwidget-fdd221aed40b0298ba36" style="width:768px;height:576px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-fdd221aed40b0298ba36">{"x":{"diagram":"digraph {\n\n graph [layout = dot, rankdir = TB]\n\n node [shape = circle, style = filled, fillcolor = grey, fontcolor = black, fontsize = 13]\n\n{Toss}  -> {H,T} \nH -> {H1,H2,H3,H4,H5,H6}\nT -> {T1,T2,T3,T4,T5,T6}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<p></small></p>
+</section><section id="dependency-of-coin-die" class="slide level2">
+<h2>Dependency of Coin-Die</h2>
+<p>Are the events getting head from a coin toss and even numbers from a die independent?</p>
+<p>What does the commons sense tell us?</p>
+<ul>
+<li class="fragment">Depends on setup. If simultaneously, YES/NO.</li>
+<li class="fragment">Different setup <span class="math inline">\(\rightarrow\)</span> NO (<span class="math inline">\(P(A \cap B) = UNDEFINED\)</span>)</li>
+<li class="fragment">A = Head, B = Even</li>
+<li class="fragment"><span class="math inline">\(P(A) = \frac 6 {12} = \frac 1 2\)</span></li>
+<li class="fragment"><span class="math inline">\(P(B) = \frac 1 2\)</span></li>
+<li class="fragment"><span class="math inline">\(P(A \cap B) = \frac 3 {12} = \frac 1 4\)</span></li>
+</ul>
+</section><section id="addition-multiplication" class="slide level2">
+<h2>Addition / Multiplication</h2>
+<ol type="1">
+<li>There 4 red and 3 white balls. Draw 2 balls at once. What is probability that both are same color? What if you draw one by one (with replacement-WR)? What is without replacement (WoR)?</li>
+</ol>
+<ul>
+<li class="fragment">At once <span class="math inline">\(\rightarrow\)</span> [RR] or [WW]</li>
+<li class="fragment"><span class="math inline">\(\frac {^4C_2} {^7C_3}+ \frac {^3C_2} {^7C_3}\)</span></li>
+<li class="fragment">One by one: R <span class="math inline">\(\rightarrow\)</span> R or W <span class="math inline">\(\rightarrow\)</span> W</li>
+<li class="fragment"><span class="math inline">\(\frac {^4C_1} {^7C_3} \times \frac {^4C_1} {^7C_3}+\frac {^3C_1} {^7C_3} \times \frac {^3C_1} {^7C_3}\)</span></li>
+</ul>
 </section></section>
 <section><section id="playing-card" class="title-slide slide level1"><h1>Playing Card</h1></section><section id="concepts-playing-card" class="slide level2">
 <h2>Concepts (Playing Card)</h2>
 <div class="container">
 <div class="col">
-<p><img src="img/stat/cards.png" width="460"></p>
+<p><img src="img/cards.png" width="460"></p>
 </div>
 <div class="col">
 <p><br/> Each rank has 13 cards.</p>
@@ -1206,7 +1221,7 @@ function klikaj(i) {
 <p>Formulae</p>
 <div class="container">
 <div class="col">
-<p><img src="img/stat/venn.png" width="480"></p>
+<p><img src="img/venn.png" width="480"></p>
 </div>
 <div class="col">
 <p><small> Think Why are they so?</p>
