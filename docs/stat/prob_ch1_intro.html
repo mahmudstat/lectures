@@ -1006,6 +1006,16 @@ Second<br>Die
 <li class="fragment">One by one: R <span class="math inline">\(\rightarrow\)</span> R or W <span class="math inline">\(\rightarrow\)</span> W</li>
 <li class="fragment"><span class="math inline">\(\frac {^4C_1} {^7C_3} \times \frac {^4C_1} {^7C_3}+\frac {^3C_1} {^7C_3} \times \frac {^3C_1} {^7C_3}\)</span></li>
 </ul>
+</section><section id="andor-vs-times" class="slide level2">
+<h2>And/Or vs <span class="math inline">\(+/ \times\)</span></h2>
+<ul>
+<li>P(X solves a problem) = 0.25</li>
+<li>P(Y solves a problem) = 0.30</li>
+</ul>
+<ul>
+<li class="fragment">P(Both solve) <span class="math inline">\(\rightarrow\)</span> P(X and Y solve): <span class="math inline">\(P(X \cap Y) = P(X) \times P(Y)\)</span></li>
+<li class="fragment">P(X or Y solves): <span class="math inline">\(P(A \cup B) = P(A) + P(B) - P(A \cap B)\)</span></li>
+</ul>
 </section></section>
 <section><section id="playing-card" class="title-slide slide level1"><h1>Playing Card</h1></section><section id="concepts-playing-card" class="slide level2">
 <h2>Concepts (Playing Card)</h2>
@@ -1040,7 +1050,8 @@ Second<br>Die
 <p>Let, P(A) = Ace appears</p>
 <ul>
 <li class="fragment"><span class="math inline">\(1-P(A)\)</span></li>
-<li class="fragment"><span class="math inline">\(1-\frac 1 {13}\)</span></li>
+<li class="fragment"><span class="math inline">\(1- \frac{4}{52}=1-\frac 1 {13}\)</span></li>
+<li class="fragment">Directly <span class="math inline">\(\frac{48}{52}\)</span></li>
 </ul>
 </section><section id="card-problem-03" class="slide level2">
 <h2>Card Problem #03</h2>
@@ -1296,6 +1307,10 @@ function klikaj(i) {
 <p></small></p>
 </div>
 </div>
+</section><section id="set-multiple-union" class="slide level2">
+<h2>Set: Multiple Union</h2>
+<p><span class="math inline">\(P(A \cup B \cup C) = P(A)+P(B)+P(C)-P(AB)-P(AC)-P(BC) +P(ABC)\)</span></p>
+<p><span class="math inline">\(P(A \cup B \cup C) = 1 - P(\overline{A \cup B \cup C}) = 1-P(\bar A \cap \bar B \cap \bar C) =\)</span></p>
 </section><section id="set-problem-01" class="slide level2">
 <h2>Set Problem # 01</h2>
 The probability of Ronaldo scoring a goal is 0.4 and that of Messi 0.38. What is the probability that

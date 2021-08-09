@@ -408,6 +408,14 @@ What does the commons sense tell us?
 > - One by one: R $\rightarrow$ R or W $\rightarrow$ W
 > - $\frac {^4C_1} {^7C_3} \times \frac {^4C_1} {^7C_3}+\frac {^3C_1} {^7C_3} \times \frac {^3C_1} {^7C_3}$
 
+## And/Or vs $+/ \times$
+
+- P(X solves a problem) = 0.25
+- P(Y solves a problem) = 0.30
+
+> - P(Both  solve) $\rightarrow$ P(X and Y solve): $P(X \cap Y) = P(X) \times P(Y)$
+> - P(X or Y solves): $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+
 # Playing Card
 
 ## Concepts (Playing Card)
@@ -447,7 +455,8 @@ If a card is drawn from a deck of 52 cards with 4 aces, what is the probability 
 Let, P(A) = Ace appears 
 
 > - $1-P(A)$
-> - $1-\frac 1 {13}$
+> - $1- \frac{4}{52}=1-\frac 1 {13}$
+> - Directly $\frac{48}{52}$
 
 ## Card Problem #03
 
@@ -689,6 +698,13 @@ Think Why are they so?
 </small>
 </div>
 </div>
+
+## Set: Multiple Union
+
+$P(A \cup B \cup C) = P(A)+P(B)+P(C)-P(AB)-P(AC)-P(BC) +P(ABC)$
+
+$P(A \cup B \cup C) = 1 - P(\overline{A \cup B \cup C}) = 1-P(\bar A \cap \bar B \cap \bar C) =$
+
 
 ## Set Problem # 01
 The probability of Ronaldo scoring a goal is 0.4 and that of Messi 0.38. What is the probability that
