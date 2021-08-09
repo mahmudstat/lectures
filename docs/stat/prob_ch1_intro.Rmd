@@ -477,6 +477,35 @@ iii. A Hearts or a King
 ## Card Problem #05
 
 
+A card is drawn from each of two well-shuffled pack of cards. Find the probability that at least one of them is an ace. 
+
+<div onclick="klikaj('card5')"><span>Solution</span></div>
+<div id="card5" style="visibility: hidden">
+<small>
+Let, 
+
+A = Ace from 1st pack 
+
+B = Ace from 2nd pack
+
+$P(A \cup B)=?$
+
+$P(A) = \frac{^4C_1}{^{52}C_1}$
+
+$P(B) = P(A)$
+
+$P(A\cap B) = P(A) \times P(B)$
+
+> - $P(A \cup B)=P(A)+P(B) - P(A \cap B)$ 
+</small>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+
 # Box
 
 ## Box Problem #01
@@ -597,6 +626,45 @@ About 99 of the 100 terrorists will trigger the alarm—and so will about 9,999 
 
 </small>
 
+# Selection
+
+## Selection Problem # 01
+
+Cup 01 contains 2 black, 3 red, and 1 pink ball. Cup 2 contains only 1 red ball. A cup is selected randomly. Next, a ball is randomly chosen from that randomly selected cup and placed into the other cup. A ball is then drawn randomly from that second cup. Find the probability that the last ball drawn is a pink one. 
+
+> - 3 possible cases
+
+1. > - 1st cup $\rightarrow$ pink ball $\rightarrow$ pink ball from 2nd cup
+
+2. > - 1st cup $\rightarrow$ non-pink ball $\rightarrow$ pink ball from 2nd cup
+
+3. > - 2nd cup $\rightarrow$ red ball $\rightarrow$ pink ball from 1st (other) cup
+
+
+> - $(\frac 1 2 \times \frac 1 6 \times \frac 1 2 )+ (\frac 1 2 \times \frac 5 6 \times 0) + (\frac 1 2 \times 1 \times \frac 1 7)$
+
+## Selection problem # 02
+
+If a senility researcher discovered that in a population of healthy and diseased elderly people, 14% of the people had senile dementia, 63% had arterioplerotic cerebral degeneration, and 11% had both. What is the probability that a person not having arterioplerotic cerebral degeneration has senile dementia?
+
+
+## Selection problem # 03
+
+A candidate applied for three posts in an industry, having 3, 4, and 2 candidates respectively. What is the probability of getting a job by that candidate in at least one post? 
+
+<div onclick="klikaj('sel3')"><span>Answer</span></div>
+<div id="sel3" style="visibility: hidden">
+<small>
+$P(F)+P(S)+P(T)-P(F\cap S)-P(S\cap T)-P(F\cap T)+P(F\cap S \cap T$
+</small>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+
 # Set Theoretic
 
 ## Concept 
@@ -686,87 +754,21 @@ function klikaj(i) {
 
 </div>
 
-## Set Problem # 03
 
-Cup 01 contains 2 black, 3 red, and 1 pink ball. Cup 2 contains only 1 red ball. A cup is selected randomly. Next, a ball is randomly chosen from that randomly selected cup and placed into the other cup. A ball is then drawn randomly from that second cup. Find the probability that the last ball drawn is a pink one. 
-
-> - 3 possible cases
-
-1. > - 1st cup $\rightarrow$ pink ball $\rightarrow$ pink ball from 2nd cup
-
-2. > - 1st cup $\rightarrow$ non-pink ball $\rightarrow$ pink ball from 2nd cup
-
-3. > - 2nd cup $\rightarrow$ red ball $\rightarrow$ pink ball from 1st (other) cup
-
-
-> - $(\frac 1 2 \times \frac 1 6 \times \frac 1 2 )+ (\frac 1 2 \times \frac 5 6 \times 0) + (\frac 1 2 \times 1 \times \frac 1 7)$
-
-## Set problem # 04
-
-If a senility researcher discovered that in a population of healthy and diseased elderly people, 14% of the people had senile dementia, 63% had arterioplerotic cerebral degeneration, and 11% had both. What is the probability that a person not having arterioplerotic cerebral degeneration has senile dementia?
-
-
-
-## Set problem # 05
-
-A candidate applied for three posts in an industry, having 3, 4, and 2 candidates respectively. What is the probability of getting a job by that candidate in at least one post? 
-
-<div onclick="klikaj('set5')"><span>Answer</span></div>
-<div id="set5" style="visibility: hidden">
-<small>
-$P(F)+P(S)+P(T)-P(F\cap S)-P(S\cap T)-P(F\cap T)+P(F\cap S \cap T$
-</small>
-</div>
-<script>
-function klikaj(i) {
-    document.getElementById(i).style.visibility='visible';
-}
-</script>
-
-## Set problem # 06
-
-A card is drawn from each of two well-shuffled pack of cards. Find the probability that at least one of them is an ace. 
-
-<div onclick="klikaj('rad1')"><span>Solution</span></div>
-<div id="rad1" style="visibility: hidden">
-<small>
-Let, 
-
-A = Ace from 1st pack 
-
-B = Ace from 2nd pack
-
-$P(A \cup B)=?$
-
-$P(A) = \frac{^4C_1}{^{52}C_1}$
-
-$P(B) = P(A)$
-
-$P(A\cap B) = P(A) \times P(B)$
-
-> - $P(A \cup B)=P(A)+P(B) - P(A \cap B)$ 
-</small>
-</div>
-<script>
-function klikaj(i) {
-    document.getElementById(i).style.visibility='visible';
-}
-</script>
-
-## Set problem # 07
+## Set problem # 03
 
 $P(A\cap B)= \frac 1 3, P(A \cup B) = \frac 5 6, and \space P(A) = \frac 1 2$
 
 Find $P(B)$ and $P(B^c)$
 
-## Set problem # 08
+## Set problem # 04
 
 $P(A)= \frac 1 2, P(B) = \frac 1 5, \text{and} \space P(A|B) = \frac 3 8$
 
 Find $P(A \cap B), P(B|A)$, and $P(A \cup B)$
 
-<div onclick="klikaj('set8')"><span>Clue</span></div>
-<div id="set8" style="visibility: hidden">
+<div onclick="klikaj('set4')"><span>Clue</span></div>
+<div id="set4" style="visibility: hidden">
 $P(B|A) = \frac {P(A \cap B)}{P(A)}$
 
 $P(A|B) = \frac {P(A \cap B)}{P(B)}$
@@ -782,3 +784,49 @@ function klikaj(i) {
 }
 </script>
 
+## Set problem # 05
+
+<small> $P(A)=\frac 1 4, P(B) = \frac 2 5, P(A\cup B) = \frac 1 2$; A & B are not mutually exclusive. Find
+
+<div class="container">
+<div class="col">
+<u>Questions</u>
+
+<div onclick="klikaj('s5q1')">$P(A \cap B)$</span></div>
+<div onclick="klikaj('s5q2')">$P(\bar A \cap B)$</span></div>
+<div onclick="klikaj('s5q3')">$P(A \cap \bar B)$</span></div>
+<div onclick="klikaj('s5q4')">$P(\bar A \cap \bar B)$</span></div>
+<div onclick="klikaj('s5q5')">$P(A^c \cap B^c)$</span></div>
+<div onclick="klikaj('s5q6')">$P(\bar A \cup B)$</span></div>
+<div onclick="klikaj('s5q7')">$P(A|\bar B)$</span></div>
+<div onclick="klikaj('s5q8')">$P(\bar A | \bar B)$</span></div>
+</div>
+<div class="col">
+<u>Answers</u>
+
+<div id="s5q1" style="visibility: hidden">
+1. $P(A)+P(B)-P(A \cup B)$
+</div>
+<div id="s5q2" style="visibility: hidden">
+2. $P(B) - P(A \cup B)$
+</div>
+<div id="s5q3" style="visibility: hidden">
+3. Refer to 2
+</div>
+<div id="s5q4" style="visibility: hidden">
+4. $P(\overline{A \cup B}) = 1 - P(A \cup B)$
+</div>
+<div id="s5q5" style="visibility: hidden">
+5. As is 4
+</div>
+<div id="s5q6" style="visibility: hidden">
+6. $P(\bar A) + P(B)-P(\bar A \cap B)$
+</div>
+<div id="s5q7" style="visibility: hidden">
+7. $\frac{P(A \cap \bar B)}{P(\bar B)}$
+</div>
+<div id="s5q8" style="visibility: hidden">
+8. $\frac{P(\bar A \cap \bar B)}{P(\bar B)}$
+</div>
+</div>
+</div>
