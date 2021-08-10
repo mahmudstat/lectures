@@ -26,8 +26,6 @@ output:
 
 ### ~~MEMORIZE~~ FEEL
 
-
-
 <div class="container">
 <div class="col">
 #### Can you translate them into English?
