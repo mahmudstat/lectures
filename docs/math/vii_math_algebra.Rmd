@@ -159,19 +159,33 @@ Notation varies by countries
 
 ## Simplify
 
+
 <div class="container">
 <div class="col">
-1. 6-2{5-(8-3)+(5+2)}
-2. 
+<u>Questions</u>
+
+> - <div onclick="klikaj('sim1')">$1. 6-2{5-(8-3)+(5+2)}$</span></div>
+> - <div onclick="klikaj('sim2')">$2. 7-2[-6+3{-5+2(4-3)}]$</span></div>
+> - <div onclick="klikaj('sim3')">$3. 3x+(4y-z)-{a-b-(2c-4a)-5a}$</span></div>
+> - <div onclick="klikaj('sim4')">$4. [8b-3{2a-3(2b+5)-5(b-3)}]-3b$</span></div>
 </div>
 <div class="col">
-Answers
-<div class="sol"> Answer 1: <p>-8</p>
+<u>Answers</u>
 
+<div id="sim1" style="visibility: hidden">
+1. -8
+</div>
+<div id="sim2" style="visibility: hidden">
+2. 37 
+</div>
+<div id="sim3" style="visibility: hidden">
+3. 3x+4y-z+b
+</div>
+<div id="sim4" style="visibility: hidden">
+4. 38b-6a
 </div>
 </div>
 </div>
-
 
 ## Camel Problem
 

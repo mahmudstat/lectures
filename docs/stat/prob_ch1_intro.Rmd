@@ -401,6 +401,8 @@ What does the commons sense tell us?
 
 ## Addition / Multiplication
 
+REVIEW THIS (might have a mistake)
+
 1. There 4 red and 3 white balls. Draw 2 balls at once. What is probability that both are same color? What if you draw one by one (with replacement-WR)? What is without replacement (WoR)?
 
 > - At once $\rightarrow$ [RR] or [WW]
@@ -412,6 +414,9 @@ What does the commons sense tell us?
 
 - P(X solves a problem) = 0.25
 - P(Y solves a problem) = 0.30
+
+> - And $\rightarrow$ Multiply
+> - Or $\rightarrow$ Add 
 
 > - P(Both  solve) $\rightarrow$ P(X and Y solve): $P(X \cap Y) = P(X) \times P(Y)$
 > - P(X or Y solves): $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
