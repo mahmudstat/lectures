@@ -3,7 +3,7 @@
 
 
 body {
-        background: linear-gradient(to right, #ff66ff, #1aa3ff);
+        background: linear-gradient(to right, #ffffff, #ff66ff);
     }
 
 body:after {
@@ -25,7 +25,7 @@ content: url(logo2.png);
 }
 
 span {
-color:  green;
+color:  #00cc99;
 }
 
 #thanks {

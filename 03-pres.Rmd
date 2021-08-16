@@ -24,6 +24,7 @@ See more [here](https://defkey.com/reveal-js-shortcuts)
 **Second Part: Probability**
 
 - Chapter 01: [Introduction to probability](https://lecture.statmania.info/stat/prob_ch1_intro.html#/)
+- Chapter 02: [Random variable and Probability Distributions](stat/prob_ch2_random_variable.html)
 
 **Elementary Statistics**
 

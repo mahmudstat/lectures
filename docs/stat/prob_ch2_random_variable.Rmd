@@ -51,7 +51,9 @@ Biased
 
 ## Number of Heads in Coin Toss
 
-Two coins are tosses successively 
+Two coins are tosses successively. 
+
+**N:B: X is variable & x is value**
 
 X = number of heads in the coin toss
 
@@ -60,14 +62,40 @@ x = 0, 1, 2
 > - P(x=0) = ?
 > - P(x=1)=?, P(x=2)=?
 
+## Probability Function
+
+Given, $P(x) = \frac{2x+k}{56}; x = -3, -2, -1, 0, 1, 2, 3$
+
+a. k = ?
+b. Find probability of each value of x
+c. Find $P(-2 \le x \le 2)$
+
+Clue: If $S=\{H,T\}, P(H) + P(T) = 1$, 
+
+i.e. $\sum$ P(All possible values) = 1
+
 ## pdf and pmf
 
 <div class="container">
 <div class="col">
 Probability Density Function
+
+3 conditions 
+
+> - $f\left( x \right) \ge 0$ for all x
+> - $\displaystyle \int_{{\, - \infty }}^{{\,\infty }}{{f\left( x \right)\,dx}} = 1$
+> - $P\left( {a \le X \le b} \right) = \int_{{\,a}}^{{\,b}}{{f\left( x \right)\,dx}}$
+> - $P(X=x)=0$ (theoretically, why?)
+
 </div>
 <div class="col">
 Probability Mass Function 
+
+3 conditions
+
+> - $P\left( x \right) \ge 0$ for all x
+> - $\displaystyle \sum_{{\, - \infty }}^{{\,\infty }}{{f\left( x \right)\,dx}} = 1$
+> - $P_x(X) = P(X=x)$
 </div>
 </div>
 
