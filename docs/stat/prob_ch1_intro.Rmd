@@ -706,10 +706,11 @@ Think Why are they so?
 
 ## Set: Multiple Union
 
+<small>
 $P(A \cup B \cup C) = P(A)+P(B)+P(C)-P(AB)-P(AC)-P(BC) +P(ABC)$
 
-$P(A \cup B \cup C) = 1 - P(\overline{A \cup B \cup C}) = 1-P(\bar A \cap \bar B \cap \bar C) =$
-
+> - $P(A \cup B \cup C) = 1 - P(\overline{A \cup B \cup C}) = 1-P(\bar A \cap \bar B \cap \bar C) =1-P(\bar A) \cdot P(\bar B) \cdot P(\bar C)$
+</small>
 
 ## Set Problem # 01
 The probability of Ronaldo scoring a goal is 0.4 and that of Messi 0.38. What is the probability that
@@ -851,3 +852,4 @@ function klikaj(i) {
 </div>
 </div>
 </div>
+

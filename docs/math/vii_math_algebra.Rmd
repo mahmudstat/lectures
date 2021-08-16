@@ -198,7 +198,7 @@ $B = x^2+xy+y^2$
 $C = x^4+x^2y^2+y^4$
 
 <div onclick="klikaj('sim21')">1. Find $A \times B$</span></div>
-<div onclick="klikaj('sim22')">2. Determine $BC-B^2-C$</span></div>
+<div onclick="klikaj('sim22')">2. Determine $BC \div B^2-C$</span></div>
 </div>
 <div class="col">
 <u>Answers</u>
@@ -286,10 +286,6 @@ $(a+b)^2 = a^2+2ab+b^2$
 </div>
 </div>
 </small>
-
-
-
-
 
 ## Camel Problem
 

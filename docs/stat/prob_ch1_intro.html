@@ -448,7 +448,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
     <div id="header-footer">
-      <p class="slide-footer"> | PCC | Mahmud | Statistics | statmania.info | <span style="color:yellow;">Press SPACE or click arrows to see more contents</span> </p>
+      <p class="slide-footer"> | PCC | Mahmud | Statistics | statmania.info | <span style="color:yellow;">Use SPACE or ↔️ ↕️ to see more contents</span> </p>
     </div>
     <link href="prob_ch1_intro_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
     <link href="prob_ch1_intro_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
@@ -997,6 +997,7 @@ Second<br>Die
 </ul>
 </section><section id="addition-multiplication" class="slide level2">
 <h2>Addition / Multiplication</h2>
+<p>REVIEW THIS (might have a mistake)</p>
 <ol type="1">
 <li>There 4 red and 3 white balls. Draw 2 balls at once. What is probability that both are same color? What if you draw one by one (with replacement-WR)? What is without replacement (WoR)?</li>
 </ol>
@@ -1011,6 +1012,10 @@ Second<br>Die
 <ul>
 <li>P(X solves a problem) = 0.25</li>
 <li>P(Y solves a problem) = 0.30</li>
+</ul>
+<ul>
+<li class="fragment">And <span class="math inline">\(\rightarrow\)</span> Multiply</li>
+<li class="fragment">Or <span class="math inline">\(\rightarrow\)</span> Add</li>
 </ul>
 <ul>
 <li class="fragment">P(Both solve) <span class="math inline">\(\rightarrow\)</span> P(X and Y solve): <span class="math inline">\(P(X \cap Y) = P(X) \times P(Y)\)</span></li>
@@ -1309,8 +1314,10 @@ function klikaj(i) {
 </div>
 </section><section id="set-multiple-union" class="slide level2">
 <h2>Set: Multiple Union</h2>
-<p><span class="math inline">\(P(A \cup B \cup C) = P(A)+P(B)+P(C)-P(AB)-P(AC)-P(BC) +P(ABC)\)</span></p>
-<p><span class="math inline">\(P(A \cup B \cup C) = 1 - P(\overline{A \cup B \cup C}) = 1-P(\bar A \cap \bar B \cap \bar C) =\)</span></p>
+<p><small> <span class="math inline">\(P(A \cup B \cup C) = P(A)+P(B)+P(C)-P(AB)-P(AC)-P(BC) +P(ABC)\)</span></p>
+<ul>
+<li class="fragment"><span class="math inline">\(P(A \cup B \cup C) = 1 - P(\overline{A \cup B \cup C}) = 1-P(\bar A \cap \bar B \cap \bar C) =1-P(\bar A) \cdot P(\bar B) \cdot P(\bar C)\)</span> </small></li>
+</ul>
 </section><section id="set-problem-01" class="slide level2">
 <h2>Set Problem # 01</h2>
 The probability of Ronaldo scoring a goal is 0.4 and that of Messi 0.38. What is the probability that
