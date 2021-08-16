@@ -852,4 +852,27 @@ function klikaj(i) {
 </div>
 </div>
 </div>
+</small>
 
+# Set-Examples
+
+## Set-practical 01
+
+Out of 200 People, 50 read The Observer, 40 read the Inqilab, and 10 read both. If one person is selected, what is the probability that he
+
+1. reads any paper
+2. reads The Observer if he reads Inqilab
+
+# Digit Problems
+
+## Even-Odd 
+
+Two digits are taken with replacement from 1,2,3,4 to form a number. What is the probability that the number is
+
+1) even
+2) odd and divisible by 3
+
+Solve in two ways 
+
+> - 1.  □ □ $\frac{^4C_1 \times 2}{4 \times 4}$ or form numbers (12,14,22,24,32,34,42,44)
+> - 2. Numbers: 11, 13, 21, 23, 31, 33, 41, 43 $\rightarrow \frac {2}{16}=\frac 1 8$

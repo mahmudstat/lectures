@@ -164,8 +164,8 @@ Notation varies by countries
 <div class="col">
 <u>Questions</u>
 
-> - <div onclick="klikaj('sim1')">$1. 6-2{5-(8-3)+(5+2)}$</span></div>
-> - <div onclick="klikaj('sim2')">$2. 7-2[-6+3{-5+2(4-3)}]$</span></div>
+> - <div onclick="klikaj('sim1')">$1. 6-2\{5-(8-3)+(5+2)\}$</span></div>
+> - <div onclick="klikaj('sim2')">$2. 7-2[-6+3\{-5+2(4-3)\}]$</span></div>
 > - <div onclick="klikaj('sim3')">$3. 3x+(4y-z)-{a-b-(2c-4a)-5a}$</span></div>
 > - <div onclick="klikaj('sim4')">$4. [8b-3{2a-3(2b+5)-5(b-3)}]-3b$</span></div>
 </div>
@@ -214,7 +214,7 @@ $C = x^4+x^2y^2+y^4$
 </div>
 </div>
 
-## Chapter 5.1: ALgebraic Formulae & Applications
+# Chapter 5.1: Algebraic Formulae & Applications
 
 ### ~~MEMORIZE~~ FEEL
 
@@ -286,6 +286,8 @@ $(a+b)^2 = a^2+2ab+b^2$
 </div>
 </div>
 </small>
+
+# Problems to Think
 
 ## Camel Problem
 

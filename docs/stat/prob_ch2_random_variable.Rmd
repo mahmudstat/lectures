@@ -1,0 +1,72 @@
+---
+title: "Probability (Random Variable)"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
+    self_contained: false
+    css: css/styles.css
+    includes:
+      in_header: css/header.html
+---
+
+# Concepts
+
+## Random Variable 
+
+- Discrete
+- Continuous 
+
+Guess which
+
+> - No. of people dying each day
+> - Number of heads in successive tosses.
+> - Heights of people in Bangladesh
+> - GPA of students
+> - Grade of students in individual subjects
+> - Income tax paid by people
+
+## Integration
+
+- $\int x^3+2x$
+- $\int_2^3 x^2+x$
+
+# Probability Distribution
+
+# Example
+
+Results of an unbiaseddie throw
+
+| x |      1      |      2      |      3      |      4      |      5      |      6      |
+|:-:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|
+| P | $\frac 1 6$ | $\frac 1 6$ | $\frac 1 6$ | $\frac 1 6$ | $\frac 1 6$ | $\frac 1 6$ |
+
+Biased
+
+| x |      1      |      2      |      3      |      4      |      5      |      6      |
+|:-:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|
+| P | $\frac 1 7$ | $\frac 1 7$ | $\frac 1 2$ | $\frac 1 7$ | $\frac 1 7$ | $\frac 1 7$ |
+
+## Number of Heads in Coin Toss
+
+Two coins are tosses successively 
+
+X = number of heads in the coin toss
+
+x = 0, 1, 2 
+
+> - P(x=0) = ?
+> - P(x=1)=?, P(x=2)=?
+
+## pdf and pmf
+
+<div class="container">
+<div class="col">
+Probability Density Function
+</div>
+<div class="col">
+Probability Mass Function 
+</div>
+</div>
