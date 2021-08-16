@@ -5,7 +5,7 @@
 body {
         background: linear-gradient(to right, #ffffff, #ff66ff);
     }
-
+/*
 body:after {
 content: url(pcc2.png);
   position: fixed;
@@ -14,7 +14,7 @@ content: url(pcc2.png);
   height: 55px;
   width: 55px;
 }
-
+*/
 body:before {
 content: url(logo2.png);
   position: fixed;
