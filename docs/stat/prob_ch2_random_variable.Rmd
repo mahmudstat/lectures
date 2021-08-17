@@ -14,6 +14,12 @@ output:
 
 # Concepts
 
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
 ## Random Variable 
 
 - Discrete
@@ -32,12 +38,20 @@ Guess which
 
 - $\int x^3+2x$
 - $\int_2^3 x^2+x$
+- Relationship between integration (I) and differentiation(D).  
+
+<div onclick="klikaj('intd')"><span>Answer</span></div>
+<div id="intd" style="visibility: hidden">
+$f(x) \to I \to D \to f(x)$
+
+Test with $f(x) = x^2$
+</div>
 
 # Probability Distribution
 
 # Example
 
-Results of an unbiaseddie throw
+Results of an unbiased die throw
 
 | x |      1      |      2      |      3      |      4      |      5      |      6      |
 |:-:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|
@@ -47,11 +61,11 @@ Biased
 
 | x |      1      |      2      |      3      |      4      |      5      |      6      |
 |:-:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|
-| P | $\frac 1 7$ | $\frac 1 7$ | $\frac 1 2$ | $\frac 1 7$ | $\frac 1 7$ | $\frac 1 7$ |
+| P | $\frac 1 7$ | $\frac 2 7$ | $\frac 1 2$ | $\frac 1 7$ | $\frac 1 7$ | $\frac 1 7$ |
 
 ## Number of Heads in Coin Toss
 
-Two coins are tosses successively. 
+Two coins are tossed successively. 
 
 **N:B: X is variable & x is value**
 
@@ -66,6 +80,8 @@ x = 0, 1, 2
 
 Given, $P(x) = \frac{2x+k}{56}; x = -3, -2, -1, 0, 1, 2, 3$
 
+Discrete or Continuous?
+
 a. k = ?
 b. Find probability of each value of x
 c. Find $P(-2 \le x \le 2)$
@@ -78,9 +94,7 @@ i.e. $\sum$ P(All possible values) = 1
 
 <div class="container">
 <div class="col">
-Probability Density Function
-
-3 conditions 
+Probability Density Function (continuous)
 
 > - $f\left( x \right) \ge 0$ for all x
 > - $\displaystyle \int_{{\, - \infty }}^{{\,\infty }}{{f\left( x \right)\,dx}} = 1$
@@ -89,9 +103,7 @@ Probability Density Function
 
 </div>
 <div class="col">
-Probability Mass Function 
-
-3 conditions
+Probability Mass Function (discrete)
 
 > - $P\left( x \right) \ge 0$ for all x
 > - $\displaystyle \sum_{{\, - \infty }}^{{\,\infty }}{{f\left( x \right)\,dx}} = 1$
@@ -106,3 +118,57 @@ $f\left( x \right) = \frac{{{x^3}}}{{5000}}\left( {10 - x} \right)$ $for 0 \le x
 a. Show that $f\left( x \right)$ is a probability density function.
 b. Find $P\left( {1 \le X \le 4} \right)$
 c. Find $P\left( {x \ge 6} \right)$
+
+## Cumuluative Distribution Function 
+
+**F(x) or cdf accumulates all of the probability less than or equal to**
+
+|   x   |      1      |      2      |      3      |      4      |      5      |      6      |
+|:-----:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|
+| P (x) | $\frac 1 7$ | $\frac 1 7$ | $\frac 1 2$ | $\frac 1 7$ | $\frac 1 7$ | $\frac 1 7$ |
+| F (x) | $\frac 1 7$ | $\frac 2 7$ | $\frac 4 7$ | $\frac 5 7$ | $\frac 6 7$ |     $1$     |
+
+Find 
+
+1. $P(X<4)$
+2. $P(3<X<6)$
+
+## cdf definition 
+
+$F_X(x) = P(X\le x)$
+
+<div class="container">
+<div class="col">
+Discrete
+
+$$F(x) = \sum_{X\le x} P(x)$$
+</div>
+<div class="col">
+Continuous
+<small>
+
+> - $$F_{X}(x) = \int_{-\infty}^x f_X(t)dt$$
+> - Find cdf for $f(x) = 2x; 0\le x \le 1$
+> - $\int \to x^2$
+
+<div onclick="klikaj('Fx')"><span>Answer</span></div>
+<div id="Fx" style="visibility: hidden">
+\begin{eqnarray}
+F(x) =
+\begin{cases}
+x^2/2,  & 0\le x \le 1 \\
+0, & \text{otherwise}
+\end{cases}
+\end{eqnarray}
+</small>
+</div>
+
+</div>
+</div>
+
+## cdf properties
+
+> - $P(a\le x \le b) = F(b)-F(a)$for $a\lt b$; what if $a \lt x \lt b?$ 
+> - For continuous x, $f(x) = \frac{d}{dx}[F(x)]$
+> - $F(-\infty) =0 , F(+\infty) = 1$
+> - 

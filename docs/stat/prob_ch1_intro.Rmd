@@ -863,6 +863,38 @@ Out of 200 People, 50 read The Observer, 40 read the Inqilab, and 10 read both. 
 1. reads any paper
 2. reads The Observer if he reads Inqilab
 
+## Set-practical 01
+
+Among 800 students, 160 fail in English, 80 in Math, and 40 in both. A student is elected at random. Find the probability that s/he
+
+
+<div class="container">
+<div class="col">
+<u>Questions</u>
+
+<div onclick="klikaj('sp1')">1. failed in English but passed in Math</div>
+<div onclick="klikaj('sp2')">2. Passed only one subject</div>
+<div onclick="klikaj('sp3')">3. Failed in none</div>
+<div onclick="klikaj('sp4')">4. Passed at best one subject</div>
+</div>
+<div class="col">
+<u>Answers</u>
+
+<div id="sp1" style="visibility: hidden">
+1. $P(E\cap S')$
+</div>
+<div id="sp2" style="visibility: hidden">
+2. $P(E\cap S')+P(E' \cap S)$
+</div>
+<div id="sp3" style="visibility: hidden">
+1. $P(E\cap S)' = \frac{n(E')+n(S')-n(E'\cap S')}{n(S)}$
+</div>
+<div id="sp4" style="visibility: hidden">
+2. Fail both + Fail in one = 0.2 + 0.05
+</div>
+</div>
+</div>
+
 # Digit Problems
 
 ## Even-Odd 

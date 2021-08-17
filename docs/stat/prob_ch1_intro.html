@@ -448,7 +448,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
     <div id="header-footer">
-      <p class="slide-footer"> | PCC | Mahmud | Statistics | statmania.info | <span style="color:yellow;">Use SPACE or ↔️ ↕️ to see more contents</span> </p>
+      <p class="slide-footer"> | PCC | Mahmud | Statistics | statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
     </div>
     <link href="prob_ch1_intro_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
     <link href="prob_ch1_intro_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
@@ -1489,6 +1489,65 @@ function klikaj(i) {
 </div>
 </div>
 <p></small></p>
+</section></section>
+<section><section id="set-examples" class="title-slide slide level1"><h1>Set-Examples</h1></section><section id="set-practical-01" class="slide level2">
+<h2>Set-practical 01</h2>
+<p>Out of 200 People, 50 read The Observer, 40 read the Inqilab, and 10 read both. If one person is selected, what is the probability that he</p>
+<ol type="1">
+<li>reads any paper</li>
+<li>reads The Observer if he reads Inqilab</li>
+</ol>
+</section><section id="set-practical-01-1" class="slide level2">
+<h2>Set-practical 01</h2>
+<p>Among 800 students, 160 fail in English, 80 in Math, and 40 in both. A student is elected at random. Find the probability that s/he</p>
+<div class="container">
+<div class="col">
+<p><u>Questions</u></p>
+<div onclick="klikaj(&#39;sp1&#39;)">
+<ol type="1">
+<li>failed in English but passed in Math
+</div>
+<div onclick="klikaj('sp2')">
+<ol start="2" type="1">
+<li>Passed only one subject
+</div>
+<div onclick="klikaj('sp3')">
+<ol start="3" type="1">
+<li>Failed in none
+</div>
+<div onclick="klikaj('sp4')">
+<ol start="4" type="1">
+<li>Passed at best one subject
+</div></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol>
+</div>
+<div class="col">
+<p><u>Answers</u></p>
+<div id="sp1" style="visibility: hidden">
+<ol type="1">
+<li><span class="math inline">\(P(E\cap S&#39;)\)</span></li>
+</ol>
+</div>
+<div id="sp2" style="visibility: hidden">
+<ol start="2" type="1">
+<li><span class="math inline">\(P(E\cap S&#39;)+P(E&#39; \cap S)\)</span></li>
+</ol>
+</div>
+<div id="sp3" style="visibility: hidden">
+<ol type="1">
+<li><span class="math inline">\(P(E\cap S)&#39; = \frac{n(E&#39;)+n(S&#39;)-n(E&#39;\cap S&#39;)}{n(S)}\)</span></li>
+</ol>
+</div>
+<div id="sp4" style="visibility: hidden">
+<ol start="2" type="1">
+<li>Fail both + Fail in one = 0.2 + 0.05</li>
+</ol>
+</div>
+</div>
+</div>
 </section></section>
 <section><section id="digit-problems" class="title-slide slide level1"><h1>Digit Problems</h1></section><section id="even-odd" class="slide level2">
 <h2>Even-Odd</h2>
