@@ -711,6 +711,87 @@ x^2/2,  &amp; 0\le x \le 1 \\
 <li>a vaccinated person is infected</li>
 <li>a non-vaccinated person is uninfected</li>
 </ol>
+<ul>
+<li class="fragment">These are joint probabilities <span class="math inline">\(\to\)</span> P(x,y)</li>
+<li class="fragment"><span class="math inline">\(P(x,y) =P(x) \cdot P(y)\)</span> if <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> are independent.</li>
+</ul>
+</section><section id="joind-pf-properties" class="slide level2">
+<h2>Joind PF Properties</h2>
+<ul>
+<li><span class="math inline">\(P(x,y) \ge 0\)</span></li>
+<li><span class="math inline">\(\Sigma\Sigma P(x,y)=1\)</span></li>
+</ul>
+</section><section id="coin-die" class="slide level2">
+<h2>Coin-Die</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Die/Coin</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">6</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">H (1)</td>
+<td style="text-align: center;">H1</td>
+<td style="text-align: center;">H2</td>
+<td style="text-align: center;">H3</td>
+<td style="text-align: center;">H4</td>
+<td style="text-align: center;">H5</td>
+<td style="text-align: center;">H6</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">T (0)</td>
+<td style="text-align: center;">T1</td>
+<td style="text-align: center;">T2</td>
+<td style="text-align: center;">T3</td>
+<td style="text-align: center;">T4</td>
+<td style="text-align: center;">T5</td>
+<td style="text-align: center;">T6</td>
+</tr>
+</tbody>
+</table>
+<p>X = Outcome of coin toss Y = Outcome of die throw x = 0, 1; y = 1, 2, 3, 4, 5, 6</p>
+<p>Construct the distribution.</p>
+</section><section id="marginal-probability" class="slide level2">
+<h2>Marginal Probability</h2>
+<p>Consider the previous table</p>
+<p>Joint probability: <span class="math inline">\(P(x_i, y_j); i = 1,2, \cdots m; j = 1,2, \cdots n\)</span></p>
+<p>Marginal probability <span class="math inline">\(\to P(x_i) \leftarrow P(x_i, y_j)\)</span></p>
+<ul>
+<li class="fragment">For x: <span class="math display">\[P(x_i) = \sum_{j=1}^n P(x_i, y_j); i = 1,2, \cdots m\]</span></li>
+<li class="fragment">For y: <span class="math display">\[P(y_i) = \sum_{i=1}^m P(x_i, y_j); j = 1,2, \cdots n\]</span></li>
+</ul>
+</section><section id="marginal-probability-properties" class="slide level2">
+<h2>Marginal Probability Properties</h2>
+<ul>
+<li><span class="math inline">\(P(x_i) \ge 0\)</span> and <span class="math inline">\(P(y_i) \ge 0\)</span></li>
+<li><span class="math display">\[\sum_{i=1}^m P(x_i)=\sum_{j=1}^n P(y_j)=1\]</span></li>
+</ul>
+<p>Summing marginal probabilities will give 1.</p>
+</section><section id="joint-marginal-example" class="slide level2">
+<h2>Joint-Marginal Example</h2>
+<p><span class="math inline">\(P(x,y) = \frac{x+y}{9}; x=0,1,2; y = 0, 1\)</span></p>
+<ul>
+<li>Find marginal probabilities</li>
+<li>Check properties (sum)</li>
+</ul>
+<ul>
+<li class="fragment"><span class="math inline">\(P(x) = \frac{2x+1}{9}\)</span></li>
+</ul>
+</section><section id="conditional-probability-function" class="slide level2">
+<h2>Conditional Probability Function</h2>
+<p>Like Bayes Theorem</p>
+<p><span class="math inline">\(P(X_i|y_j) = \frac{P(x_i,y_j)}{P(y_j)}; P(y_j) \gt 0\)</span></p>
+<p>Properties</p>
+<ul>
+<li class="fragment"><span class="math inline">\(\sum_{j=1}^m P(x_i|y_j)=\sum_{i=1}^m P(y_j|x_i)=1\)</span></li>
+</ul>
 </section></section>
     </div>
   </div>

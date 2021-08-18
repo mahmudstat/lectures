@@ -186,3 +186,61 @@ Find the probability that
 
 1) a vaccinated person is infected
 2) a non-vaccinated person is uninfected
+
+> - These are joint probabilities $\to$ P(x,y)
+> - $P(x,y) =P(x) \cdot P(y)$ if $x$ and $y$ are independent. 
+
+## Joind PF Properties
+
+- $P(x,y) \ge 0$
+- $\Sigma\Sigma P(x,y)=1$ 
+
+## Coin-Die
+
+| Die/Coin |  1 |  2 |  3 |  4 |  5 |  6 |
+|:--------:|:--:|:--:|:--:|:--:|:--:|:--:|
+|   H (1)  | H1 | H2 | H3 | H4 | H5 | H6 |
+|   T (0)  | T1 | T2 | T3 | T4 | T5 | T6 |
+
+X = Outcome of coin toss
+Y = Outcome of die throw
+x = 0, 1; y = 1, 2, 3, 4, 5, 6 
+
+Construct the distribution.
+
+## Marginal Probability
+
+Consider the previous table
+
+Joint probability: $P(x_i, y_j); i = 1,2, \cdots m; j = 1,2, \cdots n$
+
+Marginal probability $\to P(x_i) \leftarrow P(x_i, y_j)$
+
+> - For x: $$P(x_i) = \sum_{j=1}^n P(x_i, y_j); i = 1,2, \cdots m$$ 
+> - For y: $$P(y_i) = \sum_{i=1}^m P(x_i, y_j); j = 1,2, \cdots n$$ 
+
+## Marginal Probability Properties 
+
+- $P(x_i) \ge 0$ and $P(y_i) \ge 0$
+- $$\sum_{i=1}^m P(x_i)=\sum_{j=1}^n P(y_j)=1$$
+
+Summing marginal probabilities will give 1. 
+
+## Joint-Marginal Example
+
+$P(x,y) = \frac{x+y}{9}; x=0,1,2; y = 0, 1$
+
+- Find marginal probabilities
+- Check properties (sum)
+
+> - $P(x) = \frac{2x+1}{9}$
+
+## Conditional Probability Function
+
+Like Bayes Theorem
+
+$P(X_i|y_j) = \frac{P(x_i,y_j)}{P(y_j)}; P(y_j) \gt 0$
+
+Properties
+
+> - $\sum_{j=1}^m P(x_i|y_j)=\sum_{i=1}^m P(y_j|x_i)=1$
