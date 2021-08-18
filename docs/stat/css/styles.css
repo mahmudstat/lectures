@@ -3,8 +3,13 @@
 
 
 body {
-        background: linear-gradient(to right, #ffffff, #80ff80);
+        background: linear-gradient(to bottom, #80ff80, #00cc7a);
     }
+    
+span {
+color:  #ffe6ff;
+}
+
 /*
 body:after {
 content: url(pcc2.png);
@@ -24,9 +29,6 @@ content: url(logo2.png);
   width: 50px;
 }
 
-span {
-color:  #260033;
-}
 
 #thanks {
   padding: 100px 0;
