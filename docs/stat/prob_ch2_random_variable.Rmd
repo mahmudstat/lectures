@@ -121,7 +121,7 @@ c. Find $P\left( {x \ge 6} \right)$
 
 ## Cumuluative Distribution Function 
 
-**F(x) or cdf accumulates all of the probability less than or equal to**
+**F(x)** or cdf accumulates all of the probability less than or equal to.
 
 |   x   |      1      |      2      |      3      |      4      |      5      |      6      |
 |:-----:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|
@@ -171,4 +171,18 @@ x^2/2,  & 0\le x \le 1 \\
 > - $P(a\le x \le b) = F(b)-F(a)$for $a\lt b$; what if $a \lt x \lt b?$ 
 > - For continuous x, $f(x) = \frac{d}{dx}[F(x)]$
 > - $F(-\infty) =0 , F(+\infty) = 1$
-> - 
+
+## Joint Probability Function
+
+Let, $I = Infected$, and $V = Vaccinated$
+
+|          | $I$ | $\bar I$ | Total |
+|:--------:|:---:|:--------:|:-----:|
+|    $V$   |  3  |    276   |  279  |
+| $\bar V$ |  66 |    473   |  539  |
+|   Total  |  69 |    749   |  818  |
+
+Find the probability that
+
+1) a vaccinated person is infected
+2) a non-vaccinated person is uninfected

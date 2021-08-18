@@ -704,5 +704,31 @@ Alternative
 </div>
 </div>
 
-## Groups
+## Confusion of Order/Together/Position
+<small>
+Arranging the letters of EQUATION by 
 
+<div class="container">
+<div class="col">
+1) Maintaining orders or consonants
+
+> - Allowed: EQAUTOIN
+> - Not allowed: ETAUQOIN
+</div>
+<div class="col">
+2) Keeping consonants together 
+
+> - Allowed: EQTNAUOI, QTNAUOIE
+> - Not allowed: ETAUQOIN
+</div>
+<div class="col">
+3) Without changing positions of consonants
+
+> - Allowed: IQUATEON
+> - Not allowed: ENAUQOIQ
+</div>
+<div class="col">
+4) Without changing relative positions of consonants and vowels
+</div>
+</div>
+</small>
