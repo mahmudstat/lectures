@@ -212,17 +212,17 @@ Construct the distribution.
 
 ## Marginal Probability
 
-<small>
+
 Consider the previous table
 
 Joint probability: $P(x_i, y_j); i = 1,2, \cdots m; j = 1,2, \cdots n$
 
 Marginal probability $\to P(x_i) \leftarrow P(x_i, y_j)$
 
-> - For x: $$P(x_i) = \sum_{j=1}^n P(x_i, y_j); i = 1,2, \cdots m$$ 
-> - For y: $$P(y_i) = \sum_{i=1}^m P(x_i, y_j); j = 1,2, \cdots n$$ 
+> - For x: $\displaystyle P(x_i) = \sum_{j=1}^n P(x_i, y_j); i = 1,2, \cdots m$ 
+> - For y: $\displaystyle P(y_i) = \sum_{i=1}^m P(x_i, y_j); j = 1,2, \cdots n$ 
 > - What about continuous x?
-</small>
+
 ## Marginal Probability Properties 
 
 - $P(x_i) \ge 0$ and $P(y_i) \ge 0$
