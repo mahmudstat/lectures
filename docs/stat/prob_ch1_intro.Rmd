@@ -533,7 +533,7 @@ ii. without replacement
 
 > - Correct or not: $\frac{^7C_2}{^{20}C_2}+\frac{^8C_2}{^{20}C_2}$
 > - $\frac{^7C_1 \times ^7C_1}{^{20}C_1 \times ^{20}C_1}+\frac{^8C_1 \times ^8C_1}{^{20}C_1 \times ^{20}C_1}$
-> - Without replacement: $\frac{^7C_1 \times ^6C_1}{^{20}C_1 \times ^{20}C_1}+\frac{^8C_1 \times ^7C_1}{^{20}C_1 \times ^{20}C_1}$
+> - Without replacement: $\frac{^7C_1 \times ^6C_1}{^{20}C_1 \times ^{19}C_1}+\frac{^8C_1 \times ^7C_1}{^{20}C_1 \times ^{19}C_1}$
 
 ## Box Problem #02
 

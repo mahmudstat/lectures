@@ -9,7 +9,7 @@ output:
     self_contained: false
     css: css/styles.css
     includes:
-      in_header: css/header_stat.html
+      in_header: css/header.html
 ---
 
 ## What is Statistics
@@ -203,4 +203,23 @@ Histogram
 </div>
 
 
+## Pie Chart
 
+<img class="plain" src="img/pie_example.png" width="580">
+
+## Construction Pie Chart
+
+Fruit production in Bangladesh (made-up data)
+
+|  Fruit | Production (f) | Angle |
+|:------:|:--------------:|:-----:|
+|  Mango |       35       |       |
+| Litchi |       20       |       |
+|  Guava |       40       |       |
+| Banana |       25       |       |
+
+Find angles and plot them on the circle
+
+$Angle = \frac{f_i}{\Sigma f_i}\times 360$
+
+## SHort-cut Method for AM 
