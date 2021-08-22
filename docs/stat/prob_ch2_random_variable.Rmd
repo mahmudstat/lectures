@@ -111,13 +111,29 @@ Probability Mass Function (discrete)
 </div>
 </div>
 
+## pdf vs pmf curves
+
+
+
 ## Pdf problem 01
 
 $f\left( x \right) = \frac{{{x^3}}}{{5000}}\left( {10 - x} \right)$ $for 0 \le x \le 10$ and $f\left( x \right) = 0$ for all other values. 
 
 a. Show that $f\left( x \right)$ is a probability density function.
 b. Find $P\left( {1 \le X \le 4} \right)$
-c. Find $P\left( {x \ge 6} \right)$
+c. Find $P\left( {x \ge 6} \right)$ 
+
+> - is it $\displaystyle \int_{7}^{10} f(x) dx$?
+
+## Pdf problem 02
+
+$f(x) = k(x+1); 0\lt x \lt 1$
+
+i. $P(X=2)=?$
+ii. $k=?$
+iii. $P(0.4 \lt X \lt 2)=?$
+
+> - $\int_{0.4}^1 f(x) + \int_{1}^2 f(x) \to 0$
 
 ## Cumuluative Distribution Function 
 
