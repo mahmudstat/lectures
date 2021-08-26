@@ -217,6 +217,8 @@ function klikaj(i) {
 
 ## Properties of AM
 
+<a href="prob_ch3_expectation.html#/properties-of-expectation" targte=_blank">Also look at this</a>
+
 - $\sum (x_i-\bar x)=0$; can you prove it? 
 
 > - $\sum (x_i-\bar x)^2 \le \sum (x_i-a)^2, \space a \ne \bar x$

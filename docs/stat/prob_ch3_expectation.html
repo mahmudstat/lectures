@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Abdullah Al Mahmud" />
+  <title>Probability (Expectation)</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="prob_ch3_expectation_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="prob_ch3_expectation_files/reveal.js-3.3.0.1/css/theme/sky.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal .slide-menu-button {
+      left: 105px !important;
+    }
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="css\styles.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <div id="header-footer">
+      <p class="slide-footer"> | PCC | Mahmud | Statistics | statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
+    </div>
+    <link href="prob_ch3_expectation_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="prob_ch3_expectation_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Probability (Expectation)</h1>
+    <h2 class="author">Abdullah Al Mahmud</h2>
+</section>
+
+<section><section id="expectation-vs-average-am" class="title-slide slide level1"><h1>Expectation vs AVerage (AM)</h1><table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Accident</th>
+<th style="text-align: center;">Frequency<br>(rf)</th>
+<th style="text-align: center;">Relative<br>Frequency<br>(rf)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Bus</td>
+<td style="text-align: center;">70</td>
+<td style="text-align: center;">0.56</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Train</td>
+<td style="text-align: center;">35</td>
+<td style="text-align: center;">0.28</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Ship</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">0.16</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>125</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li class="fragment">Do rf’s look like probabilities?</li>
+<li class="fragment">AM = ?</li>
+</ul></section><section id="weighted-mean-revisited" class="slide level2">
+<h2>Weighted Mean Revisited</h2>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 18%" />
+<col style="width: 30%" />
+<col style="width: 12%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Daily<br>Income<br>(<span class="math inline">\(x\)</span>)</th>
+<th style="text-align: center;">Frequency<br>(<span class="math inline">\(f\)</span>)</th>
+<th style="text-align: center;">Relative<br>Frequency<br>(<span class="math inline">\(rf\)</span>)</th>
+<th style="text-align: center;"><span class="math inline">\(x \times f\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(x \times rf\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">400</td>
+<td style="text-align: center;">70</td>
+<td style="text-align: center;">0.56</td>
+<td style="text-align: center;">28000</td>
+<td style="text-align: center;">224</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">500</td>
+<td style="text-align: center;">35</td>
+<td style="text-align: center;">0.28</td>
+<td style="text-align: center;">17500</td>
+<td style="text-align: center;">140</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">800</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">0.16</td>
+<td style="text-align: center;">16000</td>
+<td style="text-align: center;">128</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>125</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">61500</td>
+<td style="text-align: center;">492</td>
+</tr>
+</tbody>
+</table>
+<p>If a man is randomly selected, what is the probability that his daily income is 400 BDT?</p>
+<ul>
+<li class="fragment">In expectation, <span class="math inline">\(rf\)</span> is the weight</li>
+</ul>
+</section><section id="expectation-from-mean" class="slide level2">
+<h2>Expectation from Mean</h2>
+<p><span class="math inline">\(\displaystyle \bar X=\frac{\Sigma x_if_i}{\Sigma f_i}\)</span></p>
+<ul>
+<li class="fragment"><span class="math inline">\(\frac{x_1f_1+x_2f_2+\cdots+x_3f_3}{N}\)</span> (letting <span class="math inline">\(\Sigma f_i=N\)</span>)</li>
+<li class="fragment"><span class="math inline">\(= x_1\frac{f_1}{N}+x_2\frac{f_2}{N}+\cdots +x_2\frac{f_n}{N}\)</span></li>
+<li class="fragment"><span class="math inline">\(= x_1p_1+x_2p_2+\cdots+x_np_n\)</span></li>
+<li class="fragment"><span class="math inline">\(= \sum x_i\cdot p(x_i)\)</span></li>
+</ul>
+</section><section id="expectation" class="slide level2">
+<h2>Expectation</h2>
+<p>Probabilities are weights</p>
+<p><span class="math display">\[\begin{eqnarray} 
+E(X) &amp;=&amp; x_1 \times P(x_1) + x_2 \times P(x_2)+ \cdots +x_n \times P(x_n)      \nonumber \\
+&amp;=&amp; \displaystyle \sum_{i=1}^n x_i \times P(x_i) \nonumber \\
+\end{eqnarray}\]</span></p>
+<div onclick="klikaj(&#39;expcont&#39;)">
+<span>For continuous X</span>
+</div>
+<div id="expcont" style="visibility: hidden">
+<p><span class="math inline">\(\displaystyle E(X) = \int_{-\infty}^{\infty} f(x)dx\)</span></p>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+<ul>
+<li class="fragment"><span class="math inline">\(E(X^2) = \sum x^2 \times p(x)\)</span></li>
+</ul>
+</section><section id="expectation-example" class="slide level2">
+<h2>Expectation Example</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(X\)</span></th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(P(x)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1 4\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1 2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1 4\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Find</p>
+<ol type="i">
+<li><span class="math inline">\(E(X)\)</span></li>
+<li><span class="math inline">\(E(X^2)\)</span></li>
+</ol>
+</section><section id="properties-of-expectation" class="slide level2">
+<h2>Properties of Expectation</h2>
+<p><a href="ch3_xi_stat.html#/properties-of-am" target="_blank">Aslo refer to the properties of AM</a> (<span class="math inline">\(E(X)=\bar X\)</span>)</p>
+<ul>
+<li class="fragment">Expectation of a constant, <span class="math inline">\(E(c)=c\)</span></li>
+<li class="fragment"><span class="math inline">\(E(aX)=aE(X)\)</span></li>
+<li class="fragment"><span class="math inline">\(E(X-a) = E(X) - E(a)\)</span></li>
+<li class="fragment"><span class="math inline">\(E(aX+b) = aE(X)+b\)</span></li>
+<li class="fragment"><span class="math inline">\(E(X+Y) = E(X)+E(Y)\)</span></li>
+<li class="fragment"><span class="math inline">\(E(XY) = E(X) E(Y)\)</span> (if independent, relate with probability)</li>
+<li class="fragment"><span class="math inline">\(E(X^2)\ge \{E(X)\}^2\)</span></li>
+<li class="fragment"><span class="math inline">\(E\left(\frac 1 X \right) \ge \frac 1 {E(X)}\)</span></li>
+</ul>
+</section><section id="variance" class="slide level2">
+<h2>Variance</h2>
+<p><a href="ch4_xi_stat_dispersion.html#/variance-and-sd" target="_blank">Recall this (click)</a></p>
+<p>We knew, <span class="math inline">\(\sigma^2 = \bar {X^2} - (\bar X)^2=\)</span> Mean of square - square of mean</p>
+<ul>
+<li class="fragment"><span class="math inline">\(V(X)=E(X^2)-\{E(X)\}^2\)</span></li>
+<li class="fragment">Original Formula: <span class="math inline">\(V(X) = E\{x-E(X)\}^2\)</span> (Match)</li>
+<li class="fragment">Expand and prove these are equal</li>
+</ul>
+</section><section id="variance-properties" class="slide level2">
+<h2>Variance Properties</h2>
+<ul>
+<li class="fragment"><span class="math inline">\(V(c)=0\)</span> ponder, why?</li>
+<li class="fragment"><span class="math inline">\(V(X+a)=V(X)\)</span></li>
+<li class="fragment"><span class="math inline">\(V(aX+c) = a^2V(X)\)</span> (depends only on scale, recall)</li>
+<li class="fragment"><span class="math inline">\(V(X+Y) = V(X)+V(Y)\)</span></li>
+</ul>
+</section><section id="covariance" class="slide level2">
+<h2>Covariance</h2>
+<p><span class="math inline">\(Cov(X,Y) = \frac{\Sigma (x-\bar x)(y-\bar x)}{n}\)</span></p>
+<p>Write in terms of <span class="math inline">\(E(X)\)</span></p>
+<ul>
+<li class="fragment"><span class="math inline">\(Cov(X,Y) = E [\{x-E(X)\}\{y-E(Y)\}]\)</span> (Expand)</li>
+<li class="fragment"><span class="math inline">\(E(XY)-E(X)E(Y)\)</span></li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="prob_ch3_expectation_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="prob_ch3_expectation_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: false,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+        menu: {
+          custom: false,
+          themes: false,
+          transitions: false
+        },
+
+
+
+        chalkboard: {
+        },
+
+        keyboard: {
+          67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+          66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+          46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+           8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+          68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'prob_ch3_expectation_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 'prob_ch3_expectation_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+          { src: 'prob_ch3_expectation_files/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

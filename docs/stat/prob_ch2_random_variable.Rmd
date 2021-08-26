@@ -273,6 +273,18 @@ x = 0, 1; y = 1, 2, 3, 4, 5, 6
 
 Construct the distribution.
 
+## Joint-Marginal-Conditional Revisited
+
+| Exam (X) $\to$<br>Result (Y) $\downarrow$ |   PSC  |   JSC  |   SSC  |   HSC  |  Total  |
+|:-----------------------------------------:|:------:|:------:|:------:|:------:|:-------:|
+|                   Passed                  |   30   |   26   |   23   |   25   | **104** |
+|                   Failed                  |   12   |   13   |   10   |   14   |  **49** |
+|                   Absent                  |    5   |    2   |    3   |    4   |  **14** |
+|                 **Total**                 | **47** | **41** | **36** | **43** | **167** |
+
+> - Marginal: $P(Pass) = P(x_1)=P(x_1,y_1)+P(x_1,y_2)+P(x_1,y_3)$
+> - $P(Absent) = P(x_3) = P(x_3,y_1)+P(x_3,y_2)+P(x_3,y_3)$
+
 ## Marginal Probability
 
 
@@ -318,4 +330,4 @@ $P(x,y) = \frac{x+y}{9}; x=0,1,2; y = 0, 1$
 
 Find $P(x|y)$ and $P(x|y)$
 
- 
+Find for continuous X.
