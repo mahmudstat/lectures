@@ -5,8 +5,13 @@ date: \today
 output: 
   revealjs::revealjs_presentation:
     theme: sky
+    transition: zoom
     reveal_plugins: ["chalkboard", "zoom", "menu"]
+    reveal_options:
+      chalkboard:
+        theme: whiteboard
     self_contained: false
+    lib_dir: libs
     css: css/styles.css
     includes:
       in_header: css/header.html
@@ -171,3 +176,8 @@ $E(\frac 1 X) \ge \frac 1 {E(X)}$
 > - $HM =$ opposite of mean of opposite $\to \frac{1}{\frac{\sum x_i}{n}}$
 > - $E(X) \ge \frac{1}{E(\frac 1 x)}$
 > - If $0.5 \gt \frac 1 3 \to 3 \gt  \frac 1 {0.5}$
+
+## Demo Slide
+
+Contents
+

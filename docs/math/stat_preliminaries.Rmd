@@ -126,6 +126,8 @@ Number of class = ?
 </div>
 </div>
 
+# Diagrams
+
 ## Histogram
 
 <div class="container">
@@ -207,7 +209,7 @@ Histogram
 
 <img class="plain" src="img/pie_example.png" width="580">
 
-## Construction Pie Chart
+## Construction of Pie Chart
 
 Fruit production in Bangladesh (made-up data)
 
@@ -222,4 +224,76 @@ Find angles and plot them on the circle
 
 $Angle = \frac{f_i}{\Sigma f_i}\times 360$
 
-## SHort-cut Method for AM 
+## When to Use Pie Chart
+
+> - Pie: For data that are part of a whole
+> - For all categorical data
+
+<div class="container">
+<div class="col">
+```{r, echo = FALSE}
+us_races <- data.frame(
+  Race = c("White", "Black", "Multiracial", "Asian", "Others"), 
+  Percentage = c(61.6, 12.4, 10.2, 6, 9.8))
+knitr::kable(
+us_races, booktabs = TRUE,
+  caption = "US Races")
+```
+</div>
+<div class="col">
+```{r, echo = FALSE}
+bd_pop <- data.frame(Year = c(1901, 1991, 2001, 2011),
+                 Population = c(87, 106, 124, 142))
+knitr::kable(
+bd_pop, booktabs = TRUE,
+  caption = "Bangladesh Population")
+``` 
+</div>
+</div>
+
+## Pie vs Bar Chart
+
+<div class="container">
+<div class="col">
+Pie Chart
+
+<img class="plain" src="resources/us_races_pie.png" width="400">
+
+[Click to see large image](resources/us_races_pie.png)
+</div>
+<div class="col">
+Bar Chart
+
+<img class="plain" src="resources/us_races.png" width="400">
+
+[Click to see large image](resources/us_races.png)
+</div>
+</div>
+
+## Bar Chart vs Histogram
+
+<div class="container">
+<div class="col">
+Quantitative Data $\to$ Histogram
+
+```{r,echo=FALSE}
+set.seed(2)
+sample(100,8)
+```
+
+</div>
+<div class="col">
+Qualitative Data $\to$ Bar Diagram / Pie Chart
+
+```{r, echo = FALSE}
+bd_rel <- data.frame(
+  Religion = c("Islam", "Hinduism", "Buddhism", "Christianity", "Others"),
+  Percentage = c(90.4, 8.5, 0.6, 0.4, 0.1))
+knitr::kable(
+bd_rel, booktabs = TRUE,
+  caption = "BD Religions")
+```
+</div>
+</div>
+
+## Short-cut Method for AM 

@@ -1,0 +1,32 @@
+library(tidyverse)
+library(ggsci)
+library(RColorBrewer)
+
+bd_rel <- tibble(
+  Religion = c("Islam", "Hinduism", "Buddhism", "Christianity", "Others"),
+  Percentage = c(90.4, 8.5, 0.6, 0.4, 0.1))
+
+us_races <- tibble(
+  Race = c("White", "Black", "Multiracial", "Asian", "Others"), 
+  Percentage = c(61.6, 12.4, 10.2, 6, 9.8))
+
+us_races %>% ggplot(aes(Race, Percentage, fill = Race))+
+  geom_bar(stat="identity", width = 0.6)+
+  scale_fill_brewer(palette = "Set2")
+  geom_text(data = us_races, aes(Race, Percentage-2, 
+                                 label=paste0(Percentage, "%")))
+ggsave("docs/math/resources/us_races.png")
+  
+us_races$Race=factor(us_races$Race, 
+                     levels = us_races$Race[order(-us_races$Percentage)])
+
+pie(us_races$Percentage, us_races$Race,
+    col = c('#009933', '#ff9900', '#ffcc99', '#cc6600', '#cc66ff'),
+    init.angle = 130, border = NA )
+
+pie(us_races$Percentage, us_races$Race,
+    col = c('#9900ff', '#cc99ff', '#cc66ff', '#cc33ff', '#9900cc'),
+    init.angle = 130, border = NA )
+
+bd_pop <- tibble(Year = c(1901, 1991, 2001, 2011),
+                 Population = c(87, 106, 124, 142))

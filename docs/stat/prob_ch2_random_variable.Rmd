@@ -7,6 +7,7 @@ output:
     theme: sky
     reveal_plugins: ["chalkboard", "zoom", "menu"]
     self_contained: false
+	lib_dir: libs
     css: css/styles.css
     includes:
       in_header: css/header.html
