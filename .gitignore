@@ -5,3 +5,4 @@ rdatascience
 *.bmp
 *.log
 *.tex
+tmp*
