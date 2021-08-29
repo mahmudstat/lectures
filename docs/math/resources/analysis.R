@@ -12,10 +12,26 @@ us_races <- tibble(
 
 us_races %>% ggplot(aes(Race, Percentage, fill = Race))+
   geom_bar(stat="identity", width = 0.6)+
-  scale_fill_brewer(palette = "Set2")
+  scale_fill_brewer(palette = "Set2")+
   geom_text(data = us_races, aes(Race, Percentage-2, 
-                                 label=paste0(Percentage, "%")))
+                      label=paste0(Percentage, "%")))
+
+  
 ggsave("docs/math/resources/us_races.png")
+  
+## Pie
+
+us_races %>% ggplot(aes(2, Percentage, fill = Race))+
+  geom_col(position = "stack", width = 1)+
+  xlim(0.5, 2.5)+
+  coord_polar("y")+
+  theme_void()+
+  geom_text(aes(label = paste0(Percentage, " %")), 
+            position = position_stack(vjust = 0.5), size = 4)+
+  scale_fill_brewer(palette = "Set3")
+
+  
+ggsave("docs/math/resources/us_races_donut.png")
   
 us_races$Race=factor(us_races$Race, 
                      levels = us_races$Race[order(-us_races$Percentage)])
@@ -30,3 +46,25 @@ pie(us_races$Percentage, us_races$Race,
 
 bd_pop <- tibble(Year = c(1901, 1991, 2001, 2011),
                  Population = c(87, 106, 124, 142))
+## Pie 
+
+Sex = c('Male', 'Female')
+Number = c(125, 375)
+df = data.frame(Sex, Number)
+
+ggplot(aes(x= Sex, y = Number, fill = Sex), data = df) +
+  geom_bar(stat = "identity") +
+  coord_polar("y") +
+  theme_void() +
+  theme (legend.position="top") + # legend position
+  geom_text(aes(label = (Number/sum(Number))), position = position_stack(vjust = 0.75), size = 3) +
+  ggtitle("Participants by Sex")
+
+ggplot(df, aes(x = 2, y = Number, fill = Sex)) +
+  geom_col(position = "stack", width = 1) +
+  geom_text(aes(label = (Number/sum(Number))), position = position_stack(vjust = 0.75), size = 3) +
+  xlim(0.5, 2.5) +
+  ggtitle("Participants by Sex")+
+  coord_polar("y") +
+  theme_void() +
+  theme(legend.position="top")

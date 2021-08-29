@@ -270,6 +270,12 @@ Bar Chart
 </div>
 </div>
 
+## Donut Chart
+
+<img class="plain" src="resources/us_races_donut.png" width="580">
+
+[To see how they are made, click here](resources/analysis.R)
+
 ## Bar Chart vs Histogram
 
 <div class="container">

@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Rice', 'Yearly Production in tons'],
+          ['Jute',     11],
+          ['Rice',      22],
+          ['Wheat',  12],
+          ['Barley', 7],
+          ['Oat',    4]
+        ]);
+
+        var options = {
+          title: 'Cereal Production in Bangladesh',
+          pieHole: 0.5,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="donutchart" style="width: 500px; height: 300px;"></div>
+  </body>
+</html>
