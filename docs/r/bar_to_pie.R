@@ -14,9 +14,14 @@ us_races <- tibble(
 us_races$Race=factor(us_races$Race, 
                      levels = us_races$Race[order(-us_races$Percentage)])
 
+colfunc <- colorRampPalette(c("#33cccc", "#9900ff"))
 
 us_races %>% ggplot(aes(Race, Percentage, fill = Race))+
   geom_bar(stat="identity", width = 0.6)
+
+us_races %>% ggplot(aes(Race, Percentage, fill = Race))+
+  geom_bar(stat="identity", width = 0.6)+
+  scale_fill_manual(values = colfunc(5))
 
 ggsave("docs/r/tmp_bar1.png")
 
@@ -89,8 +94,8 @@ us_races %>% ggplot(aes(x=2, y = Percentage, fill = Race))+
   geom_text(aes(label = paste0(Percentage, " % \n ", Race)), 
             position = position_stack(vjust = 0.5), 
             size = 4, color = "black")+
-  scale_fill_brewer(palette = 1)+
-  xlim(0.5, 2.5)
+  scale_fill_manual(values = colfunc(5))+
+  xlim(-0.5, 2.5)
 
 ## Solar system
 
