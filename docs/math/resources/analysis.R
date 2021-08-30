@@ -83,7 +83,7 @@ us_races %>% ggplot(aes(2, Percentage, fill = Race))+
 ggsave("docs/math/resources/us_races_donut.png")
 # Works great. Don't tweak
 
-## ggplot2 Pie
+## Pie
 
 pie(us_races$Percentage, us_races$Race,
     col = c('#009933', '#ff9900', '#ffcc99', '#cc6600', '#cc66ff'),
@@ -95,7 +95,7 @@ pie(us_races$Percentage, us_races$Race,
 
 bd_pop <- tibble(Year = c(1901, 1991, 2001, 2011),
                  Population = c(87, 106, 124, 142))
-## Pie 
+## Pie ggplot2
 
 Sex = c('Male', 'Female')
 Number = c(125, 375)
