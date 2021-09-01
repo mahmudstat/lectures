@@ -744,7 +744,7 @@ function klikaj(i) {
 <li class="fragment"><span class="math inline">\(E(0)=0\)</span></li>
 </ul>
 </section><section id="vaxb" class="slide level2">
-<h2>V(ax+b)</h2>
+<h2>V(aX+b)</h2>
 <p><span class="math inline">\(V(X) = E\{X-E(X)\}^2\)</span></p>
 <p><span class="math inline">\(V(aX+b)=\)</span></p>
 <ul>
@@ -754,7 +754,57 @@ function klikaj(i) {
 <li class="fragment"><span class="math inline">\(a^2E\{X-E(X)\}^2\)</span></li>
 <li class="fragment"><span class="math inline">\(a^2V(X)\)</span></li>
 <li class="fragment">Does variance depend on origin and scale?</li>
+<li class="fragment"><span class="math inline">\(V(X+Y)=?\)</span></li>
 </ul>
+</section><section id="covxy-properties" class="slide level2">
+<h2>Cov(X,Y) Properties</h2>
+<p>For independent X, Y</p>
+<ul>
+<li class="fragment"><span class="math inline">\(\to E(XY) = E(X)E(Y)\)</span></li>
+<li class="fragment"><span class="math inline">\(Cov(X,Y) = E(XY) - E(X)E(Y) = 0\)</span></li>
+<li class="fragment">Correlation, <span class="math inline">\(r = \frac{Cov(X,Y)}{\sigma_x \sigma_y}=0\)</span></li>
+</ul>
+</section><section id="example-01" class="slide level2">
+<h2>Example 01</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">x</th>
+<th style="text-align: center;">-3</th>
+<th style="text-align: center;">-2</th>
+<th style="text-align: center;">-1</th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">P(x)</td>
+<td style="text-align: center;">k</td>
+<td style="text-align: center;">2k</td>
+<td style="text-align: center;">3k</td>
+<td style="text-align: center;">2k</td>
+<td style="text-align: center;">4k</td>
+<td style="text-align: center;">0.4</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li>Find k</li>
+<li>Find <span class="math inline">\(E(X)\)</span> and <span class="math inline">\(V(X)\)</span></li>
+</ol>
+</section><section id="example-02" class="slide level2">
+<h2>Example 02</h2>
+<p><span class="math inline">\(P(x) = \frac 1 n; x = 1,2,3, \cdots,n\)</span> Find <span class="math inline">\(E(X)\)</span> and <span class="math inline">\(V(X)\)</span></p>
+</section><section id="example-03" class="slide level2">
+<h2>Example 03</h2>
+<p><span class="math inline">\(P(x)=\frac {3-|4-x|} k; x = 2,3,4,5,6\)</span></p>
+<p>Find</p>
+<ol type="i">
+<li>k</li>
+<li>V(2X-1)</li>
+</ol>
 </section></section>
     </div>
   </div>
