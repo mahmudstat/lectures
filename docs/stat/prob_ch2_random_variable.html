@@ -8,11 +8,11 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="prob_ch2_random_variable_files/reveal.js-3.3.0.1/css/reveal.css"/>
+  <link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/reveal.css"/>
 
 
 
-<link rel="stylesheet" href="prob_ch2_random_variable_files/reveal.js-3.3.0.1/css/theme/sky.css" id="theme">
+<link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/theme/sky.css" id="theme">
 
 
   <!-- some tweaks to reveal css -->
@@ -450,8 +450,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <div id="header-footer">
       <p class="slide-footer"> | PCC | Mahmud | Statistics | statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
     </div>
-    <link href="prob_ch2_random_variable_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-    <link href="prob_ch2_random_variable_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+    <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 </head>
 <body>
   <div class="reveal">
@@ -969,13 +969,21 @@ Find the probabilities that
 </section><section id="conditional-probability-example" class="slide level2">
 <h2>Conditional Probability Example</h2>
 <p><span class="math inline">\(P(x,y) = \frac{x+y}{9}; x=0,1,2; y = 0, 1\)</span></p>
-<p>Find <span class="math inline">\(P(x|y)\)</span> and <span class="math inline">\(P(x|y)\)</span></p>
+<p>Find <span class="math inline">\(P(X|Y)\)</span> and <span class="math inline">\(P(Y|X)\)</span></p>
+<p>Find for continuous X as well.</p>
+</section><section id="find-k-for-pdf" class="slide level2">
+<h2>Find k for pdf</h2>
+<p><span class="math inline">\(f(x) = kx^2+kx+\frac 1 8; 0 \lt x \lt 2\)</span></p>
+<ol type="1">
+<li>Find k</li>
+<li>Find <span class="math inline">\(P(1 \lt X \lt 2)\)</span></li>
+</ol>
 </section></section>
     </div>
   </div>
 
-  <script src="prob_ch2_random_variable_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
-  <script src="prob_ch2_random_variable_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+  <script src="libs/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="libs/reveal.js-3.3.0.1/js/reveal.js"></script>
 
   <script>
 
@@ -987,7 +995,7 @@ Find the probabilities that
         // Vertical centering of slides
         center: false,
         // Transition style
-        transition: 'default', // none/fade/slide/convex/concave/zoom
+        transition: 'zoom', // none/fade/slide/convex/concave/zoom
         // Transition style for full page slide backgrounds
         backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
 
@@ -1000,6 +1008,7 @@ Find the probabilities that
 
 
         chalkboard: {
+          theme: 'whiteboard',
         },
 
         keyboard: {
@@ -1012,9 +1021,9 @@ Find the probabilities that
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: 'prob_ch2_random_variable_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
-          { src: 'prob_ch2_random_variable_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
-          { src: 'prob_ch2_random_variable_files/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
         ]
       });
     </script>

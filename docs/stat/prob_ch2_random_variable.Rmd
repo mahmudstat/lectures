@@ -5,9 +5,13 @@ date: \today
 output: 
   revealjs::revealjs_presentation:
     theme: sky
+    transition: zoom
     reveal_plugins: ["chalkboard", "zoom", "menu"]
+    reveal_options:
+      chalkboard:
+        theme: whiteboard
     self_contained: false
-	lib_dir: libs
+    lib_dir: libs
     css: css/styles.css
     includes:
       in_header: css/header.html
@@ -329,13 +333,13 @@ Properties
 
 $P(x,y) = \frac{x+y}{9}; x=0,1,2; y = 0, 1$
 
-Find $P(x|y)$ and $P(y|x)$
+Find $P(X|Y)$ and $P(Y|X)$ 
 
-Find for continuous X as well.
+Find for continuous X as well. 
 
 ## Find k for pdf
 
-$f(x) = kx^2+kx+\frac 18; 0 \lt x \lt 2$
+$f(x) = kx^2+kx+\frac 1 8; 0 \lt x \lt 2$
 
-a. Find k
-b. Find $P(1 \lt X \lt 2)$
+1. Find k
+2. Find $P(1 \lt X \lt 2)$

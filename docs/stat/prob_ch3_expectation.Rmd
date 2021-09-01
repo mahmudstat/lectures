@@ -173,11 +173,27 @@ $V(X)\ge 0$
 $E(\frac 1 X) \ge \frac 1 {E(X)}$
 
 > - $AM \ge HM$
-> - $HM =$ opposite of mean of opposite $\to \frac{1}{\frac{\sum x_i}{n}}$
+> - $HM =$ opposite of mean of opposite $\to \frac{1}{\frac{\sum \frac 1 {x_i}}{n}} = \frac 1 {E(\frac 1 x)}$
 > - $E(X) \ge \frac{1}{E(\frac 1 x)}$
 > - If $0.5 \gt \frac 1 3 \to 3 \gt  \frac 1 {0.5}$
 
-## Demo Slide
+## Variance of constant (a)
 
-Contents
+$V(X) = E\{X-E(X)\}^2$
 
+> - $V(a) = E\{a-E(a)\}^2$
+> - $E(a-a)^2$
+> - $E(0)=0$
+
+## V(aX+b)
+
+$V(X) = E\{X-E(X)\}^2$
+
+$V(aX+b)=$
+
+> - $E\{(aX+b)-E(aX+b)\}^2$
+> - $E\{aX+b-aE(X)-b\}^2$
+> - $E\{aX-aE(X)\}^2$
+> - $a^2E\{X-E(X)\}^2$
+> - $a^2V(X)$
+> - Does variance depend on origin and scale? 
