@@ -1,0 +1,187 @@
+---
+title: ''
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+
+\begin{center}
+\begin{large}
+Pabna Cadet College
+\end{large}
+
+Fortnightly Examination - 2021
+
+Subject: Mathematics
+
+Class: VII
+\end{center}
+
+Time: 3 hours
+\hfill
+Full Marks: 80
+
+\textbf{Answer all the questions}
+
+1. Square root of $\frac{196}{289}$
+
+a. $\frac{14}{19}$
+b. $\frac{17}{19}$
+c. $\frac{14}{17}$
+d. $\frac{13}{19}$
+
+Answer: c. $\frac{14}{17}$
+
+2. Which digits in the unit place do make numbers with 4 in unit place?
+
+a. 2, 4
+b. 6, 8
+c. 4, 6
+d. 2, 8 
+
+Answer: d. 2, 8 
+
+3. Which of the following is an irrational number?
+
+a. $\sqrt 8$
+b. $\sqrt 9$
+c. $\frac{20}{7}$
+d. $\sqrt 9$
+
+Answer: a. $\sqrt 8$
+
+4. Which number is the greatest?
+
+a. $0.02$
+b. $0.02^2$
+c. $\sqrt{0.02}$
+d. $\frac{2}{100}$
+
+Answer: c. $\sqrt{0.02}$
+
+5. $[2\{(1+1)-2\}]=?$
+
+a. 2
+b. 4 
+c. 0 
+d. -2
+
+Answer: a. 2
+
+6. $\frac{a^{-3}}{a}=?$
+
+a. $a^{-2}$
+b. $a^{-4}$
+c. $a^{-3}$
+d. $a^2$
+
+Answer: b. $a^{-4}$
+
+7. $x^7 \div x^{-2}=?$
+
+a. $x^5$
+b. $x^9$
+c. $x^{-14}$
+d. $x^{-9}$
+
+Answer: b. $x^9$
+
+8. If  $x=2 \space and  \space y = 4, (p^x)^y=?$
+
+a. $p^6$
+b. $p^2$
+c. $p^8$
+d. $p^4$
+
+Answer: c. $p^8$
+
+9. What is the value of $x^3+2x^2$, if $x=2$?
+
+a. 16
+b. 10
+c. 12
+d. 8
+
+Answer: a. 16
+
+10. $x^1+x^0+x^{-1}=?$
+
+a. $\frac{x^2+x}{x}$
+b. $\frac{x^2+1}{x}$
+c. $\frac{x^2+x+1}{x}$
+d. $\frac{x+1}{x^2}$
+
+Answer: c. $\frac{x^2+x+1}{x}$
+
+11. $\frac{85x^3y^5}{17y^2}=$
+ 
+a. $5xy^3$ 
+b. $5x^3y^{10}$
+c. $5xy^3$
+d. $5(xy)^3$
+
+Answer: d. $5(xy)^3$
+
+12. The product of $7ab^3$ and $5a^4b^{-3}$ is-
+
+a. $35a^5$
+b. $5a^5$
+c. $35a^5b^{-9}$
+d. $35a^5b^3$
+
+Answer: a. $35a^5$
+
+13. $m+n=2$ and $m-n=5.$ What is the value of $m^2-n^2?$
+
+a. 10
+b. -3
+c. 3
+d. 7
+
+Answer: a. 10
+
+14. The value of $(c+d)^2-(2c+2d)(c-d)+(c-d)^2=?$
+
+a. $2c^2$
+b. $0$
+c. $2d^2$
+d. $\{2(c+d)\}^2$
+
+Answer: b. $0$
+
+15. What is the value if $ax^2+b$ is multiplied with $ax^2-b$ 
+
+a. $a^4x^2+b^2$
+b. $a^2x^4-b^4$
+c. $a^2x^4+b^2$
+d. $a^2x^4-b^2$
+
+Answer: d. $a^2x^4-b^2$
+
+16. What is the result of the product $(2g+f)(2g-f)(4g^2+f^2)$?
+
+a. $16g^4-f^2$
+b. $12g^2-f^4$
+c. $16g^4-f^4$
+d. $16g^2-f^4$
+
+Answer: c. $16g^4-f^4$
+
+17. If $m^2-2m=-1$, what is the value of $m^4+\frac 1 {m^4}?$
+
+a. 2
+b. 4 
+c. 5
+d. 6
+
+Answer: a. 2
+
+18. Which of the following is not a part of a construction of a geometric proposition? 
+
+a. Data
+b. Steps of Construction
+c. General and Particular Enunciaton 
+d. Proof 
+
+Answer: c. General and Particular Enunciaton 

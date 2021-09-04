@@ -1,0 +1,42 @@
+---
+title: ''
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+\begin{center}
+\begin{large}
+Pabna Cadet College
+\end{large}
+
+Fortnightly Examination - 2021
+
+Third Term Phase One
+
+Subject: Statistics
+
+Class: XII
+\end{center}
+
+Time: 40 minutes
+\hfill
+Full Marks: 20
+
+Answer all the questions.
+
+1. $A = {1,3,5}$ and $B={1,3,4,6}$; Are $A$ and $B$ independent? \hfill 3
+
+2. What are the conditions of axiomatic probability? \hfill 3
+3. What is the probability that there are 53 Fridays in a leap year? \hfill 2
+4. What is the size of a sample space generated from tossing a coin 5 times? \hfill 1
+5. Draw the probability tree for an experiment involving tossing a coin and a die. \hfill 1
+6. It is found from a survey that 40% people read The Washington Post, 50% read The New York Times, and 20% read both. 
+a. Define event in the field of probability theory. \hfill 1
+b. If two events $A$ and $B$ are independent, $A \cup B=?$ \hfill 2
+c. From the stem, find the probability that a randomly selected person reads at least one newspaper. \hfill 3
+d. Is the equation $X+Y-0.3=0$ correct, where X is probability of reading only The Washington Post and Y is probability of reading only The New York Times. Prove mathematically. \hfill 4
+
+\begin{center}
+---Good Luck---
+\end{center}
