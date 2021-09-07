@@ -346,6 +346,122 @@ $(a+b)^2 = a^2+2ab+b^2$
 </div>
 </small>
 
+## Chapter 5.2
+
+## Formula 
+
+- $(a+b)(a-b)=a^2-b^2$
+- $(x+a)(x+b) = x^2+x(a+b)+ab$
+
+## Multiply Using Formula
+
+<small>
+
+<div class="container">
+<div class="col">
+<u>Questions</u>
+
+<div onclick="klikaj('fmult1')"> 
+> - $1. \space (10+xy)(10-xy)$
+</div>
+<div onclick="klikaj('fmult2')"> 
+> -  $2. \space (3x+2y+1)(3x-2y+1)$
+</div>
+<div onclick="klikaj('fmult3')"> 
+> -  $3. \space (x^2-x+1(x^2+x+1)$
+</div>
+<div onclick="klikaj('fmult4')"> 
+> -  $4. \space (y+4)(y+7)$
+</div>
+</div>
+<div class="col">
+<u>Answers</u>
+
+<div id="fmult1" style="visibility: hidden">
+1. $100-x^2y^2$
+</div>
+<div id="fmult2" style="visibility: hidden">
+2. $(3x+1+2y)(3x+1-2y) \\ \to (3x+1)^2-(2y)^2 \to expand$
+</div>
+<div id="fmult3" style="visibility: hidden">
+3. $(x^2+1)^2-x^2$
+</div>
+<div id="fmult4" style="visibility: hidden">
+4. $y^2+y(4+7)+4 \cdot 7$
+</div>
+</div>
+</div>
+
+</small>
+
+# Chapter 5.3 (Factorization)
+
+## Factorization Concept
+
+> - What is a factor? What's another name?
+> - $12 = 3 \times 4 = 3 \times 2 \times 2$
+> - $a^2+ab = a(a+b)$
+> - $a^2-b^2 = (a+b)(a-b)$
+> - $a^2+5a+6=?$
+
+## Resolve into Factors
+
+<div class="container">
+<div class="col">
+<u>Questions</u>
+
+<div onclick="klikaj('fact1')"> 
+> - $1. \space 2x-6x^2$
+</div>
+<div onclick="klikaj('fact2')"> 
+> -  $2. \space 25(a+2b)^2-36(2a-5b)^2$
+</div>
+<div onclick="klikaj('fact3')"> 
+> -  $3. \space 2bd-a^2-c^2+b^2+d^2+2ac$
+</div>
+<div onclick="klikaj('fact4')"> 
+> -  $4. \space x^2+11x+30$
+</div>
+<div onclick="klikaj('fact5')"> 
+> -  $5. \space 2x^2+11x+12$
+</div>
+<div onclick="klikaj('fact6')"> 
+> -  $6. \space 6x^2+17x+5$
+</div>
+</div>
+<div class="col">
+<u>Answers</u>
+
+<div id="fact1" style="visibility: hidden">
+1. $2x(1-3x)$
+</div>
+<div id="fact2" style="visibility: hidden">
+2. $(5x)^2-(6y)^2$
+</div>
+<div id="fact3" style="visibility: hidden">
+3. $(b+d)^2-(a-c)^2$
+</div>
+<div id="fact4" style="visibility: hidden">
+4. $x^2+5x+6x+30$
+</div>
+<div id="fact5" style="visibility: hidden">
+5. $2x^2+8x+3x+12 \to$
+</div>
+<div id="fact6" style="visibility: hidden">
+6. $6x^2+15x+2x+5 \to$
+</div>
+</div>
+</div>
+
+# LCM-HCF
+
+# LCM-HCF Concepts
+
+- Factor
+- Dividend
+- Quotient
+- Divisor
+
 # Problems to Think
 
 ## Camel Problem

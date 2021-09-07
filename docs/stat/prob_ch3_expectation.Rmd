@@ -26,8 +26,8 @@ output:
 |    Ship   |         20        |              0.16             |
 | **Total** |      **125**      |             **1**             |
 
-> - Do rf's look like probabilities?
-> - AM = ?
+> - Do rfs look like probabilities?
+> - What is the probability that an accident is ocurred in a Bus service?
 
 ## Weighted Mean Revisited
 
@@ -40,6 +40,7 @@ output:
 
 If a man is randomly selected, what is the probability that his daily income is 400 BDT?
 
+> - $AM = \frac{61500}{125}=492$
 > - In expectation, $rf$ is the weight
 
 ## Expectation from Mean
