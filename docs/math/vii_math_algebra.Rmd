@@ -453,14 +453,37 @@ $(a+b)^2 = a^2+2ab+b^2$
 </div>
 </div>
 
-# LCM-HCF
+# Chapter 5.2: LCM-HCF
 
-# LCM-HCF Concepts
+## LCM-HCF Concepts
 
 - Factor
 - Dividend
 - Quotient
 - Divisor
+
+## LCM Example
+
+Multiples
+
+$12 \to 12, 24, 36, 48, 60, 72, 84, 96$
+
+$16 \to 16, 32, 48, 64, 80, 96$
+
+> - Common multiples: 48, 96
+> - Lowest Common multiple: 48
+> - $8x^2yz^2, 10x^3yz^3$
+
+## HCF Example
+
+Factors
+
+$12 \to 2, 3, 4, 6, 12$
+
+$16 \to 2, 4, 8, 16$
+
+> - Common factors: 2, 4
+> - Highest common factor (HCF): 4
 
 # Problems to Think
 

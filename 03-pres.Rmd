@@ -30,7 +30,7 @@ See more [here](https://defkey.com/reveal-js-shortcuts)
 
 **Elementary Statistics**
 
-- [Elementary Statistics](https://lecture.statmania.info/stat/stat_preliminaries.html)
+- [Elementary Statistics](https://lecture.statmania.info/math/stat_preliminaries.html)
 
 ### Mathematics {- #math}
 

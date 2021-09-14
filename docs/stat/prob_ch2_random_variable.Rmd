@@ -17,6 +17,10 @@ output:
       in_header: css/header.html
 ---
 
+## Previous Chapter 
+
+[Introduction to Probability](prob_ch1_intro.html)
+
 # Concepts
 
 <script>
@@ -343,3 +347,7 @@ $f(x) = kx^2+kx+\frac 1 8; 0 \lt x \lt 2$
 
 1. Find k
 2. Find $P(1 \lt X \lt 2)$
+
+## Next Chapter
+
+[Mathematical Expectation](prob_ch3_expectation.html)
