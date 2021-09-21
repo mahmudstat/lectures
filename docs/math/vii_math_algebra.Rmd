@@ -485,6 +485,117 @@ $16 \to 2, 4, 8, 16$
 > - Common factors: 2, 4
 > - Highest common factor (HCF): 4
 
+## Find LCM
+
+<small>
+<div class="container">
+<div class="col">
+<u>Questions</u>
+
+<div onclick="klikaj('lcm1')"> 
+> - $1. 4x^2y^3z, 6xy^3z^2, 8x^3yz^3$
+</div>
+<div onclick="klikaj('lcm2')"> 
+> -  $2. a-2, a^2-4, a^2-a-2$
+</div>
+<div onclick="klikaj('lcm3')"> 
+> -  $3. x^3-3x^2-10x, x^3+6x^2+8x, x^4-5x^3-14x^2$
+</div>
+<div onclick="klikaj('lcm4')"> 
+> -  $4. xy-y, x^3y-xy, x^2-2x+1$
+</div>
+<div onclick="klikaj('lcm5')"> 
+> -  $5. x^2-8x+15, x^2-25, x^2+2x-15$
+</div>
+<div onclick="klikaj('lcm6')"> 
+> -  $6. a^2-7a+12, a^2+a-20, a^2+2a-15$
+</div>
+</div>
+<div class="col">
+<u>Answers</u>
+
+<div id="lcm1" style="visibility: hidden">
+1. $24x^3y^2z^3$
+</div>
+<div id="lcm2" style="visibility: hidden">
+2. $(a+1)(a+2)(a-2)$
+</div>
+<div id="lcm3" style="visibility: hidden">
+3. $x^2(x+2)(x+4)(x-7)$
+</div>
+<div id="lcm4" style="visibility: hidden">
+4. $xy(x+1)(x-1)^2$
+</div>
+<div id="lcm5" style="visibility: hidden">
+5. $(x-3)(x^2-25)$
+</div>
+<div id="lcm5" style="visibility: hidden">
+6. $(a+5)(a-3)(a-4)$
+</div>
+</div>
+</div>
+
+</small>
+
+## Find HCF
+
+<small>
+<div class="container">
+<div class="col">
+<u>Questions</u>
+
+<div onclick="klikaj('hcf1')"> 
+> - $1. 4x^2y^3z, 6xy^3z^2, 8x^3yz^3$
+</div>
+<div onclick="klikaj('hcf2')"> 
+> -  $2. a^2+ab, a^2-b^2$
+</div>
+<div onclick="klikaj('hcf3')"> 
+> -  $3. x^3-3x^2-10x, x^3+6x^2+8x, x^4-5x^3-14x^2$
+</div>
+<div onclick="klikaj('hcf4')"> 
+> -  $4. xy-y, x^3y-xy, x^2-2x+1$
+</div>
+<div onclick="klikaj('hcf5')"> 
+> -  $5. x^2-8x+15, x^2-25, x^2+2x-15$
+</div>
+<div onclick="klikaj('hcf6')"> 
+> -  $6. a^2-7a+12, a^2+a-20, a^2+2a-15$
+</div>
+</div>
+<div class="col">
+<u>Answers</u>
+
+<div id="hcf1" style="visibility: hidden">
+1. $2xyz$
+</div>
+<div id="hcf2" style="visibility: hidden">
+2. $(a+b)$
+</div>
+<div id="hcf3" style="visibility: hidden">
+3. $x(x+2)$
+</div>
+<div id="hcf4" style="visibility: hidden">
+4. $(x-1)$
+</div>
+<div id="hcf5" style="visibility: hidden">
+5. $1$
+</div>
+<div id="hcf6" style="visibility: hidden">
+6. $1$
+</div>
+</div>
+</div>
+
+</small>
+
+## LCM-HCF Relationship
+
+Can HCF be greater than LCM
+
+12, 16 
+
+
 # Problems to Think
 
 ## Camel Problem
