@@ -1,0 +1,153 @@
+---
+title: "Paradoxes"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
+    reveal_options:
+      chalkboard:
+        theme: whiteboard
+    self_contained: false
+    lib_dir: libs
+    css: css/styles.css
+    includes:
+      in_header: css/header.html
+---
+
+# Simpson's Paradox
+
+Who is better: Sayem or Siyam?  
+
+| Exam        | Sayem           | Siyam  |
+| ------------- |:-------------:| -----:|
+| Exam-1     | $\frac{63}{90} = 70 \%$| $\frac{8}{10}=80 \%$ |
+| Exam-2     | $\frac{4}{10} = 40 \%$      |   $\frac{45}{90} = 50 \%$ |
+
+## Look again
+
+Who is really better?  
+
+| Exam        | Sayem           | Siyam  |
+| ------------- |:-------------:| -----:|
+| Exam-1     | $\frac{63}{90} = 70 \%$| $\frac{8}{10}=80 \%$ |
+| Exam-2     | $\frac{4}{10} = 40 \%$      |   $\frac{45}{90} = 50 \%$ |
+| Combined   | $\frac{67}{100} = 67 \%$      |   $\frac{53}{100} = 53 \%$ |
+
+## Batting average
+
+| Year        | Jeter           | Justice  |
+| ------------- |:-------------:| -----:|
+| 1995     | $\frac{12}{48} = 0.25$| $\frac{104}{411}=0.253$ |
+| 1996     | $\frac{183}{582} = 0.314$      |   $\frac{45}{140} = 0.270$ |
+
+
+## Take a second look
+
+| Year        | Jeter           | Justice  |
+| ------------- |:-------------:| -----:|
+| 1995     | $\frac{12}{48} = 0.25$| $\frac{104}{411}=0.253$ |
+| 1996     | $\frac{183}{582} = 0.314$      |   $\frac{45}{140} = 0.321$ |
+| Combined     | $\frac{195}{630} = 0.310$      |   $\frac{149}{551} = 0.270$ |
+
+## But NOT SO Straightforward{.big}
+
+### Stone removal from kidney
+
+
+| Stone        | Treatment  A <br>(Open Surgery) | Treatment B <br> (Puncture)  |
+| ------------- |:-------------:| -----:|
+| Small| **Group 1** <br> <br> $\frac{81}{87} = 93 \%$|**Group 2**<br> <br>$\frac{234}{270}=87\%$ |
+| Large     | **Group 3**<br> <br>$\frac{192}{263} = 73\%$|**Group 4**<br> <br>$\frac{55}{80} = 69 \%$ |
+
+## But NOT SO Straightforward{.big}
+
+
+| Stone        | Treatment  A <br>(Open Surgery) | Treatment B <br> (Puncture)  |
+| ------------- |:-------------:| -----:|
+| Small| **Group 1** <br> <br> $\frac{81}{87} = 93 \%$|**Group 2**<br> <br>$\frac{234}{270}=87\%$ |
+| Large     | **Group 3**<br> <br>$\frac{192}{263} = 73\%$|**Group 4**<br> <br>$\frac{55}{80} = 69 \%$ |
+| Both     |$\frac{273}{350} = 78\%$|$\frac{289}{350} = 83 \%$ |
+
+> - Statistics never lies! 
+
+# Problem of Points
+
+- Suppose that two players, A and B, contribute equally to a stake of $60. 
+- They agree that the first player who makes 3 points shall win the entire stake. 
+- After A has won 2 points, and B has won 1, they agree to stop. 
+- How should the stake of 60 dollars be divided? 
+
+> - A = 40 & B = 20?
+> - If another match is played
+> - If A wins A = 60, B = 0
+> - If B wins A = 30, B = 30
+> - On average, A = 45, B = 15 
+
+# All Windows to South
+
+Can you make a square house with windows on all four sides, each window having a view to the south?
+
+<div onclick="klikaj('wnp')"><span>Answer</span></div>
+<div id="wnp" style="visibility: hidden">
+<img class="plain" src="img/paradox/north_pole.png" width="300">
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+
+[See on map](https://www.google.com/maps/@21.2003604,92.9789931,2.9z)
+
+# Is USA to the North of Russia
+
+Then to which side of Russia is USA? 
+
+- [USA-Russia](https://www.google.com/maps/@58.9984359,-101.3229163,3z)
+- [Russia-USA](https://www.google.com/maps/@64,100.7186992,1.9z)
+
+# Back Home
+
+Can a man set out from his house, walk five miles due south, five miles due west, and five miles due north-and find himself back home? 
+
+# Salary Raises
+
+- Salary is $1000/year, to be paid half-yearly.
+- Which do you prefer: a raise of \$150 per year or a raise of \$50 every half-year?
+
+<div onclick="klikaj('salrais')"><span>Answer</span></div>
+<div id="salrais" style="visibility: hidden">
+| Year |  $150 Yearly | New Salary | $50 Half-yearly |
+|:----:|:------------:|:----------:|:---------------:|
+|  1st | 500+500=1000 |    1150    |   500+550=1050  |
+|  2nd | 575+575=1150 |    1300    |   600+650=1250  |
+|  3rd | 650+650=1300 |    1450    |   700+750=1450  |
+|  4th | 725+725=1450 |    1600    |   800+850=1650  |
+|  5th | 800+800=1600 |    1750    |   900+950=1850  |
+</div>
+
+# Bottle-Cork
+
+A bottle and its cork cost together $1.10. The bottle costs a dollar more than the cork. How much does the bottle cost?
+
+- $1?
+
+# Confusing Questions
+
+## Meeting Trains
+
+An express leaves New York for Boston at the same time that a local leaves Boston for New York. The express travels at the rate of 50 miles per hour, the local at the rate of 30 miles per hour. 
+
+Which is farther from New York when they meet?
+
+> - Same! 
+
+# Porbability Paradoxes
+
+## Zero vs Infinitesimal Probability
+
+# References
+
+- [Conversation](https://theconversation.com/paradoxes-of-probability-and-other-statistical-strangeness-74440)

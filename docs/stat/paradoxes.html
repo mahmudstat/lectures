@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Abdullah Al Mahmud" />
+  <title>Paradoxes</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/theme/sky.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal .slide-menu-button {
+      left: 105px !important;
+    }
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="css\styles.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <div id="header-footer">
+      <p class="slide-footer"> | PCC | Mahmud | Statistics | statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
+    </div>
+    <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Paradoxes</h1>
+    <h2 class="author">Abdullah Al Mahmud</h2>
+</section>
+
+<section><section id="simpsons-paradox" class="title-slide slide level1"><h1>Simpson’s Paradox</h1><p>Who is better: Sayem or Siyam?</p>
+<table>
+<thead>
+<tr class="header">
+<th>Exam</th>
+<th style="text-align: center;">Sayem</th>
+<th style="text-align: right;">Siyam</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Exam-1</td>
+<td style="text-align: center;"><span class="math inline">\(\frac{63}{90} = 70 \%\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(\frac{8}{10}=80 \%\)</span></td>
+</tr>
+<tr class="even">
+<td>Exam-2</td>
+<td style="text-align: center;"><span class="math inline">\(\frac{4}{10} = 40 \%\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(\frac{45}{90} = 50 \%\)</span></td>
+</tr>
+</tbody>
+</table></section><section id="look-again" class="slide level2">
+<h2>Look again</h2>
+<p>Who is really better?</p>
+<table>
+<thead>
+<tr class="header">
+<th>Exam</th>
+<th style="text-align: center;">Sayem</th>
+<th style="text-align: right;">Siyam</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Exam-1</td>
+<td style="text-align: center;"><span class="math inline">\(\frac{63}{90} = 70 \%\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(\frac{8}{10}=80 \%\)</span></td>
+</tr>
+<tr class="even">
+<td>Exam-2</td>
+<td style="text-align: center;"><span class="math inline">\(\frac{4}{10} = 40 \%\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(\frac{45}{90} = 50 \%\)</span></td>
+</tr>
+<tr class="odd">
+<td>Combined</td>
+<td style="text-align: center;"><span class="math inline">\(\frac{67}{100} = 67 \%\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(\frac{53}{100} = 53 \%\)</span></td>
+</tr>
+</tbody>
+</table>
+</section><section id="batting-average" class="slide level2">
+<h2>Batting average</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th style="text-align: center;">Jeter</th>
+<th style="text-align: right;">Justice</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1995</td>
+<td style="text-align: center;"><span class="math inline">\(\frac{12}{48} = 0.25\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(\frac{104}{411}=0.253\)</span></td>
+</tr>
+<tr class="even">
+<td>1996</td>
+<td style="text-align: center;"><span class="math inline">\(\frac{183}{582} = 0.314\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(\frac{45}{140} = 0.270\)</span></td>
+</tr>
+</tbody>
+</table>
+</section><section id="take-a-second-look" class="slide level2">
+<h2>Take a second look</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th style="text-align: center;">Jeter</th>
+<th style="text-align: right;">Justice</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1995</td>
+<td style="text-align: center;"><span class="math inline">\(\frac{12}{48} = 0.25\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(\frac{104}{411}=0.253\)</span></td>
+</tr>
+<tr class="even">
+<td>1996</td>
+<td style="text-align: center;"><span class="math inline">\(\frac{183}{582} = 0.314\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(\frac{45}{140} = 0.321\)</span></td>
+</tr>
+<tr class="odd">
+<td>Combined</td>
+<td style="text-align: center;"><span class="math inline">\(\frac{195}{630} = 0.310\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(\frac{149}{551} = 0.270\)</span></td>
+</tr>
+</tbody>
+</table>
+</section><section id="but-not-so-straightforward" class="slide level2 big">
+<h2>But NOT SO Straightforward</h2>
+<h3 id="stone-removal-from-kidney">Stone removal from kidney</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Stone</th>
+<th style="text-align: center;">Treatment A <br>(Open Surgery)</th>
+<th style="text-align: right;">Treatment B <br> (Puncture)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Small</td>
+<td style="text-align: center;"><strong>Group 1</strong> <br> <br> <span class="math inline">\(\frac{81}{87} = 93 \%\)</span></td>
+<td style="text-align: right;"><strong>Group 2</strong><br> <br><span class="math inline">\(\frac{234}{270}=87\%\)</span></td>
+</tr>
+<tr class="even">
+<td>Large</td>
+<td style="text-align: center;"><strong>Group 3</strong><br> <br><span class="math inline">\(\frac{192}{263} = 73\%\)</span></td>
+<td style="text-align: right;"><strong>Group 4</strong><br> <br><span class="math inline">\(\frac{55}{80} = 69 \%\)</span></td>
+</tr>
+</tbody>
+</table>
+</section><section id="but-not-so-straightforward-1" class="slide level2 big">
+<h2>But NOT SO Straightforward</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Stone</th>
+<th style="text-align: center;">Treatment A <br>(Open Surgery)</th>
+<th style="text-align: right;">Treatment B <br> (Puncture)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Small</td>
+<td style="text-align: center;"><strong>Group 1</strong> <br> <br> <span class="math inline">\(\frac{81}{87} = 93 \%\)</span></td>
+<td style="text-align: right;"><strong>Group 2</strong><br> <br><span class="math inline">\(\frac{234}{270}=87\%\)</span></td>
+</tr>
+<tr class="even">
+<td>Large</td>
+<td style="text-align: center;"><strong>Group 3</strong><br> <br><span class="math inline">\(\frac{192}{263} = 73\%\)</span></td>
+<td style="text-align: right;"><strong>Group 4</strong><br> <br><span class="math inline">\(\frac{55}{80} = 69 \%\)</span></td>
+</tr>
+<tr class="odd">
+<td>Both</td>
+<td style="text-align: center;"><span class="math inline">\(\frac{273}{350} = 78\%\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(\frac{289}{350} = 83 \%\)</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li class="fragment">Statistics never lies!</li>
+</ul>
+</section></section>
+<section id="problem-of-points" class="title-slide slide level1"><h1>Problem of Points</h1><ul>
+<li>Suppose that two players, A and B, contribute equally to a stake of $60.</li>
+<li>They agree that the first player who makes 3 points shall win the entire stake.</li>
+<li>After A has won 2 points, and B has won 1, they agree to stop.</li>
+<li>How should the stake of 60 dollars be divided?</li>
+</ul>
+<ul>
+<li class="fragment">A = 40 &amp; B = 20?</li>
+<li class="fragment">If another match is played</li>
+<li class="fragment">If A wins A = 60, B = 0</li>
+<li class="fragment">If B wins A = 30, B = 30</li>
+<li class="fragment">On average, A = 45, B = 15</li>
+</ul></section>
+<section id="all-windows-to-south" class="title-slide slide level1"><h1>All Windows to South</h1><p>Can you make a square house with windows on all four sides, each window having a view to the south?</p>
+<div onclick="klikaj(&#39;wnp&#39;)">
+<span>Answer</span>
+</div>
+<div id="wnp" style="visibility: hidden">
+<p><img class="plain" src="img/paradox/north_pole.PNG" width="300"></p>
+</div>
+<script>
+function klikaj(i) {
+    document.getElementById(i).style.visibility='visible';
+}
+</script>
+<p><a href="https://www.google.com/maps/@21.2003604,92.9789931,2.9z">See on map</a></p></section>
+<section id="is-usa-to-the-north-of-russia" class="title-slide slide level1"><h1>Is USA to the North of Russia</h1><p>Then to which side of Russia is USA?</p>
+<ul>
+<li><a href="https://www.google.com/maps/@58.9984359,-101.3229163,3z">USA-Russia</a></li>
+<li><a href="https://www.google.com/maps/@64,100.7186992,1.9z">Russia-USA</a></li>
+</ul></section>
+<section id="back-home" class="title-slide slide level1"><h1>Back Home</h1><p>Can a man set out from his house, walk five miles due south, five miles due west, and five miles due north-and find himself back home?</p></section>
+<section id="salary-raises" class="title-slide slide level1"><h1>Salary Raises</h1><ul>
+<li>Salary is $1000/year, to be paid half-yearly.</li>
+<li>Which do you prefer: a raise of $150 per year or a raise of $50 every half-year?</li>
+</ul>
+<div onclick="klikaj(&#39;salrais&#39;)">
+<span>Answer</span>
+</div>
+<div id="salrais" style="visibility: hidden">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Year</th>
+<th style="text-align: center;">$150 Yearly</th>
+<th style="text-align: center;">New Salary</th>
+<th style="text-align: center;">$50 Half-yearly</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1st</td>
+<td style="text-align: center;">500+500=1000</td>
+<td style="text-align: center;">1150</td>
+<td style="text-align: center;">500+550=1050</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2nd</td>
+<td style="text-align: center;">575+575=1150</td>
+<td style="text-align: center;">1300</td>
+<td style="text-align: center;">600+650=1250</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3rd</td>
+<td style="text-align: center;">650+650=1300</td>
+<td style="text-align: center;">1450</td>
+<td style="text-align: center;">700+750=1450</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4th</td>
+<td style="text-align: center;">725+725=1450</td>
+<td style="text-align: center;">1600</td>
+<td style="text-align: center;">800+850=1650</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5th</td>
+<td style="text-align: center;">800+800=1600</td>
+<td style="text-align: center;">1750</td>
+<td style="text-align: center;">900+950=1850</td>
+</tr>
+</tbody>
+</table>
+</div></section>
+<section id="bottke-cork" class="title-slide slide level1"><h1>Bottke-Cork</h1><p>A bottle and its cork cost together $1.10. The bottle costs a dollar more than the cork. How much does the bottle cost?</p>
+<ul>
+<li>$1?</li>
+</ul></section>
+<section><section id="porbability-paradoxes" class="title-slide slide level1"><h1>Porbability Paradoxes</h1></section><section id="zero-vs-infinitesimal-probability" class="slide level2">
+<h2>Zero vs Infinitesimal Probability</h2>
+</section></section>
+<section id="references" class="title-slide slide level1"><h1>References</h1><ul>
+<li><a href="https://theconversation.com/paradoxes-of-probability-and-other-statistical-strangeness-74440">Conversation</a></li>
+</ul></section>
+    </div>
+  </div>
+
+  <script src="libs/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="libs/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: false,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+        menu: {
+          custom: false,
+          themes: false,
+          transitions: false
+        },
+
+
+
+        chalkboard: {
+          theme: 'whiteboard',
+        },
+
+        keyboard: {
+          67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+          66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+          46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+           8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+          68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'libs/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

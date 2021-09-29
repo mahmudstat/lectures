@@ -27,10 +27,13 @@ See more [here](https://defkey.com/reveal-js-shortcuts)
 - Chapter 02: [Random variable and Probability Distributions](stat/prob_ch2_random_variable.html)
 - Chapter 03: [Mathematical Expectation](stat/prob_ch3_expectation.html)
 
+**Others**
+
+- [In the world of Paradoxes](stat/paradoxes.html)
 
 **Elementary Statistics**
 
-- [Elementary Statistics](https://lecture.statmania.info/stat/stat_preliminaries.html)
+- [Elementary Statistics](https://lecture.statmania.info/math/stat_preliminaries.html)
 
 ### Mathematics {- #math}
 

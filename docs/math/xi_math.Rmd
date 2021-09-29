@@ -5,11 +5,12 @@ date: \today
 output: 
   revealjs::revealjs_presentation:
     theme: sky
-    reveal_plugins: ["search", "chalkboard", "zoom", "menu"]
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
     self_contained: false
+    lib_dir: libs
     css: css/styles.css
     includes:
-      in_header: css/header_stat.html
+      in_header: css/header.html
 ---
 
 # Paradox

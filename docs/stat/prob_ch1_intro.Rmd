@@ -560,7 +560,7 @@ If three balls are drawn at random, what is the probability there are all red or
 </div>
 </div>
 
-## Box Problem #02
+## Box Problem #03
 
 There are 9 red and 7 white balls in a box. 6 balls are picked randomly. What is the probability that 3 balls are red and 3 balls are white? 
 
@@ -579,6 +579,18 @@ Which one is the answer?
 > - Answer: $\frac{^9C_3 \times ^7C_3}{^{16}C_6}$=`r round(choose(9,3)*choose(7,3)/choose(16,6),3)` 
 </div>
 </div>
+
+# Transfer Items
+
+## Transfer Items 01
+
+<small>
+An urn contains 6 white and 8 black balls. Another urn contains 5 white and 10 black balls. One balls is transferred from the first urn to the second, and one ball is drawn from the latter. What is the probability that it is a white ball?
+
+</small>
+
+> - P(White is transferred)+P(Black is transferred)
+> - $\frac {6}{14} \times \frac{6}{16} +\frac{8}{14} \times \frac{5}{16}$
 
 # Conditional Probability
 
@@ -909,3 +921,12 @@ Solve in two ways
 
 > - 1.  □ □ $\frac{^4C_1 \times 2}{4 \times 4}$ or form numbers (12,14,22,24,32,34,42,44)
 > - 2. Numbers: 11, 13, 21, 23, 31, 33, 41, 43 $\rightarrow \frac {2}{16}=\frac 1 8$
+
+## Real Number from (0,10) &  (0,100)
+
+</small>
+> - 1. A real number - rational or irrational - between 0 and 10 is chosen at random. What is the probability that it is greater than 5?
+> - 2. A real number - rational or irrational - between 0 and 100 is chosen at random. What is the probability that it is greater than 25?
+> - 3. What is the probability that the square of a random number from (0, 10) is greater than 25?
+> - 4. What is the probability that the square root of a random number from (0, 100) is greater than 5?
+</small>
