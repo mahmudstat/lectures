@@ -423,7 +423,7 @@ g. $a^2-a-6=0, a^3+\frac 1 {a^3}=?$
 
 # Chapter 4.3: LCM & HCF
 
-## What LCM & HCF they Mean
+## What LCM & HCF Mean
 
 <small>
 <div class="container">

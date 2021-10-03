@@ -589,12 +589,118 @@ $16 \to 2, 4, 8, 16$
 
 </small>
 
-## LCM-HCF Relationship
+## Can HCF be > LCM
 
-Can HCF be greater than LCM
+<small>
 
-12, 16 
+Consider 0, 9
 
+<div class="container">
+<div class="col">
+Factors
+
+- $0 \times 1 = 0$
+- $0 \times 2 = 0$
+- $0 \times 3 = 0$
+
+$\cdots$
+
+$\cdots$
+
+Factors of 0: 0, 1, 2, 3, ..., 9, 10,...
+
+Factors of 9: 1, 3, 9
+
+</div>
+<div class="col">
+Multiples
+
+We get multiples by multiplying the numbers by $1, 2, 3, \cdots$
+
+- $0 \times 1 = 0$
+- $0 \times 2 = 0$
+- $0 \times 3 = 0$
+
+Multiple of 0: 0
+
+Multiple of 9: 0, 9, 18, 27, ...(0 is a multiple of any number)
+</div>
+</div>
+
+> - HCF = 9
+> - LCM = 0
+
+</small>
+
+# Chapter 5.2: Algebraic Fractions
+
+## Reduce to Lowest Form
+
+<div class="container">
+<div class="col">
+<u>Questions</u>
+
+<div onclick="klikaj('low1')"> 
+> - $1.\frac{a^2b}{a^3b}$
+</div>
+<div onclick="klikaj('low2')"> 
+> -  $2. \frac{x^2+x}{xy+y}$
+</div>
+<div onclick="klikaj('low3')"> 
+> -  $3. \frac{x^2+2x-15}{x^2+9x+20}$
+</div>
+</div>
+<div class="col">
+<u>Answers</u>
+
+<div id="low1" style="visibility: hidden">
+1. $a$
+</div>
+<div id="low2" style="visibility: hidden">
+2. $\frac x y$
+</div>
+<div id="low3" style="visibility: hidden">
+3. $\frac{(x-3)}{(x+4)}$
+</div>
+</div>
+</div>
+
+## Express with Common Denominator
+
+<div class="container">
+<div class="col">
+<u>Questions</u>
+
+<div onclick="klikaj('red1')"> 
+> - $1. \frac{a}{bc}, \frac{a}{ac}$
+</div>
+<div onclick="klikaj('red2')"> 
+> -  $2. \frac{a}{a-b}, \frac{b}{a+b}$
+</div>
+<div onclick="klikaj('red3')"> 
+> -  $3. \frac{3}{a^2-4}, \frac{2}{a(a+2)}$
+</div>
+<div onclick="klikaj('red4')"> 
+> -  $4. \frac{2}{x^2-x-2}, \frac{3}{x^2+x-6}$
+</div>
+</div>
+<div class="col">
+<u>Answers</u>
+
+<div id="red1" style="visibility: hidden">
+1. $ans$
+</div>
+<div id="red2" style="visibility: hidden">
+2. $ans$
+</div>
+<div id="red3" style="visibility: hidden">
+3. $ans$
+</div>
+<div id="red4" style="visibility: hidden">
+4. $ans$
+</div>
+</div>
+</div>
 
 # Problems to Think
 
