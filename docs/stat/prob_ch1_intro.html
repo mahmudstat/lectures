@@ -8,11 +8,11 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="prob_ch1_intro_files/reveal.js-3.3.0.1/css/reveal.css"/>
+  <link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/reveal.css"/>
 
 
 
-<link rel="stylesheet" href="prob_ch1_intro_files/reveal.js-3.3.0.1/css/theme/sky.css" id="theme">
+<link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/theme/sky.css" id="theme">
 
 
   <!-- some tweaks to reveal css -->
@@ -450,8 +450,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <div id="header-footer">
       <p class="slide-footer"> | PCC | Mahmud | Statistics | statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
     </div>
-    <link href="prob_ch1_intro_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-    <link href="prob_ch1_intro_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+    <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 </head>
 <body>
   <div class="reveal">
@@ -1124,7 +1124,7 @@ function klikaj(i) {
 <ul>
 <li class="fragment">Correct or not: <span class="math inline">\(\frac{^7C_2}{^{20}C_2}+\frac{^8C_2}{^{20}C_2}\)</span></li>
 <li class="fragment"><span class="math inline">\(\frac{^7C_1 \times ^7C_1}{^{20}C_1 \times ^{20}C_1}+\frac{^8C_1 \times ^8C_1}{^{20}C_1 \times ^{20}C_1}\)</span></li>
-<li class="fragment">Without replacement: <span class="math inline">\(\frac{^7C_1 \times ^6C_1}{^{20}C_1 \times ^{20}C_1}+\frac{^8C_1 \times ^7C_1}{^{20}C_1 \times ^{20}C_1}\)</span></li>
+<li class="fragment">Without replacement: <span class="math inline">\(\frac{^7C_1 \times ^6C_1}{^{20}C_1 \times ^{19}C_1}+\frac{^8C_1 \times ^7C_1}{^{20}C_1 \times ^{19}C_1}\)</span></li>
 </ul>
 </section><section id="box-problem-02" class="slide level2">
 <h2>Box Problem #02</h2>
@@ -1178,8 +1178,8 @@ function klikaj(i) {
 </ul>
 </div>
 </div>
-</section><section id="box-problem-02-1" class="slide level2">
-<h2>Box Problem #02</h2>
+</section><section id="box-problem-03" class="slide level2">
+<h2>Box Problem #03</h2>
 <p>There are 9 red and 7 white balls in a box. 6 balls are picked randomly. What is the probability that 3 balls are red and 3 balls are white?</p>
 <p>Which one is the answer?</p>
 <div class="container">
@@ -1202,6 +1202,15 @@ function klikaj(i) {
 </ul>
 </div>
 </div>
+</section></section>
+<section><section id="transfer-items" class="title-slide slide level1"><h1>Transfer Items</h1></section><section id="transfer-items-01" class="slide level2">
+<h2>Transfer Items 01</h2>
+<p><small> An urn contains 6 white and 8 black balls. Another urn contains 5 white and 10 black balls. One balls is transferred from the first urn to the second, and one ball is drawn from the latter. What is the probability that it is a white ball?</p>
+<p></small></p>
+<ul>
+<li class="fragment">P(White is transferred)+P(Black is transferred)</li>
+<li class="fragment"><span class="math inline">\(\frac {6}{14} \times \frac{6}{16} +\frac{8}{14} \times \frac{5}{16}\)</span></li>
+</ul>
 </section></section>
 <section><section id="conditional-probability-1" class="title-slide slide level1"><h1>Conditional Probability</h1></section><section id="conditional-formula" class="slide level2">
 <h2>Conditional Formula</h2>
@@ -1290,6 +1299,21 @@ function klikaj(i) {
     document.getElementById(i).style.visibility='visible';
 }
 </script>
+</section><section id="one-by-one-or-not" class="slide level2">
+<h2>One-by-one Or Not</h2>
+<p>A pot contains 3 white, 4 red, and 5 blue balls. Three balls are drawn at random. Find the probability that the balls are</p>
+<ol type="i">
+<li>different colors</li>
+<li>same colors</li>
+</ol>
+<ul>
+<li class="fragment"><ol type="i">
+<li class="fragment">WRB <span class="math inline">\(\to \frac{^3C_1 \times ^4C_1 \times ^5C_1}{^{12}C_3}\)</span></li>
+</ol></li>
+<li class="fragment"><ol start="2" type="i">
+<li class="fragment">WWW + RRR + BBB <span class="math inline">\(\to \frac{^3C_3}{^{12}C_3}+\frac{^4C_3}{^{12}C_3}+\frac{^5C_3}{^{12}C_3}\)</span></li>
+</ol></li>
+</ul>
 </section></section>
 <section><section id="set-theoretic" class="title-slide slide level1"><h1>Set Theoretic</h1></section><section id="concept" class="slide level2">
 <h2>Concept</h2>
@@ -1565,12 +1589,15 @@ function klikaj(i) {
 <li class="fragment">Numbers: 11, 13, 21, 23, 31, 33, 41, 43 <span class="math inline">\(\rightarrow \frac {2}{16}=\frac 1 8\)</span></li>
 </ol></li>
 </ul>
+</section><section id="real-number-from-010-0100" class="slide level2">
+<h2>Real Number from (0,10) &amp; (0,100)</h2>
+<p></small> &gt; - 1. A real number - rational or irrational - between 0 and 10 is chosen at random. What is the probability that it is greater than 5? &gt; - 2. A real number - rational or irrational - between 0 and 100 is chosen at random. What is the probability that it is greater than 25? &gt; - 3. What is the probability that the square of a random number from (0, 10) is greater than 25? &gt; - 4. What is the probability that the square root of a random number from (0, 100) is greater than 5? </small></p>
 </section></section>
     </div>
   </div>
 
-  <script src="prob_ch1_intro_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
-  <script src="prob_ch1_intro_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+  <script src="libs/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="libs/reveal.js-3.3.0.1/js/reveal.js"></script>
 
   <script>
 
@@ -1607,9 +1634,9 @@ function klikaj(i) {
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: 'prob_ch1_intro_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
-          { src: 'prob_ch1_intro_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
-          { src: 'prob_ch1_intro_files/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
         ]
       });
     </script>

@@ -51,6 +51,8 @@ Who is really better?
 | 1996     | $\frac{183}{582} = 0.314$      |   $\frac{45}{140} = 0.321$ |
 | Combined     | $\frac{195}{630} = 0.310$      |   $\frac{149}{551} = 0.270$ |
 
+Compare angularly, most matches simultaneously
+
 ## But NOT SO Straightforward{.big}
 
 ### Stone removal from kidney

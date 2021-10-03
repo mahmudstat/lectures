@@ -7,7 +7,7 @@ output:
     theme: sky
     reveal_plugins: ["chalkboard", "zoom", "menu"]
     self_contained: false
-	lib_dir: libs
+    lib_dir: libs
     css: css/styles.css
     includes:
       in_header: css/header.html
@@ -691,6 +691,16 @@ function klikaj(i) {
 }
 </script>
 
+## One-by-one Or Not
+
+A pot contains 3 white, 4 red, and 5 blue  balls. Three balls are drawn at random. Find the probability that the balls are 
+
+i) different colors
+ii) same colors
+
+> - i. WRB $\to \frac{^3C_1 \times ^4C_1 \times ^5C_1}{^{12}C_3}$
+> - ii. WWW + RRR + BBB $\to \frac{^3C_3}{^{12}C_3}+\frac{^4C_3}{^{12}C_3}+\frac{^5C_3}{^{12}C_3}$
+> - What if the balls are drawn one by one?
 
 # Set Theoretic
 
