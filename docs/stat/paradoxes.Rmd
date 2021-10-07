@@ -150,6 +150,25 @@ Which is farther from New York when they meet?
 
 ## Zero vs Infinitesimal Probability
 
+# Illusions
+
+## Checker Shadow Illusion
+
+<div class="container">
+<div class="col">
+<div>Problem</div>
+<img class="plain" src="img/illusion/checker_shadow_illusion.png" width="600">
+</div>
+<div class="col">
+<div onclick="klikaj('chkbrd')"><span>Solution</span></div>
+<div id="chkbrd" style="visibility: hidden">
+<img class="plain" src="img/illusion/checker_shadow_illusion_solution.png" width="600">
+</div>
+</div>
+</div>
+
+
+
 # References
 
 - [Conversation](https://theconversation.com/paradoxes-of-probability-and-other-statistical-strangeness-74440)
