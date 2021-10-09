@@ -167,7 +167,21 @@ Which is farther from New York when they meet?
 </div>
 </div>
 
+# Impossible Objects
 
+## Impossible Cube
+
+<img class="plain" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Perth_Impossible_Triangle.jpg/1920px-Perth_Impossible_Triangle.jpg" width="1200">
+
+[See More](https://en.wikipedia.org/wiki/Impossible_object#Notable_examples)
+
+## Real World Example
+
+Real world is not what we think it bo be
+
+<img class="plain" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Perth_Impossible_Triangle.jpg/1920px-Perth_Impossible_Triangle.jpg" width="1200">
+
+[See more here](https://en.wikipedia.org/wiki/Impossible_object#Constructed_impossible_objects)
 
 # References
 

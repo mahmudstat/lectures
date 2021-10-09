@@ -935,8 +935,10 @@ Solve in two ways
 ## Real Number from (0,10) &  (0,100)
 
 </small>
+
 > - 1. A real number - rational or irrational - between 0 and 10 is chosen at random. What is the probability that it is greater than 5?
 > - 2. A real number - rational or irrational - between 0 and 100 is chosen at random. What is the probability that it is greater than 25?
 > - 3. What is the probability that the square of a random number from (0, 10) is greater than 25?
 > - 4. What is the probability that the square root of a random number from (0, 100) is greater than 5?
+
 </small>

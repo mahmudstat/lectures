@@ -1,0 +1,63 @@
+---
+title: "Probability Sample Problems"
+author: "Abdullah Al Mahmud"
+date: "10/7/2021"
+output: pdf_document
+---
+
+## Digit and Number Problem
+
+1. Out of the natural numbers 10 through 30, a number is chosen randomly; what is the probability that the number is
+
+    a. a prime number
+    b. a prime number or multiple of 5
+    c. a prime number or an odd number
+    d. not a perfect square
+
+
+## Coin Problems
+
+1. An unbiased coin is tossed thrice. Find the probability that 
+
+    a. All three are Heads?
+    b. There are more than one Head?
+    c. The second draw gives a Head?
+    d. The third draw does not give a head?
+    e. The first draw gives a Tail but the the Draw does not?
+    f. At most one Head appears?
+    g. At least one head appears 
+
+2. An unbiased coin is tossed ten times. Find the probability that there are
+
+    a. just three heads
+    b. at least 1 head
+    c. at most 2 heads
+
+## Die Problems
+
+1. Two dice are thrown at once. Find the probability that
+
+    a. The first numbers is odd?
+    b. The summation of numbers in two draws is a prime number?
+    c. Both numbers are same?
+    d. The second number is bigger?
+    e. Total of the numbers is 8
+    f. Sum of numbers is greater than 5
+
+## Card Problems
+
+1. 3 cards are drawn from a pack of 52 cards. What is the probability that they are all Kings?
+
+2. Two cards are drawn with replacement; What is the probability that they are
+
+    a. Kings of same color
+    b. Kings of different color
+    c. Not Kings at all
+
+3. A card is drawn from each of two well-shuffled pack of cards. Find the probability that at least one of them is an ace.
+
+4. Two cards are drawn with replacement; What is the probability that they are
+
+Kings of same color
+Kings of different color
+Not Kings at all

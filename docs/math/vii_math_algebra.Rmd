@@ -688,16 +688,53 @@ Multiple of 9: 0, 9, 18, 27, ...(0 is a multiple of any number)
 <u>Answers</u>
 
 <div id="red1" style="visibility: hidden">
-1. $ans$
+1. $\frac{a^2}{ab}, \frac{ab}{abc}$
 </div>
 <div id="red2" style="visibility: hidden">
-2. $ans$
+2. $\frac{a(a+b)}{(a^2-b^2)}, \frac{b(a-b)}{(a^2-b^2)}$
 </div>
 <div id="red3" style="visibility: hidden">
-3. $ans$
+3. $\frac{3a}{a(a^2-4)}, \frac{2(a-2)}{a(a^2-4)}$
 </div>
 <div id="red4" style="visibility: hidden">
-4. $ans$
+4. $\frac{2(x+3)}{(x-2)(x+1)(x+3)}, \frac{3(x+1)}{(x-2)(x+1)(x+3)}$
+</div>
+</div>
+</div>
+
+## Addistion-Subtraction of Algebraic Fractions
+
+<div class="container">
+<div class="col">
+<u>Questions</u>
+
+<div onclick="klikaj('simf1')"> 
+> - $1. \frac{x}{2a} + \frac{y}{3b}$
+</div>
+<div onclick="klikaj('simf2')"> 
+> -  $2. \frac{3}{x^2-4x-5} + \frac{4}{x+1}$
+</div>
+<div onclick="klikaj('simf3')"> 
+> -  $3. \frac{3}{x+3}-\frac{2}{x+2}$
+</div>
+<div onclick="klikaj('simf4')"> 
+> -  $4. \frac{1}{x^2-1}+\frac 1 {x^4-1}+\frac 4 {x^8-1}$
+</div>
+</div>
+<div class="col">
+<u>Answers</u>
+
+<div id="simf1" style="visibility: hidden">
+1. $\frac{3+2ay}{6ab}$
+</div>
+<div id="simf2" style="visibility: hidden">
+2. $\frac{4x-17}{(x-5)(x+1)}$
+</div>
+<div id="simf3" style="visibility: hidden">
+3. $\frac x {(x+2)(x+3)}$
+</div>
+<div id="simf4" style="visibility: hidden">
+4. $\frac{x^6+2x^4+x^2+6}{(x^8-1)}$
 </div>
 </div>
 </div>
