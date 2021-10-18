@@ -1,11 +1,15 @@
 ---
-title: "Probability Sample Problems"
+title: "Probability Problems"
 author: "Abdullah Al Mahmud"
-date: "10/7/2021"
-output: pdf_document
+date: \today
+output: 
+  pdf_document:
+    toc: true
+    toc_depth: 2
+
 ---
 
-## Digit and Number Problem
+## Digit and Number Problems
 
 1. Out of the natural numbers 10 through 30, a number is chosen randomly; what is the probability that the number is
 
@@ -13,6 +17,12 @@ output: pdf_document
     b. a prime number or multiple of 5
     c. a prime number or an odd number
     d. not a perfect square
+
+2. From the digits 0, 1, 2, 3, 4 two digits are taken without replacement to form a number. What is the probability that the number is 
+
+    a. even
+    b. odd
+    c. even or divisible by 4
 
 
 ## Coin Problems
@@ -58,6 +68,69 @@ output: pdf_document
 
 4. Two cards are drawn with replacement; What is the probability that they are
 
-Kings of same color
-Kings of different color
-Not Kings at all
+    a. Kings of same color
+    b. Kings of different color
+    c. Not Kings at all
+
+5. Four cards are drawn at random from a packet. What is the probability that at least three of them are aces?
+
+## Dependency and Mutual Excluvity
+
+Suppose, $S=\{1,2,3,4,5,6\}$
+
+Make two sets so they are mutually non-exclusive and independent.
+
+
+## Selection of Items
+
+1. In a box, there are 5 blue marbles, 7 green marbles, and 8 yellow marbles. If two marbles are randomly selected, what is the probability that both will be green or yellow, if taken
+
+    a. with replacement
+    b.without replacement
+
+2. A pot contains 3 white, 4 red, and 5 blue balls. Three balls are drawn at random. Find the probability that the balls are
+
+    a. different colors
+    b. same colors
+
+What are the probabilities if the balls are taken without replacement?
+
+3. An urn contains 6 white and 8 black balls. Another urn contains 5 white and 10 black balls. One balls is transferred from the first urn to the second, and one ball is drawn from the latter. What is the probability that it is a white ball?
+
+## Conditional Probability
+
+1. The probability that Salah scores is 0.4 and that Neymar scores is 0.35. What is the probability that 
+
+    a. Both score
+    b. Only Salah scores
+    c. At least one of them scores
+    d. None scores
+    e. At most one scores
+
+2. If seat belt is used, probability that of accident is 0.35. The probability of using seat belt is 0.40. If an accident happens, what is the probability that seat belt was not used?
+
+## Set Problems
+
+1. $P(A)= \frac 1 2, P(B) = \frac 1 5, \text{and} \space P(A|B) = \frac 3 8$
+
+Find Find $P(A \cap B), P(B|A)$, and $P(A \cup B)$
+
+2. $P(A)=\frac 1 4, P(B) = \frac 2 5, P(A\cup B) = \frac 1 2$; A & B are not mutually exclusive. 
+
+Find
+
+- $P(A \cap B)$
+- $P(\bar A \cap B)$
+- $P(A \cap \bar B)$
+- $P(\bar A \cap \bar B)$
+- $P(A^c \cap B^c)$
+- $P(\bar A \cup B)$
+- $P(A|\bar B)$
+- $P(\bar A | \bar B)$
+
+3. Among 800 students, 160 fail in English, 80 in Math, and 40 in both. A student is elected at random. Find the probability that s/he
+
+    a. Failed in English but passed in Math
+    b. Passed only one subject
+    c. Failed in none
+    d. Passed at best one subject
