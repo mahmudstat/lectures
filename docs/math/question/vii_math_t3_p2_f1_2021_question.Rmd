@@ -1,0 +1,95 @@
+---
+title: ''
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+
+\begin{center}
+\begin{large}
+Pabna Cadet College
+\end{large}
+
+Fortnightly Examination - 2021
+
+Subject: Mathematics
+
+Class: VII
+\end{center}
+
+Time: 15 minutes
+\hfill
+Full Marks: 10
+
+\textbf{Answer all the questions}
+
+1. $\frac{x^2+x}{xy+y}$  when expressed in lowest term is 
+
+a. $\frac{x}{y}$ b. $\frac{y}{x}$  c. $\frac{x}{y^2}$ d. $\frac{1}{y}$  
+
+2. $\frac{3}{x+3}-\frac{2}{x+2}=?$
+
+a. $\frac{3x}{(x+2)(x+3)}$ b. $\frac{x}{(3x+2)(x+3)}$  c. $\frac{4x}{(3x+2)(x+3)}$  d. $\frac{x}{(x+2)(x+3)}$
+
+3. $\frac 1 {5x} + \frac {2x}{5x}=?$
+
+a. $\frac{5}{3x}$ b. $\frac{3}{5x}$  c. $\frac{2}{7x}$  d. $\frac{4}{5x}$
+
+Answer the questions 4-6 according to the following information
+
+$\frac{a}{bc}, \frac{a}{ac}$
+
+4. What is the LCM  of the denominators?
+
+a. ab  b. bc  c. ac  d. abc
+
+5. If the fractions are expressed with common denominators, what is the first term?
+
+a. $\frac{a^2}{abc}$ b. $\frac{a}{abc}$  c. $\frac{b^2}{abc}$  d. $\frac{b^2}{abc}$
+
+6. What is the summation of the terms?
+
+a. $\frac{a+b}{bc}$ b. $\frac{a}{abc}$ c. $\frac{a+b}{abc}$ d. $\frac{a(a+b)}{bc}$
+
+Answer the question 7-10 according to the following information.
+
+```{r,echo=FALSE}
+set.seed(10)
+x <- sample(30,10)
+cat(x)
+```
+
+7. What is the range of the numbers?
+
+a. 16  b. 17  c. 18  d. 15
+
+8. To make class interval 4, how many classes are required?
+
+a. 3 b. 4 c. 5* d. 6
+
+9. If the first class is 7-10, what is the frequency of the second class?
+
+a. 1 b. 2  c. 3  d. 4 
+
+10. Which class has the highest frequency?
+
+a. 7-10*
+b. 11-14
+c. 15-18
+d. 19-22
+
+## CQ
+
+Marks (out of 30) of 20 students  are given below
+
+```{r,echo=FALSE}
+set.seed(11)
+x <- round(rnorm(20,20, 4),0)
+cat(x)
+```
+
+a. What is data?
+b. Why do we organize data?
+c. Make a frequency distribution from the given data set using no less than 4 classes. 
+d. What have you understood from this distribution (made in c)? Relate with the advantages of organized data.

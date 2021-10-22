@@ -1,0 +1,111 @@
+---
+title: ''
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+\begin{center}
+\begin{large}
+Pabna Cadet College
+\end{large}
+
+Fortnightly Examination - 2021
+
+Third Term Second Phase 
+
+Subject: Statistics (MCQ)
+
+Class: XII
+\end{center}
+
+Time: 15 minutes
+\hfill
+Full Marks: 10
+
+Answer all the questions.
+
+1. Which one is a correct condition of a pdf?
+
+a. $\displaystyle \int_0^1 f(x) dx =1$
+b. $P(X)\ge0$
+c. $\displaystyle \int_a^b f(x) dx =1 ; a\le x \le b$ *
+d. $\displaystyle \int_0^{Median} f(x) dx =0.55$
+
+2. What are highest and lowest possible values of F(x)?
+
+a. $0, 1$*
+b. $-1, 1$
+c. $-\infty, +\infty$
+d. $0, \infty$
+
+3. How mnay types of random variable are there?
+
+a. 1
+b. 2*
+c. 3
+d. 4
+
+4. The figure is an example of a 
+
+![](../img/pdf_example.png)
+
+a. probability density function
+b. probability mass function
+c. could be both
+d. none
+
+Answer the questions 5-8 according the following information.
+
+$f(x)=\frac{x+1}{14}; x = 1,2,3,4$
+
+5. Which plot represents the pmf?
+
+```{r, echo=FALSE}
+par(mfrow=c(2,2))
+x <- 1:4
+plot(x, (x+1)/24, type="h", ylim=c(0,1), main = "a", ylab = "p(x)", xlab="x")
+plot(x, (2*x+1)/14, type="h", ylim=c(0,1), main = "b", ylab = "p(x)", xlab="x")
+plot(x, (x+1/3)/14, type="h", ylim=c(0,1), main = "c", ylab = "p(x)", xlab="x")
+plot(x, (x+1)/14, type="h", ylim=c(0,1), main = "d", ylab = "p(x)", xlab="x")
+```
+
+
+6. What is P(X=2)?
+
+a. $\frac{2}{13}$
+b. $\frac{4}{14}$*
+c. $\frac{5}{14}$
+d. $\frac{1}{7}$
+
+7. What is P(X=5)
+
+a.  $\frac{5}{14}$
+b.  $\frac{1}{7}$
+c.  0*
+d. 1
+
+8. $P(2\le X \le 5)=?$
+
+a. $\frac{6}{7}$*
+b. $\frac{5}{7}$
+c. 1
+d. $\frac{14}{17}$
+
+Answer the questions 9-10 according to the following information.
+
+$P(x,y)=\frac{x+2y}{16}$
+
+9. $P(X)=?$
+
+a. $\frac{x+2y}{3}$
+b. $\frac{2x+y}{3}$
+c. $\frac{2x+3y}{3}$
+d. $\frac{x+y}{3}$*
+
+10. $P(X|Y=0)=?$
+
+a. $\frac{x+2y}{4y+1}$
+b. $1$
+c. $x$
+d. 0
