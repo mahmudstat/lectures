@@ -57,3 +57,24 @@ See more [here](https://defkey.com/reveal-js-shortcuts)
 - [Algebra All Chapters](https://lecture.statmania.info/math/vii_math_algebra.html)
 - [Mathematics Exercises](https://lecture.statmania.info/math/vii_math_exercise.html)
 - [Chapter 7.3](https://lecture.statmania.info/math/vii_math_7.3.html)
+
+### Questions {-}
+
+
+
+
+
+
+```
+ <stat/question/stat_yr_final_assignment_2021.pdf> 
+ <stat/question/xi_stat_t1_f1_2021.pdf> 
+ <stat/question/xi_stat_t1_f1_2021_solution.pdf> 
+ <stat/question/xi_stat_t2_2021.pdf> 
+ <stat/question/xi_stat_t2_f1_2021.pdf> 
+ <stat/question/xi_stat_t2_f1_2021_set2.pdf> 
+ <stat/question/xi_stat_t3_p2_f1.pdf> 
+ <stat/question/xi_stat_t3_p2_f1_mcq.pdf> 
+ <stat/question/xi_stat_t3_p2_f1_mcq_questions.pdf> 
+ <stat/question/xi_stat_term_end_exam_2020.pdf> 
+ <stat/question/xii_stat_t3_f1_2021.pdf> 
+```

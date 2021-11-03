@@ -57,3 +57,19 @@ See more [here](https://defkey.com/reveal-js-shortcuts)
 - [Algebra All Chapters](https://lecture.statmania.info/math/vii_math_algebra.html)
 - [Mathematics Exercises](https://lecture.statmania.info/math/vii_math_exercise.html)
 - [Chapter 7.3](https://lecture.statmania.info/math/vii_math_7.3.html)
+
+### Questions {-}
+
+```{bash, echo =  FALSE}
+ls docs/stat/question | grep pdf > docs/stat/question/ques.csv
+```
+
+```{r, echo=FALSE}
+ques <- read.csv("docs/stat/question/ques.csv", header = FALSE)
+ques <- paste0("<stat/question/",ques$V1,">")
+write.csv(ques, file = "docs/stat/question/qlinks.csv", row.names = FALSE)
+```
+
+```{bash, echo =  FALSE, comment=NA}
+cat docs/stat/question/qlinks.csv | sed 1d | sed 's/"/ /g' 
+```

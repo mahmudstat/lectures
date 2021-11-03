@@ -1,0 +1,24 @@
+
+
+ques <- read.csv("ques.csv", header = F)
+
+paste0("lecture.statmania.info/stat/question/", ques$V1)
+
+qfiles <- paste0("[lecture.statmania.info/stat/question/", ques$V1,"](lecture.statmania.info/stat/question/",ques$V1,")")
+
+## Example output
+
+## [23] "[lecture.statmania.info/stat/question/xii_stat_t3_f1_2021.Rmd](lecture.statmania.info/stat/question/xii_stat_t3_f1_2021.Rmd)"                    
+
+## Now write bash to remove ""
+
+sed 's/"/ /g' qfiles.csv | awk -F ', ' '{print $2}'
+
+# Try removing eth b4 [
+## Example: echo "Ni[ce" | awk -F '[' '{print $2"["}' 
+
+# awk
+
+echo "Nice" | awk -F 'i' '{print $1}'
+
+## separates lines into 2 cols at .com position and prints 1st column with .com with it. 
