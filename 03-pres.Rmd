@@ -71,5 +71,7 @@ write.csv(ques, file = "docs/stat/question/qlinks.csv", row.names = FALSE)
 ```
 
 ```{bash, echo =  FALSE, comment=NA}
-cat docs/stat/question/qlinks.csv | sed 1d | sed 's/"/ /g' 
+cat docs/stat/question/qlinks.csv | sed 1d | sed 's/"/ /g' > docs/stat/question/q.md
 ```
+
+<iframe width="100%" frameborder="0" src="stat/question/q.md"></iframe>
