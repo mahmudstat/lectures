@@ -66,7 +66,7 @@ ls docs/stat/question | grep pdf > docs/stat/question/ques.csv
 
 ```{r, echo=FALSE}
 ques <- read.csv("docs/stat/question/ques.csv", header = FALSE)
-ques <- paste0("<stat/question/",ques$V1,">")
+ques <- paste0("<https://lecture.statmania.info/stat/question/",ques$V1,">")
 write.csv(ques, file = "docs/stat/question/qlinks.csv", row.names = FALSE)
 ```
 
