@@ -49,6 +49,7 @@ $1-p=q$
 > - Skewness, $\beta_1 = \frac{(q-p)^2}{npq}$
 > - Kurtosis, $\beta_2 = 3 + \frac{1-6pq}{npq}$
 
+
 ## Problem 01
 
 The mean and sd of a binomial distribution are 40 and 6. Find 
