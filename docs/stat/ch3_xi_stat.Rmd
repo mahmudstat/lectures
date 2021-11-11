@@ -1,13 +1,13 @@
 ---
-title: "Statistics: Chapter 3"
+title: "Statistics-Chapter 3: Central Tendency"
 author: Abdullah Al Mahmud
 date: \today
 output: 
   revealjs::revealjs_presentation:
-    theme: night
-    reveal_plugins: ["menu", "chalkboard", "zoom"]
+    theme: sky
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
     self_contained: false
-	lib_dir: libs
+    lib_dir: libs
     css: css/styles.css
     includes:
       in_header: css/header.html
@@ -477,6 +477,8 @@ Find $Q_1, Q_2, Q_3$
 
 X = `r set.seed(100); (x = sort(sample(20,11)))`
 
+[See more partition names](https://www.thinkermahmud.com/notes/quantiles)
+
 > - `r summary(x)`
 > - What are the formulae for Deciles ($D_i$ and $P_i$)
 
@@ -491,7 +493,7 @@ $A_i= \frac{i \times (n+1)}{k}th \space value$
 <div class="col">
 For even n, 
 
-$A_i=\frac{\frac{i \times n}{k}th+(\frac{i\times n}{k}+1)th}{k}$
+$A_i=\frac{\frac{i \times n}{k}th+(\frac{i\times n}{k}+1)th}{2}$
 </div>
 </div>
 
