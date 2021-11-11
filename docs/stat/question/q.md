@@ -1,0 +1,11 @@
+ <https://lecture.statmania.info/stat/question/stat_yr_final_assignment_2021.pdf> 
+ <https://lecture.statmania.info/stat/question/xi_stat_t1_f1_2021.pdf> 
+ <https://lecture.statmania.info/stat/question/xi_stat_t1_f1_2021_solution.pdf> 
+ <https://lecture.statmania.info/stat/question/xi_stat_t2_2021.pdf> 
+ <https://lecture.statmania.info/stat/question/xi_stat_t2_f1_2021.pdf> 
+ <https://lecture.statmania.info/stat/question/xi_stat_t2_f1_2021_set2.pdf> 
+ <https://lecture.statmania.info/stat/question/xi_stat_t3_p2_f1.pdf> 
+ <https://lecture.statmania.info/stat/question/xi_stat_t3_p2_f1_mcq.pdf> 
+ <https://lecture.statmania.info/stat/question/xi_stat_t3_p2_f1_mcq_questions.pdf> 
+ <https://lecture.statmania.info/stat/question/xi_stat_term_end_exam_2020.pdf> 
+ <https://lecture.statmania.info/stat/question/xii_stat_t3_f1_2021.pdf> 

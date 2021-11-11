@@ -26,6 +26,8 @@ See more [here](https://defkey.com/reveal-js-shortcuts)
 - Chapter 01: [Introduction to probability](https://lecture.statmania.info/stat/prob_ch1_intro.html#/)
 - Chapter 02: [Random variable and Probability Distributions](stat/prob_ch2_random_variable.html)
 - Chapter 03: [Mathematical Expectation](stat/prob_ch3_expectation.html)
+- Chapter 04: [Binomial Distribution](stat/prob_ch4_binomial_dist.html)
+
 
 **Others**
 

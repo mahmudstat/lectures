@@ -1,0 +1,91 @@
+---
+title: "Binomial Distribution"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    transition: zoom
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
+    reveal_options:
+      chalkboard:
+        theme: whiteboard
+    self_contained: false
+    lib_dir: libs
+    css: css/styles.css
+    includes:
+      in_header: css/header.html
+---
+
+# Intro
+
+- Success/failure
+- Detection of a disease is a success!
+
+
+## Example
+
+The probability of choosing statistics is `r round(8/50,2)`. If 20 students are randomly selected, what is the probability that 
+
+- at least 5 would choose the subject?
+- exactly 2 would choose the subject?
+- none will choose? 
+
+## Function
+
+$P(x) = ^nC_xp^x(1-p)^{n-x}$
+
+$1-p=q$
+
+> - $p \to$ probability of success
+> - $q \to$ probability of failure
+> - $n \to$ number of Bernoulli trials
+> - $x \to$ no. of success
+
+## Properties of Binomial Distribution
+
+> - Mean: $np$
+> - Variance: $npq$
+> - Skewness, $\beta_1 = \frac{(q-p)^2}{npq}$
+> - Kurtosis, $\beta_2 = 3 + \frac{1-6pq}{npq}$
+
+## Problem 01
+
+The mean and sd of a binomial distribution are 40 and 6. Find 
+
+i) $n,p,q$
+ii) $P(x)$
+iii) $P(x=0), P(x\ge2), P(x\lt3)$
+
+> - $np = 40$
+> - $\sqrt{npq} = 6$
+> - $np(1-p)=36 \to 40(1-p)=36 \to 1-p=.9$
+
+## Problem 02
+
+An unbiased coin is tossed 10 times. Find the probability of 
+
+i) 3 heads
+ii) at least 2 heads
+iii) at most 1 head
+
+## Problem 3
+
+The probability that it rains on a particular day is 0.2. If 10 days are observed, what is the probability that it would rain on
+
+i) all 10 days
+ii) no days
+iii) at least 2 days
+iv) on exactly four days
+
+## Problem 04
+
+In El Clasico, the probability that Barcelona wins is 0.39 and that Real Madrid wins is 0.42. In the next 5 matches, what is the probability that
+
+i) Barcelona wins all the matches?
+ii) Real wins all the matches
+iii) Barcelona wins at least 2 matches
+iv) 2 matches are drawn
+v) more than 3 matches are drawn
+
+> - $p_1=$Barca wins, $p_2 =$ Real wins, $p_3 =$Match drawn
