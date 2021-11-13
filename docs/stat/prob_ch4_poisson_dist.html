@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Abdullah Al Mahmud" />
-  <title>Moments, Skewness &amp; Kurtosis</title>
+  <title>Poisson Distribution</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -458,183 +458,92 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <div class="slides">
 
 <section>
-    <h1 class="title">Moments, Skewness &amp; Kurtosis</h1>
+    <h1 class="title">Poisson Distribution</h1>
     <h2 class="author">Abdullah Al Mahmud</h2>
 </section>
 
-<section><section id="moments" class="title-slide slide level1"><h1>Moments</h1><p>Can uniquely characterize a distribution</p></section><section id="central-moments" class="slide level2">
-<h2>Central Moments</h2>
-<p>Central Moments: <span class="math inline">\(\mu_r=\frac{\sum(x_i-\bar x)^r}{n}\)</span></p>
+<section id="concept" class="slide level2">
+<h2>Concept</h2>
+<p>Used in situation where some events occur at certain place or time.</p>
+<p>Examples:</p>
 <ul>
-<li class="fragment"><span class="math inline">\(\mu_1=\frac{\sum(x_i-\bar x)}{n}=\frac{\sum x_i}{n}-\frac{n \bar x}{n}=\frac{n \bar x}{n}-\frac{n \bar x}{n}=0\)</span></li>
+<li class="fragment">No. of car accidents in a month</li>
+<li class="fragment">Number of sixes in an innings</li>
+<li class="fragment">No. of calls in an hour in a call center</li>
+<li class="fragment">No. of bacteria in a <span class="math inline">\(mm^2\)</span></li>
+<li class="fragment">No. of defective bolts in a lot (in statistical quality control)</li>
+<li class="fragment">No. of particles in a radioactive decay</li>
+<li class="fragment">No. of rate in cultivable land</li>
 </ul>
+</section>
+<section id="function" class="slide level2">
+<h2>Function</h2>
+<p><span class="math inline">\(\displaystyle P(x) = \frac{e^{-\lambda}\lambda^x}{x!}\)</span></p>
 <ul>
-<li class="fragment"><span class="math inline">\(\mu_2=\frac{\sum(x_i-\bar x)^2}{n}=\sigma^2\)</span></li>
-<li class="fragment"><span class="math inline">\(\mu_3=\frac{\sum(x_i-\bar x)^3}{n}\)</span></li>
-<li class="fragment"><span class="math inline">\(\mu_4=\frac{\sum(x_i-\bar x)^4}{n}\)</span></li>
-<li class="fragment">For grouped data: <span class="math inline">\(\mu_r=\frac{\sum f_i(x_i-\bar x)^3}{n}\)</span></li>
+<li class="fragment"><span class="math inline">\(e=2.718\)</span> (constant)</li>
+<li class="fragment">x: number of occurrences (success)</li>
+<li class="fragment"><span class="math inline">\(\lambda\)</span>: average no. of events</li>
 </ul>
-</section><section id="raw-moments" class="slide level2">
-<h2>Raw Moments</h2>
-<p><span class="math inline">\(\mu_r&#39;=\frac{\sum(x_i-a)^r}{n}\)</span>; a is arbitrary number</p>
-<p><span class="math inline">\(\mu_1&#39;=\frac{\sum(x_i-a)}{n}=\frac{\sum x_i}{n}-\frac{na}{n}=\bar x-a\)</span></p>
-</section><section id="raw-central-moments-relationship" class="slide level2">
-<h2>Raw &amp; Central Moments: Relationship</h2>
+</section>
+<section id="poisson-process" class="slide level2">
+<h2>Poisson Process</h2>
+<p>A process involving ..</p>
+</section>
+<section id="assumptions" class="slide level2">
+<h2>Assumptions</h2>
 <ul>
-<li><span class="math inline">\(\mu_2 = \mu_2&#39;-\mu_1&#39;^2\)</span></li>
-<li><span class="math inline">\(\mu_3 = \mu_3&#39;-3\mu_2&#39;\mu_1&#39;+2\mu_1&#39;^3\)</span></li>
-<li><span class="math inline">\(\mu_4 = \mu_4&#39;-4\mu_3&#39;\mu_1&#39; + 6 \mu_2&#39;\mu_1&#39;^2-3\mu_1&#39;^4\)</span></li>
+<li class="fragment">Occurrences are independent</li>
+<li class="fragment"><span class="math inline">\(p \space \alpha \space interval\)</span></li>
+<li class="fragment">another</li>
 </ul>
-<p>How to Remember??</p>
-<p><span class="math inline">\(\downarrow\)</span></p>
-</section><section id="how-to-remember-skip" class="slide level2">
-<h2>How to Remember (Skip)</h2>
-<p><small></p>
-<div class="container">
-<div class="col">
-<p><span class="math inline">\((a-b)^3=a^3-3a^2b+3ab^2-b^3\)</span></p>
-<p><span class="math inline">\((a-b)^4=a^4-4a^3b+6a^2b^2-4ab^3+b^4\)</span> (Pascal triangle can be used)</p>
-<p><span class="math inline">\(a^r=\mu_r&#39;\)</span></p>
-<p><span class="math inline">\(b^r=\mu_1&#39;^r\)</span></p>
-</div>
-<div class="col">
-<p>Now,</p>
-<p><span class="math inline">\(\mu_3 = \mu_3&#39;-3\mu_2&#39;\mu_1&#39;+2\mu_1&#39;^3\)</span></p>
+</section>
+<section id="properties" class="slide level2">
+<h2>Properties</h2>
 <ul>
-<li>Remove the penultimate term and let coefficient of it is k</li>
-<li>Use (-k) as the coefficient of the last term.</li>
+<li class="fragment">Mean and variance are same (<span class="math inline">\(\lambda\)</span>)</li>
+<li class="fragment">mgf: <span class="math inline">\(e^\lambda e(^t-1)\)</span></li>
+<li class="fragment">If <span class="math inline">\(x_1 ~ Poisson(\lambda_1)\)</span> &amp; <span class="math inline">\(x_2 ~ Poisson(\lambda_1)\)</span>, then <span class="math inline">\(x_1+x_2 ~Poisson(\lambda_1+\lambda_2)\)</span></li>
+<li class="fragment">skewness: <span class="math inline">\(\frac 1 \lambda\)</span> (-ve skew)</li>
+<li class="fragment">kurtosis: platykurtic (<span class="math inline">\(1+\frac 1 {\sqrt{\lambda}}\)</span>)</li>
 </ul>
-</div>
-</div>
-<p></small></p>
-</section><section id="changing-origin-of-moments" class="slide level2">
-<h2>Changing Origin of Moments</h2>
-<p>From <span class="math inline">\(\mu_r&#39;(a)\)</span> to <span class="math inline">\(\mu_r&#39;(k)\)</span></p>
-<p>Assume, <span class="math inline">\(a^r = \mu_r&#39;(a)\)</span>, <span class="math inline">\(b = a - k\)</span></p>
-<small>
-<div class="container">
-<div class="col">
-<p>Binomial Formulae</p>
-<ol type="1">
-<li><span class="math inline">\((a+b)^1 = a + b\)</span></li>
-<li><span class="math inline">\((a+b)^2 = a^2 + 2ab + b^2\)</span></li>
-<li><span class="math inline">\((a+b)^3=a^3+3a^2b+3ab^2+b^3\)</span></li>
-<li><span class="math inline">\((a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4\)</span></li>
+</section>
+<section><section id="theorems" class="title-slide slide level1"><h1>Theorems</h1></section><section id="summation" class="slide level2">
+<h2>Summation</h2>
+<p><span class="math inline">\(\displaystyle \sum_{i=1}^{\infty} \frac{e^{-\lambda}\lambda^x}{x!}=1\)</span></p>
+<p>Prove</p>
+</section><section id="recurrence" class="slide level2">
+<h2>Recurrence</h2>
+<p>P(x+1)</p>
+</section><section id="poisson-to-normal" class="slide level2">
+<h2>Poisson to Normal</h2>
+<p>If <span class="math inline">\(\lambda\)</span> is very large.</p>
+</section><section id="bionomial-to-poisson" class="slide level2">
+<h2>Bionomial to Poisson</h2>
+<ul>
+<li>Number of trials, n, is very large: <span class="math inline">\(n \to \infty\)</span></li>
+<li>Probability of success, p, is very low: <span class="math inline">\(p \to 0\)</span></li>
+<li>Mean, <span class="math inline">\(np=\lambda\)</span> finite</li>
+</ul>
+</section></section>
+<section><section id="problems" class="title-slide slide level1"><h1>Problems</h1></section><section id="problem-01" class="slide level2">
+<h2>Problem 01</h2>
+<p>If P(x = 2) = P(x = 3), find</p>
+<ol type="i">
+<li>parameters</li>
+<li><span class="math inline">\(P(x&gt;0)\)</span></li>
+<li><span class="math inline">\(P(x\le 2)\)</span></li>
+<li><span class="math inline">\(P(x\ge 2)\)</span></li>
 </ol>
-</div>
-<div class="col">
-<ul>
-<li class="fragment"><ol type="1">
-<li class="fragment"><span class="math inline">\(\mu_1&#39;(k) = \mu_r&#39;(a) + b\)</span></li>
-</ol></li>
-<li class="fragment"><ol start="2" type="1">
-<li class="fragment"><span class="math inline">\(\mu_2&#39;(k) = \mu_2&#39;(a) + 2 \mu_1&#39;(a) + b^2\)</span></li>
-</ol></li>
-<li class="fragment"><ol start="3" type="1">
-<li class="fragment">?</li>
-</ol></li>
-<li class="fragment"><ol start="4" type="1">
-<li class="fragment">?</li>
-</ol></li>
-</ul>
-</div>
-</div>
-<p></small></p>
-</section><section id="central-moments-from-raws" class="slide level2">
-<h2>Central Moments from Raws</h2>
-<p>Use <span class="math inline">\(k = \bar x\)</span></p>
-<p>That’s it! DO NOT MEMORIZE!</p>
-</section><section id="skewness" class="slide level2">
-<h2>Skewness</h2>
-<p>Lack of symmetry</p>
-<p><img src="img/skewness.jpg" style="width:84%"></p>
-<ul>
-<li>-Ve Skew <span class="math inline">\(\rightarrow \bar X \lt Me \lt Mode\)</span></li>
-<li>+Ve Skew <span class="math inline">\(\rightarrow \bar X \gt Me \gt Mode\)</span></li>
-<li>No Skew <span class="math inline">\(\rightarrow \bar X = Me = Mode\)</span></li>
-</ul>
-</section><section id="kurtosis" class="slide level2">
-<h2>Kurtosis</h2>
-<p><img src="img/kurtosis.jpg" style="width:50%"></p>
-<p>Normal distribution <span class="math inline">\(\rightarrow\)</span></p>
-<ul>
-<li>Most students get average marks</li>
-<li>Higher and lower marks are obtained by lesser number of students</li>
-</ul>
-</section><section id="measures-of-skewness" class="slide level2">
-<h2>Measures of SKewness</h2>
-<div class="container">
-<div class="col">
-<p><small></p>
-<ul>
-<li><p>Pearson’s Coefficient: <span class="math inline">\(SK_P=\frac{Mean-Mode}{\sigma}=\frac{3(Mean-Median)}{\sigma} ;(-3,3)\)</span></p>
-<p>(<span class="math inline">\(Mode=3Me-2\bar X\)</span>)</p></li>
-</ul>
-<ul>
-<li class="fragment">Bowley’s Coefficient: <span class="math inline">\(SK_B=\frac{Q_3+Q_1-2Me}{Q_3-Q_1}; (-1,1)\)</span></li>
-<li class="fragment">Kelly’s Coefficient: <span class="math inline">\(SK_k=\frac{D_1+D_9-2Me}{D_9-D1}\)</span></li>
-<li class="fragment">Method of Moments: <span class="math inline">\(\beta_1=\frac{\mu_3^2}{\mu_2^3}\)</span></li>
-</ul>
-<p></small></p>
-</div>
-<div class="col">
-<p>Estimate Skewness</p>
-<p>4, 23, 55, 70, 74, 78, 86, 89</p>
-</div>
-</div>
-</section><section id="measures-of-kurtosis" class="slide level2">
-<h2>Measures of Kurtosis</h2>
-<ul>
-<li>Pearsons’s Coefficient of Moments, <span class="math inline">\(\beta_2 = \frac{\mu_4}{\mu_2^2}\)</span></li>
-<li>Percentile Coefficient, <span class="math inline">\(K=\frac{\frac 1 2 (Q_3-Q_1)}{P_{90}-P_{10}}\)</span></li>
-</ul>
-<p><span class="math inline">\(\gamma_2=\beta_2-3\)</span></p>
-<p><span class="math inline">\(\gamma_2=0 \space or \space \beta_2=3) \rightarrow\)</span> Mesokurtik <span class="math inline">\(\gamma_2\gt0 \space or \space \beta_2 \gt 3) \rightarrow\)</span> Leptokurtik <span class="math inline">\(\gamma_2\lt0 \space or \space \beta_2\lt3) \rightarrow\)</span> Platykurtik</p>
-<p>9, 7, 8, 6 <span class="math inline">\(\rightarrow\)</span> Find kurtosis</p>
-</section><section id="five-number-summary" class="slide level2">
-<h2>Five Number Summary</h2>
-<ul>
-<li>Minimum</li>
-<li>Maximum</li>
-<li><span class="math inline">\(Q_1, Q_2, Q_3\)</span></li>
-</ul>
-</section><section id="box-and-whisker-plot" class="slide level2">
-<h2>Box and Whisker Plot</h2>
-<p><img data-src="img/box_plot.jpg" alt="Box Plot" /></p>
-</section><section id="problems" class="slide level2">
-<h2>Problems</h2>
-<ul>
-<li class="fragment"><ol type="1">
-<li class="fragment"><span class="math inline">\(\bar X = 65, Me = 70, SK_P = -0.5\)</span>; Mod = ? CV = ?</li>
-</ol></li>
-<li class="fragment"><ol start="2" type="1">
-<li class="fragment">GM &amp; HM of quartiles of a symmetrical distribution are 8 and 6.4, respectively. Find median.</li>
-</ol></li>
-<li class="fragment"><ol start="3" type="1">
-<li class="fragment">Mean, SK(P), coefficient of skewness and CV of distribution are 50, 0.4, and 40%, respectively. Find SD, mode, &amp; median.</li>
-</ol></li>
-<li class="fragment"><ol start="4" type="1">
-<li class="fragment">Variance of a mesokurtik distribution is 4. Find <span class="math inline">\(\mu_4\)</span>.</li>
-</ol></li>
-</ul>
-</section><section id="moments-conversion-problems" class="slide level2">
-<h2>Moments Conversion Problems</h2>
-<div class="container">
-<div class="col">
-<ol type="1">
-<li>First three moments about 2 are 1, 16, and -40, , respectively. Find them about 0.</li>
-<li>First four moments about 5 are 2, 20,40, and 50, respectively. Find the central moments.</li>
-<li>First three moments about 2 are -1, 6, and 30, respectively. Find them about 5.</li>
-</ol>
-</div>
-<div class="col">
-<ul>
-<li class="fragment">3, 24, 76</li>
-<li class="fragment">0, 16, -64, 162</li>
-<li class="fragment">-4, 21, -78</li>
-</ul>
-</div>
-</div>
+</section><section id="problem-02" class="slide level2">
+<h2>Problem 02</h2>
+<p>Standard deviation of a Poisson distribution is 4. Find mean and the probabilities in problem 01.</p>
+</section><section id="problem-03" class="slide level2">
+<h2>Problem 03</h2>
+<p>If <span class="math inline">\(\frac{k\mu^x}{x!}; x = 0, 1, 2, \cdots, \infty,\)</span></p>
+<p>k=?</p>
+</section><section id="problem-04" class="slide level2">
+<h2>Problem 04</h2>
+<p>On average, there are 12 sixes in a t20 match.</p>
 </section></section>
     </div>
   </div>

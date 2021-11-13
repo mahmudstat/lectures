@@ -1,0 +1,105 @@
+---
+title: "Poisson Distribution"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    transition: zoom
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
+    reveal_options:
+      chalkboard:
+        theme: whiteboard
+    self_contained: false
+    lib_dir: libs
+    css: css/styles.css
+    includes:
+      in_header: css/header.html
+---
+
+## Concept
+
+Used in situation where some events occur at certain place or time. 
+
+Examples:
+
+> - No. of car accidents in a month
+> - Number of sixes in an innings
+> - No. of calls in an hour in a call center
+> - No. of bacteria in a $mm^2$
+> - No. of defective bolts in a lot (in statistical quality control)
+> - No. of particles in a radioactive decay
+> - No. of rate in cultivable land
+
+## Function
+
+$\displaystyle P(x) = \frac{e^{-\lambda}\lambda^x}{x!}$
+
+> - $e=2.718$ (constant)
+> - x: number of occurrences (success)
+> - $\lambda$: average no. of events
+
+## Poisson Process
+
+A process involving ..
+
+## Assumptions
+
+> - Occurrences are independent
+> - $p \space \alpha \space interval$
+> - another 
+
+## Properties
+
+> - Mean and variance are same ($\lambda$)
+> - mgf: $e^\lambda e(^t-1)$
+> - If $x_1 ~ Poisson(\lambda_1)$ & $x_2 ~ Poisson(\lambda_1)$, then $x_1+x_2 ~Poisson(\lambda_1+\lambda_2)$
+> - skewness: $\frac 1 \lambda$ (-ve skew)
+> - kurtosis: platykurtic ($1+\frac 1 {\sqrt{\lambda}}$)
+
+# Theorems
+
+## Summation 
+
+$\displaystyle \sum_{i=1}^{\infty} \frac{e^{-\lambda}\lambda^x}{x!}=1$
+
+Prove
+
+## Recurrence 
+
+P(x+1)
+
+## Poisson to Normal
+
+If $\lambda$ is very large.
+
+## Bionomial to  Poisson
+
+- Number of trials, n, is very large: $n \to \infty$
+- Probability of success, p, is very low: $p \to 0$
+- Mean, $np=\lambda$ finite
+
+# Problems
+
+## Problem 01
+
+If P(x = 2) = P(x = 3), find
+
+i) parameters
+ii) $P(x>0)$
+iii) $P(x\le 2)$
+iv) $P(x\ge 2)$
+
+## Problem 02
+
+Standard deviation of a Poisson distribution is 4. Find mean and the probabilities in problem 01.
+
+## Problem 03
+
+If $\frac{k\mu^x}{x!}; x = 0, 1, 2, \cdots, \infty,$
+
+k=?
+
+## Problem 04
+
+On average, there are 12 sixes in a t20 match. 

@@ -5,18 +5,21 @@ date: \today
 output: 
   revealjs::revealjs_presentation:
     theme: sky
-    reveal_plugins: ["menu", "chalkboard", "zoom"]
-    self_contained: false
-	lib_dir: libs
+    transition: zoom
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
     reveal_options:
-      slideNumber: true
-      previewLinks: true
+      chalkboard:
+        theme: whiteboard
+    self_contained: false
+    lib_dir: libs
     css: css/styles.css
     includes:
       in_header: css/header.html
 ---
 
 # Moments
+
+Can uniquely characterize a distribution
 
 ## Central Moments
 
@@ -55,7 +58,7 @@ $\downarrow$
 $(a-b)^3=a^3-3a^2b+3ab^2-b^3$
 
 $(a-b)^4=a^4-4a^3b+6a^2b^2-4ab^3+b^4$ (Pascal triangle can be used)
-
+ 
 $a^r=\mu_r'$
 
 $b^r=\mu_1'^r$
@@ -175,4 +178,21 @@ $\gamma_2\lt0 \space or \space \beta_2\lt3) \rightarrow$ Platykurtik
 > - 2. GM & HM of quartiles of a symmetrical distribution are 8 and 6.4, respectively. Find median.
 > - 3. Mean, SK(P), coefficient of skewness and CV of distribution are 50, 0.4, and 40%, respectively. Find SD, mode, & median. 
 > - 4. Variance of a mesokurtik distribution is 4. Find $\mu_4$.
-> - 5. First three moments about 2 are 1, 16, and -40. Find them about 0.
+
+
+## Moments Conversion Problems
+
+<div class="container">
+<div class="col">
+1. First three moments about 2 are 1, 16, and -40, , respectively. Find them about 0.
+2. First four moments about 5 are 2, 20,40, and 50, respectively. Find the central moments. 
+3. First three moments about 2 are -1, 6, and 30, respectively. Find them about 5.
+</div>
+<div class="col">
+> - 3, 24, 76
+> - 0, 16, -64, 162
+> - -4, 21, -78
+</div>
+</div>
+
+

@@ -17,7 +17,7 @@ output:
       in_header: css/header.html
 ---
 
-# Intro
+# Concept
 
 - Success/failure
 - Detection of a disease is a success!
