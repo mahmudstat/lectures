@@ -146,7 +146,42 @@ Which is farther from New York when they meet?
 
 > - Same! 
 
-# Porbability Paradoxes
+## Red-green
+
+Which is RED and which is GREEN?
+<p style="color:green">RED</p>
+<p style="color:red">GREEN</p>
+
+## Northia & Southia
+
+<small>
+
+> - Northia and Southia-had an agreement whereby a Northian dollar was worth a dollar in Southia, and vice versa. 
+> - But one day the government of Northia decreed that thereafter a South ian dollar was to be worth but ninety cents in Northia. The next day the South ian government, not to be outdone, decreed that thereafter a Northian dollar was to be worth but ninety cents in Southia. 
+> - Now a bright young man lived in a town which straddled the border between the two countries. He went into a store on the Northian side, bought a ten-cent razor, and paid for it with a Northian dollar. He was given a Southian dollar, worth ninety cents there, in change. 
+> - He then crossed the street, went into a Southian store, bought a ten-cent package of blades, and paid for it with the South ian dollar. There he was given a Northian dollar in change. When the young man returned home, he had his original dollar and his purchases. And each of the tradesmen had ten cents in his cash-drawer. 
+> - Who, then, paid for the razor and blades?
+
+</small>
+
+# Statistical Paradoxe
+
+## Speed Paradox
+
+<div class="container">
+<div class="col">
+<img class="plain" src="img/paradox/hm_paradox.PNG" width="500">
+</div>
+<div class="col">
+A man drove his car 1 mile to the top of a mountain at the rate of 15 miles per hour. How fast must he drive 1 mile down the other side in order to average 30 miles per hour for the whole trip of 2 miles?
+
+> - Use HM when denominator of rate is constant
+> - Infinite speed (0 second)
+</div>
+</div>
+
+
+# Probability Paradoxes
 
 ## Zero vs Infinitesimal Probability
 
@@ -177,11 +212,13 @@ Which is farther from New York when they meet?
 
 ## Real World Example
 
-Real world is not what we think it bo be
+Real world is not what we think it to be
 
 <img class="plain" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Perth_Impossible_Triangle.jpg/1920px-Perth_Impossible_Triangle.jpg" width="1200">
 
 [See more here](https://en.wikipedia.org/wiki/Impossible_object#Constructed_impossible_objects)
+
+
 
 # References
 

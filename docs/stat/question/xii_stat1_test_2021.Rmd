@@ -72,7 +72,27 @@ d. If marks of 12 students of JCC are included to get a combined AM of 78.53, wh
 ::: {}
 <center><h6>**Group B**</h6></center>
 
-**5. trees data
+**5. Diameter, height and volume for Black Cherry trees are obtained (from inside R programming)**
+
+```{r, echo=FALSE}
+knitr::kable(
+head(trees), booktabs = TRUE,
+  caption = "")
+```
+
+a. What are moments?
+b. Which moment equal variance? Show mathematically.
+c. Find the first and second raw moments about 2 of volume of the trees
+d. What do you understand of the possible shape of the data on height and volume of the trees?
+
+**6. The first four moments around 3 of a data are found to be -1, 5, 20, and 90.**
+
+a. What is skewness?
+b. Draw shapes of different types of skewness.
+c. Determine the 2^nd^ and 3^rd^ central moments from the stem.
+d. Find the formulae of 4^th^ and 5^th^ central moments in terms of raw moments...
+
+7. 
 :::
 
 ::::
