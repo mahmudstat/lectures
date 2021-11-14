@@ -29,7 +29,7 @@ Examples:
 > - No. of bacteria in a $mm^2$
 > - No. of defective bolts in a lot (in statistical quality control)
 > - No. of particles in a radioactive decay
-> - No. of rate in cultivable land
+> - No. of rats in cultivable land
 
 ## Function
 
@@ -46,14 +46,14 @@ A process involving ..
 ## Assumptions
 
 > - Occurrences are independent
-> - $p \space \alpha \space interval$
+> - $p \space \propto$Interval
 > - another 
 
 ## Properties
 
 > - Mean and variance are same ($\lambda$)
 > - mgf: $e^\lambda e(^t-1)$
-> - If $x_1 ~ Poisson(\lambda_1)$ & $x_2 ~ Poisson(\lambda_1)$, then $x_1+x_2 ~Poisson(\lambda_1+\lambda_2)$
+> - If $x_1 \sim Poisson(\lambda_1)$ & $x_2 \sim Poisson(\lambda_1)$, then $(x_1+x_2) \sim Poisson(\lambda_1+\lambda_2)$
 > - skewness: $\frac 1 \lambda$ (-ve skew)
 > - kurtosis: platykurtic ($1+\frac 1 {\sqrt{\lambda}}$)
 

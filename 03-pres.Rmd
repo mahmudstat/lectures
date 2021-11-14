@@ -27,7 +27,7 @@ See more [here](https://defkey.com/reveal-js-shortcuts)
 - Chapter 02: [Random variable and Probability Distributions](stat/prob_ch2_random_variable.html)
 - Chapter 03: [Mathematical Expectation](stat/prob_ch3_expectation.html)
 - Chapter 04: [Binomial Distribution](stat/prob_ch4_binomial_dist.html)
-
+- Chapter 05: [Poisson Distribution](stat/prob_ch5_poisson_dist.html)
 
 **Others**
 
