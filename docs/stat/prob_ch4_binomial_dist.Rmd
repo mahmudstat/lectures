@@ -33,7 +33,7 @@ The probability of choosing statistics is `r round(8/50,2)`. If 20 students are 
 
 ## Function
 
-$P(x) = ^nC_xp^x(1-p)^{n-x}$
+$P(x) = ^nC_x \space p^x(1-p)^{n-x}$
 
 $1-p=q$
 
@@ -42,6 +42,25 @@ $1-p=q$
 > - $n \to$ number of Bernoulli trials
 > - $x \to$ no. of success
 
+## Bernoulli Trial
+
+> - Introduced by James Bernoulli
+> - Independent trials with dichotomous outcomes (success/failure)
+> - Coin toss, disease detection 
+
+## Bernoulli Distribution
+
+$p^xq^{1-x}$ 
+
+If n = 1 in binomial distribution
+
+# Assumptions of Binomial Distribution
+
+> - Trials are independent
+> - p, q remain constant for each trial
+> - Outcomes are dichotomous
+> - X counts number of success
+
 ## Properties of Binomial Distribution
 
 > - Mean: $np$
@@ -49,6 +68,31 @@ $1-p=q$
 > - Skewness, $\beta_1 = \frac{(q-p)^2}{npq}$
 > - Kurtosis, $\beta_2 = 3 + \frac{1-6pq}{npq}$
 
+## Derivation of pmf
+
+$P(SF SF \cdots) = P(S) \times P(F) \cdots$
+> - $(p \times p \cdots \times p)(\times q \times q \cdots \times q)$
+> - $p^xq^{n-x}$
+> - $^nC_x \space p^xq^{n-x}$ (any x combination from n)
+> - 2 items from a, b, c $\to ab, ac, bc \to \space ^3C_2$
+
+## Derivation of Mean
+
+$\displaystyle E(X) = \sum_{x=0}^n x\cdot p(x)$ (think: why zero?)
+
+> - $0 \cdot p(0) + \cdots$
+> - $np\{q^{n-1}+n(n-1)pq^{n-2}+\cdots+p^{n-1}\}$
+> - $np(1+p)^{n-1} [binomial \ theorem]$
+> - $np$ [p+q=1]
+
+## Uses of Binomial Distribution
+
+> - Quality control
+> - Test of fit
+
+## Binomial to Noraml
+
+If $n \to \infty$ and $np\ge 5, nq \ge 5$
 
 ## Problem 01
 

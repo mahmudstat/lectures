@@ -462,7 +462,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <h2 class="author">Abdullah Al Mahmud</h2>
 </section>
 
-<section><section id="intro" class="title-slide slide level1"><h1>Intro</h1><ul>
+<section><section id="concept" class="title-slide slide level1"><h1>Concept</h1><ul>
 <li>Success/failure</li>
 <li>Detection of a disease is a success!</li>
 </ul></section><section id="example" class="slide level2">
@@ -475,7 +475,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul>
 </section><section id="function" class="slide level2">
 <h2>Function</h2>
-<p><span class="math inline">\(P(x) = ^nC_xp^x(1-p)^{n-x}\)</span></p>
+<p><span class="math inline">\(P(x) = ^nC_x \space p^x(1-p)^{n-x}\)</span></p>
 <p><span class="math inline">\(1-p=q\)</span></p>
 <ul>
 <li class="fragment"><span class="math inline">\(p \to\)</span> probability of success</li>
@@ -483,7 +483,24 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li class="fragment"><span class="math inline">\(n \to\)</span> number of Bernoulli trials</li>
 <li class="fragment"><span class="math inline">\(x \to\)</span> no. of success</li>
 </ul>
-</section><section id="properties-of-binomial-distribution" class="slide level2">
+</section><section id="bernoulli-trial" class="slide level2">
+<h2>Bernoulli Trial</h2>
+<ul>
+<li class="fragment">Introduced by James Bernoulli</li>
+<li class="fragment">Independent trials with dichotomous outcomes (success/failure)</li>
+<li class="fragment">Coin toss, disease detection</li>
+</ul>
+</section><section id="bernoulli-distribution" class="slide level2">
+<h2>Bernoulli Distribution</h2>
+<p><span class="math inline">\(p^xq^{1-x}\)</span></p>
+<p>If n = 1 in binomial distribution</p>
+</section></section>
+<section><section id="assumptions-of-binomial-distribution" class="title-slide slide level1"><h1>Assumptions of Binomial Distribution</h1><ul>
+<li class="fragment">Trials are independent</li>
+<li class="fragment">p, q remain constant for each trial</li>
+<li class="fragment">Outcomes are dichotomous</li>
+<li class="fragment">X counts number of success</li>
+</ul></section><section id="properties-of-binomial-distribution" class="slide level2">
 <h2>Properties of Binomial Distribution</h2>
 <ul>
 <li class="fragment">Mean: <span class="math inline">\(np\)</span></li>
@@ -491,6 +508,27 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li class="fragment">Skewness, <span class="math inline">\(\beta_1 = \frac{(q-p)^2}{npq}\)</span></li>
 <li class="fragment">Kurtosis, <span class="math inline">\(\beta_2 = 3 + \frac{1-6pq}{npq}\)</span></li>
 </ul>
+</section><section id="derivation-of-pmf" class="slide level2">
+<h2>Derivation of pmf</h2>
+<p><span class="math inline">\(P(SF SF \cdots) = P(S) \times P(F) \cdots\)</span> &gt; - <span class="math inline">\((p \times p \cdots \times p)(\times q \times q \cdots \times q)\)</span> &gt; - <span class="math inline">\(p^xq^{n-x}\)</span> &gt; - <span class="math inline">\(^nC_x \space p^xq^{n-x}\)</span> (any x combination from n) &gt; - 2 items from a, b, c <span class="math inline">\(\to ab, ac, bc \to \space ^3C_2\)</span></p>
+</section><section id="derivation-of-mean" class="slide level2">
+<h2>Derivation of Mean</h2>
+<p><span class="math inline">\(\displaystyle E(X) = \sum_{x=0}^n x\cdot p(x)\)</span> (think: why zero?)</p>
+<ul>
+<li class="fragment"><span class="math inline">\(0 \cdot p(0) + \cdots\)</span></li>
+<li class="fragment"><span class="math inline">\(np\{q^{n-1}+n(n-1)pq^{n-2}+\cdots+p^{n-1}\}\)</span></li>
+<li class="fragment"><span class="math inline">\(np(1+p)^{n-1} [binomial \ theorem]\)</span></li>
+<li class="fragment"><span class="math inline">\(np\)</span> [p+q=1]</li>
+</ul>
+</section><section id="uses-of-binomial-distribution" class="slide level2">
+<h2>Uses of Binomial Distribution</h2>
+<ul>
+<li class="fragment">Quality control</li>
+<li class="fragment">Test of fit</li>
+</ul>
+</section><section id="binomial-to-noraml" class="slide level2">
+<h2>Binomial to Noraml</h2>
+<p>If <span class="math inline">\(n \to \infty\)</span> and <span class="math inline">\(np\ge 5, nq \ge 5\)</span></p>
 </section><section id="problem-01" class="slide level2">
 <h2>Problem 01</h2>
 <p>The mean and sd of a binomial distribution are 40 and 6. Find</p>

@@ -21,15 +21,21 @@ output:
 
 Used in situation where some events occur at certain place or time. 
 
-Examples:
+[See applications](https://en.wikipedia.org/wiki/Poisson_distribution#Occurrence_and_applications)
+
+## Examples
 
 > - No. of car accidents in a month
-> - Number of sixes in an innings
+> - No. of sixes in an innings
 > - No. of calls in an hour in a call center
 > - No. of bacteria in a $mm^2$
 > - No. of defective bolts in a lot (in statistical quality control)
 > - No. of particles in a radioactive decay
 > - No. of rats in cultivable land
+> - No.  of meteorites greater than 1 meter diameter that strike Earth in a year
+> - No.  of patients arriving in an emergency room between 10 and 11 pm
+> - No.  of laser photons hitting a detector in a particular time interval
+
 
 ## Function
 
@@ -102,4 +108,10 @@ k=?
 
 ## Problem 04
 
-On average, there are 12 sixes in a t20 match. 
+Overflow floods occur once every 100 years on average. Calculate the probability of k = 0, 1, 2, 3, 4, 5, or 6 overflow floods in a 100-year interval, assuming the Poisson model is appropriate.
+
+> - Because the average event rate is one overflow flood per 100 years, λ = 1
+
+## problem 05
+
+Ugarte and colleagues report that the average number of goals in a World Cup soccer match is approximately 2.5 and the Poisson model is appropriate. Estimate probability of k goals and then k = 0,1,2,3..
