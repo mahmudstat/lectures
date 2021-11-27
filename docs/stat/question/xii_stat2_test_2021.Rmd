@@ -13,7 +13,7 @@ output: html_document
 
 <div style="float: left">Time: 2 hours and 35 minutes</div>
 <div style="float: right">Full Marks: 50</div>
-<div style="margin: 0 auto; width: 100px;">Sub Code: 129</div>
+<div style="margin: 0 auto; width: 100px;">Sub Code: 130</div>
 <div style="float: left">Figures in the right indicate full marks. Answer five questions, taking at least two from each group</div>
 </div>
 
@@ -63,6 +63,11 @@ b. Prove expected value is equal to arithmetic mean.
 c. Find the value of $k$ and $P(X \lt -3 \le0)$.
 d. Determine the expected value and variance of X. 
 
+:::
+
+::: {}
+<center><h6>**Group B**</h6></center>
+
 **5. In an industry, 3\% products are found to be defective. A quality control officer collects a sample of 20 items.**
 
 a. What is Bernoulli trial?
@@ -73,18 +78,25 @@ d. Find the probability that no. of defective items would be less than the mean.
 **6. A statistician of a customer care center investigates the calls received and finds that the call center receives 5 calls per hour on average.**
 
 a. What is a Poisson process?
+b. Prove that the summation of probability of all possible values of a Poisson distribution is 1. 
+c. What is the probability that no less than three calls would be received in an hour?
+d. Is the probability of receiving one call greater than that of receiving no calls? Justify mathematically and logically. 
+
+
+
+**7. In winter, the probability that it rains on a particular day is 0.015. An analyst observes 100 winter days.**
+
+a. What is an experiment?
 b. When can the Poisson distribution be approximated by the Binomial distribution?
-c. What is the probability that no less than three calls would be received?
-d. Solve the problem in 3(c) using binomial distribution, assuming any correct combination of values of n and p. 
-:::
+c. Find, using Binomial distribution, the probability it would not rain at all on the observed days.
+d. Find the probability in 3(c) using Poisson distribution. 
 
+**8. For projection of population in a future time period, demographers use simple, geometric or exponential growth technique. Each method has its advantages and disadvantages.**
 
-**7. A coin is tossed 5 times, and this process is repeated 1000 times. **
-
-::: {}
-<center><h6>**Group B**</h6></center>
-
-**5. **
+a. What is simple growth?
+b. In geometric growth method, obtain the formula for time required for the population to get doubled [denote rate as r].
+c. In exponential method, how much unit of time is required for the population to get tripled? 
+d. For projecting (predicting future values), is geometric better than the exponential method. Justify. 
 
 :::
 

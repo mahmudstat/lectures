@@ -1,0 +1,49 @@
+---
+title: ''
+classoption:
+- twocolumn
+output: html_document
+---
+<div style="font-weight: bold;">
+<center><h5>Pabna Cadet College</h5></center>
+
+<center>Test Examination - 2021<center>
+<center>Class: XII</center>
+<center>Subject: Statistics 2^nd^ Paper (Creative)</center> 
+
+<div style="float: left">Time: 2 hours and 35 minutes</div>
+<div style="float: right">Full Marks: 50</div>
+<div style="margin: 0 auto; width: 100px;">Sub Code: 130</div>
+<div style="float: left">Figures in the right indicate full marks. Answer five questions, taking at least two from each group</div>
+</div>
+
+.
+
+:::: {style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 10px;"}
+
+::: {}
+
+1. Which one is a correct condition of a pdf?
+
+a. $\displaystyle \int_0^1 f(x) dx =1$
+b. $P(X)\ge0$
+c. $\displaystyle \int_a^b f(x) dx =1 ; a\le x \le b$ *
+d. $\displaystyle \int_0^{Median} f(x) dx =0.55$
+
+:::
+
+::: {}
+
+13. The figure is an example of a 
+
+![](../img/pdf_example.png)
+
+a. probability density function
+b. probability mass function
+c. could be both
+d. none
+:::
+
+::::
+
+<center>---Good Luck---</center>
