@@ -1,0 +1,93 @@
+---
+title: ''
+classoption:
+- twocolumn
+output: html_document
+---
+<div style="font-weight: bold;">
+<center><h5>Pabna Cadet College</h5></center>
+
+<center>Test Examination - 2021<center>
+<center>Class: XII</center>
+<center>Subject: Statistics 2^nd^ Paper (Creative)</center> 
+
+<div style="float: left">Time: 2 hours and 35 minutes</div>
+<div style="float: right">Full Marks: 50</div>
+<div style="margin: 0 auto; width: 100px;">Sub Code: 129</div>
+<div style="float: left">Figures in the right indicate full marks. Answer five questions, taking at least two from each group</div>
+</div>
+
+.
+
+:::: {style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 10px;"}
+
+::: {}
+<center><h6>**Group A**</h6></center>
+
+**1. In a college, there are 100 students, of whom 30 play football, 40 play cricket, and 20 play both**
+
+a. What is a sample space?
+b. What is the relationship between independence and mutual excluvity? 
+b. Are the probabilities of playing cricket and that of football independent? Prove.
+c. If a student is selected randomly,a nd if he plays cricket, what is the probability that he does not play football?
+
+**2. There are 9 red and 7 white balls in a box.**
+
+a. If a ball is picked, what is the probability that the ball is not red?
+b. If two balls are drawn, what is the probability that both are red?
+c. If 6 balls are picked randomly, what is the probability that 3 balls are red and 3 balls are white?
+d. When two balls are drawn without replacement, what is probability that none is red? If this task is repeated a hundred times, approximately how many times would we get all-non-red balls?
+
+**3. The probability density function of a continuous random variable is**
+
+$$
+  f(x) =
+\begin{cases}
+kx^2+kx+ \frac 18,  & 0 \le x \le 2 \\
+0, & otherwise
+\end{cases}
+$$
+a. What is a random variable?
+b. Find the value of k
+c. Find the probability that the values of x would lie between 0 and 1.
+d. Is $f(x)$ a probability density function? Justify. 
+
+**4. Probability distribution of a random variable is shown on the table:**
+
+|   x  | -3 | -2 | -1 |  0 |  1 |  2  |
+|:----:|:--:|:--:|:--:|:--:|:--:|:---:|
+| P(x) |  k | 2k | 3k | 2k | 4k | 0.4 |
+
+a. What is the formula of variance in terms of expectation?
+b. Prove expected value is equal to arithmetic mean.
+c. Find the value of $k$ and $P(X \lt -3 \le0)$.
+d. Determine the expected value and variance of X. 
+
+**5. In an industry, 3\% products are found to be defective. A quality control officer collects a sample of 20 items.**
+
+a. What is Bernoulli trial?
+b. What is the relationship between Bernoulli and Binomial distribution? 
+c. Determine the probability that at least 3 items are defective.
+d. Find the probability that no. of defective items would be less than the mean.  
+
+**6. A statistician of a customer care center investigates the calls received and finds that the call center receives 5 calls per hour on average.**
+
+a. What is a Poisson process?
+b. When can the Poisson distribution be approximated by the Binomial distribution?
+c. What is the probability that no less than three calls would be received?
+d. Solve the problem in 3(c) using binomial distribution, assuming any correct combination of values of n and p. 
+:::
+
+
+**7. A coin is tossed 5 times, and this process is repeated 1000 times. **
+
+::: {}
+<center><h6>**Group B**</h6></center>
+
+**5. **
+
+:::
+
+::::
+
+<center>---Good Luck---</center>

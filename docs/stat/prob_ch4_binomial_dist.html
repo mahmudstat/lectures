@@ -510,14 +510,20 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul>
 </section><section id="derivation-of-pmf" class="slide level2">
 <h2>Derivation of pmf</h2>
-<p><span class="math inline">\(P(SF SF \cdots) = P(S) \times P(F) \cdots\)</span> &gt; - <span class="math inline">\((p \times p \cdots \times p)(\times q \times q \cdots \times q)\)</span> &gt; - <span class="math inline">\(p^xq^{n-x}\)</span> &gt; - <span class="math inline">\(^nC_x \space p^xq^{n-x}\)</span> (any x combination from n) &gt; - 2 items from a, b, c <span class="math inline">\(\to ab, ac, bc \to \space ^3C_2\)</span></p>
+<p><span class="math inline">\(P(SF SF \cdots) = P(S) \times P(F) \cdots\)</span></p>
+<ul>
+<li class="fragment"><span class="math inline">\((p \times p \cdots \times p)(\times q \times q \cdots \times q)\)</span></li>
+<li class="fragment"><span class="math inline">\(p^xq^{n-x}\)</span></li>
+<li class="fragment"><span class="math inline">\(^nC_x \space p^xq^{n-x}\)</span> (any x combination from n)</li>
+<li class="fragment">2 items from a, b, c <span class="math inline">\(\to ab, ac, bc \to \space ^3C_2\)</span></li>
+</ul>
 </section><section id="derivation-of-mean" class="slide level2">
 <h2>Derivation of Mean</h2>
 <p><span class="math inline">\(\displaystyle E(X) = \sum_{x=0}^n x\cdot p(x)\)</span> (think: why zero?)</p>
 <ul>
 <li class="fragment"><span class="math inline">\(0 \cdot p(0) + \cdots\)</span></li>
 <li class="fragment"><span class="math inline">\(np\{q^{n-1}+n(n-1)pq^{n-2}+\cdots+p^{n-1}\}\)</span></li>
-<li class="fragment"><span class="math inline">\(np(1+p)^{n-1} [binomial \ theorem]\)</span></li>
+<li class="fragment"><span class="math inline">\(np(q+p)^{n-1} [binomial \ theorem]\)</span></li>
 <li class="fragment"><span class="math inline">\(np\)</span> [p+q=1]</li>
 </ul>
 </section><section id="uses-of-binomial-distribution" class="slide level2">
@@ -526,6 +532,9 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li class="fragment">Quality control</li>
 <li class="fragment">Test of fit</li>
 </ul>
+</section><section id="binomial-to-poisson" class="slide level2">
+<h2>Binomial to Poisson</h2>
+<p><a href="prob_ch5_poisson_dist.html#/bionomial-to-poisson">See here</a></p>
 </section><section id="binomial-to-noraml" class="slide level2">
 <h2>Binomial to Noraml</h2>
 <p>If <span class="math inline">\(n \to \infty\)</span> and <span class="math inline">\(np\ge 5, nq \ge 5\)</span></p>
@@ -550,8 +559,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li>at least 2 heads</li>
 <li>at most 1 head</li>
 </ol>
-</section><section id="problem-3" class="slide level2">
-<h2>Problem 3</h2>
+</section><section id="problem-03" class="slide level2">
+<h2>Problem 03</h2>
 <p>The probability that it rains on a particular day is 0.2. If 10 days are observed, what is the probability that it would rain on</p>
 <ol type="i">
 <li>all 10 days</li>

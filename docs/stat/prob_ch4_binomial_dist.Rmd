@@ -71,6 +71,7 @@ If n = 1 in binomial distribution
 ## Derivation of pmf
 
 $P(SF SF \cdots) = P(S) \times P(F) \cdots$
+
 > - $(p \times p \cdots \times p)(\times q \times q \cdots \times q)$
 > - $p^xq^{n-x}$
 > - $^nC_x \space p^xq^{n-x}$ (any x combination from n)
@@ -82,13 +83,17 @@ $\displaystyle E(X) = \sum_{x=0}^n x\cdot p(x)$ (think: why zero?)
 
 > - $0 \cdot p(0) + \cdots$
 > - $np\{q^{n-1}+n(n-1)pq^{n-2}+\cdots+p^{n-1}\}$
-> - $np(1+p)^{n-1} [binomial \ theorem]$
+> - $np(q+p)^{n-1} [binomial \ theorem]$
 > - $np$ [p+q=1]
 
 ## Uses of Binomial Distribution
 
 > - Quality control
 > - Test of fit
+
+## Binomial to Poisson
+
+[See here](prob_ch5_poisson_dist.html#/bionomial-to-poisson)
 
 ## Binomial to Noraml
 
@@ -114,7 +119,7 @@ i) 3 heads
 ii) at least 2 heads
 iii) at most 1 head
 
-## Problem 3
+## Problem 03
 
 The probability that it rains on a particular day is 0.2. If 10 days are observed, what is the probability that it would rain on
 

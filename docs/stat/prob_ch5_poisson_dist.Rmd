@@ -85,6 +85,29 @@ If $\lambda$ is very large.
 - Probability of success, p, is very low: $p \to 0$
 - Mean, $np=\lambda$ finite
 
+Events that can happen a very large number of time, but happen rarely. 
+
+## Difference with Binomial
+
+<div class="container">
+<div class="col">
+```{r, echo=FALSE}
+set.seed(10)
+plot(sample(100,80), main="Rats on a filed", xlab = "", ylab = "", axes = F, pch=19, sub = "Could be anywhere, not just on some specific points")
+```
+</div>
+<div class="col">
+<small>
+
+> - Binomial counts discrete occurrences among discrete trials (finite attempts)
+> - Poisson counts  discrete occurrences among continuous trials (infinite attempts)
+> - In Poisson, success can occur at any point of time (or space)
+> - Accidents in road (anywhere anytime), knots on a rope
+
+</small>
+</div>
+</div>
+
 # Problems
 
 ## Problem 01

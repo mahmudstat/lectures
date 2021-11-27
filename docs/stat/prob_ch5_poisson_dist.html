@@ -465,15 +465,21 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section id="concept" class="slide level2">
 <h2>Concept</h2>
 <p>Used in situation where some events occur at certain place or time.</p>
-<p>Examples:</p>
+<p><a href="https://en.wikipedia.org/wiki/Poisson_distribution#Occurrence_and_applications">See applications</a></p>
+</section>
+<section id="examples" class="slide level2">
+<h2>Examples</h2>
 <ul>
 <li class="fragment">No. of car accidents in a month</li>
-<li class="fragment">Number of sixes in an innings</li>
+<li class="fragment">No. of sixes in an innings</li>
 <li class="fragment">No. of calls in an hour in a call center</li>
 <li class="fragment">No. of bacteria in a <span class="math inline">\(mm^2\)</span></li>
 <li class="fragment">No. of defective bolts in a lot (in statistical quality control)</li>
 <li class="fragment">No. of particles in a radioactive decay</li>
-<li class="fragment">No. of rat in cultivable land</li>
+<li class="fragment">No. of rats in cultivable land</li>
+<li class="fragment">No. of meteorites greater than 1 meter diameter that strike Earth in a year</li>
+<li class="fragment">No. of patients arriving in an emergency room between 10 and 11 pm</li>
+<li class="fragment">No. of laser photons hitting a detector in a particular time interval</li>
 </ul>
 </section>
 <section id="function" class="slide level2">
@@ -524,6 +530,24 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li>Probability of success, p, is very low: <span class="math inline">\(p \to 0\)</span></li>
 <li>Mean, <span class="math inline">\(np=\lambda\)</span> finite</li>
 </ul>
+<p>Events that can happen a very large number of time, but happen rarely.</p>
+</section><section id="difference-with-binomial" class="slide level2">
+<h2>Difference with Binomial</h2>
+<div class="container">
+<div class="col">
+<p><img src="prob_ch5_poisson_dist_files/figure-revealjs/unnamed-chunk-1-1.png" width="768" /></p>
+</div>
+<div class="col">
+<p><small></p>
+<ul>
+<li class="fragment">Binomial counts discrete occurrences among discrete trials (finite attempts)</li>
+<li class="fragment">Poisson counts discrete occurrences among continuous trials (infinite attempts)</li>
+<li class="fragment">In Poisson, success can occur at any point of time (or space)</li>
+<li class="fragment">Accidents in road (anywhere anytime), knots on a rope</li>
+</ul>
+<p></small></p>
+</div>
+</div>
 </section></section>
 <section><section id="problems" class="title-slide slide level1"><h1>Problems</h1></section><section id="problem-01" class="slide level2">
 <h2>Problem 01</h2>
@@ -543,7 +567,13 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <p>k=?</p>
 </section><section id="problem-04" class="slide level2">
 <h2>Problem 04</h2>
-<p>On average, there are 12 sixes in a t20 match.</p>
+<p>Overflow floods occur once every 100 years on average. Calculate the probability of k = 0, 1, 2, 3, 4, 5, or 6 overflow floods in a 100-year interval, assuming the Poisson model is appropriate.</p>
+<ul>
+<li class="fragment">Because the average event rate is one overflow flood per 100 years, λ = 1</li>
+</ul>
+</section><section id="problem-05" class="slide level2">
+<h2>problem 05</h2>
+<p>Ugarte and colleagues report that the average number of goals in a World Cup soccer match is approximately 2.5 and the Poisson model is appropriate. Estimate probability of k goals and then k = 0,1,2,3..</p>
 </section></section>
     </div>
   </div>
