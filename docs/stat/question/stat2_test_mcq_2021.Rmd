@@ -11,7 +11,7 @@ output: html_document
 <center>Class: XII</center>
 <center>Subject: Statistics 2^nd^ Paper (Creative)</center> 
 
-<div style="float: left">Time: 2 hours and 35 minutes</div>
+<div style="float: left">Time: 25 minutes</div>
 <div style="float: right">Full Marks: 50</div>
 <div style="margin: 0 auto; width: 100px;">Sub Code: 130</div>
 <div style="float: left">Figures in the right indicate full marks. Answer five questions, taking at least two from each group</div>
@@ -40,30 +40,36 @@ d. complementary events
 3. If a coin is tossed $n$ times, how many outcomes are generated?
 
 a. $n$
-b. 
+b. $n^2$
+c. $2^n$
+d. $2n$
 
-1. Which one is a correct condition of a pdf?
+Answer the question 4-5 according to the information below
+
+$P(A) = \frac 18, P(A|B)=\frac14$, and $P(B|A)=\frac16$
+
+4. $P(A\cap B)=?$
+
+a. $\frac{1}{48}$*
+a. $\frac{1}{24}$
+a. $\frac{1}{32}$
+a. 1
+
+5. A card is drawn at random from a well-shuffled deck of 52 cards. What is the probability that the drawn card is not a Queen?
+
+a. $\frac 1 {52}$
+b. $\frac {4}{52}$
+c. $\frac{1}{13}$
+d. $\frac{12}{13}$
+
+7. Which one is a correct condition of a pdf?
 
 a. $\displaystyle \int_0^1 f(x) dx =1$
 b. $P(X)\ge0$
 c. $\displaystyle \int_a^b f(x) dx =1 ; a\le x \le b$ *
 d. $\displaystyle \int_0^{Median} f(x) dx =0.55$
 
-2. What are highest and lowest possible values of F(x)?
-
-a. $0, 1$*
-b. $-1, 1$
-c. $-\infty, +\infty$
-d. $0, \infty$
-
-3. How mnay types of random variable are there?
-
-a. 1
-b. 2*
-c. 3
-d. 4
-
-4. The figure is an example of a 
+8. The figure is an example of a 
 
 ![](../img/pdf_example.png)
 
@@ -71,31 +77,6 @@ a. probability density function
 b. probability mass function
 c. could be both
 d. none
-
-Answer the questions 5-7 according the following information.
-
-$f(x)=\frac{x+1}{14}; x = 1,2,3,4$
-
-5. What is P(X=2)?
-
-a. $\frac{2}{13}$
-b. $\frac{4}{14}$*
-c. $\frac{3}{14}$
-d. $\frac{1}{7}$
-
-6. What is P(X=5)
-
-a.  $\frac{5}{14}$
-b.  $\frac{1}{7}$
-c.  0*
-d. 1
-
-7. $P(2\le X \le 5)=?$
-
-a. $\frac{6}{7}$*
-b. $\frac{5}{7}$
-c. 1
-d. $\frac{14}{17}$
 
 Answer the questions 9-10 according to the following information.
 
@@ -115,18 +96,35 @@ b. $1$
 c. $x$
 d. 0
 
+11. If $Y=aX+b, E(X)=?$
+
+a. $aE(X)+b$
+b. $a^2E(X)$
+c. $E(X)$
+d. $a+bE(X)$
+
+12. $P(x)=\frac 1n; x = 1,2,3,\cdots$, then $E(X)=?$
+
+a. $\frac n2$
+b. $\frac{n-1}{2}$
+c. $\frac{n+1}2$
+d. $n+1$
+
+13. Expectation is equal to-
+
+a. Variance
+b. Square of variance
+c. Arithmetic mean
+d. Standard deviation
+
+14. 
+
 :::
 
 ::: {}
 
-13. The figure is an example of a 
+14. What is 
 
-![](../img/pdf_example.png)
-
-a. probability density function
-b. probability mass function
-c. could be both
-d. none
 :::
 
 ::::
