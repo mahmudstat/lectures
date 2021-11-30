@@ -24,19 +24,19 @@ output: html_document
 ::: {}
 <center><h6>**Group A**</h6></center>
 
-**1. In a college, there are 100 students, of whom 30 play football, 40 play cricket, and 20 play both**
+**1. It is observed that in a college, there are 100 students, of whom 30 play football, 40 play cricket, and 20 play both.**
 
 a. What is a sample space?
 b. What is the relationship between independence and mutual excluvity? 
 b. Are the probabilities of playing cricket and that of football independent? Prove.
 c. If a student is selected randomly,a nd if he plays cricket, what is the probability that he does not play football?
 
-**2. There are 9 red and 7 white balls in a box.**
+**2. For a lottery, 9 red and 7 white balls are placed in a box. Different combinations of balls are then picked up from the box.**
 
-a. If a ball is picked, what is the probability that the ball is not red?
-b. If two balls are drawn, what is the probability that both are red?
+a. What is the probability of an impossible event?
+b. If a ball is drawn, what is the probability the ball not white?
 c. If 6 balls are picked randomly, what is the probability that 3 balls are red and 3 balls are white?
-d. When two balls are drawn without replacement, what is probability that none is red? If this task is repeated a hundred times, approximately how many times would we get all-non-red balls?
+d. When two balls are drawn without replacement, what is the probability that none is red? If this task is repeated a hundred times, approximately how many times would we get all-non-red balls?
 
 **3. The probability density function of a continuous random variable is**
 
@@ -47,6 +47,7 @@ kx^2+kx+ \frac 18,  & 0 \le x \le 2 \\
 0, & otherwise
 \end{cases}
 $$
+
 a. What is a random variable?
 b. Find the value of k
 c. Find the probability that the values of x would lie between 0 and 1.
@@ -60,8 +61,8 @@ d. Is $f(x)$ a probability density function? Justify.
 
 a. What is the formula of variance in terms of expectation?
 b. Prove expected value is equal to arithmetic mean.
-c. Find the value of $k$ and $P(X \lt -3 \le0)$.
-d. Determine the expected value and variance of X. 
+c. Find the value of $k$ and $P(-3 \le X \le 0)$.
+d. Determine the $E(X)$ and $V(X)$. 
 
 :::
 
@@ -88,7 +89,7 @@ d. Is the probability of receiving one call greater than that of receiving no ca
 
 a. What is an experiment?
 b. When can the Poisson distribution be approximated by the Binomial distribution?
-c. Find, using Binomial distribution, the probability it would not rain at all on the observed days.
+c. Find, using Binomial distribution, the probability that  it would not rain at all on the observed days.
 d. Find the probability in 3(c) using Poisson distribution. 
 
 **8. For projection of population in a future time period, demographers use simple, geometric or exponential growth technique. Each method has its advantages and disadvantages.**
@@ -96,7 +97,7 @@ d. Find the probability in 3(c) using Poisson distribution.
 a. What is simple growth?
 b. In geometric growth method, obtain the formula for time required for the population to get doubled [denote rate as r].
 c. In exponential method, how much unit of time is required for the population to get tripled? 
-d. For projecting (predicting future values), is geometric better than the exponential method. Justify. 
+d. For projecting (predicting future values), is geometric growth method better than the exponential method? Justify. 
 
 :::
 

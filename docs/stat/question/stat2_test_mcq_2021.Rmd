@@ -26,7 +26,7 @@ output: html_document
 1. Mutually exclusive events are
 
 a. always independent
-b. always dependent*
+b. always dependent
 c. the relationship cannot be determined
 d. dependent or independent, depending on scenario.
 
@@ -34,15 +34,12 @@ d. dependent or independent, depending on scenario.
 
 a. independent events
 b. independent events
-c. mutually exclusive events*
+c. mutually exclusive events
 d. complementary events
 
 3. If a coin is tossed $n$ times, how many outcomes are generated?
 
-a. $n$
-b. $n^2$
-c. $2^n$
-d. $2n$
+a. $n$ b. $n^2$ c. $2^n$ d. $2n$
 
 Answer the question 4-5 according to the information below
 
@@ -50,23 +47,17 @@ $P(A) = \frac 18, P(A|B)=\frac14$, and $P(B|A)=\frac16$
 
 4. $P(A\cap B)=?$
 
-a. $\frac{1}{48}$*
-a. $\frac{1}{24}$
-a. $\frac{1}{32}$
-a. 1
+a. $\frac{1}{48}$ a. $\frac{1}{24}$ a. $\frac{1}{32}$ a. 1
 
 5. A card is drawn at random from a well-shuffled deck of 52 cards. What is the probability that the drawn card is not a Queen?
 
-a. $\frac 1 {52}$
-b. $\frac {4}{52}$
-c. $\frac{1}{13}$
-d. $\frac{12}{13}$
+a. $\frac 1 {52}$ b. $\frac {4}{52}$ c. $\frac{1}{13}$ d. $\frac{12}{13}$
 
 7. Which one is a correct condition of a pdf?
 
 a. $\displaystyle \int_0^1 f(x) dx =1$
 b. $P(X)\ge0$
-c. $\displaystyle \int_a^b f(x) dx =1 ; a\le x \le b$ *
+c. $\displaystyle \int_a^b f(x) dx =1 ; a\le x \le b$ 
 d. $\displaystyle \int_0^{Median} f(x) dx =0.55$
 
 8. The figure is an example of a 
@@ -84,35 +75,27 @@ $P(x,y)=\frac{x+2y}{16}$
 
 9. $P(X)=?$
 
-a. $\frac{x+2y}{3}$
-b. $\frac{2x+y}{3}$
-c. $\frac{2x+3y}{3}$
-d. $\frac{x+3}{4}$*
+a. $\frac{x+2y}{3}$ b. $\frac{2x+y}{3}$
+c. $\frac{2x+3y}{3}$ d. $\frac{x+3}{4}$
 
 10. $P(X|Y=0)=?$
 
-a. $\frac{x+2y}{4y+1}$
-b. $1$
-c. $x$
-d. 0
+a. $\frac{x+2y}{4y+1}$ b. $1$ c. $x$ d. 0
 
-11. If $Y=aX+b, E(X)=?$
+11. $P(x)=\frac 1n$ and $x = 1,2,3,\cdots ;E(X)=?$
+
+a. $\frac n2$ b. $\frac{n-1}{2}$ c. $\frac{n+1}2$ d. $n+1$
+
+:::
+
+::: {}
+
+12. If $Y=aX+b, E(X)=?$
 
 a. $aE(X)+b$
 b. $a^2E(X)$
 c. $E(X)$
 d. $a+bE(X)$
-
-12. $P(x)=\frac 1n; x = 1,2,3,\cdots$, then $E(X)=?$
-
-a. $\frac n2$
-b. $\frac{n-1}{2}$
-c. $\frac{n+1}2$
-d. $n+1$
-
-:::
-
-::: {}
 
 13. Expectation is equal to-
 
@@ -123,31 +106,19 @@ d. Standard deviation
 
 14. If $E(X)=2$ and $E(X^2)=8$, what is the standard deviation?
 
-a. 0
-b. 2
-c. 4
-d. 8
+a. 0 b. 2 c. 4 d. 8
 
 15. $f(x)=5x^4; 0\le x \le 1, E(X)=?$
 
-a. 0.0204
-b. 0.833
-c. 0.9204
-d. 1
+a. 0.0204 b. 0.833 c. 0.9204 d. 1
 
 16. The mean of the binomial distribution is
 
-a. $np$
-b. $nq$
-c. $npq$
-d. $\sqrt{npq}$
+a. $np$ b. $nq$ c. $npq$ d. $\sqrt{npq}$
 
 17. What is true of binomial distribution?
 
-a. $np=0$
-b. $np \lt 0$
-c. $np \gt 0$
-d. $np \ne 0$
+a. $np=0$ b. $np \lt 0$ c. $np \gt 0$ d. $np \ne 0$
 
 18. If a coin is tossed once, it is called
 
@@ -157,24 +128,15 @@ iii. Poisson process
 
 Which one is correct
 
-a. i & ii
-b. i & iii
-c. i
-d. i, ii, & iii
+a. i & ii b. i & iii c. i d. i, ii, & iii
 
 19. If the mean of a Poisson distribution is 4, what is its variance?
 
-a. 2
-b. 3
-c. 4
-d. 16
+a. 2 b. 3 c. 4 d. 16
 
 20. If a Poisson distribution is defined as $P(x) = \frac{e^{-4} 4^x}{}$, what is the value of $P(X \le 1)$
 
-a. 0.09
-b. 0.02
-c. 0.07
-d. 0.24
+a. 0.09 b. 0.02 c. 0.07 d. 0.24
 
 21. What is true of Poisson distribution?
 
@@ -191,24 +153,15 @@ iii. gives a probability density function
 
 Which one is true?
 
-a. i & ii
-b. i & iii
-c. i, ii, and iii
-d. ii & iii
+a. i & ii b. i & iii c. i, ii, and iii d. ii & iii
 
 23. If a neutral coin is tossed 5 times, what is the probability that there would be at least 2 heads?
 
-a. 0.81
-b. 0.5
-c. 0.31
-d. 0.16
+a. 0.81 b. 0.5 c. 0.31 d. 0.16
 
 24. When is a Binomial distribution symmetric?
 
-a. $p \lt q$
-b. $p \gt q$
-c. $p=q^2$
-d. $p=q$
+a. $p \lt q$ b. $p \gt q$ c. $p=q^2$ d. $p=q$
 
 25. Which formula represents the exponential growth?
 
