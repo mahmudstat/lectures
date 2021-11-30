@@ -9,12 +9,12 @@ output: html_document
 
 <center>Test Examination - 2021<center>
 <center>Class: XII</center>
-<center>Subject: Statistics 2^nd^ Paper (Creative)</center> 
+<center>Subject: Statistics 1^st^ Paper (MCQ)</center> 
 
-<div style="float: left">Time: 2 hours and 35 minutes</div>
-<div style="float: right">Full Marks: 50</div>
-<div style="margin: 0 auto; width: 100px;">Sub Code: 130</div>
-<div style="float: left">Figures in the right indicate full marks. Answer five questions, taking at least two from each group</div>
+<div style="float: left">Time: 25 minutes</div>
+<div style="float: right">Full Marks: 25</div>
+<div style="margin: 0 auto; width: 100px;">Sub Code: 129</div>
+<div style="float: left">Answer all the questions. Each question bears one mark</div>
 </div>
 
 .
@@ -23,25 +23,195 @@ output: html_document
 
 ::: {}
 
-1. Which one is a correct condition of a pdf?
+1. Which is a discrete variable?
 
-a. $\displaystyle \int_0^1 f(x) dx =1$
-b. $P(X)\ge0$
-c. $\displaystyle \int_a^b f(x) dx =1 ; a\le x \le b$ *
-d. $\displaystyle \int_0^{Median} f(x) dx =0.55$
+a. Weight
+b. Amount of rainfall
+c. Distance
+d. Screen resolution
+
+2. $If x_1=2, x_2=-3, x_3=7$, and $x_4=12, \displaystyle \sum_{i=1}^4 x_i^2=?$
+
+a. 26
+b. 106
+c. 206
+d. 216
+
+3. Which one falls in the category of interval scale?
+
+a. Temperature
+b. Speed
+c. Distance
+d. Film rating
+
+4. Which one is product of square?
+
+a. $\prod x_i^2$
+b. $(\prod x_i)^2$
+c. $\sum x_i^2 \times \sum x$
+d. $\sum x_i^2$
+
+5. The arithmetic mean of first n natural numbers-
+
+a. $\frac{n}{2}$
+b. $\frac{n+1}{2}$
+c. $\frac{n^2}{2}$
+d. $\frac{n^2-1}{2}$
+
+6. When is the relationship $AM = HM = GM$ true?
+
+a. All values are equal
+b. The values form a geometric progression
+c. The values form an arithmetic progression
+d. All values are distinct
+
+7. In the presence of outlier(s), which measure of central tendency is suitable?
+
+a. Arithmetic mean
+b. Median
+c. Quadratic mean
+d. Power mean
+
+8. If a rate is defined as $R = \frac cd$, where c is constant, then which measure is perfect?
+
+a. Weighted arithmetic mean
+b. Harmonic mean
+c. Quadratic mean
+d. Weighted geometric mean
+
+Answer the questions 9-11 as per the below information.
+
+42 44 59 64 70 72 74 91 94 are 9 value. 
+
+9. What is the 50th percentile
+
+a. 64
+b. 70
+c. 72
+c. 71
+
+10. Below which value do lie 30 percent values?
+
+a. 42
+b. 44
+c. 59
+d. 64
+
+11. A car climbs up a mountain 1 mile at the uniform velocity of 15 miles per hour (mph) and then comes down the same distance at uniform velocity. To make the average speed 30, at what speed (mph) does the car need to climb down?
+
+a. 45
+b. $\infty$
+c. 0
+d. 60
+
+12. Which two quantiles are equal?
+
+a. Median and 3rd Quartile
+b. 40th Percentile and 2nd Quartile
+c. 5th Decile and 4th Octile
+d. 3rd Septile and 2nd Quartile
 
 :::
 
 ::: {}
 
-13. The figure is an example of a 
+13. Which moment is equivalent to variance
 
-![](../img/pdf_example.png)
+a. First raw moment around 0
+b. 2nd central moment
+c. 2nd raw moment around median
+d. First raw moment around arithmetic mean
 
-a. probability density function
-b. probability mass function
-c. could be both
-d. none
+14. In a right-skewed distribution - 
+
+a. Average values are very frequent
+b. Low values have very low frequency
+c. High values have very low frequency
+d. All values have uniform frequency
+
+15. How many types skewness are there?
+
+a. 1
+b. 2
+c. 3
+d. 4
+
+16. What do moments do? 
+
+a. Uniquely characterize a distribution
+b. Help to make predictions
+c. Generate all values of central tendency
+d. Simplifies the process of working with large values
+
+17. What is the value of first central moment?
+
+a. Variance
+b. Arithmetic mean
+c. Standard deviation
+d. 0
+
+18. Which relationship is correct?
+
+a. $\mu_2 = \mu_2'-\mu_1^2$
+b. $\mu_2' = \mu_2-\mu_1^2$
+c. $\mu_2 = \mu_2'^2-\mu_1$
+d. $\mu_2^2 = \mu_2'-\mu_1^2$
+
+19. If the raw moment around 2 is 3, what is the value of $\bar x$?
+
+a. 2
+b. 5
+c. 3
+d. 1
+
+20. Which measure does not depend on change of origin?
+
+a. Arithmetic mean
+b. Geometric mean
+c. Standard deviation
+d. Median
+
+21. If the first raw moment around 2 is 3, what is it around 0?
+
+a. 3
+b. 0
+c. 6
+d. 8
+
+22. Which one is not a component of time series
+
+a. Trend
+b. Cyclic variation
+c. Harmonic variation
+d. Random variation
+
+Answer the question 23-24 according to the following information.
+
+|  Year 	| 2001 	| 2002 	| 2003 	| 2204 	| 2005 	|
+|:-----:	|:----:	|:----:	|:----:	|:----:	|:----:	|
+| Value 	|  60  	|  65  	|  70  	|  72  	|  73  	|
+
+23. What is the first value of 2-yearly moving average?
+
+a. 63.0
+b. 60.0
+c. 65.5
+d. 62.5
+
+24. What is the last value of 3-yearly moving average?
+
+a. 72.50
+b. 71.50
+c. 71.67
+d. 72.33
+
+25. A trend in observed when the values follow -
+
+a. An increasing pattern
+b. A decreasing pattern
+c. A constant pattern
+d. Increasing or decreasing pattern
+
 :::
 
 ::::

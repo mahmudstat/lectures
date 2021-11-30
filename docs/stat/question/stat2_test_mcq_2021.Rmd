@@ -9,12 +9,12 @@ output: html_document
 
 <center>Test Examination - 2021<center>
 <center>Class: XII</center>
-<center>Subject: Statistics 2^nd^ Paper (Creative)</center> 
+<center>Subject: Statistics 2^nd^ Paper (MCQ)</center> 
 
 <div style="float: left">Time: 25 minutes</div>
-<div style="float: right">Full Marks: 50</div>
+<div style="float: right">Full Marks: 25</div>
 <div style="margin: 0 auto; width: 100px;">Sub Code: 130</div>
-<div style="float: left">Figures in the right indicate full marks. Answer five questions, taking at least two from each group</div>
+<div style="float: left">Answer all the questions. Each question bears one mark.</div>
 </div>
 
 .
@@ -71,7 +71,7 @@ d. $\displaystyle \int_0^{Median} f(x) dx =0.55$
 
 8. The figure is an example of a 
 
-![](../img/pdf_example.png)
+<img src="../img/pdf_example.png" width="220">
 
 a. probability density function
 b. probability mass function
@@ -110,6 +110,10 @@ b. $\frac{n-1}{2}$
 c. $\frac{n+1}2$
 d. $n+1$
 
+:::
+
+::: {}
+
 13. Expectation is equal to-
 
 a. Variance
@@ -117,13 +121,101 @@ b. Square of variance
 c. Arithmetic mean
 d. Standard deviation
 
-14. 
+14. If $E(X)=2$ and $E(X^2)=8$, what is the standard deviation?
 
-:::
+a. 0
+b. 2
+c. 4
+d. 8
 
-::: {}
+15. $f(x)=5x^4; 0\le x \le 1, E(X)=?$
 
-14. What is 
+a. 0.0204
+b. 0.833
+c. 0.9204
+d. 1
+
+16. The mean of the binomial distribution is
+
+a. $np$
+b. $nq$
+c. $npq$
+d. $\sqrt{npq}$
+
+17. What is true of binomial distribution?
+
+a. $np=0$
+b. $np \lt 0$
+c. $np \gt 0$
+d. $np \ne 0$
+
+18. If a coin is tossed once, it is called
+
+i. Bernoulli trial
+ii. Uniform trial
+iii. Poisson process
+
+Which one is correct
+
+a. i & ii
+b. i & iii
+c. i
+d. i, ii, & iii
+
+19. If the mean of a Poisson distribution is 4, what is its variance?
+
+a. 2
+b. 3
+c. 4
+d. 16
+
+20. If a Poisson distribution is defined as $P(x) = \frac{e^{-4} 4^x}{}$, what is the value of $P(X \le 1)$
+
+a. 0.09
+b. 0.02
+c. 0.07
+d. 0.24
+
+21. What is true of Poisson distribution?
+
+a. $Mean \gt Variance$
+b. $Mean \lt Variance$
+c. $Mean = Variance^2$
+d. $Mean = Variance$
+
+22. The Poisson distribution - 
+
+i. is a discrete distribution
+ii. gives a probability mass function
+iii. gives a probability density function
+
+Which one is true?
+
+a. i & ii
+b. i & iii
+c. i, ii, and iii
+d. ii & iii
+
+23. If a neutral coin is tossed 5 times, what is the probability that there would be at least 2 heads?
+
+a. 0.81
+b. 0.5
+c. 0.31
+d. 0.16
+
+24. When is a Binomial distribution symmetric?
+
+a. $p \lt q$
+b. $p \gt q$
+c. $p=q^2$
+d. $p=q$
+
+25. Which formula represents the exponential growth?
+
+a. $P_n =P_oe^{rn}$
+b. $P_n=P_o(1+r)^n$
+c. $P_n =P_one^{r}$
+d. $P_o =P_ne^{rn}$
 
 :::
 
