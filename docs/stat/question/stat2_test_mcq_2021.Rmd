@@ -4,6 +4,14 @@ classoption:
 - twocolumn
 output: html_document
 ---
+
+<style type="text/css">
+  body{
+  font-size: 9pt;
+  line-height: 0.90;
+}
+</style>
+
 <div style="font-weight: bold;">
 <center><h5>Pabna Cadet College</h5></center>
 
@@ -32,16 +40,13 @@ d. dependent or independent, depending on scenario.
 
 2. $P(A \cup B) = P(A) + P(B)$ is true for
 
-a. independent events
-b. independent events
-c. mutually exclusive events
-d. complementary events
+a. independent events b. independent events c. mutually exclusive events d. complementary events
 
 3. If a coin is tossed $n$ times, how many outcomes are generated?
 
 a. $n$ b. $n^2$ c. $2^n$ d. $2n$
 
-Answer the question 4-5 according to the information below
+**Answer the questions 4-5 according to the information below**
 
 $P(A) = \frac 18, P(A|B)=\frac14$, and $P(B|A)=\frac16$
 
@@ -53,21 +58,16 @@ a. $\frac{1}{48}$ a. $\frac{1}{24}$ a. $\frac{1}{32}$ a. 1
 
 a. $\frac 1 {52}$ b. $\frac {4}{52}$ c. $\frac{1}{13}$ d. $\frac{12}{13}$
 
-7. Which one is a correct condition of a pdf?
+7. If X denotes number of successes in a coin toss, how many possible outcomes are there? 
 
-a. $\displaystyle \int_0^1 f(x) dx =1$
-b. $P(X)\ge0$
-c. $\displaystyle \int_a^b f(x) dx =1 ; a\le x \le b$ 
-d. $\displaystyle \int_0^{Median} f(x) dx =0.55$
+a. 0 b. 1 c. 2 d. 3
 
 8. The figure is an example of a 
 
-<img src="../img/pdf_example.png" width="220">
+<img src="../img/pdf_example.png" width="140">
 
-a. probability density function
-b. probability mass function
-c. could be both
-d. none
+a. probability density function b. probability mass function
+c. could be both d. none
 
 Answer the questions 9-10 according to the following information.
 
@@ -75,8 +75,7 @@ $P(x,y)=\frac{x+2y}{16}$
 
 9. $P(X)=?$
 
-a. $\frac{x+2y}{3}$ b. $\frac{2x+y}{3}$
-c. $\frac{2x+3y}{3}$ d. $\frac{x+3}{4}$
+a. $\frac{x+2y}{3}$ b. $\frac{2x+y}{3}$ c. $\frac{2x+3y}{3}$ d.$\frac{x+3}{4}$
 
 10. $P(X|Y=0)=?$
 
@@ -92,17 +91,11 @@ a. $\frac n2$ b. $\frac{n-1}{2}$ c. $\frac{n+1}2$ d. $n+1$
 
 12. If $Y=aX+b, E(X)=?$
 
-a. $aE(X)+b$
-b. $a^2E(X)$
-c. $E(X)$
-d. $a+bE(X)$
+a. $aE(X)+b$ b. $a^2E(X)$ c. $E(X)$ d. $a+bE(X)$
 
 13. Expectation is equal to-
 
-a. Variance
-b. Square of variance
-c. Arithmetic mean
-d. Standard deviation
+a. Variance b. Square of variance c. Arithmetic mean d. Standard deviation
 
 14. If $E(X)=2$ and $E(X^2)=8$, what is the standard deviation?
 
@@ -140,10 +133,8 @@ a. 0.09 b. 0.02 c. 0.07 d. 0.24
 
 21. What is true of Poisson distribution?
 
-a. $Mean \gt Variance$
-b. $Mean \lt Variance$
-c. $Mean = Variance^2$
-d. $Mean = Variance$
+a. $Mean \gt Variance$ b. $Mean \lt Variance$
+c. $Mean = Variance^2$ d. $Mean = Variance$
 
 22. The Poisson distribution - 
 
@@ -165,13 +156,7 @@ a. $p \lt q$ b. $p \gt q$ c. $p=q^2$ d. $p=q$
 
 25. Which formula represents the exponential growth?
 
-a. $P_n =P_oe^{rn}$
-b. $P_n=P_o(1+r)^n$
-c. $P_n =P_one^{r}$
-d. $P_o =P_ne^{rn}$
-
+a. $P_n =P_oe^{rn}$ b. $P_n=P_o(1+r)^n$ c. $P_n =P_one^{r}$ d. $P_o =P_ne^{rn}$
 :::
 
 ::::
-
-<center>---Good Luck---</center>

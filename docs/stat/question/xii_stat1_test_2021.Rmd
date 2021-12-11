@@ -4,6 +4,14 @@ classoption:
 - twocolumn
 output: html_document
 ---
+
+<style type="text/css">
+  body{
+  font-size: 9pt;
+  line-height: 0.95;
+}
+</style>
+
 <div style="font-weight: bold;">
 <center><h5>Pabna Cadet College</h5></center>
 
@@ -35,25 +43,14 @@ b. Can fractional numbers be discrete? Explain briefly.
 c. Are, in the stem, $\displaystyle \sum_{i=1}^{n} \sum_{i=1}^{n} x_iy_j = \sum_{i=1}^{n} x_iy_i?$ Show statistically.
 d. Prove empirically that sum of square is greater than square of sum of numbers. 
 
-**2. We have the data:**
-
-$\quad f_1=2, f_2 = 4, f_3 = 6$
-
-$\quad x_1 = -3, x_2 =7, x_3 = 4$
-
-a. What is nominal data?
-b. Prove $\displaystyle \sum_{i=1}^{n} (x_i+c)=\sum_{i=1}^{n} x_i + nc$
-c. Show empirically that $\displaystyle \sum_{i=1}^{3} \sum_{j=1}^{3}(f_i-x_j) \ne \sum_{i=1}^{3} (f_i-x_i)$
-d. Does summation depend on change of origin and scale? Show with an example (using the given data).  
-
-**3. In the test examination, marks of 10 students in statistics are 69, 85, 77, 66, 92, 42, 97, 53, 83, 81.**
+**2. In the test examination, marks of 10 students in statistics are 69, 85, 77, 66, 92, 42, 97, 53, 83, 81.**
 
 a. What is central tendency?
 b. When is median better than arithmetic mean? Explain with an example.
 c. Find the 3rd the quartile, 5th septile, and 61st percentile from the data and explain. 
 d. Below which mark lie marks of 60\% students? Find using two separate quantiles.
 
-**4. Marks of students of two colleges are:**
+**3. Marks of students of two colleges are:**
 
 |  	| Studnets 	| AM 	|
 |:---:	|:---:	|:---:	|
@@ -67,12 +64,37 @@ b. Does median depend on change of origin? Show statistically with a made-up dat
 c. Determine the combined mean of the students. 
 d. If marks of 12 students of JCC are included to get a combined AM of 78.53, what is the AM of marks of JCC students?
 
+**4. We have the data:**
+
+$\quad f_1=2, f_2 = 4, f_3 = 6$
+
+$\quad x_1 = -3, x_2 =7, x_3 = 4$
+
+a. What is nominal data?
+b. Prove $\displaystyle \sum_{i=1}^{n} (x_i+c)=\sum_{i=1}^{n} x_i + nc$
+c. Show empirically that $\displaystyle \sum_{i=1}^{3} \sum_{j=1}^{3}(f_i-x_j) \ne \sum_{i=1}^{3} (f_i-x_i)$
+d. Does summation depend on change of origin and scale? Show with an example (using the given data). 
+
 :::
 
 ::: {}
 <center><h6>**Group B**</h6></center>
 
-**5. Diameter, height and volume for Black Cherry trees are obtained (from R Database)**
+**5. The first four moments around 3 of a data are found to be -1, 5, 20, and 90.**
+
+a. What is skewness?
+b. Draw shapes of different types of skewness.
+c. Determine the 2^nd^ and 3^rd^ central moments from the stem.
+d. Find the formulae of 4^th^ and 5^th^ central moments in terms of raw moments.
+
+**6. Income of a freelancer in 6 successive months (from Jan to Jun) was found to be 46.0, 49.5, 51.5, 50.6, 56.5, and 60 (in thousands BDT.).**
+
+a. What is time series data?
+b. What are the components of a time series model?
+c. Determine the 3-yearly moving average from the data.
+d. Draw the moving averages on a graph paper and interpret.
+
+**7. Diameter, height and volume for Black Cherry trees are obtained (from R Database)**
 
 ```{r, echo=FALSE}
 knitr::kable(
@@ -84,20 +106,6 @@ a. What are moments?
 b. Which moment is equal to the variance? Show mathematically.
 c. Find the first and second raw moments about 2 of volume of the trees. 
 d. What do you understand of the possible shape of the data on height and volume of the trees?
-
-**6. The first four moments around 3 of a data are found to be -1, 5, 20, and 90.**
-
-a. What is skewness?
-b. Draw shapes of different types of skewness.
-c. Determine the 2^nd^ and 3^rd^ central moments from the stem.
-d. Find the formulae of 4^th^ and 5^th^ central moments in terms of raw moments.
-
-**7. Income of a freelancer in 6 successive months (from Jan to Jun) was found to be 46.0, 49.5, 51.5, 50.6, 56.5, and 60 (in thousands BDT.).**
-
-a. What is time series data?
-b. What are the components of a time series model?
-c. Determine the 3-yearly moving average from the data.
-d. Draw the moving averages on a graph paper and interpret. 
 
 **8.For proper management and functioning of an organization, gathering and analyzing data are very crucial. Data play a key role in decision making. Numerous Bangladeshi institutions gather data on production, revenue, education, health, and so on.**
 

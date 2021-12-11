@@ -4,6 +4,14 @@ classoption:
 - twocolumn
 output: html_document
 ---
+
+<style type="text/css">
+  body{
+  font-size: 9pt;
+  line-height: 0.95;
+}
+</style>
+
 <div style="font-weight: bold;">
 <center><h5>Pabna Cadet College</h5></center>
 
@@ -53,16 +61,12 @@ b. Find the value of k
 c. Find the probability that the values of x would lie between 0 and 1.
 d. Is $f(x)$ a probability density function? Justify. 
 
-**4. Probability distribution of a random variable is shown on the table:**
+**4. A statistician of a customer care center investigates the calls received and finds that the call center receives 5 calls per hour on average.**
 
-|   x  | -3 | -2 | -1 |  0 |  1 |  2  |
-|:----:|:--:|:--:|:--:|:--:|:--:|:---:|
-| P(x) |  k | 2k | 3k | 2k | 4k | 0.4 |
-
-a. What is the formula of variance in terms of expectation?
-b. Prove expected value is equal to arithmetic mean.
-c. Find the value of $k$ and $P(-3 \le X \le 0)$.
-d. Determine the $E(X)$ and $V(X)$. 
+a. What is a Poisson process?
+b. Prove that the summation of probability of all possible values of a Poisson distribution is 1. 
+c. What is the probability that no less than three calls would be received in an hour?
+d. Is the probability of receiving one call greater than that of receiving no calls? Justify mathematically and logically.
 
 :::
 
@@ -74,16 +78,18 @@ d. Determine the $E(X)$ and $V(X)$.
 a. What is Bernoulli trial?
 b. What is the relationship between Bernoulli and Binomial distribution? 
 c. Determine the probability that at least 3 items are defective.
-d. Find the probability that no. of defective items would be less than the mean.  
+d. Find the probability that no. of defective items would be less than the mean. 
 
-**6. A statistician of a customer care center investigates the calls received and finds that the call center receives 5 calls per hour on average.**
+**6. Probability distribution of a random variable is shown on the table:**
 
-a. What is a Poisson process?
-b. Prove that the summation of probability of all possible values of a Poisson distribution is 1. 
-c. What is the probability that no less than three calls would be received in an hour?
-d. Is the probability of receiving one call greater than that of receiving no calls? Justify mathematically and logically. 
+|   x  | -3 | -2 | -1 |  0 |  1 |  2  |
+|:----:|:--:|:--:|:--:|:--:|:--:|:---:|
+| P(x) |  k | 2k | 3k | 2k | 4k | 0.4 |
 
-
+a. What is the formula of variance in terms of expectation?
+b. Prove expected value is equal to arithmetic mean.
+c. Find the value of $k$ and $P(-3 \le X \le 0)$.
+d. Determine the $E(X)$ and $V(X)$. 
 
 **7. In winter, the probability that it rains on a particular day is 0.015. An analyst observes 100 winter days.**
 

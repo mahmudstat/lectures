@@ -4,6 +4,14 @@ classoption:
 - twocolumn
 output: html_document
 ---
+
+<style type="text/css">
+  body{
+  font-size: 9pt;
+  line-height: 0.95;
+}
+</style>
+
 <div style="font-weight: bold;">
 <center><h5>Pabna Cadet College</h5></center>
 
@@ -84,32 +92,32 @@ b. 40th Percentile and 2nd Quartile
 c. 5th Decile and 4th Octile
 d. 3rd Septile and 2nd Quartile
 
-**13. Which relationship is correct?**
+**13. How many types of skewness are there?**
 
-a. $\mu_2 = \mu_2'-\mu_1^2$ b. $\mu_2' = \mu_2-\mu_1^2$
-c. $\mu_2 = \mu_2'^2-\mu_1$ d. $\mu_2^2 = \mu_2'-\mu_1^2$
+a. 1 b. 2 c. 3 d. 4
 
 :::
 
 ::: {}
 
-**14. Which moment is equivalent to variance**
+**14. Which relationship is correct?**
+
+a. $\mu_2 = \mu_2'-\mu_1^2$ b. $\mu_2' = \mu_2-\mu_1^2$
+c. $\mu_2 = \mu_2'^2-\mu_1$ d. $\mu_2^2 = \mu_2'-\mu_1^2$
+
+**15. Which moment is equivalent to variance**
 
 a. First raw moment around 0
 b. 2nd central moment
 c. 2nd raw moment around median
 d. First raw moment around arithmetic mean
 
-**15. In a right-skewed distribution - **
+**16. In a right-skewed distribution - **
 
 a. Average values are very frequent
 b. Low values have very low frequency
 c. High values have very low frequency
 d. All values have uniform frequency
-
-**16. How many types skewness are there?**
-
-a. 1 b. 2 c. 3 d. 4
 
 **17. What do moments do?**
 
@@ -153,7 +161,7 @@ a. 63.0 b. 60.0 c. 65.5 d. 62.5
 
 a. 72.50 b. 71.50 c. 71.67 d. 72.33
 
-**25. A trend in observed when the values follow -**
+**25. A trend is observed when the values follow -**
 
 a. An increasing pattern
 b. A decreasing pattern
