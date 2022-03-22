@@ -1,0 +1,247 @@
+\documentclass[a4paper,oneside]{book}
+
+\usepackage{lipsum}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titletoc}
+\titlecontents*{chapter}
+  [0pt]% <left>
+  {}
+  {\chaptername\ \thecontentslabel\quad}
+  {}
+  {\bfseries\hfill\contentspage}    
+
+\usepackage{bookmark}
+\usepackage{etoolbox}
+
+\makeatletter
+\newcommand*{\AddChapterPrefixInBookmarks}{%
+  \if@mainmatter
+    \ifnum\bookmarkget{level}=0 %
+      \preto\bookmark@text{\@chapapp\space}%
+    \fi
+  \fi
+}
+\makeatother
+
+\bookmarksetup{
+  numbered,
+  addtohook=\AddChapterPrefixInBookmarks,
+}
+
+% Workaround for numbered sections in unnumbered
+% chapter "Introduction" to avoid chapter number
+% zero.
+\renewcommand*{\thesection}{%
+  \ifcase\value{chapter}%
+  \else
+    \thechapter.%
+  \fi
+  \arabic{section}%
+}
+
+\title{My document}
+\pagestyle{headings}
+
+\begin{document}
+\frontmatter
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Statistics Question Bank}
+            
+        \vspace{0.5cm}
+        \LARGE
+        First Paper
+            
+        \vspace{1.5cm}
+            
+        \textbf{Abdullah Al Mahmud}
+            
+        \vfill
+            
+            
+        \vspace{0.8cm}
+            
+            
+        \Large
+        www.statmania.info\\
+            
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+
+
+\mainmatter
+
+\chapter{Statistics, Variable and Concepts of Different Symbols} 
+
+
+\section{Creative Questions}
+
+\begin{enumerate}
+  \item
+  \textbf{Income and expenditure (both in thousands) of some individuals are collected:}
+ 
+
+\begin{table}[h]
+ \begin{center}
+\begin{tabular}{l|l|l|l|l}
+
+Income (x)  & 20 & 30 & 25 & 10 \\ \hline
+Expenditure (y) & 15  & 27  & 18 & 5 \\ 
+\end{tabular}
+\end{center}
+\end{table}
+
+
+  \begin{enumerate}
+    \item
+	What is a discrete variable? \hfill 1
+    \item
+    	Can fractional numbers be discrete? Explain briefly.  \hfill 2
+    \item
+    	Are, in the stem, $\displaystyle \sum_{i=1}^{n} \sum_{i=1}^{n} x_iy_j = \sum_{i=1}^{n} x_iy_i?$ Show statistically. \hfill 3
+     \item
+     	Prove empirically that sum of square is unequal to square of sum of numbers. \hfill 4
+  \end{enumerate}
+  \end{enumerate}
+
+\section{Short Questions}
+
+\chapter{Data Collection, Presentation, and Organization of Data} 
+\section{Creative Questions}
+\section{Short Questions}
+
+\chapter{Measures of Central Tendency} 
+\section{Creative Questions}
+\begin{enumerate}
+    \item
+  \textbf{In the test examination, marks of 11 students in statistics are: 90, 92, 93, 49, 44, 88, 80, 58, 83, 71, 76.}
+  \begin{enumerate}
+    \item
+	What is central tendency? \hfill 1
+    \item
+	When is median better than arithmetic mean? Explain with an example. \hfill 2
+    \item  
+	Find the 3rd the quartile and 61st percentile from the data and explain.  \hfill 3
+    \item
+	Do quantiles depend on change of origin and scale. Prove using two examples.\hfill 4
+\end{enumerate}
+
+ \item
+	  \textbf{The arithmetic and geometric means of the first and third quartiles of a distribution are 10 and 8, respectively. The second quartile is 10.} 
+  
+  \begin{enumerate}
+    \item
+	What is the formula suggested by Pearson to find skewness? \hfill 1
+    \item
+	Which moments are useful in measuring central tendency and dispersion?  \hfill 2
+    \item  
+	Find skewness from the stem using a suitable formula. \hfill 3
+    \item
+	Which method of finding skewness od you think is the best and why? \hfill 4
+\end{enumerate}
+
+\end{enumerate}
+
+\section{Short Questions}
+
+\chapter{Measures of Dispersion} 
+\section{Creative Questions}
+
+\begin{enumerate}
+    \item
+  \textbf{Temperatures of two cold regions for five days are as below:}
+
+    City A: 2, 1, -1, 0, 3
+
+    City B: 3, 0, -2, 2, 3
+  \begin{enumerate}
+    \item
+	What is standard deviation?? \hfill 1
+    \item
+	Is standard deviation of a set of negative values negative? Justify mathematically. \hfill 2
+    \item  
+	Find Mean Deviation about mean of the values of city A.  \hfill 3
+    \item
+	Which city has more consistent weather? Verify statistically. \hfill 4
+\end{enumerate}
+
+
+\end{enumerate}
+
+\section{Short Questions}
+
+\chapter{Moments, SKewness, and Kurtosis} 
+\section{Creative Questions}
+
+  \begin{enumerate}
+ \item
+	  \textbf{US Dollar exchange (to taka) in Bangladesh since 1980 to 2005 (after each 5 years) were: \\ 16, 31, 36, 40, 52, 64} 
+  
+  \begin{enumerate}
+    \item
+	What are moments? \hfill 1
+    \item
+	Which moment is equal to the variance? Show mathematically. \hfill 2
+    \item  
+	Find, from the stem, the first and second raw moments about 1. \hfill 3
+    \item
+	Find skewness and kurtosis of and explain. \hfill 4
+\end{enumerate}
+
+ \item
+	  \textbf{The first four moments about 3 of a distribution are -1, 5, -10, and 120.} 
+  
+  \begin{enumerate}
+    \item
+	What are moments used for? \hfill 1
+    \item
+	Can the second central moment be greater than the third central moment? \hfill 2
+    \item  
+	Find the second and third moments about arithmetic mean of the distribution. \hfill 3
+    \item
+	Find skewness and kurtosis and comment on the values.  \hfill 4
+\end{enumerate}
+
+\end{enumerate}
+
+\section{Short Questions}
+
+\chapter{Correlation and Regression} 
+\section{Creative Questions}
+\section{Short Questions}
+
+\chapter{Time Series} 
+\section{Creative Questions}
+  \begin{enumerate}
+ \item
+	  \textbf{GDP (in bn. US\$ PPP) of Bangladesh since 1980 to 1985 according to an estimate \\ of International  Monetary Fund: 41.2, 47.4, 52.0, 56.5, 61.0, 65.3}
+  \begin{enumerate}
+    \item
+	What is time series data? \hfill 1
+    \item
+	What are the components of a time series model? \hfill 2
+    \item  
+	Determine the 3-yearly moving average from the data. \hfill 3
+    \item
+	Find trend of the data using another method (other than (c)), plot both, and comment \\ which is better. \hfill 4
+\end{enumerate}
+\end{enumerate}
+
+\section{Short Questions}
+
+\chapter{Published Statistics in Bangladesh} 
+\section{Creative Questions}
+\section{Short Questions}
+
+\backmatter
+\chapter{Conclusion}
+\lipsum[8]
+
+\tableofcontents
+\end{document}

@@ -1,0 +1,69 @@
+\documentclass[a4paper,oneside]{book}
+
+\usepackage{lipsum}
+\usepackage{hyperref}
+\usepackage{titletoc}
+\titlecontents*{chapter}
+  [0pt]% <left>
+  {}
+  {\chaptername\ \thecontentslabel\quad}
+  {}
+  {\bfseries\hfill\contentspage}    
+
+\usepackage{bookmark}
+\usepackage{etoolbox}
+
+\makeatletter
+\newcommand*{\AddChapterPrefixInBookmarks}{%
+  \if@mainmatter
+    \ifnum\bookmarkget{level}=0 %
+      \preto\bookmark@text{\@chapapp\space}%
+    \fi
+  \fi
+}
+\makeatother
+
+\bookmarksetup{
+  numbered,
+  addtohook=\AddChapterPrefixInBookmarks,
+}
+
+% Workaround for numbered sections in unnumbered
+% chapter "Introduction" to avoid chapter number
+% zero.
+\renewcommand*{\thesection}{%
+  \ifcase\value{chapter}%
+  \else
+    \thechapter.%
+  \fi
+  \arabic{section}%
+}
+
+\title{My document}
+
+\begin{document}
+\frontmatter
+\tableofcontents
+\chapter{Introduction} \lipsum[1]
+\section{First section} \lipsum[2-3]
+\section{Second section} \lipsum[4-5]
+\section{Last section} \lipsum[6-7]
+\subsection{Subsection}
+
+\mainmatter
+\chapter{Second chapter} \lipsum[1]
+\section{First section} \lipsum[2-3]
+\section{Second section} \lipsum[4-5]
+\section{Last section} \lipsum[6-7]
+\chapter{Last chapter} \lipsum[1]
+\section{First section} \lipsum[2-3]
+\section{Second section} \lipsum[4-5]
+\section{Last section} \lipsum[6-7]
+\subsection{Subsection}
+
+\backmatter
+\chapter{Conclusion}
+\lipsum[8]
+
+\tableofcontents
+\end{document}
