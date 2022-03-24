@@ -1,0 +1,244 @@
+\documentclass[a4paper,oneside, margin=1.4in]{book}
+
+\usepackage{lipsum}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titletoc}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{graphicx}
+\graphicspath{ {.} }
+\geometry{a4paper, margin=1in}
+\titlecontents*{chapter}
+  [0pt]% <left>
+  {}
+  {\chaptername\ \thecontentslabel\quad}
+  {}
+  {\bfseries\hfill\contentspage}    
+
+\usepackage{bookmark}
+\usepackage{etoolbox}
+
+\makeatletter
+\newcommand*{\AddChapterPrefixInBookmarks}{%
+  \if@mainmatter
+    \ifnum\bookmarkget{level}=0 %
+      \preto\bookmark@text{\@chapapp\space}%
+    \fi
+  \fi
+}
+\makeatother
+
+\bookmarksetup{
+  numbered,
+  addtohook=\AddChapterPrefixInBookmarks,
+}
+
+% Workaround for numbered sections in unnumbered
+% chapter "Introduction" to avoid chapter number
+% zero.
+\renewcommand*{\thesection}{%
+  \ifcase\value{chapter}%
+  \else
+    \thechapter.%
+  \fi
+  \arabic{section}%
+}
+
+\title{My document}
+
+\begin{document}
+\frontmatter
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Statistics Question Bank}
+            
+        \vspace{0.5cm}
+        \huge
+        Second Paper
+            
+        \vspace{1.5cm}
+            
+        \textbf{Abdullah Al Mahmud}
+
+     \vspace{1.5cm}
+
+	\Large 
+	Updated on: \today
+            
+        \vfill
+            
+
+            
+        \vspace{0.8cm}
+            
+\includegraphics[width=1cm]{logo}
+            
+        \Large
+        www.statmania.info\\
+            
+    \end{center}
+\end{titlepage}
+
+
+\tableofcontents
+
+
+\mainmatter
+\chapter{Probability} 
+\section{Creative Questions}
+
+\begin{enumerate}
+  \item
+  \textbf{It is observed that in a college, there are 100 students, of whom 30 play football, 40 play cricket, and 20 play both.}
+ 
+  \begin{enumerate}
+    \item
+	What is the range of probability? \hfill 1
+    \item
+    	What is the relationship between independence and mutual excluvity?  \hfill 2
+    \item
+    	Are the probabilities of playing cricket and that of football independent? Prove. \hfill 3
+     \item
+     	If a student is selected randomly, and if he does not play cricket, what is the probability that \\ he plays football? \hfill 4
+  \end{enumerate}
+
+
+  \end{enumerate}
+
+\section{Short Questions}
+
+  \begin{enumerate}
+    \item
+	Question \hfill 1
+    \item
+	Question \hfill 2
+    \item  
+	Question \hfill 3
+    \item
+	Question \hfill 4
+  \end{enumerate}
+
+\chapter{Random Variable and Probability Function} 
+\section{Creative Questions}
+
+  \begin{enumerate}
+ \item
+  \textbf{The probability density function of a continuous random variable is}
+
+$$
+  f(x) =
+\begin{cases}
+kx^2+kx+ \frac 18,  & 0 \le x \le 2 \\
+0, & otherwise
+\end{cases}
+$$
+
+  \begin{enumerate}
+    \item
+	What is a continuous random variable? \hfill 1
+    \item
+    	Find the value of k \hfill 2
+    \item
+    	Find the probability that the values of x would lie between1 and 3. \hfill 3
+     \item
+     	Find the 40th percentile of the distribution and explain.  \hfill 4
+  \end{enumerate}
+  \end{enumerate}
+
+\section{Short Questions}
+
+  \begin{enumerate}
+    \item
+		What is a continuous random variable?  \hfill 1
+    \item
+	Question \hfill 1
+    \item  
+	Question \hfill 1
+    \item
+	Question \hfill 1
+  \end{enumerate}
+
+\chapter{Mathematical Expectation} 
+\section{Creative Questions}
+
+
+\section{Short Questions}
+
+\chapter{Binomial Distribution} 
+\section{Creative Questions}
+
+
+\section{Short Questions}
+
+\chapter{Poisson Distribution} 
+\section{Creative Questions}
+
+  \begin{enumerate}
+  \item
+  \textbf{In winter, the probability that it rains on a particular day is 0.015. An analyst observes \\ 100 winter days.}
+ 
+  \begin{enumerate}
+    \item
+	What is an experiment? \hfill 1
+    \item
+    	When can the Poisson distribution be approximated by the Binomial distribution? \hfill 2
+    \item
+    	Find, using Binomial distribution, the probability that  it would not rain at all on the \\ observed days. \hfill 3
+     \item
+     	Find the probability in 3(c) using Poisson distribution.  \hfill 4
+  \end{enumerate}
+
+  \end{enumerate}
+
+\section{Short Questions}
+
+\chapter{Normal Distribution} 
+\section{Creative Questions}
+
+
+\section{Short Questions}
+
+\chapter{Index Number} 
+\section{Creative Questions}
+
+
+\section{Short Questions}
+
+\chapter{Sampling} 
+\section{Creative Questions}
+
+
+\section{Short Questions}
+
+\chapter{Vital Statistics} 
+\section{Creative Questions}
+
+
+  \begin{enumerate}
+ \item
+  \textbf{For projection of population in a future time period, demographers use simple, \\ geometric or exponential growth technique. Each method has its advantages and \\ disadvantages.}
+
+  \begin{enumerate}
+    \item
+	What is geometric growth? \hfill 1
+    \item
+    	In geometric growth method, obtain the formula for time required for the population to get \\ doubled [denote rate as r]. \hfill 2
+    \item
+    	In exponential method, how much unit of time is required for the population to get tripled?  \hfill 3
+     \item
+     	For projecting (predicting future values), is geometric growth method better than the \\ exponential method? Justify.  \hfill 4
+  \end{enumerate}
+  \end{enumerate}
+
+\section{Short Questions}
+
+\backmatter
+\chapter{Conclusion}
+\lipsum[8]
+
+\tableofcontents
+\end{document}

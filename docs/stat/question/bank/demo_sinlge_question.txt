@@ -1,13 +1,15 @@
+  \begin{enumerate}
  \item
 	  \textbf{Statement} 
   
   \begin{enumerate}
     \item
-	Question1 \hfill 1
+	Question \hfill 1
     \item
-	Question2 \hfill 2
+	Question \hfill 2
     \item  
-	Question3 \hfill 3
+	Question \hfill 3
     \item
-	Question4 \hfill 4
+	Question \hfill 4
+  \end{enumerate}
   \end{enumerate}

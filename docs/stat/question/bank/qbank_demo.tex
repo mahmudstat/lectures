@@ -1,8 +1,10 @@
-\documentclass[a4paper,oneside]{book}
+\documentclass[a4paper,oneside, margin=1.4in]{book}
 
 \usepackage{lipsum}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{titletoc}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
 \titlecontents*{chapter}
   [0pt]% <left>
   {}
@@ -43,23 +45,44 @@
 
 \begin{document}
 \frontmatter
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Statistics Question Bank}
+            
+        \vspace{0.5cm}
+        \LARGE
+        Paper
+            
+        \vspace{1.5cm}
+            
+        \textbf{Abdullah Al Mahmud}
+            
+        \vfill
+            
+            
+        \vspace{0.8cm}
+            
+            
+        \Large
+        www.statmania.info\\
+            
+    \end{center}
+\end{titlepage}
+
+
 \tableofcontents
-\chapter{Introduction} \lipsum[1]
-\section{First section} \lipsum[2-3]
-\section{Second section} \lipsum[4-5]
-\section{Last section} \lipsum[6-7]
-\subsection{Subsection}
+
 
 \mainmatter
-\chapter{Second chapter} \lipsum[1]
-\section{First section} \lipsum[2-3]
-\section{Second section} \lipsum[4-5]
-\section{Last section} \lipsum[6-7]
-\chapter{Last chapter} \lipsum[1]
-\section{First section} \lipsum[2-3]
-\section{Second section} \lipsum[4-5]
-\section{Last section} \lipsum[6-7]
-\subsection{Subsection}
+\chapter{Chapter} 
+\section{Creative Questions}
+
+
+\section{Short Questions}
 
 \backmatter
 \chapter{Conclusion}
