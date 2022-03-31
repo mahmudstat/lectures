@@ -1,15 +1,13 @@
 ---
-title: "Correlation And Regression"
+title: "Correlation-Regression"
 author: Abdullah Al Mahmud
 date: \today
 output: 
   revealjs::revealjs_presentation:
     theme: sky
-    reveal_plugins: ["menu", "chalkboard", "zoom"]
-    self_contained: falselib_dir: libs
-    reveal_options:
-      slideNumber: true
-      previewLinks: true
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
+    self_contained: false
+    lib_dir: libs
     css: css/styles.css
     includes:
       in_header: css/header.html

@@ -448,8 +448,9 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
     <div id="header-footer">
-      <p class="slide-footer"> | PCC | Mahmud | Statistics | statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
+      <p class="slide-footer"> | Abdullah Al Mahmud | www.statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
     </div>
+    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
     <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
     <link href="libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 </head>
@@ -462,44 +463,72 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <h2 class="author">Abdullah Al Mahmud</h2>
 </section>
 
-<section><section id="moments" class="title-slide slide level1"><h1>Moments</h1><p>Can uniquely characterize a distribution</p></section><section id="central-moments" class="slide level2">
+<section>
+<section id="moments" class="title-slide slide level1">
+<h1>Moments</h1>
+<p>Can uniquely characterize a distribution</p>
+</section>
+<section id="central-moments" class="slide level2">
 <h2>Central Moments</h2>
-<p>Central Moments: <span class="math inline">\(\mu_r=\frac{\sum(x_i-\bar x)^r}{n}\)</span></p>
+<p>Central Moments: <span
+class="math inline">\(\mu_r=\frac{\sum(x_i-\bar x)^r}{n}\)</span></p>
 <ul>
-<li class="fragment"><span class="math inline">\(\mu_1=\frac{\sum(x_i-\bar x)}{n}=\frac{\sum x_i}{n}-\frac{n \bar x}{n}=\frac{n \bar x}{n}-\frac{n \bar x}{n}=0\)</span></li>
+<li class="fragment"><span
+class="math inline">\(\mu_1=\frac{\sum(x_i-\bar x)}{n}=\frac{\sum
+x_i}{n}-\frac{n \bar x}{n}=\frac{n \bar x}{n}-\frac{n \bar
+x}{n}=0\)</span></li>
 </ul>
 <ul>
-<li class="fragment"><span class="math inline">\(\mu_2=\frac{\sum(x_i-\bar x)^2}{n}=\sigma^2\)</span></li>
-<li class="fragment"><span class="math inline">\(\mu_3=\frac{\sum(x_i-\bar x)^3}{n}\)</span></li>
-<li class="fragment"><span class="math inline">\(\mu_4=\frac{\sum(x_i-\bar x)^4}{n}\)</span></li>
-<li class="fragment">For grouped data: <span class="math inline">\(\mu_r=\frac{\sum f_i(x_i-\bar x)^3}{n}\)</span></li>
+<li class="fragment"><span
+class="math inline">\(\mu_2=\frac{\sum(x_i-\bar
+x)^2}{n}=\sigma^2\)</span></li>
+<li class="fragment"><span
+class="math inline">\(\mu_3=\frac{\sum(x_i-\bar x)^3}{n}\)</span></li>
+<li class="fragment"><span
+class="math inline">\(\mu_4=\frac{\sum(x_i-\bar x)^4}{n}\)</span></li>
+<li class="fragment">For grouped data: <span
+class="math inline">\(\mu_r=\frac{\sum f_i(x_i-\bar
+x)^3}{n}\)</span></li>
 </ul>
-</section><section id="raw-moments" class="slide level2">
+</section>
+<section id="raw-moments" class="slide level2">
 <h2>Raw Moments</h2>
-<p><span class="math inline">\(\mu_r&#39;=\frac{\sum(x_i-a)^r}{n}\)</span>; a is arbitrary number</p>
-<p><span class="math inline">\(\mu_1&#39;=\frac{\sum(x_i-a)}{n}=\frac{\sum x_i}{n}-\frac{na}{n}=\bar x-a\)</span></p>
-</section><section id="raw-central-moments-relationship" class="slide level2">
+<p><span
+class="math inline">\(\mu_r&#39;=\frac{\sum(x_i-a)^r}{n}\)</span>; a is
+arbitrary number</p>
+<p><span
+class="math inline">\(\mu_1&#39;=\frac{\sum(x_i-a)}{n}=\frac{\sum
+x_i}{n}-\frac{na}{n}=\bar x-a\)</span></p>
+</section>
+<section id="raw-central-moments-relationship" class="slide level2">
 <h2>Raw &amp; Central Moments: Relationship</h2>
 <ul>
-<li><span class="math inline">\(\mu_2 = \mu_2&#39;-\mu_1&#39;^2\)</span></li>
-<li><span class="math inline">\(\mu_3 = \mu_3&#39;-3\mu_2&#39;\mu_1&#39;+2\mu_1&#39;^3\)</span></li>
-<li><span class="math inline">\(\mu_4 = \mu_4&#39;-4\mu_3&#39;\mu_1&#39; + 6 \mu_2&#39;\mu_1&#39;^2-3\mu_1&#39;^4\)</span></li>
+<li><span class="math inline">\(\mu_2 =
+\mu_2&#39;-\mu_1&#39;^2\)</span></li>
+<li><span class="math inline">\(\mu_3 =
+\mu_3&#39;-3\mu_2&#39;\mu_1&#39;+2\mu_1&#39;^3\)</span></li>
+<li><span class="math inline">\(\mu_4 = \mu_4&#39;-4\mu_3&#39;\mu_1&#39;
++ 6 \mu_2&#39;\mu_1&#39;^2-3\mu_1&#39;^4\)</span></li>
 </ul>
 <p>How to Remember??</p>
 <p><span class="math inline">\(\downarrow\)</span></p>
-</section><section id="how-to-remember-skip" class="slide level2">
+</section>
+<section id="how-to-remember-skip" class="slide level2">
 <h2>How to Remember (Skip)</h2>
 <p><small></p>
 <div class="container">
 <div class="col">
 <p><span class="math inline">\((a-b)^3=a^3-3a^2b+3ab^2-b^3\)</span></p>
-<p><span class="math inline">\((a-b)^4=a^4-4a^3b+6a^2b^2-4ab^3+b^4\)</span> (Pascal triangle can be used)</p>
+<p><span
+class="math inline">\((a-b)^4=a^4-4a^3b+6a^2b^2-4ab^3+b^4\)</span>
+(Pascal triangle can be used)</p>
 <p><span class="math inline">\(a^r=\mu_r&#39;\)</span></p>
 <p><span class="math inline">\(b^r=\mu_1&#39;^r\)</span></p>
 </div>
 <div class="col">
 <p>Now,</p>
-<p><span class="math inline">\(\mu_3 = \mu_3&#39;-3\mu_2&#39;\mu_1&#39;+2\mu_1&#39;^3\)</span></p>
+<p><span class="math inline">\(\mu_3 =
+\mu_3&#39;-3\mu_2&#39;\mu_1&#39;+2\mu_1&#39;^3\)</span></p>
 <ul>
 <li>Remove the penultimate term and let coefficient of it is k</li>
 <li>Use (-k) as the coefficient of the last term.</li>
@@ -507,10 +536,13 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </div>
 </div>
 <p></small></p>
-</section><section id="changing-origin-of-moments" class="slide level2">
+</section>
+<section id="changing-origin-of-moments" class="slide level2">
 <h2>Changing Origin of Moments</h2>
-<p>From <span class="math inline">\(\mu_r&#39;(a)\)</span> to <span class="math inline">\(\mu_r&#39;(k)\)</span></p>
-<p>Assume, <span class="math inline">\(a^r = \mu_r&#39;(a)\)</span>, <span class="math inline">\(b = a - k\)</span></p>
+<p>From <span class="math inline">\(\mu_r&#39;(a)\)</span> to <span
+class="math inline">\(\mu_r&#39;(k)\)</span></p>
+<p>Assume, <span class="math inline">\(a^r = \mu_r&#39;(a)\)</span>,
+<span class="math inline">\(b = a - k\)</span></p>
 <small>
 <div class="container">
 <div class="col">
@@ -518,17 +550,21 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <ol type="1">
 <li><span class="math inline">\((a+b)^1 = a + b\)</span></li>
 <li><span class="math inline">\((a+b)^2 = a^2 + 2ab + b^2\)</span></li>
-<li><span class="math inline">\((a+b)^3=a^3+3a^2b+3ab^2+b^3\)</span></li>
-<li><span class="math inline">\((a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4\)</span></li>
+<li><span
+class="math inline">\((a+b)^3=a^3+3a^2b+3ab^2+b^3\)</span></li>
+<li><span
+class="math inline">\((a+b)^4=a^4+4a^3b+6a^2b^2+4ab^3+b^4\)</span></li>
 </ol>
 </div>
 <div class="col">
 <ul>
 <li class="fragment"><ol type="1">
-<li class="fragment"><span class="math inline">\(\mu_1&#39;(k) = \mu_r&#39;(a) + b\)</span></li>
+<li class="fragment"><span class="math inline">\(\mu_1&#39;(k) =
+\mu_r&#39;(a) + b\)</span></li>
 </ol></li>
 <li class="fragment"><ol start="2" type="1">
-<li class="fragment"><span class="math inline">\(\mu_2&#39;(k) = \mu_2&#39;(a) + 2 \mu_1&#39;(a) + b^2\)</span></li>
+<li class="fragment"><span class="math inline">\(\mu_2&#39;(k) =
+\mu_2&#39;(a) + 2 \mu_1&#39;(a) + b^2\)</span></li>
 </ol></li>
 <li class="fragment"><ol start="3" type="1">
 <li class="fragment">?</li>
@@ -540,40 +576,55 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </div>
 </div>
 <p></small></p>
-</section><section id="central-moments-from-raws" class="slide level2">
+</section>
+<section id="central-moments-from-raws" class="slide level2">
 <h2>Central Moments from Raws</h2>
 <p>Use <span class="math inline">\(k = \bar x\)</span></p>
 <p>That’s it! DO NOT MEMORIZE!</p>
-</section><section id="skewness" class="slide level2">
+</section>
+<section id="skewness" class="slide level2">
 <h2>Skewness</h2>
 <p>Lack of symmetry</p>
 <p><img src="img/skewness.jpg" style="width:84%"></p>
 <ul>
-<li>-Ve Skew <span class="math inline">\(\rightarrow \bar X \lt Me \lt Mode\)</span></li>
-<li>+Ve Skew <span class="math inline">\(\rightarrow \bar X \gt Me \gt Mode\)</span></li>
-<li>No Skew <span class="math inline">\(\rightarrow \bar X = Me = Mode\)</span></li>
+<li>-Ve Skew <span class="math inline">\(\rightarrow \bar X \lt Me \lt
+Mode\)</span></li>
+<li>+Ve Skew <span class="math inline">\(\rightarrow \bar X \gt Me \gt
+Mode\)</span></li>
+<li>No Skew <span class="math inline">\(\rightarrow \bar X = Me =
+Mode\)</span></li>
 </ul>
-</section><section id="kurtosis" class="slide level2">
+</section>
+<section id="kurtosis" class="slide level2">
 <h2>Kurtosis</h2>
 <p><img src="img/kurtosis.jpg" style="width:50%"></p>
-<p>Normal distribution <span class="math inline">\(\rightarrow\)</span></p>
+<p>Normal distribution <span
+class="math inline">\(\rightarrow\)</span></p>
 <ul>
 <li>Most students get average marks</li>
-<li>Higher and lower marks are obtained by lesser number of students</li>
+<li>Higher and lower marks are obtained by lesser number of
+students</li>
 </ul>
-</section><section id="measures-of-skewness" class="slide level2">
+</section>
+<section id="measures-of-skewness" class="slide level2">
 <h2>Measures of SKewness</h2>
 <div class="container">
 <div class="col">
 <p><small></p>
 <ul>
-<li><p>Pearson’s Coefficient: <span class="math inline">\(SK_P=\frac{Mean-Mode}{\sigma}=\frac{3(Mean-Median)}{\sigma} ;(-3,3)\)</span></p>
+<li><p>Pearson’s Coefficient: <span
+class="math inline">\(SK_P=\frac{Mean-Mode}{\sigma}=\frac{3(Mean-Median)}{\sigma}
+;(-3,3)\)</span></p>
 <p>(<span class="math inline">\(Mode=3Me-2\bar X\)</span>)</p></li>
 </ul>
 <ul>
-<li class="fragment">Bowley’s Coefficient: <span class="math inline">\(SK_B=\frac{Q_3+Q_1-2Me}{Q_3-Q_1}; (-1,1)\)</span></li>
-<li class="fragment">Kelly’s Coefficient: <span class="math inline">\(SK_k=\frac{D_1+D_9-2Me}{D_9-D1}\)</span></li>
-<li class="fragment">Method of Moments: <span class="math inline">\(\beta_1=\frac{\mu_3^2}{\mu_2^3}\)</span></li>
+<li class="fragment">Bowley’s Coefficient: <span
+class="math inline">\(SK_B=\frac{Q_3+Q_1-2Me}{Q_3-Q_1};
+(-1,1)\)</span></li>
+<li class="fragment">Kelly’s Coefficient: <span
+class="math inline">\(SK_k=\frac{D_1+D_9-2Me}{D_9-D1}\)</span></li>
+<li class="fragment">Method of Moments: <span
+class="math inline">\(\beta_1=\frac{\mu_3^2}{\mu_2^3}\)</span></li>
 </ul>
 <p></small></p>
 </div>
@@ -582,49 +633,69 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <p>4, 23, 55, 70, 74, 78, 86, 89</p>
 </div>
 </div>
-</section><section id="measures-of-kurtosis" class="slide level2">
+</section>
+<section id="measures-of-kurtosis" class="slide level2">
 <h2>Measures of Kurtosis</h2>
 <ul>
-<li>Pearsons’s Coefficient of Moments, <span class="math inline">\(\beta_2 = \frac{\mu_4}{\mu_2^2}\)</span></li>
-<li>Percentile Coefficient, <span class="math inline">\(K=\frac{\frac 1 2 (Q_3-Q_1)}{P_{90}-P_{10}}\)</span></li>
+<li>Pearsons’s Coefficient of Moments, <span
+class="math inline">\(\beta_2 = \frac{\mu_4}{\mu_2^2}\)</span></li>
+<li>Percentile Coefficient, <span class="math inline">\(K=\frac{\frac 1
+2 (Q_3-Q_1)}{P_{90}-P_{10}}\)</span></li>
 </ul>
 <p><span class="math inline">\(\gamma_2=\beta_2-3\)</span></p>
-<p><span class="math inline">\(\gamma_2=0 \space or \space \beta_2=3) \rightarrow\)</span> Mesokurtik <span class="math inline">\(\gamma_2\gt0 \space or \space \beta_2 \gt 3) \rightarrow\)</span> Leptokurtik <span class="math inline">\(\gamma_2\lt0 \space or \space \beta_2\lt3) \rightarrow\)</span> Platykurtik</p>
-<p>9, 7, 8, 6 <span class="math inline">\(\rightarrow\)</span> Find kurtosis</p>
-</section><section id="five-number-summary" class="slide level2">
+<p><span class="math inline">\(\gamma_2=0 \space or \space \beta_2=3)
+\rightarrow\)</span> Mesokurtik <span class="math inline">\(\gamma_2\gt0
+\space or \space \beta_2 \gt 3) \rightarrow\)</span> Leptokurtik <span
+class="math inline">\(\gamma_2\lt0 \space or \space \beta_2\lt3)
+\rightarrow\)</span> Platykurtik</p>
+<p>9, 7, 8, 6 <span class="math inline">\(\rightarrow\)</span> Find
+kurtosis</p>
+</section>
+<section id="five-number-summary" class="slide level2">
 <h2>Five Number Summary</h2>
 <ul>
 <li>Minimum</li>
 <li>Maximum</li>
 <li><span class="math inline">\(Q_1, Q_2, Q_3\)</span></li>
 </ul>
-</section><section id="box-and-whisker-plot" class="slide level2">
+</section>
+<section id="box-and-whisker-plot" class="slide level2">
 <h2>Box and Whisker Plot</h2>
 <p><img data-src="img/box_plot.jpg" alt="Box Plot" /></p>
-</section><section id="problems" class="slide level2">
+</section>
+<section id="problems" class="slide level2">
 <h2>Problems</h2>
 <ul>
 <li class="fragment"><ol type="1">
-<li class="fragment"><span class="math inline">\(\bar X = 65, Me = 70, SK_P = -0.5\)</span>; Mod = ? CV = ?</li>
+<li class="fragment"><span class="math inline">\(\bar X = 65, Me = 70,
+SK_P = -0.5\)</span>; Mod = ? CV = ?</li>
 </ol></li>
 <li class="fragment"><ol start="2" type="1">
-<li class="fragment">GM &amp; HM of quartiles of a symmetrical distribution are 8 and 6.4, respectively. Find median.</li>
+<li class="fragment">GM &amp; HM of quartiles of a symmetrical
+distribution are 8 and 6.4, respectively. Find median.</li>
 </ol></li>
 <li class="fragment"><ol start="3" type="1">
-<li class="fragment">Mean, SK(P), coefficient of skewness and CV of distribution are 50, 0.4, and 40%, respectively. Find SD, mode, &amp; median.</li>
+<li class="fragment">Mean, SK(P), coefficient of skewness and CV of
+distribution are 50, 0.4, and 40%, respectively. Find SD, mode, &amp;
+median.</li>
 </ol></li>
 <li class="fragment"><ol start="4" type="1">
-<li class="fragment">Variance of a mesokurtik distribution is 4. Find <span class="math inline">\(\mu_4\)</span>.</li>
+<li class="fragment">Variance of a mesokurtik distribution is 4. Find
+<span class="math inline">\(\mu_4\)</span>.</li>
 </ol></li>
 </ul>
-</section><section id="moments-conversion-problems" class="slide level2">
+</section>
+<section id="moments-conversion-problems" class="slide level2">
 <h2>Moments Conversion Problems</h2>
 <div class="container">
 <div class="col">
 <ol type="1">
-<li>First three moments about 2 are 1, 16, and -40, , respectively. Find them about 0.</li>
-<li>First four moments about 5 are 2, 20,40, and 50, respectively. Find the central moments.</li>
-<li>First three moments about 2 are -1, 6, and 30, respectively. Find them about 5.</li>
+<li>First three moments about 2 are 1, 16, and -40, , respectively. Find
+them about 0.</li>
+<li>First four moments about 5 are 2, 20,40, and 50, respectively. Find
+the central moments.</li>
+<li>First three moments about 2 are -1, 6, and 30, respectively. Find
+them about 5.</li>
 </ol>
 </div>
 <div class="col">
@@ -647,16 +718,49 @@ document.getElementsByTagName('head')[0].appendChild(style);
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
         // Push each slide change to the browser history
         history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
         // Vertical centering of slides
         center: false,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
         // Transition style
         transition: 'zoom', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
         // Transition style for full page slide backgrounds
         backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
 
         menu: {
+   
+    
+    
+    
+    
+    
+    
+ 
           custom: false,
           themes: false,
           transitions: false

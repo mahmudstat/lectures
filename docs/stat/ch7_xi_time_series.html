@@ -8,11 +8,11 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="ch7_xi_time_series_files/reveal.js-3.3.0.1/css/reveal.css"/>
+  <link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/reveal.css"/>
 
 
 
-<link rel="stylesheet" href="ch7_xi_time_series_files/reveal.js-3.3.0.1/css/theme/sky.css" id="theme">
+<link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/theme/sky.css" id="theme">
 
 
   <!-- some tweaks to reveal css -->
@@ -448,10 +448,11 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
     <div id="header-footer">
-      <p class="slide-footer"> | PCC | Mahmud | Statistics | statmania.info | <span style="color:yellow;">Press SPACE or click arrows to see more contents</span> </p>
+      <p class="slide-footer"> | Abdullah Al Mahmud | www.statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
     </div>
-    <link href="ch7_xi_time_series_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-    <link href="ch7_xi_time_series_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
+    <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 </head>
 <body>
   <div class="reveal">
@@ -462,12 +463,18 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <h2 class="author">Abdullah Al Mahmud</h2>
 </section>
 
-<section><section id="time-series" class="title-slide slide level1"><h1>Time Series</h1></section><section id="what-is-time-series-data" class="slide level2">
+<section>
+<section id="time-series" class="title-slide slide level1">
+<h1>Time Series</h1>
+
+</section>
+<section id="what-is-time-series-data" class="slide level2">
 <h2>What is Time Series Data?</h2>
 <div class="container">
 <div class="col">
 <p>Data arranged chronologically</p>
-<p><span class="math inline">\(Y_t = f(t); t = t_1, t_2, t_3, \cdots, t_n\)</span></p>
+<p><span class="math inline">\(Y_t = f(t); t = t_1, t_2, t_3, \cdots,
+t_n\)</span></p>
 </div>
 <div class="col">
 <p>Example</p>
@@ -503,7 +510,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </table>
 </div>
 </div>
-</section><section id="components-of-time-series" class="slide level2">
+</section>
+<section id="components-of-time-series" class="slide level2">
 <h2>Components of Time Series</h2>
 <p>Four Components</p>
 <ul>
@@ -512,7 +520,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li class="fragment">Cyclic variation</li>
 <li class="fragment">Irregular/Random variation</li>
 </ul>
-</section><section id="uses" class="slide level2">
+</section>
+<section id="uses" class="slide level2">
 <h2>Uses</h2>
 <ul>
 <li class="fragment">Analyze past behavior</li>
@@ -521,41 +530,58 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li class="fragment">Segregation of components</li>
 <li class="fragment">Performance measure</li>
 </ul>
-</section><section id="symbols" class="slide level2">
+</section>
+<section id="symbols" class="slide level2">
 <h2>Symbols</h2>
-<p><span class="math inline">\(Y_t =\)</span> Values of series at time t</p>
+<p><span class="math inline">\(Y_t =\)</span> Values of series at time
+t</p>
 <p><span class="math inline">\(T_t =\)</span> Trend</p>
 <p><span class="math inline">\(S_t =\)</span> Seasonal</p>
 <p><span class="math inline">\(C_t =\)</span> Cyclic</p>
 <p><span class="math inline">\(R_t =\)</span> Random/irregular</p>
-</section><section id="models" class="slide level2">
+</section>
+<section id="models" class="slide level2">
 <h2>Models</h2>
 <div class="container">
 <div class="col">
 <p><strong>Additive Model</strong></p>
 <p><span class="math inline">\(Y_t = T_t + S_t + C_t + R_t\)</span></p>
 <ul>
-<li><span class="math inline">\(C_t\)</span> and <span class="math inline">\(S_t\)</span> can be <span class="math inline">\(\pm\)</span>ve</li>
-<li><span class="math inline">\(R_t\)</span> can also be <span class="math inline">\(\pm\)</span>ve, but in the long run, <span class="math inline">\(\sum R_t = 0\)</span></li>
+<li><span class="math inline">\(C_t\)</span> and <span
+class="math inline">\(S_t\)</span> can be <span
+class="math inline">\(\pm\)</span>ve</li>
+<li><span class="math inline">\(R_t\)</span> can also be <span
+class="math inline">\(\pm\)</span>ve, but in the long run, <span
+class="math inline">\(\sum R_t = 0\)</span></li>
 </ul>
 </div>
 <div class="col">
 <p><strong>Multiplicative Model</strong></p>
 <ul>
-<li class="fragment"><span class="math inline">\(Y_t = T_t \times S_t \times C_t \times R_t\)</span></li>
-<li class="fragment"><span class="math inline">\(S_t, C_t, R_t\)</span> refer to deviation from unit</li>
-<li class="fragment"><span class="math inline">\(S_t\)</span> equals unity in 1 year, <span class="math inline">\(C_t\)</span> in a cycle, and GM of <span class="math inline">\(R_t\)</span> is unity (1).</li>
+<li class="fragment"><span class="math inline">\(Y_t = T_t \times S_t
+\times C_t \times R_t\)</span></li>
+<li class="fragment"><span class="math inline">\(S_t, C_t, R_t\)</span>
+refer to deviation from unit</li>
+<li class="fragment"><span class="math inline">\(S_t\)</span> equals
+unity in 1 year, <span class="math inline">\(C_t\)</span> in a cycle,
+and GM of <span class="math inline">\(R_t\)</span> is unity (1).</li>
 </ul>
 </div>
 </div>
-</section><section id="comparison-of-models" class="slide level2">
+</section>
+<section id="comparison-of-models" class="slide level2">
 <h2>Comparison of Models</h2>
 <ul>
 <li>Components in additive models are independent.</li>
 <li>In multiplicative models, components are interwined.</li>
 </ul>
 </section></section>
-<section><section id="measuring-trend" class="title-slide slide level1"><h1>Measuring Trend</h1></section><section id="graphicalfree-hand-method" class="slide level2">
+<section>
+<section id="measuring-trend" class="title-slide slide level1">
+<h1>Measuring Trend</h1>
+
+</section>
+<section id="graphicalfree-hand-method" class="slide level2">
 <h2>Graphical/Free-hand Method</h2>
 <div class="container">
 <div class="col">
@@ -614,7 +640,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <p><img src="ch7_xi_time_series_files/figure-revealjs/unnamed-chunk-3-1.png" width="768" /></p>
 </div>
 </div>
-</section><section id="sem-average" class="slide level2">
+</section>
+<section id="sem-average" class="slide level2">
 <h2>Sem-average</h2>
 <div class="container">
 <div class="col">
@@ -672,13 +699,15 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <div class="col">
 <p><strong>Steps</strong></p>
 <ol type="1">
-<li>Separate the data into two equal parts (if odd-numbered, omit middle-most)</li>
+<li>Separate the data into two equal parts (if odd-numbered, omit
+middle-most)</li>
 <li>Estimate averages of each group</li>
 <li>Put these two values on the scatter plot and extend</li>
 </ol>
 </div>
 </div>
-</section><section id="moving-average" class="slide level2">
+</section>
+<section id="moving-average" class="slide level2">
 <h2>Moving Average</h2>
 <table>
 <thead>
@@ -697,12 +726,14 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <tr class="even">
 <td style="text-align: center;">2002</td>
 <td style="text-align: center;">438</td>
-<td style="text-align: center;"><span class="math inline">\({412+438+446}\over{3}=432\)</span></td>
+<td style="text-align: center;"><span
+class="math inline">\({412+438+446}\over{3}=432\)</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">2003</td>
 <td style="text-align: center;">446</td>
-<td style="text-align: center;"><span class="math inline">\(\frac{438+446+454}3=446\)</span></td>
+<td style="text-align: center;"><span
+class="math inline">\(\frac{438+446+454}3=446\)</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">2004</td>
@@ -717,7 +748,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <tr class="even">
 <td style="text-align: center;">2006</td>
 <td style="text-align: center;">483</td>
-<td style="text-align: center;"><span class="math inline">\(\frac{470+483+490}3=481\)</span></td>
+<td style="text-align: center;"><span
+class="math inline">\(\frac{470+483+490}3=481\)</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">2007</td>
@@ -738,28 +770,57 @@ document.getElementsByTagName('head')[0].appendChild(style);
     </div>
   </div>
 
-  <script src="ch7_xi_time_series_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
-  <script src="ch7_xi_time_series_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+  <script src="libs/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="libs/reveal.js-3.3.0.1/js/reveal.js"></script>
 
   <script>
 
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        // Display the page number of the current slide
-        slideNumber: true,
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
         // Push each slide change to the browser history
         history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
         // Vertical centering of slides
         center: false,
-        // Opens links in an iframe preview overlay
-        previewLinks: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
         // Transition style
         transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
         // Transition style for full page slide backgrounds
         backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
 
         menu: {
+   
+    
+    
+    
+    
+    
+    
+ 
           custom: false,
           themes: false,
           transitions: false
@@ -780,9 +841,9 @@ document.getElementsByTagName('head')[0].appendChild(style);
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: 'ch7_xi_time_series_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
-          { src: 'ch7_xi_time_series_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
-          { src: 'ch7_xi_time_series_files/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
         ]
       });
     </script>

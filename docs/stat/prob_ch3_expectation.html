@@ -448,8 +448,9 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
     <div id="header-footer">
-      <p class="slide-footer"> | PCC | Mahmud | Statistics | statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
+      <p class="slide-footer"> | Abdullah Al Mahmud | www.statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
     </div>
+    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
     <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
     <link href="libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 </head>
@@ -462,7 +463,11 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <h2 class="author">Abdullah Al Mahmud</h2>
 </section>
 
-<section><section id="expectation-vs-average-am" class="title-slide slide level1"><h1>Expectation vs AVerage (AM)</h1><table>
+<section>
+<section id="expectation-vs-average-am"
+class="title-slide slide level1">
+<h1>Expectation vs AVerage (AM)</h1>
+<table>
 <thead>
 <tr class="header">
 <th style="text-align: center;">Accident</th>
@@ -495,8 +500,11 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </table>
 <ul>
 <li class="fragment">Do rfs look like probabilities?</li>
-<li class="fragment">What is the probability that an accident is ocurred in a Bus service?</li>
-</ul></section><section id="weighted-mean-revisited" class="slide level2">
+<li class="fragment">What is the probability that an accident is ocurred
+in a Bus service?</li>
+</ul>
+</section>
+<section id="weighted-mean-revisited" class="slide level2">
 <h2>Weighted Mean Revisited</h2>
 <table>
 <colgroup>
@@ -508,11 +516,16 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;">Daily<br>Income<br>(<span class="math inline">\(x\)</span>)</th>
-<th style="text-align: center;">Frequency<br>(<span class="math inline">\(f\)</span>)</th>
-<th style="text-align: center;">Relative<br>Frequency<br>(<span class="math inline">\(rf\)</span>)</th>
-<th style="text-align: center;"><span class="math inline">\(x \times f\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(x \times rf\)</span></th>
+<th style="text-align: center;">Daily<br>Income<br>(<span
+class="math inline">\(x\)</span>)</th>
+<th style="text-align: center;">Frequency<br>(<span
+class="math inline">\(f\)</span>)</th>
+<th style="text-align: center;">Relative<br>Frequency<br>(<span
+class="math inline">\(rf\)</span>)</th>
+<th style="text-align: center;"><span class="math inline">\(x \times
+f\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(x \times
+rf\)</span></th>
 </tr>
 </thead>
 <tbody>
@@ -546,32 +559,45 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </tr>
 </tbody>
 </table>
-<p>If a man is randomly selected, what is the probability that his daily income is 400 BDT?</p>
+<p>If a man is randomly selected, what is the probability that his daily
+income is 400 BDT?</p>
 <ul>
-<li class="fragment"><span class="math inline">\(AM = \frac{61500}{125}=492\)</span></li>
-<li class="fragment">In expectation, <span class="math inline">\(rf\)</span> is the weight</li>
+<li class="fragment"><span class="math inline">\(AM =
+\frac{61500}{125}=492\)</span></li>
+<li class="fragment">In expectation, <span
+class="math inline">\(rf\)</span> is the weight</li>
 </ul>
-</section><section id="expectation-from-mean" class="slide level2">
+</section>
+<section id="expectation-from-mean" class="slide level2">
 <h2>Expectation from Mean</h2>
-<p><span class="math inline">\(\displaystyle \bar X=\frac{\Sigma x_if_i}{\Sigma f_i}\)</span></p>
+<p><span class="math inline">\(\displaystyle \bar X=\frac{\Sigma
+x_if_i}{\Sigma f_i}\)</span></p>
 <ul>
-<li class="fragment"><span class="math inline">\(= \frac{x_1f_1+x_2f_2+\cdots+x_3f_3}{N}\)</span> (letting <span class="math inline">\(\Sigma f_i=N\)</span>)</li>
-<li class="fragment"><span class="math inline">\(= x_1\frac{f_1}{N}+x_2\frac{f_2}{N}+\cdots +x_2\frac{f_n}{N}\)</span></li>
-<li class="fragment"><span class="math inline">\(= x_1p_1+x_2p_2+\cdots+x_np_n\)</span></li>
-<li class="fragment"><span class="math inline">\(= \sum x_i\cdot p(x_i)\)</span></li>
+<li class="fragment"><span class="math inline">\(=
+\frac{x_1f_1+x_2f_2+\cdots+x_3f_3}{N}\)</span> (letting <span
+class="math inline">\(\Sigma f_i=N\)</span>)</li>
+<li class="fragment"><span class="math inline">\(=
+x_1\frac{f_1}{N}+x_2\frac{f_2}{N}+\cdots +x_2\frac{f_n}{N}\)</span></li>
+<li class="fragment"><span class="math inline">\(=
+x_1p_1+x_2p_2+\cdots+x_np_n\)</span></li>
+<li class="fragment"><span class="math inline">\(= \sum x_i\cdot
+p(x_i)\)</span></li>
 </ul>
-</section><section id="expectation" class="slide level2">
+</section>
+<section id="expectation" class="slide level2">
 <h2>Expectation</h2>
 <p>Probabilities are weights</p>
-<p><span class="math display">\[\begin{eqnarray} 
-E(X) &amp;=&amp; x_1 \times P(x_1) + x_2 \times P(x_2)+ \cdots +x_n \times P(x_n)      \nonumber \\
+<p><span class="math display">\[\begin{eqnarray}
+E(X) &amp;=&amp; x_1 \times P(x_1) + x_2 \times P(x_2)+ \cdots +x_n
+\times P(x_n)      \nonumber \\
 &amp;=&amp; \displaystyle \sum_{i=1}^n x_i \times P(x_i) \nonumber \\
 \end{eqnarray}\]</span></p>
 <div onclick="klikaj(&#39;expcont&#39;)">
 <span>For continuous X</span>
 </div>
 <div id="expcont" style="visibility: hidden">
-<p><span class="math inline">\(\displaystyle E(X) = \int_{-\infty}^{\infty} f(x)dx\)</span></p>
+<p><span class="math inline">\(\displaystyle E(X) =
+\int_{-\infty}^{\infty} f(x)dx\)</span></p>
 </div>
 <script>
 function klikaj(i) {
@@ -579,14 +605,17 @@ function klikaj(i) {
 }
 </script>
 <ul>
-<li class="fragment"><span class="math inline">\(E(X^2) = \sum x^2 \times p(x)\)</span></li>
+<li class="fragment"><span class="math inline">\(E(X^2) = \sum x^2
+\times p(x)\)</span></li>
 </ul>
-</section><section id="expectation-example" class="slide level2">
+</section>
+<section id="expectation-example" class="slide level2">
 <h2>Expectation Example</h2>
 <table>
 <thead>
 <tr class="header">
-<th style="text-align: center;"><span class="math inline">\(X\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(X\)</span></th>
 <th style="text-align: center;">0</th>
 <th style="text-align: center;">1</th>
 <th style="text-align: center;">2</th>
@@ -594,10 +623,14 @@ function klikaj(i) {
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><span class="math inline">\(P(x)\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\frac 1 4\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\frac 1 2\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\frac 1 4\)</span></td>
+<td style="text-align: center;"><span
+class="math inline">\(P(x)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+4\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac 1
+4\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -606,61 +639,102 @@ function klikaj(i) {
 <li><span class="math inline">\(E(X)\)</span></li>
 <li><span class="math inline">\(E(X^2)\)</span></li>
 </ol>
-</section><section id="properties-of-expectation" class="slide level2">
+</section>
+<section id="properties-of-expectation" class="slide level2">
 <h2>Properties of Expectation</h2>
-<p><a href="ch3_xi_stat.html#/properties-of-am" target="_blank">Aslo refer to the properties of AM</a> (<span class="math inline">\(E(X)=\bar X\)</span>)</p>
+<p><a href="ch3_xi_stat.html#/properties-of-am" target="_blank">Aslo
+refer to the properties of AM</a> (<span class="math inline">\(E(X)=\bar
+X\)</span>)</p>
 <ul>
-<li class="fragment">Expectation of a constant, <span class="math inline">\(E(c)=c\)</span></li>
-<li class="fragment"><span class="math inline">\(E(aX)=aE(X)\)</span></li>
-<li class="fragment"><span class="math inline">\(E(X-a) = E(X) - E(a)\)</span></li>
-<li class="fragment"><span class="math inline">\(E(aX+b) = aE(X)+b\)</span></li>
-<li class="fragment"><span class="math inline">\(E(X+Y) = E(X)+E(Y)\)</span></li>
-<li class="fragment"><span class="math inline">\(E(XY) = E(X) E(Y)\)</span> (if independent, relate with probability)</li>
-<li class="fragment"><span class="math inline">\(E(X^2)\ge \{E(X)\}^2\)</span></li>
-<li class="fragment"><span class="math inline">\(E\left(\frac 1 X \right) \ge \frac 1 {E(X)}\)</span></li>
+<li class="fragment">Expectation of a constant, <span
+class="math inline">\(E(c)=c\)</span></li>
+<li class="fragment"><span
+class="math inline">\(E(aX)=aE(X)\)</span></li>
+<li class="fragment"><span class="math inline">\(E(X-a) = E(X) -
+E(a)\)</span></li>
+<li class="fragment"><span class="math inline">\(E(aX+b) =
+aE(X)+b\)</span></li>
+<li class="fragment"><span class="math inline">\(E(X+Y) =
+E(X)+E(Y)\)</span></li>
+<li class="fragment"><span class="math inline">\(E(XY) = E(X)
+E(Y)\)</span> (if independent, relate with probability)</li>
+<li class="fragment"><span class="math inline">\(E(X^2)\ge
+\{E(X)\}^2\)</span></li>
+<li class="fragment"><span class="math inline">\(E\left(\frac 1 X
+\right) \ge \frac 1 {E(X)}\)</span></li>
 </ul>
-</section><section id="variance" class="slide level2">
+</section>
+<section id="variance" class="slide level2">
 <h2>Variance</h2>
-<p><a href="ch4_xi_stat_dispersion.html#/variance-and-sd" target="_blank">Recall this (click)</a></p>
-<p>We knew, <span class="math inline">\(\sigma^2 = \bar {X^2} - (\bar X)^2=\)</span> Mean of square - square of mean</p>
+<p><a href="ch4_xi_stat_dispersion.html#/variance-and-sd" target="_blank">Recall
+this (click)</a></p>
+<p>We knew, <span class="math inline">\(\sigma^2 = \bar {X^2} - (\bar
+X)^2=\)</span> Mean of square - square of mean</p>
 <ul>
-<li class="fragment"><span class="math inline">\(V(X)=E(X^2)-\{E(X)\}^2\)</span></li>
-<li class="fragment">Original Formula: <span class="math inline">\(V(X) = E\{x-E(X)\}^2\)</span> (Match)</li>
+<li class="fragment"><span
+class="math inline">\(V(X)=E(X^2)-\{E(X)\}^2\)</span></li>
+<li class="fragment">Original Formula: <span class="math inline">\(V(X)
+= E\{x-E(X)\}^2\)</span> (Match)</li>
 <li class="fragment">Expand and prove these are equal</li>
 </ul>
-</section><section id="variance-properties" class="slide level2">
+</section>
+<section id="variance-properties" class="slide level2">
 <h2>Variance Properties</h2>
 <ul>
-<li class="fragment"><span class="math inline">\(V(c)=0\)</span> ponder, why?</li>
-<li class="fragment"><span class="math inline">\(V(X+a)=V(X)\)</span></li>
-<li class="fragment"><span class="math inline">\(V(aX+c) = a^2V(X)\)</span> (depends only on scale, recall)</li>
-<li class="fragment"><span class="math inline">\(V(X+Y) = V(X)+V(Y)\)</span></li>
+<li class="fragment"><span class="math inline">\(V(c)=0\)</span> ponder,
+why?</li>
+<li class="fragment"><span
+class="math inline">\(V(X+a)=V(X)\)</span></li>
+<li class="fragment"><span class="math inline">\(V(aX+c) =
+a^2V(X)\)</span> (depends only on scale, recall)</li>
+<li class="fragment"><span class="math inline">\(V(X+Y) =
+V(X)+V(Y)\)</span></li>
 </ul>
-</section><section id="covariance" class="slide level2">
+</section>
+<section id="covariance" class="slide level2">
 <h2>Covariance</h2>
-<p><span class="math inline">\(Cov(X,Y) = \frac{\Sigma (x-\bar x)(y-\bar x)}{n}\)</span></p>
+<p><span class="math inline">\(Cov(X,Y) = \frac{\Sigma (x-\bar x)(y-\bar
+x)}{n}\)</span></p>
 <p>Write in terms of <span class="math inline">\(E(X)\)</span></p>
 <ul>
-<li class="fragment"><span class="math inline">\(Cov(X,Y) = E [\{x-E(X)\}\{y-E(Y)\}]\)</span> (Expand)</li>
-<li class="fragment"><span class="math inline">\(E(XY)-E(X)E(Y)\)</span></li>
+<li class="fragment"><span class="math inline">\(Cov(X,Y) = E
+[\{x-E(X)\}\{y-E(Y)\}]\)</span> (Expand)</li>
+<li class="fragment"><span
+class="math inline">\(E(XY)-E(X)E(Y)\)</span></li>
 </ul>
-</section><section id="prove-ex-properties" class="slide level2">
+</section>
+<section id="prove-ex-properties" class="slide level2">
 <h2>Prove E(X) Properties</h2>
-<p><a href="#//properties-of-expectation">Go back to see the properties</a></p>
-</section><section id="ea" class="slide level2">
+<p><a href="#//properties-of-expectation">Go back to see the
+properties</a></p>
+</section>
+<section id="ea" class="slide level2">
 <h2>E(a)</h2>
 <p><span class="math inline">\(E(a) = \sum a \cdot p(x_i)\)</span></p>
 <ul>
-<li class="fragment"><span class="math inline">\(=a \cdot \sum p(x_i)\)</span></li>
-<li class="fragment"><span class="math inline">\(=a \times 1 = a\)</span></li>
+<li class="fragment"><span class="math inline">\(=a \cdot \sum
+p(x_i)\)</span></li>
+<li class="fragment"><span class="math inline">\(=a \times 1 =
+a\)</span></li>
 <li class="fragment">Others can be proven similarly</li>
 </ul>
-</section><section id="double-summation-revisited" class="slide level2">
+</section>
+<section id="double-summation-revisited" class="slide level2">
 <h2>Double Summation Revisited</h2>
-<table>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 51%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 10%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;">Exam (X) <span class="math inline">\(\to\)</span><br>Result (Y) <span class="math inline">\(\downarrow\)</span></th>
+<th style="text-align: center;">Exam (X) <span
+class="math inline">\(\to\)</span><br>Result (Y) <span
+class="math inline">\(\downarrow\)</span></th>
 <th style="text-align: center;">PSC</th>
 <th style="text-align: center;">JSC</th>
 <th style="text-align: center;">SSC</th>
@@ -704,68 +778,100 @@ function klikaj(i) {
 </tbody>
 </table>
 <ul>
-<li class="fragment">If sum over <span class="math inline">\(x_i\)</span>, we get only 1 column at a time</li>
-<li class="fragment">If sum over <span class="math inline">\(y_i\)</span>, we get only 1 row at a time</li>
-<li class="fragment">SO to get grand total, we must use <span class="math inline">\(\sum \sum (x_i+y_j)\)</span></li>
+<li class="fragment">If sum over <span
+class="math inline">\(x_i\)</span>, we get only 1 column at a time</li>
+<li class="fragment">If sum over <span
+class="math inline">\(y_i\)</span>, we get only 1 row at a time</li>
+<li class="fragment">SO to get grand total, we must use <span
+class="math inline">\(\sum \sum (x_i+y_j)\)</span></li>
 </ul>
-</section><section id="exy-exy" class="slide level2">
+</section>
+<section id="exy-exy" class="slide level2">
 <h2>E(X+Y) &amp; E(XY)</h2>
 <p><small></p>
 <p><span class="math inline">\(E(X+Y)\)</span></p>
 <ul>
-<li class="fragment"><span class="math inline">\(= \displaystyle \sum_{i=1}^m \sum_{j=1}^n (x_i+y_j)P(x_i,y_j)\)</span></li>
-<li class="fragment"><span class="math inline">\(=\displaystyle \sum_{i=1}^m \sum_{j=1}^n \{x_iP(x_i,y_j)+y_jP(x_i,y_j)\}\)</span></li>
-<li class="fragment"><span class="math inline">\(=\displaystyle \sum_{i=1}^m \sum_{j=1}^n x_iP(x_i,y_j)+\sum_{i=1}^m \sum_{j=1}^n y_jP(x_i,y_j)\)</span></li>
-<li class="fragment"><span class="math inline">\(=\displaystyle \sum_{i=1}^m x_i\sum_{j=1}^n P(x_i,y_j)+\sum_{j=1}^n x_i\sum_{i=1}^m P(x_i,y_j)\)</span></li>
-<li class="fragment"><span class="math inline">\(=\displaystyle \sum_{i=1}^m x_i P(x_i) + \sum_{j=1}^n y_j P(y_j)\)</span></li>
-<li class="fragment"><span class="math inline">\(=E(X)+E(Y)\)</span></li>
+<li class="fragment"><span class="math inline">\(= \displaystyle
+\sum_{i=1}^m \sum_{j=1}^n (x_i+y_j)P(x_i,y_j)\)</span></li>
+<li class="fragment"><span class="math inline">\(=\displaystyle
+\sum_{i=1}^m \sum_{j=1}^n \{x_iP(x_i,y_j)+y_jP(x_i,y_j)\}\)</span></li>
+<li class="fragment"><span class="math inline">\(=\displaystyle
+\sum_{i=1}^m \sum_{j=1}^n x_iP(x_i,y_j)+\sum_{i=1}^m \sum_{j=1}^n
+y_jP(x_i,y_j)\)</span></li>
+<li class="fragment"><span class="math inline">\(=\displaystyle
+\sum_{i=1}^m x_i\sum_{j=1}^n P(x_i,y_j)+\sum_{j=1}^n x_i\sum_{i=1}^m
+P(x_i,y_j)\)</span></li>
+<li class="fragment"><span class="math inline">\(=\displaystyle
+\sum_{i=1}^m x_i P(x_i) + \sum_{j=1}^n y_j P(y_j)\)</span></li>
+<li class="fragment"><span
+class="math inline">\(=E(X)+E(Y)\)</span></li>
 </ul>
 <p></small></p>
-</section><section id="ex2-ex2" class="slide level2">
+</section>
+<section id="ex2-ex2" class="slide level2">
 <h2>E(X<sup>2</sup>) ≥ {E(X)}<sup>2</sup></h2>
 <p><span class="math inline">\(V(X)\ge 0\)</span></p>
 <ul>
-<li class="fragment"><span class="math inline">\(\therefore E(X^2) - \{E(X)\}^2 \ge 0\)</span></li>
+<li class="fragment"><span class="math inline">\(\therefore E(X^2) -
+\{E(X)\}^2 \ge 0\)</span></li>
 </ul>
-</section><section id="am-hm" class="slide level2">
+</section>
+<section id="am-hm" class="slide level2">
 <h2>AM &amp; HM</h2>
-<p><span class="math inline">\(E(\frac 1 X) \ge \frac 1 {E(X)}\)</span></p>
+<p><span class="math inline">\(E(\frac 1 X) \ge \frac 1
+{E(X)}\)</span></p>
 <ul>
 <li class="fragment"><span class="math inline">\(AM \ge HM\)</span></li>
-<li class="fragment"><span class="math inline">\(HM =\)</span> opposite of mean of opposite <span class="math inline">\(\to \frac{1}{\frac{\sum \frac 1 {x_i}}{n}} = \frac 1 {E(\frac 1 x)}\)</span></li>
-<li class="fragment"><span class="math inline">\(E(X) \ge \frac{1}{E(\frac 1 x)}\)</span></li>
-<li class="fragment">If <span class="math inline">\(0.5 \gt \frac 1 3 \to 3 \gt \frac 1 {0.5}\)</span></li>
+<li class="fragment"><span class="math inline">\(HM =\)</span> opposite
+of mean of opposite <span class="math inline">\(\to \frac{1}{\frac{\sum
+\frac 1 {x_i}}{n}} = \frac 1 {E(\frac 1 x)}\)</span></li>
+<li class="fragment"><span class="math inline">\(E(X) \ge
+\frac{1}{E(\frac 1 x)}\)</span></li>
+<li class="fragment">If <span class="math inline">\(0.5 \gt \frac 1 3
+\to 3 \gt \frac 1 {0.5}\)</span></li>
 </ul>
-</section><section id="variance-of-constant-a" class="slide level2">
+</section>
+<section id="variance-of-constant-a" class="slide level2">
 <h2>Variance of constant (a)</h2>
 <p><span class="math inline">\(V(X) = E\{X-E(X)\}^2\)</span></p>
 <ul>
-<li class="fragment"><span class="math inline">\(V(a) = E\{a-E(a)\}^2\)</span></li>
+<li class="fragment"><span class="math inline">\(V(a) =
+E\{a-E(a)\}^2\)</span></li>
 <li class="fragment"><span class="math inline">\(E(a-a)^2\)</span></li>
 <li class="fragment"><span class="math inline">\(E(0)=0\)</span></li>
 </ul>
-</section><section id="vaxb" class="slide level2">
+</section>
+<section id="vaxb" class="slide level2">
 <h2>V(aX+b)</h2>
 <p><span class="math inline">\(V(X) = E\{X-E(X)\}^2\)</span></p>
 <p><span class="math inline">\(V(aX+b)=\)</span></p>
 <ul>
-<li class="fragment"><span class="math inline">\(E\{(aX+b)-E(aX+b)\}^2\)</span></li>
-<li class="fragment"><span class="math inline">\(E\{aX+b-aE(X)-b\}^2\)</span></li>
-<li class="fragment"><span class="math inline">\(E\{aX-aE(X)\}^2\)</span></li>
-<li class="fragment"><span class="math inline">\(a^2E\{X-E(X)\}^2\)</span></li>
+<li class="fragment"><span
+class="math inline">\(E\{(aX+b)-E(aX+b)\}^2\)</span></li>
+<li class="fragment"><span
+class="math inline">\(E\{aX+b-aE(X)-b\}^2\)</span></li>
+<li class="fragment"><span
+class="math inline">\(E\{aX-aE(X)\}^2\)</span></li>
+<li class="fragment"><span
+class="math inline">\(a^2E\{X-E(X)\}^2\)</span></li>
 <li class="fragment"><span class="math inline">\(a^2V(X)\)</span></li>
 <li class="fragment">Does variance depend on origin and scale?</li>
 <li class="fragment"><span class="math inline">\(V(X+Y)=?\)</span></li>
 </ul>
-</section><section id="covxy-properties" class="slide level2">
+</section>
+<section id="covxy-properties" class="slide level2">
 <h2>Cov(X,Y) Properties</h2>
 <p>For independent X, Y</p>
 <ul>
-<li class="fragment"><span class="math inline">\(\to E(XY) = E(X)E(Y)\)</span></li>
-<li class="fragment"><span class="math inline">\(Cov(X,Y) = E(XY) - E(X)E(Y) = 0\)</span></li>
-<li class="fragment">Correlation, <span class="math inline">\(r = \frac{Cov(X,Y)}{\sigma_x \sigma_y}=0\)</span></li>
+<li class="fragment"><span class="math inline">\(\to E(XY) =
+E(X)E(Y)\)</span></li>
+<li class="fragment"><span class="math inline">\(Cov(X,Y) = E(XY) -
+E(X)E(Y) = 0\)</span></li>
+<li class="fragment">Correlation, <span class="math inline">\(r =
+\frac{Cov(X,Y)}{\sigma_x \sigma_y}=0\)</span></li>
 </ul>
-</section><section id="example-01" class="slide level2">
+</section>
+<section id="example-01" class="slide level2">
 <h2>Example 01</h2>
 <table>
 <thead>
@@ -793,14 +899,20 @@ function klikaj(i) {
 </table>
 <ol type="1">
 <li>Find k</li>
-<li>Find <span class="math inline">\(E(X)\)</span> and <span class="math inline">\(V(X)\)</span></li>
+<li>Find <span class="math inline">\(E(X)\)</span> and <span
+class="math inline">\(V(X)\)</span></li>
 </ol>
-</section><section id="example-02" class="slide level2">
+</section>
+<section id="example-02" class="slide level2">
 <h2>Example 02</h2>
-<p><span class="math inline">\(P(x) = \frac 1 n; x = 1,2,3, \cdots,n\)</span> Find <span class="math inline">\(E(X)\)</span> and <span class="math inline">\(V(X)\)</span></p>
-</section><section id="example-03" class="slide level2">
+<p><span class="math inline">\(P(x) = \frac 1 n; x = 1,2,3,
+\cdots,n\)</span> Find <span class="math inline">\(E(X)\)</span> and
+<span class="math inline">\(V(X)\)</span></p>
+</section>
+<section id="example-03" class="slide level2">
 <h2>Example 03</h2>
-<p><span class="math inline">\(P(x)=\frac {3-|4-x|} k; x = 2,3,4,5,6\)</span></p>
+<p><span class="math inline">\(P(x)=\frac {3-|4-x|} k; x =
+2,3,4,5,6\)</span></p>
 <p>Find</p>
 <ol type="i">
 <li>k</li>
@@ -818,16 +930,49 @@ function klikaj(i) {
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
         // Push each slide change to the browser history
         history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
         // Vertical centering of slides
         center: false,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
         // Transition style
         transition: 'zoom', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
         // Transition style for full page slide backgrounds
         backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
 
         menu: {
+   
+    
+    
+    
+    
+    
+    
+ 
           custom: false,
           themes: false,
           transitions: false

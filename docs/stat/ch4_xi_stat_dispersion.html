@@ -8,11 +8,11 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="ch4_xi_stat_dispersion_files/reveal.js-3.3.0.1/css/reveal.css"/>
+  <link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/reveal.css"/>
 
 
 
-<link rel="stylesheet" href="ch4_xi_stat_dispersion_files/reveal.js-3.3.0.1/css/theme/sky.css" id="theme">
+<link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/theme/sky.css" id="theme">
 
 
   <!-- some tweaks to reveal css -->
@@ -448,14 +448,15 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
     <div id="header-footer">
-      <p class="slide-footer"> PCC | Mahmud | Statistics| statmania.info </p>
+      <p class="slide-footer"> | Abdullah Al Mahmud | www.statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
     </div>
-    <link href="ch4_xi_stat_dispersion_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-    <link href="ch4_xi_stat_dispersion_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-    <script src="ch4_xi_stat_dispersion_files/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-    <script src="ch4_xi_stat_dispersion_files/viz-1.8.2/viz.js"></script>
-    <link href="ch4_xi_stat_dispersion_files/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
-    <script src="ch4_xi_stat_dispersion_files/grViz-binding-1.0.6.1/grViz.js"></script>
+    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
+    <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+    <script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+    <script src="libs/viz-1.8.2/viz.js"></script>
+    <link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+    <script src="libs/grViz-binding-1.0.9/grViz.js"></script>
 </head>
 <body>
   <div class="reveal">
@@ -466,8 +467,14 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <h2 class="author">Abdullah Al Mahmud</h2>
 </section>
 
-<section><section id="concept-of-dispersion" class="title-slide slide level1"><h1>Concept of dispersion</h1></section><section id="what-is-dispersion" class="slide level2" data-background="white">
-<h2>What is Dispersion?</h2>
+<section>
+<section id="concept-of-dispersion" class="title-slide slide level1">
+<h1>Concept of dispersion</h1>
+
+</section>
+<section id="what-is-dispersion" class="slide level2"
+data-background="white">
+<h2 data-background="white">What is Dispersion?</h2>
 <div class="container">
 <div class="col">
 <p><img src="ch4_xi_stat_dispersion_files/figure-revealjs/unnamed-chunk-1-1.png" width="576" /></p>
@@ -480,7 +487,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul>
 </div>
 </div>
-</section><section id="why" class="slide level2">
+</section>
+<section id="why" class="slide level2">
 <h2>Why?</h2>
 <p>To</p>
 <ul>
@@ -489,7 +497,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li>enable further analysis</li>
 <li>have a perception of probability</li>
 </ul>
-</section><section id="criteria-of-a-good-measure" class="slide level2">
+</section>
+<section id="criteria-of-a-good-measure" class="slide level2">
 <h2>Criteria of A Good Measure</h2>
 <ul>
 <li>Well-defined</li>
@@ -499,47 +508,63 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li>Less affected by sample fluctuation</li>
 <li>Unaffected by outliers</li>
 </ul>
-</section><section id="types-of-measure" class="slide level2" data-background="white">
-<h2>Types of Measure</h2>
-<div id="htmlwidget-291c5c5a984b9a079f25" style="width:768px;height:576px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-291c5c5a984b9a079f25">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variance\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
-</section><section id="range" class="slide level2">
+</section>
+<section id="types-of-measure" class="slide level2"
+data-background="white">
+<h2 data-background="white">Types of Measure</h2>
+<div id="htmlwidget-683153d05796cb3ea3fa" style="width:768px;height:576px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-683153d05796cb3ea3fa">{"x":{"diagram":"digraph {\n\ngraph [layout = dot, rankdir = TB]\n\nnode [shape = rectangle, style = filled, fillcolor = white, fontcolor = blue]\nmsr [label = \"Measures of Dispersion\"]\nabs [label = \"Absolute Measure\"]\nrel [label = \"Relative Measure\"]\nmd [label =  \"Mean \n Deviation\"]\nrng [label = \"Range\"]\nsd [label = \"Stanard Deviation\"]\nqd [label= \"Quartile deviation\"]\nabt [label= \"About\"]\ncoef [label =\"Coefficient of\"]\nvar [label =\"Variance\"]\nmed [label =\"Median\"]\nmean [label = \"Mean\"]\nmod [label =\"Mode\"]\n\n\n{msr}  -> {abs, rel} \nabs -> rng\nabs -> {md, sd, qd}\nrel -> coef\ncoef -> {rng, md, qd, var}\nmd -> abt\nabt -> {mean, med, mod}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</section>
+<section id="range" class="slide level2">
 <h2>Range</h2>
 <div class="container">
 <div class="col">
-<p>Ungrouped Data Range, <span class="math inline">\(R = X_H - X_L\)</span></p>
+<p>Ungrouped Data Range, <span class="math inline">\(R = X_H -
+X_L\)</span></p>
 </div>
 <div class="col">
-<p>Grouped Data Range, <span class="math inline">\(R = R_u - R_l\)</span></p>
-<p><span class="math inline">\(L_u\)</span> = Upper boundary of the highest class</p>
-<p><span class="math inline">\(L_l\)</span> = Lower boundary of the lowest class</p>
+<p>Grouped Data Range, <span class="math inline">\(R = R_u -
+R_l\)</span></p>
+<p><span class="math inline">\(L_u\)</span> = Upper boundary of the
+highest class</p>
+<p><span class="math inline">\(L_l\)</span> = Lower boundary of the
+lowest class</p>
 </div>
 </div>
-<p><span class="math inline">\(X=\)</span> 14, 10, 2, 25, 21, 9, 19, 27, 16, 13, 12, 7, 20, 18, 17</p>
+<p><span class="math inline">\(X=\)</span> 14, 10, 2, 25, 21, 9, 19, 27,
+16, 13, 12, 7, 20, 18, 17</p>
 <ul>
 <li class="fragment">Range = 25</li>
 </ul>
-</section><section id="disadvantages-of-range" class="slide level2">
+</section>
+<section id="disadvantages-of-range" class="slide level2">
 <h2>Dis(advantages) of Range</h2>
-<ul>
+<ul class="task-list">
 <li><input type="checkbox" disabled="" checked="" />
 Simple &amp; quick</li>
 <li><input type="checkbox" disabled="" />
 <span style="color: red;">Influenced by outliers</span></li>
 <li><input type="checkbox" disabled="" />
-<span style="color: red;">Not suitable for for further mathematical analysis</span></li>
+<span style="color: red;">Not suitable for for further mathematical
+analysis</span></li>
 <li><input type="checkbox" disabled="" />
-<span style="color: red;">Cannot be computed for open-ended distribution</span></li>
+<span style="color: red;">Cannot be computed for open-ended
+distribution</span></li>
 </ul>
-</section><section id="mean-deviation-md" class="slide level2">
+</section>
+<section id="mean-deviation-md" class="slide level2">
 <h2>Mean Deviation (MD)</h2>
 <div class="container">
 <div class="col">
 <p>Ungrouped Data</p>
-<p><span class="math inline">\(MD(k)=\frac{\sum_{i=1}^n |x_i-k|} n\)</span>, not <span class="math inline">\(MD(k)=\frac{|\sum_{i=1}^n(x_i-k)|} n\)</span>; Beware!</p>
+<p><span class="math inline">\(MD(k)=\frac{\sum_{i=1}^n |x_i-k|}
+n\)</span>, not <span
+class="math inline">\(MD(k)=\frac{|\sum_{i=1}^n(x_i-k)|} n\)</span>;
+Beware!</p>
 </div>
 <div class="col">
-<p>Grouped Data <span class="math inline">\(MD(k)=\frac{\sum_{i=1}^n f_i|x_i-k|} n\)</span></p>
+<p>Grouped Data <span class="math inline">\(MD(k)=\frac{\sum_{i=1}^n
+f_i|x_i-k|} n\)</span></p>
 </div>
 </div>
 k =
@@ -548,15 +573,18 @@ k =
 \tilde x, &amp; \text{for MD about median} \\
 Mo, &amp; \text{for MD about Mode}
 \end{cases}\]</span>
-</section><section id="compute-md" class="slide level2">
+</section>
+<section id="compute-md" class="slide level2">
 <h2>Compute MD</h2>
 <p>Compute about mean, median and mode</p>
 <ul>
-<li class="fragment">X = 14, 10, 2, 25, 21, 9, 19, 27, 16, 13, 12, 7, 20, 18, 17</li>
+<li class="fragment">X = 14, 10, 2, 25, 21, 9, 19, 27, 16, 13, 12, 7,
+20, 18, 17</li>
 </ul>
-</section><section id="disadvantages-of-md" class="slide level2">
+</section>
+<section id="disadvantages-of-md" class="slide level2">
 <h2>Dis(advantages) of MD</h2>
-<ul>
+<ul class="task-list">
 <li><input type="checkbox" disabled="" checked="" />
 Simple</li>
 <li><input type="checkbox" disabled="" checked="" />
@@ -564,33 +592,44 @@ Unaffected by outliers</li>
 <li><input type="checkbox" disabled="" />
 <span style="color: red;">Useful for symmetric data only</span></li>
 <li><input type="checkbox" disabled="" />
-<span style="color: red;">Not suitable for for further mathematical analysis</span></li>
+<span style="color: red;">Not suitable for for further mathematical
+analysis</span></li>
 </ul>
-</section><section id="variance-and-sd" class="slide level2">
+</section>
+<section id="variance-and-sd" class="slide level2">
 <h2>Variance and SD</h2>
 <div class="container">
-<div class="col">
-<h3 id="variance">Variance</h3>
-<p><span class="math display">\[\sigma ^2 = \sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}\]</span></p>
-<p><span class="math inline">\(\quad\)</span> = <span class="math inline">\(\sum \frac{x_i^2}{n}-(\frac{\sum x_i}{n})^2\)</span></p>
-<p><span class="math inline">\(\quad\)</span> = Mean of square - square of mean</p>
-</div>
-<div class="col">
-<h3 id="standard-deviation-sigma"><em>Standard Deviation</em> (<span class="math inline">\(\sigma\)</span>)</h3>
+<section id="variance" class="col">
+<h3>Variance</h3>
+<p><span class="math display">\[\sigma ^2 = \sum_{i=1}^n \frac{(x_i-\bar
+x)^2}{n}\]</span></p>
+<p><span class="math inline">\(\quad\)</span> = <span
+class="math inline">\(\sum \frac{x_i^2}{n}-(\frac{\sum
+x_i}{n})^2\)</span></p>
+<p><span class="math inline">\(\quad\)</span> = Mean of square - square
+of mean</p>
+</section>
+<section id="standard-deviation-sigma" class="col">
+<h3><em>Standard Deviation</em> (<span
+class="math inline">\(\sigma\)</span>)</h3>
 <p>Positive square root of variance</p>
 <ul>
-<li class="fragment"><span class="math display">\[\sigma  = \sqrt{\sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}}\]</span></li>
+<li class="fragment"><span class="math display">\[\sigma  =
+\sqrt{\sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}}\]</span></li>
 <li class="fragment">For grouped data?</li>
 </ul>
+</section>
 </div>
-</div>
-</section><section id="variance-estimation" class="slide level2">
+</section>
+<section id="variance-estimation" class="slide level2">
 <h2>Variance Estimation</h2>
 <table>
 <thead>
 <tr class="header">
-<th style="text-align: right;"><span class="math inline">\(x\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(x^2\)</span></th>
+<th style="text-align: right;"><span
+class="math inline">\(x\)</span></th>
+<th style="text-align: center;"><span
+class="math inline">\(x^2\)</span></th>
 </tr>
 </thead>
 <tbody>
@@ -607,18 +646,25 @@ Unaffected by outliers</li>
 <td style="text-align: center;">9</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;"><span class="math inline">\(\sum x = 26\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\sum x^2 = 274\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(\sum x =
+26\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sum x^2 =
+274\)</span></td>
 </tr>
 </tbody>
 </table>
-<p><span class="math inline">\(\sigma^2\)</span>=Mean of square - square of mean</p>
-<p><span class="math inline">\(\quad\)</span> =<span class="math inline">\(\bar {x^2}-{\bar x}^2\)</span></p>
+<p><span class="math inline">\(\sigma^2\)</span>=Mean of square - square
+of mean</p>
+<p><span class="math inline">\(\quad\)</span> =<span
+class="math inline">\(\bar {x^2}-{\bar x}^2\)</span></p>
 <ul>
-<li class="fragment"><span class="math inline">\(\therefore \sigma^2 = \frac{274}{3}-(\frac{26}{3})^2 =\)</span> 24.333</li>
-<li class="fragment"><span class="math inline">\(\sigma =\)</span> 4.933</li>
+<li class="fragment"><span class="math inline">\(\therefore \sigma^2 =
+\frac{274}{3}-(\frac{26}{3})^2 =\)</span> 24.333</li>
+<li class="fragment"><span class="math inline">\(\sigma =\)</span>
+4.933</li>
 </ul>
-</section><section id="thoughts-on-variance" class="slide level2">
+</section>
+<section id="thoughts-on-variance" class="slide level2">
 <h2>Thoughts on Variance?</h2>
 <h3 id="think"><span style="color: blue;">Think</span></h3>
 <ul>
@@ -627,9 +673,10 @@ Unaffected by outliers</li>
 <li>Why is variance determined before sd?</li>
 <li>What do variance and sd mean?</li>
 </ul>
-</section><section id="disadvantages-of-sd" class="slide level2">
+</section>
+<section id="disadvantages-of-sd" class="slide level2">
 <h2>Dis(advantages) of SD</h2>
-<ul>
+<ul class="task-list">
 <li><input type="checkbox" disabled="" checked="" />
 Well-defined</li>
 <li><input type="checkbox" disabled="" checked="" />
@@ -643,24 +690,29 @@ Measures consistency</li>
 <li><input type="checkbox" disabled="" />
 <span style="color: red;">Affected by outliers</span></li>
 </ul>
-</section><section id="variance-example" class="slide level2">
+</section>
+<section id="variance-example" class="slide level2">
 <h2>Variance Example</h2>
 <p>X = 29, 32, 21, 34, 31, 35, 30, 22</p>
 <p>Find variance and stand deviation</p>
 <ul>
-<li class="fragment">Variance, <span class="math inline">\(\sigma^2=\)</span> 26.786</li>
-<li class="fragment">SD, <span class="math inline">\(\sigma\)</span> = 5.175</li>
+<li class="fragment">Variance, <span
+class="math inline">\(\sigma^2=\)</span> 26.786</li>
+<li class="fragment">SD, <span class="math inline">\(\sigma\)</span> =
+5.175</li>
 </ul>
-</section><section id="quartile-deviationqd" class="slide level2">
+</section>
+<section id="quartile-deviationqd" class="slide level2">
 <h2>Quartile Deviation(QD)</h2>
 <div class="container">
 <div class="col">
 <p><span class="math inline">\(QD=\frac{Q_3-Q_1} 2\)</span></p>
-<p><span class="math inline">\(Q_3-Q_1\)</span> is called Interquartile range.</p>
+<p><span class="math inline">\(Q_3-Q_1\)</span> is called Interquartile
+range.</p>
 </div>
-<div class="col">
-<h3 id="disadvantages">Dis(advantages)</h3>
-<ul>
+<section id="disadvantages" class="col">
+<h3>Dis(advantages)</h3>
+<ul class="task-list">
 <li><input type="checkbox" disabled="" checked="" />
 Simple</li>
 <li><input type="checkbox" disabled="" checked="" />
@@ -670,29 +722,42 @@ Can work with open-ended distribution</li>
 <li><input type="checkbox" disabled="" />
 <span style="color: red;">Not based on all observations</span></li>
 <li><input type="checkbox" disabled="" />
-<span style="color: red;">Not suitable for for further mathematical analysis</span></li>
+<span style="color: red;">Not suitable for for further mathematical
+analysis</span></li>
 </ul>
+</section>
 </div>
-</div>
-</section><section id="coefficients" class="slide level2">
+</section>
+<section id="coefficients" class="slide level2">
 <h2>Coefficients</h2>
-<p><small> - Coefficient of Range,<span class="math inline">\(CR=\frac{X_H-X_L}{X_H+X_L}\times 100= \frac{\text{Range}}{X_H+X_L}\times 100=\frac{X_u-X_l}{X_u+X_l}\times 100\)</span> (grouped)</p>
+<p><small> - Coefficient of Range,<span
+class="math inline">\(CR=\frac{X_H-X_L}{X_H+X_L}\times 100=
+\frac{\text{Range}}{X_H+X_L}\times 100=\frac{X_u-X_l}{X_u+X_l}\times
+100\)</span> (grouped)</p>
 <ul>
-<li class="fragment">Coefficient of Mean Deviation, <span class="math inline">\(CMD=\frac{MD(\bar x)}{\bar x} \times 100\)</span> (about mean, median and mode similarly)</li>
-<li class="fragment">Coefficient of Variance, <span class="math inline">\(CV=\frac{\sigma}{\bar x} \times 100\)</span></li>
-<li class="fragment">Coefficient of Quartile Deviation, <span class="math inline">\(CQD=\frac{Q_3-Q_1}{Q_3+Q_1} \times 100\)</span></li>
+<li class="fragment">Coefficient of Mean Deviation, <span
+class="math inline">\(CMD=\frac{MD(\bar x)}{\bar x} \times 100\)</span>
+(about mean, median and mode similarly)</li>
+<li class="fragment">Coefficient of Variance, <span
+class="math inline">\(CV=\frac{\sigma}{\bar x} \times 100\)</span></li>
+<li class="fragment">Coefficient of Quartile Deviation, <span
+class="math inline">\(CQD=\frac{Q_3-Q_1}{Q_3+Q_1} \times
+100\)</span></li>
 </ul>
 <p></small></p>
-</section><section id="compute-coefficients" class="slide level2">
+</section>
+<section id="compute-coefficients" class="slide level2">
 <h2>Compute Coefficients</h2>
 <p>X = 29, 32, 21, 34, 31, 35, 30, 22</p>
 <ul>
 <li class="fragment">CR = 25</li>
-<li class="fragment"><span class="math inline">\(CMD(\bar x)\)</span> = 13.462</li>
+<li class="fragment"><span class="math inline">\(CMD(\bar x)\)</span> =
+13.462</li>
 <li class="fragment">CV = 17.694</li>
 <li class="fragment">CQD = 8.787</li>
 </ul>
-</section><section id="sd-vs-cv" class="slide level2">
+</section>
+<section id="sd-vs-cv" class="slide level2">
 <h2>SD vs CV</h2>
 <div class="container">
 <div class="col">
@@ -710,53 +775,80 @@ Can work with open-ended distribution</li>
 <p>Who is better?</p>
 </div>
 </div>
-</section><section id="use-of-cv" class="slide level2">
+</section>
+<section id="use-of-cv" class="slide level2">
 <h2>Use of CV</h2>
 <ul>
 <li>For estimating skewness, correlation etc.</li>
 <li>A measure of consistency/performance</li>
 </ul>
-</section><section id="properties-of-sd" class="slide level2">
+</section>
+<section id="properties-of-sd" class="slide level2">
 <h2>Properties of SD</h2>
 <ul>
 <li class="fragment">Depends on scale, but not on origin (prove)</li>
-<li class="fragment">For two unequal observations, <span class="math inline">\(SD=\frac R 2\)</span>; where <span class="math inline">\(R = Range\)</span></li>
+<li class="fragment">For two unequal observations, <span
+class="math inline">\(SD=\frac R 2\)</span>; where <span
+class="math inline">\(R = Range\)</span></li>
 <li class="fragment"><span class="math inline">\(MD \le SD\)</span></li>
-<li class="fragment">For n positive observations, <span class="math inline">\(\bar X \sqrt{n-1}\ge \sigma\)</span></li>
-<li class="fragment">For the first n natural numbers, <span class="math inline">\(\sigma = \sqrt{\frac{n^2-1}{12}}\)</span></li>
-<li class="fragment">For two positive observations, <span class="math inline">\(AM&gt;SD\)</span></li>
-<li class="fragment">For n number of unequal values, <span class="math inline">\(\sigma \lt R\)</span></li>
-<li class="fragment"><span class="math inline">\(SD \lt \text{Root Mean Square Deviation}\)</span></li>
+<li class="fragment">For n positive observations, <span
+class="math inline">\(\bar X \sqrt{n-1}\ge \sigma\)</span></li>
+<li class="fragment">For the first n natural numbers, <span
+class="math inline">\(\sigma = \sqrt{\frac{n^2-1}{12}}\)</span></li>
+<li class="fragment">For two positive observations, <span
+class="math inline">\(AM&gt;SD\)</span></li>
+<li class="fragment">For n number of unequal values, <span
+class="math inline">\(\sigma \lt R\)</span></li>
+<li class="fragment"><span class="math inline">\(SD \lt \text{Root Mean
+Square Deviation}\)</span></li>
 </ul>
-</section><section id="is-sigma2-alwyas-gt-sigma" class="slide level2">
-<h2>Is <span class="math inline">\(\sigma^2\)</span> alwyas <span class="math inline">\(\gt \sigma\)</span></h2>
+</section>
+<section id="is-sigma2-alwyas-gt-sigma" class="slide level2">
+<h2>Is <span class="math inline">\(\sigma^2\)</span> alwyas <span
+class="math inline">\(\gt \sigma\)</span></h2>
 <p>Exceptions</p>
-<p>We know, <span class="math inline">\(\sigma=\sqrt \sigma^2\)</span> (N:B: <span class="math inline">\(-2=-\sqrt 4; -2\ne \sqrt 4\)</span>)</p>
+<p>We know, <span class="math inline">\(\sigma=\sqrt \sigma^2\)</span>
+(N:B: <span class="math inline">\(-2=-\sqrt 4; -2\ne \sqrt
+4\)</span>)</p>
 <ul>
-<li class="fragment">If <span class="math inline">\(\sigma^2=1, \sigma =1\)</span></li>
-<li class="fragment">If <span class="math inline">\(\sigma^2 \lt 1, \sigma ^2 &lt; \sigma\)</span></li>
-<li class="fragment">Example: <span class="math inline">\(\sigma^2=0.05, \sigma = \sqrt{0.05} = 0.2236068\)</span></li>
+<li class="fragment">If <span class="math inline">\(\sigma^2=1, \sigma
+=1\)</span></li>
+<li class="fragment">If <span class="math inline">\(\sigma^2 \lt 1,
+\sigma ^2 &lt; \sigma\)</span></li>
+<li class="fragment">Example: <span class="math inline">\(\sigma^2=0.05,
+\sigma = \sqrt{0.05} = 0.2236068\)</span></li>
 </ul>
-</section><section id="cv-is-a-pure-number" class="slide level2">
+</section>
+<section id="cv-is-a-pure-number" class="slide level2">
 <h2>CV is a Pure Number</h2>
 <ul>
 <li>No Unit</li>
 <li>Absolute number</li>
 </ul>
-</section><section id="minimum-value-of-sigma" class="slide level2">
+</section>
+<section id="minimum-value-of-sigma" class="slide level2">
 <h2>Minimum Value of <span class="math inline">\(\sigma\)</span></h2>
 <p><small></p>
 <p><span class="math inline">\(\sigma \ge 0\)</span></p>
-<p><span class="math inline">\(\therefore\)</span> Least value of <span class="math inline">\(\sigma\)</span> is 0.</p>
-<p><span class="math inline">\(\Rightarrow \frac{\sum(x_i-\bar x)^2}{n} = 0\)</span></p>
-<p><span class="math inline">\(\Rightarrow \sum(x_i-\bar x)^2 = 0\)</span></p>
-<p><span class="math inline">\(\Rightarrow (x_1-\bar x)^2 + (x_2-\bar x)^2 + \cdots + (x_n-\bar x)^2= 0\)</span></p>
-<p><span class="math inline">\(\therefore (x_1-\bar x)^2 =0, (x_2-\bar x)^2=0, (x_n-\bar x)^2=0\)</span></p>
-<p><span class="math inline">\(\Rightarrow x_1=\bar x, x_2=\bar x, x_n=\bar x\)</span></p>
-<p><span class="math inline">\(\Rightarrow x_1=x_2= \cdots =x_n\)</span></p>
-<p><span class="math inline">\(\therefore\)</span> SD is least (i.e., 0) when all values are equal.</p>
+<p><span class="math inline">\(\therefore\)</span> Least value of <span
+class="math inline">\(\sigma\)</span> is 0.</p>
+<p><span class="math inline">\(\Rightarrow \frac{\sum(x_i-\bar x)^2}{n}
+= 0\)</span></p>
+<p><span class="math inline">\(\Rightarrow \sum(x_i-\bar x)^2 =
+0\)</span></p>
+<p><span class="math inline">\(\Rightarrow (x_1-\bar x)^2 + (x_2-\bar
+x)^2 + \cdots + (x_n-\bar x)^2= 0\)</span></p>
+<p><span class="math inline">\(\therefore (x_1-\bar x)^2 =0, (x_2-\bar
+x)^2=0, (x_n-\bar x)^2=0\)</span></p>
+<p><span class="math inline">\(\Rightarrow x_1=\bar x, x_2=\bar x,
+x_n=\bar x\)</span></p>
+<p><span class="math inline">\(\Rightarrow x_1=x_2= \cdots
+=x_n\)</span></p>
+<p><span class="math inline">\(\therefore\)</span> SD is least (i.e., 0)
+when all values are equal.</p>
 <p></small></p>
-</section><section id="comparison-with-mean" class="slide level2">
+</section>
+<section id="comparison-with-mean" class="slide level2">
 <h2>Comparison with Mean</h2>
 <table>
 <thead>
@@ -790,47 +882,60 @@ Can work with open-ended distribution</li>
 </table>
 <p>Who is better?</p>
 </section></section>
-<section><section id="theorems" class="title-slide slide level1"><h1>Theorems</h1></section><section id="sigma2-origin-scale" class="slide level2">
+<section>
+<section id="theorems" class="title-slide slide level1">
+<h1>Theorems</h1>
+
+</section>
+<section id="sigma2-origin-scale" class="slide level2">
 <h2><span class="math inline">\(\sigma^2\)</span> Origin-Scale</h2>
 <p><small></p>
 <div class="container">
 <div class="col">
-<p><span class="math inline">\(\sigma_x^2=\frac{\sum(x_i-\bar x)^2}{n}\)</span></p>
-<p>Let, <span class="math inline">\(d_i=\frac{x_i-a}{c}\)</span> (a = origin, c = scale)</p>
-<p><span class="math display">\[\begin{eqnarray} 
+<p><span class="math inline">\(\sigma_x^2=\frac{\sum(x_i-\bar
+x)^2}{n}\)</span></p>
+<p>Let, <span class="math inline">\(d_i=\frac{x_i-a}{c}\)</span> (a =
+origin, c = scale)</p>
+<p><span class="math display">\[\begin{eqnarray}
 &amp;\Rightarrow&amp; x_i=a+cd_i     \nonumber \\
 &amp;\Rightarrow&amp; \bar x = a + c \bar d \nonumber \\
 \end{eqnarray}\]</span></p>
 </div>
 <div class="col">
-<p><span class="math display">\[\begin{eqnarray} 
+<p><span class="math display">\[\begin{eqnarray}
 \sigma_x^2&amp;=&amp;\frac{\sum(x_i-\bar x)^2}{n}     \nonumber \\
 &amp;=&amp;  \frac{\sum(a+cd_i-a-c \bar d)^2}{n}   \nonumber \\
 &amp;=&amp;  \frac{\sum(cd_i-c \bar d)^2}{n}   \nonumber \\
 &amp;=&amp;  \frac{c^2\sum(d_i-\bar d)^2}{n}   \nonumber \\
 &amp;=&amp;  c^2 \sigma_d^2  \nonumber \\
 \end{eqnarray}\]</span></p>
-<p><span class="math inline">\(\therefore \sigma_x^2=c^2 \sigma_d^2\)</span></p>
+<p><span class="math inline">\(\therefore \sigma_x^2=c^2
+\sigma_d^2\)</span></p>
 </div>
 </div>
 <ul>
 <li>Similar procedure and outcome for standard deviation</li>
 </ul>
 <p></small></p>
-</section><section id="md-sd-and-range" class="slide level2">
+</section>
+<section id="md-sd-and-range" class="slide level2">
 <h2>MD, SD and Range</h2>
 <p><small></p>
 <div class="container">
 <div class="col">
-<p><span class="math inline">\(MD=SD=\frac R 2\)</span> for <span class="math inline">\(x_1\ne x_2\)</span> (two unequal observations)</p>
-<p><span class="math inline">\(\bar x = \frac {x_1+x_2} 2\)</span> and <span class="math inline">\(R=|x_1-x_2|\)</span></p>
+<p><span class="math inline">\(MD=SD=\frac R 2\)</span> for <span
+class="math inline">\(x_1\ne x_2\)</span> (two unequal observations)</p>
+<p><span class="math inline">\(\bar x = \frac {x_1+x_2} 2\)</span> and
+<span class="math inline">\(R=|x_1-x_2|\)</span></p>
 </div>
 <div class="col">
 <p>Mean Deviation,</p>
-<p><span class="math display">\[\begin{eqnarray} 
+<p><span class="math display">\[\begin{eqnarray}
 MD &amp;=&amp; \frac{\sum_{i=1}^2 |x_i-\bar x|}{2}     \nonumber \\
-MD &amp;=&amp; \frac{\sum_{i=1}^2 |x_1-\bar x|+|x_2-\bar x|}{2}     \nonumber \\
-&amp;=&amp; \frac{|x_1-\frac{x_1+x_2} 2|+|x_2-\frac{x_1+x_2} 2|}{2} \nonumber \\
+MD &amp;=&amp; \frac{\sum_{i=1}^2 |x_1-\bar x|+|x_2-\bar
+x|}{2}     \nonumber \\
+&amp;=&amp; \frac{|x_1-\frac{x_1+x_2} 2|+|x_2-\frac{x_1+x_2} 2|}{2}
+\nonumber \\
 &amp;=&amp; \frac{2|\frac{x_1-x_2}{2}|}{2}    \nonumber \\
 &amp;=&amp; |x_1-x_2| \nonumber \\
 &amp;=&amp; \frac R 2 \nonumber \\
@@ -838,34 +943,49 @@ MD &amp;=&amp; \frac{\sum_{i=1}^2 |x_1-\bar x|+|x_2-\bar x|}{2}     \nonumber \\
 </div>
 </div>
 <p>Similar process for SD; Start from SD formula </small></p>
-</section><section id="sd-and-range" class="slide level2">
+</section>
+<section id="sd-and-range" class="slide level2">
 <h2>SD and Range</h2>
-<p><small> For two unequal observations, <span class="math inline">\(SD=\frac R 2\)</span></p>
-<p><span class="math display">\[\begin{eqnarray} 
-SD&amp;=&amp;\sqrt{\frac{\sum_{i=1}^2 (x_i-\bar x)^2}{2}}     \nonumber \\
-&amp;=&amp;  \sqrt{\frac{(x_1-\bar x)^2+(x_2-\bar x)^2}{2}}  \nonumber \\
-&amp;=&amp;\sqrt{\frac{(x_1-\frac{x_1+x_2} 2)^2+(x_2-\frac{x_1+x_2} 2)^2}{2}} \nonumber \\
-&amp;=&amp;\sqrt{\frac{(\frac{x_1-x_2}{2})^2+(\frac{x_2-x_1}{2})^2}{2}}\nonumber \\
+<p><small> For two unequal observations, <span
+class="math inline">\(SD=\frac R 2\)</span></p>
+<p><span class="math display">\[\begin{eqnarray}
+SD&amp;=&amp;\sqrt{\frac{\sum_{i=1}^2 (x_i-\bar x)^2}{2}}     \nonumber
+\\
+&amp;=&amp;  \sqrt{\frac{(x_1-\bar x)^2+(x_2-\bar x)^2}{2}}  \nonumber
+\\
+&amp;=&amp;\sqrt{\frac{(x_1-\frac{x_1+x_2} 2)^2+(x_2-\frac{x_1+x_2}
+2)^2}{2}} \nonumber \\
+&amp;=&amp;\sqrt{\frac{(\frac{x_1-x_2}{2})^2+(\frac{x_2-x_1}{2})^2}{2}}\nonumber
+\\
 &amp;=&amp;\sqrt{\frac{2 (\frac{x_1-x_2}{2})^2}{2}}\nonumber \\
-&amp;=&amp;\sqrt{\frac{(x_1-x_2)^2} 2}=\frac{|x_1-x_2|}{2} = \frac R 2 \nonumber \\
+&amp;=&amp;\sqrt{\frac{(x_1-x_2)^2} 2}=\frac{|x_1-x_2|}{2} = \frac R 2
+\nonumber \\
 \end{eqnarray}\]</span></p>
 <p></small></p>
-</section><section id="variance-of-first-n-natural-numbers" class="slide level2">
+</section>
+<section id="variance-of-first-n-natural-numbers" class="slide level2">
 <h2>Variance of First n Natural Numbers</h2>
 <p><small></p>
-<p><span class="math display">\[\begin{eqnarray} 
-\sigma^2 &amp;=&amp;  \frac{\sum x_i^2}{n} - (\frac{\sum x_i}{n})^2    \nonumber \\
-&amp;=&amp; \frac{1^2+2^2+3^2+ \cdots + n^2}{n}  - (\frac{1+2+3+ \cdots + n}{n})^2 \nonumber \\
-&amp;=&amp; \frac{\frac{n(n+1)(2n+1)}{6}}{n} - (\frac{\frac{n(n+1)}{2}}{n})^2 \nonumber \\
+<p><span class="math display">\[\begin{eqnarray}
+\sigma^2 &amp;=&amp;  \frac{\sum x_i^2}{n} - (\frac{\sum
+x_i}{n})^2    \nonumber \\
+&amp;=&amp; \frac{1^2+2^2+3^2+ \cdots + n^2}{n}  - (\frac{1+2+3+ \cdots
++ n}{n})^2 \nonumber \\
+&amp;=&amp; \frac{\frac{n(n+1)(2n+1)}{6}}{n} -
+(\frac{\frac{n(n+1)}{2}}{n})^2 \nonumber \\
 &amp;=&amp;   \frac{(n+1)(2n+1)}{6} - (\frac{n+1}{2})^2 \nonumber \\
 &amp;=&amp; \frac{n+1}{2} (\frac{2n+1}{3}-\frac {n+1}{2})   \nonumber \\
-&amp;=&amp; \frac{n+1}{2} (\frac{4n+2-3n-3}{6}) =  \frac{n+1}{2}(\frac{n-1}{6}) = \frac{n^2-1}{12}  \nonumber \\
+&amp;=&amp; \frac{n+1}{2} (\frac{4n+2-3n-3}{6})
+=  \frac{n+1}{2}(\frac{n-1}{6}) = \frac{n^2-1}{12}  \nonumber \\
 \end{eqnarray}\]</span></p>
 <p></small></p>
-</section><section id="mean-sd-and-cv" class="slide level2">
+</section>
+<section id="mean-sd-and-cv" class="slide level2">
 <h2>Mean, SD, and CV</h2>
-<p><span class="math inline">\(\bar X \sqrt{n-1}\ge \sigma\)</span> or <span class="math inline">\(CV \lt 100 \sqrt{n-1}\)</span></p>
-</section><section id="problem-01" class="slide level2">
+<p><span class="math inline">\(\bar X \sqrt{n-1}\ge \sigma\)</span> or
+<span class="math inline">\(CV \lt 100 \sqrt{n-1}\)</span></p>
+</section>
+<section id="problem-01" class="slide level2">
 <h2>Problem 01</h2>
 <p>Tow numbers are 10 and 20; Determine Range and CV</p>
 <div onclick="klikaj(&#39;p1&#39;)">
@@ -874,10 +994,12 @@ SD&amp;=&amp;\sqrt{\frac{\sum_{i=1}^2 (x_i-\bar x)^2}{2}}     \nonumber \\
 <div id="p1" style="visibility: hidden">
 <p>Range, <span class="math inline">\(R = 20-10=10\)</span></p>
 <ul>
-<li class="fragment"><span class="math inline">\(\sigma = \frac R 2 = \frac{10} 2 = 5\)</span></li>
+<li class="fragment"><span class="math inline">\(\sigma = \frac R 2 =
+\frac{10} 2 = 5\)</span></li>
 </ul>
 <ul>
-<li class="fragment"><span class="math inline">\(CV = \frac{\sigma}{\bar x} \times 100 = \frac{5}{15} \times 100 = 33.33 \%\)</span></li>
+<li class="fragment"><span class="math inline">\(CV = \frac{\sigma}{\bar
+x} \times 100 = \frac{5}{15} \times 100 = 33.33 \%\)</span></li>
 </ul>
 </div>
 <script>
@@ -885,15 +1007,17 @@ function klikaj(i) {
     document.getElementById(i).style.visibility='visible';
 }
 </script>
-</section><section id="find-sd-md-3" class="slide level2">
+</section>
+<section id="find-sd-md-3" class="slide level2">
 <h2>Find SD &amp; MD (3)</h2>
 <p>Find SD and MD of three observations: -3, 0, 3</p>
 <div onclick="klikaj(&#39;3&#39;)">
 <span>Solution</span>
 </div>
 <div id="3" style="visibility: hidden">
-<p><span class="math display">\[\begin{eqnarray} 
-\sigma&amp;=&amp;\sqrt{\text{Mean of Square - Square of Mean}} \nonumber \\
+<p><span class="math display">\[\begin{eqnarray}
+\sigma&amp;=&amp;\sqrt{\text{Mean of Square - Square of Mean}} \nonumber
+\\
 &amp;=&amp; \sqrt{\frac{9+9}{3}-0}=\sqrt{6}=2.45      \nonumber \\
 \end{eqnarray}\]</span></p>
 </div>
@@ -902,11 +1026,15 @@ function klikaj(i) {
     document.getElementById(i).style.visibility='visible';
 }
 </script>
-</section><section id="more" class="slide level2">
+</section>
+<section id="more" class="slide level2">
 <h2>More</h2>
-</section><section id="missing-numbers-for-mean-and-sd-11" class="slide level2">
+</section>
+<section id="missing-numbers-for-mean-and-sd-11" class="slide level2">
 <h2>Missing Numbers for Mean and SD (11)</h2>
-<p>The mean and SD of 5 observations are 4.4 and <span class="math inline">\(\sqrt{8.24}\)</span>, respectively. If three of the five observations are 1, 2, and 6, find the other two.</p>
+<p>The mean and SD of 5 observations are 4.4 and <span
+class="math inline">\(\sqrt{8.24}\)</span>, respectively. If three of
+the five observations are 1, 2, and 6, find the other two.</p>
 <div class="container">
 <div class="col">
 <div onclick="klikaj(&#39;11a&#39;)">
@@ -915,7 +1043,8 @@ function klikaj(i) {
 <div id="11a" style="visibility: hidden">
 <p><span class="math inline">\(\frac{9+x_1+x_2}{5}=4.4\)</span></p>
 <p><span class="math inline">\(\therefore x_1+x_2=13\)</span></p>
-<p>Again, <span class="math inline">\(\frac{1^2+2^2+6^2+x_1^2+2^2}{5}-4.4^2=8.24\)</span></p>
+<p>Again, <span
+class="math inline">\(\frac{1^2+2^2+6^2+x_1^2+2^2}{5}-4.4^2=8.24\)</span></p>
 </div>
 <script>
 function klikaj(i) {
@@ -928,9 +1057,12 @@ function klikaj(i) {
 <span>More</span>
 </div>
 <div id="11b" style="visibility: hidden">
-<p><span class="math inline">\(\Rightarrow x_1^2+x_2^2=138-41=97\)</span></p>
-<p><span class="math inline">\(\Rightarrow (13-x_2)^2+x_2^2=97\)</span></p>
-<p><span class="math inline">\(\Rightarrow 169-26x_2+2x_2^2=97\)</span></p>
+<p><span class="math inline">\(\Rightarrow
+x_1^2+x_2^2=138-41=97\)</span></p>
+<p><span class="math inline">\(\Rightarrow
+(13-x_2)^2+x_2^2=97\)</span></p>
+<p><span class="math inline">\(\Rightarrow
+169-26x_2+2x_2^2=97\)</span></p>
 <p><span class="math inline">\(\Rightarrow x_2^2-13x_2-36=0\)</span></p>
 <p><span class="math inline">\(\therefore x_2=9,4; x_1=4,9\)</span></p>
 </div>
@@ -941,56 +1073,91 @@ function klikaj(i) {
 </script>
 </div>
 </div>
-</section><section id="converting-series-of-natural-numbers" class="slide level2">
+</section>
+<section id="converting-series-of-natural-numbers" class="slide level2">
 <h2>Converting Series of Natural Numbers</h2>
-<p><span class="math inline">\(scale, c=\text{Common Difference}\)</span></p>
-<p><span class="math inline">\(origin, a = \text{Firts observation - c}\)</span></p>
+<p><span class="math inline">\(scale, c=\text{Common
+Difference}\)</span></p>
+<p><span class="math inline">\(origin, a = \text{Firts observation -
+c}\)</span></p>
 <div onclick="klikaj(&#39;orsc&#39;)">
 <span>Example</span>
 </div>
 <div id="orsc" style="visibility: hidden">
 <p><span class="math inline">\(X = 27, 33, 39, \cdots, 111\)</span></p>
 <p><span class="math inline">\(c=33-27 = 6, a = 27-6=21\)</span></p>
-<p><span class="math inline">\(Y = \frac{X-21}{6} = 1, 2, 3, \cdots, \frac{111-21}{6}, 15\)</span></p>
+<p><span class="math inline">\(Y = \frac{X-21}{6} = \frac{27-21}{6}=1,
+2, 3, \cdots, \frac{111-21}{6}=15\)</span></p>
 </div>
-<script>
+<script> 
 function klikaj(i) {
     document.getElementById(i).style.visibility='visible';
 }
 </script>
-</section><section id="thanks" class="slide level2">
+</section>
+<section id="thanks" class="slide level2">
 <h2>Thanks</h2>
 <center>
 <p>Visit</p>
-<p><a href="https://lecture.statmania.info" class="uri">https://lecture.statmania.info</a></p>
+<p><a href="https://lecture.statmania.info"
+class="uri">https://lecture.statmania.info</a></p>
 <p>to see all lecture slides.</p>
 </center>
 </section></section>
     </div>
   </div>
 
-  <script src="ch4_xi_stat_dispersion_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
-  <script src="ch4_xi_stat_dispersion_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+  <script src="libs/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="libs/reveal.js-3.3.0.1/js/reveal.js"></script>
 
   <script>
 
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        // Display the page number of the current slide
-        slideNumber: true,
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
         // Push each slide change to the browser history
         history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
         // Vertical centering of slides
         center: false,
-        // Opens links in an iframe preview overlay
-        previewLinks: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
         // Transition style
         transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
         // Transition style for full page slide backgrounds
         backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
 
         menu: {
+   
+    
+    
+    
+    
+    
+    
+ 
           custom: false,
           themes: false,
           transitions: false
@@ -1011,9 +1178,9 @@ function klikaj(i) {
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: 'ch4_xi_stat_dispersion_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
-          { src: 'ch4_xi_stat_dispersion_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
-          { src: 'ch4_xi_stat_dispersion_files/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
         ]
       });
     </script>

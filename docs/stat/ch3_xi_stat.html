@@ -448,8 +448,9 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
     <div id="header-footer">
-      <p class="slide-footer"> | PCC | Mahmud | Statistics | statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
+      <p class="slide-footer"> | Abdullah Al Mahmud | www.statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
     </div>
+    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
     <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
     <link href="libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 </head>
@@ -462,7 +463,13 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <h2 class="author">Abdullah Al Mahmud</h2>
 </section>
 
-<section><section id="chapter-03-central-tendency" class="title-slide slide level1"><h1>Chapter 03 (Central Tendency)</h1></section><section id="what-is-central-tendency" class="slide level2">
+<section>
+<section id="chapter-03-central-tendency"
+class="title-slide slide level1">
+<h1>Chapter 03 (Central Tendency)</h1>
+
+</section>
+<section id="what-is-central-tendency" class="slide level2">
 <h2>What is Central Tendency?</h2>
 <p>Why needed?</p>
 <div class="container">
@@ -492,8 +499,11 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul>
 </div>
 </div>
-</section><section id="criteria-for-a-good-measure-of-central-tendency" class="slide level2" data-transition="convex">
-<h2>Criteria for a Good Measure of Central Tendency</h2>
+</section>
+<section id="criteria-for-a-good-measure-of-central-tendency"
+class="slide level2" data-transition="convex">
+<h2 data-transition="convex">Criteria for a Good Measure of Central
+Tendency</h2>
 <ul>
 <li>Well-defined</li>
 </ul>
@@ -503,7 +513,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li class="fragment">Suitable for further analysis</li>
 <li class="fragment">Not affected by sample fluctuation</li>
 </ul>
-</section><section id="measures-averages" class="slide level2">
+</section>
+<section id="measures-averages" class="slide level2">
 <h2>Measures (Averages)</h2>
 <ul>
 <li>Arithmetic Mean (AM)</li>
@@ -513,12 +524,15 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li>Mode</li>
 <li>Partition Values (Quartiles, Deciles, Percentiles etc.)</li>
 </ul>
-</section><section id="am" class="slide level2">
+</section>
+<section id="am" class="slide level2">
 <h2>AM</h2>
 <p><span class="math inline">\(AM=\bar x=\frac{\sum x}{n}\)</span></p>
 <p>If there are frequencies or weights</p>
-<p><span class="math inline">\(\bar x=\frac{\sum f_i x_i}{\sum f_i} \space or \space \frac{\sum w_i x_i}{w_i=n}\)</span></p>
-</section><section id="find-am" class="slide level2">
+<p><span class="math inline">\(\bar x=\frac{\sum f_i x_i}{\sum f_i}
+\space or \space \frac{\sum w_i x_i}{w_i=n}\)</span></p>
+</section>
+<section id="find-am" class="slide level2">
 <h2>Find AM</h2>
 <pre><code>##  [1] 10 55 38 48 51 25 14 44 23 22</code></pre>
 <div onclick="klikaj(&#39;rad1&#39;)">
@@ -546,7 +560,8 @@ function klikaj(i) {
     document.getElementById(i).style.visibility='visible';
 }
 </script>
-</section><section id="mean-using-frequency" class="slide level2">
+</section>
+<section id="mean-using-frequency" class="slide level2">
 <h2>Mean Using Frequency</h2>
 <p>For grouped data</p>
 <table>
@@ -585,17 +600,22 @@ function klikaj(i) {
 </tr>
 <tr class="even">
 <td style="text-align: center;"></td>
-<td style="text-align: center;"><span class="math inline">\(\sum f =10\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\sum fx = 50\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sum f
+=10\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sum fx =
+50\)</span></td>
 </tr>
 </tbody>
 </table>
-<p><span class="math inline">\(\therefore \bar x = \frac{\sum fx}{\sum f} =\frac{50}{10}=5\)</span></p>
-</section><section id="freuency-vs-weight" class="slide level2">
+<p><span class="math inline">\(\therefore \bar x = \frac{\sum fx}{\sum
+f} =\frac{50}{10}=5\)</span></p>
+</section>
+<section id="freuency-vs-weight" class="slide level2">
 <h2>Freuency vs Weight</h2>
 <div class="container">
 <div class="col">
-<p>Suppose, different judges give different scores, but not all evaluation has same weight.</p>
+<p>Suppose, different judges give different scores, but not all
+evaluation has same weight.</p>
 <table>
 <thead>
 <tr class="header">
@@ -639,14 +659,17 @@ function klikaj(i) {
 <tr class="even">
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;"><span class="math inline">\(\sum w_i = 14\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\sum w_ix_i = 83\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sum w_i =
+14\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sum w_ix_i
+= 83\)</span></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="col">
-<p><span class="math inline">\(\therefore \bar x = \frac{\sum w_ix_i}{\sum w_i}\)</span></p>
+<p><span class="math inline">\(\therefore \bar x = \frac{\sum
+w_ix_i}{\sum w_i}\)</span></p>
 <div onclick="klikaj(&#39;rad3&#39;)">
 <span style="color: blue;">Answer</span>
 </div>
@@ -661,7 +684,8 @@ function klikaj(i) {
 </script>
 </div>
 </div>
-</section><section id="shortcut-method-for-am" class="slide level2">
+</section>
+<section id="shortcut-method-for-am" class="slide level2">
 <h2>Shortcut Method for AM</h2>
 <div class="container">
 <div class="col">
@@ -686,7 +710,8 @@ function klikaj(i) {
 </script>
 </div>
 </div>
-</section><section id="shortcut-method-formula" class="slide level2">
+</section>
+<section id="shortcut-method-formula" class="slide level2">
 <h2>Shortcut Method Formula</h2>
 <div class="container">
 <div class="col">
@@ -694,7 +719,8 @@ function klikaj(i) {
 <p>If 1000 is subtracted: 5, 10, 15</p>
 <p>If again divided by 5: 1, 2, 3</p>
 <p>Converted Mean = 2</p>
-<p>Original Mean = <span class="math inline">\(2 \times 5 + 1000=1010\)</span></p>
+<p>Original Mean = <span class="math inline">\(2 \times 5 +
+1000=1010\)</span></p>
 </div>
 <div class="col">
 <div onclick="klikaj(&#39;rad5&#39;)">
@@ -706,8 +732,10 @@ function klikaj(i) {
 <li class="fragment">a = 1000</li>
 <li class="fragment">c = 5</li>
 <li class="fragment">y = 1, 2, 3</li>
-<li class="fragment"><span class="math inline">\(\bar x = 2 \times 5 + 1000=1010 = a+\bar y \times c\)</span></li>
-<li class="fragment"><span class="math inline">\(\bar x = a+\frac{\sum y}{n} \times c\)</span></li>
+<li class="fragment"><span class="math inline">\(\bar x = 2 \times 5 +
+1000=1010 = a+\bar y \times c\)</span></li>
+<li class="fragment"><span class="math inline">\(\bar x = a+\frac{\sum
+y}{n} \times c\)</span></li>
 </ul>
 </div>
 <script>
@@ -717,21 +745,32 @@ function klikaj(i) {
 </script>
 </div>
 </div>
-</section><section id="properties-of-am" class="slide level2">
+</section>
+<section id="properties-of-am" class="slide level2">
 <h2>Properties of AM</h2>
-<p><a href="prob_ch3_expectation.html#/properties-of-expectation" targte=_blank">Also look at this</a></p>
+<p><a href="prob_ch3_expectation.html#/properties-of-expectation" targte=_blank">Also
+look at this</a></p>
 <ul>
-<li><span class="math inline">\(\sum (x_i-\bar x)=0\)</span>; can you prove it?</li>
+<li><span class="math inline">\(\sum (x_i-\bar x)=0\)</span>; can you
+prove it?</li>
 </ul>
 <ul>
-<li class="fragment"><span class="math inline">\(\sum (x_i-\bar x)^2 \le \sum (x_i-a)^2, \space a \ne \bar x\)</span></li>
+<li class="fragment"><span class="math inline">\(\sum (x_i-\bar x)^2 \le
+\sum (x_i-a)^2, \space a \ne \bar x\)</span></li>
 <li class="fragment">Depends on change of origin and scale?</li>
-<li class="fragment"><span class="math inline">\(\bar x + \bar y =\frac{\sum x+\sum y}{n_x+n_y}\)</span></li>
-<li class="fragment">Combined mean: <span class="math inline">\(\bar x_c=\frac{n_1 \bar x_1+n_2 \bar x_2+...+n_k \bar x_k}{n_1+n_2+...+n_k}\)</span></li>
-<li class="fragment"><span class="math inline">\(AM\ge GM \ge HM\)</span> &amp; <span class="math inline">\(AM \times HM = (GM)^2\)</span></li>
-<li class="fragment">AM of first n natural numbers = <span class="math inline">\(\frac{n+1}{2}\)</span></li>
+<li class="fragment"><span class="math inline">\(\bar x + \bar y
+=\frac{\sum x+\sum y}{n_x+n_y}\)</span></li>
+<li class="fragment">Combined mean: <span class="math inline">\(\bar
+x_c=\frac{n_1 \bar x_1+n_2 \bar x_2+...+n_k \bar
+x_k}{n_1+n_2+...+n_k}\)</span></li>
+<li class="fragment"><span class="math inline">\(AM\ge GM \ge
+HM\)</span> &amp; <span class="math inline">\(AM \times HM =
+(GM)^2\)</span></li>
+<li class="fragment">AM of first n natural numbers = <span
+class="math inline">\(\frac{n+1}{2}\)</span></li>
 </ul>
-</section><section id="disadvantages-of-am" class="slide level2">
+</section>
+<section id="disadvantages-of-am" class="slide level2">
 <h2>(Dis)advantages of AM</h2>
 <ul>
 <li class="fragment">Well-defined</li>
@@ -741,9 +780,13 @@ function klikaj(i) {
 <li class="fragment"><span>Suitable for further analysis.<span></li>
 <li class="fragment"><span style="color:red;">Affected by outliers</li>
 </ul>
-</section><section id="geometric-mean-gm" class="slide level2">
+</section>
+<section id="geometric-mean-gm" class="slide level2">
 <h2>Geometric Mean (GM)</h2>
-<p><span class="math inline">\(GM=(x_1 \times x_2 \times ... \times x_n)^{(1/n)}\)</span> or <span class="math inline">\(GM=(x_1^{f_1} \times x_2^{f_2} \times ... \times x_n^{f_n})^{(1/\sum f_i)}\)</span></p>
+<p><span class="math inline">\(GM=(x_1 \times x_2 \times ... \times
+x_n)^{(1/n)}\)</span> or <span class="math inline">\(GM=(x_1^{f_1}
+\times x_2^{f_2} \times ... \times x_n^{f_n})^{(1/\sum
+f_i)}\)</span></p>
 <p>Find GM: 2, 4, 6</p>
 <div onclick="klikaj(&#39;rad6&#39;)">
 <span style="color: blue;">Answer</span>
@@ -757,11 +800,14 @@ function klikaj(i) {
 }
 </script>
 <p>Try this one: 20020, 30080, 50086, 40130</p>
-</section><section id="concept-of-logarithm" class="slide level2">
+</section>
+<section id="concept-of-logarithm" class="slide level2">
 <h2>Concept of Logarithm</h2>
 <p><small></p>
 <blockquote>
-<p>“An admirable artifice which, by reducing to a few days the labour of many months, doubles the life of the astronomer, and spares him the errors and disgust inseparable from long calculations.”</p>
+<p>“An admirable artifice which, by reducing to a few days the labour of
+many months, doubles the life of the astronomer, and spares him the
+errors and disgust inseparable from long calculations.”</p>
 <p>— Pierre-Simon Laplace</p>
 </blockquote>
 <p></small></p>
@@ -770,13 +816,16 @@ function klikaj(i) {
 <li><span class="math inline">\(log_24=?\)</span></li>
 <li>if <span class="math inline">\(log_2x=3\)</span>, then x=?</li>
 </ul>
-</section><section id="gm-easier-formula" class="slide level2">
+</section>
+<section id="gm-easier-formula" class="slide level2">
 <h2>GM Easier Formula</h2>
 <p>x = 20020, 30080, 50086, 40130</p>
 <ul>
 <li class="fragment">log x = 9.9, 10.31, 10.82, 10.6</li>
-<li class="fragment">Mean of logx = <span class="math inline">\(\frac{\sum logx}{n}\)</span></li>
-<li class="fragment">Original Mean = <span class="math inline">\(antilog(\frac{\sum logx}{n})\)</span></li>
+<li class="fragment">Mean of logx = <span
+class="math inline">\(\frac{\sum logx}{n}\)</span></li>
+<li class="fragment">Original Mean = <span
+class="math inline">\(antilog(\frac{\sum logx}{n})\)</span></li>
 </ul>
 <div onclick="klikaj(&#39;rad7&#39;)">
 <span style="color: blue;">Answer</span>
@@ -789,7 +838,8 @@ function klikaj(i) {
     document.getElementById(i).style.visibility='visible';
 }
 </script>
-</section><section id="calculate-gm" class="slide level2">
+</section>
+<section id="calculate-gm" class="slide level2">
 <h2>Calculate GM</h2>
 <div class="container">
 <div class="col">
@@ -829,9 +879,11 @@ function klikaj(i) {
 </table>
 </div>
 <div class="col">
-<p>Make a table using these columns: <span class="math inline">\(x_i, f_i, logx_i, f_ilogx_i\)</span></p>
+<p>Make a table using these columns: <span class="math inline">\(x_i,
+f_i, logx_i, f_ilogx_i\)</span></p>
 <ul>
-<li class="fragment"><span class="math inline">\(GM =antilog(\frac{\sum f_i logx_i}{\sum f_i})\)</span></li>
+<li class="fragment"><span class="math inline">\(GM =antilog(\frac{\sum
+f_i logx_i}{\sum f_i})\)</span></li>
 </ul>
 <div onclick="klikaj(&#39;rad8&#39;)">
 <span style="color: blue;">Answer</span>
@@ -846,9 +898,10 @@ function klikaj(i) {
 </script>
 </div>
 </div>
-</section><section id="disadvantages-of-gm" class="slide level2">
+</section>
+<section id="disadvantages-of-gm" class="slide level2">
 <h2>(Dis)advantages of GM</h2>
-<ul>
+<ul class="task-list">
 <li><p><input type="checkbox" disabled="" checked="" />
 Not affected by outliers</p><p>x = 5, 10, 15, 20, 100, 1000</p>
 <p>log(x) = 0.7, 1, 1.18, 1.3, 2, 3</p></li>
@@ -859,40 +912,56 @@ Suitable for further analysis</p></li>
 <li><p><input type="checkbox" disabled="" />
 <span style="color:ff1a1a;">What if one or some x = 0?</span></p></li>
 <li><p><input type="checkbox" disabled="" />
-<span style="color:ff1a1a;">What if one or some x &lt; 0? </span></p></li>
+<span style="color:ff1a1a;">What if one or some x &lt; 0?
+</span></p></li>
 </ul>
-</section><section id="story-of-oil-scam" class="slide level2">
+</section>
+<section id="story-of-oil-scam" class="slide level2">
 <h2>Story of oil scam</h2>
 <div class="container">
 <div class="col">
 <p><small> S = 150 km</p>
-<p><span class="math inline">\(v_1=\space 10 km/h, v_2=\space 15 km/h, v_3=\space 20 km/h\)</span></p>
+<p><span class="math inline">\(v_1=\space 10 km/h, v_2=\space 15 km/h,
+v_3=\space 20 km/h\)</span></p>
 <p>What is the average speed?</p>
 <ul>
-<li class="fragment"><span class="math inline">\(AM=\frac{10+15+20}{3}=15 \space km/h\)</span></li>
+<li class="fragment"><span
+class="math inline">\(AM=\frac{10+15+20}{3}=15 \space km/h\)</span></li>
 <li class="fragment">Think more fundamentally</li>
-<li class="fragment"><span class="math inline">\(\sum S=3\times 150=450\)</span></li>
-<li class="fragment"><span class="math inline">\(t_1=15h, t_2=10h, t_3=7.5h\)</span></li>
-<li class="fragment"><span class="math inline">\(\bar v = \frac{\sum S}{\sum t}=\frac{450}{32.5}=13.84 \lt AM\)</span> </small></li>
+<li class="fragment"><span class="math inline">\(\sum S=3\times
+150=450\)</span></li>
+<li class="fragment"><span class="math inline">\(t_1=15h, t_2=10h,
+t_3=7.5h\)</span></li>
+<li class="fragment"><span class="math inline">\(\bar v = \frac{\sum
+S}{\sum t}=\frac{450}{32.5}=13.84 \lt AM\)</span> </small></li>
 </ul>
 </div>
 <div class="col">
 <ul>
-<li class="fragment"><span class="math inline">\(=\frac{450}{15+10+7.5}\)</span></li>
-<li class="fragment"><span class="math inline">\(=\frac{450}{\frac{150}{10}+\frac{150}{15}+\frac{150}{20}}\)</span></li>
-<li class="fragment"><span class="math inline">\(=\frac{450}{150(\frac{1}{10}+\frac{1}{15}+\frac{1}{20})}\)</span></li>
-<li class="fragment"><span class="math inline">\(=\frac{3}{\frac{1}{10}+\frac{1}{15}+\frac{1}{20}}\)</span></li>
-<li class="fragment"><span class="math inline">\(=\frac{3}{\frac{1}{v_1}+\frac{1}{v_2}+\frac{1}{v_3}}\)</span></li>
+<li class="fragment"><span
+class="math inline">\(=\frac{450}{15+10+7.5}\)</span></li>
+<li class="fragment"><span
+class="math inline">\(=\frac{450}{\frac{150}{10}+\frac{150}{15}+\frac{150}{20}}\)</span></li>
+<li class="fragment"><span
+class="math inline">\(=\frac{450}{150(\frac{1}{10}+\frac{1}{15}+\frac{1}{20})}\)</span></li>
+<li class="fragment"><span
+class="math inline">\(=\frac{3}{\frac{1}{10}+\frac{1}{15}+\frac{1}{20}}\)</span></li>
+<li class="fragment"><span
+class="math inline">\(=\frac{3}{\frac{1}{v_1}+\frac{1}{v_2}+\frac{1}{v_3}}\)</span></li>
 </ul>
 </div>
 </div>
-</section><section id="harmonic-mean" class="slide level2">
+</section>
+<section id="harmonic-mean" class="slide level2">
 <h2>Harmonic Mean</h2>
 <div class="container">
 <div class="col">
-<p>Formula: Reciprocal of Mean of <span class="math inline">\(\frac{1}{x_i}\)</span></p>
-<p>Reciprocal of <span class="math inline">\(\frac{\frac{1}{x_1}+\frac{1}{x_2}+...+\frac{1}{x_n}}{n}\)</span></p>
-<p>Thus, <span class="math inline">\(HM = \frac{n}{\sum \frac{1}{x_i}}\)</span></p>
+<p>Formula: Reciprocal of Mean of <span
+class="math inline">\(\frac{1}{x_i}\)</span></p>
+<p>Reciprocal of <span
+class="math inline">\(\frac{\frac{1}{x_1}+\frac{1}{x_2}+...+\frac{1}{x_n}}{n}\)</span></p>
+<p>Thus, <span class="math inline">\(HM = \frac{n}{\sum
+\frac{1}{x_i}}\)</span></p>
 <p>Calculate: 2, 4, 8</p>
 <div onclick="klikaj(&#39;rad9&#39;)">
 <span style="color: blue;">Answer</span>
@@ -909,61 +978,92 @@ function klikaj(i) {
 <div class="col">
 <p>For grouped data</p>
 <ul>
-<li class="fragment"><span class="math inline">\(HM=\frac{\sum f}{\sum \frac{f}{x}}\)</span></li>
-<li class="fragment">For wighted data: <span class="math inline">\(\frac{\sum w}{\sum \frac{w}{x}}\)</span></li>
+<li class="fragment"><span class="math inline">\(HM=\frac{\sum f}{\sum
+\frac{f}{x}}\)</span></li>
+<li class="fragment">For wighted data: <span
+class="math inline">\(\frac{\sum w}{\sum \frac{w}{x}}\)</span></li>
 </ul>
 </div>
 </div>
-</section><section id="why-and-when-hm" class="slide level2">
+</section>
+<section id="why-and-when-hm" class="slide level2">
 <h2>Why and When HM</h2>
 <ul>
-<li>When there are rates associated, say speed, and numerator is fixed.</li>
-<li><span class="math inline">\(Speed, v = \frac{S}{t}\)</span>; HM if S is fixed</li>
-<li>Example: A man travels 120 km the first day at 12 kph, the same distance at 10 kph on the 2nd day, and at 8 kph on the 3rd day. Find his average speed.</li>
+<li>When there are rates associated, say speed, and numerator is
+fixed.</li>
+<li><span class="math inline">\(Speed, v = \frac{S}{t}\)</span>; HM if S
+is fixed</li>
+<li>Example: A man travels 120 km the first day at 12 kph, the same
+distance at 10 kph on the 2nd day, and at 8 kph on the 3rd day. Find his
+average speed.</li>
 </ul>
-</section><section id="wighted-am-vs-weighted-hm" class="slide level2">
+</section>
+<section id="wighted-am-vs-weighted-hm" class="slide level2">
 <h2>Wighted AM vs Weighted HM</h2>
-<p>Suppose, a bus travels 10 km at 10 kph, another 15 km at 20 kph, and another 20 km at 25 kph. What is the average speed.</p>
-<p>HM <span class="math inline">\(\rightarrow\)</span> consider distances as weights</p>
-<p>AM <span class="math inline">\(\rightarrow\)</span> consider times as weights</p>
-<p>Time, <span class="math inline">\(t=\frac d v=\)</span> 1, 0.75, 0.8</p>
+<p>Suppose, a bus travels 10 km at 10 kph, another 15 km at 20 kph, and
+another 20 km at 25 kph. What is the average speed.</p>
+<p>HM <span class="math inline">\(\rightarrow\)</span> consider
+distances as weights</p>
+<p>AM <span class="math inline">\(\rightarrow\)</span> consider times as
+weights</p>
+<p>Time, <span class="math inline">\(t=\frac d v=\)</span> 1, 0.75,
+0.8</p>
 <ul>
-<li class="fragment"><span class="math inline">\(WHM = \frac{10+15+20}{\frac{10}{10}+\frac{15}{20}+\frac{20}{25}}\)</span>=17.65</li>
-<li class="fragment"><span class="math inline">\(WAM = \frac{1\times 10 + 0.75 \times 20 + 0.80 \times 25}{1+0.75+0.80}\)</span> = 17.65</li>
-<li class="fragment">True mean, <span class="math inline">\(\bar v=\frac{\sum d}{\sum t}=\frac{45}{2.55}=\)</span> 17.65</li>
+<li class="fragment"><span class="math inline">\(WHM =
+\frac{10+15+20}{\frac{10}{10}+\frac{15}{20}+\frac{20}{25}}\)</span>=17.65</li>
+<li class="fragment"><span class="math inline">\(WAM = \frac{1\times 10
++ 0.75 \times 20 + 0.80 \times 25}{1+0.75+0.80}\)</span> = 17.65</li>
+<li class="fragment">True mean, <span class="math inline">\(\bar
+v=\frac{\sum d}{\sum t}=\frac{45}{2.55}=\)</span> 17.65</li>
 </ul>
-</section><section id="hm-example-2" class="slide level2">
+</section>
+<section id="hm-example-2" class="slide level2">
 <h2>HM Example 2</h2>
 <ul>
-<li><p>A passerby travels 10 km at 20 kph, 5 km at 15 kph, and 4 km at 12 kph. What is the average speed? (Use weighted HM)</p></li>
+<li><p>A passerby travels 10 km at 20 kph, 5 km at 15 kph, and 4 km at
+12 kph. What is the average speed? (Use weighted HM)</p></li>
 <li><p>Here, distances are different. Consider them weights.</p></li>
 </ul>
 <ul>
-<li class="fragment"><span class="math inline">\(HM=\frac{w_1+w_2+w_3}{\frac{w_1}{x_1}+\frac{w_2}{x_2}+\frac{w_3}{x_3}}\)</span></li>
+<li class="fragment"><span
+class="math inline">\(HM=\frac{w_1+w_2+w_3}{\frac{w_1}{x_1}+\frac{w_2}{x_2}+\frac{w_3}{x_3}}\)</span></li>
 </ul>
 <ul>
 <li class="fragment">HM = 16.286</li>
 </ul>
-</section><section id="quadratic-mean" class="slide level2">
+</section>
+<section id="quadratic-mean" class="slide level2">
 <h2>Quadratic Mean</h2>
-<p><span class="math inline">\(QM=\sqrt{\frac{x_1^2+x_2^2+...+x_n^2}{n}}=\sqrt{\frac{\sum x_i^2}{n}}\)</span></p>
+<p><span
+class="math inline">\(QM=\sqrt{\frac{x_1^2+x_2^2+...+x_n^2}{n}}=\sqrt{\frac{\sum
+x_i^2}{n}}\)</span></p>
 <ul>
 <li class="fragment">Also known as Root mean square</li>
-<li class="fragment">More at: <a href="https://en.wikipedia.org/wiki/Root_mean_square#Uses" class="uri">https://en.wikipedia.org/wiki/Root_mean_square#Uses</a></li>
+<li class="fragment">More at: <a
+href="https://en.wikipedia.org/wiki/Root_mean_square#Uses"
+class="uri">https://en.wikipedia.org/wiki/Root_mean_square#Uses</a></li>
 <li class="fragment">For grouped data?</li>
 </ul>
 </section></section>
-<section><section id="partition-values" class="title-slide slide level1"><h1>Partition Values</h1></section><section id="find-medians" class="slide level2">
+<section>
+<section id="partition-values" class="title-slide slide level1">
+<h1>Partition Values</h1>
+
+</section>
+<section id="find-medians" class="slide level2">
 <h2>Find medians</h2>
 <p>x = 4,5,6,8,9,11,16</p>
 <p>y = 4,5,6,8,9,11,16,19</p>
 <ul>
 <li class="fragment">Median of x is 8</li>
 <li class="fragment">Median of y is 8.5</li>
-<li class="fragment">Formula for odd n = <span class="math inline">\(\frac{n+1}{2}th \space value\)</span></li>
-<li class="fragment">Formula for even n = <span class="math inline">\(\frac{\frac{n}{2}th+(\frac{n}{2}+1)th}{2}\)</span></li>
+<li class="fragment">Formula for odd n = <span
+class="math inline">\(\frac{n+1}{2}th \space value\)</span></li>
+<li class="fragment">Formula for even n = <span
+class="math inline">\(\frac{\frac{n}{2}th+(\frac{n}{2}+1)th}{2}\)</span></li>
 </ul>
-</section><section id="disadvantages-of-median" class="slide level2">
+</section>
+<section id="disadvantages-of-median" class="slide level2">
 <h2>Dis(advantages) of Median</h2>
 <ul>
 <li>Unaffected by outliers (extreme values)</li>
@@ -972,39 +1072,51 @@ function klikaj(i) {
 <li>Not based on all values</li>
 <li>Not suitable for further mathematical analysis</li>
 </ul>
-</section><section id="quartiles-deciles-and-percentiles" class="slide level2">
+</section>
+<section id="quartiles-deciles-and-percentiles" class="slide level2">
 <h2>Quartiles, Deciles, and Percentiles</h2>
-<p><span class="math inline">\(Q_1= \frac{(n+1)}{4}th \space\)</span></p>
+<p><span class="math inline">\(Q_1= \frac{(n+1)}{4}th
+\space\)</span></p>
 <p><span class="math inline">\(Q_2, Q_3=?\)</span></p>
 <p>Find <span class="math inline">\(Q_1, Q_2, Q_3\)</span></p>
 <p>X = 4, 6, 7, 10, 12, 13, 14, 15, 16, 17, 19</p>
-<p><a href="https://www.thinkermahmud.com/notes/quantiles">See more partition names</a></p>
+<p><a href="https://www.thinkermahmud.com/notes/quantiles">See more
+partition names</a></p>
 <ul>
 <li class="fragment">4, 8.5, 13, 12.0909091, 15.5, 19</li>
-<li class="fragment">What are the formulae for Deciles (<span class="math inline">\(D_i\)</span> and <span class="math inline">\(P_i\)</span>)</li>
+<li class="fragment">What are the formulae for Deciles (<span
+class="math inline">\(D_i\)</span> and <span
+class="math inline">\(P_i\)</span>)</li>
 </ul>
-</section><section id="general-formula-for-partition-values" class="slide level2">
+</section>
+<section id="general-formula-for-partition-values" class="slide level2">
 <h2>General Formula for Partition Values</h2>
 <div class="container">
 <div class="col">
 <p>For odd n,</p>
-<p><span class="math inline">\(A_i= \frac{i \times (n+1)}{k}th \space value\)</span></p>
+<p><span class="math inline">\(A_i= \frac{i \times (n+1)}{k}th \space
+value\)</span></p>
 </div>
 <div class="col">
 <p>For even n,</p>
-<p><span class="math inline">\(A_i=\frac{\frac{i \times n}{k}th+(\frac{i\times n}{k}+1)th}{2}\)</span></p>
+<p><span class="math inline">\(A_i=\frac{\frac{i \times
+n}{k}th+(\frac{i\times n}{k}+1)th}{2}\)</span></p>
 </div>
 </div>
 <p>where, k = no. of partitions</p>
 <p>For median, for example, k = 2.</p>
 <ul>
-<li class="fragment">What if we divide the data set into 20 segments?</li>
+<li class="fragment">What if we divide the data set into 20
+segments?</li>
 </ul>
-</section><section id="find-deciles-and-percentiles" class="slide level2">
+</section>
+<section id="find-deciles-and-percentiles" class="slide level2">
 <h2>Find Deciles and Percentiles</h2>
 <p>X = 4, 6, 7, 10, 12, 13, 14, 15, 16, 17, 19</p>
-<p>Find <span class="math inline">\(D_3, D_8, P_{17}, P_{56}, P_{93}\)</span></p>
-</section><section id="averages-from-grouped-data" class="slide level2">
+<p>Find <span class="math inline">\(D_3, D_8, P_{17}, P_{56},
+P_{93}\)</span></p>
+</section>
+<section id="averages-from-grouped-data" class="slide level2">
 <h2>Averages from Grouped Data</h2>
 <div class="container">
 <div class="col">
@@ -1066,21 +1178,32 @@ function klikaj(i) {
 </table>
 </div>
 <div class="col">
-<p>Median: <span class="math inline">\(Me = L + \frac{\frac{n}{2}-F_c}{f_m}\times c\)</span></p>
-<p>Mode: <span class="math inline">\(M_o=L+\frac{\Delta_1}{\Delta_1+\Delta_2}\times c\)</span></p>
-<p>Quartiles: <span class="math inline">\(Q_i = L + \frac{\frac{in}{4}-F_c}{f}\times c\)</span></p>
-<p>Find AM, Me, Mo, Q, and <span class="math inline">\(P_{30}\)</span></p>
+<p>Median: <span class="math inline">\(Me = L +
+\frac{\frac{n}{2}-F_c}{f_m}\times c\)</span></p>
+<p>Mode: <span
+class="math inline">\(M_o=L+\frac{\Delta_1}{\Delta_1+\Delta_2}\times
+c\)</span></p>
+<p>Quartiles: <span class="math inline">\(Q_i = L +
+\frac{\frac{in}{4}-F_c}{f}\times c\)</span></p>
+<p>Find AM, Me, Mo, Q, and <span
+class="math inline">\(P_{30}\)</span></p>
 </div>
 </div>
-</section><section id="partition-values-from-graph" class="slide level2">
+</section>
+<section id="partition-values-from-graph" class="slide level2">
 <h2>Partition Values from Graph</h2>
 <ul>
 <li>Draw an Ogive</li>
-<li>Draw a straight line parallel to X-axis at the point <span class="math inline">\(\frac n 2\)</span> of Y-axis. - Draw a perpendicular on X-axis from the intersection point.</li>
+<li>Draw a straight line parallel to X-axis at the point <span
+class="math inline">\(\frac n 2\)</span> of Y-axis. - Draw a
+perpendicular on X-axis from the intersection point.</li>
 </ul>
 <p><img data-src="img/stat/partition.jpg" alt="Graph" /></p>
 </section></section>
-<section><section id="comparison-of-averages" class="title-slide slide level1"><h1>Comparison of Averages</h1><table style="width:100%;">
+<section>
+<section id="comparison-of-averages" class="title-slide slide level1">
+<h1>Comparison of Averages</h1>
+<table style="width:100%;">
 <colgroup>
 <col style="width: 16%" />
 <col style="width: 16%" />
@@ -1149,39 +1272,65 @@ function klikaj(i) {
 <td><strike><br>Possible<br></strike></td>
 </tr>
 </tbody>
-</table></section><section id="when-am-gm-hm" class="slide level2">
+</table>
+</section>
+<section id="when-am-gm-hm" class="slide level2">
 <h2>When AM = GM = HM</h2>
 <p>If <span class="math inline">\(x_1=x_2=x_3\)</span>; prove it</p>
 </section></section>
-<section><section id="theorems" class="title-slide slide level1"><h1>Theorems</h1></section><section id="theorem-01" class="slide level2">
+<section>
+<section id="theorems" class="title-slide slide level1">
+<h1>Theorems</h1>
+
+</section>
+<section id="theorem-01" class="slide level2">
 <h2>Theorem 01</h2>
 <p><span class="math display">\[\sum_{i=0}^n (x_i-\bar x)=0\]</span></p>
-</section><section id="theorem-02" class="slide level2">
+</section>
+<section id="theorem-02" class="slide level2">
 <h2>Theorem 02</h2>
-<p><span class="math display">\[\sum_{i=0}^n f_i(x_i-\bar x)=0\]</span> ## Theorem 03</p>
-<p><span class="math display">\[\sum_{i=1}^n (x_i-\bar x)^2 \lt \sum_{i=1}^n (x_i-a)^2; a\ne\bar x\]</span></p>
-<p><span class="math display">\[\sum_{i=1}^n f_i(x_i-\bar x)^2 \lt \sum_{i=1}^n f_i(x_i-a)^2; a\ne\bar x\]</span></p>
-</section><section id="theorem-04-amorigin-scale" class="slide level2">
+<p><span class="math display">\[\sum_{i=0}^n f_i(x_i-\bar x)=0\]</span>
+## Theorem 03</p>
+<p><span class="math display">\[\sum_{i=1}^n (x_i-\bar x)^2 \lt
+\sum_{i=1}^n (x_i-a)^2; a\ne\bar x\]</span></p>
+<p><span class="math display">\[\sum_{i=1}^n f_i(x_i-\bar x)^2 \lt
+\sum_{i=1}^n f_i(x_i-a)^2; a\ne\bar x\]</span></p>
+</section>
+<section id="theorem-04-amorigin-scale" class="slide level2">
 <h2>Theorem 04 (AM~origin &amp; scale)</h2>
-<p>Prove that AM depends on origin and scale Use frequency as well i.e,</p>
+<p>Prove that AM depends on origin and scale Use frequency as well
+i.e,</p>
 <ul>
-<li><span class="math display">\[\bar x=\frac {\sum_{i=1}^nx_i}{n}\]</span></li>
-<li><span class="math display">\[\bar x=\frac {\sum_{i=1}^n f_ix_i}{n}\]</span></li>
+<li><span class="math display">\[\bar x=\frac
+{\sum_{i=1}^nx_i}{n}\]</span></li>
+<li><span class="math display">\[\bar x=\frac {\sum_{i=1}^n
+f_ix_i}{n}\]</span></li>
 </ul>
-</section><section id="theorem-07" class="slide level2">
+</section>
+<section id="theorem-07" class="slide level2">
 <h2>Theorem 07</h2>
-<p>If the GM of <span class="math inline">\(n_1\)</span> va;ues is <span class="math inline">\(G_1\)</span>, and of <span class="math inline">\(n_2\)</span> values is <span class="math inline">\(G_2\)</span>, show GM of <span class="math inline">\(n_1+n_2\)</span> values is <span class="math inline">\(G=\sqrt{G_1G_2}\)</span></p>
-</section><section id="theorem-08" class="slide level2">
+<p>If the GM of <span class="math inline">\(n_1\)</span> va;ues is <span
+class="math inline">\(G_1\)</span>, and of <span
+class="math inline">\(n_2\)</span> values is <span
+class="math inline">\(G_2\)</span>, show GM of <span
+class="math inline">\(n_1+n_2\)</span> values is <span
+class="math inline">\(G=\sqrt{G_1G_2}\)</span></p>
+</section>
+<section id="theorem-08" class="slide level2">
 <h2>Theorem 08</h2>
 <p><small></p>
 <div class="container">
-<div class="col">
-<h3 id="for-two-non-zero-positive-numbers-prove-am-ge-gm-ge-hm">For two non-zero positive numbers, prove <span class="math inline">\(AM \ge GM \ge HM\)</span></h3>
+<section id="for-two-non-zero-positive-numbers-prove-am-ge-gm-ge-hm"
+class="col">
+<h3>For two non-zero positive numbers, prove <span
+class="math inline">\(AM \ge GM \ge HM\)</span></h3>
 <p>Let, the numbers be a, b</p>
-<p><span class="math inline">\(\therefore AM = \frac{a+b}{2}\)</span></p>
+<p><span class="math inline">\(\therefore AM =
+\frac{a+b}{2}\)</span></p>
 <p><span class="math inline">\(GM = \sqrt{ab}\)</span></p>
-<p><span class="math inline">\(HM = \frac{2}{\frac 1 a +\frac 1 b}\)</span></p>
-</div>
+<p><span class="math inline">\(HM = \frac{2}{\frac 1 a +\frac 1
+b}\)</span></p>
+</section>
 <div class="col">
 <p>We know, <span class="math display">\[\begin{eqnarray}
 &amp;  &amp;(a-b)^2\ge 0    \nonumber \\
@@ -1195,28 +1344,45 @@ function klikaj(i) {
 <div class="col">
 <p>Similarly, <span class="math display">\[\begin{eqnarray}
 &amp;  &amp;(\frac{1}{a}-\frac{1}{b})^2\ge 0    \nonumber \\
-&amp; \Rightarrow &amp; (\frac{1}{a}+\frac{1}{b})^2 -4 \cdot \frac 1 a \cdot \frac 1 b\ge 0    \nonumber \\
-&amp; \Rightarrow &amp; (\frac{1}{a}+\frac{1}{b})^2\ge \frac 4 {ab}   \nonumber \\
-&amp; \Rightarrow &amp; (\frac{1}{a}+\frac{1}{b}) \ge \frac 2 {\sqrt{ab}}  \nonumber \\
-&amp; \Rightarrow &amp; \sqrt{ab}(\frac{1}{a}+\frac{1}{b}) \ge 2   \nonumber \\
-&amp; \Rightarrow &amp; \sqrt{ab} \ge \frac{2}{(\frac{1}{a}+\frac{1}{b})}   \nonumber \\
+&amp; \Rightarrow &amp; (\frac{1}{a}+\frac{1}{b})^2 -4 \cdot \frac 1 a
+\cdot \frac 1 b\ge 0    \nonumber \\
+&amp; \Rightarrow &amp; (\frac{1}{a}+\frac{1}{b})^2\ge \frac 4
+{ab}   \nonumber \\
+&amp; \Rightarrow &amp; (\frac{1}{a}+\frac{1}{b}) \ge \frac 2
+{\sqrt{ab}}  \nonumber \\
+&amp; \Rightarrow &amp; \sqrt{ab}(\frac{1}{a}+\frac{1}{b}) \ge
+2   \nonumber \\
+&amp; \Rightarrow &amp; \sqrt{ab} \ge
+\frac{2}{(\frac{1}{a}+\frac{1}{b})}   \nonumber \\
 &amp; \Rightarrow &amp; GM \ge HM   \nonumber \\
 \end{eqnarray}\]</span></p>
 </div>
 </div>
 <p></small></p>
-</section><section id="theorem-09" class="slide level2">
+</section>
+<section id="theorem-09" class="slide level2">
 <h2>Theorem 09</h2>
-<p>For two non-zero positive numbers, <span class="math inline">\(AM \times HM =(GM)^2\)</span></p>
-</section><section id="theorem-10" class="slide level2">
+<p>For two non-zero positive numbers, <span class="math inline">\(AM
+\times HM =(GM)^2\)</span></p>
+</section>
+<section id="theorem-10" class="slide level2">
 <h2>Theorem 10</h2>
-<p>Mean and Median of first n natural numbers are <span class="math inline">\(\frac {n+1} 2\)</span></p>
-</section><section id="theorem-11" class="slide level2">
+<p>Mean and Median of first n natural numbers are <span
+class="math inline">\(\frac {n+1} 2\)</span></p>
+</section>
+<section id="theorem-11" class="slide level2">
 <h2>Theorem 11</h2>
-<p>If <span class="math inline">\(\bar x_1\)</span> and <span class="math inline">\(\bar x_2\)</span> are means of 2 data sets of sizes <span class="math inline">\(n_1\)</span> and <span class="math inline">\(n_2\)</span>, respectively, the combined mean is <span class="math inline">\(\bar x_c=\frac{n_1 \bar x_1+n_2 \bar x_2}{n_1+n_2}\)</span></p>
-</section><section id="theorem-12" class="slide level2">
+<p>If <span class="math inline">\(\bar x_1\)</span> and <span
+class="math inline">\(\bar x_2\)</span> are means of 2 data sets of
+sizes <span class="math inline">\(n_1\)</span> and <span
+class="math inline">\(n_2\)</span>, respectively, the combined mean is
+<span class="math inline">\(\bar x_c=\frac{n_1 \bar x_1+n_2 \bar
+x_2}{n_1+n_2}\)</span></p>
+</section>
+<section id="theorem-12" class="slide level2">
 <h2>Theorem 12</h2>
-<p>If <span class="math inline">\(u=x+y, \bar u=\bar x + \bar y\)</span>; if <span class="math inline">\(n_1=n_2=n\)</span></p>
+<p>If <span class="math inline">\(u=x+y, \bar u=\bar x + \bar
+y\)</span>; if <span class="math inline">\(n_1=n_2=n\)</span></p>
 <p>Given <span class="math inline">\(u=x+y\)</span></p>
 <p><span class="math display">\[\begin{eqnarray}
 \bar u &amp;=&amp;  \frac{\sum u}{n}   \nonumber \\
@@ -1224,22 +1390,37 @@ function klikaj(i) {
 &amp;=&amp; \frac{\sum x}{n}+  \frac{\sum y}{n}   \nonumber \\
 &amp;=&amp; \bar x + \bar y   \nonumber \\
 \end{eqnarray}\]</span></p>
-</section><section id="theorem-13" class="slide level2">
+</section>
+<section id="theorem-13" class="slide level2">
 <h2>Theorem 13</h2>
-<p>For equal number of observations, GM of two variables is equal to the product of their individual means.</p>
-</section><section id="theorem-14" class="slide level2">
+<p>For equal number of observations, GM of two variables is equal to the
+product of their individual means.</p>
+</section>
+<section id="theorem-14" class="slide level2">
 <h2>Theorem 14</h2>
-<p><span class="math inline">\(GM=Antilog(\frac{\sum \log x_i}{n})\)</span> or <span class="math inline">\(Antilog(\frac{\sum f_i \log x_i}{\sum f_i})\)</span></p>
-</section><section id="theorem-15" class="slide level2">
+<p><span class="math inline">\(GM=Antilog(\frac{\sum \log
+x_i}{n})\)</span> or <span class="math inline">\(Antilog(\frac{\sum f_i
+\log x_i}{\sum f_i})\)</span></p>
+</section>
+<section id="theorem-15" class="slide level2">
 <h2>Theorem 15</h2>
-<p>If <span class="math inline">\(y = a + bx, \bar y = a + b \bar x\)</span></p>
-</section><section id="theorem-16" class="slide level2">
+<p>If <span class="math inline">\(y = a + bx, \bar y = a + b \bar
+x\)</span></p>
+</section>
+<section id="theorem-16" class="slide level2">
 <h2>Theorem 16</h2>
-<p>If <span class="math inline">\(z_i=ax_i+by_i, \bar z=a \bar x + b \bar y\)</span></p>
+<p>If <span class="math inline">\(z_i=ax_i+by_i, \bar z=a \bar x + b
+\bar y\)</span></p>
 </section></section>
-<section><section id="example-problems" class="title-slide slide level1"><h1>Example Problems</h1></section><section id="example-problem-01" class="slide level2">
+<section>
+<section id="example-problems" class="title-slide slide level1">
+<h1>Example Problems</h1>
+
+</section>
+<section id="example-problem-01" class="slide level2">
 <h2>Example Problem 01</h2>
-AM and GM of two positive numbers are 25 and 15, respectively. Find HM and the numbers.
+AM and GM of two positive numbers are 25 and 15, respectively. Find HM
+and the numbers.
 <div class="container">
 <div class="col">
 <div onclick="klikaj(&#39;ep1.1&#39;)">
@@ -1248,7 +1429,8 @@ AM and GM of two positive numbers are 25 and 15, respectively. Find HM and the n
 <div id="ep1.1" style="visibility: hidden">
 <p>We know, <span class="math inline">\(AM \times HM=(GM)^2\)</span></p>
 <ul>
-<li class="fragment">Thus, <span class="math inline">\(HM=\)</span> 9</li>
+<li class="fragment">Thus, <span class="math inline">\(HM=\)</span>
+9</li>
 </ul>
 </div>
 <script>
@@ -1262,9 +1444,13 @@ function klikaj(i) {
 <span>Solution (ii)</span>
 </div>
 <div id="ep1.2" style="visibility: hidden">
-<p>If the numbers are <span class="math inline">\(a, b; a&gt;b\)</span> <span class="math inline">\(\frac{a+b}{2}=25\)</span> and <span class="math inline">\(\sqrt{ab}=15\)</span></p>
-<p>Thus, <span class="math inline">\(a+b=50\)</span>, and <span class="math inline">\(ab=15^2=225\)</span></p>
-<p><span class="math inline">\(\therefore (a-b)^2=(a+b)^2-4ab\)</span> <span class="math inline">\(\Rightarrow a-b =\)</span> 40</p>
+<p>If the numbers are <span class="math inline">\(a, b; a&gt;b\)</span>
+<span class="math inline">\(\frac{a+b}{2}=25\)</span> and <span
+class="math inline">\(\sqrt{ab}=15\)</span></p>
+<p>Thus, <span class="math inline">\(a+b=50\)</span>, and <span
+class="math inline">\(ab=15^2=225\)</span></p>
+<p><span class="math inline">\(\therefore (a-b)^2=(a+b)^2-4ab\)</span>
+<span class="math inline">\(\Rightarrow a-b =\)</span> 40</p>
 <ul>
 <li class="fragment">Thus, a = 45, b = 5</li>
 </ul>
@@ -1276,33 +1462,43 @@ function klikaj(i) {
 </script>
 </div>
 </div>
-</section><section id="example-problem-15" class="slide level2">
+</section>
+<section id="example-problem-15" class="slide level2">
 <h2>Example Problem 15</h2>
-<p>The mean of 200 numbers was 50. Later it was revealed that two observations were incorrectly given as 92 and 8, instead of 192 and 88, respectively. Find the correct mean.</p>
+<p>The mean of 200 numbers was 50. Later it was revealed that two
+observations were incorrectly given as 92 and 8, instead of 192 and 88,
+respectively. Find the correct mean.</p>
 <div onclick="klikaj(&#39;ep15&#39;)">
 <span>Solution</span>
 </div>
 <div id="ep15" style="visibility: hidden">
 <p><span class="math inline">\(n=200, \bar x = 200\)</span></p>
-<p><span class="math inline">\(\therefore\)</span> Incorrect total, <span class="math inline">\(\sum x = n \times \bar x=\)</span> 10000</p>
-<p>Correct total, <span class="math inline">\(\sum x&#39;=10,000-92-8+192+88=\)</span> 10180</p>
-<p>Correct mean, <span class="math inline">\(\bar x&#39;=\frac{10180}{200}=\)</span> 50.9</p>
+<p><span class="math inline">\(\therefore\)</span> Incorrect total,
+<span class="math inline">\(\sum x = n \times \bar x=\)</span> 10000</p>
+<p>Correct total, <span class="math inline">\(\sum
+x&#39;=10,000-92-8+192+88=\)</span> 10180</p>
+<p>Correct mean, <span class="math inline">\(\bar
+x&#39;=\frac{10180}{200}=\)</span> 50.9</p>
 </div>
 <script>
 function klikaj(i) {
     document.getElementById(i).style.visibility='visible';
 }
 </script>
-</section><section id="example-problem-22" class="slide level2">
+</section>
+<section id="example-problem-22" class="slide level2">
 <h2>Example Problem 22</h2>
-<p>If <span class="math inline">\(\sum f_i(x_i-k)=0\)</span>, what is the value of <code>k</code>?</p>
+<p>If <span class="math inline">\(\sum f_i(x_i-k)=0\)</span>, what is
+the value of <code>k</code>?</p>
 <div onclick="klikaj(&#39;ep22&#39;)">
 <span>Answer</span>
 </div>
 <div id="ep22" style="visibility: hidden">
 <p>Given <span class="math inline">\(\sum f_i(x_i-k)=0\)</span></p>
-<p><span class="math inline">\(\Rightarrow \sum f_i x_i - k \sum f_i =0\)</span></p>
-<p><span class="math inline">\(\Rightarrow k = \frac{\sum f_i x_i}{\sum f_i}\)</span></p>
+<p><span class="math inline">\(\Rightarrow \sum f_i x_i - k \sum f_i
+=0\)</span></p>
+<p><span class="math inline">\(\Rightarrow k = \frac{\sum f_i x_i}{\sum
+f_i}\)</span></p>
 <ul>
 <li class="fragment">= <span class="math inline">\(\bar x\)</span></li>
 </ul>
@@ -1324,16 +1520,49 @@ function klikaj(i) {
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
         // Push each slide change to the browser history
         history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
         // Vertical centering of slides
         center: false,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
         // Transition style
         transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
         // Transition style for full page slide backgrounds
         backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
 
         menu: {
+   
+    
+    
+    
+    
+    
+    
+ 
           custom: false,
           themes: false,
           transitions: false

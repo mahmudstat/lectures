@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Abdullah Al Mahmud" />
-  <title>Correlation And Regression</title>
+  <title>Correlation-Regression</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="ch6_xi_statcorrelation_regression_files/reveal.js-3.3.0.1/css/reveal.css"/>
+  <link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/reveal.css"/>
 
 
 
-<link rel="stylesheet" href="ch6_xi_statcorrelation_regression_files/reveal.js-3.3.0.1/css/theme/sky.css" id="theme">
+<link rel="stylesheet" href="libs/reveal.js-3.3.0.1/css/theme/sky.css" id="theme">
 
 
   <!-- some tweaks to reveal css -->
@@ -448,25 +448,32 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
     <div id="header-footer">
-      <p class="slide-footer"> PCC | Mahmud | Statistics| statmania.info </p>
+      <p class="slide-footer"> | Abdullah Al Mahmud | www.statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
     </div>
-    <link href="ch6_xi_statcorrelation_regression_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-    <link href="ch6_xi_statcorrelation_regression_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
+    <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
 
 <section>
-    <h1 class="title">Correlation And Regression</h1>
+    <h1 class="title">Correlation-Regression</h1>
     <h2 class="author">Abdullah Al Mahmud</h2>
 </section>
 
-<section><section id="correlation-regression" class="title-slide slide level1"><h1>Correlation-Regression</h1></section><section id="why-this-chapter-is-important" class="slide level2">
+<section>
+<section id="correlation-regression" class="title-slide slide level1">
+<h1>Correlation-Regression</h1>
+
+</section>
+<section id="why-this-chapter-is-important" class="slide level2">
 <h2>Why This Chapter is Important</h2>
 <div class="container">
 <div class="col">
-<p>We knew the universe is expanding from the knowledge of this chapter!</p>
+<p>We knew the universe is expanding from the knowledge of this
+chapter!</p>
 <p><img class="plain" src="img/hubble_scatter.PNG" width="480"></p>
 </div>
 <div class="col">
@@ -477,12 +484,16 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul>
 </div>
 </div>
-</section><section id="scatter-plot" class="slide level2">
+</section>
+<section id="scatter-plot" class="slide level2">
 <h2>Scatter Plot</h2>
 <p><img class="plain" src="img/scatter_plot.jpg" width="650"></p>
-</section><section id="sequence" class="slide level2">
+</section>
+<section id="sequence" class="slide level2">
 <h2>Sequence</h2>
-<p>Scatter Plot <span class="math inline">\(\rightarrow\)</span> Correlation <span class="math inline">\(\rightarrow\)</span> Regression</p>
+<p>Scatter Plot <span class="math inline">\(\rightarrow\)</span>
+Correlation <span class="math inline">\(\rightarrow\)</span>
+Regression</p>
 <table>
 <colgroup>
 <col style="width: 35%" />
@@ -509,28 +520,38 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </tr>
 </tbody>
 </table>
-</section><section id="correlation" class="slide level2">
+</section>
+<section id="correlation" class="slide level2">
 <h2>Correlation</h2>
 <p>Linear relationship between two variables</p>
-<p>Corrleation, <span class="math inline">\(r = \frac{\sum (x_i - \bar x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i - \bar x)^2}{n}\frac{\sum(y_i - \bar y)^2}{n}}}; -1 \le r \le 1\)</span></p>
+<p>Corrleation, <span class="math inline">\(r = \frac{\sum (x_i - \bar
+x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i - \bar x)^2}{n}\frac{\sum(y_i -
+\bar y)^2}{n}}}; -1 \le r \le 1\)</span></p>
 <ul>
-<li class="fragment"><span class="math inline">\(r = \frac{Cov(x,y)}{\sigma_x \sigma_y}\)</span></li>
+<li class="fragment"><span class="math inline">\(r =
+\frac{Cov(x,y)}{\sigma_x \sigma_y}\)</span></li>
 </ul>
 <ul>
-<li class="fragment">Compare with <span class="math display">\[\sigma ^2 = \sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}\]</span></li>
+<li class="fragment">Compare with <span class="math display">\[\sigma ^2
+= \sum_{i=1}^n \frac{(x_i-\bar x)^2}{n}\]</span></li>
 </ul>
-</section><section id="scatter-plot-and-correlation" class="slide level2">
+</section>
+<section id="scatter-plot-and-correlation" class="slide level2">
 <h2>Scatter Plot And Correlation</h2>
 <div class="container">
 <div class="col">
 <p><img  class="plain" src="img/scatter_corr.png" width="400"></p>
 </div>
 <div class="col">
-<p><span class="math inline">\(r^2=R^2 \rightarrow\)</span> Coefficient of determination</p>
-<p><span class="math inline">\(R^2 = 80\% \rightarrow\)</span> 80% of total variation in Y (say, brightness of stars) can be explained by X (say, distance).</p>
+<p><span class="math inline">\(r^2=R^2 \rightarrow\)</span> Coefficient
+of determination</p>
+<p><span class="math inline">\(R^2 = 80\% \rightarrow\)</span> 80% of
+total variation in Y (say, brightness of stars) can be explained by X
+(say, distance).</p>
 </div>
 </div>
-</section><section id="r-estimating-mechanism" class="slide level2">
+</section>
+<section id="r-estimating-mechanism" class="slide level2">
 <h2>r: Estimating Mechanism</h2>
 <p>Make a table with columns for</p>
 <ul>
@@ -541,18 +562,25 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li><span class="math inline">\((y_i-\bar y)^2\)</span></li>
 </ul>
 <p>Then sum them and put in the formula</p>
-</section><section id="example-of-r" class="slide level2">
+</section>
+<section id="example-of-r" class="slide level2">
 <h2>Example of r</h2>
-</section><section id="features-of-r" class="slide level2">
+</section>
+<section id="features-of-r" class="slide level2">
 <h2>Features of r</h2>
 <ul>
 <li class="fragment">Independent of origin and scale</li>
-<li class="fragment"><span class="math inline">\(-1 \le r \le 1\)</span></li>
-<li class="fragment"><span class="math inline">\(r = \sqrt{b_{yx} \cdot b_{xy}}\)</span> (Concerning GM of regression coeff)</li>
-<li class="fragment"><span class="math inline">\(\frac{b_{yx}+b_{xy}}{2} \ge r\)</span> (About AM)</li>
-<li class="fragment"><span class="math inline">\(r = 0 \rightarrow\)</span> no linear relationship</li>
+<li class="fragment"><span class="math inline">\(-1 \le r \le
+1\)</span></li>
+<li class="fragment"><span class="math inline">\(r = \sqrt{b_{yx} \cdot
+b_{xy}}\)</span> (Concerning GM of regression coeff)</li>
+<li class="fragment"><span class="math inline">\(\frac{b_{yx}+b_{xy}}{2}
+\ge r\)</span> (About AM)</li>
+<li class="fragment"><span class="math inline">\(r = 0
+\rightarrow\)</span> no linear relationship</li>
 </ul>
-</section><section id="rank-correlation" class="slide level2">
+</section>
+<section id="rank-correlation" class="slide level2">
 <h2>Rank Correlation</h2>
 <table>
 <thead>
@@ -637,18 +665,26 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </tr>
 </tbody>
 </table>
-<p>Coefficient, <span class="math inline">\(\rho = 1- \frac{6 \sum d_i^2}{n(n^2-1)}\)</span></p>
-</section><section id="linear-equation-straight-lines" class="slide level2">
+<p>Coefficient, <span class="math inline">\(\rho = 1- \frac{6 \sum
+d_i^2}{n(n^2-1)}\)</span></p>
+</section>
+<section id="linear-equation-straight-lines" class="slide level2">
 <h2>Linear Equation/ Straight Lines</h2>
-<p><span class="math inline">\(Y = c + mx;\)</span> m is slope c is intercept</p>
-<p><span class="math inline">\(m = \frac{dy}{dx} = tan \theta=\)</span> Change in y due to change in x.</p>
+<p><span class="math inline">\(Y = c + mx;\)</span> m is slope c is
+intercept</p>
+<p><span class="math inline">\(m = \frac{dy}{dx} = tan \theta=\)</span>
+Change in y due to change in x.</p>
 <p>Bread without sour or wheat!</p>
-</section><section id="regression-coefficient" class="slide level2">
+</section>
+<section id="regression-coefficient" class="slide level2">
 <h2>Regression Coefficient</h2>
-<p><span class="math inline">\(b_{yx} = \frac{\sum(x_i-\bar x)(y_i-\bar y)}{\sum(x_i-\bar x)^2} = \frac{Cov(x,y)}{\sigma_x^2}\)</span></p>
-<p>SImpler, <span class="math inline">\(b_{yx} = \frac{\sum xy- \frac{\sum x \sum y}{n}}{\sum x^2 - \frac{(\sum x)^2}{n}}\)</span></p>
+<p><span class="math inline">\(b_{yx} = \frac{\sum(x_i-\bar x)(y_i-\bar
+y)}{\sum(x_i-\bar x)^2} = \frac{Cov(x,y)}{\sigma_x^2}\)</span></p>
+<p>SImpler, <span class="math inline">\(b_{yx} = \frac{\sum xy-
+\frac{\sum x \sum y}{n}}{\sum x^2 - \frac{(\sum x)^2}{n}}\)</span></p>
 <p><span class="math inline">\(b_{xy}=?\)</span></p>
-</section><section id="example" class="slide level2">
+</section>
+<section id="example" class="slide level2">
 <h2>Example</h2>
 <div class="container">
 <div class="col">
@@ -706,7 +742,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <div class="col">
 <ul>
 <li>Make a scatter plot and explain</li>
-<li>Find correlation and regression coefficient (r, a, &amp; b) and explain</li>
+<li>Find correlation and regression coefficient (r, a, &amp; b) and
+explain</li>
 </ul>
 <ul>
 <li class="fragment">Correlation, r = -0.06</li>
@@ -714,49 +751,87 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul>
 </div>
 </div>
-</section><section id="properties-of-b" class="slide level2">
+</section>
+<section id="properties-of-b" class="slide level2">
 <h2>Properties of b</h2>
 <ul>
 <li class="fragment">independent of origin and scale</li>
-<li class="fragment"><span class="math inline">\(r = \sqrt{b_{yx} \cdot b_{xy}}\)</span></li>
-<li class="fragment"><span class="math inline">\(\frac{b_{yx}+b_{xy}}{2} \ge r\)</span></li>
-<li class="fragment">If <span class="math inline">\(b_{yx} &gt; 1, b_{xy} &lt; 1\)</span></li>
+<li class="fragment"><span class="math inline">\(r = \sqrt{b_{yx} \cdot
+b_{xy}}\)</span></li>
+<li class="fragment"><span class="math inline">\(\frac{b_{yx}+b_{xy}}{2}
+\ge r\)</span></li>
+<li class="fragment">If <span class="math inline">\(b_{yx} &gt; 1,
+b_{xy} &lt; 1\)</span></li>
 <li class="fragment">If regression lines coincide, r = 1</li>
-<li class="fragment">If <span class="math inline">\(\theta = 90^o, r = 0\)</span></li>
+<li class="fragment">If <span class="math inline">\(\theta = 90^o, r =
+0\)</span></li>
 </ul>
-</section><section id="purity-of-coefficients" class="slide level2">
+</section>
+<section id="purity-of-coefficients" class="slide level2">
 <h2>Purity of Coefficients</h2>
 <ul>
-<li><span class="math inline">\(r = \frac{\sum (x_i - \bar x)(y_i - \bar y)}{\sqrt{\frac{\sum(x_i - \bar x)^2}{n}\frac{\sum(y_i - \bar y)^2}{n}}}\)</span></li>
-<li><span class="math inline">\(\rho = 1- \frac{6 \sum d_i^2}{n(n^2-1)}\)</span></li>
+<li><span class="math inline">\(r = \frac{\sum (x_i - \bar x)(y_i - \bar
+y)}{\sqrt{\frac{\sum(x_i - \bar x)^2}{n}\frac{\sum(y_i - \bar
+y)^2}{n}}}\)</span></li>
+<li><span class="math inline">\(\rho = 1- \frac{6 \sum
+d_i^2}{n(n^2-1)}\)</span></li>
 <li>b or <span class="math inline">\(\beta\)</span></li>
 </ul>
 </section></section>
     </div>
   </div>
 
-  <script src="ch6_xi_statcorrelation_regression_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
-  <script src="ch6_xi_statcorrelation_regression_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+  <script src="libs/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="libs/reveal.js-3.3.0.1/js/reveal.js"></script>
 
   <script>
 
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
-        // Display the page number of the current slide
-        slideNumber: true,
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
         // Push each slide change to the browser history
         history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
         // Vertical centering of slides
         center: false,
-        // Opens links in an iframe preview overlay
-        previewLinks: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
         // Transition style
         transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
         // Transition style for full page slide backgrounds
         backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
 
         menu: {
+   
+    
+    
+    
+    
+    
+    
+ 
           custom: false,
           themes: false,
           transitions: false
@@ -777,9 +852,9 @@ document.getElementsByTagName('head')[0].appendChild(style);
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: 'ch6_xi_statcorrelation_regression_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
-          { src: 'ch6_xi_statcorrelation_regression_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
-          { src: 'ch6_xi_statcorrelation_regression_files/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+          { src: 'libs/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
         ]
       });
     </script>
