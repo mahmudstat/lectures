@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Abdullah Al Mahmud" />
-  <title>Statistics-Chapter 2</title>
+  <title>Statistics I: Collection, Organization &amp; Presentation of Data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -515,7 +515,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <div id="header-footer">
       <p class="slide-footer"> | Abdullah Al Mahmud | www.statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
     </div>
-    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
     <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
     <link href="libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 </head>
@@ -524,10 +524,16 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <div class="slides">
 
 <section>
-    <h1 class="title">Statistics-Chapter 2</h1>
+    <h1 class="title">Statistics I: Collection, Organization &amp;
+Presentation of Data</h1>
     <h2 class="author">Abdullah Al Mahmud</h2>
 </section>
 
+<section>
+<section id="data-collection" class="title-slide slide level1">
+<h1>Data Collection</h1>
+
+</section>
 <section id="types-of-data" class="slide level2">
 <h2>Types of Data</h2>
 <ul>
@@ -583,6 +589,11 @@ Each method has its own advantages and disadvantages;
 <li class="fragment">Reliability</li>
 <li class="fragment">Unit</li>
 </ul>
+</section></section>
+<section>
+<section id="organizing-data" class="title-slide slide level1">
+<h1>Organizing Data</h1>
+
 </section>
 <section id="tabluation" class="slide level2">
 <h2>Tabluation</h2>
@@ -599,8 +610,7 @@ Each method has its own advantages and disadvantages;
 </section>
 <section id="example" class="slide level2">
 <h2>Example</h2>
-<section>
-Geographical
+<p>Geographical</p>
 <table>
 <thead>
 <tr>
@@ -629,9 +639,7 @@ GDP(m)
 </tr>
 </tbody>
 </table>
-</section>
-<section>
-<em>Chronological (Time series data)</em>
+<p><em>Chronological (Time series data)</em></p>
 <table>
 <thead>
 <tr>
@@ -660,9 +668,7 @@ GDP(m)
 </tr>
 </tbody>
 </table>
-<pre><code>&lt;/section&gt;</code></pre>
-<section>
-<em>Quantitative Classification</em>
+<p><em>Quantitative Classification</em></p>
 <table>
 <thead>
 <tr>
@@ -691,11 +697,21 @@ Frequency
 </tr>
 </tbody>
 </table>
-<pre><code>&lt;/section&gt;</code></pre>
 </section>
+<section id="frequency-distribution" class="slide level2">
+<h2>Frequency Distribution</h2>
+<p>No. of classes</p>
+<ul>
+<li class="fragment">Sturges Method: <span class="math inline">\(k = 1 +
+3.322 \space logN\)</span>; where N = no. of observations</li>
+<li class="fragment">Class Interval width = <span
+class="math inline">\({Range} \over {\text{Numbe rof
+classes}}\)</span></li>
+</ul>
+</section></section>
 <section>
-<section id="chapter-overview" class="title-slide slide level1">
-<h1>Chapter Overview</h1>
+<section id="graphs" class="title-slide slide level1">
+<h1>Graphs</h1>
 
 </section>
 <section id="histogram" class="slide level2">
@@ -728,8 +744,8 @@ function klikaj(i) {
 <li>key in stem and leaf plot</li>
 <li>How to interpret stem and leaf plot</li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">16</span>, <span class="dv">26</span>, <span class="dv">12</span>, <span class="dv">10</span>, <span class="dv">27</span>, <span class="dv">30</span>, <span class="dv">14</span>,  <span class="dv">1</span>, <span class="dv">25</span>, <span class="dv">20</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">stem</span>(data)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">16</span>, <span class="dv">26</span>, <span class="dv">12</span>, <span class="dv">10</span>, <span class="dv">27</span>, <span class="dv">30</span>, <span class="dv">14</span>,  <span class="dv">1</span>, <span class="dv">25</span>, <span class="dv">20</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">stem</span>(data)</span></code></pre></div>
 <pre><code>## 
 ##   The decimal point is 1 digit(s) to the right of the |
 ## 
@@ -873,6 +889,12 @@ function klikaj(i) {
 </table>
 </div>
 </div>
+</section>
+<section id="frequency-polygon-vs-frequency-curve" class="slide level2">
+<h2>Frequency Polygon vs Frequency Curve</h2>
+<ul>
+<li class="fragment">Curve: Smoothed corners</li>
+</ul>
 </section>
 <section id="bar-diagram-vs-histogram" class="slide level2">
 <h2>Bar Diagram vs Histogram</h2>

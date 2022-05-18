@@ -221,11 +221,26 @@ $$\prod_{i=1}^k x_i = x_1 \times x_2 \times \cdot \cdot \cdot \times x_n$$
 $$\prod_{i=1}^k x_iy_i = (\prod_{i=1}^k x_i)(\prod_{i=1}^k y_i)$$
 
 ## Theorem 08
-$$\sum_{i=1}^m \sum_{i=1}^n (x_i+y_j)=n\sum_{i=1}^m x_i + m \sum_{i=1}^n y_j$$
 
+<small>
 
-## Theorem 09
-m$\sum_{i=1}^m \sum_{i=1}^n (x_iy_j)=(\sum_{i=1}^n x_i) (\sum_{i=1}^n y_j)$
+$\displaystyle  \sum_{i=1}^m \sum_{j=1}^n (x_i+y_j)=n\sum_{i=1}^m x_i + m \sum_{i=1}^n y_j$
+
+> - $\displaystyle \sum_{i=1}^m (x_i+y_1+x_i+y_2+\cdots+x_i+y_n)$
+> - $\displaystyle \sum_{i=1}^m \{(x_i+x_i+\cdots \text{up to n})+(y_1+y_2+\cdots+y_n)$
+> - $\displaystyle \sum_{i=1}^m(nx_i+\sum_{j=1}^ny_j)$
+> - $\displaystyle (nx_1+\sum_{j=1}^ny_j+nx_2+ \sum_{j=1}^ny_j)+\cdots+nx_m+\sum_{j=1}^ny_j))$
+> - $\displaystyle n\sum_{i=1}^m x_i+m\sum_{j=1}^ny_j$
+
+</small>
+
+## Theorem: $\Sigma \Sigma x_iy_j$
+
+$\displaystyle \sum_{i=1}^m \sum_{i=1}^n x_iy_j=(\sum_{i=1}^n x_i) (\sum_{i=1}^n y_j)$
+
+> - $\displaystyle \sum_{i=1}^m (x_iy_1+x_iy_2+\cdots+x_iy_n)$
+> - $\displaystyle \sum_{i=1}^m x_i(y_1+y_2+\cdots+y_n)$
+> - $\displaystyle \sum_{i=1}^m x_i \sum_{i=1}^n y_i$
 
 ## Example
 
@@ -254,17 +269,19 @@ where $\sum_{i=1}^{10} x_i = 20$
 > - 10. Prove 
 $$\sum_{i=1}^k abx_i = ab \sum_{i=1}^k x_i$$
 
-## Exercise -01
+## Exercise - 02
 Prove 
 $$\prod_{i=1}^n c =c^n$$
 
-## Exercise -01
+## Exercise - 03
+
 13. Find the value of 
 $$\sum_{i=1}^{10} (x_i-4)$$
 where
 $$\sum_{i=1}^{10}=20$$
 
 ## Creative Question
+
 <small>
 Given below are the daily income and expense of ten workers.
 
@@ -295,8 +312,8 @@ From above data, prove
 
 </small>
 
-
 ## Creative Question -07
+
 <small>
 Given below are the daily income and expense of ten workers.
 

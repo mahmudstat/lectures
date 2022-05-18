@@ -1,5 +1,5 @@
 ---
-title: "Statistics-Chapter 2"
+title: "Statistics I: Collection, Organization & Presentation of Data"
 author: Abdullah Al Mahmud
 date: \today
 output: 
@@ -12,6 +12,8 @@ output:
     includes:
       in_header: css/header.html
 ---
+
+# Data Collection
 
 ## Types of Data
 
@@ -46,23 +48,29 @@ Primary: Obtained directly (not collected from someone else)
 > - Unpublished: BBS, WHO, IMF, FAO, ICDDR,B
 
 ## DIsadvantages of Secondary Data
+
 > - Purpose might be different
 > - Suitability
 > - Reliability
 > - Unit 
 
+# Organizing Data
+
 ## Tabluation
+
 ![table](img//stat/table.jpg)
 
 ## Data Classification
+
 > - Geographical
 > - Chronological
 > - Quantitative
 > - Qualitative
 
 ## Example
-<section>
+
 Geographical
+
   <table>
       <thead><tr>
             <th>Country</th>
@@ -76,10 +84,10 @@ Geographical
         </tr>
 </tbody>
     </table>
-</section>
 
-<section>
+
 *Chronological (Time series data)*
+
   <table>
       <thead><tr>
             <th>Year</th>
@@ -93,10 +101,9 @@ Geographical
         </tr>
 </tbody>
     </table>
-    </section>
-    
-<section>
+
 *Quantitative Classification*
+
   <table>
       <thead><tr>
             <th>Income level</th>
@@ -110,9 +117,17 @@ Geographical
         </tr>
 </tbody>
     </table>
-    </section>
     
-# Chapter Overview
+  
+## Frequency Distribution
+
+No. of classes
+
+> - Sturges Method: $k = 1 + 3.322 \space logN$; 
+  where N = no. of observations
+> - Class Interval width  = ${Range} \over {\text{Numbe rof classes}}$
+
+# Graphs
 
 ## Histogram
 
@@ -185,6 +200,7 @@ plot(intervals, cf, type = "b", col = "blue", pch = 20)
 
 
 ## Choose Diagram
+
 <div class="container">
 
 <div class="col">
@@ -217,5 +233,9 @@ pie(x, c(1996:1999),
 </div>
 
 </div>
+
+## Frequency Polygon vs Frequency Curve
+
+> - Curve: Smoothed corners
 
 ## Bar Diagram vs Histogram

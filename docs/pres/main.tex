@@ -1,0 +1,150 @@
+%% This Beamer template is based on the one found here: https://github.com/sanhacheong/stanford-beamer-presentation, and edited to be used for Stanford ARM Lab
+
+\documentclass[10pt]{beamer}
+%\mode<presentation>{}
+
+\usepackage{media9}
+\usepackage{amssymb,amsmath,amsthm,enumerate}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage[parfill]{parskip}
+\usepackage{graphicx,animate}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{bm}
+\usepackage{amsfonts,amscd}
+\usepackage[]{units}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{tcolorbox}
+\usepackage{physics}
+\usepackage{movie15}
+% Enable colored hyperlinks
+\hypersetup{colorlinks=true}
+
+% The following three lines are for crossmarks & checkmarks
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+% Numbered captions of tables, pictures, etc.
+\setbeamertemplate{caption}[numbered]
+\usepackage{media9} 
+%\usepackage[superscript,biblabel]{cite}
+\usepackage{algorithm2e}
+\renewcommand{\thealgocf}{}
+
+% Bibliography settings
+\usepackage[style=authoryear]{biblatex}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+
+\addbibresource{bibliography.bib}
+
+% Glossary entries
+\usepackage[acronym]{glossaries}
+\newacronym{ML}{ML}{machine learning}
+\newacronym{HRI}{HRI}{human-robot interactions}
+\newacronym{RNN}{RNN}{Recurrent Neural Network}
+\newacronym{LSTM}{LSTM}{Long Short-Term Memory}
+
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\theoremstyle{definition}
+
+\newcommand{\empy}[1]{{\color{darkorange}\emph{#1}}}
+\newcommand{\empr}[1]{{\color{cardinalred}\emph{#1}}}
+\newcommand{\examplebox}[2]{
+\begin{tcolorbox}[colframe=darkcardinal,colback=boxgray,title=#1]
+#2
+\end{tcolorbox}}
+
+\usetheme{Stanford} 
+\input{./style_files_stanford/my_beamer_defs.sty}
+\logo{\includegraphics[height=0.43in]{nn.jpg}}
+
+\makeatletter
+\let\@@magyar@captionfix\relax
+\makeatother
+
+\title[Title]{Introduction to Statistics}
+
+
+\begin{document}
+
+\author[Author]{
+	\begin{tabular}{c} 
+	\Large
+	Abdullah Al Mahmud\\
+    \footnotesize \href{mailto:almahmud.sbi@gmail.com}{almahmud.sbi@gmail.com} \\
+    % Author Two \\
+    % \footnotesize \href{mailto:author.2@kaust.edu.sa}{author.2@kaust.edu.sa}
+\end{tabular}
+\vspace{-4ex}}
+
+\institute{
+	\vskip 5pt
+	\begin{figure}
+		\centering
+		\begin{subfigure}[t]{0.5\textwidth}
+			\centering
+			\includegraphics[height=0.5in]{nn.jpg}
+		\end{subfigure}%
+		~ 
+		\begin{subfigure}[t]{0.5\textwidth}
+			\centering
+			\includegraphics[height=0.5in]{{statmania.png}}
+		\end{subfigure}
+	\end{figure}
+	\vskip 10pt
+	Stat Mania\\ 
+	www.statmania.info \\
+	\vskip 3pt
+}
+
+% \date{June 15, 2020}
+\date{\today}
+
+\begin{noheadline}
+\begin{frame} \maketitle \end{frame}
+\end{noheadline}
+
+\setbeamertemplate{itemize items}[default]
+\setbeamertemplate{itemize subitem}[circle]
+
+\begin{frame}
+\frametitle{Introduction}
+	\begin{itemize}
+	    \item Item 1
+		\item Item 2
+		\item Item 3
+		\begin{itemize}
+    		\item Subitem 1 
+    		\item Subitem 2
+		\end{itemize}
+	\end{itemize}
+	
+	Citation 1 \cite{Fortunato2010}. Citation 2 \cite{NewmanGirvan2004}.
+\end{frame}
+
+\begin{frame}{Materials and Methods}
+\end{frame}
+
+\begin{frame}{Results}
+\end{frame}
+
+\begin{frame}{Discussion}
+\end{frame}
+
+\begin{frame}{Conclusion}
+\end{frame}
+
+\begin{frame}{Acknowledgements}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{References}
+\printbibliography
+\end{frame}
+
+\end{document}

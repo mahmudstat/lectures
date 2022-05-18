@@ -450,7 +450,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <div id="header-footer">
       <p class="slide-footer"> | Abdullah Al Mahmud | www.statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
     </div>
-    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
     <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
     <link href="libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 </head>
@@ -748,13 +748,37 @@ x_i)(\prod_{i=1}^k y_i)\]</span></p>
 </section>
 <section id="theorem-08" class="slide level2">
 <h2>Theorem 08</h2>
-<p><span class="math display">\[\sum_{i=1}^m \sum_{i=1}^n
-(x_i+y_j)=n\sum_{i=1}^m x_i + m \sum_{i=1}^n y_j\]</span></p>
+<p><small></p>
+<p><span class="math inline">\(\displaystyle \sum_{i=1}^m \sum_{j=1}^n
+(x_i+y_j)=n\sum_{i=1}^m x_i + m \sum_{i=1}^n y_j\)</span></p>
+<ul>
+<li class="fragment"><span class="math inline">\(\displaystyle
+\sum_{i=1}^m (x_i+y_1+x_i+y_2+\cdots+x_i+y_n)\)</span></li>
+<li class="fragment"><span class="math inline">\(\displaystyle
+\sum_{i=1}^m \{(x_i+x_i+\cdots \text{up to
+n})+(y_1+y_2+\cdots+y_n)\)</span></li>
+<li class="fragment"><span class="math inline">\(\displaystyle
+\sum_{i=1}^m(nx_i+\sum_{j=1}^ny_j)\)</span></li>
+<li class="fragment"><span class="math inline">\(\displaystyle
+(nx_1+\sum_{j=1}^ny_j+nx_2+
+\sum_{j=1}^ny_j)+\cdots+nx_m+\sum_{j=1}^ny_j))\)</span></li>
+<li class="fragment"><span class="math inline">\(\displaystyle
+n\sum_{i=1}^m x_i+m\sum_{j=1}^ny_j\)</span></li>
+</ul>
+<p></small></p>
 </section>
-<section id="theorem-09" class="slide level2">
-<h2>Theorem 09</h2>
-<p>m<span class="math inline">\(\sum_{i=1}^m \sum_{i=1}^n
-(x_iy_j)=(\sum_{i=1}^n x_i) (\sum_{i=1}^n y_j)\)</span></p>
+<section id="theorem-sigma-x_iy_j" class="slide level2">
+<h2>Theorem: <span class="math inline">\(\Sigma x_iy_j\)</span></h2>
+<p><span class="math inline">\(\displaystyle \sum_{i=1}^m \sum_{i=1}^n
+x_iy_j=(\sum_{i=1}^n x_i) (\sum_{i=1}^n y_j)\)</span></p>
+<ul>
+<li class="fragment"><span class="math inline">\(\displaystyle
+\sum_{i=1}^m (x_iy_1+x_iy_2+\cdots+x_iy_n)\)</span></li>
+<li class="fragment"><span class="math inline">\(\displaystyle
+\sum_{i=1}^m x_i(y_1+y_2+\cdots+y_n)\)</span></li>
+<li class="fragment"><span class="math inline">\(\displaystyle
+\sum_{i=1}^m x_i \sum_{i=1}^n y_i\)</span></li>
+</ul>
 </section>
 <section id="example" class="slide level2">
 <h2>Example</h2>
@@ -789,12 +813,12 @@ abx_i = ab \sum_{i=1}^k x_i\]</span></li>
 </ol></li>
 </ul>
 </section>
-<section id="exercise--01" class="slide level2">
-<h2>Exercise -01</h2>
+<section id="exercise---02" class="slide level2">
+<h2>Exercise - 02</h2>
 <p>Prove <span class="math display">\[\prod_{i=1}^n c =c^n\]</span></p>
 </section>
-<section id="exercise--01-1" class="slide level2">
-<h2>Exercise -01</h2>
+<section id="exercise---03" class="slide level2">
+<h2>Exercise - 03</h2>
 <ol start="13" type="1">
 <li>Find the value of <span class="math display">\[\sum_{i=1}^{10}
 (x_i-4)\]</span> where <span
