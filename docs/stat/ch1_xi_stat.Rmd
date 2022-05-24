@@ -184,12 +184,12 @@ $$x_1 + x_2 + ... x_n = \sum_{i=1}^n x_i$$
 $$x_1 + x_2 + ... x_{10} = ?$$
 
 
-## Theorem 01
+## Theorem 01: $\Sigma bx_i$
 
 $$\sum_{i=1}^n bx_i=b \sum_{i=1}^n x_i$$
 
 
-## Theorem 02
+## Theorem 02: $\Sigma (ax_i-b)$
 $$\sum_{i=1}^n (ax_i-b)=a \sum_{i=1}^n x_i-nb$$
 
 ## Quick tips
@@ -197,18 +197,18 @@ $$\sum_{i=1}^n (ax_i-b)=a \sum_{i=1}^n x_i-nb$$
 > - $\sum_{i=1}^n a = na$
 > - Can you prove it? 
 
-## Theorem 03
+## Theorem 03: $\Sigma (ax_i^2-bx_i+c$
 
 $$\sum_{i=1}^n (ax_i^2-bx_i+c)=a\sum_{i=1}^n x_i^2-b\sum_{i=1}^n x_i + nc$$
 
-## Theorem 04
+## Theorem 04: $\Sigma (ax_i-by_i)$
 
 $$\sum_{i=1}^n (ax_i-by_i)=a\sum_{i=1}^n x_i - b \sum_{i=1}^n y_i$$
 
-## Theorem 05
+## Theorem 05: $\Sigma (ax_i-b)^2$
 $$\sum_{i=1}^n (ax_i-b)^2=a^2 \sum_{i=1}^n x_i^2 - 2ab \sum_{i=1}^n x_i + nb^2$$
 
-## Theorem 06
+## Theorem 06: $(\sum_{i=1}^n x_i)^2$
 
 $$(\sum_{i=1}^n x_i)^2=\sum_{i=1}^n x_i^2 + \sum_{i \ne j}^n\sum x_ix_j$$
 
@@ -216,11 +216,11 @@ $$(\sum_{i=1}^n x_i)^2=\sum_{i=1}^n x_i^2 + \sum_{i \ne j}^n\sum x_ix_j$$
 
 $$\prod_{i=1}^k x_i = x_1 \times x_2 \times \cdot \cdot \cdot \times x_n$$
 
-## Theorem 07
+## Theorem 07: $\prod_{i=1}^k x_iy_i$
 
 $$\prod_{i=1}^k x_iy_i = (\prod_{i=1}^k x_i)(\prod_{i=1}^k y_i)$$
 
-## Theorem 08
+## Theorem 08: $\Sigma \Sigma (x_i+y_j)$
 
 <small>
 
@@ -276,16 +276,16 @@ $$\prod_{i=1}^n c =c^n$$
 ## Exercise - 03
 
 13. Find the value of 
+
 $$\sum_{i=1}^{10} (x_i-4)$$
 where
 $$\sum_{i=1}^{10}=20$$
 
-## Creative Question
+## Creative Question - 01
 
 <small>
 Given below are the daily income and expense of ten workers.
 
-<section>
   <table>
       <thead><tr>
             <th>Income (x)</th>
@@ -299,8 +299,6 @@ Given below are the daily income and expense of ten workers.
         </tr>
 </tbody>
     </table>
-</section>
-
 
 From above data, prove 
 
@@ -312,12 +310,11 @@ From above data, prove
 
 </small>
 
-## Creative Question -07
+## Creative Question - 02
 
 <small>
 Given below are the daily income and expense of ten workers.
 
-<section>
   <table>
       <thead><tr>
             <th>Income (x)</th>
@@ -347,8 +344,6 @@ Given below are the daily income and expense of ten workers.
         </tr>
 </tbody>
     </table>
-</section>
-
 
 a. What do you mean by bivariate data?
 b. From above data, prove 
