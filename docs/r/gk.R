@@ -8,10 +8,30 @@ select_cadet <- function(){
 cadet <- sample(x,1)
 x <<- x[x!=cadet]
 print(paste0("Cadet ", cadet, " will answer the next question."))
-
 }
-
 select_cadet()
+
+## Select questions 
+
+
+qdb <- read.csv("docs/r/gk/gk_intl.csv")
+qdb_bcup <- read.csv("docs/r/gk/gk_intl.csv")
+
+View(qdb)
+
+select_ques <- function(){
+  ques <<- sample(qdb$Question, 1)
+  qdb <<- subset(qdb, qdb$Question!=ques)
+  print(ques)
+  }
+select_ques()
+
+# Answer
+
+qdb_bcup$Answer[qdb_bcup$Question==ques]
+
+
+
 
 ## Test
 x <- 11:20
