@@ -208,7 +208,7 @@ For independent X, Y
 > - $Cov(X,Y) = E(XY) - E(X)E(Y) = 0$
 > - Correlation, $r = \frac{Cov(X,Y)}{\sigma_x \sigma_y}=0$
 
-## Example 01
+## Example 01: E(X) & V(X)
 
 |   x  | -3 | -2 | -1 |  0 |  1 |  2  |
 |:----:|:--:|:--:|:--:|:--:|:--:|:---:|
@@ -217,7 +217,7 @@ For independent X, Y
 1. Find k
 2. Find $E(X)$ and $V(X)$
 
-## Example 02
+## Example 02: $P(x) = \frac 1 n$
 
 $P(x) = \frac 1 n; x = 1,2,3, \cdots,n$ Find $E(X)$ and $V(X)$
 
@@ -229,3 +229,32 @@ Find
 
 i. k
 ii. V(2X-1)
+
+## Example 04: $P(x) = \frac{3-|4-x|}{k}$
+
+$P(x) = \frac{3-|4-x|}{k}; x = 2, 3, 4, 5, 6$
+
+Find
+
+i. k
+ii. V(2x-1)
+
+## Example 05: y = 3x+5. Find V(3y-2)
+
+| x    | -2   | -1   | 0    | 1    | 2    |
+|------|------|------|------|------|------|
+| P(x) | 0.20 | 0.15 | 0.10 | 0.15 | 0.40 |
+
+> - V(3y-2) = $3^2V(y)$
+> - $9V(3x+5)$
+> - $9 \cdot 3^2 \cdot V(x)$
+
+## Example 06: $f(x) = \frac x 8$
+
+$f(x) = \frac x 8; 0 <x<4$
+
+Find 
+
+- E(X), 
+- E(2x^2+3)
+- V(X)

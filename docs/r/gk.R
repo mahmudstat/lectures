@@ -15,7 +15,9 @@ select_cadet()
 
 
 qdb <- read.csv("docs/r/gk/gk_intl.csv")
+
 qdb_bcup <- read.csv("docs/r/gk/gk_intl.csv")
+
 
 View(qdb)
 
@@ -24,13 +26,13 @@ select_ques <- function(){
   qdb <<- subset(qdb, qdb$Question!=ques)
   print(ques)
   }
+
+select_ans <- function() qdb_bcup$Answer[qdb_bcup$Question==ques]
+
 select_ques()
+select_ans()
 
 # Answer
-
-qdb_bcup$Answer[qdb_bcup$Question==ques]
-
-
 
 
 ## Test
