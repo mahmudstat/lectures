@@ -1,0 +1,250 @@
+\documentclass{exam}
+%\documentclass[11pt,a4paper]{exam}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont}
+\usepackage{ifthen}
+\usepackage{enumerate}% http://ctan.org/pkg/enumerate
+\usepackage{multicol}
+
+
+
+% Accumulate the answers. Unmodified from Phil Hirschorn's answer
+% https://tex.stackexchange.com/questions/15350/showing-solutions-of-the-questions-separately/15353
+\newbox\allanswers
+\setbox\allanswers=\vbox{}
+
+\newenvironment{answer}
+{%
+    \global\setbox\allanswers=\vbox\bgroup
+    \unvbox\allanswers
+}%
+{%
+    \bigbreak
+    \egroup
+}
+
+\newcommand{\showallanswers}{\par\unvbox\allanswers}
+% End Phil's answer
+
+
+% Is there a better way?
+\newcommand*{\getanswer}[5]{%
+    \ifthenelse{\equal{#5}{a}}
+    {\begin{answer}\thequestion. (a)~#1\end{answer}}
+    {\ifthenelse{\equal{#5}{b}}
+        {\begin{answer}\thequestion. (b)~#2\end{answer}}
+        {\ifthenelse{\equal{#5}{c}}
+            {\begin{answer}\thequestion. (c)~#3\end{answer}}
+            {\ifthenelse{\equal{#5}{d}}
+                {\begin{answer}\thequestion. (d)~#4\end{answer}}
+                {\begin{answer}\textbf{\thequestion. (#5)~Invalid answer choice.}\end{answer}}}}}
+}
+
+\setlength\parindent{0pt}
+%usage \choice{ }{ }{ }{ }
+%(A)(B)(C)(D)
+\newcommand{\fourch}[5]{
+    \par
+    \begin{tabular}{*{4}{@{}p{0.23\textwidth}}}
+        (a)~#1 & (b)~#2 & (c)~#3 & (d)~#4
+    \end{tabular}
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+%(A)(B)
+%(C)(D)
+\newcommand{\twoch}[5]{
+    \par
+    \begin{tabular}{*{2}{@{}p{0.46\textwidth}}}
+        (a)~#1 & (b)~#2
+    \end{tabular}
+    \par
+    \begin{tabular}{*{2}{@{}p{0.46\textwidth}}}
+        (c)~#3 & (d)~#4
+    \end{tabular}
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+%(A)
+%(B)
+%(C)
+%(D)
+\newcommand{\onech}[5]{
+    \par
+    (a)~#1 \par (b)~#2 \par (c)~#3 \par (d)~#4
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+\newlength\widthcha
+\newlength\widthchb
+\newlength\widthchc
+\newlength\widthchd
+\newlength\widthch
+\newlength\tabmaxwidth
+
+\setlength\tabmaxwidth{0.96\textwidth}
+\newlength\fourthtabwidth
+\setlength\fourthtabwidth{0.25\textwidth}
+\newlength\halftabwidth
+\setlength\halftabwidth{0.5\textwidth}
+
+\newcommand{\choice}[5]{%
+\settowidth\widthcha{AM.#1}\setlength{\widthch}{\widthcha}%
+\settowidth\widthchb{BM.#2}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+    \settowidth\widthchb{CM.#3}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+    \settowidth\widthchb{DM.#4}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+
+% These if statements were bypassing the \onech option.
+% \ifdim\widthch<\fourthtabwidth
+%     \fourch{#1}{#2}{#3}{#4}{#5}
+% \else\ifdim\widthch<\halftabwidth
+% \ifdim\widthch>\fourthtabwidth
+%     \twoch{#1}{#2}{#3}{#4}{#5}
+% \else
+%      \onech{#1}{#2}{#3}{#4}{#5}
+%  \fi\fi\fi}
+
+% Allows for the \onech option.
+\ifdim\widthch>\halftabwidth
+    \onech{#1}{#2}{#3}{#4}{#5}
+\else\ifdim\widthch<\halftabwidth
+\ifdim\widthch>\fourthtabwidth
+    \twoch{#1}{#2}{#3}{#4}{#5}
+\else
+    \fourch{#1}{#2}{#3}{#4}{#5}
+\fi\fi\fi}
+
+
+
+\begin{document}
+
+\begin{center}
+  \bfseries\large
+  Sylhet Cadet College
+
+\normalsize
+  Progress Test Examination - 2022
+
+  Class: HSC
+
+  Subject: Statistics First Paper (MCQ)
+
+  Time: 20 minutes \qquad \qquad \qquad \qquad Subject Code: 129   \qquad \qquad \qquad  \qquad Full Marks: 25
+
+%  \normalfont\normalsize
+ % 11.45a.m.~--~1.45p.m.
+\end{center}
+
+\textbf{Answer all the questions. Each question is worth one (1) mark.}
+
+\begin{questions}
+
+\question \textbf{Which is a discrete variable?}
+\choice{Weight}{Amount of rainfall}{Distance}{Screen resolution}{a}
+
+\question \textbf{$If x_1=2, x_2=-3, x_3=7$, and $x_4=12, \displaystyle \sum_{i=1}^4 x_i^2=?$}
+\choice{26}{106}{206}{216}{a}
+
+\question \textbf{Which one falls in the category of interval scale?}
+\choice {Temperature}{Speed}{Distance}{Film rating}{a}
+
+\question \textbf{Which one is product of square?}
+\choice {$\prod x_i^2$}{$(\prod x_i)^2$}{$\sum x_i^2 \times \sum x$}{$\sum x_i^2$}{a}
+
+\question \textbf{The arithmetic mean of first n natural numbers-}
+\choice {$\frac{n}{2}$}{$\frac{n+1}{2}$}{$\frac{n^2}{2}$}{$\frac{n^2-1}{2}$}{a}
+
+\question \textbf{When is the relationship $AM = HM = GM$ true?}
+\choice {All values are equal}{The values form a geometric progression}{ The values form an arithmetic progression}{All values are distinct}{a}
+
+\question \textbf{In the presence of outlier(s), which measure of central tendency is suitable?}
+\choice {Arithmetic mean}{Median}{Quadratic mean}{Power mean}{a}
+
+\question \textbf{If a rate is defined as $R = \frac cd$, where c is constant, then which measure is perfect?}
+\choice {Weighted arithmetic mean}{Harmonic mean}{Quadratic mean}{Weighted geometric mean}{a}
+
+\textbf{Answer the questions 9-10 as per the below information.}
+
+42 44 59 64 70 72 74 91 94 are 9 values.
+
+\question \textbf{What is the 50th percentile?}
+\choice {64}{70}{72}{71}{a}
+
+\question \textbf{Below which value do lie 30 percent values?}
+\choice {42}{44}{59}{64}{a}
+
+\question \textbf{A car climbs up a mountain 1 mile at the uniform velocity of 15 miles per hour (mph) and then comes down the same distance at uniform velocity. To make the average speed 30, at what speed (mph) does the car need to climb down?}
+\choice {45}{$\infty$}{0}{60}{a}
+
+\question \textbf{Which two quantiles are equal?}
+\choice {Median and 3rd Quartile}{40th Percentile and 2nd Quartile}{5th Decile and 4th Octile}{3rd Septile and 2nd Quartile}{a}
+
+\question \textbf{How many types of skewness are there?}
+\choice {1}{2}{3}{4}{a}
+
+\question \textbf{Which relationship is correct?}
+\choice {$\mu_2 = \mu_2'-\mu_1^2$}{$\mu_2' = \mu_2-\mu_1^2$}{$\mu_2 = \mu_2'^2-\mu_1$}{$\mu_2^2 = \mu_2'-\mu_1^2$}{a}
+
+\question \textbf{Which moment is equivalent to variance?}
+\choice {First raw moment around 0}{2nd central moment}{2nd raw moment around median}{First raw moment around arithmetic mean}{a}
+
+\question \textbf{In a right-skewed distribution - }
+\choice {Average values are very frequent}{Low values have very low frequency}{High values have very low frequency}{All values have uniform frequency}{a}
+
+\question \textbf{What do moments do?}
+\choice {Uniquely characterize a distribution}{Help to make predictions}{Generate all values of central tendency}{Simplifies the process of working with large values}{a}
+
+\question \textbf{What is the value of first central moment?}
+\choice {Variance}{Arithmetic mean}{Standard deviation}{0}{a}
+
+\question \textbf{If the raw moment around 2 is 3, what is the value of $\bar x$?}
+\choice {2}{5}{3}{1}{a}
+
+\question \textbf{Which measure does not depend on change of origin?}
+\choice {Arithmetic mean}{Standard deviation}{Geometric mean }{Median}{a}
+
+\question \textbf{If the first raw moment around 2 is 3, what is it around 0?}
+\choice {3}{0}{6}{8}{a}
+
+\question \textbf{Which one is not a component of time series}
+\choice {Trend}{Cyclic variation}{Harmonic variation}{Random variation}{a}
+
+\textbf{Answer the questions 23-24 according to the following information.}
+
+\begin{table}[h]
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Year  & 2001 & 2002 & 2003 & 2204 & 2005 \\ \hline
+Value & 60   & 65   & 70   & 72   & 73   \\ \hline
+\end{tabular}
+\end{table}
+
+\question \textbf{What is the first value of 2-yearly moving average?}
+\choice {63.0}{60.0}{65.5}{62.5}{a}
+
+
+\question \textbf{What is the last value of 3-yearly moving average?}
+\choice {72.50}{71.50}{71.67}{72.33}{a}
+
+\question \textbf{A trend is observed when the values follow -}
+\choice {An increasing pattern}{A decreasing pattern}{A constant pattern}{Increasing or decreasing pattern}{a}
+
+%\question \textbf{To complete the song, the last answer should be
+%\choice{a}{b}{c}{d}{e} % Invalid answer choice
+
+\end{questions}
+
+%\newpage  %Uncomment to put on new age
+\bigskip
+
+%\begin{multicols}{3}
+%[
+%Answer Key: (Correction required)
+%]
+%\showallanswers % Phil Hirschorn
+%\end{multicols}
+
+
+\end{document}
