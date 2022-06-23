@@ -7,6 +7,7 @@ output:
     theme: sky
     reveal_plugins: ["menu", "chalkboard", "zoom"]
     self_contained: false
+    lib_dir: libs
     css: css/styles.css
     includes:
       in_header: css/header.html
@@ -164,10 +165,10 @@ Notation varies by countries
 <div class="col">
 <u>Questions</u>
 
-> - <div onclick="klikaj('sim1')">$1. 6-2\{5-(8-3)+(5+2)\}$</span></div>
-> - <div onclick="klikaj('sim2')">$2. 7-2[-6+3\{-5+2(4-3)\}]$</span></div>
-> - <div onclick="klikaj('sim3')">$3. 3x+(4y-z)-{a-b-(2c-4a)-5a}$</span></div>
-> - <div onclick="klikaj('sim4')">$4. [8b-3{2a-3(2b+5)-5(b-3)}]-3b$</span></div>
+> - <div onclick="klikaj('sim1')"><span>$1. 6-2\{5-(8-3)+(5+2)\}$</span></div>
+> - <div onclick="klikaj('sim2')"><span>$2. 7-2[-6+3\{-5+2(4-3)\}]$</span></div>
+> - <div onclick="klikaj('sim3')"><span>$3. 3x+(4y-z)-{a-b-(2c-4a)-5a}$</span></div>
+> - <div onclick="klikaj('sim4')"><span>$4. [8b-3\{2a-3(2b+5)-5(b-3)\}]-3b$</span></div>
 </div>
 <div class="col">
 <u>Answers</u>
