@@ -1,0 +1,39 @@
+---
+title: "GK (Rivers in Bangladesh)"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    transition: zoom
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
+    reveal_options:
+      chalkboard:
+        theme: whiteboard
+    self_contained: false
+    lib_dir: libs
+    css: css/styles.css
+    includes:
+      in_header: css/header.html
+---
+
+## Question 1
+
+```{r, echo=FALSE}
+rivers <- read.csv("rivers_bd.csv")
+bcup <- rivers
+select_ques <- function(){
+  ques <<- sample(rivers$Question, 1)
+  rivers <<- subset(rivers, rivers$Question!=ques)
+  print(ques)
+  }
+
+select_ans <- function() bcup$Answer[bcup$Question==ques]
+```
+
+
+
+> - `r select_ques()`
+> - `r select_ans()`
+
+

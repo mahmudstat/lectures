@@ -217,7 +217,9 @@ $C = x^4+x^2y^2+y^4$
 
 # Chapter 5.1: Algebraic Formulae & Applications
 
-### ~~MEMORIZE~~ FEEL
+# Formulae
+
+~~MEMORIZE~~ FEEL
 
 <div class="container">
 <div class="col">
@@ -226,8 +228,10 @@ $C = x^4+x^2y^2+y^4$
 - $(a-b)^2 = a^2-2ab+b^2$
 - $a^2-b^2=(a+b)(a-b)$
 </div>
-<div class="col">
-#### Corollary
+</div>
+
+# Corollary
+
 <small>
 
 - $a^2+b^2= ?$ 
@@ -242,11 +246,11 @@ $C = x^4+x^2y^2+y^4$
 </div>
 </div>
 
-## Geometric Interpretation 
+# Geometric Interpretation 
 
 $(a+b)^2 = a^2+2ab+b^2$
 
-## Relationship between (a+b)^2^ and (a-b)^2^
+# Relationship between (a+b)^2^ and (a-b)^2^
 
 \begin{eqnarray} 
 (a+b)^2 &=& a^2+2ab+b^2     \nonumber \\
@@ -256,13 +260,13 @@ $(a+b)^2 = a^2+2ab+b^2$
 
 >- Find (a-b)^2^ similarly
 
-## Find Squares
+# Find Squares
 
 > - (2x+y)
 > - (5m-3p)
 > - ax+b+2
 
-## Simplify
+# Simplify
 
 <small>
 
@@ -301,7 +305,7 @@ $(a+b)^2 = a^2+2ab+b^2$
 </div>
 </small>
 
-## Find Values Using Formula
+# Find Values Using Formula
 
 <small>
 
@@ -347,14 +351,14 @@ $(a+b)^2 = a^2+2ab+b^2$
 </div>
 </small>
 
-## Chapter 5.2
+# Chapter 5.2
 
-## Formula 
+# Formula 
 
 - $(a+b)(a-b)=a^2-b^2$
 - $(x+a)(x+b) = x^2+x(a+b)+ab$
 
-## Multiply Using Formula
+# Multiply Using Formula
 
 <small>
 
