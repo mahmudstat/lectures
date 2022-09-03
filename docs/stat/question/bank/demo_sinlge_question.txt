@@ -1,4 +1,3 @@
-  \begin{enumerate}
  \item
 	  \textbf{Statement} 
   
@@ -11,5 +10,4 @@
 	Question \hfill 3
     \item
 	Question \hfill 4
-  \end{enumerate}
   \end{enumerate}

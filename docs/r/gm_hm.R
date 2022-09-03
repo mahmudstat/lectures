@@ -8,3 +8,7 @@ mean(x)
 hm <- function (x) 1/mean(1/x)
 
 hm(x)
+
+x <- c(20, 25, 30, 16)
+hm(x)
+mean(x)
