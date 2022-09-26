@@ -1,0 +1,29 @@
+\contentsline {chapter}{\numberline {1}Probability}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Creative Questions}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Short Questions}{1}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Random Variable and Probability Function}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Creative Questions}{2}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Short Questions}{2}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Mathematical Expectation}{3}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Creative Questions}{3}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Short Questions}{3}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Binomial Distribution}{4}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Creative Questions}{4}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Short Questions}{4}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Poisson Distribution}{5}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Creative Questions}{5}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Short Questions}{5}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Normal Distribution}{6}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Creative Questions}{6}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Short Questions}{6}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Index Number}{7}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Creative Questions}{7}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Short Questions}{7}{section.7.2}%
+\contentsline {chapter}{\numberline {8}Sampling}{8}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Creative Questions}{8}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Short Questions}{8}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Vital Statistics}{9}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Creative Questions}{9}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Short Questions}{9}{section.9.2}%
+\contentsline {chapter}{Conclusion}{10}{chapter*.2}%
+\contentsfinish 

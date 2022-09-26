@@ -11,3 +11,8 @@
     \item
 	Question \hfill 4
   \end{enumerate}
+
+MCQ
+
+\question \textbf{Question}
+\choice{Choice}{Choice}{Choice}{Choice}{a}

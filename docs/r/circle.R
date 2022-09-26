@@ -67,3 +67,4 @@ sketch_circle <- function(npoints=c(15, 25, 35, 50),
 sketch_circle(sd=0.15, r2=2, ncircle = 20)
 
 # For more updates refer to sketch_circle
+
