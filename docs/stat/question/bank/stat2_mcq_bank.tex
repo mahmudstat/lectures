@@ -1,0 +1,286 @@
+\documentclass{exam}
+%\documentclass[11pt,a4paper]{exam}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont}
+\usepackage{ifthen}
+\usepackage{enumerate}% http://ctan.org/pkg/enumerate
+\usepackage{multicol}
+
+% Accumulate the answers. Unmodified from Phil Hirschorn's answer
+% https://tex.stackexchange.com/questions/15350/showing-solutions-of-the-questions-separately/15353
+\newbox\allanswers
+\setbox\allanswers=\vbox{}
+
+\newenvironment{answer}
+{%
+    \global\setbox\allanswers=\vbox\bgroup
+    \unvbox\allanswers
+}%
+{%
+    \bigbreak
+    \egroup
+}
+
+\newcommand{\showallanswers}{\par\unvbox\allanswers}
+% End Phil's answer
+
+
+% Is there a better way?
+\newcommand*{\getanswer}[5]{%
+    \ifthenelse{\equal{#5}{a}}
+    {\begin{answer}\thequestion. (a)~#1\end{answer}}
+    {\ifthenelse{\equal{#5}{b}}
+        {\begin{answer}\thequestion. (b)~#2\end{answer}}
+        {\ifthenelse{\equal{#5}{c}}
+            {\begin{answer}\thequestion. (c)~#3\end{answer}}
+            {\ifthenelse{\equal{#5}{d}}
+                {\begin{answer}\thequestion. (d)~#4\end{answer}}
+                {\begin{answer}\textbf{\thequestion. (#5)~Invalid answer choice.}\end{answer}}}}}
+}
+
+\setlength\parindent{0pt}
+%usage \choice{ }{ }{ }{ }
+%(A)(B)(C)(D)
+\newcommand{\fourch}[5]{
+    \par
+    \begin{tabular}{*{4}{@{}p{0.23\textwidth}}}
+        (a)~#1 & (b)~#2 & (c)~#3 & (d)~#4
+    \end{tabular}
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+%(A)(B)
+%(C)(D)
+\newcommand{\twoch}[5]{
+    \par
+    \begin{tabular}{*{2}{@{}p{0.46\textwidth}}}
+        (a)~#1 & (b)~#2
+    \end{tabular}
+    \par
+    \begin{tabular}{*{2}{@{}p{0.46\textwidth}}}
+        (c)~#3 & (d)~#4
+    \end{tabular}
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+%(A)
+%(B)
+%(C)
+%(D)
+\newcommand{\onech}[5]{
+    \par
+    (a)~#1 \par (b)~#2 \par (c)~#3 \par (d)~#4
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+\newlength\widthcha
+\newlength\widthchb
+\newlength\widthchc
+\newlength\widthchd
+\newlength\widthch
+\newlength\tabmaxwidth
+
+\setlength\tabmaxwidth{0.96\textwidth}
+\newlength\fourthtabwidth
+\setlength\fourthtabwidth{0.25\textwidth}
+\newlength\halftabwidth
+\setlength\halftabwidth{0.5\textwidth}
+
+\newcommand{\choice}[5]{%
+\settowidth\widthcha{AM.#1}\setlength{\widthch}{\widthcha}%
+\settowidth\widthchb{BM.#2}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+    \settowidth\widthchb{CM.#3}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+    \settowidth\widthchb{DM.#4}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+
+% These if statements were bypassing the \onech option.
+% \ifdim\widthch<\fourthtabwidth
+%     \fourch{#1}{#2}{#3}{#4}{#5}
+% \else\ifdim\widthch<\halftabwidth
+% \ifdim\widthch>\fourthtabwidth
+%     \twoch{#1}{#2}{#3}{#4}{#5}
+% \else
+%      \onech{#1}{#2}{#3}{#4}{#5}
+%  \fi\fi\fi}
+
+% Allows for the \onech option.
+\ifdim\widthch>\halftabwidth
+    \onech{#1}{#2}{#3}{#4}{#5}
+\else\ifdim\widthch<\halftabwidth
+\ifdim\widthch>\fourthtabwidth
+    \twoch{#1}{#2}{#3}{#4}{#5}
+\else
+    \fourch{#1}{#2}{#3}{#4}{#5}
+\fi\fi\fi}
+
+
+
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Statistics MCQ Question Bank}
+            
+        \vspace{0.5cm}
+        \LARGE
+        Second Paper \\
+
+
+            
+        \vspace{1.5cm}
+            
+
+            
+        \vfill
+            
+            
+        \vspace{0.8cm}
+            
+                    \textbf{Abdullah Al Mahmud} \\
+        \Large
+        www.statmania.info\\
+            
+    \end{center}
+\end{titlepage}
+
+ \section{Introduction to Probability}
+
+\begin{questions}
+
+\question \textbf{If a neutral die is thrown, the probability of having a digit greater than 6 is}
+\choice{$\frac 1 6$}{$\frac 0 6$}{$\frac 2 3$}{$\frac 3 6$}{b}
+
+\question \textbf{Tossing a coin twice generates how many events?}
+\choice{4}{16}{8}{2}{a}
+
+\question \textbf{The probability of two disjoint sets happening together is:}
+\choice{0.5}{0}{1}{$0  \leq x < 1$}{b}
+
+\textbf{Answer the next three question using the following information}
+
+$P(A) = \frac 1 3, P(B) = \frac 1 2 \space \& \space P(A\cup B) = \frac 1 4$
+
+\question \textbf{$P(A \cap B) = ?$}
+\choice{$\frac {5}{12}$}{$\frac12$}{$\frac{7}{12}$}{$\frac{15}{16}$}{c}
+
+\question \textbf{$P(A \cap \bar B)=?$}
+\choice{$\frac{3}{4}$}{$\frac{5}{6}$}{$\frac{1}{4}$}{$\frac{1}{12}$}{d}
+
+\question \textbf{What is the probability that B occurs or A does not occur?}
+\choice{$\frac{3}{4}$}{$\frac{7}{12}$}{$\frac{5}{12}$}{$\frac{1}{3}$}{a}
+
+\question \textbf{An un contains 10 red and 5 black balls. Two balls are drawn; what is the probability of getting two red balls?}
+\choice{$\frac 37$}{$\frac 47$}{$\frac {20}{21}$}{$\frac 2{21}$}{a}
+
+\section{Random Variables}
+
+\question \textbf{How many types of random variables are there?}
+\choice{2}{3}{4}{5}{a}
+
+\question \textbf{If $f(x) = 2x; 0 <x<3, F(X) = ?$}
+\choice{3}{0}{1}{2.5}{c}
+
+\question \textbf{Which one is not a discrete random variable?}
+\choice{Number of studnets}{Weight}{Number of heads in five coin tosses}{Released version number of a software}{b}
+
+\question \textbf{Which one is a property of joint probability distribution?}
+\choice{$P(X_i,Y_j)<1$}{$P(X_i,Y_j)=0$}{$P(X_i,Y_j)<0$}{$0 \leq P(X_i,Y_j)\leq 1$}{d}
+
+\question \textbf{If $f(x) = kx^3; -1 \leq x \leq 1$, then k is}
+
+i) positive \\
+ii) negative  \\
+iii) lies from -1 to 1
+
+\choice{i}{ii}{iii}{i and ii}{a}
+
+\textbf{Answer the next two questions based on the following information.}
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+x    & 4         & 5         & 6         & 3         & 2         & 1         \\ \hline
+P(X) & $\frac16$ & $\frac16$ & $\frac16$ & $\frac16$ & $\frac16$ & $\frac16$ \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\question \textbf{The value of $P(3<X<5)$ is:}
+\choice{$\frac12$}{$\frac16$}{$\frac13$}{0}{b}
+
+\question \textbf{$P(x \neq 2) is:$}
+\choice{$\frac56$}{$0$}{1}{Can't be found from this information}{a}
+
+\section{Mathematical Expectation}
+
+\question \textbf{Expectation measures --}
+\choice{Dispersion}{Skewness}{Kurtosis}{Central tendency}{d}
+
+\question \textbf{If $E(X) = -0.5$, then $E(1-2X) = $?}
+\choice{0}{-1}{2}{1}{c}
+
+\question \textbf{If $P(X) = \frac{1}{10}; x = 1,2,\cdots 10$, then $E(X) =$?}
+\choice{10}{5.5}{0}{11}{b}
+
+\question \textbf{Which formula of variance is correct?}
+\choice{$V(X+Y) = V(X)+V(Y)-2Cov(X,Y)$}{$V(X+Y) = V(X)+V(Y)+2Cov(X,Y)$}{$V(X+Y) = V(X)+V(Y)-2Cov(X,Y)$}{$V(X+Y) = V(X)-V(Y)+2Cov(X,Y)$}{b}
+
+\question \textbf{X is a constant; what is the value of $V(\frac x2)$?}
+
+i) 0 \\
+ii) $\frac12$ \\
+iii) $\frac14$
+
+\choice{ii}{i}{iii}{i and iii}{b}
+
+\section{Binomial Distribution}
+
+\textbf{Answer the next two questions based on the following information.}
+
+X is a binomial variate with expectation 4 and standard deviation $\sqrt 3$.
+
+\question \textbf{What are the values of the parameters (mean and probability)?}
+\choice{$16, \frac 14$}{$16, \frac 34$}{$15, \frac 14$}{$10, \frac 14$}{a}
+
+\question \textbf{What is $P(X \neq 0)?$}
+\choice{0}{0.01}{0.99}{1}{c}
+
+\section{Poisson Distribution}
+
+\question \textbf{X is a Poisson variate. P(2) = P(4). What is the value of the parameter?}
+\choice{12}{3.46}{3.6}{4}{b}
+
+\question \textbf{Mean of a Poisson variate is a. What is its standard deviation?}
+\choice{0}{a}{$a^{\frac 12}$}{$a^2$}{c}
+
+\section{Vital Statistics}
+
+\question \textbf{Crude Birth Rate (CBR) is:}
+\choice{$\frac BP \times 100$}{$\frac BP \times 1000$}{$\frac PB \times 100$}{$\frac FP \times 100$}{b}
+
+\question \textbf{Which one is a measure of reproduction?}
+
+i) CBR \\
+ii) CDR \\
+iii) NRR
+
+\choice{i}{ii}{iii}{i and ii}{c}
+  
+\end{questions}
+
+\newpage  %Uncomment to put on new age
+%\bigskip
+
+\begin{multicols}{3}
+[
+\textbf{Answer Key:}
+]
+\showallanswers % Phil Hirschorn
+\end{multicols}
+
+
+\end{document}
