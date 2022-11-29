@@ -1,0 +1,25 @@
+---
+title: "Quiz"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
+    reveal_options:
+      chalkboard:
+        theme: whiteboard
+    self_contained: false
+    lib_dir: libs
+    css: css/styles.css
+    includes:
+      in_header: css/header.html
+---
+
+# Find the red portion of circle
+
+![](img/red-circle.png)
+
+# References
+
+- [Conversation](https://theconversation.com/paradoxes-of-probability-and-other-statistical-strangeness-74440)
