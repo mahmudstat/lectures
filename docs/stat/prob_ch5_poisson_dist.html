@@ -63,7 +63,7 @@
 
     <style type="text/css">code{white-space: pre;}</style>
 
-    <link rel="stylesheet" href="css\styles.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
 
 <!-- Printing and PDF exports -->
 <script id="paper-css" type="application/dynamic-css">
@@ -450,7 +450,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
     <div id="header-footer">
       <p class="slide-footer"> | Abdullah Al Mahmud | www.statmania.info | <marquee scrollamount="3"> <span style="color:black">Press SPACE or click ↔️ ↕️ to see more contents </span></marquee> </p>
     </div>
-    <script src="libs/header-attrs-2.13/header-attrs.js"></script>
+    <script src="libs/header-attrs-2.17/header-attrs.js"></script>
     <link href="libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
     <link href="libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 </head>
@@ -561,8 +561,16 @@ class="math inline">\(1+\frac 1 {\sqrt{\lambda}}\)</span>)</li>
 class="math inline">\(p \to 0\)</span></li>
 <li>Mean, <span class="math inline">\(np=\lambda\)</span> finite</li>
 </ul>
-<p>Events that can happen a very large number of time, but happen
-rarely.</p>
+</section>
+<section id="when-to-use" class="slide level2">
+<h2>When to Use</h2>
+<ul>
+<li>Events that can happen a very large number of time, but happen
+rarely.</li>
+<li>That is, they are used in situations that would be more properly
+represented by a Binomial distribution with a very large n and small p,
+especially when the exact values of n and p are unknown.</li>
+</ul>
 </section>
 <section id="difference-with-binomial" class="slide level2">
 <h2>Difference with Binomial</h2>
@@ -585,6 +593,21 @@ rope</li>
 <p></small></p>
 </div>
 </div>
+</section>
+<section id="difference-with-binomial-contd." class="slide level2">
+<h2>Difference with Binomial (Contd.)</h2>
+<ul>
+<li>Both measure the number of certain random events (or “successes”)
+within a certain frame - Binomial is based on discrete events, while the
+Poisson is based on continuous events.</li>
+<li>In a Binomial distribution you have a certain number, n, of
+“attempts,” each of which has probability of success p. </li>
+<li>With a Poisson distribution, you essentially have infinite attempts,
+with infinitesimal chance of success.</li>
+<li>Given a Binomial distribution with some n,p, if you let n→∞ and p→0
+in such a way that np→λ, then that distribution approaches a Poisson
+distribution with parameter λ.</li>
+</ul>
 </section></section>
 <section>
 <section id="problems" class="title-slide slide level1">

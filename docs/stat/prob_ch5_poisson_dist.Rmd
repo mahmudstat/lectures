@@ -85,7 +85,10 @@ If $\lambda$ is very large.
 - Probability of success, p, is very low: $p \to 0$
 - Mean, $np=\lambda$ finite
 
-Events that can happen a very large number of time, but happen rarely. 
+## When to Use
+
+- Events that can happen a very large number of time, but happen rarely. 
+- That is, they are used in situations that would be more properly represented by a Binomial distribution with a very large n and small p, especially when the exact values of n and p are unknown.
 
 ## Difference with Binomial
 
@@ -107,6 +110,13 @@ plot(sample(100,80), main="Rats on a filed", xlab = "", ylab = "", axes = F, pch
 </small>
 </div>
 </div>
+
+## Difference with Binomial (Contd.)
+
+- Both measure the number of certain random events (or "successes") within a certain frame - Binomial is based on discrete events, while the Poisson is based on continuous events. 
+- In a Binomial distribution you have a certain number, n, of "attempts," each of which has probability of success p. 
+- With a Poisson distribution, you essentially have infinite attempts, with infinitesimal chance of success. 
+- Given a Binomial distribution with some n,p, if you let n→∞ and p→0 in such a way that np→λ, then that distribution approaches a Poisson distribution with parameter λ.
 
 # Problems
 
