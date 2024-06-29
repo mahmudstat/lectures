@@ -1,0 +1,36 @@
+---
+title: "Quiz"
+author: Abdullah Al Mahmud
+date: \today
+output: 
+  revealjs::revealjs_presentation:
+    theme: sky
+    reveal_plugins: ["chalkboard", "zoom", "menu"]
+    reveal_options:
+      chalkboard:
+        theme: whiteboard
+    self_contained: false
+    lib_dir: libs
+    css: css/styles.css
+    includes:
+      in_header: css/header.html
+---
+
+# Binary Numbers
+
+## Chapter Info
+
+Total Session: 10
+
+- Concept of Binary Numbers
+- Characteristics of Binary Numbers
+- Conversion
+- Binary Addition
+- Complement
+- Subtraction
+- Multiplication
+
+## Concept
+
+<img class="plain" src="img/binary_joke.png" width="480">
+
