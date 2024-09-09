@@ -1,0 +1,272 @@
+\documentclass{exam}
+%\documentclass[11pt,a4paper]{exam}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,dsfont}
+\usepackage{ifthen}
+\usepackage[legalpaper, total={177.8mm, 290mm}]{geometry}
+\usepackage{enumerate}% http://ctan.org/pkg/enumerate
+\usepackage{multicol}
+\usepackage{hhline}
+\usepackage[table]{xcolor}
+
+
+% Accumulate the answers. Unmodified from Phil Hirschorn's answer
+% https://tex.stackexchange.com/questions/15350/showing-solutions-of-the-questions-separately/15353
+\newbox\allanswers
+\setbox\allanswers=\vbox{}
+
+\newenvironment{answer}
+{%
+    \global\setbox\allanswers=\vbox\bgroup
+    \unvbox\allanswers
+}%
+{%
+    \bigbreak
+    \egroup
+}
+
+\newcommand{\showallanswers}{\par\unvbox\allanswers}
+% End Phil's answer
+
+
+% Is there a better way?
+\newcommand*{\getanswer}[5]{%
+    \ifthenelse{\equal{#5}{a}}
+    {\begin{answer}\thequestion. (a)~#1\end{answer}}
+    {\ifthenelse{\equal{#5}{b}}
+        {\begin{answer}\thequestion. (b)~#2\end{answer}}
+        {\ifthenelse{\equal{#5}{c}}
+            {\begin{answer}\thequestion. (c)~#3\end{answer}}
+            {\ifthenelse{\equal{#5}{d}}
+                {\begin{answer}\thequestion. (d)~#4\end{answer}}
+                {\begin{answer}\textbf{\thequestion. (#5)~Invalid answer choice.}\end{answer}}}}}
+}
+
+\setlength\parindent{0pt}
+%usage \choice{ }{ }{ }{ }
+%(A)(B)(C)(D)
+\newcommand{\fourch}[5]{
+    \par
+    \begin{tabular}{*{4}{@{}p{0.23\textwidth}}}
+        (a)~#1 & (b)~#2 & (c)~#3 & (d)~#4
+    \end{tabular}
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+%(A)(B)
+%(C)(D)
+\newcommand{\twoch}[5]{
+    \par
+    \begin{tabular}{*{2}{@{}p{0.46\textwidth}}}
+        (a)~#1 & (b)~#2
+    \end{tabular}
+    \par
+    \begin{tabular}{*{2}{@{}p{0.46\textwidth}}}
+        (c)~#3 & (d)~#4
+    \end{tabular}
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+%(A)
+%(B)
+%(C)
+%(D)
+\newcommand{\onech}[5]{
+    \par
+    (a)~#1 \par (b)~#2 \par (c)~#3 \par (d)~#4
+    \getanswer{#1}{#2}{#3}{#4}{#5}
+}
+
+\newlength\widthcha
+\newlength\widthchb
+\newlength\widthchc
+\newlength\widthchd
+\newlength\widthch
+\newlength\tabmaxwidth
+
+\setlength\tabmaxwidth{0.96\textwidth}
+\newlength\fourthtabwidth
+\setlength\fourthtabwidth{0.25\textwidth}
+\newlength\halftabwidth
+\setlength\halftabwidth{0.5\textwidth}
+
+\newcommand{\choice}[5]{%
+\settowidth\widthcha{AM.#1}\setlength{\widthch}{\widthcha}%
+\settowidth\widthchb{BM.#2}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+    \settowidth\widthchb{CM.#3}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+    \settowidth\widthchb{DM.#4}%
+\ifdim\widthch<\widthchb\relax\setlength{\widthch}{\widthchb}\fi%
+
+% These if statements were bypassing the \onech option.
+% \ifdim\widthch<\fourthtabwidth
+%     \fourch{#1}{#2}{#3}{#4}{#5}
+% \else\ifdim\widthch<\halftabwidth
+% \ifdim\widthch>\fourthtabwidth
+%     \twoch{#1}{#2}{#3}{#4}{#5}
+% \else
+%      \onech{#1}{#2}{#3}{#4}{#5}
+%  \fi\fi\fi}
+
+% Allows for the \onech option.
+\ifdim\widthch>\halftabwidth
+    \onech{#1}{#2}{#3}{#4}{#5}
+\else\ifdim\widthch<\halftabwidth
+\ifdim\widthch>\fourthtabwidth
+    \twoch{#1}{#2}{#3}{#4}{#5}
+\else
+    \fourch{#1}{#2}{#3}{#4}{#5}
+\fi\fi\fi}
+
+
+\begin{document}
+
+\begin{center}
+  \bfseries\large
+  Sylhet Cadet College
+
+\normalsize
+2nd Term-End Examination - 2024
+
+  Class: VII
+  
+  Subject: Mathematics
+
+  Time: 25 minutes \qquad \qquad  \qquad \qquad \qquad  \qquad \qquad  \qquad Full Marks: 30
+
+%  \normalfont\normalsize
+ % 11.45a.m.~--~1.45p.m.
+\end{center}
+
+
+ \begin{center} \textbf{[N.B-Answer all the questions. Each question is worth 01 (one) mark.]}\\
+
+
+\vspace{0.5cm}
+
+Cadet No. \noindent\rule{1cm}{0.4pt} \qquad Name: \noindent\rule{2cm}{0.4pt}  
+Form: \noindent\rule{1cm}{0.4pt} Sign of Invigilator: \noindent\rule{2cm}{0.4pt}
+ 
+\end{center}
+
+\textbf{Short Questions}
+
+\begin{enumerate}
+
+\item If a piece of paper is folded 10 times, how many layers are created? \noindent\rule{2cm}{0.4pt}
+
+\item What is the value of $\frac{2^5}{4^2}$ \noindent\rule{2cm}{0.4pt}
+
+\item What is GCD of $\frac12$ and $\frac14$? \noindent\rule{2cm}{0.4pt}
+
+\item What is Unit Ratio? \noindent\rule{2cm}{0.4pt}
+
+\item In a polygon, what is the relationship between the no. of vertices and
+the no. of sides? \noindent\rule{2cm}{0.4pt}
+
+\item Which ratio gives us the value of Pi ($\pi$)? \noindent\rule{2cm}{0.4pt}
+
+\item If $4x+6 = 18, x = ?$  \noindent\rule{2cm}{0.4pt}
+
+\item If $\frac ac = \frac db, b = ?$ \noindent\rule{2cm}{0.4pt}
+
+\item What is the LCM of $\frac 12$ and $\frac 16$ \noindent\rule{2cm}{0.4pt}
+
+\item The ratio of two numbers is 2:3. If the first number is 20, what is 
+the other number? \noindent\rule{2cm}{0.4pt}
+
+
+\end{enumerate}
+
+\textbf{Multiple Choice Questions}
+
+\begin{questions}
+
+\question \textbf{$(2^{-2})^2=?$}
+\choice{$\frac 14$}{$\frac 24$}{$\frac 1{16}$}{$\frac 18$}{c}
+
+\question \textbf{If $8^{27} \times 8 ^ x = 8 ^{30}, $ what is the value of x?}
+\choice{2}{3}{4}{5}{b}
+
+\question \textbf{10 Crore is equal to ---}
+\choice{$10^6$}{$10^7$}{$10^8$}{$10^9$}{c}
+
+\question \textbf{A pattern is: $X_n = 3 \times 2^{n-1}$; where $X_n$ is the 
+nth value. what is 5th number?}
+\choice{16}{48}{96}{32}{b}
+
+\question \textbf{What is the value if 2 is divided by 0.5?}
+\choice{0.5}{1}{4}{2.5}{c}
+
+\question \textbf{Which one is NOT a multiple of $\frac 16$}
+\choice{$\frac 1{6}$}{$\frac 1{18}$}{$\frac 1{21}$}{$\frac 1{30}$}{c}
+
+\question \textbf{Among the following numbers, which is the greatest?}
+
+\begin{center} \textbf{$\frac 13, \frac 14, \frac 24, \frac 49$} \end{center}
+
+\choice{$\frac 13$}{$\frac 14$}{$\frac 24$}{$\frac 24$}{c}
+
+\question \textbf{Which one is a factor of $0.5$?}
+\choice{0.25}{0.125}{0.30}{0.55}{b}
+
+\question \textbf{Question}
+\choice{Choice}{Choice}{Choice}{Choice}{a}
+
+\question \textbf{Question}
+\choice{Choice}{Choice}{Choice}{Choice}{a}
+
+\question \textbf{Question}
+\choice{Choice}{Choice}{Choice}{Choice}{a}
+
+\question \textbf{Question}
+\choice{Choice}{Choice}{Choice}{Choice}{a}
+
+\question \textbf{Question}
+\choice{Choice}{Choice}{Choice}{Choice}{a}
+
+\question \textbf{Question}
+\choice{Choice}{Choice}{Choice}{Choice}{a}
+
+\question \textbf{Question}
+\choice{Choice}{Choice}{Choice}{Choice}{a}
+
+\question \textbf{Question}
+\choice{Choice}{Choice}{Choice}{Choice}{a}
+
+\question \textbf{Question}
+\choice{Choice}{Choice}{Choice}{Choice}{a}
+
+\question \textbf{Question}
+\choice{Choice}{Choice}{Choice}{Choice}{a}
+
+\question \textbf{Question}
+\choice{Choice}{Choice}{Choice}{Choice}{a}
+
+\question \textbf{Question}
+\choice{Choice}{Choice}{Choice}{Choice}{a}
+
+%\question \textbf{To complete the song, the last answer should be
+%\choice{a}{b}{c}{d}{e} % Invalid answer choice
+
+\end{questions}
+
+ \vspace{2.5cm}
+
+\begin{center}
+Quote
+\end{center}
+
+\pagebreak
+%\newpage  %Uncomment to put on new age
+\bigskip
+
+\begin{multicols}{3}
+[
+Answer Key
+]
+\showallanswers % Phil Hirschorn
+\end{multicols}
+
+
+\end{document}
